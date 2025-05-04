@@ -1,0 +1,50 @@
+[
+  {
+    "title": "OpenAI document explains when to use each ChatGPT model",
+    "source": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-document-explains-when-to-use-each-chatgpt-model/",
+    "published": "2025-05-04T17:59:53",
+    "feed": "https://www.bleepingcomputer.com/feed/",
+    "iocs": {
+      "ips": [],
+      "domains": [
+        "Smartwebfinder.com",
+        "Toksearches.xyz",
+        "Theonlinesearch.com",
+        "Trojan.vundo"
+      ],
+      "urls": [],
+      "md5": [],
+      "sha256": [],
+      "cves": []
+    },
+    "tags": [
+      "exploit",
+      "fraud",
+      "malware",
+      "credential"
+    ]
+  },
+  {
+    "title": "StealC malware enhanced with stealth upgrades and data theft tools",
+    "source": "https://www.bleepingcomputer.com/news/security/stealc-malware-enhanced-with-stealth-upgrades-and-data-theft-tools/",
+    "published": "2025-05-04T14:11:21",
+    "feed": "https://www.bleepingcomputer.com/feed/",
+    "iocs": {
+      "ips": [],
+      "domains": [
+        "Booking.com"
+      ],
+      "urls": [],
+      "md5": [],
+      "sha256": [],
+      "cves": []
+    },
+    "tags": [
+      "fraud",
+      "malware",
+      "credential",
+      "payload",
+      "exploit"
+    ]
+  }
+]
