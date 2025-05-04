@@ -1,5 +1,154 @@
 [
   {
+    "title": "xAI Dev Leaks API Key for Private SpaceX, Tesla LLMs",
+    "source": "https://krebsonsecurity.com/2025/05/xai-dev-leaks-api-key-for-private-spacex-tesla-llms/",
+    "published": "2025-05-02T00:52:00",
+    "feed": "https://krebsonsecurity.com/feed/",
+    "iocs": {
+      "ips": [],
+      "domains": [
+        "www.techmonitor.ai",
+        "X.ai",
+        "x.ai"
+      ],
+      "urls": [
+        "https://www.techmonitor.ai/technology/cybersecurity/10-million-exposed-credentials-open-source-code-repositories?cf-view"
+      ],
+      "md5": [],
+      "sha256": [],
+      "cves": []
+    },
+    "tags": [
+      "exploit",
+      "malware",
+      "credential",
+      "ddos",
+      "fraud"
+    ]
+  },
+  {
+    "title": "DOGE Worker’s Code Supports NLRB Whistleblower",
+    "source": "https://krebsonsecurity.com/2025/04/doge-workers-code-supports-nlrb-whistleblower/",
+    "published": "2025-04-23T20:45:04",
+    "feed": "https://krebsonsecurity.com/feed/",
+    "iocs": {
+      "ips": [],
+      "domains": [
+        "abcnews.go.com",
+        "archive.org",
+        "web.archive.org",
+        "github.com",
+        "krebsonsecurity.com"
+      ],
+      "urls": [
+        "https://web.archive.org/web/20250423135719/https://github.com/markoelez/async-ip-rotator/issues/1",
+        "https://krebsonsecurity.com/2025/04/whistleblower-doge-siphoned-nlrb-case-data/"
+      ],
+      "md5": [],
+      "sha256": [],
+      "cves": []
+    },
+    "tags": [
+      "exploit",
+      "botnet",
+      "malware",
+      "credential",
+      "ddos",
+      "fraud"
+    ]
+  },
+  {
+    "title": "Whistleblower: DOGE Siphoned NLRB Case Data",
+    "source": "https://krebsonsecurity.com/2025/04/whistleblower-doge-siphoned-nlrb-case-data/",
+    "published": "2025-04-22T01:48:27",
+    "feed": "https://krebsonsecurity.com/feed/",
+    "iocs": {
+      "ips": [],
+      "domains": [
+        "delta-executor.com",
+        "npr.org",
+        "nbcnews.com",
+        "x.com",
+        "nlrb.microsoft.com",
+        "j.murray"
+      ],
+      "urls": [
+        "https://x.com/amuse/status/1913665346281656394"
+      ],
+      "md5": [],
+      "sha256": [],
+      "cves": []
+    },
+    "tags": [
+      "exploit",
+      "botnet",
+      "malware",
+      "credential",
+      "ddos",
+      "fraud"
+    ]
+  },
+  {
+    "title": "Funding Expires for Key Cyber Vulnerability Database",
+    "source": "https://krebsonsecurity.com/2025/04/funding-expires-for-key-cyber-vulnerability-database/",
+    "published": "2025-04-16T03:59:18",
+    "feed": "https://krebsonsecurity.com/feed/",
+    "iocs": {
+      "ips": [],
+      "domains": [
+        "thecvefoundation.org",
+        "www.nextgov.com",
+        "cve.gov",
+        "www.thecvefoundation.org",
+        "USAspending.gov",
+        "www.cybersecuritydive.com"
+      ],
+      "urls": [
+        "https://www.cybersecuritydive.com/news/cisa-extend-funding-cve/745531/",
+        "https://www.thecvefoundation.org/frequently-asked-questions",
+        "https://www.nextgov.com/cybersecurity/2025/04/cisa-extends-mitre-backed-cve-contract-hours-its-lapse/404601/"
+      ],
+      "md5": [],
+      "sha256": [],
+      "cves": [
+        "CVE-2024-43573"
+      ]
+    },
+    "tags": [
+      "exploit",
+      "ddos",
+      "fraud",
+      "malware"
+    ]
+  },
+  {
+    "title": "Trump Revenge Tour Targets Cyber Leaders, Elections",
+    "source": "https://krebsonsecurity.com/2025/04/trump-revenge-tour-targets-cyber-leaders-elections/",
+    "published": "2025-04-15T03:27:51",
+    "feed": "https://krebsonsecurity.com/feed/",
+    "iocs": {
+      "ips": [],
+      "domains": [
+        "www.opensocietyfoundations.org",
+        "arstechnica.com",
+        "Dni.gov"
+      ],
+      "urls": [
+        "https://www.opensocietyfoundations.org/voices/can-think-tank-help-expose-captured-state"
+      ],
+      "md5": [],
+      "sha256": [],
+      "cves": []
+    },
+    "tags": [
+      "exploit",
+      "malware",
+      "ddos",
+      "fraud",
+      "phishing"
+    ]
+  },
+  {
     "title": "OpenAI document explains when to use each ChatGPT model",
     "source": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-document-explains-when-to-use-each-chatgpt-model/",
     "published": "2025-05-04T17:59:53",
@@ -19,9 +168,9 @@
     },
     "tags": [
       "exploit",
+      "credential",
       "fraud",
-      "malware",
-      "credential"
+      "malware"
     ]
   },
   {
@@ -40,11 +189,443 @@
       "cves": []
     },
     "tags": [
+      "exploit",
+      "payload",
+      "credential",
+      "malware",
+      "fraud"
+    ]
+  },
+  {
+    "title": "Co-op confirms data theft after DragonForce ransomware claims attack",
+    "source": "https://www.bleepingcomputer.com/news/security/co-op-confirms-data-theft-after-dragonforce-ransomware-claims-attack/",
+    "published": "2025-05-02T19:52:50",
+    "feed": "https://www.bleepingcomputer.com/feed/",
+    "iocs": {
+      "ips": [],
+      "domains": [
+        "bleepingcomputer.com",
+        "lawrence.abrams",
+        "NTDS.dit",
+        "BleepingComputer.com"
+      ],
+      "urls": [],
+      "md5": [],
+      "sha256": [],
+      "cves": []
+    },
+    "tags": [
+      "exploit",
+      "credential",
       "fraud",
+      "malware"
+    ]
+  },
+  {
+    "title": "Magento supply chain attack compromises hundreds of e-stores",
+    "source": "https://www.bleepingcomputer.com/news/security/magento-supply-chain-attack-compromises-hundreds-of-e-stores/",
+    "published": "2025-05-02T18:09:55",
+    "feed": "https://www.bleepingcomputer.com/feed/",
+    "iocs": {
+      "ips": [],
+      "domains": [
+        "License.php",
+        "LicenseApi.php"
+      ],
+      "urls": [],
+      "md5": [],
+      "sha256": [],
+      "cves": []
+    },
+    "tags": [
+      "exploit",
+      "credential",
+      "fraud",
+      "malware"
+    ]
+  },
+  {
+    "title": "US indicts Black Kingdom ransomware admin for Microsoft Exchange attacks",
+    "source": "https://www.bleepingcomputer.com/news/security/us-indicts-black-kingdom-ransomware-admin-for-microsoft-exchange-attacks/",
+    "published": "2025-05-02T14:32:11",
+    "feed": "https://www.bleepingcomputer.com/feed/",
+    "iocs": {
+      "ips": [],
+      "domains": [],
+      "urls": [],
+      "md5": [],
+      "sha256": [],
+      "cves": [
+        "CVE-2021-27065",
+        "CVE-2021-26857",
+        "CVE-2019-11510",
+        "CVE-2021-26858",
+        "CVE-2021-26855"
+      ]
+    },
+    "tags": [
+      "exploit",
+      "credential",
+      "fraud",
+      "malware"
+    ]
+  },
+  {
+    "title": "UK Retailers Reeling From Likely Ransomware Attacks",
+    "source": "https://www.darkreading.com/cyberattacks-data-breaches/uk-retailers-reeling-ransomware-attacks",
+    "published": "2025-05-02T20:36:07",
+    "feed": "https://www.darkreading.com/rss.xml",
+    "iocs": {
+      "ips": [
+        "156.213.155.53"
+      ],
+      "domains": [
+        "darkreading.com"
+      ],
+      "urls": [],
+      "md5": [],
+      "sha256": [],
+      "cves": []
+    },
+    "tags": []
+  },
+  {
+    "title": "Steganography Challenge, (Sat, May 3rd)",
+    "source": "https://isc.sans.edu/diary/rss/31910",
+    "published": "2025-05-03T07:23:30",
+    "feed": "http://isc.sans.edu/rssfeed.xml",
+    "iocs": {
+      "ips": [],
+      "domains": [
+        "pngdump.py",
+        "blog.DidierStevens.com"
+      ],
+      "urls": [],
+      "md5": [],
+      "sha256": [],
+      "cves": []
+    },
+    "tags": [
+      "credential"
+    ]
+  },
+  {
+    "title": "ISC Stormcast For Friday, May 2nd, 2025 https://isc.sans.edu/podcastdetail/9434, (Fri, May 2nd)",
+    "source": "https://isc.sans.edu/diary/rss/31916",
+    "published": "2025-05-02T02:00:02",
+    "feed": "http://isc.sans.edu/rssfeed.xml",
+    "iocs": {
+      "ips": [],
+      "domains": [
+        "isc.sans.edu"
+      ],
+      "urls": [
+        "https://isc.sans.edu/podcastdetail/9434"
+      ],
+      "md5": [],
+      "sha256": [],
+      "cves": []
+    },
+    "tags": [
+      "credential"
+    ]
+  },
+  {
+    "title": "Steganography Analysis With pngdump.py: Bitstreams, (Thu, May 1st)",
+    "source": "https://isc.sans.edu/diary/rss/31904",
+    "published": "2025-05-01T07:00:05",
+    "feed": "http://isc.sans.edu/rssfeed.xml",
+    "iocs": {
+      "ips": [],
+      "domains": [
+        "headtail.py",
+        "format-bytes.py",
+        "file-magic.py",
+        "hash.py",
+        "pecheck.py",
+        "lake-exe.png",
+        "cut-bytes.py"
+      ],
+      "urls": [],
+      "md5": [],
+      "sha256": [
+        "0a391054e50a4808553466263c9c3b63e895be02c957dbb957da3ba96670cf34"
+      ],
+      "cves": []
+    },
+    "tags": [
+      "payload",
+      "credential"
+    ]
+  },
+  {
+    "title": "ISC Stormcast For Thursday, May 1st, 2025 https://isc.sans.edu/podcastdetail/9432, (Thu, May 1st)",
+    "source": "https://isc.sans.edu/diary/rss/31914",
+    "published": "2025-05-01T02:00:02",
+    "feed": "http://isc.sans.edu/rssfeed.xml",
+    "iocs": {
+      "ips": [],
+      "domains": [],
+      "urls": [
+        "https://isc.sans.edu/podcastdetail/9432"
+      ],
+      "md5": [],
+      "sha256": [],
+      "cves": []
+    },
+    "tags": [
+      "credential"
+    ]
+  },
+  {
+    "title": "ISC Stormcast For Wednesday, April 30th, 2025 https://isc.sans.edu/podcastdetail/9430, (Wed, Apr 30th)",
+    "source": "https://isc.sans.edu/diary/rss/31908",
+    "published": "2025-04-30T02:00:03",
+    "feed": "http://isc.sans.edu/rssfeed.xml",
+    "iocs": {
+      "ips": [],
+      "domains": [],
+      "urls": [
+        "https://isc.sans.edu/podcastdetail/9430"
+      ],
+      "md5": [],
+      "sha256": [],
+      "cves": []
+    },
+    "tags": [
+      "credential"
+    ]
+  },
+  {
+    "title": "Web Scanning Sonicwall for CVE-2021-20016, (Tue, Apr 29th)",
+    "source": "https://isc.sans.edu/diary/rss/31906",
+    "published": "2025-04-30T01:29:43",
+    "feed": "http://isc.sans.edu/rssfeed.xml",
+    "iocs": {
+      "ips": [
+        "141.98.80.146",
+        "141.98.80.125",
+        "45.227.255.93",
+        "45.227.255.89"
+      ],
+      "domains": [
+        "cow-prod-www-v3.azurewebsites.net",
+        "urlhistory.html",
+        "es-la.tenable.com"
+      ],
+      "urls": [
+        "https://cow-prod-www-v3.azurewebsites.net/publications/security-advisories/2021-006/pdf",
+        "https://isc.sans.edu/weblogs/urlhistory.html?url=L19fYXBpX18vdjEvbG9nb24=",
+        "https://isc.sans.edu/weblogs/urlhistory.html?url=L19fYXBpX18vdjEvY29uZmlnL2RvbWFpbnM=",
+        "https://es-la.tenable.com/blog/cve-2021-20016-zero-day-vulnerability-in-sonicwall-secure-mobile-access-sma-exploited"
+      ],
+      "md5": [],
+      "sha256": [],
+      "cves": [
+        "CVE-2021-20016"
+      ]
+    },
+    "tags": [
+      "exploit",
+      "credential"
+    ]
+  },
+  {
+    "title": "More Scans for SMS Gateways and APIs, (Tue, Apr 29th)",
+    "source": "https://isc.sans.edu/diary/rss/31902",
+    "published": "2025-04-29T15:25:05",
+    "feed": "http://isc.sans.edu/rssfeed.xml",
+    "iocs": {
+      "ips": [],
+      "domains": [
+        "sms-activate.org",
+        "admin-bar.css",
+        "textme.css",
+        "admin.css",
+        "targetvr-style.css",
+        "SANS.edu",
+        "print.css",
+        "responsive-embeds.js",
+        "sms.py",
+        "clockwork.css"
+      ],
+      "urls": [
+        "https://github.com/iAditya-Nanda/SMS_Bomber",
+        "https://sms-activate.org"
+      ],
+      "md5": [],
+      "sha256": [],
+      "cves": []
+    },
+    "tags": [
+      "credential"
+    ]
+  },
+  {
+    "title": "ISC Stormcast For Tuesday, April 29th, 2025 https://isc.sans.edu/podcastdetail/9428, (Tue, Apr 29th)",
+    "source": "https://isc.sans.edu/diary/rss/31900",
+    "published": "2025-04-29T02:00:03",
+    "feed": "http://isc.sans.edu/rssfeed.xml",
+    "iocs": {
+      "ips": [],
+      "domains": [],
+      "urls": [
+        "https://isc.sans.edu/podcastdetail/9428"
+      ],
+      "md5": [],
+      "sha256": [],
+      "cves": []
+    },
+    "tags": [
+      "credential"
+    ]
+  },
+  {
+    "title": "ISC Stormcast For Monday, April 28th, 2025 https://isc.sans.edu/podcastdetail/9426, (Mon, Apr 28th)",
+    "source": "https://isc.sans.edu/diary/rss/31898",
+    "published": "2025-04-28T02:00:02",
+    "feed": "http://isc.sans.edu/rssfeed.xml",
+    "iocs": {
+      "ips": [],
+      "domains": [],
+      "urls": [
+        "https://isc.sans.edu/podcastdetail/9426"
+      ],
+      "md5": [],
+      "sha256": [],
+      "cves": []
+    },
+    "tags": [
+      "credential"
+    ]
+  },
+  {
+    "title": "SRUM-DUMP Version 3: Uncovering Malware Activity in Forensics, (Sun, Apr 27th)",
+    "source": "https://isc.sans.edu/diary/rss/31896",
+    "published": "2025-04-28T00:21:25",
+    "feed": "http://isc.sans.edu/rssfeed.xml",
+    "iocs": {
+      "ips": [],
+      "domains": [
+        "SRUDB.DAT",
+        "malware.exe",
+        "srudb.dat",
+        "SRUDB.dat"
+      ],
+      "urls": [],
+      "md5": [],
+      "sha256": [],
+      "cves": []
+    },
+    "tags": [
+      "payload",
+      "credential",
+      "malware"
+    ]
+  },
+  {
+    "title": "Uncle Sam abruptly turns off funding for CVE program. Yes, that CVE program",
+    "source": "https://www.theregister.com/2025/04/16/homeland_security_funding_for_cve/",
+    "published": "2025-04-16T04:00:00",
+    "feed": "https://newsroom.trendmicro.com/media-coverage?pagetemplate=rss",
+    "iocs": {
+      "ips": [],
+      "domains": [],
+      "urls": [],
+      "md5": [],
+      "sha256": [],
+      "cves": [
+        "CVE-2017-5754",
+        "CVE-2014-0160"
+      ]
+    },
+    "tags": [
+      "exploit",
+      "credential",
+      "malware",
+      "ddos",
+      "phishing"
+    ]
+  },
+  {
+    "title": "Hello 0-Days, My Old Friend: A 2024 Zero-Day Exploitation Analysis",
+    "source": "https://cloud.google.com/blog/topics/threat-intelligence/2024-zero-day-trends/",
+    "published": "2025-04-29T05:00:00",
+    "feed": "https://feeds.feedburner.com/threatintelligence/pvexyqv7v0v",
+    "iocs": {
+      "ips": [],
+      "domains": [
+        "2023.Figure",
+        "login.microsoftonline.com",
+        "index.js",
+        "WPTaskScheduler.dll",
+        "2021.Figure",
+        "most.Learn",
+        "online.da.mfa.gov",
+        "post.Download",
+        "online.da.mfa.gov.ua",
+        "PocLowIL.pdb",
+        "exploits.The",
+        "ubpm.dll",
+        "pursuits.Posted",
+        "SD.Figure"
+      ],
+      "urls": [
+        "https://online.da.mfa.gov.ua/gotcookie?.",
+        "https://online.da.mfa.gov[.]ua/wp-content/plugins/contact-form-7/includes/js/index.js?ver=5.4."
+      ],
+      "md5": [],
+      "sha256": [],
+      "cves": [
+        "CVE-2024-21887",
+        "CVE-2024-44308",
+        "CVE-2024-55956",
+        "CVE-2024-29748",
+        "CVE-2024-21338",
+        "CVE-2023-46805",
+        "CVE-2024-9680",
+        "CVE-2024-44309",
+        "CVE-2024-38178",
+        "CVE-2025-22457",
+        "CVE-2024-53104",
+        "CVE-2023-36884",
+        "CVE-2024-29745",
+        "CVE-2024-49039",
+        "CVE-2024-32896"
+      ]
+    },
+    "tags": [
+      "exploit",
+      "payload",
+      "credential",
+      "malware",
+      "c2",
+      "injection"
+    ]
+  },
+  {
+    "title": "M-Trends 2025: Data, Insights, and Recommendations From the Frontlines",
+    "source": "https://cloud.google.com/blog/topics/threat-intelligence/m-trends-2025/",
+    "published": "2025-04-23T14:00:00",
+    "feed": "https://feeds.feedburner.com/threatintelligence/pvexyqv7v0v",
+    "iocs": {
+      "ips": [],
+      "domains": [
+        "incidents.Learn",
+        "organizations.Read",
+        "created.Posted"
+      ],
+      "urls": [],
+      "md5": [],
+      "sha256": [],
+      "cves": []
+    },
+    "tags": [
+      "exploit",
+      "botnet",
       "malware",
       "credential",
-      "payload",
-      "exploit"
+      "ddos"
     ]
   }
 ]

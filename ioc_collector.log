@@ -1,0 +1,118 @@
+2025-05-04 23:54:00,963 INFO Wrote 2 records to output.json
+2025-05-04 23:56:12,973 INFO -> Fetching feed: https://www.us-cert.gov/ncas/alerts.xml
+2025-05-04 23:56:14,475 INFO -> 0 new articles with IOCs from https://www.us-cert.gov/ncas/alerts.xml
+2025-05-04 23:56:14,476 INFO -> Fetching feed: https://www.cert.ssi.gouv.fr/feed/
+2025-05-04 23:56:14,620 INFO -> 0 new articles with IOCs from https://www.cert.ssi.gouv.fr/feed/
+2025-05-04 23:56:14,620 INFO -> Fetching feed: http://feeds.feedburner.com/TheHackersNews
+2025-05-04 23:56:15,154 INFO -> 0 new articles with IOCs from http://feeds.feedburner.com/TheHackersNews
+2025-05-04 23:56:15,154 INFO -> Fetching feed: https://krebsonsecurity.com/feed/
+2025-05-04 23:56:15,943 INFO -> 0 new articles with IOCs from https://krebsonsecurity.com/feed/
+2025-05-04 23:56:15,945 INFO -> Fetching feed: https://www.bleepingcomputer.com/feed/
+2025-05-04 23:56:18,583 INFO -> 0 new articles with IOCs from https://www.bleepingcomputer.com/feed/
+2025-05-04 23:56:18,584 INFO -> Fetching feed: https://www.cisa.gov/news.xml
+2025-05-04 23:56:18,846 INFO -> 0 new articles with IOCs from https://www.cisa.gov/news.xml
+2025-05-04 23:56:18,847 INFO -> Fetching feed: https://www.darkreading.com/rss.xml
+2025-05-04 23:56:19,439 INFO -> 0 new articles with IOCs from https://www.darkreading.com/rss.xml
+2025-05-04 23:56:19,440 INFO -> Fetching feed: http://isc.sans.edu/rssfeed.xml
+2025-05-04 23:56:20,219 INFO -> 0 new articles with IOCs from http://isc.sans.edu/rssfeed.xml
+2025-05-04 23:56:20,219 INFO -> Fetching feed: https://newsroom.trendmicro.com/media-coverage?pagetemplate=rss
+2025-05-04 23:56:21,128 INFO -> 0 new articles with IOCs from https://newsroom.trendmicro.com/media-coverage?pagetemplate=rss
+2025-05-04 23:56:21,129 INFO -> Fetching feed: https://feeds.feedburner.com/threatintelligence/pvexyqv7v0v
+2025-05-04 23:56:22,211 INFO -> 0 new articles with IOCs from https://feeds.feedburner.com/threatintelligence/pvexyqv7v0v
+2025-05-04 23:56:22,219 INFO Wrote 0 records to output.json
+2025-05-04 23:58:56,613 INFO -> Fetching feed: https://www.us-cert.gov/ncas/alerts.xml
+2025-05-04 23:58:58,033 INFO -> 0 new articles with IOCs from https://www.us-cert.gov/ncas/alerts.xml
+2025-05-04 23:58:58,033 INFO -> Fetching feed: https://www.cert.ssi.gouv.fr/feed/
+2025-05-04 23:58:58,163 INFO -> 0 new articles with IOCs from https://www.cert.ssi.gouv.fr/feed/
+2025-05-04 23:58:58,163 INFO -> Fetching feed: http://feeds.feedburner.com/TheHackersNews
+2025-05-04 23:58:58,626 INFO -> 0 new articles with IOCs from http://feeds.feedburner.com/TheHackersNews
+2025-05-04 23:58:58,627 INFO -> Fetching feed: https://krebsonsecurity.com/feed/
+2025-05-04 23:58:59,312 INFO -> 0 new articles with IOCs from https://krebsonsecurity.com/feed/
+2025-05-04 23:58:59,312 INFO -> Fetching feed: https://www.bleepingcomputer.com/feed/
+2025-05-04 23:59:02,033 INFO -> 2 new articles with IOCs from https://www.bleepingcomputer.com/feed/
+2025-05-04 23:59:02,033 INFO -> Fetching feed: https://www.cisa.gov/news.xml
+2025-05-04 23:59:02,289 INFO -> 0 new articles with IOCs from https://www.cisa.gov/news.xml
+2025-05-04 23:59:02,290 INFO -> Fetching feed: https://www.darkreading.com/rss.xml
+2025-05-04 23:59:02,884 INFO -> 0 new articles with IOCs from https://www.darkreading.com/rss.xml
+2025-05-04 23:59:02,884 INFO -> Fetching feed: http://isc.sans.edu/rssfeed.xml
+2025-05-04 23:59:03,751 INFO -> 0 new articles with IOCs from http://isc.sans.edu/rssfeed.xml
+2025-05-04 23:59:03,752 INFO -> Fetching feed: https://newsroom.trendmicro.com/media-coverage?pagetemplate=rss
+2025-05-04 23:59:04,552 INFO -> 0 new articles with IOCs from https://newsroom.trendmicro.com/media-coverage?pagetemplate=rss
+2025-05-04 23:59:04,553 INFO -> Fetching feed: https://feeds.feedburner.com/threatintelligence/pvexyqv7v0v
+2025-05-04 23:59:05,596 INFO -> 0 new articles with IOCs from https://feeds.feedburner.com/threatintelligence/pvexyqv7v0v
+2025-05-04 23:59:05,606 INFO Wrote 2 records to output.json
+2025-05-04 23:59:22,123 INFO -> Fetching feed: https://www.us-cert.gov/ncas/alerts.xml
+2025-05-04 23:59:23,424 INFO -> 0 new articles with IOCs from https://www.us-cert.gov/ncas/alerts.xml
+2025-05-04 23:59:23,425 INFO -> Fetching feed: https://www.cert.ssi.gouv.fr/feed/
+2025-05-04 23:59:23,497 INFO -> 0 new articles with IOCs from https://www.cert.ssi.gouv.fr/feed/
+2025-05-04 23:59:23,498 INFO -> Fetching feed: http://feeds.feedburner.com/TheHackersNews
+2025-05-04 23:59:24,545 INFO -> 0 new articles with IOCs from http://feeds.feedburner.com/TheHackersNews
+2025-05-04 23:59:24,546 INFO -> Fetching feed: https://krebsonsecurity.com/feed/
+2025-05-04 23:59:25,157 INFO -> 0 new articles with IOCs from https://krebsonsecurity.com/feed/
+2025-05-04 23:59:25,157 INFO -> Fetching feed: https://www.bleepingcomputer.com/feed/
+2025-05-04 23:59:28,222 INFO -> 0 new articles with IOCs from https://www.bleepingcomputer.com/feed/
+2025-05-04 23:59:28,223 INFO -> Fetching feed: https://www.cisa.gov/news.xml
+2025-05-04 23:59:28,635 INFO -> 0 new articles with IOCs from https://www.cisa.gov/news.xml
+2025-05-04 23:59:28,636 INFO -> Fetching feed: https://www.darkreading.com/rss.xml
+2025-05-04 23:59:29,238 INFO -> 0 new articles with IOCs from https://www.darkreading.com/rss.xml
+2025-05-04 23:59:29,239 INFO -> Fetching feed: http://isc.sans.edu/rssfeed.xml
+2025-05-04 23:59:31,457 INFO -> 1 new articles with IOCs from http://isc.sans.edu/rssfeed.xml
+2025-05-04 23:59:31,457 INFO -> Fetching feed: https://newsroom.trendmicro.com/media-coverage?pagetemplate=rss
+2025-05-04 23:59:31,728 INFO -> 0 new articles with IOCs from https://newsroom.trendmicro.com/media-coverage?pagetemplate=rss
+2025-05-04 23:59:31,728 INFO -> Fetching feed: https://feeds.feedburner.com/threatintelligence/pvexyqv7v0v
+2025-05-04 23:59:32,711 INFO -> 0 new articles with IOCs from https://feeds.feedburner.com/threatintelligence/pvexyqv7v0v
+2025-05-04 23:59:32,727 INFO Wrote 1 records to output.json
+2025-05-04 23:59:59,179 INFO -> Fetching feed: https://www.us-cert.gov/ncas/alerts.xml
+2025-05-05 00:00:00,650 INFO -> 0 new articles with IOCs from https://www.us-cert.gov/ncas/alerts.xml
+2025-05-05 00:00:00,651 INFO -> Fetching feed: https://www.cert.ssi.gouv.fr/feed/
+2025-05-05 00:00:00,719 INFO -> 0 new articles with IOCs from https://www.cert.ssi.gouv.fr/feed/
+2025-05-05 00:00:00,720 INFO -> Fetching feed: http://feeds.feedburner.com/TheHackersNews
+2025-05-05 00:00:01,615 INFO -> 0 new articles with IOCs from http://feeds.feedburner.com/TheHackersNews
+2025-05-05 00:00:01,616 INFO -> Fetching feed: https://krebsonsecurity.com/feed/
+2025-05-05 00:00:02,277 INFO -> 0 new articles with IOCs from https://krebsonsecurity.com/feed/
+2025-05-05 00:00:02,277 INFO -> Fetching feed: https://www.bleepingcomputer.com/feed/
+2025-05-05 00:00:06,725 INFO -> 2 new articles with IOCs from https://www.bleepingcomputer.com/feed/
+2025-05-05 00:00:06,726 INFO -> Fetching feed: https://www.cisa.gov/news.xml
+2025-05-05 00:00:07,006 INFO -> 0 new articles with IOCs from https://www.cisa.gov/news.xml
+2025-05-05 00:00:07,007 INFO -> Fetching feed: https://www.darkreading.com/rss.xml
+2025-05-05 00:00:07,745 INFO -> 0 new articles with IOCs from https://www.darkreading.com/rss.xml
+2025-05-05 00:00:07,746 INFO -> Fetching feed: http://isc.sans.edu/rssfeed.xml
+2025-05-05 00:00:09,695 INFO -> 1 new articles with IOCs from http://isc.sans.edu/rssfeed.xml
+2025-05-05 00:00:09,696 INFO -> Fetching feed: https://newsroom.trendmicro.com/media-coverage?pagetemplate=rss
+2025-05-05 00:00:10,553 INFO -> 0 new articles with IOCs from https://newsroom.trendmicro.com/media-coverage?pagetemplate=rss
+2025-05-05 00:00:10,554 INFO -> Fetching feed: https://feeds.feedburner.com/threatintelligence/pvexyqv7v0v
+2025-05-05 00:00:11,711 INFO -> 0 new articles with IOCs from https://feeds.feedburner.com/threatintelligence/pvexyqv7v0v
+2025-05-05 00:00:11,723 INFO Wrote 3 records to output.json
+2025-05-05 00:00:54,045 INFO -> Fetching feed: https://www.us-cert.gov/ncas/alerts.xml
+2025-05-05 00:00:55,653 INFO -> 0 new articles with IOCs from https://www.us-cert.gov/ncas/alerts.xml
+2025-05-05 00:00:55,654 INFO -> Fetching feed: https://www.cert.ssi.gouv.fr/feed/
+2025-05-05 00:00:55,720 INFO -> 0 new articles with IOCs from https://www.cert.ssi.gouv.fr/feed/
+2025-05-05 00:00:55,720 INFO -> Fetching feed: http://feeds.feedburner.com/TheHackersNews
+2025-05-05 00:01:06,151 INFO -> 0 new articles with IOCs from http://feeds.feedburner.com/TheHackersNews
+2025-05-05 00:01:06,152 INFO -> Fetching feed: https://krebsonsecurity.com/feed/
+2025-05-05 00:01:07,712 INFO -> 5 new articles with IOCs from https://krebsonsecurity.com/feed/
+2025-05-05 00:01:07,713 INFO -> Fetching feed: https://www.bleepingcomputer.com/feed/
+2025-05-05 00:01:15,533 INFO -> 5 new articles with IOCs from https://www.bleepingcomputer.com/feed/
+2025-05-05 00:01:15,534 INFO -> Fetching feed: https://www.cisa.gov/news.xml
+2025-05-05 00:01:26,070 WARNING Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='www.cisa.gov', port=443): Read timed out. (read timeout=10)")': /news-events/news/statement-matt-hartman-cve-program
+2025-05-05 00:01:38,300 WARNING Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='www.cisa.gov', port=443): Read timed out. (read timeout=10)")': /news-events/news/statement-matt-hartman-cve-program
+2025-05-05 00:01:52,541 WARNING Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='www.cisa.gov', port=443): Read timed out. (read timeout=10)")': /news-events/news/statement-matt-hartman-cve-program
+2025-05-05 00:02:02,728 ERROR Error fetching https://www.cisa.gov/news-events/news/statement-matt-hartman-cve-program: HTTPSConnectionPool(host='www.cisa.gov', port=443): Max retries exceeded with url: /news-events/news/statement-matt-hartman-cve-program (Caused by ReadTimeoutError("HTTPSConnectionPool(host='www.cisa.gov', port=443): Read timed out. (read timeout=10)"))
+2025-05-05 00:02:13,021 WARNING Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='www.cisa.gov', port=443): Read timed out. (read timeout=10)")': /news-events/news/cisa-dhs-st-inl-lsu-help-energy-industry-partners-strengthen-incident-response-and-ot-cybersecurity
+2025-05-05 00:02:25,232 WARNING Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='www.cisa.gov', port=443): Read timed out. (read timeout=10)")': /news-events/news/cisa-dhs-st-inl-lsu-help-energy-industry-partners-strengthen-incident-response-and-ot-cybersecurity
+2025-05-05 00:02:39,477 WARNING Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='www.cisa.gov', port=443): Read timed out. (read timeout=10)")': /news-events/news/cisa-dhs-st-inl-lsu-help-energy-industry-partners-strengthen-incident-response-and-ot-cybersecurity
+2025-05-05 00:02:49,700 ERROR Error fetching https://www.cisa.gov/news-events/news/cisa-dhs-st-inl-lsu-help-energy-industry-partners-strengthen-incident-response-and-ot-cybersecurity: HTTPSConnectionPool(host='www.cisa.gov', port=443): Max retries exceeded with url: /news-events/news/cisa-dhs-st-inl-lsu-help-energy-industry-partners-strengthen-incident-response-and-ot-cybersecurity (Caused by ReadTimeoutError("HTTPSConnectionPool(host='www.cisa.gov', port=443): Read timed out. (read timeout=10)"))
+2025-05-05 00:02:59,928 WARNING Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='www.cisa.gov', port=443): Read timed out. (read timeout=10)")': /news-events/news/cisa-statement-cve-program
+2025-05-05 00:03:12,098 WARNING Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='www.cisa.gov', port=443): Read timed out. (read timeout=10)")': /news-events/news/cisa-statement-cve-program
+2025-05-05 00:03:26,312 WARNING Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='www.cisa.gov', port=443): Read timed out. (read timeout=10)")': /news-events/news/cisa-statement-cve-program
+2025-05-05 00:03:36,544 ERROR Error fetching https://www.cisa.gov/news-events/news/cisa-statement-cve-program: HTTPSConnectionPool(host='www.cisa.gov', port=443): Max retries exceeded with url: /news-events/news/cisa-statement-cve-program (Caused by ReadTimeoutError("HTTPSConnectionPool(host='www.cisa.gov', port=443): Read timed out. (read timeout=10)"))
+2025-05-05 00:03:36,546 INFO -> 0 new articles with IOCs from https://www.cisa.gov/news.xml
+2025-05-05 00:03:36,546 INFO -> Fetching feed: https://www.darkreading.com/rss.xml
+2025-05-05 00:03:40,523 INFO -> 1 new articles with IOCs from https://www.darkreading.com/rss.xml
+2025-05-05 00:03:40,524 INFO -> Fetching feed: http://isc.sans.edu/rssfeed.xml
+2025-05-05 00:03:47,626 INFO -> 10 new articles with IOCs from http://isc.sans.edu/rssfeed.xml
+2025-05-05 00:03:47,627 INFO -> Fetching feed: https://newsroom.trendmicro.com/media-coverage?pagetemplate=rss
+2025-05-05 00:03:48,685 INFO -> 1 new articles with IOCs from https://newsroom.trendmicro.com/media-coverage?pagetemplate=rss
+2025-05-05 00:03:48,685 INFO -> Fetching feed: https://feeds.feedburner.com/threatintelligence/pvexyqv7v0v
+2025-05-05 00:03:51,603 INFO -> 2 new articles with IOCs from https://feeds.feedburner.com/threatintelligence/pvexyqv7v0v
+2025-05-05 00:03:51,619 INFO Wrote 24 records to output.json
