@@ -34,25 +34,21 @@ jobs:
         python utils/misp_push.py output.json misp_feed/events/rss-feed.json
 
     - name: Commit and push updated feed
+      env:
+        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
         git config user.name "github-actions[bot]"
         git config user.email "github-actions[bot]@users.noreply.github.com"
 
-        # Stage changes (if any)
-        git add .
+        # Only stage the relevant feed file
+        git add misp_feed/events/rss-feed.json
 
-        # Commit any changes with a simplified message
-        git commit -m "Automated update of MISP feed with new IOCs" || echo "No changes to commit"
+        # Commit if there are actual changes
+        git diff --cached --quiet || git commit -m "RSS to MISP Feed: Update IOCs"
 
-        # Pull the latest changes with rebase
+        # Pull with rebase in case of remote changes
         git pull --rebase
 
-        # Now commit the MISP feed change with a simplified message
-        git add misp_feed/events/rss-feed.json
-        git commit -m "RSS to MISP Feed: Update IOCs" || echo "No changes to commit"
-
-        # Set up authentication using GitHub token
-        git remote set-url origin https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/0xAtef/RSS-to-IOCs-Correlation.git
-
-        # Push the changes
+        # Push using GitHub token for authentication
+        git remote set-url origin https://x-access-token:${GH_TOKEN}@github.com/${{ github.repository }}.git
         git push
