@@ -40,15 +40,22 @@ jobs:
         git config user.name "github-actions[bot]"
         git config user.email "github-actions[bot]@users.noreply.github.com"
 
-        # Only stage the relevant feed file
+        # Clean working directory by stashing unintended local changes (e.g., .pyc)
+        git stash --include-untracked
+
+        # Pull remote changes safely
+        git pull --rebase
+
+        # Restore stashed changes
+        git stash pop || true
+
+        # Only stage the intended file
         git add misp_feed/events/rss-feed.json
 
         # Commit if there are actual changes
-        git diff --cached --quiet || git commit -m "RSS to MISP Feed: Update IOCs"
+        git diff --cached --quiet || git commit -m "Update MISP feed: new IOCs from RSS collector"
 
-        # Pull with rebase in case of remote changes
-        git pull --rebase
-
-        # Push using GitHub token for authentication
+        # Push with authentication
         git remote set-url origin https://x-access-token:${GH_TOKEN}@github.com/${{ github.repository }}.git
         git push
+
