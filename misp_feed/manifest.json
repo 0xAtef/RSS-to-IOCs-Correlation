@@ -21,6 +21,10 @@
       "url": "https://raw.githubusercontent.com/0xAtef/RSS-to-IOCs-Correlation/main/misp_feed/events/16eca246-59b1-4d0b-813f-12ed6a3a98dc/manifest.json"
     },
     {
+      "uuid": "bacaee5e-1d0e-4ed1-a3a6-13a90d13ee6b",
+      "url": "https://raw.githubusercontent.com/0xAtef/RSS-to-IOCs-Correlation/main/misp_feed/events/bacaee5e-1d0e-4ed1-a3a6-13a90d13ee6b/manifest.json"
+    },
+    {
       "uuid": "86fc823c-2197-49f2-a685-b6ab161f2353",
       "url": "https://raw.githubusercontent.com/0xAtef/RSS-to-IOCs-Correlation/main/misp_feed/events/86fc823c-2197-49f2-a685-b6ab161f2353/manifest.json"
     }

@@ -1,13 +1,13 @@
 [
   {
-    "id": "67f86a88-d23f-4e39-b1ab-eddca3ae99e5",
+    "id": "32c3ffeb-ceda-4034-8a09-2a166093d882",
     "title": "How to Prevent AI Agents From Becoming the Bad Guys",
     "source": "https://www.darkreading.com/vulnerabilities-threats/prevent-ai-agents-becoming-bad-guys",
     "published": "2025-05-05T14:00:00",
     "feed": "https://www.darkreading.com/rss.xml",
     "iocs": {
       "ips": [
-        "52.234.44.59"
+        "52.234.42.181"
       ],
       "domains": [],
       "urls": [],
@@ -26,149 +26,6 @@
       "malware": [],
       "mitre_techniques": [],
       "cves": []
-    }
-  },
-  {
-    "id": "b6534f3c-432b-4927-ba94-f1020046790e",
-    "title": "UK shares security tips after major retail cyberattacks",
-    "source": "https://www.bleepingcomputer.com/news/security/uk-shares-security-tips-after-major-retail-cyberattacks/",
-    "published": "2025-05-05T15:19:18",
-    "feed": "https://www.bleepingcomputer.com/feed/",
-    "iocs": {
-      "ips": [],
-      "domains": [
-        "more.https",
-        "DoublePulsar.com",
-        "en.wikipedia.org"
-      ],
-      "urls": [
-        "https://en.wikipedia.org/wiki/Lapsus$"
-      ],
-      "filenames": [],
-      "emails": [],
-      "sha1": [],
-      "md5": [],
-      "sha256": [],
-      "cves": []
-    },
-    "tags": [
-      "fraud",
-      "exploit",
-      "RSS to IOC Collector",
-      "credential",
-      "phishing",
-      "malware"
-    ],
-    "context": {
-      "actors": [
-        "Octo Tempest",
-        "Scattered Spider"
-      ],
-      "malware": [
-        "Kevin"
-      ],
-      "mitre_techniques": [],
-      "cves": []
-    }
-  },
-  {
-    "id": "209727b9-2bb6-47f6-aa80-6108d4936036",
-    "title": "Wormable AirPlay Flaws Enable Zero-Click RCE on Apple Devices via Public Wi-Fi",
-    "source": "https://thehackernews.com/2025/05/wormable-airplay-flaws-enable-zero.html",
-    "published": "2025-05-05T17:06:00",
-    "feed": "http://feeds.feedburner.com/TheHackersNews",
-    "iocs": {
-      "ips": [
-        "3.6.0.126"
-      ],
-      "domains": [],
-      "urls": [],
-      "filenames": [],
-      "emails": [],
-      "sha1": [],
-      "md5": [],
-      "sha256": [],
-      "cves": [
-        "CVE-2025-24270",
-        "CVE-2025-31203",
-        "CVE-2025-30422",
-        "CVE-2025-24137",
-        "CVE-2025-30445",
-        "CVE-2025-31197",
-        "CVE-2025-24271",
-        "CVE-2025-24251",
-        "CVE-2025-24206"
-      ]
-    },
-    "tags": [
-      "fraud",
-      "ddos",
-      "exploit",
-      "RSS to IOC Collector",
-      "phishing",
-      "malware"
-    ],
-    "context": {
-      "actors": [],
-      "malware": [],
-      "mitre_techniques": [],
-      "cves": [
-        "CVE-2025-24132",
-        "CVE-2025-24137",
-        "CVE-2025-24206",
-        "CVE-2025-24251",
-        "CVE-2025-24252",
-        "CVE-2025-24270",
-        "CVE-2025-24271",
-        "CVE-2025-30422",
-        "CVE-2025-30445",
-        "CVE-2025-31197",
-        "CVE-2025-31203"
-      ]
-    }
-  },
-  {
-    "id": "ed5ed0d2-38d5-45a6-9b05-115f2d397608",
-    "title": "Critical Vulnerability in OpenCTI (CVE-2025-24977) Allows Infrastructure Takeover via Webhook Abuse",
-    "source": "https://darkwebinformer.com/critical-vulnerability-in-opencti-cve-2025-24977-allows-infrastructure-takeover-via-webhook-abuse/",
-    "published": "2025-05-05T17:46:36",
-    "feed": "https://darkwebinformer.com/rss/",
-    "iocs": {
-      "ips": [],
-      "domains": [
-        "6.4.11.Environments",
-        "individuals.Audit",
-        "immediately.Review"
-      ],
-      "urls": [],
-      "filenames": [],
-      "emails": [],
-      "sha1": [],
-      "md5": [],
-      "sha256": [],
-      "cves": [
-        "CVE-2025-46661",
-        "CVE-2025-2492",
-        "CVE-2025-24977"
-      ]
-    },
-    "tags": [
-      "injection",
-      "exploit",
-      "RSS to IOC Collector",
-      "fraud",
-      "malware"
-    ],
-    "context": {
-      "actors": [],
-      "malware": [],
-      "mitre_techniques": [],
-      "cves": [
-        "CVE-2025-2492",
-        "CVE-2025-24977",
-        "CVE-2025-31324",
-        "CVE-2025-46661"
-      ]
     }
   }
 ]
