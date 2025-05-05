@@ -47,9 +47,10 @@ jobs:
         # Pull the latest changes with rebase
         git pull --rebase
 
-        # Now commit the MISP feed change
+        # Now commit the MISP feed change with the correct date format
+        COMMIT_MSG="Update MISP feed: $(date -u +'%Y-%m-%dT%H:%M:%SZ')"
         git add misp_feed/events/rss-feed.json
-        git commit -m "Update MISP feed: $(date -u +'%Y-%m-%dT%H:%M:%SZ')" || echo "No changes to commit"
+        git commit -m "$COMMIT_MSG" || echo "No changes to commit"
 
         # Set up authentication using GitHub token
         git remote set-url origin https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/0xAtef/RSS-to-IOCs-Correlation.git
