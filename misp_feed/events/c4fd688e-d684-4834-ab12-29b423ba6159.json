@@ -1,0 +1,51 @@
+{
+  "id": "c4fd688e-d684-4834-ab12-29b423ba6159",
+  "title": "Hello 0-Days, My Old Friend: A 2024 Zero-Day Exploitation Analysis",
+  "source": "https://cloud.google.com/blog/topics/threat-intelligence/2024-zero-day-trends/",
+  "published": "2025-04-29T05:00:00",
+  "feed": "https://feeds.feedburner.com/threatintelligence/pvexyqv7v0v",
+  "iocs": {
+    "ips": [],
+    "domains": [],
+    "urls": [
+      "https://online.da.mfa.gov[.]ua/wp-content/plugins/contact-form-7/includes/js/index.js?ver=5.4."
+    ],
+    "filenames": [],
+    "emails": [],
+    "sha1": [],
+    "md5": [],
+    "sha256": [],
+    "cves": []
+  },
+  "tags": [
+    "RSS to IOC Collector",
+    "credential",
+    "exploit",
+    "payload",
+    "injection",
+    "malware",
+    "c2"
+  ],
+  "context": {
+    "actors": [],
+    "malware": [],
+    "mitre_techniques": [],
+    "cves": [
+      "CVE-2023-36884",
+      "CVE-2023-46805",
+      "CVE-2024-21338",
+      "CVE-2024-21887",
+      "CVE-2024-29745",
+      "CVE-2024-29748",
+      "CVE-2024-32896",
+      "CVE-2024-38178",
+      "CVE-2024-44308",
+      "CVE-2024-44309",
+      "CVE-2024-49039",
+      "CVE-2024-53104",
+      "CVE-2024-55956",
+      "CVE-2024-9680",
+      "CVE-2025-22457"
+    ]
+  }
+}

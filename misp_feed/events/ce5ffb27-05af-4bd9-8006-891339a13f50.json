@@ -1,0 +1,39 @@
+{
+  "id": "ce5ffb27-05af-4bd9-8006-891339a13f50",
+  "title": "Bulletin d'actualit\u00e9 CERTFR-2025-ACT-018 (28 avril 2025)",
+  "source": "https://www.cert.ssi.gouv.fr/actualite/CERTFR-2025-ACT-018/",
+  "published": "2025-04-28T00:00:00",
+  "feed": "https://www.cert.ssi.gouv.fr/feed/",
+  "iocs": {
+    "ips": [],
+    "domains": [],
+    "urls": [
+      "https://moodle.org/mod/forum/discuss.php?d=467592"
+    ],
+    "filenames": [],
+    "emails": [],
+    "sha1": [],
+    "md5": [],
+    "sha256": [],
+    "cves": []
+  },
+  "tags": [
+    "exploit",
+    "RSS to IOC Collector"
+  ],
+  "context": {
+    "actors": [],
+    "malware": [],
+    "mitre_techniques": [],
+    "cves": [
+      "CVE-2024-40446",
+      "CVE-2024-6235",
+      "CVE-2025-22234",
+      "CVE-2025-22871",
+      "CVE-2025-31324",
+      "CVE-2025-32432",
+      "CVE-2025-32969",
+      "cve-2025-22234"
+    ]
+  }
+}

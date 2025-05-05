@@ -1,0 +1,46 @@
+{
+  "id": "65a455d6-3114-4c86-8eb2-f51ad4afe812",
+  "title": "Bulletin d'actualit\u00e9 CERTFR-2025-ACT-016 (22 avril 2025)",
+  "source": "https://www.cert.ssi.gouv.fr/actualite/CERTFR-2025-ACT-016/",
+  "published": "2025-04-22T00:00:00",
+  "feed": "https://www.cert.ssi.gouv.fr/feed/",
+  "iocs": {
+    "ips": [],
+    "domains": [],
+    "urls": [
+      "https://moodle.org/mod/forum/discuss.php?d=466145"
+    ],
+    "filenames": [],
+    "emails": [],
+    "sha1": [],
+    "md5": [],
+    "sha256": [],
+    "cves": []
+  },
+  "tags": [
+    "injection",
+    "RSS to IOC Collector",
+    "exploit",
+    "credential"
+  ],
+  "context": {
+    "actors": [],
+    "malware": [],
+    "mitre_techniques": [],
+    "cves": [
+      "CVE-2021-20035",
+      "CVE-2023-45133",
+      "CVE-2024-21534",
+      "CVE-2024-40896",
+      "CVE-2024-42461",
+      "CVE-2024-45337",
+      "CVE-2025-0665",
+      "CVE-2025-21613",
+      "CVE-2025-24054",
+      "CVE-2025-26529",
+      "CVE-2025-31200",
+      "CVE-2025-31201",
+      "CVE-2025-32433"
+    ]
+  }
+}
