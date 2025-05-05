@@ -40,6 +40,12 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           
+          # Stage all changes (including modified files)
+          git add -A
+          
+          # Commit all staged changes
+          git diff-index --quiet HEAD || git commit -m "Update IOC files and add new events"
+      
           # Find new event folders (with uuid)
           new_event_folders=$(find misp_feed/events/ -type f -name "event.json")
           
@@ -60,9 +66,6 @@ jobs:
           # Commit changes if any
           git diff-index --quiet HEAD || git commit -m "Add new event and manifest files"
       
-          # Ensure no unstaged changes exist before pulling with rebase
-          git diff --exit-code || git commit -m "Staging changes before pull" # Commit any remaining unstaged changes
-      
           # Pull with rebase to ensure no conflicts
           git pull --rebase origin $(git rev-parse --abbrev-ref HEAD)
       
@@ -74,6 +77,4 @@ jobs:
       env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_REPOSITORY: ${{ github.repository }}
-                
-      
       
