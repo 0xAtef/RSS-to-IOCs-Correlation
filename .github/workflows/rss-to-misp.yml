@@ -33,7 +33,7 @@ jobs:
     
     - name: Convert to MISP Feed
       run: |
-        python utils/misp_push.py output.json misp_feed/events/rss-feed.json
+        python utils/misp_push.py output.json misp_feed/events/
 
     - name: Commit and push updated feed
       run: |

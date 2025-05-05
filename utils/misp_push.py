@@ -1,34 +1,46 @@
 import json
 import os
-import hashlib
+import sys
 from datetime import datetime
+import uuid
 
-def generate_misp_event(record):
-    event = {
-        "uuid": record["id"],
-        "info": record["title"],
-        "published": True,
-        "date": record["published"][:10] if record["published"] else datetime.utcnow().strftime("%Y-%m-%d"),
-        "Attribute": [],
-        "Tag": [{"name": tag} for tag in record.get("tags", [])]
+def generate_manifest(event_uuid: str, timestamp: int) -> dict:
+    return {
+        "Event": {
+            "uuid": event_uuid,
+            "timestamp": timestamp
+        }
     }
 
-    for ioc_type, iocs in record["iocs"].items():
-        for ioc in iocs:
-            event["Attribute"].append({
-                "type": ioc_type.rstrip("s"),  # crude mapping
-                "category": "Network activity",
-                "value": ioc,
-                "to_ids": True
-            })
+def main(input_file: str, output_base_dir: str):
+    with open(input_file, 'r') as f:
+        event_data = json.load(f)
 
-    return event
+    # Ensure base output directory exists
+    os.makedirs(output_base_dir, exist_ok=True)
 
-def write_misp_feed(records, output_path):
-    if not records:
-        return
-    misp_feed = [generate_misp_event(r) for r in records]
-    os.makedirs(os.path.dirname(output_path), exist_ok=True)
-    with open(output_path, "w", encoding="utf-8") as f:
-        json.dump(misp_feed, f, indent=2, ensure_ascii=False)
-    print(f"Wrote {len(misp_feed)} MISP events to {output_path}")
+    # Use UUID or timestamp for folder name
+    event_uuid = event_data.get('uuid') or str(uuid.uuid4())
+    timestamp = int(datetime.utcnow().timestamp())
+    event_dir = os.path.join(output_base_dir, event_uuid)
+    os.makedirs(event_dir, exist_ok=True)
+
+    # Save event.json
+    event_path = os.path.join(event_dir, "event.json")
+    with open(event_path, 'w') as f:
+        json.dump(event_data, f, indent=2)
+
+    # Save manifest.json
+    manifest_data = generate_manifest(event_uuid, timestamp)
+    manifest_path = os.path.join(event_dir, "manifest.json")
+    with open(manifest_path, 'w') as f:
+        json.dump(manifest_data, f, indent=2)
+
+    print(f"Saved event to {event_path}")
+    print(f"Saved manifest to {manifest_path}")
+
+if __name__ == "__main__":
+    if len(sys.argv) != 3:
+        print("Usage: python misp_push.py <input_json> <output_base_dir>")
+        sys.exit(1)
+    main(sys.argv[1], sys.argv[2])
