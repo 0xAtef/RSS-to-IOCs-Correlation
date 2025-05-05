@@ -23,22 +23,28 @@ from utils.enrichment import enrich_with_ner
 with open("config.json", "r", encoding="utf-8") as cfg_file:
     cfg = json.load(cfg_file)
 
-FEED_URLS        = cfg.get("feed_urls", [])
-MAX_DAYS_OLD     = cfg.get("max_days_old", 20)
-OUTPUT_BASE_DIR  = cfg.get("output_base_dir", ".")       # e.g. "misp_feed"
-SEEN_IOCS_PATH   = cfg.get("seen_iocs_path", "seen_iocs.json")
-MAX_WORKERS      = cfg.get("max_workers", 5)
-IOC_PATTERNS     = cfg.get("ioc_patterns", {})
+# Required config values
+GITHUB_REPO    = cfg.get("github_repo")  # e.g. "0xAtef/RSS-to-IOCs-Correlation"
+GITHUB_BRANCH  = cfg.get("github_branch", "main")
+ORG_NAME       = cfg.get("org_name")
+ORG_UUID       = cfg.get("org_uuid")
+if not GITHUB_REPO or not ORG_NAME or not ORG_UUID:
+    logging.error("config.json must include 'github_repo', 'org_name', and 'org_uuid'.")
+    sys.exit(1)
+
+FEED_URLS      = cfg.get("feed_urls", [])
+MAX_DAYS_OLD   = cfg.get("max_days_old", 20)
+OUTPUT_BASE_DIR= cfg.get("output_base_dir", "misp_feed")
+SEEN_IOCS_PATH = cfg.get("seen_iocs_path", "seen_iocs.json")
+MAX_WORKERS    = cfg.get("max_workers", 5)
+IOC_PATTERNS   = cfg.get("ioc_patterns", {})
 IOC_CONTEXT_KEYWORDS = cfg.get("ioc_context_keywords", {})
-FEED_TAGS        = cfg.get("feed_tags_by_feed", {})
+FEED_TAGS      = cfg.get("feed_tags_by_feed", {})
 WHITELIST_BY_FEED= cfg.get("whitelist_by_feed", {})
-ORG_NAME         = cfg.get("org_name", "RSS to IOC Collector")
-ORG_UUID         = cfg.get("org_uuid", "")
 
 # Paths
-EVENTS_DIR       = os.path.join(OUTPUT_BASE_DIR, "events")
-EVENT_MANIFEST   = os.path.join(EVENTS_DIR, "manifest.json")
-ROOT_MANIFEST    = os.path.join(OUTPUT_BASE_DIR, "manifest.json")
+EVENTS_DIR     = os.path.join(OUTPUT_BASE_DIR, "events")
+ROOT_MANIFEST  = os.path.join(OUTPUT_BASE_DIR, "manifest.json")
 
 # ── Logging ────────────────────────────────────────────────────────────────────
 logging.basicConfig(
@@ -52,11 +58,9 @@ logging.basicConfig(
 
 # ── HTTP SESSION ───────────────────────────────────────────────────────────────
 session = requests.Session()
-retry  = Retry(
-    total           = cfg.get("http_retry_total", 3),
-    backoff_factor  = cfg.get("http_backoff_factor", 1),
-    status_forcelist= cfg.get("http_status_forcelist", [429,500,502,503,504])
-)
+retry = Retry(total=cfg.get("http_retry_total",3),
+              backoff_factor=cfg.get("http_backoff_factor",1),
+              status_forcelist=cfg.get("http_status_forcelist",[429,500,502,503,504]))
 session.mount("https://", HTTPAdapter(max_retries=retry))
 session.mount("http://", HTTPAdapter(max_retries=retry))
 
@@ -72,35 +76,11 @@ def save_seen_iocs(seen):
     with open(SEEN_IOCS_PATH, "w", encoding="utf-8") as f:
         json.dump(sorted(seen), f, indent=2)
 
-def load_event_manifest() -> dict:
-    if os.path.exists(EVENT_MANIFEST):
-        with open(EVENT_MANIFEST, "r", encoding="utf-8") as f:
-            return json.load(f)
-    return {}
-
-def save_event_manifest(manifest: dict):
-    os.makedirs(EVENTS_DIR, exist_ok=True)
-    with open(EVENT_MANIFEST, "w", encoding="utf-8") as f:
-        json.dump(manifest, f, indent=2)
-
-def rebuild_root_manifest():
-    entries = []
-    for fn in glob(os.path.join(EVENTS_DIR, "*.json")):
-        basename = os.path.basename(fn)
-        if basename == "manifest.json":
-            continue
-        uuid_key = basename.rsplit('.',1)[0]
-        url = f"https://raw.githubusercontent.com/{cfg.get('github_repo','USER/REPO')}/main/{OUTPUT_BASE_DIR}/events/{quote_plus(basename)}"
-        entries.append({"uuid": uuid_key, "url": url})
-    root = {"events": entries}
-    with open(ROOT_MANIFEST, "w", encoding="utf-8") as f:
-        json.dump(root, f, indent=2)
-
 # ── UTILITIES ─────────────────────────────────────────────────────────────────
-def strip_html(html: str) -> str:
+def strip_html(html):
     return BeautifulSoup(html, "html.parser").get_text()
 
-def parse_entry_date(e) -> datetime:
+def parse_entry_date(e):
     struct = e.get("published_parsed") or e.get("updated_parsed")
     if struct:
         return datetime(*struct[:6])
@@ -112,14 +92,14 @@ def parse_entry_date(e) -> datetime:
                 return datetime(*parsed[:6])
     return None
 
-def recent(e) -> bool:
+def recent(e):
     dt = parse_entry_date(e)
     return bool(dt and dt >= datetime.utcnow() - timedelta(days=MAX_DAYS_OLD))
 
-def extract_iocs(text: str) -> dict:
+def extract_iocs(text):
     return {t: list({m for m in re.findall(pat, text)}) for t, pat in IOC_PATTERNS.items()}
 
-def context_tags(text: str, feed_url: str) -> list:
+def context_tags(text, feed_url):
     tags = set(cfg.get("fixed_tags", []))
     lt = text.lower()
     for ctx, kws in IOC_CONTEXT_KEYWORDS.items():
@@ -129,14 +109,13 @@ def context_tags(text: str, feed_url: str) -> list:
     return list(tags)
 
 # ── PROCESSING ────────────────────────────────────────────────────────────────
-def process_feed(feed_url: str, seen: set) -> list:
+def process_feed(feed_url, seen):
     logging.info(f"→ Fetching: {feed_url}")
     feed = feedparser.parse(feed_url)
     new_records = []
     for e in feed.entries:
-        if not recent(e):
-            continue
-        link = e.get("link","")
+        if not recent(e): continue
+        link = e.get("link", "")
         try:
             resp = session.get(link, timeout=cfg.get("request_timeout",10), headers={"User-Agent": cfg.get("user_agent")})
             text = strip_html(resp.text)
@@ -154,49 +133,54 @@ def process_feed(feed_url: str, seen: set) -> list:
                 seen.add(norm)
                 keep.append(i)
             filtered[typ] = keep
-        if not any(filtered.values()):
-            continue
-        rec = {
-            "id":        str(uuid.uuid4()),
-            "title":     e.get("title",""),
-            "source":    link,
+        if not any(filtered.values()): continue
+        new_records.append({
+            "id": str(uuid.uuid4()),
+            "title": e.get("title", ""),
+            "source": link,
             "published": (parse_entry_date(e) or datetime.utcnow()).isoformat(),
-            "feed":      feed_url,
-            "iocs":      filtered,
-            "tags":      context_tags(text, feed_url),
-            "context":   enrich_with_ner(text)
-        }
-        new_records.append(rec)
+            "feed": feed_url,
+            "iocs": filtered,
+            "tags": context_tags(text, feed_url),
+            "context": enrich_with_ner(text)
+        })
     logging.info(f"→ Found {len(new_records)} new IOCs in {feed_url}")
     return new_records
 
-# ── WRITE OUT ──────────────────────────────────────────────────────────────────
-def write_event(uuid_str: str, rec: dict):
-    # Build MISP event envelope
-    event = {
-        "Event": {
-            "uuid": uuid_str,
-            "info": rec["title"],
-            "date": rec["published"].split("T")[0],
-            "analysis": cfg.get("misp_analysis", 0),
-            "threat_level_id": cfg.get("misp_threat_level_id", 4),
-            "timestamp": int(datetime.utcnow().timestamp()),
-            "Orgc": {"name": ORG_NAME, "uuid": ORG_UUID},
-            "Tag": [
-                {"name": t, "colour": cfg.get("misp_tag_colour","#004646"), "local": False, "relationship_type": ""}
-                for t in rec.get("tags", [])
-            ]
-        }
-    }
+# ── WRITE EVENTS & MANIFEST ───────────────────────────────────────────────────
+def write_event(uuid_str, rec):
+    # Build MISP-compliant event JSON
+    event = {"Event": {
+        "uuid": uuid_str,
+        "info": rec["title"],
+        "date": rec["published"].split('T')[0],
+        "analysis": cfg.get("misp_analysis", 0),
+        "threat_level_id": cfg.get("misp_threat_level_id", 4),
+        "timestamp": int(datetime.utcnow().timestamp()),
+        "Orgc": {"name": ORG_NAME, "uuid": ORG_UUID},
+        "Tag": [{"name": t, "colour": cfg.get("misp_tag_colour", "#004646"), "local": False, "relationship_type": ""} for t in rec.get("tags", [])]
+    }}
     os.makedirs(EVENTS_DIR, exist_ok=True)
+    # Write per-event JSON
     path = os.path.join(EVENTS_DIR, f"{uuid_str}.json")
     with open(path, "w", encoding="utf-8") as f:
         json.dump(event, f, indent=2)
-    # Update per-event manifest
-    manifest = load_event_manifest()
-    manifest[uuid_str] = {"url": path}
-    save_event_manifest(manifest)
 
+
+def rebuild_root_manifest():
+    entries = []
+    for fn in glob(os.path.join(EVENTS_DIR, "*.json")):
+        name = os.path.basename(fn)
+        if name.startswith("__") or name == "manifest.json":
+            continue
+        uid = name.rsplit('.', 1)[0]
+        url = f"https://raw.githubusercontent.com/{GITHUB_REPO}/{GITHUB_BRANCH}/{OUTPUT_BASE_DIR}/events/{quote_plus(name)}"
+        entries.append({"uuid": uid, "url": url})
+    # Write root manifest
+    with open(ROOT_MANIFEST, "w", encoding="utf-8") as f:
+        json.dump({"events": entries}, f, indent=2)
+
+# ── MAIN ──────────────────────────────────────────────────────────────────────
 def main():
     logging.info("IOC Collector START")
     seen = load_seen_iocs()
@@ -206,12 +190,12 @@ def main():
         for fut in as_completed(futures):
             all_recs.extend(fut.result())
     save_seen_iocs(seen)
-    logging.info(f"Persisted {len(seen)} seen IOCs")
+
+    # Write events and rebuild manifest
     for rec in all_recs:
         write_event(rec['id'], rec)
     rebuild_root_manifest()
-    logging.info(f"Wrote {len(all_recs)} events to {EVENTS_DIR} and rebuilt root manifest at {ROOT_MANIFEST}")
-    logging.info("IOC Collector DONE")
+    logging.info(f"Wrote {len(all_recs)} events and rebuilt manifest at {ROOT_MANIFEST}")
 
 if __name__ == "__main__":
     main()
