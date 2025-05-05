@@ -35,6 +35,12 @@ jobs:
         # 3) maintain events/manifest.json
         run: python rss_ioc_collector.py
 
+
+      - name: Read output directory from config.json
+        id: read-config
+        run: |
+          echo "OUTPUT=$(jq -r .output_base_dir config.json)" >> $GITHUB_ENV
+      
       - name: Commit & push feed
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -42,16 +48,16 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-
-          # stage only the feed directory
-          git add misp_feed/events
-
-          # commit if changes exist
+      
+          # Stage the feed directory and its manifest
+          git add "$OUTPUT" "$OUTPUT/manifest.json"
+      
+          # Commit if there are staged changes
           git diff --staged --quiet || git commit -m "Rebuild MISP feed"
-
-          # pull & rebase to avoid conflicts
-          git pull --rebase origin $(git rev-parse --abbrev-ref HEAD)
-
-          # push with token auth
+      
+          # Rebase any upstream commits
+          git pull --rebase origin "$(git rev-parse --abbrev-ref HEAD)"
+      
+          # Push via token
           git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
           git push origin main
