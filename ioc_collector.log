@@ -482,3 +482,78 @@
 2025-05-05 13:36:25,167 INFO -> 0 new records from https://www.cisa.gov/news.xml
 2025-05-05 13:36:25,201 INFO Wrote 22 total records to output.json
 2025-05-05 13:36:25,201 INFO IOC Collector finished.
+2025-05-05 15:08:39,612 INFO IOC Collector started.
+2025-05-05 15:08:39,613 INFO -> Processing feed: https://www.us-cert.gov/ncas/alerts.xml
+2025-05-05 15:08:39,614 INFO -> Processing feed: https://www.cert.ssi.gouv.fr/feed/
+2025-05-05 15:08:39,615 INFO -> Processing feed: http://feeds.feedburner.com/TheHackersNews
+2025-05-05 15:08:39,615 INFO -> Processing feed: https://krebsonsecurity.com/feed/
+2025-05-05 15:08:39,663 INFO -> Processing feed: https://www.bleepingcomputer.com/feed/
+2025-05-05 15:08:40,975 INFO -> 0 new records from https://www.us-cert.gov/ncas/alerts.xml
+2025-05-05 15:08:40,980 INFO -> Processing feed: https://www.cisa.gov/news.xml
+2025-05-05 15:08:41,368 INFO -> 0 new records from https://krebsonsecurity.com/feed/
+2025-05-05 15:08:41,368 INFO -> Processing feed: https://www.darkreading.com/rss.xml
+2025-05-05 15:08:45,231 INFO -> 1 new records from https://www.darkreading.com/rss.xml
+2025-05-05 15:08:45,232 INFO -> Processing feed: http://isc.sans.edu/rssfeed.xml
+2025-05-05 15:08:45,526 INFO -> 0 new records from http://feeds.feedburner.com/TheHackersNews
+2025-05-05 15:08:45,527 INFO -> Processing feed: https://newsroom.trendmicro.com/media-coverage?pagetemplate=rss
+2025-05-05 15:08:45,793 INFO -> 0 new records from https://www.cert.ssi.gouv.fr/feed/
+2025-05-05 15:08:45,798 INFO -> Processing feed: https://feeds.feedburner.com/threatintelligence/pvexyqv7v0v
+2025-05-05 15:08:45,999 INFO -> 0 new records from https://newsroom.trendmicro.com/media-coverage?pagetemplate=rss
+2025-05-05 15:08:45,999 INFO -> Processing feed: https://darkwebinformer.com/rss/
+2025-05-05 15:08:47,328 INFO -> 0 new records from https://feeds.feedburner.com/threatintelligence/pvexyqv7v0v
+2025-05-05 15:08:47,617 INFO -> 0 new records from https://darkwebinformer.com/rss/
+2025-05-05 15:08:49,900 ERROR Error fetching https://www.bleepingcomputer.com/news/security/tiktok-fined-530-million-for-sending-european-user-data-to-china/: HTTPSConnectionPool(host='www.bleepingcomputer.com', port=443): Max retries exceeded with url: /news/security/tiktok-fined-530-million-for-sending-european-user-data-to-china/ (Caused by ResponseError('too many 429 error responses'))
+2025-05-05 15:08:49,900 INFO -> 0 new records from https://www.bleepingcomputer.com/feed/
+2025-05-05 15:08:51,182 INFO -> 0 new records from http://isc.sans.edu/rssfeed.xml
+2025-05-05 15:08:51,204 WARNING Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='www.cisa.gov', port=443): Read timed out. (read timeout=10)")': /news-events/news/statement-matt-hartman-cve-program
+2025-05-05 15:09:03,255 WARNING Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='www.cisa.gov', port=443): Read timed out. (read timeout=10)")': /news-events/news/statement-matt-hartman-cve-program
+2025-05-05 15:09:17,358 WARNING Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='www.cisa.gov', port=443): Read timed out. (read timeout=10)")': /news-events/news/statement-matt-hartman-cve-program
+2025-05-05 15:09:27,403 ERROR Error fetching https://www.cisa.gov/news-events/news/statement-matt-hartman-cve-program: HTTPSConnectionPool(host='www.cisa.gov', port=443): Max retries exceeded with url: /news-events/news/statement-matt-hartman-cve-program (Caused by ReadTimeoutError("HTTPSConnectionPool(host='www.cisa.gov', port=443): Read timed out. (read timeout=10)"))
+2025-05-05 15:09:37,726 WARNING Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='www.cisa.gov', port=443): Read timed out. (read timeout=10)")': /news-events/news/cisa-dhs-st-inl-lsu-help-energy-industry-partners-strengthen-incident-response-and-ot-cybersecurity
+2025-05-05 15:09:49,767 WARNING Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='www.cisa.gov', port=443): Read timed out. (read timeout=10)")': /news-events/news/cisa-dhs-st-inl-lsu-help-energy-industry-partners-strengthen-incident-response-and-ot-cybersecurity
+2025-05-05 15:10:03,870 WARNING Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='www.cisa.gov', port=443): Read timed out. (read timeout=10)")': /news-events/news/cisa-dhs-st-inl-lsu-help-energy-industry-partners-strengthen-incident-response-and-ot-cybersecurity
+2025-05-05 15:10:13,918 ERROR Error fetching https://www.cisa.gov/news-events/news/cisa-dhs-st-inl-lsu-help-energy-industry-partners-strengthen-incident-response-and-ot-cybersecurity: HTTPSConnectionPool(host='www.cisa.gov', port=443): Max retries exceeded with url: /news-events/news/cisa-dhs-st-inl-lsu-help-energy-industry-partners-strengthen-incident-response-and-ot-cybersecurity (Caused by ReadTimeoutError("HTTPSConnectionPool(host='www.cisa.gov', port=443): Read timed out. (read timeout=10)"))
+2025-05-05 15:10:24,009 WARNING Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='www.cisa.gov', port=443): Read timed out. (read timeout=10)")': /news-events/news/cisa-statement-cve-program
+2025-05-05 15:10:36,060 WARNING Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='www.cisa.gov', port=443): Read timed out. (read timeout=10)")': /news-events/news/cisa-statement-cve-program
+2025-05-05 15:10:50,152 WARNING Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='www.cisa.gov', port=443): Read timed out. (read timeout=10)")': /news-events/news/cisa-statement-cve-program
+2025-05-05 15:11:00,202 ERROR Error fetching https://www.cisa.gov/news-events/news/cisa-statement-cve-program: HTTPSConnectionPool(host='www.cisa.gov', port=443): Max retries exceeded with url: /news-events/news/cisa-statement-cve-program (Caused by ReadTimeoutError("HTTPSConnectionPool(host='www.cisa.gov', port=443): Read timed out. (read timeout=10)"))
+2025-05-05 15:11:00,203 INFO -> 0 new records from https://www.cisa.gov/news.xml
+2025-05-05 15:11:00,206 INFO Wrote 1 total records to output.json
+2025-05-05 15:11:00,206 INFO IOC Collector finished.
+2025-05-05 15:23:36,998 INFO IOC Collector started.
+2025-05-05 15:23:36,999 INFO -> Processing feed: https://www.us-cert.gov/ncas/alerts.xml
+2025-05-05 15:23:37,001 INFO -> Processing feed: https://www.cert.ssi.gouv.fr/feed/
+2025-05-05 15:23:37,002 INFO -> Processing feed: http://feeds.feedburner.com/TheHackersNews
+2025-05-05 15:23:37,048 INFO -> Processing feed: https://krebsonsecurity.com/feed/
+2025-05-05 15:23:37,050 INFO -> Processing feed: https://www.bleepingcomputer.com/feed/
+2025-05-05 15:23:37,858 INFO -> 0 new records from https://www.us-cert.gov/ncas/alerts.xml
+2025-05-05 15:23:37,859 INFO -> Processing feed: https://www.cisa.gov/news.xml
+2025-05-05 15:23:39,628 INFO -> 0 new records from https://krebsonsecurity.com/feed/
+2025-05-05 15:23:39,628 INFO -> Processing feed: https://www.darkreading.com/rss.xml
+2025-05-05 15:23:42,064 INFO -> 0 new records from https://www.bleepingcomputer.com/feed/
+2025-05-05 15:23:42,064 INFO -> Processing feed: http://isc.sans.edu/rssfeed.xml
+2025-05-05 15:23:42,360 INFO -> 0 new records from http://feeds.feedburner.com/TheHackersNews
+2025-05-05 15:23:42,361 INFO -> Processing feed: https://newsroom.trendmicro.com/media-coverage?pagetemplate=rss
+2025-05-05 15:23:42,766 INFO -> 0 new records from https://newsroom.trendmicro.com/media-coverage?pagetemplate=rss
+2025-05-05 15:23:42,766 INFO -> Processing feed: https://feeds.feedburner.com/threatintelligence/pvexyqv7v0v
+2025-05-05 15:23:44,669 INFO -> 1 new records from https://www.darkreading.com/rss.xml
+2025-05-05 15:23:44,669 INFO -> Processing feed: https://darkwebinformer.com/rss/
+2025-05-05 15:23:44,715 INFO -> 0 new records from https://feeds.feedburner.com/threatintelligence/pvexyqv7v0v
+2025-05-05 15:23:46,833 INFO -> 0 new records from http://isc.sans.edu/rssfeed.xml
+2025-05-05 15:23:48,063 WARNING Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='www.cisa.gov', port=443): Read timed out. (read timeout=10)")': /news-events/news/statement-matt-hartman-cve-program
+2025-05-05 15:23:50,466 INFO -> 0 new records from https://darkwebinformer.com/rss/
+2025-05-05 15:23:51,892 INFO -> 1 new records from https://www.cert.ssi.gouv.fr/feed/
+2025-05-05 15:24:00,104 WARNING Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='www.cisa.gov', port=443): Read timed out. (read timeout=10)")': /news-events/news/statement-matt-hartman-cve-program
+2025-05-05 15:24:14,204 WARNING Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='www.cisa.gov', port=443): Read timed out. (read timeout=10)")': /news-events/news/statement-matt-hartman-cve-program
+2025-05-05 15:24:24,246 ERROR Error fetching https://www.cisa.gov/news-events/news/statement-matt-hartman-cve-program: HTTPSConnectionPool(host='www.cisa.gov', port=443): Max retries exceeded with url: /news-events/news/statement-matt-hartman-cve-program (Caused by ReadTimeoutError("HTTPSConnectionPool(host='www.cisa.gov', port=443): Read timed out. (read timeout=10)"))
+2025-05-05 15:24:34,303 WARNING Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='www.cisa.gov', port=443): Read timed out. (read timeout=10)")': /news-events/news/cisa-dhs-st-inl-lsu-help-energy-industry-partners-strengthen-incident-response-and-ot-cybersecurity
+2025-05-05 15:24:46,346 WARNING Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='www.cisa.gov', port=443): Read timed out. (read timeout=10)")': /news-events/news/cisa-dhs-st-inl-lsu-help-energy-industry-partners-strengthen-incident-response-and-ot-cybersecurity
+2025-05-05 15:25:00,386 WARNING Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='www.cisa.gov', port=443): Read timed out. (read timeout=10)")': /news-events/news/cisa-dhs-st-inl-lsu-help-energy-industry-partners-strengthen-incident-response-and-ot-cybersecurity
+2025-05-05 15:25:10,426 ERROR Error fetching https://www.cisa.gov/news-events/news/cisa-dhs-st-inl-lsu-help-energy-industry-partners-strengthen-incident-response-and-ot-cybersecurity: HTTPSConnectionPool(host='www.cisa.gov', port=443): Max retries exceeded with url: /news-events/news/cisa-dhs-st-inl-lsu-help-energy-industry-partners-strengthen-incident-response-and-ot-cybersecurity (Caused by ReadTimeoutError("HTTPSConnectionPool(host='www.cisa.gov', port=443): Read timed out. (read timeout=10)"))
+2025-05-05 15:25:20,470 WARNING Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='www.cisa.gov', port=443): Read timed out. (read timeout=10)")': /news-events/news/cisa-statement-cve-program
+2025-05-05 15:25:32,512 WARNING Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='www.cisa.gov', port=443): Read timed out. (read timeout=10)")': /news-events/news/cisa-statement-cve-program
+2025-05-05 15:25:46,576 WARNING Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='www.cisa.gov', port=443): Read timed out. (read timeout=10)")': /news-events/news/cisa-statement-cve-program
+2025-05-05 15:25:56,616 ERROR Error fetching https://www.cisa.gov/news-events/news/cisa-statement-cve-program: HTTPSConnectionPool(host='www.cisa.gov', port=443): Max retries exceeded with url: /news-events/news/cisa-statement-cve-program (Caused by ReadTimeoutError("HTTPSConnectionPool(host='www.cisa.gov', port=443): Read timed out. (read timeout=10)"))
+2025-05-05 15:25:56,617 INFO -> 0 new records from https://www.cisa.gov/news.xml
+2025-05-05 15:25:56,620 INFO Wrote 2 total records to output.json
+2025-05-05 15:25:56,620 INFO IOC Collector finished.
