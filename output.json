@@ -1,13 +1,13 @@
 [
   {
-    "id": "1674e0db-2ac4-4115-92eb-169d95ab1597",
+    "id": "e00ed0a9-7660-4974-9eb7-cdc9f32cd084",
     "title": "How to Prevent AI Agents From Becoming the Bad Guys",
     "source": "https://www.darkreading.com/vulnerabilities-threats/prevent-ai-agents-becoming-bad-guys",
     "published": "2025-05-05T14:00:00",
     "feed": "https://www.darkreading.com/rss.xml",
     "iocs": {
       "ips": [
-        "104.209.10.247"
+        "20.25.192.131"
       ],
       "domains": [],
       "urls": [],
@@ -29,81 +29,35 @@
     }
   },
   {
-    "id": "bd06aec5-1cf1-45aa-beef-d95f88f205b1",
-    "title": "Multiples vulnérabilités dans Moodle (22 avril 2025)",
-    "source": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0340/",
-    "published": "2025-04-22T00:00:00",
-    "feed": "https://www.cert.ssi.gouv.fr/feed/",
+    "id": "e1ea5a41-3240-4a9f-aea1-88eff2457d67",
+    "title": "Arabian Ghosts Defaced the Website of Massage Fitness Health Studio and Shop",
+    "source": "https://darkwebinformer.com/arabian-ghosts-defaced-the-website-of-massage-fitness-health-studio-and-shop/",
+    "published": "2025-05-05T15:31:10",
+    "feed": "https://darkwebinformer.com/rss/",
     "iocs": {
       "ips": [],
-      "domains": [],
-      "urls": [
-        "https://www.cve.org/CVERecord?id=CVE-2025-3636",
-        "https://www.cve.org/CVERecord?id=CVE-2025-3638",
-        "https://www.cve.org/CVERecord?id=CVE-2025-3647",
-        "https://www.cve.org/CVERecord?id=CVE-2025-3625",
-        "https://www.cve.org/CVERecord?id=CVE-2025-3644",
-        "https://www.cve.org/CVERecord?id=CVE-2025-3640",
-        "https://www.cve.org/CVERecord?id=CVE-2025-3637",
-        "https://www.cve.org/CVERecord?id=CVE-2025-3643",
-        "https://www.cve.org/CVERecord?id=CVE-2025-3635",
-        "https://www.cve.org/CVERecord?id=CVE-2025-3645",
-        "https://www.cve.org/CVERecord?id=CVE-2025-3641",
-        "https://www.cve.org/CVERecord?id=CVE-2025-3627",
-        "https://www.cve.org/CVERecord?id=CVE-2024-40446",
-        "https://www.cve.org/CVERecord?id=CVE-2025-3634",
-        "https://www.cve.org/CVERecord?id=CVE-2025-3642",
-        "https://www.cve.org/CVERecord?id=CVE-2025-3628"
+      "domains": [
+        "ynlp.co.il"
       ],
+      "urls": [],
       "filenames": [],
       "emails": [],
       "sha1": [],
       "md5": [],
       "sha256": [],
-      "cves": [
-        "CVE-2025-3637",
-        "CVE-2025-3640",
-        "CVE-2025-3625",
-        "CVE-2025-3628",
-        "CVE-2025-3627",
-        "CVE-2025-3641",
-        "CVE-2025-3647",
-        "CVE-2025-3645",
-        "CVE-2025-3634",
-        "CVE-2025-3642",
-        "CVE-2025-3635",
-        "CVE-2025-3644",
-        "CVE-2025-3636",
-        "CVE-2025-3643",
-        "CVE-2025-3638"
-      ]
+      "cves": []
     },
     "tags": [
+      "malware",
+      "fraud",
       "RSS to IOC Collector",
-      "injection"
+      "ddos"
     ],
     "context": {
       "actors": [],
       "malware": [],
       "mitre_techniques": [],
-      "cves": [
-        "CVE-2024-40446",
-        "CVE-2025-3625",
-        "CVE-2025-3627",
-        "CVE-2025-3628",
-        "CVE-2025-3634",
-        "CVE-2025-3635",
-        "CVE-2025-3636",
-        "CVE-2025-3637",
-        "CVE-2025-3638",
-        "CVE-2025-3640",
-        "CVE-2025-3641",
-        "CVE-2025-3642",
-        "CVE-2025-3643",
-        "CVE-2025-3644",
-        "CVE-2025-3645",
-        "CVE-2025-3647"
-      ]
+      "cves": []
     }
   }
 ]
