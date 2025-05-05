@@ -37,7 +37,19 @@ jobs:
       run: |
         git config user.name "github-actions[bot]"
         git config user.email "github-actions[bot]@users.noreply.github.com"
+
+        # Stage changes (if any)
+        git add .
+
+        # Commit any changes with a default message if needed
+        git commit -m "Temporary commit before pulling updates" || echo "No changes to commit"
+
+        # Pull the latest changes with rebase
         git pull --rebase
+
+        # Now commit the MISP feed change
         git add misp_feed/events/rss-feed.json
         git commit -m "Update MISP feed: $(date -u +'%Y-%m-%dT%H:%M:%SZ')" || echo "No changes to commit"
+
+        # Push the changes
         git push
