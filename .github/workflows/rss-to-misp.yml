@@ -41,21 +41,22 @@ jobs:
 
     - name: Commit and push updated feed
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        GITHUB_REPOSITORY: ${{ github.repository }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
       run: |
-        git config --global user.name "github-actions[bot]"
-        git config --global user.email "github-actions[bot]@users.noreply.github.com"
-        
-        # Stage everything under misp_feed/ plus any other changes
-        git add misp_feed/ output.json seen_iocs.json rss_ioc_collector.py
-
-        # Commit if there are changes
-        git diff-index --quiet HEAD || git commit -m "Rebuild MISP feed: events + root manifest"
-
-        # Ensure up-to-date
-        git pull --rebase origin $(git rev-parse --abbrev-ref HEAD)
-
-        # Push with token auth
-        git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
-        git push origin main
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+  
+          # Stage absolutely everything (new files, modifications, deletions)
+          git add -A
+  
+          # Commit if there are any staged changes
+          git diff-index --quiet HEAD || git commit -m "Rebuild MISP feed: events + root manifest"
+  
+          # Pull with rebase now that our working directory is clean
+          git pull --rebase origin $(git rev-parse --abbrev-ref HEAD)
+  
+          # Push with token auth
+          git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
+          git push origin main
+  
