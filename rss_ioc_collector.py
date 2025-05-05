@@ -176,9 +176,19 @@ def rebuild_root_manifest():
         uid = name.rsplit('.', 1)[0]
         url = f"https://raw.githubusercontent.com/{GITHUB_REPO}/{GITHUB_BRANCH}/{OUTPUT_BASE_DIR}/events/{quote_plus(name)}"
         entries.append({"uuid": uid, "url": url})
-    # Write root manifest
+
+    root_manifest = {
+        "name": "RSS to IOC Collector Feed",
+        "description": "Automatically extracted IOCs from RSS sources.",
+        "version": 1,
+        "publish_timestamp": int(datetime.utcnow().timestamp()),
+        "url": f"https://raw.githubusercontent.com/{GITHUB_REPO}/{GITHUB_BRANCH}/{OUTPUT_BASE_DIR}",
+        "events": entries
+    }
+
     with open(ROOT_MANIFEST, "w", encoding="utf-8") as f:
-        json.dump({"events": entries}, f, indent=2)
+        json.dump(root_manifest, f, indent=2)
+
 
 # ── MAIN ──────────────────────────────────────────────────────────────────────
 def main():
