@@ -1,0 +1,37 @@
+{
+  "id": "fa9bfaef-550f-47bd-aa93-42ae83ff2664",
+  "title": "New \"Bring Your Own Installer\" EDR bypass used in ransomware attack",
+  "source": "https://www.bleepingcomputer.com/news/security/new-bring-your-own-installer-edr-bypass-used-in-ransomware-attack/",
+  "published": "2025-05-05T20:28:34",
+  "feed": "https://www.bleepingcomputer.com/feed/",
+  "iocs": {
+    "ips": [],
+    "domains": [
+      "msiexec.exe"
+    ],
+    "urls": [],
+    "filenames": [],
+    "emails": [],
+    "sha1": [],
+    "md5": [],
+    "sha256": [],
+    "cves": []
+  },
+  "tags": [
+    "RSS to IOC Collector",
+    "credential",
+    "exploit",
+    "phishing",
+    "payload",
+    "fraud",
+    "malware"
+  ],
+  "context": {
+    "actors": [],
+    "malware": [
+      "Babuk"
+    ],
+    "mitre_techniques": [],
+    "cves": []
+  }
+}
