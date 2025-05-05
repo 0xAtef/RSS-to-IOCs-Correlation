@@ -33,48 +33,29 @@ jobs:
     
     - name: Convert to MISP Feed
       run: |
-        python utils/misp_push.py output.json misp_feed/events/
+        # Pass the base 'misp_feed' directory so misp_push.py creates:
+        #  - misp_feed/events/<uuid>/event.json
+        #  - misp_feed/events/<uuid>/manifest.json
+        #  - misp_feed/manifest.json (root manifest)
+        python utils/misp_push.py output.json misp_feed
 
     - name: Commit and push updated feed
-      run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          
-          # Stage all changes (including modified files)
-          git add -A
-          
-          # Commit all staged changes
-          git diff-index --quiet HEAD || git commit -m "Update IOC files and add new events"
-      
-          # Find new event folders (with uuid)
-          new_event_folders=$(find misp_feed/events/ -type f -name "event.json")
-          
-          # Add event.json and manifest.json for each new folder
-          for event_json in $new_event_folders; do
-            manifest_json="${event_json%/event.json}/manifest.json"
-            
-            # Ensure both files exist before adding them
-            if [ -f "$event_json" ] && [ -f "$manifest_json" ]; then
-              echo "Adding $event_json and $manifest_json"
-              git add "$event_json"
-              git add "$manifest_json"
-            else
-              echo "Missing event or manifest file in $event_json"
-            fi
-          done
-      
-          # Commit changes if any
-          git diff-index --quiet HEAD || git commit -m "Add new event and manifest files"
-      
-          # Pull with rebase to ensure no conflicts
-          git pull --rebase origin $(git rev-parse --abbrev-ref HEAD)
-      
-          # Update the remote URL with token for push
-          git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
-      
-          # Push changes to the main branch
-          git push origin main
       env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GITHUB_REPOSITORY: ${{ github.repository }}
-      
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_REPOSITORY: ${{ github.repository }}
+      run: |
+        git config --global user.name "github-actions[bot]"
+        git config --global user.email "github-actions[bot]@users.noreply.github.com"
+        
+        # Stage everything under misp_feed/ plus any other changes
+        git add misp_feed/ output.json seen_iocs.json rss_ioc_collector.py
+
+        # Commit if there are changes
+        git diff-index --quiet HEAD || git commit -m "Rebuild MISP feed: events + root manifest"
+
+        # Ensure up-to-date
+        git pull --rebase origin $(git rev-parse --abbrev-ref HEAD)
+
+        # Push with token auth
+        git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
+        git push origin main
