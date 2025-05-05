@@ -6,6 +6,7 @@ import uuid
 import logging
 import feedparser
 import requests
+import re
 
 from glob import glob
 from urllib.parse import urlparse
