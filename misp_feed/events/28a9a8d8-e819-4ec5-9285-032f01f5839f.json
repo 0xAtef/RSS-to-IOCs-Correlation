@@ -1,0 +1,28 @@
+{
+  "Event": {
+    "uuid": "28a9a8d8-e819-4ec5-9285-032f01f5839f",
+    "info": "DOGE Worker\u2019s Code Supports NLRB Whistleblower",
+    "date": "2025-04-23",
+    "analysis": 0,
+    "threat_level_id": 4,
+    "timestamp": 1746487257,
+    "Orgc": {
+      "name": "ADMIN",
+      "uuid": "926e159d-1b41-4069-995e-b8eae5d338f9"
+    },
+    "Tag": [
+      {
+        "name": "RSS to IOC Collector",
+        "colour": "#004646",
+        "local": false,
+        "relationship_type": ""
+      },
+      {
+        "name": "malware",
+        "colour": "#004646",
+        "local": false,
+        "relationship_type": ""
+      }
+    ]
+  }
+}
