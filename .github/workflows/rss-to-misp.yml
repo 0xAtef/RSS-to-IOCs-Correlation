@@ -33,7 +33,7 @@ jobs:
         # 1) fetch RSS IOCs
         # 2) write events/{uuid}.json
         # 3) maintain events/manifest.json
-        run: python misp_push.py
+        run: python rss_ioc_collector.py
 
       - name: Commit & push feed
         env:
