@@ -54,7 +54,7 @@ jobs:
           git pull --rebase --autostash origin "$(git rev-parse --abbrev-ref HEAD)"
       
           # Stage the per-UUID event files and the manifest
-          git add misp_feed/events misp_feed/events/manifest.json
+          git add misp_feed/events misp_feed/manifest.json
       
           # Commit if there are staged changes
           git diff --staged --quiet || git commit -m "Rebuild MISP feed"
