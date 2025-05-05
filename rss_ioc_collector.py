@@ -2,177 +2,162 @@ import feedparser
 import requests
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
+from urllib.parse import urlparse
 from bs4 import BeautifulSoup
 import re
 import json
 import logging
+import uuid
 from datetime import datetime, timedelta
+from concurrent.futures import ThreadPoolExecutor, as_completed
 
-# === CONFIG ===
-RSS_FEEDS = [
-    "https://www.us-cert.gov/ncas/alerts.xml",
-    "https://www.cert.ssi.gouv.fr/feed/",
-    "http://feeds.feedburner.com/TheHackersNews",
-    "https://krebsonsecurity.com/feed/",
-    "https://www.bleepingcomputer.com/feed/",
-    "https://www.cisa.gov/news.xml",
-    "https://www.darkreading.com/rss.xml",
-    "http://isc.sans.edu/rssfeed.xml",
-    "https://newsroom.trendmicro.com/media-coverage?pagetemplate=rss",
-    "https://feeds.feedburner.com/threatintelligence/pvexyqv7v0v"
-]
+from utils.normalization import normalize_ioc, is_ioc_whitelisted
+from utils.enrichment import enrich_with_ner
 
-# How many days back to treat as “recent”
-DAYS_BACK = 20
+# === LOAD CONFIGURATION FROM FILE ===
+with open("config.json", "r", encoding="utf-8") as cfg_file:
+    cfg = json.load(cfg_file)
 
-# Output files
-OUTPUT_FILE     = "output.json"
-SEEN_IOCS_FILE  = "seen_iocs.json"
+FEED_URLS = cfg.get("feed_urls", [])
+MAX_DAYS_OLD = cfg.get("max_days_old", 20)
+OUTPUT_JSON_PATH = cfg.get("output_json_path", "output.json")
+SEEN_IOCS_PATH = cfg.get("seen_iocs_path", "seen_iocs.json")
+WHITELIST_BY_FEED = cfg.get("whitelist_by_feed", {})
+IOC_CONTEXT_KEYWORDS = cfg.get("ioc_context_keywords", {})
+IOC_PATTERNS = cfg.get("ioc_patterns", {})
+MAX_WORKERS = cfg.get("max_workers", 5)
+FEED_TAGS = cfg.get("feed_tags", {})
 
-# Logging
+# Setup logging
 logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s %(levelname)s %(message)s",
     handlers=[
-        logging.FileHandler("ioc_collector.log"),
+        logging.FileHandler(cfg.get("log_file", "ioc_collector.log")),
         logging.StreamHandler()
     ]
 )
 
-# IOC keyword categories
-IOC_KEYWORDS = {
-    "c2":       ["command and control", "c2 server", "beacon", "callback", "control channel", "cnc", "command channel"],
-    "payload":  ["payload", "dropper", "executable", "binary", "installer", "installer payload", "stub"],
-    "malware":  ["malware", "ransomware", "trojan", "worm", "backdoor", "spyware", "adware", "rootkit"],
-    "phishing": ["phishing", "spearphishing", "credential theft", "spoofing", "malicious link", "fake login"],
-    "exploit":  ["exploit", "vulnerability", "zeroday", "buffer overflow", "heap spray", "remote code execution", "CVE-"],
-    "ddos":     ["denial of service", "dos attack", "ddos", "flood", "amplification", "botnet"],
-    "botnet":   ["botnet", "zombie", "drone", "bot herder", "command hub"],
-    "crypto":   ["cryptomining", "coinminer", "mining malware", "cryptojacker", "coinhive"],
-    "credential":["password", "credentials", "login", "auth token", "two-factor", "2fa", "otp", "session cookie"],
-    "injection":["sql injection", "xss", "cross-site scripting", "code injection", "command injection"],
-    "fraud":    ["fraud", "scam", "social engineering", "business email compromise", "impersonation"]
-}
-
-# IOC extraction regexes
-patterns = {
-    "ips":     r"(?:\d{1,3}\.){3}\d{1,3}",
-    "domains": r"\b(?:[A-Za-z0-9-]+\.)+[A-Za-z]{2,}\b",
-    "urls":    r"https?://[^\s\"'>]+",
-    "md5":     r"\b[a-fA-F0-9]{32}\b",
-    "sha256":  r"\b[a-fA-F0-9]{64}\b",
-    "cves":    r"CVE-\d{4}-\d{4,7}"
-}
-
-# ——— Retry-enabled HTTP session ———
-session = requests.Session()
-retries = Retry(
-    total=3,
-    backoff_factor=1,
-    status_forcelist=[429, 500, 502, 503, 504]
+# Initialize HTTP session with retry logic
+http_session = requests.Session()
+http_retries = Retry(
+    total=cfg.get("http_retry_total", 3),
+    backoff_factor=cfg.get("http_backoff_factor", 1),
+    status_forcelist=cfg.get("http_status_forcelist", [429, 500, 502, 503, 504])
 )
-session.mount("https://", HTTPAdapter(max_retries=retries))
-session.mount("http://",  HTTPAdapter(max_retries=retries))
+http_session.mount("https://", HTTPAdapter(max_retries=http_retries))
+http_session.mount("http://", HTTPAdapter(max_retries=http_retries))
 
-def load_seen_iocs():
+def load_seen_iocs_set():
     try:
-        with open(SEEN_IOCS_FILE, "r", encoding="utf-8") as f:
+        with open(SEEN_IOCS_PATH, "r", encoding="utf-8") as f:
             return set(json.load(f))
     except (FileNotFoundError, json.JSONDecodeError):
         return set()
 
-def save_seen_iocs(seen):
-    with open(SEEN_IOCS_FILE, "w", encoding="utf-8") as f:
-        json.dump(list(seen), f, indent=2)
+def persist_seen_iocs(ioc_set):
+    with open(SEEN_IOCS_PATH, "w", encoding="utf-8") as f:
+        json.dump(sorted(list(ioc_set)), f, indent=2)
 
-def extract_iocs(text):
-    return {ioc: list(set(re.findall(rx, text))) for ioc, rx in patterns.items()}
+def strip_html_tags(html_content):
+    return BeautifulSoup(html_content, "html.parser").get_text()
 
-def clean_html(html):
-    return BeautifulSoup(html, "html.parser").get_text()
-
-def parse_date(entry):
-    # 1) feedparser-normalized structs
+def parse_entry_date(entry):
     struct = entry.get("published_parsed") or entry.get("updated_parsed")
     if struct:
         return datetime(*struct[:6])
-    # 2) raw string fields
     for key in ("published", "updated", "pubDate"):
-        raw = entry.get(key)
-        if raw:
-            parsed = feedparser._parse_date(raw)
+        raw_date = entry.get(key)
+        if raw_date:
+            parsed = feedparser._parse_date(raw_date)
             if parsed:
                 return datetime(*parsed[:6])
     return None
 
-def is_recent(entry):
-    dt = parse_date(entry)
-    return bool(dt and dt >= (datetime.utcnow() - timedelta(days=DAYS_BACK)))
+def is_entry_recent(entry):
+    entry_dt = parse_entry_date(entry)
+    return bool(entry_dt and entry_dt >= (datetime.utcnow() - timedelta(days=MAX_DAYS_OLD)))
 
-def detect_context(text):
-    tags = set()
-    lower = text.lower()
-    for label, kws in IOC_KEYWORDS.items():
-        for kw in kws:
-            if kw in lower:
-                tags.add(label)
+def extract_iocs_from_text(text_content):
+    return {ioc_type: list(set(re.findall(pattern, text_content)))
+            for ioc_type, pattern in IOC_PATTERNS.items()}
+
+def extract_context_tags(text_content, feed_url):
+    tags = set(["RSS to IOC Collector"])
+    lower_text = text_content.lower()
+    for context, keywords in IOC_CONTEXT_KEYWORDS.items():
+        if any(kw in lower_text for kw in keywords):
+            tags.add(context)
+    tags.update(FEED_TAGS.get(feed_url, []))
     return list(tags)
 
-def process_feed(url, seen_iocs):
-    logging.info(f"-> Fetching feed: {url}")
-    out = []
-    feed = feedparser.parse(url)
+def process_feed_url(feed_url, seen_iocs):
+    feed_domain = urlparse(feed_url).netloc.lower()
+    logging.info(f"-> Processing feed: {feed_url}")
+    results = []
+    feed = feedparser.parse(feed_url)
     for entry in feed.entries:
-        if not is_recent(entry):
+        if not is_entry_recent(entry):
             continue
-
         title = entry.get("title", "<no title>")
-        link  = entry.get("link", "")
-        pubdt = parse_date(entry)
-
+        link = entry.get("link", "")
+        published_dt = parse_entry_date(entry)
         try:
-            resp = session.get(
+            response = http_session.get(
                 link,
-                headers={"User-Agent": "MISP-IOC-Collector/1.0"},
-                timeout=10
+                headers={"User-Agent": cfg.get("user_agent", "MISP-IOC-Collector/1.0")},
+                timeout=cfg.get("request_timeout", 10)
             )
-            text  = clean_html(resp.text)
-            found = extract_iocs(text)
+            text = strip_html_tags(response.text)
+            raw_iocs = extract_iocs_from_text(text)
+            for fname in raw_iocs.get("filenames", []):
+                raw_iocs["domains"] = [d for d in raw_iocs.get("domains", []) if fname.lower() not in d.lower()]
+                raw_iocs["urls"] = [u for u in raw_iocs.get("urls", []) if fname.lower() not in u.lower()]
+            filtered_iocs = {}
+            for ioc_type, ioc_list in raw_iocs.items():
+                new_iocs = []
+                for ioc in ioc_list:
+                    norm = normalize_ioc(ioc)
+                    if norm in seen_iocs or is_ioc_whitelisted(ioc, feed_domain, WHITELIST_BY_FEED):
+                        continue
+                    new_iocs.append(ioc)
+                    seen_iocs.add(norm)
+                filtered_iocs[ioc_type] = new_iocs
+            if any(filtered_iocs.values()):
+                record = {
+                    "id": str(uuid.uuid4()),
+                    "title": title,
+                    "source": link,
+                    "published": published_dt.isoformat() if published_dt else "",
+                    "feed": feed_url,
+                    "iocs": filtered_iocs,
+                    "tags": extract_context_tags(text, feed_url),
+                    "context": enrich_with_ner(text)
+                }
+                results.append(record)
+                if ENABLE_MISP_PUSH:
+                    push_to_misp_if_enabled(record)
+        except Exception as error:
+            logging.error(f"Error fetching {link}: {error}")
+    logging.info(f"-> {len(results)} new records from {feed_url}")
+    return results
 
-            dedup = {}
-            for kind, vals in found.items():
-                new = [v for v in vals if v not in seen_iocs]
-                dedup[kind] = new
-                seen_iocs.update(new)
-
-            if any(dedup.values()):
-                out.append({
-                    "title":     title,
-                    "source":    link,
-                    "published": pubdt.isoformat() if pubdt else "",
-                    "feed":      url,
-                    "iocs":      dedup,
-                    "tags":      detect_context(text)
-                })
-
-        except Exception as e:
-            logging.error(f"Error fetching {link}: {e}")
-
-    logging.info(f"-> {len(out)} new articles with IOCs from {url}")
-    return out
-
-def main():
-    seen_iocs   = load_seen_iocs()
-    all_results = []
-
-    for rss in RSS_FEEDS:
-        all_results.extend(process_feed(rss.strip(), seen_iocs))
-
-    with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
-        json.dump(all_results, f, indent=2, ensure_ascii=False)
-
-    save_seen_iocs(seen_iocs)
-    logging.info(f"Wrote {len(all_results)} records to {OUTPUT_FILE}")
+def run_ioc_collector():
+    logging.info("IOC Collector started.")
+    seen_iocs = load_seen_iocs_set()
+    all_ioc_records = []
+    with ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
+        futures = {executor.submit(process_feed_url, url.strip(), seen_iocs): url for url in FEED_URLS}
+        for future in as_completed(futures):
+            try:
+                all_ioc_records.extend(future.result())
+            except Exception as exc:
+                logging.error(f"Error processing feed: {exc}")
+    with open(OUTPUT_JSON_PATH, "w", encoding="utf-8") as outfile:
+        json.dump(all_ioc_records, outfile, indent=2, ensure_ascii=False)
+    persist_seen_iocs(seen_iocs)
+    logging.info(f"Wrote {len(all_ioc_records)} total records to {OUTPUT_JSON_PATH}")
+    logging.info("IOC Collector finished.")
 
 if __name__ == "__main__":
-    main()
+    run_ioc_collector()
