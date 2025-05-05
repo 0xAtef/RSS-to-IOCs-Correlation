@@ -1,0 +1,22 @@
+{
+  "Event": {
+    "uuid": "01058da4-7bea-487f-a651-56c775169e6a",
+    "info": "Multiples vuln\u00e9rabilit\u00e9s dans Microsoft Azure (02 mai 2025)",
+    "date": "2025-05-02",
+    "analysis": 0,
+    "threat_level_id": 4,
+    "timestamp": 1746483738,
+    "Orgc": {
+      "name": "ADMIN",
+      "uuid": "926e159d-1b41-4069-995e-b8eae5d338f9"
+    },
+    "Tag": [
+      {
+        "name": "RSS to IOC Collector",
+        "colour": "#004646",
+        "local": false,
+        "relationship_type": ""
+      }
+    ]
+  }
+}
