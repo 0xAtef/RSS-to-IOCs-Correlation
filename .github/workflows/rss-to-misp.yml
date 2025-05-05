@@ -8,6 +8,8 @@ on:
 jobs:
   generate-feed:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
 
     steps:
     - name: Checkout repository
@@ -34,27 +36,22 @@ jobs:
         python utils/misp_push.py output.json misp_feed/events/rss-feed.json
 
     - name: Commit and push updated feed
-      run: |
-        git config --global user.name "github-actions[bot]"
-        git config --global user.email "github-actions[bot]@users.noreply.github.com"
-    
-        # Add only intended files
-        git add misp_feed/events/rss-feed.json output.json seen_iocs.json
-    
-        # Commit if there are changes
-        git diff-index --quiet HEAD || git commit -m "Update MISP feed: new IOCs from RSS collector"
-    
-        # Stash unrelated changes (like logs or pyc files)
-        git stash --keep-index
-    
-        # Pull with rebase
-        git pull --rebase origin $(git rev-parse --abbrev-ref HEAD)
-    
-        # Pop stash to restore local changes (optional, not needed in CI)
-        git stash pop || true
-    
-        # Push changes
-        git push
       env:
-        GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+      run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+      
+          # Add only intended files
+          git add misp_feed/events/rss-feed.json output.json seen_iocs.json
+      
+          # Commit if there are changes
+          git diff-index --quiet HEAD || git commit -m "Update MISP feed: new IOCs from RSS collector"
+      
+          # Set authenticated remote using GitHub token
+          git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git
+      
+          # Push changes
+          git push origin main
+      
       
