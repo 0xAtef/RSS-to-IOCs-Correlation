@@ -1,0 +1,29 @@
+{
+  "id": "43e575f1-7315-48a1-b6c3-ead77b05a875",
+  "title": "How to Prevent AI Agents From Becoming the Bad Guys",
+  "source": "https://www.darkreading.com/vulnerabilities-threats/prevent-ai-agents-becoming-bad-guys",
+  "published": "2025-05-05T14:00:00",
+  "feed": "https://www.darkreading.com/rss.xml",
+  "iocs": {
+    "ips": [
+      "172.183.54.78"
+    ],
+    "domains": [],
+    "urls": [],
+    "filenames": [],
+    "emails": [],
+    "sha1": [],
+    "md5": [],
+    "sha256": [],
+    "cves": []
+  },
+  "tags": [
+    "RSS to IOC Collector"
+  ],
+  "context": {
+    "actors": [],
+    "malware": [],
+    "mitre_techniques": [],
+    "cves": []
+  }
+}
