@@ -2,61 +2,56 @@ name: RSS to MISP Feed
 
 on:
   schedule:
-    - cron: '0 * * * *'  # Runs hourly
+    - cron: '0 * * * *'   # hourly
   workflow_dispatch:
 
 jobs:
-  generate-feed:
+  build-feed:
     runs-on: ubuntu-latest
     permissions:
       contents: write
 
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v3
+      - name: Checkout repository
+        uses: actions/checkout@v3
 
-    - name: Set up Python
-      uses: actions/setup-python@v4
-      with:
-        python-version: '3.9'
-    
-    - name: Install dependencies
-      run: |
-        python -m pip install --upgrade pip
-        pip install -r requirements.txt
+      - name: Set up Python 3.9
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
 
-    - name: Download SpaCy model
-      run: python -m spacy download en_core_web_sm
-    
-    - name: Run RSS Collector
-      run: python rss_ioc_collector.py
-    
-    - name: Convert to MISP Feed
-      run: |
-        # Pass the base 'misp_feed' directory so misp_push.py creates:
-        #  - misp_feed/events/<uuid>/event.json
-        #  - misp_feed/events/<uuid>/manifest.json
-        #  - misp_feed/manifest.json (root manifest)
-        python utils/misp_push.py output.json misp_feed
+      - name: Install requirements
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
 
-    - name: Commit and push updated feed
-      env:
+      - name: Download spaCy model
+        run: python -m spacy download en_core_web_sm
+
+      - name: Run collector & build feed
+        # this single script now does:
+        # 1) fetch RSS IOCs
+        # 2) write events/{uuid}.json
+        # 3) maintain events/manifest.json
+        run: python misp_push.py
+
+      - name: Commit & push feed
+        env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_REPOSITORY: ${{ github.repository }}
-      run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-  
-          # Stage absolutely everything (new files, modifications, deletions)
-          git add -A
-  
-          # Commit if there are any staged changes
-          git diff-index --quiet HEAD || git commit -m "Rebuild MISP feed: events + root manifest"
-  
-          # Pull with rebase now that our working directory is clean
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          # stage only the feed directory
+          git add misp_feed/events
+
+          # commit if changes exist
+          git diff --staged --quiet || git commit -m "Rebuild MISP feed"
+
+          # pull & rebase to avoid conflicts
           git pull --rebase origin $(git rev-parse --abbrev-ref HEAD)
-  
-          # Push with token auth
+
+          # push with token auth
           git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
           git push origin main
-  
