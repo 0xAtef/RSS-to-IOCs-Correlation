@@ -41,16 +41,15 @@ jobs:
         # Stage changes (if any)
         git add .
 
-        # Commit any changes with a default message if needed
-        git commit -m "Temporary commit before pulling updates" || echo "No changes to commit"
+        # Commit any changes with a fixed message
+        git commit -m "Automated update of MISP feed with new IOCs and enrichment data" || echo "No changes to commit"
 
         # Pull the latest changes with rebase
         git pull --rebase
 
-        # Now commit the MISP feed change with the correct date format
-        COMMIT_MSG="Update MISP feed: $(date -u +'%Y-%m-%dT%H:%M:%SZ')"
+        # Now commit the MISP feed change with a fixed message
         git add misp_feed/events/rss-feed.json
-        git commit -m "$COMMIT_MSG" || echo "No changes to commit"
+        git commit -m "RSS to MISP Feed: Update with new IOCs" || echo "No changes to commit"
 
         # Set up authentication using GitHub token
         git remote set-url origin https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/0xAtef/RSS-to-IOCs-Correlation.git
