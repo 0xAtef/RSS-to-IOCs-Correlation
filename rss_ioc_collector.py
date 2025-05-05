@@ -135,8 +135,6 @@ def process_feed_url(feed_url, seen_iocs):
                     "context": enrich_with_ner(text)
                 }
                 results.append(record)
-                if ENABLE_MISP_PUSH:
-                    push_to_misp_if_enabled(record)
         except Exception as error:
             logging.error(f"Error fetching {link}: {error}")
     logging.info(f"-> {len(results)} new records from {feed_url}")
