@@ -39,10 +39,23 @@ jobs:
       run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-      
-          git add misp_feed/events/rss-feed.json output.json seen_iocs.json
-      
-          git diff-index --quiet HEAD || git commit -m "Update MISP feed: new IOCs from RSS collector"
+          
+          # Find new event folders (with uuid)
+          new_event_folders=$(find misp_feed/events/ -type d -name "*/event.json")
+
+          # Add event.json and manifest.json for each new folder
+          for folder in $new_event_folders; do
+            event_json="$folder"
+            manifest_json="${folder%/event.json}/manifest.json"
+            git add "$event_json"
+            git add "$manifest_json"
+          done
+
+          # Commit changes if any
+          git diff-index --quiet HEAD || git commit -m "Add new event and manifest files"
+
+          # Pull with rebase to ensure no conflicts
+          git pull --rebase origin $(git rev-parse --abbrev-ref HEAD)
       
           git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
       
