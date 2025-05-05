@@ -1,0 +1,22 @@
+{
+  "Event": {
+    "uuid": "b56de473-b01c-49da-b6bd-e5ff4cd98952",
+    "info": "Bulletin d'actualit\u00e9 CERTFR-2025-ACT-018 (28 avril 2025)",
+    "date": "2025-04-28",
+    "analysis": 0,
+    "threat_level_id": 4,
+    "timestamp": 1746481708,
+    "Orgc": {
+      "name": "ADMIN",
+      "uuid": "926e159d-1b41-4069-995e-b8eae5d338f9"
+    },
+    "Tag": [
+      {
+        "name": "RSS to IOC Collector",
+        "colour": "#004646",
+        "local": false,
+        "relationship_type": ""
+      }
+    ]
+  }
+}
