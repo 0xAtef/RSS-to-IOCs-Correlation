@@ -1,6 +1,10 @@
 {
   "events": [
     {
+      "uuid": "afc73580-5291-4516-ade2-8e9c5fe6364c",
+      "url": "https://raw.githubusercontent.com/0xAtef/RSS-to-IOCs-Correlation/main/misp_feed/events/afc73580-5291-4516-ade2-8e9c5fe6364c/manifest.json"
+    },
+    {
       "uuid": "1121d26c-1ad2-4cbd-bcb9-8ad54afbe28b",
       "url": "https://raw.githubusercontent.com/0xAtef/RSS-to-IOCs-Correlation/main/misp_feed/events/1121d26c-1ad2-4cbd-bcb9-8ad54afbe28b/manifest.json"
     },

@@ -1,13 +1,13 @@
 [
   {
-    "id": "32c3ffeb-ceda-4034-8a09-2a166093d882",
-    "title": "How to Prevent AI Agents From Becoming the Bad Guys",
-    "source": "https://www.darkreading.com/vulnerabilities-threats/prevent-ai-agents-becoming-bad-guys",
-    "published": "2025-05-05T14:00:00",
+    "id": "6d063822-e459-480a-9894-a8f6429668cf",
+    "title": "Phony Hacktivist Pleads Guilty to Disney Data Leak",
+    "source": "https://www.darkreading.com/threat-intelligence/phony-hacktivist-pleads-guilty-disney-leak",
+    "published": "2025-05-05T19:20:14",
     "feed": "https://www.darkreading.com/rss.xml",
     "iocs": {
       "ips": [
-        "52.234.42.181"
+        "20.49.61.100"
       ],
       "domains": [],
       "urls": [],
@@ -26,6 +26,50 @@
       "malware": [],
       "mitre_techniques": [],
       "cves": []
+    }
+  },
+  {
+    "id": "62b28b99-b1ab-4431-8e32-a0b4f931df7b",
+    "title": "Alien's Eye: Hunt Down 570 Social Media Accounts Using AI",
+    "source": "https://darkwebinformer.com/aliens-eye-hunt-down-570-social-media-accounts-using-ai/",
+    "published": "2025-05-05T19:52:43",
+    "feed": "https://darkwebinformer.com/rss/",
+    "iocs": {
+      "ips": [],
+      "domains": [
+        "Aaron123.jsonYou",
+        "termux-install.shNow",
+        "username.jsonEnjoy",
+        "install.shNow",
+        "pastebin.com",
+        "termux-uninstall.shdone",
+        "uninstall.shdone"
+      ],
+      "urls": [
+        "https://github.com/arxhr007/Aliens_eyecd",
+        "https://pastebin.com/raw/nJqjsbNu",
+        "https://github.com/arxhr007/Aliens_eyeCan"
+      ],
+      "filenames": [],
+      "emails": [],
+      "sha1": [],
+      "md5": [],
+      "sha256": [],
+      "cves": []
+    },
+    "tags": [
+      "RSS to IOC Collector",
+      "fraud",
+      "malware",
+      "exploit"
+    ],
+    "context": {
+      "actors": [],
+      "malware": [],
+      "mitre_techniques": [],
+      "cves": [
+        "CVE-2025-24977"
+      ]
     }
   }
 ]
