@@ -41,27 +41,35 @@ jobs:
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           
           # Find new event folders (with uuid)
-          new_event_folders=$(find misp_feed/events/ -type d -name "*/event.json")
-
+          new_event_folders=$(find misp_feed/events/ -type f -name "event.json")
+          
           # Add event.json and manifest.json for each new folder
-          for folder in $new_event_folders; do
-            event_json="$folder"
-            manifest_json="${folder%/event.json}/manifest.json"
-            git add "$event_json"
-            git add "$manifest_json"
+          for event_json in $new_event_folders; do
+            manifest_json="${event_json%/event.json}/manifest.json"
+            
+            # Ensure both files exist before adding them
+            if [ -f "$event_json" ] && [ -f "$manifest_json" ]; then
+              echo "Adding $event_json and $manifest_json"
+              git add "$event_json"
+              git add "$manifest_json"
+            else
+              echo "Missing event or manifest file in $event_json"
+            fi
           done
-
+      
           # Commit changes if any
           git diff-index --quiet HEAD || git commit -m "Add new event and manifest files"
-
+      
           # Pull with rebase to ensure no conflicts
           git pull --rebase origin $(git rev-parse --abbrev-ref HEAD)
       
+          # Update the remote URL with token for push
           git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
       
+          # Push changes to the main branch
           git push origin main
       env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GITHUB_REPOSITORY: ${{ github.repository }}      
+          GITHUB_REPOSITORY: ${{ github.repository }}           
       
       
