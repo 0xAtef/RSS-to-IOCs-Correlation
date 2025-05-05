@@ -161,4 +161,3 @@ if __name__ == "__main__":
     run_ioc_collector()
     with open(OUTPUT_JSON_PATH, "r", encoding="utf-8") as f:
         records = json.load(f)
-    write_misp_feed(records, "misp_feed/events/rss-feed.json")
