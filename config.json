@@ -160,7 +160,7 @@
     "cves": "CVE-\\d{4}-\\d{4,7}"
   },
 
-  "output_base_dir": "events",
   "events_subdir": "events",
-  "manifest_path": "events/manifest.json"
+  "output_base_dir": "misp_feed",
+  "manifest_path": "misp_feed/events/manifest.json"
 }

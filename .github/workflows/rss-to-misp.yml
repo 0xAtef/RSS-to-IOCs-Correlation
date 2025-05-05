@@ -36,10 +36,11 @@ jobs:
         run: python rss_ioc_collector.py
 
 
-      - name: Read output directory from config.json
-        id: read-config
+      - name: Read feed paths from config.json
+        id: feed-config
         run: |
-          echo "OUTPUT=$(jq -r .output_base_dir config.json)" >> $GITHUB_ENV
+          echo "OUTPUT=$(jq -r .output_base_dir < config.json)" >> $GITHUB_ENV
+          echo "MANIFEST=$(jq -r .manifest_path < config.json)" >> $GITHUB_ENV
       
       - name: Commit & push feed
         env:
@@ -49,10 +50,12 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
       
-          # Stage the feed directory and its manifest
-          git add "$OUTPUT" "$OUTPUT/manifest.json"
+          echo "Staging feed dir at '$OUTPUT/events' and manifest at '$MANIFEST'"
       
-          # Commit if there are staged changes
+          # Stage the per‐UUID event files and the manifest
+          git add "$OUTPUT/events" "$MANIFEST"
+      
+          # Only commit if there are staged changes
           git diff --staged --quiet || git commit -m "Rebuild MISP feed"
       
           # Rebase any upstream commits
