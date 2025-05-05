@@ -13,7 +13,6 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 
 from utils.normalization import normalize_ioc, is_ioc_whitelisted
 from utils.enrichment import enrich_with_ner
-from utils.misp_push import write_misp_feed
 
 # === LOAD CONFIGURATION FROM FILE ===
 with open("config.json", "r", encoding="utf-8") as cfg_file:
