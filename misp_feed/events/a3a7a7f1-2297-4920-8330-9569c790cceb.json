@@ -1,0 +1,22 @@
+{
+  "Event": {
+    "uuid": "a3a7a7f1-2297-4920-8330-9569c790cceb",
+    "info": "Multiples vuln\u00e9rabilit\u00e9s dans le noyau Linux de SUSE (02 mai 2025)",
+    "date": "2025-05-02",
+    "analysis": 0,
+    "threat_level_id": 4,
+    "timestamp": 1746482409,
+    "Orgc": {
+      "name": "ADMIN",
+      "uuid": "926e159d-1b41-4069-995e-b8eae5d338f9"
+    },
+    "Tag": [
+      {
+        "name": "RSS to IOC Collector",
+        "colour": "#004646",
+        "local": false,
+        "relationship_type": ""
+      }
+    ]
+  }
+}
