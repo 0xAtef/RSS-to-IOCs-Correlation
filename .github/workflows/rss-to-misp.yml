@@ -66,19 +66,22 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_REPOSITORY: ${{ github.repository }}
         run: |
+          echo "Committing and pushing CSV feed..."
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
           # Pull & rebase, auto-stashing any local changes
-          git pull --rebase --autostash origin "$(git rev-parse --abbrev-ref HEAD)"
+          git pull --rebase --autostash origin main
 
           # Stage the CSV feed file
           git add "misp_feed/feed.csv"
+          git add "output.json"
+          git add "seen_iocs.json"
 
           # Commit if there are staged changes
-          git diff --staged --quiet || git commit -m "Update IOC feed: New data collected and processed"
+          git diff --staged --quiet || git commit -m "Update IOC feed and state files: New data collected and processed"
 
-          # Push via token auth
+          # Push via token auth to the main branch
           git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
-          git push origin "${{ github.ref_name }}"
+          git push origin main
 
