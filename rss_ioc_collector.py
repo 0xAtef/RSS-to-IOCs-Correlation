@@ -17,25 +17,25 @@ from datetime import datetime, timedelta
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
 from utils.normalization import normalize_ioc, is_ioc_whitelisted
-from utils.enrichment    import enrich_with_ner
+from utils.enrichment import enrich_with_ner
 
 # === LOAD CONFIGURATION FROM FILE ===
 with open("config.json", "r", encoding="utf-8") as f:
     cfg = json.load(f)
 
 # Required
-ORG_NAME    = cfg["org_name"]
-ORG_UUID    = cfg["org_uuid"]
+ORG_NAME = cfg["org_name"]
+ORG_UUID = cfg["org_uuid"]
 
-FEED_URLS         = cfg.get("feed_urls", [])
-MAX_DAYS_OLD      = cfg.get("max_days_old", 20)
-OUTPUT_BASE_DIR   = cfg.get("output_base_dir", "misp_feed")
-CSV_PATH          = os.path.join(OUTPUT_BASE_DIR, "feed.csv")
-SEEN_IOCS_PATH    = cfg.get("seen_iocs_path", "seen_iocs.json")
-MAX_WORKERS       = cfg.get("max_workers", 5)
-IOC_PATTERNS      = cfg.get("ioc_patterns", {})
-IOC_CONTEXT_KW    = cfg.get("ioc_context_keywords", {})
-FEED_TAGS         = cfg.get("feed_tags_by_feed", {})
+FEED_URLS = cfg.get("feed_urls", [])
+MAX_DAYS_OLD = cfg.get("max_days_old", 20)
+OUTPUT_BASE_DIR = cfg.get("output_base_dir", "misp_feed")
+CSV_PATH = os.path.join(OUTPUT_BASE_DIR, "feed.csv")
+SEEN_IOCS_PATH = cfg.get("seen_iocs_path", "seen_iocs.json")
+MAX_WORKERS = cfg.get("max_workers", 5)
+IOC_PATTERNS = cfg.get("ioc_patterns", {})
+IOC_CONTEXT_KW = cfg.get("ioc_context_keywords", {})
+FEED_TAGS = cfg.get("feed_tags_by_feed", {})
 WHITELIST_BY_FEED = cfg.get("whitelist_by_feed", {})
 
 # Ensure output dir
@@ -52,7 +52,7 @@ logging.basicConfig(
 session = requests.Session()
 retry = Retry(total=cfg.get("http_retry_total", 3),
               backoff_factor=cfg.get("http_backoff_factor", 1),
-              status_forcelist=cfg.get("http_status_forcelist", [429,500,502,503,504]))
+              status_forcelist=cfg.get("http_status_forcelist", [429, 500, 502, 503, 504]))
 session.mount("https://", HTTPAdapter(max_retries=retry))
 session.mount("http://", HTTPAdapter(max_retries=retry))
 
@@ -64,6 +64,7 @@ def load_seen():
     except:
         return set()
 
+
 def save_seen(seen):
     with open(SEEN_IOCS_PATH, "w") as f:
         json.dump(sorted(seen), f, indent=2)
@@ -72,19 +73,23 @@ def save_seen(seen):
 def strip_html(html):
     return BeautifulSoup(html, "html.parser").get_text()
 
+
 def parse_date(e):
     sd = e.get("published_parsed") or e.get("updated_parsed")
     if sd:
         return datetime(*sd[:6])
     return None
 
+
 def recent(e):
     d = parse_date(e)
     return bool(d and d >= datetime.utcnow() - timedelta(days=MAX_DAYS_OLD))
 
+
 def extract_iocs(text):
-    clean = text.replace("\n"," ")
+    clean = text.replace("\n", " ")
     return {t: list({m for m in re.findall(pat, clean)}) for t, pat in IOC_PATTERNS.items()}
+
 
 def context_tags(text, feed_url):
     tags = set(cfg.get("fixed_tags", []))
@@ -107,6 +112,7 @@ def fetch_feed(feed_url):
     except requests.exceptions.RequestException as exc:
         logging.error(f"Error fetching {feed_url}: {exc}")
         return None
+
 
 def process_feed(feed_url, seen):
     """Process a single feed URL and extract IOCs."""
@@ -145,18 +151,23 @@ def process_feed(feed_url, seen):
         if not any(filtered.values()):
             continue
 
+        # Enrich the text with NER
+        enrichment = enrich_with_ner(text)
+
         out.append({
-            "id":        str(uuid.uuid4()),
-            "title":     e.get("title", ""),
-            "source":    link,
+            "id": str(uuid.uuid4()),
+            "title": e.get("title", ""),
+            "source": link,
             "published": (parse_date(e) or datetime.utcnow()).isoformat(),
-            "feed":      feed_url,
-            "iocs":      filtered,
-            "tags":      context_tags(text, feed_url)
+            "feed": feed_url,
+            "iocs": filtered,
+            "tags": context_tags(text, feed_url),
+            "enrichment": enrichment  # Add enrichment data
         })
 
     logging.info(f"Found {len(out)} new entries in {feed_url}")
     return out
+
 
 def process_feeds_concurrently(feed_urls, seen):
     """Process multiple feeds concurrently."""
@@ -175,7 +186,8 @@ def write_csv_feed(all_records):
     fieldnames = [
         "uuid", "info", "date", "threat_level_id", "analysis",
         "orgc_uuid", "orgc_name", "tag", "attribute_category", "attribute_type",
-        "attribute_value", "to_ids", "comment", "attribute_timestamp"
+        "attribute_value", "to_ids", "comment", "attribute_timestamp",
+        "actors", "malware", "mitre_techniques", "cves", "tools", "campaigns"  # Enrichment fields
     ]
 
     with open(CSV_PATH, "w", newline="", encoding="utf-8") as csvf:
@@ -183,37 +195,49 @@ def write_csv_feed(all_records):
         w.writeheader()
 
         for rec in all_records:
-            evt_uuid  = rec["id"]
-            info      = rec["title"]
-            date      = rec["published"].split("T")[0]
-            analysis  = cfg.get("misp_analysis", 0)
-            tlid      = cfg.get("misp_threat_level_id", 4)
-            comment   = f"Extracted from: {rec['source']}"
-            
-            # Assuming tags can be added (either from data or hardcoded)
+            evt_uuid = rec["id"]
+            info = rec["title"]
+            date = rec["published"].split("T")[0]
+            analysis = cfg.get("misp_analysis", 0)
+            tlid = cfg.get("misp_threat_level_id", 4)
+            comment = f"Extracted from: {rec['source']}"
+
             tags = rec.get("tags", [])
             tags_str = ";".join(tags) if tags else ""
 
+            enrichment = rec.get("enrichment", {})
+            actors = ";".join(enrichment.get("actors", []))
+            malware = ";".join(enrichment.get("malware", []))
+            techniques = ";".join(enrichment.get("mitre_techniques", []))
+            cves = ";".join(enrichment.get("cves", []))
+            tools = ";".join(enrichment.get("tools", []))
+            campaigns = ";".join(enrichment.get("campaigns", []))
+
             for typ, vals in rec["iocs"].items():
                 for val in vals:
-                    # Get timestamp for the attribute, if available
                     attribute_timestamp = rec.get("timestamp", "")
 
                     w.writerow({
-                        "uuid":              evt_uuid,
-                        "info":              info,
-                        "date":              date,
-                        "threat_level_id":   tlid,
-                        "analysis":          analysis,
-                        "orgc_uuid":         ORG_UUID,
-                        "orgc_name":         ORG_NAME,
-                        "tag":               tags_str,  # Add tags if present
-                        "attribute_category":"External analysis",
-                        "attribute_type":    typ.rstrip("s"),  # Ensure it's a valid type
-                        "attribute_value":   val,
-                        "to_ids":            "True",
-                        "comment":           comment,
-                        "attribute_timestamp": attribute_timestamp  # Add timestamp if available
+                        "uuid": evt_uuid,
+                        "info": info,
+                        "date": date,
+                        "threat_level_id": tlid,
+                        "analysis": analysis,
+                        "orgc_uuid": ORG_UUID,
+                        "orgc_name": ORG_NAME,
+                        "tag": tags_str,
+                        "attribute_category": "External analysis",
+                        "attribute_type": typ.rstrip("s"),
+                        "attribute_value": val,
+                        "to_ids": "True",
+                        "comment": comment,
+                        "attribute_timestamp": attribute_timestamp,
+                        "actors": actors,
+                        "malware": malware,
+                        "mitre_techniques": techniques,
+                        "cves": cves,
+                        "tools": tools,
+                        "campaigns": campaigns
                     })
 
     logging.info(f"✅ Wrote MISP-compatible CSV feed to {CSV_PATH}")
@@ -224,6 +248,7 @@ def main():
     all_recs = process_feeds_concurrently(FEED_URLS, seen)
     save_seen(seen)
     write_csv_feed(all_recs)
+
 
 if __name__ == "__main__":
     main()
