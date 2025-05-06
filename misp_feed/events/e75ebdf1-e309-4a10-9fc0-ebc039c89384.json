@@ -1,0 +1,22 @@
+{
+  "Event": {
+    "uuid": "e75ebdf1-e309-4a10-9fc0-ebc039c89384",
+    "info": "Fin de support de Windows 10 en octobre 2025 (23 avril 2025)",
+    "date": "2025-04-23",
+    "analysis": 0,
+    "threat_level_id": 4,
+    "timestamp": 1746505605,
+    "Orgc": {
+      "name": "ADMIN",
+      "uuid": "926e159d-1b41-4069-995e-b8eae5d338f9"
+    },
+    "Tag": [
+      {
+        "name": "RSS to IOC Collector",
+        "colour": "#004646",
+        "local": false,
+        "relationship_type": ""
+      }
+    ]
+  }
+}

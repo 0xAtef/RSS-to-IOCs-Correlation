@@ -1,0 +1,34 @@
+{
+  "Event": {
+    "uuid": "87fee376-9fbf-4b2b-835e-c551e2ef7e3b",
+    "info": "UK shares security tips after major retail cyberattacks",
+    "date": "2025-05-05",
+    "analysis": 0,
+    "threat_level_id": 4,
+    "timestamp": 1746505605,
+    "Orgc": {
+      "name": "ADMIN",
+      "uuid": "926e159d-1b41-4069-995e-b8eae5d338f9"
+    },
+    "Tag": [
+      {
+        "name": "phishing",
+        "colour": "#004646",
+        "local": false,
+        "relationship_type": ""
+      },
+      {
+        "name": "RSS to IOC Collector",
+        "colour": "#004646",
+        "local": false,
+        "relationship_type": ""
+      },
+      {
+        "name": "malware",
+        "colour": "#004646",
+        "local": false,
+        "relationship_type": ""
+      }
+    ]
+  }
+}

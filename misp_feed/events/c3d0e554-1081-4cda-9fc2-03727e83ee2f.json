@@ -1,0 +1,22 @@
+{
+  "Event": {
+    "uuid": "c3d0e554-1081-4cda-9fc2-03727e83ee2f",
+    "info": "Multiples vuln\u00e9rabilit\u00e9s dans les produits Elastic (02 mai 2025)",
+    "date": "2025-05-02",
+    "analysis": 0,
+    "threat_level_id": 4,
+    "timestamp": 1746505605,
+    "Orgc": {
+      "name": "ADMIN",
+      "uuid": "926e159d-1b41-4069-995e-b8eae5d338f9"
+    },
+    "Tag": [
+      {
+        "name": "RSS to IOC Collector",
+        "colour": "#004646",
+        "local": false,
+        "relationship_type": ""
+      }
+    ]
+  }
+}
