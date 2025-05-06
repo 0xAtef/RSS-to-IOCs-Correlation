@@ -1,0 +1,38 @@
+{
+  "Event": {
+    "uuid": "711e072e-c709-4562-bf1e-9ee200f9472a",
+    "info": "Whistleblower: DOGE Siphoned NLRB Case Data",
+    "date": "2025-04-22",
+    "analysis": 0,
+    "threat_level_id": 4,
+    "timestamp": 1746524962,
+    "Orgc": {
+      "name": "ADMIN",
+      "uuid": "926e159d-1b41-4069-995e-b8eae5d338f9"
+    },
+    "Tag": [
+      {
+        "name": "RSS to IOC Collector",
+        "colour": "#004646",
+        "local": false,
+        "relationship_type": ""
+      },
+      {
+        "name": "malware",
+        "colour": "#004646",
+        "local": false,
+        "relationship_type": ""
+      }
+    ],
+    "Attribute": [
+      {
+        "type": "urls",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://x.com/amu",
+        "comment": "Extracted from: https://krebsonsecurity.com/2025/04/whistleblower-doge-siphoned-nlrb-case-data/",
+        "timestamp": 1746524962
+      }
+    ]
+  }
+}

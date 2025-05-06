@@ -1,0 +1,46 @@
+{
+  "Event": {
+    "uuid": "0038028d-cc49-4330-a48e-01faa2b2d943",
+    "info": "Alien's Eye: Hunt Down 570 Social Media Accounts Using AI",
+    "date": "2025-05-05",
+    "analysis": 0,
+    "threat_level_id": 4,
+    "timestamp": 1746524962,
+    "Orgc": {
+      "name": "ADMIN",
+      "uuid": "926e159d-1b41-4069-995e-b8eae5d338f9"
+    },
+    "Tag": [
+      {
+        "name": "RSS to IOC Collector",
+        "colour": "#004646",
+        "local": false,
+        "relationship_type": ""
+      },
+      {
+        "name": "malware",
+        "colour": "#004646",
+        "local": false,
+        "relationship_type": ""
+      }
+    ],
+    "Attribute": [
+      {
+        "type": "urls",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://github.com/arxhr007/Alien",
+        "comment": "Extracted from: https://darkwebinformer.com/aliens-eye-hunt-down-570-social-media-accounts-using-ai/",
+        "timestamp": 1746524962
+      },
+      {
+        "type": "urls",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://pa",
+        "comment": "Extracted from: https://darkwebinformer.com/aliens-eye-hunt-down-570-social-media-accounts-using-ai/",
+        "timestamp": 1746524962
+      }
+    ]
+  }
+}
