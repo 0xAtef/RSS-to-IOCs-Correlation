@@ -1,10 +1,11 @@
 import csv
 import logging
-import os
+from utils.translator import translate_to_english
 
 def write_csv_feed(all_records, csv_path, org_uuid, org_name, cfg):
     """
     Write the collected IOCs and enrichment data to a CSV file.
+    Translate non-English text to English before writing.
     """
     fieldnames = [
         "uuid", "info", "date", "threat_level_id", "analysis",
@@ -19,12 +20,14 @@ def write_csv_feed(all_records, csv_path, org_uuid, org_name, cfg):
             w.writeheader()
 
             for rec in all_records:
+                # Translate event info to English if necessary
+                info = translate_to_english(rec["title"])
+
                 evt_uuid = rec["id"]
-                info = rec["title"]
                 date = rec["published"].split("T")[0]
                 analysis = cfg.get("misp_analysis", 0)
                 tlid = cfg.get("misp_threat_level_id", 4)
-                comment = f"Extracted from: {rec['source']}"
+                comment = translate_to_english(f"Extracted from: {rec['source']}")
 
                 tags = rec.get("tags", [])
                 tags_str = ";".join(tags) if tags else ""
