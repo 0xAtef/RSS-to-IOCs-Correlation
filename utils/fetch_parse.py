@@ -6,6 +6,7 @@ from urllib.parse import urlparse
 from datetime import datetime, timedelta
 from utils.normalization import normalize_ioc, is_ioc_whitelisted
 from utils.enrichment import enrich_with_ner
+from utils.translator import translate_to_english
 
 def fetch_feed(feed_url, session, cfg):
     """Fetch the RSS feed and return the parsed content."""
@@ -28,21 +29,25 @@ def process_feed(feed_url, seen, global_seen, session, cfg, ioc_patterns, whitel
         return []
 
     def strip_html(html):
+        """Remove HTML tags from the text."""
         return BeautifulSoup(html, "html.parser").get_text()
 
     def parse_date(e):
+        """Parse the publication date of a feed entry."""
         sd = e.get("published_parsed") or e.get("updated_parsed")
         if sd:
             return datetime(*sd[:6])
         return None
 
     def recent(e):
+        """Check if the feed entry is recent based on the max_days_old setting."""
         d = parse_date(e)
         return bool(d and d >= datetime.utcnow() - timedelta(days=max_days_old))
 
     out = []
     for e in feed.entries:
         if not recent(e):
+            logging.info(f"Skipping old entry: {e.get('title', 'No Title')}")
             continue
 
         link = e.get("link", "")
@@ -69,14 +74,18 @@ def process_feed(feed_url, seen, global_seen, session, cfg, ioc_patterns, whitel
             filtered[typ] = keep
 
         if not any(filtered.values()):
+            logging.info(f"No IOCs found in entry: {e.get('title', 'No Title')}")
             continue
 
         # Enrich the text with NER
         enrichment = enrich_with_ner(text)
 
+        # Translate the title to English if necessary
+        title = translate_to_english(e.get("title", ""))
+
         out.append({
             "id": str(uuid.uuid4()),
-            "title": e.get("title", ""),
+            "title": title,
             "source": link,
             "published": (parse_date(e) or datetime.utcnow()).isoformat(),
             "feed": feed_url,
@@ -96,11 +105,49 @@ def extract_iocs(text, ioc_patterns):
 
 
 def context_tags(text, feed_url, cfg):
-    """Generate context tags for the feed."""
-    tags = set(cfg.get("fixed_tags", []))
+    """
+    Generate context tags for the feed.
+    Dynamically generate tags based on content, feed metadata, and IOC types.
+    """
+    tags = set(cfg.get("fixed_tags", []))  # Start with fixed tags from config
+
+    # Convert text to lowercase for keyword matching
     lt = text.lower()
+
+    # Add tags based on IOC context keywords
     for ctx, kws in cfg.get("ioc_context_keywords", {}).items():
         if any(k in lt for k in kws):
-            tags.add(ctx)
-    tags.update(cfg.get("feed_tags_by_feed", {}).get(feed_url, []))
-    return list(tags)
+            tags.add(f"context:{ctx}")
+
+    # Add tags based on feed-specific tags
+    feed_tags = cfg.get("feed_tags_by_feed", {}).get(feed_url, [])
+    tags.update(feed_tags)
+
+    # Add IOC type tags (e.g., ip, domain, url, md5, sha256, etc.)
+    if "ip" in lt:
+        tags.add("ioc:type:ip")
+    if "domain" in lt:
+        tags.add("ioc:type:domain")
+    if "url" in lt:
+        tags.add("ioc:type:url")
+    if "md5" in lt:
+        tags.add("ioc:type:md5")
+    if "sha1" in lt:
+        tags.add("ioc:type:sha1")
+    if "sha256" in lt:
+        tags.add("ioc:type:sha256")
+    if "email" in lt:
+        tags.add("ioc:type:email")
+    if "filename" in lt:
+        tags.add("ioc:type:filename")
+    if "cve" in lt:
+        tags.add("ioc:type:cve")
+
+    # Add tags for feed metadata
+    tags.add(f"feed:source:{urlparse(feed_url).netloc}")
+    tags.add(f"feed:published:{datetime.utcnow().strftime('%Y-%m-%d')}")
+
+    # Standardize tags for MISP
+    standardized_tags = {tag.replace(" ", "_").lower() for tag in tags}
+
+    return list(standardized_tags)
