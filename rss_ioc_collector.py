@@ -158,26 +158,9 @@ def write_csv_feed(all_records):
             comment = f"Extracted from: {rec['source']}"
             ts      = int(datetime.utcnow().timestamp())
 
-            # tags as pseudo-attributes
-            for tag in rec["tags"]:
-                w.writerow({
-                    "event_uuid":        evt_id,
-                    "info":              info,
-                    "date":              date,
-                    "analysis":          analysis,
-                    "threat_level_id":   tlid,
-                    "orgc_name":         ORG_NAME,
-                    "orgc_uuid":         ORG_UUID,
-                    "tag":               tag,
-                    "attribute_type":    "comment",
-                    "category":          "External analysis",
-                    "to_ids":            True,
-                    "value":             f"tag:{tag}",
-                    "comment":           comment,
-                    "attribute_timestamp": ts
-                })
+            # Set tag column once (not as separate attribute)
+            tags_str = ",".join(rec["tags"])
 
-            # actual IOCs
             for typ, vals in rec["iocs"].items():
                 for v in vals:
                     w.writerow({
@@ -188,7 +171,7 @@ def write_csv_feed(all_records):
                         "threat_level_id":   tlid,
                         "orgc_name":         ORG_NAME,
                         "orgc_uuid":         ORG_UUID,
-                        "tag":               "",
+                        "tag":               tags_str,  # ⬅️ just metadata
                         "attribute_type":    typ.rstrip("s"),
                         "category":          "External analysis",
                         "to_ids":            True,
@@ -198,6 +181,7 @@ def write_csv_feed(all_records):
                     })
 
     logging.info(f"Wrote CSV feed to {CSV_PATH}")
+
 
 # ── MAIN ────────────────────────────────────────────────────────────────
 def main():
