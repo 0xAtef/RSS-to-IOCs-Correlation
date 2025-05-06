@@ -40,10 +40,10 @@ logging.basicConfig(
 logging.info("Logging initialized. Starting script...")
 
 # === FILE PATHS ===
-CONFIG_PATH = os.path.join(CONFIG_DIR, "config.json")
-LOG_FILE = os.path.join(LOGS_DIR, "ioc_collector.log")
-SEEN_IOCS_PATH = os.path.join(OUTPUT_DIR, "seen_iocs.json")
-CSV_PATH = os.path.join(MISP_FEED_DIR, "feed.csv")  # Save feed.csv under misp_feed/
+CONFIG_PATH = os.path.join("config", "config.json")
+LOG_FILE = os.path.join("logs", "ioc_collector.log")
+SEEN_IOCS_PATH = os.path.join("output", "seen_iocs.json")
+CSV_PATH = os.path.join("output", "feed.csv")
 
 # === LOAD CONFIGURATION FROM FILE ===
 with open(CONFIG_PATH, "r", encoding="utf-8") as f:
