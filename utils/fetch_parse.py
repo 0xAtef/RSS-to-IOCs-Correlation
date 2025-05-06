@@ -2,6 +2,7 @@ import logging
 import feedparser
 import requests
 import re
+import uuid
 
 from bs4 import BeautifulSoup
 from urllib.parse import urlparse
