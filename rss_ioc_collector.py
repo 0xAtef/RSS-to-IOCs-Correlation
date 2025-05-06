@@ -141,46 +141,42 @@ def process_feed(feed_url, seen):
 # ── WRITE CSV ────────────────────────────────────────────────────────
 def write_csv_feed(all_records):
     fieldnames = [
-        "event_uuid","info","date","analysis","threat_level_id",
-        "orgc_name","orgc_uuid","tag",
-        "attribute_type","category","to_ids","value","comment","attribute_timestamp"
+        "uuid", "info", "date", "threat_level_id", "analysis",
+        "orgc_uuid", "orgc_name", "attribute_category", "attribute_type",
+        "attribute_value", "to_ids", "comment"
     ]
+
     with open(CSV_PATH, "w", newline="", encoding="utf-8") as csvf:
         w = csv.DictWriter(csvf, fieldnames=fieldnames)
         w.writeheader()
 
         for rec in all_records:
-            evt_id = rec["id"]
-            info   = rec["title"]
-            date   = rec["published"].split("T")[0]
-            analysis = cfg.get("misp_analysis", 0)
-            tlid     = cfg.get("misp_threat_level_id", 4)
-            comment = f"Extracted from: {rec['source']}"
-            ts      = int(datetime.utcnow().timestamp())
-
-            # Set tag column once (not as separate attribute)
-            tags_str = ",".join(rec["tags"])
+            evt_uuid  = rec["id"]
+            info      = rec["title"]
+            date      = rec["published"].split("T")[0]
+            analysis  = cfg.get("misp_analysis", 0)
+            tlid      = cfg.get("misp_threat_level_id", 4)
+            comment   = f"Extracted from: {rec['source']}"
 
             for typ, vals in rec["iocs"].items():
-                for v in vals:
+                for val in vals:
                     w.writerow({
-                        "event_uuid":        evt_id,
+                        "uuid":              evt_uuid,
                         "info":              info,
                         "date":              date,
-                        "analysis":          analysis,
                         "threat_level_id":   tlid,
-                        "orgc_name":         ORG_NAME,
+                        "analysis":          analysis,
                         "orgc_uuid":         ORG_UUID,
-                        "tag":               tags_str,  # ⬅️ just metadata
-                        "attribute_type":    typ.rstrip("s"),
-                        "category":          "External analysis",
-                        "to_ids":            True,
-                        "value":             v,
-                        "comment":           comment,
-                        "attribute_timestamp": ts
+                        "orgc_name":         ORG_NAME,
+                        "attribute_category":"External analysis",
+                        "attribute_type":    typ.rstrip("s"),  # make sure it's valid!
+                        "attribute_value":   val,
+                        "to_ids":            "True",
+                        "comment":           comment
                     })
 
-    logging.info(f"Wrote CSV feed to {CSV_PATH}")
+    logging.info(f"✅ Wrote MISP-compatible CSV feed to {CSV_PATH}")
+
 
 
 # ── MAIN ────────────────────────────────────────────────────────────────
