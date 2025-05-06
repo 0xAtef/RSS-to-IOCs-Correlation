@@ -32,18 +32,65 @@
   },
 
   "whitelist_by_feed": {
-    "*": ["x.ai", "x.com"],
-    "www.us-cert.gov": ["us-cert.cisa.gov", "www.cisa.gov", "alerts.cisa.gov"],
-    "www.cert.ssi.gouv.fr": ["ssi.gouv.fr", "cert.ssi.gouv.fr"],
-    "feeds.feedburner.com": ["feedburner.com", "feeds.feedburner.com"],
-    "krebsonsecurity.com": ["krebsonsecurity.com", "krebsonsecurity.blogspot.com"],
-    "www.bleepingcomputer.com": ["bleepingcomputer.com", "forums.bleepingcomputer.com"],
-    "www.cisa.gov": ["cisa.gov", "us-cert.cisa.gov", "cyber.dhs.gov"],
-    "www.darkreading.com": ["darkreading.com", "events.darkreading.com"],
-    "isc.sans.edu": ["isc.sans.edu", "urlhistory.html", "sms-activate.org"],
-    "newsroom.trendmicro.com": ["trendmicro.com", "newsroom.trendmicro.com"],
-    "feeds.feedburner.com/threatintelligence": ["feedburner.com", "threatintelligence.com"],
-    "darkwebinformer.com": ["darkwebinformer.com", "portal.darkwebinformer.com", "identifiers.the", "agreements.sample", "sitetvtc.gov.sa"]
+    "*": [
+        "x.ai", "x.com", "android.com", "cve.org",
+        "www.cve.org", "tenable.com", "ubuntu.com", "access.redhat.com",
+        "msrc.microsoft.com", "about.gitlab.com", "medium.com", "support.citrix.com",
+        "cyber.gouv.fr", "learn.microsoft.com", "github.com", "nvd.nist.gov",
+        "support.apple.com", "sophos.com", "security.netapp.com", "advisory.splunk.com",
+        "tenable.com", "access.redhat.com", "about.gitlab.com", "aka.ms",
+        "libreoffice.org", "support.citrix.com", "accounts.google.com", "techmonitor.ai",
+        "cyber.gouv.fr", "es-la.tenable.com", "medium.com", "online.da.mfa.gov",
+        "web.archive.org", "pastebin.com", "moodle.org", "abdainsurance.co.id",
+        "valedolobo.com", "npr.org", "support.broadcom.com", "github.com",
+        "corelight.com", "pcworld.com", "sophos.com", "t.me",
+        "psirt.global.sonicwall.com", "documentation.commvault.com", "horizon3.ai", "derp.org",
+        "pestbusters.com.sg", "service-public.fr", "msrc.microsoft.com", "nvd.nist.gov",
+        "cve.org", "tvtc.gov.sa", "suse.com", "rapid7.com",
+        "cybersecuritynews.com", "flask.palletsprojects.com", "oracle.com", "soundtransit.org",
+        "nlrb.onmicrosoft.com", "explained.tines.com", "mattermost.com", "virustotal.com",
+        "france.fr", "google.com", "archive.org", "ubuntu.com",
+        "advisory.splunk.com", "legifrance.gouv.fr", "info.gouv.fr", "grafana.com",
+        "synthesia.com", "nbcnews.com", "lists.debian.org", "spring.io",
+        "learn.microsoft.com", "login.microsoftonline.com", "nlrb.microsoft.com", "online.da.mfa.gov.ua",
+        "croatianmint.hr", "edisoft.es", "ruizre.es", "neatem.fr",
+        "support.sap.com", "me.sap.com", "sap.com", "ibm.com",
+        "support.apple.com", "cow-prod-www-v3.azurewebsites.net", "flowgpt.com", "chromereleases.googleblog.com",
+        "discuss.elastic.co", "security.samsungtv.com", "smtp.gmail.com"
+    ],
+    "www.us-cert.gov": [
+        "us-cert.cisa.gov", "www.cisa.gov", "alerts.cisa.gov", "www.cert.ssi.gouv.fr"
+    ],
+    "www.cert.ssi.gouv.fr": [
+        "ssi.gouv.fr", "cert.ssi.gouv.fr", "feeds.feedburner.com", "feedburner.com"
+    ],
+    "feeds.feedburner.com": [
+        "feedburner.com", "feeds.feedburner.com", "krebsonsecurity.com", "krebsonsecurity.blogspot.com"
+    ],
+    "krebsonsecurity.com": [
+        "krebsonsecurity.com", "krebsonsecurity.blogspot.com", "bleepingcomputer.com", "forums.bleepingcomputer.com"
+    ],
+    "www.bleepingcomputer.com": [
+        "bleepingcomputer.com", "forums.bleepingcomputer.com", "cisa.gov", "us-cert.cisa.gov"
+    ],
+    "www.cisa.gov": [
+        "cisa.gov", "us-cert.cisa.gov", "cyber.dhs.gov", "darkreading.com"
+    ],
+    "www.darkreading.com": [
+        "darkreading.com", "events.darkreading.com", "isc.sans.edu", "urlhistory.html"
+    ],
+    "isc.sans.edu": [
+        "isc.sans.edu", "urlhistory.html", "sms-activate.org", "trendmicro.com"
+    ],
+    "newsroom.trendmicro.com": [
+        "trendmicro.com", "newsroom.trendmicro.com", "feedburner.com", "threatintelligence.com"
+    ],
+    "feeds.feedburner.com/threatintelligence": [
+        "feedburner.com", "threatintelligence.com", "darkwebinformer.com", "portal.darkwebinformer.com"
+    ],
+    "darkwebinformer.com": [
+        "darkwebinformer.com", "portal.darkwebinformer.com", "identifiers.the", "agreements.sample"
+    ]
   },
 
   "ioc_context_keywords": {

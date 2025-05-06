@@ -174,13 +174,27 @@ def main():
 
         # Save output.json
         output_data = {"records": valid_recs}  # Example structure for output_data
-        with open("output/output.json", "w") as f:
-            json.dump(output_data, f, indent=2)
+        try:
+            with open("output/output.json", "w") as f:
+                json.dump(output_data, f, indent=2)
+            logging.info("output.json saved successfully.")
+        except Exception as e:
+            logging.error(f"Failed to save output.json: {e}")
 
         # Save seen_iocs.json
         seen_iocs = list(seen)  # Convert set to list for JSON serialization
-        with open("output/seen_iocs.json", "w") as f:
-            json.dump(seen_iocs, f, indent=2)
+        try:
+            with open("output/seen_iocs.json", "w") as f:
+                json.dump(seen_iocs, f, indent=2)
+            logging.info("seen_iocs.json saved successfully.")
+        except Exception as e:
+            logging.error(f"Failed to save seen_iocs.json: {e}")
+
+        logging.info("=== Summary ===")
+        logging.info(f"Total feeds processed: {len(FEED_URLS)}")
+        logging.info(f"Total records collected: {len(all_recs)}")
+        logging.info(f"Total valid records saved: {len(valid_recs)}")
+        logging.info(f"Total seen IOCs saved: {len(seen)}")
 
     finally:
         cleanup()
