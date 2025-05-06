@@ -1,0 +1,22 @@
+{
+  "Event": {
+    "uuid": "b42c5b09-c601-4d4c-85e4-feafaa3c0708",
+    "info": "Multiples vuln\u00e9rabilit\u00e9s dans GitLab (24 avril 2025)",
+    "date": "2025-04-24",
+    "analysis": 0,
+    "threat_level_id": 4,
+    "timestamp": 1746521185,
+    "Orgc": {
+      "name": "ADMIN",
+      "uuid": "926e159d-1b41-4069-995e-b8eae5d338f9"
+    },
+    "Tag": [
+      {
+        "name": "RSS to IOC Collector",
+        "colour": "#004646",
+        "local": false,
+        "relationship_type": ""
+      }
+    ]
+  }
+}

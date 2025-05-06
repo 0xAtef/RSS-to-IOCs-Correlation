@@ -1,0 +1,22 @@
+{
+  "Event": {
+    "uuid": "02e5ece3-a62b-4035-a293-aa0fd866d516",
+    "info": "Multiples vuln\u00e9rabilit\u00e9s dans le noyau Linux d'Ubuntu (25 avril 2025)",
+    "date": "2025-04-25",
+    "analysis": 0,
+    "threat_level_id": 4,
+    "timestamp": 1746521185,
+    "Orgc": {
+      "name": "ADMIN",
+      "uuid": "926e159d-1b41-4069-995e-b8eae5d338f9"
+    },
+    "Tag": [
+      {
+        "name": "RSS to IOC Collector",
+        "colour": "#004646",
+        "local": false,
+        "relationship_type": ""
+      }
+    ]
+  }
+}
