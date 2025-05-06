@@ -182,31 +182,41 @@ def write_event(uuid_str, rec):
 
 
 
+
 def rebuild_root_manifest():
-    manifest = {}
+    entries = []
+    feed_root = OUTPUT_BASE_DIR.strip("/")
     for fn in glob(os.path.join(EVENTS_DIR, "*.json")):
         name = os.path.basename(fn)
-        if name.startswith("__") or name == "manifest.json":
+        if name == "manifest.json":
             continue
-        with open(fn, "r", encoding="utf-8") as f:
-            event_data = json.load(f)
-        event = event_data.get("Event", {})
-        uid = event.get("uuid")
-        if not uid:
-            continue
-        manifest[uid] = {
-            "info": event.get("info", ""),
-            "Orgc": event.get("Orgc", {}),
-            "analysis": event.get("analysis", 0),
-            "date": event.get("date", ""),
-            "timestamp": event.get("timestamp", int(datetime.utcnow().timestamp())),
-            "threat_level_id": event.get("threat_level_id", 4),
-            "Tag": event.get("Tag", []),
-            "url": f"https://raw.githubusercontent.com/{GITHUB_REPO}/{GITHUB_BRANCH}/{EVENTS_DIR}/{uid}.json"
-        }
+        uid = name.rsplit(".", 1)[0]
+        url = "/".join([
+            "https://raw.githubusercontent.com",
+            GITHUB_REPO,
+            GITHUB_BRANCH,
+            feed_root,
+            "events",
+            name
+        ])
+        entries.append({
+            "uuid": uid,
+            "url": url
+        })
 
+    root_manifest = {
+        "name": cfg.get("feed_name", "RSS to IOC Collector Feed"),
+        "description": cfg.get("feed_description", "IOC feed generated from RSS sources"),
+        "version": 1,
+        "publish_timestamp": int(datetime.utcnow().timestamp()),
+        "url": f"https://raw.githubusercontent.com/{GITHUB_REPO}/{GITHUB_BRANCH}/{feed_root}",
+        "events": entries
+    }
+
+    os.makedirs(OUTPUT_BASE_DIR, exist_ok=True)
     with open(ROOT_MANIFEST, "w", encoding="utf-8") as f:
-        json.dump(manifest, f, indent=2)
+        json.dump(root_manifest, f, indent=2)
+
 
 
 
