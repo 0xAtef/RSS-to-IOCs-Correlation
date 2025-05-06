@@ -125,7 +125,17 @@ def process_feeds_concurrently(feed_urls, seen):
     all_recs = []
     with ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
         futures = {
-            executor.submit(process_feed, url, seen, global_seen, session, cfg): url
+            executor.submit(
+                process_feed,
+                url,
+                seen,
+                global_seen,
+                session,
+                cfg,
+                cfg["ioc_patterns"],  # Pass ioc_patterns
+                cfg.get("whitelist_by_feed", {}),  # Pass whitelist_by_feed
+                cfg["max_days_old"]  # Pass max_days_old
+            ): url
             for url in feed_urls if monitor_feed_health(url, session)  # Only process healthy feeds
         }
         for future in as_completed(futures):
