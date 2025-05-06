@@ -1,0 +1,2352 @@
+{
+  "Event": {
+    "uuid": "2ffdd93a-9d2c-44aa-a8e4-d80955261c05",
+    "info": "Multiples vuln\u00e9rabilit\u00e9s dans le noyau Linux d'Ubuntu (02 mai 2025)",
+    "date": "2025-05-02",
+    "analysis": 0,
+    "threat_level_id": 4,
+    "timestamp": 1746525774,
+    "Orgc": {
+      "name": "ADMIN",
+      "uuid": "926e159d-1b41-4069-995e-b8eae5d338f9"
+    },
+    "Tag": [
+      {
+        "name": "RSS to IOC Collector",
+        "colour": "#004646",
+        "local": false,
+        "relationship_type": ""
+      }
+    ],
+    "Attribute": [
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-50074 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-50075 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-56739 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-56742 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-49907 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-49909 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2025-21700 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2025-21701 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-50072 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-50073 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-50103 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-50104 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-49997 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-49998 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-53148 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-53150 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-47713 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-47718 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-49966 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-49968 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-50128 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-50130 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-53123 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-53124 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-50111 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-50112 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-56707 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-56708 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-56748 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-56751 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-53127 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-53128 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-49945 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-49946 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-50086 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-50087 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2025-21692 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2025-21694 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-56728 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-56729 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-56593 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-56594 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-56583 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-56584 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-56687 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-56688 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-50142 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-50143 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-50126 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-50127 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-50145 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-50146 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-50152 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-50153 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-50222 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-50223 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-49851 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-49852 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-56607 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-56608 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-53160 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-53161 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-47698 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-47699 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-56632 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-56633 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-49961 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-49962 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-57948 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-57951 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-50117 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-50118 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-50120 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-50121 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-53086 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-53087 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-47689 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-47690 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-56648 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-56649 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-50096 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-50098 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-56627 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-56629 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-49886 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-49888 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-56691 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-56692 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-53157 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-53158 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-56566 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-56567 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-50076 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-50077 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-56570 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-56572 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-56645 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-56647 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-50147 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-50148 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-53164 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-53165 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-50240 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-50242 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-47738 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-47739 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-56603 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-56604 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-56599 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-56600 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-56638 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-56640 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-49954 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-49955 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-50230 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-50231 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-26837 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-26928 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-53063 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-53066 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-50134 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-50135 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-35864 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-36476 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-56701 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-56703 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-56771 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-56772 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-49915 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-49917 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-47711 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-47712 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-53162 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-53163 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-53196 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-53197 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-49978 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-49981 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2025-21756 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2025-21831 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-53112 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-53113 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-49975 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-49977 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-49900 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-49901 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-41935 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-42122 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-49994 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-49996 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-50211 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-50215 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-49858 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-49859 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-50012 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-50013 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-49988 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-49989 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-56590 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-56592 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-56693 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-56694 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-50069 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-50070 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-49905 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-49906 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-49937 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-49938 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-49913 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-49914 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-50238 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-50239 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-50082 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-50083 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-56605 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-56606 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-49924 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-49925 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-50088 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-50090 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-50124 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-50125 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-47726 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-47728 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-47730 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-47734 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-53131 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-53133 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-56575 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-56576 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-53095 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-53096 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-49948 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-49949 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-50243 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-50244 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-49922 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-49923 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-56609 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-56610 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-49918 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-49919 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-50105 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-50107 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-47748 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-47749 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-56704 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-56705 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-56724 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-56725 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-56641 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-56642 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-49879 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-49880 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-49855 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-49856 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-50140 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-50141 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-56679 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-56681 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-56622 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-56623 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-47701 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-47703 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-56726 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-56727 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-56616 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-56619 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-56670 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-56672 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-56579 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-56580 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-50055 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-50056 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-50035 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-50036 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-49911 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-49912 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-47709 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-47710 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-58087 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-8805 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-56597 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-56598 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-50061 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-50062 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-47756 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-47757 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-49868 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-49870 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-50216 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-50218 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-50002 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-50006 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-47704 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-47705 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-50224 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-50225 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-50067 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-50068 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-49863 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-49865 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-49985 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-49987 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-49866 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-49867 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-53155 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-53156 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-53125 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-53126 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-50093 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-50095 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-50138 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-50139 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-56601 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-56602 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-50115 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-50116 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-53146 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-53147 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-49895 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-49896 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-49926 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-49927 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-56595 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-56596 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-50040 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-50041 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-56573 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-56574 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-49877 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-49878 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-50156 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-50158 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-49898 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-49899 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-56614 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-56615 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-47706 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-47707 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-53151 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-53154 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-47691 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-47692 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2025-21666 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2025-21669 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-56752 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-56754 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-50031 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-50033 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-56715 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-56716 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-49963 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-49965 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-53194 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-53195 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-56683 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-56685 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2025-21683 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2025-21687 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-49891 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-49892 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-53144 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-53145 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-56781 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-56782 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-50065 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-50066 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-56677 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-56678 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-50057 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-50058 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-36899 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-41014 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-56643 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-56644 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-53101 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-53103 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-49973 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-49974 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-53110 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-53111 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-50014 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-50015 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-41016 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-41932 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-50045 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-50046 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-47745 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-47747 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-53079 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-53081 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-49959 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-49960 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-56650 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-56651 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-49991 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-49992 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-56773 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-56774 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-50007 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-50008 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-56662 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-56663 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-53084 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-53085 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2025-21697 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2025-21699 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-53072 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-53076 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-50154 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-50155 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-49939 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-49944 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-56744 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-56745 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-53108 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-53109 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-53106 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-53107 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-53082 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-53083 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-56588 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-56589 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-50059 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-50060 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2025-21678 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2025-21680 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-56568 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-56569 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-56722 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-56723 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-53093 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-53094 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2025-21702 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2025-21703 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-53141 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-53142 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-53117 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-53118 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-49881 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-49882 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-56769 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-56770 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-53119 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-53120 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-53121 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-53122 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-53198 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-53200 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-50049 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-50051 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-50084 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-50085 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-56581 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-56582 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-50108 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-50110 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-56577 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-56578 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-50042 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-50044 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-47672 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-47673 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-56625 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-56626 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-56755 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-56756 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-53190 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-53191 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-53187 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-53188 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-50179 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-50180 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-50164 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-50166 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-47670 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-47671 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-49933 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-49934 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-50162 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-50163 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-49889 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-49890 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-49893 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-49894 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-49969 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-49972 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-49928 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-49929 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-50099 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-50101 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-49982 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-49983 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-56777 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-56778 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-56630 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-56631 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-50136 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-50137 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-49930 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-49931 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-53067 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-53068 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-53114 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-53115 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-53090 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-53091 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-53134 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-53135 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-50169 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-50170 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-56658 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-56659 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-50167 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-50168 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-56620 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-56621 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-49871 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-49875 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-47740 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-47742 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-56586 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-56587 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-56698 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-56700 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-56759 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-56763 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-56746 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-56747 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-47720 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-47723 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-50236 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-50237 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-50220 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-50221 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-53129 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-53130 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-50245 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-50246 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2025-21689 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2025-21690 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-50159 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-50160 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-47735 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-47737 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-47678 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-47679 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-56765 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-56767 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-50016 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-50017 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-50171 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-50172 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-49957 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-49958 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-50131 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-50133 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-50063 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-50064 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-47696 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-47697 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-56636 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-56637 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-50038 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-50039 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-56779 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-56780 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-50078 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-50080 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-56634 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-56635 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-50232 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-50233 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-47693 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-47695 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-56611 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-56613 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-50247 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-50248 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-56689 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-56690 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-53136 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-53138 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-56720 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-56721 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-50226 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-50229 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-50150 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-50151 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-53061 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-53062 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-50000 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-50001 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-49950 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-49952 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-53104 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-53105 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-49883 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-49884 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-47684 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-47685 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-56562 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-56565 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-50234 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-50235 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-56775 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-56776 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-53139 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-53140 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-49935 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-49936 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-53088 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-53089 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-50047 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-50048 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-49860 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-49861 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2024-49902 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2024-49903 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2025-21993 R\u00c3\u00a9f\u00c3\u00a9rence CVE CVE-2025-2312 http",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
+        "timestamp": 1746525774
+      }
+    ]
+  }
+}

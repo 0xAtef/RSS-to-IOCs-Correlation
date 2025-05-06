@@ -1,0 +1,32 @@
+{
+  "Event": {
+    "uuid": "4470d5cf-9331-4ed4-b237-e45ea8332f1f",
+    "info": "Vuln\u00e9rabilit\u00e9 dans les produits Symantec (30 avril 2025)",
+    "date": "2025-04-30",
+    "analysis": 0,
+    "threat_level_id": 4,
+    "timestamp": 1746525774,
+    "Orgc": {
+      "name": "ADMIN",
+      "uuid": "926e159d-1b41-4069-995e-b8eae5d338f9"
+    },
+    "Tag": [
+      {
+        "name": "RSS to IOC Collector",
+        "colour": "#004646",
+        "local": false,
+        "relationship_type": ""
+      }
+    ],
+    "Attribute": [
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2025-3599        Ge",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0357/",
+        "timestamp": 1746525774
+      }
+    ]
+  }
+}

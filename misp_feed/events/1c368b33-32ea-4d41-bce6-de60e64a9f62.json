@@ -1,0 +1,40 @@
+{
+  "Event": {
+    "uuid": "1c368b33-32ea-4d41-bce6-de60e64a9f62",
+    "info": "Vuln\u00e9rabilit\u00e9 dans LibreOffice (28 avril 2025)",
+    "date": "2025-04-28",
+    "analysis": 0,
+    "threat_level_id": 4,
+    "timestamp": 1746525774,
+    "Orgc": {
+      "name": "ADMIN",
+      "uuid": "926e159d-1b41-4069-995e-b8eae5d338f9"
+    },
+    "Tag": [
+      {
+        "name": "RSS to IOC Collector",
+        "colour": "#004646",
+        "local": false,
+        "relationship_type": ""
+      }
+    ],
+    "Attribute": [
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.libreoffice.org/about-u",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0351/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2025-2866        Ge",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0351/",
+        "timestamp": 1746525774
+      }
+    ]
+  }
+}

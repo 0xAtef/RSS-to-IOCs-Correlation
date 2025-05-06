@@ -1,0 +1,44 @@
+{
+  "Event": {
+    "uuid": "1d717fa6-8e52-49a3-b442-7a9d21ec3e43",
+    "info": "UK shares security tips after major retail cyberattacks",
+    "date": "2025-05-05",
+    "analysis": 0,
+    "threat_level_id": 4,
+    "timestamp": 1746525774,
+    "Orgc": {
+      "name": "ADMIN",
+      "uuid": "926e159d-1b41-4069-995e-b8eae5d338f9"
+    },
+    "Tag": [
+      {
+        "name": "RSS to IOC Collector",
+        "colour": "#004646",
+        "local": false,
+        "relationship_type": ""
+      },
+      {
+        "name": "phishing",
+        "colour": "#004646",
+        "local": false,
+        "relationship_type": ""
+      },
+      {
+        "name": "malware",
+        "colour": "#004646",
+        "local": false,
+        "relationship_type": ""
+      }
+    ],
+    "Attribute": [
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://en.wikipedia.org/wiki/Lap",
+        "comment": "Extracted from: https://www.bleepingcomputer.com/news/security/uk-shares-security-tips-after-major-retail-cyberattacks/",
+        "timestamp": 1746525774
+      }
+    ]
+  }
+}

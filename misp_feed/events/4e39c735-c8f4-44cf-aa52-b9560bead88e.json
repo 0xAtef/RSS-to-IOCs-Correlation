@@ -1,0 +1,62 @@
+{
+  "Event": {
+    "uuid": "4e39c735-c8f4-44cf-aa52-b9560bead88e",
+    "info": "xAI Dev Leaks API Key for Private SpaceX, Tesla LLMs",
+    "date": "2025-05-02",
+    "analysis": 0,
+    "threat_level_id": 4,
+    "timestamp": 1746525774,
+    "Orgc": {
+      "name": "ADMIN",
+      "uuid": "926e159d-1b41-4069-995e-b8eae5d338f9"
+    },
+    "Tag": [
+      {
+        "name": "RSS to IOC Collector",
+        "colour": "#004646",
+        "local": false,
+        "relationship_type": ""
+      },
+      {
+        "name": "malware",
+        "colour": "#004646",
+        "local": false,
+        "relationship_type": ""
+      }
+    ],
+    "Attribute": [
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.techmonitor.ai/technology/cyber",
+        "comment": "Extracted from: https://krebsonsecurity.com/2025/05/xai-dev-leaks-api-key-for-private-spacex-tesla-llms/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://medium.com/@marc.bolle/wormgpt-fraudgpt-how-cybercriminal",
+        "comment": "Extracted from: https://krebsonsecurity.com/2025/05/xai-dev-leaks-api-key-for-private-spacex-tesla-llms/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://flowgpt.com/p/wormgpt-v30 Intere",
+        "comment": "Extracted from: https://krebsonsecurity.com/2025/05/xai-dev-leaks-api-key-for-private-spacex-tesla-llms/",
+        "timestamp": 1746525774
+      },
+      {
+        "type": "url",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.pcworld.com/article/2770385/i-",
+        "comment": "Extracted from: https://krebsonsecurity.com/2025/05/xai-dev-leaks-api-key-for-private-spacex-tesla-llms/",
+        "timestamp": 1746525774
+      }
+    ]
+  }
+}
