@@ -38,7 +38,7 @@ jobs:
       - name: Run collector & build feed
         run: |
           set -e
-          python rss_ioc_collector.py > logs/workflow.log 2>&1
+          python rss_ioc_collector.py > ./logs/workflow.log 2>&1
 
       - name: Read output directory from config.json
         id: feed-config
