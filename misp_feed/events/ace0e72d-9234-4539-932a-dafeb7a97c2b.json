@@ -1,0 +1,40 @@
+{
+  "Event": {
+    "uuid": "ace0e72d-9234-4539-932a-dafeb7a97c2b",
+    "info": "Vuln\u00e9rabilit\u00e9 dans le noyau Linux de Red Hat (02 mai 2025)",
+    "date": "2025-05-02",
+    "analysis": 0,
+    "threat_level_id": 4,
+    "timestamp": 1746524185,
+    "Orgc": {
+      "name": "ADMIN",
+      "uuid": "926e159d-1b41-4069-995e-b8eae5d338f9"
+    },
+    "Tag": [
+      {
+        "name": "RSS to IOC Collector",
+        "colour": "#004646",
+        "local": false,
+        "relationship_type": ""
+      }
+    ],
+    "Attribute": [
+      {
+        "type": "urls",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://acce",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0367/",
+        "timestamp": 1746524185
+      },
+      {
+        "type": "urls",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://www.cve.org/CVERecord?id=CVE-2025-21927\n\n\n\n\n\n\n\nGe",
+        "comment": "Extracted from: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0367/",
+        "timestamp": 1746524185
+      }
+    ]
+  }
+}
