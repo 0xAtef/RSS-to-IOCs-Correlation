@@ -43,8 +43,8 @@ FEED_TAGS      = cfg.get("feed_tags_by_feed", {})
 WHITELIST_BY_FEED= cfg.get("whitelist_by_feed", {})
 
 # Paths
-EVENTS_DIR     = os.path.join(OUTPUT_BASE_DIR, "events")
-ROOT_MANIFEST  = os.path.join(OUTPUT_BASE_DIR, "manifest.json")
+EVENTS_DIR      = os.path.join(OUTPUT_BASE_DIR, "events")
+ROOT_MANIFEST   = os.path.join(OUTPUT_BASE_DIR, "manifest.json")
 
 # ── Logging ────────────────────────────────────────────────────────────────────
 logging.basicConfig(
@@ -97,7 +97,8 @@ def recent(e):
     return bool(dt and dt >= datetime.utcnow() - timedelta(days=MAX_DAYS_OLD))
 
 def extract_iocs(text):
-    return {t: list({m for m in re.findall(pat, text)}) for t, pat in IOC_PATTERNS.items()}
+    cleaned_text = text.replace("\n", " ").strip()  # Sanitize text
+    return {t: list({m for m in re.findall(pat, cleaned_text)}) for t, pat in IOC_PATTERNS.items()}
 
 def context_tags(text, feed_url):
     tags = set(cfg.get("fixed_tags", []))
@@ -149,12 +150,11 @@ def process_feed(feed_url, seen):
 
 # ── WRITE EVENTS & MANIFEST ───────────────────────────────────────────────────
 def write_event(uuid_str, rec):
-    # Build MISP-compliant event JSON with attributes
     attributes = []
     for ioc_type, values in rec.get("iocs", {}).items():
         for val in values:
             attr = {
-                "type": ioc_type,
+                "type": ioc_type.rstrip("s"),  # MISP expects singular 'url', not 'urls'
                 "category": "External analysis",
                 "to_ids": True,
                 "value": val,
@@ -180,18 +180,14 @@ def write_event(uuid_str, rec):
     with open(path, "w", encoding="utf-8") as f:
         json.dump(event, f, indent=2)
 
-
-
-
 def rebuild_root_manifest():
     entries = []
-    base = OUTPUT_BASE_DIR.strip("/")           # e.g. "misp_feed"
+    base = OUTPUT_BASE_DIR.strip("/")
     for fn in glob(os.path.join(EVENTS_DIR, "*.json")):
         name = os.path.basename(fn)
         if name == "manifest.json":
             continue
         uid = name.rsplit(".", 1)[0]
-        # <-- ensure /events/ is in the path:
         url = f"https://raw.githubusercontent.com/{GITHUB_REPO}/{GITHUB_BRANCH}/{base}/events/{name}"
         entries.append({
             "uuid": uid,
@@ -211,9 +207,6 @@ def rebuild_root_manifest():
     with open(ROOT_MANIFEST, "w", encoding="utf-8") as f:
         json.dump(root_manifest, f, indent=2)
 
-
-
-
 # ── MAIN ──────────────────────────────────────────────────────────────────────
 def main():
     logging.info("IOC Collector START")
@@ -225,7 +218,6 @@ def main():
             all_recs.extend(fut.result())
     save_seen_iocs(seen)
 
-    # Write events and rebuild manifest
     for rec in all_recs:
         write_event(rec['id'], rec)
     rebuild_root_manifest()
