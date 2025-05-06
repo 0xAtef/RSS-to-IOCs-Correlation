@@ -1,0 +1,22 @@
+{
+  "Event": {
+    "uuid": "cf9af114-ca94-4250-956a-bec2c70368cc",
+    "info": "Multiples vuln\u00e9rabilit\u00e9s dans les produits IBM (02 mai 2025)",
+    "date": "2025-05-02",
+    "analysis": 0,
+    "threat_level_id": 4,
+    "timestamp": 1746516138,
+    "Orgc": {
+      "name": "ADMIN",
+      "uuid": "926e159d-1b41-4069-995e-b8eae5d338f9"
+    },
+    "Tag": [
+      {
+        "name": "RSS to IOC Collector",
+        "colour": "#004646",
+        "local": false,
+        "relationship_type": ""
+      }
+    ]
+  }
+}
