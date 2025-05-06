@@ -149,7 +149,20 @@ def process_feed(feed_url, seen):
 
 # ── WRITE EVENTS & MANIFEST ───────────────────────────────────────────────────
 def write_event(uuid_str, rec):
-    # Build MISP-compliant event JSON
+    # Build MISP-compliant event JSON with attributes
+    attributes = []
+    for ioc_type, values in rec.get("iocs", {}).items():
+        for val in values:
+            attr = {
+                "type": ioc_type,
+                "category": "External analysis",
+                "to_ids": True,
+                "value": val,
+                "comment": f"Extracted from: {rec.get('source', '')}",
+                "timestamp": int(datetime.utcnow().timestamp()),
+            }
+            attributes.append(attr)
+
     event = {"Event": {
         "uuid": uuid_str,
         "info": rec["title"],
@@ -158,13 +171,15 @@ def write_event(uuid_str, rec):
         "threat_level_id": cfg.get("misp_threat_level_id", 4),
         "timestamp": int(datetime.utcnow().timestamp()),
         "Orgc": {"name": ORG_NAME, "uuid": ORG_UUID},
-        "Tag": [{"name": t, "colour": cfg.get("misp_tag_colour", "#004646"), "local": False, "relationship_type": ""} for t in rec.get("tags", [])]
+        "Tag": [{"name": t, "colour": cfg.get("misp_tag_colour", "#004646"), "local": False, "relationship_type": ""} for t in rec.get("tags", [])],
+        "Attribute": attributes
     }}
+
     os.makedirs(EVENTS_DIR, exist_ok=True)
-    # Write per-event JSON
     path = os.path.join(EVENTS_DIR, f"{uuid_str}.json")
     with open(path, "w", encoding="utf-8") as f:
         json.dump(event, f, indent=2)
+
 
 
 def rebuild_root_manifest():
@@ -186,8 +201,10 @@ def rebuild_root_manifest():
             "date": event.get("date", ""),
             "timestamp": event.get("timestamp", int(datetime.utcnow().timestamp())),
             "threat_level_id": event.get("threat_level_id", 4),
-            "Tag": event.get("Tag", [])
+            "Tag": event.get("Tag", []),
+            "url": f"https://raw.githubusercontent.com/{GITHUB_REPO}/{GITHUB_BRANCH}/{EVENTS_DIR}/{uid}.json"
         }
+
     with open(ROOT_MANIFEST, "w", encoding="utf-8") as f:
         json.dump(manifest, f, indent=2)
 
