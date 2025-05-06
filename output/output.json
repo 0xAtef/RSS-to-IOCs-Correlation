@@ -1,17 +1,19 @@
 {
   "records": [
     {
-      "id": "9e732a45-8126-4bb9-97f4-f1b2d8b5c0f6",
-      "title": "Balance Diagnostics falls victim to Everest Ransomware",
-      "source": "https://darkwebinformer.com/balance-diagnostics-falls-victim-to-everest-ransomware/",
-      "published": "2025-05-06T18:26:45",
+      "id": "a6b13304-26b1-47ff-bea8-9a011fa70902",
+      "title": "Alleged Sale of Unauthorized Admin Access to a WooCommerce-based Online Store in the UK",
+      "source": "https://darkwebinformer.com/alleged-sale-of-unauthorized-admin-access-to-a-woocommerce-based-online-store-in-the-uk/",
+      "published": "2025-05-06T19:03:23",
       "feed": "https://darkwebinformer.com/rss/",
       "iocs": {
         "ips": [],
         "domains": [
-          "information.Over"
+          "forum.exploit.in"
         ],
-        "urls": [],
+        "urls": [
+          "https://forum.exploit.in/topic/258474/\ud83d\udd75\ufe0f\u200d\u2642\ufe0f"
+        ],
         "emails": [],
         "sha1": [],
         "sha256": [],
@@ -19,15 +21,17 @@
         "cves": []
       },
       "tags": [
-        "context:ddos",
-        "feed:published:2025-05-06",
-        "context:data_leak",
+        "context:malware",
         "rss_to_ioc_collector",
-        "ioc:type:url",
-        "ioc:type:ip",
-        "ioc:type:email",
         "feed:source:darkwebinformer.com",
-        "context:malware"
+        "context:ddos",
+        "context:exploits",
+        "ioc:type:url",
+        "ioc:type:email",
+        "feed:published:2025-05-06",
+        "context:threat_actor",
+        "context:data_leak",
+        "ioc:type:ip"
       ],
       "enrichment": {
         "actors": [],
