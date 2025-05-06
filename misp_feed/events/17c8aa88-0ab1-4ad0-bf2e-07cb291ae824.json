@@ -1,0 +1,22 @@
+{
+  "Event": {
+    "uuid": "17c8aa88-0ab1-4ad0-bf2e-07cb291ae824",
+    "info": "More Scans for SMS Gateways and APIs, (Tue, Apr 29th)",
+    "date": "2025-04-29",
+    "analysis": 0,
+    "threat_level_id": 4,
+    "timestamp": 1746509030,
+    "Orgc": {
+      "name": "ADMIN",
+      "uuid": "926e159d-1b41-4069-995e-b8eae5d338f9"
+    },
+    "Tag": [
+      {
+        "name": "RSS to IOC Collector",
+        "colour": "#004646",
+        "local": false,
+        "relationship_type": ""
+      }
+    ]
+  }
+}

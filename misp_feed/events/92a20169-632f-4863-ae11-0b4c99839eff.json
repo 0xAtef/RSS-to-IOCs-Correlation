@@ -1,0 +1,28 @@
+{
+  "Event": {
+    "uuid": "92a20169-632f-4863-ae11-0b4c99839eff",
+    "info": "xAI Dev Leaks API Key for Private SpaceX, Tesla LLMs",
+    "date": "2025-05-02",
+    "analysis": 0,
+    "threat_level_id": 4,
+    "timestamp": 1746509030,
+    "Orgc": {
+      "name": "ADMIN",
+      "uuid": "926e159d-1b41-4069-995e-b8eae5d338f9"
+    },
+    "Tag": [
+      {
+        "name": "RSS to IOC Collector",
+        "colour": "#004646",
+        "local": false,
+        "relationship_type": ""
+      },
+      {
+        "name": "malware",
+        "colour": "#004646",
+        "local": false,
+        "relationship_type": ""
+      }
+    ]
+  }
+}

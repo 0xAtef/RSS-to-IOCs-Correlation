@@ -1,0 +1,22 @@
+{
+  "Event": {
+    "uuid": "effd0655-7299-4110-a344-c0c4d4fb1376",
+    "info": "Vuln\u00e9rabilit\u00e9 dans Spring Boot (25 avril 2025)",
+    "date": "2025-04-25",
+    "analysis": 0,
+    "threat_level_id": 4,
+    "timestamp": 1746509030,
+    "Orgc": {
+      "name": "ADMIN",
+      "uuid": "926e159d-1b41-4069-995e-b8eae5d338f9"
+    },
+    "Tag": [
+      {
+        "name": "RSS to IOC Collector",
+        "colour": "#004646",
+        "local": false,
+        "relationship_type": ""
+      }
+    ]
+  }
+}
