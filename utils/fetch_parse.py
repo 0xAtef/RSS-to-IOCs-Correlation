@@ -1,19 +1,22 @@
 import logging
 import feedparser
 import requests
+import re
+
 from bs4 import BeautifulSoup
 from urllib.parse import urlparse
 from datetime import datetime, timedelta
+
 from utils.normalization import normalize_ioc, is_ioc_whitelisted
 from utils.enrichment import enrich_with_ner
 from utils.translator import translate_to_english
 
 def fetch_feed(feed_url, session, cfg):
-    """Fetch the RSS feed and return the parsed content."""
+    """Fetch the RSS feed."""
     try:
+        headers = {"User-Agent": cfg.get("user_agent", "MISP-IOC-Collector/1.0")}
         logging.info(f"Fetching {feed_url}")
-        response = session.get(feed_url, timeout=cfg.get("request_timeout", 10),
-                               headers={"User-Agent": cfg.get("user_agent")})
+        response = session.get(feed_url, headers=headers, timeout=cfg.get("request_timeout", 10))
         response.raise_for_status()
         return feedparser.parse(response.text)
     except requests.exceptions.RequestException as exc:
@@ -42,10 +45,15 @@ def process_feed(feed_url, seen, global_seen, session, cfg, ioc_patterns, whitel
             return datetime(*sd[:6])
         return None
 
-    def recent(e):
+    def recent(e, max_days_old):
         """Check if the feed entry is recent based on the max_days_old setting."""
         d = parse_date(e)
-        return bool(d and d >= datetime.utcnow() - timedelta(days=max_days_old))
+        if not d:
+            return False
+        is_recent = d >= datetime.utcnow() - timedelta(days=max_days_old)
+        if not is_recent:
+            logging.info(f"Skipping old entry: {e.get('title', 'No Title')}")
+        return is_recent
 
     out = []
     for e in feed.entries:
@@ -54,8 +62,7 @@ def process_feed(feed_url, seen, global_seen, session, cfg, ioc_patterns, whitel
         logging.info(f"Processing entry: {title}")
 
         # Skip old entries
-        if not recent(e):
-            logging.info(f"Skipping old entry: {title}")
+        if not recent(e, max_days_old):
             continue
 
         # Fetch the article content

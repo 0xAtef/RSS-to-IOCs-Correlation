@@ -87,9 +87,9 @@ def load_seen():
         return set()
     except json.JSONDecodeError as e:
         logging.error(f"Error decoding JSON from {SEEN_IOCS_PATH}: {e}")
-        return set()
-    except Exception as e:
-        logging.error(f"Unexpected error loading seen IOCs: {e}")
+        # Initialize as an empty set
+        with open(SEEN_IOCS_PATH, "w") as f:
+            json.dump([], f)
         return set()
 
 
