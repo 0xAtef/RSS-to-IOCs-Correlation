@@ -75,8 +75,20 @@ jobs:
 
           # Stage the CSV feed file
           git add "misp_feed/feed.csv"
-          git add "output/output.json"
-          git add "output/seen_iocs.json"
+
+          # Stage output.json if it exists
+          if [ -f "output/output.json" ]; then
+            git add "output/output.json"
+          else
+            echo "Warning: output.json not found!"
+          fi
+
+          # Stage seen_iocs.json if it exists
+          if [ -f "output/seen_iocs.json" ]; then
+            git add "output/seen_iocs.json"
+          else
+            echo "Warning: seen_iocs.json not found!"
+          fi
 
           # Commit if there are staged changes
           git diff --staged --quiet || git commit -m "Update IOC feed and state files: New data collected and processed"
