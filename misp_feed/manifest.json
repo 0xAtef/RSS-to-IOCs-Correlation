@@ -2,7 +2,7 @@
   "name": "RSS to IOC Collector Feed",
   "description": "Automatically extracted IOCs from RSS sources.",
   "version": 1,
-  "publish_timestamp": 1746516138,
+  "publish_timestamp": 1746520207,
   "url": "https://raw.githubusercontent.com/0xAtef/RSS-to-IOCs-Correlation/main/misp_feed",
   "events": [
     {
@@ -20,6 +20,10 @@
     {
       "uuid": "4ac99f1d-20b1-4421-9702-ca2fbee575b9",
       "url": "https://raw.githubusercontent.com/0xAtef/RSS-to-IOCs-Correlation/main/misp_feed/events/4ac99f1d-20b1-4421-9702-ca2fbee575b9.json"
+    },
+    {
+      "uuid": "60cbe780-a9fb-4303-a6da-bb97cd09ad03",
+      "url": "https://raw.githubusercontent.com/0xAtef/RSS-to-IOCs-Correlation/main/misp_feed/events/60cbe780-a9fb-4303-a6da-bb97cd09ad03.json"
     },
     {
       "uuid": "fc94590d-2c38-46b1-ac59-74a45a01398e",
@@ -110,8 +114,24 @@
       "url": "https://raw.githubusercontent.com/0xAtef/RSS-to-IOCs-Correlation/main/misp_feed/events/966ca63c-030c-4352-9dbc-cae9a7ec3b7d.json"
     },
     {
+      "uuid": "6329b067-104e-45da-91a1-e969ab72550e",
+      "url": "https://raw.githubusercontent.com/0xAtef/RSS-to-IOCs-Correlation/main/misp_feed/events/6329b067-104e-45da-91a1-e969ab72550e.json"
+    },
+    {
       "uuid": "92a20169-632f-4863-ae11-0b4c99839eff",
       "url": "https://raw.githubusercontent.com/0xAtef/RSS-to-IOCs-Correlation/main/misp_feed/events/92a20169-632f-4863-ae11-0b4c99839eff.json"
+    },
+    {
+      "uuid": "ab61c127-b7ac-465f-9fd8-e55cf0a47af6",
+      "url": "https://raw.githubusercontent.com/0xAtef/RSS-to-IOCs-Correlation/main/misp_feed/events/ab61c127-b7ac-465f-9fd8-e55cf0a47af6.json"
+    },
+    {
+      "uuid": "1a0070c2-7889-40c6-8b78-fc2fa4cdde21",
+      "url": "https://raw.githubusercontent.com/0xAtef/RSS-to-IOCs-Correlation/main/misp_feed/events/1a0070c2-7889-40c6-8b78-fc2fa4cdde21.json"
+    },
+    {
+      "uuid": "9c303b07-ab03-412b-a3cd-d51a713f1970",
+      "url": "https://raw.githubusercontent.com/0xAtef/RSS-to-IOCs-Correlation/main/misp_feed/events/9c303b07-ab03-412b-a3cd-d51a713f1970.json"
     },
     {
       "uuid": "cf9af114-ca94-4250-956a-bec2c70368cc",
@@ -142,6 +162,10 @@
       "url": "https://raw.githubusercontent.com/0xAtef/RSS-to-IOCs-Correlation/main/misp_feed/events/e72e954c-5d4f-4b2b-b125-1cd9f9bcdc03.json"
     },
     {
+      "uuid": "bede8fa8-853a-4ffd-bfd8-71863b05fda4",
+      "url": "https://raw.githubusercontent.com/0xAtef/RSS-to-IOCs-Correlation/main/misp_feed/events/bede8fa8-853a-4ffd-bfd8-71863b05fda4.json"
+    },
+    {
       "uuid": "87fee376-9fbf-4b2b-835e-c551e2ef7e3b",
       "url": "https://raw.githubusercontent.com/0xAtef/RSS-to-IOCs-Correlation/main/misp_feed/events/87fee376-9fbf-4b2b-835e-c551e2ef7e3b.json"
     },
@@ -152,6 +176,10 @@
     {
       "uuid": "1e02209f-152b-4150-89df-2b1f812119d4",
       "url": "https://raw.githubusercontent.com/0xAtef/RSS-to-IOCs-Correlation/main/misp_feed/events/1e02209f-152b-4150-89df-2b1f812119d4.json"
+    },
+    {
+      "uuid": "375cb137-27e7-439f-a468-f26a94f44fa3",
+      "url": "https://raw.githubusercontent.com/0xAtef/RSS-to-IOCs-Correlation/main/misp_feed/events/375cb137-27e7-439f-a468-f26a94f44fa3.json"
     },
     {
       "uuid": "31b5e40e-d5ed-4a8c-af7e-4ca8dc9c78cb",
@@ -208,6 +236,14 @@
     {
       "uuid": "847f833c-34a5-49d0-9a86-3fc29bd8cc99",
       "url": "https://raw.githubusercontent.com/0xAtef/RSS-to-IOCs-Correlation/main/misp_feed/events/847f833c-34a5-49d0-9a86-3fc29bd8cc99.json"
+    },
+    {
+      "uuid": "e09696fb-fe47-43ec-a81e-8ed438d9e82d",
+      "url": "https://raw.githubusercontent.com/0xAtef/RSS-to-IOCs-Correlation/main/misp_feed/events/e09696fb-fe47-43ec-a81e-8ed438d9e82d.json"
+    },
+    {
+      "uuid": "dd8fba35-667d-4a8d-bcb9-a3f75cdf5957",
+      "url": "https://raw.githubusercontent.com/0xAtef/RSS-to-IOCs-Correlation/main/misp_feed/events/dd8fba35-667d-4a8d-bcb9-a3f75cdf5957.json"
     },
     {
       "uuid": "9d700d3e-e274-45b1-8cb6-86112b11b5aa",
@@ -302,6 +338,10 @@
       "url": "https://raw.githubusercontent.com/0xAtef/RSS-to-IOCs-Correlation/main/misp_feed/events/adf0ed70-52b4-45be-af1d-bec39f6acef5.json"
     },
     {
+      "uuid": "c4645102-7a9b-4233-ac98-9c1af9042318",
+      "url": "https://raw.githubusercontent.com/0xAtef/RSS-to-IOCs-Correlation/main/misp_feed/events/c4645102-7a9b-4233-ac98-9c1af9042318.json"
+    },
+    {
       "uuid": "26017e9d-cf05-4e9c-9c4a-34920aea3712",
       "url": "https://raw.githubusercontent.com/0xAtef/RSS-to-IOCs-Correlation/main/misp_feed/events/26017e9d-cf05-4e9c-9c4a-34920aea3712.json"
     },
@@ -358,6 +398,10 @@
       "url": "https://raw.githubusercontent.com/0xAtef/RSS-to-IOCs-Correlation/main/misp_feed/events/7005c800-4bf6-4217-b73d-059fe17bc785.json"
     },
     {
+      "uuid": "d076eab9-c9ae-4608-b470-942174151649",
+      "url": "https://raw.githubusercontent.com/0xAtef/RSS-to-IOCs-Correlation/main/misp_feed/events/d076eab9-c9ae-4608-b470-942174151649.json"
+    },
+    {
       "uuid": "cd3f8bd3-c425-4b73-8521-91d6549924cc",
       "url": "https://raw.githubusercontent.com/0xAtef/RSS-to-IOCs-Correlation/main/misp_feed/events/cd3f8bd3-c425-4b73-8521-91d6549924cc.json"
     },
@@ -402,6 +446,10 @@
       "url": "https://raw.githubusercontent.com/0xAtef/RSS-to-IOCs-Correlation/main/misp_feed/events/b59ce3e0-8042-4b71-a31c-86d691b2dfb2.json"
     },
     {
+      "uuid": "3cfefdde-5af3-4a2b-a4c6-50cfbb46495d",
+      "url": "https://raw.githubusercontent.com/0xAtef/RSS-to-IOCs-Correlation/main/misp_feed/events/3cfefdde-5af3-4a2b-a4c6-50cfbb46495d.json"
+    },
+    {
       "uuid": "53bd7d38-ea8d-4477-8847-6f98640628e9",
       "url": "https://raw.githubusercontent.com/0xAtef/RSS-to-IOCs-Correlation/main/misp_feed/events/53bd7d38-ea8d-4477-8847-6f98640628e9.json"
     },
@@ -442,6 +490,10 @@
       "url": "https://raw.githubusercontent.com/0xAtef/RSS-to-IOCs-Correlation/main/misp_feed/events/c9d7d10a-5118-4154-9634-32c37de7db96.json"
     },
     {
+      "uuid": "da90edb0-2d07-4b87-b905-edbaa432f1fc",
+      "url": "https://raw.githubusercontent.com/0xAtef/RSS-to-IOCs-Correlation/main/misp_feed/events/da90edb0-2d07-4b87-b905-edbaa432f1fc.json"
+    },
+    {
       "uuid": "f26b666e-6780-4beb-ac6b-b999616fd567",
       "url": "https://raw.githubusercontent.com/0xAtef/RSS-to-IOCs-Correlation/main/misp_feed/events/f26b666e-6780-4beb-ac6b-b999616fd567.json"
     },
@@ -456,6 +508,10 @@
     {
       "uuid": "c72a3da3-873e-4f01-afd8-e44d415dbb1a",
       "url": "https://raw.githubusercontent.com/0xAtef/RSS-to-IOCs-Correlation/main/misp_feed/events/c72a3da3-873e-4f01-afd8-e44d415dbb1a.json"
+    },
+    {
+      "uuid": "cfac1d6f-946d-4bbf-aa5d-69b5ce58ab78",
+      "url": "https://raw.githubusercontent.com/0xAtef/RSS-to-IOCs-Correlation/main/misp_feed/events/cfac1d6f-946d-4bbf-aa5d-69b5ce58ab78.json"
     },
     {
       "uuid": "1355fde4-57f1-44ed-bacd-ef2b49b027a4",
@@ -518,6 +574,10 @@
       "url": "https://raw.githubusercontent.com/0xAtef/RSS-to-IOCs-Correlation/main/misp_feed/events/ffbe4a97-c656-4b64-ab9c-c9f9e1e7a0be.json"
     },
     {
+      "uuid": "1b2bc15b-e1c9-4726-95d0-9d7756822235",
+      "url": "https://raw.githubusercontent.com/0xAtef/RSS-to-IOCs-Correlation/main/misp_feed/events/1b2bc15b-e1c9-4726-95d0-9d7756822235.json"
+    },
+    {
       "uuid": "fda19f6b-e781-4e01-96e9-aee6428712f3",
       "url": "https://raw.githubusercontent.com/0xAtef/RSS-to-IOCs-Correlation/main/misp_feed/events/fda19f6b-e781-4e01-96e9-aee6428712f3.json"
     },
@@ -532,6 +592,10 @@
     {
       "uuid": "089ea08e-00e0-41ab-80eb-75303bf7e65a",
       "url": "https://raw.githubusercontent.com/0xAtef/RSS-to-IOCs-Correlation/main/misp_feed/events/089ea08e-00e0-41ab-80eb-75303bf7e65a.json"
+    },
+    {
+      "uuid": "e81f9ff6-101b-4439-95cd-cf880a0aac59",
+      "url": "https://raw.githubusercontent.com/0xAtef/RSS-to-IOCs-Correlation/main/misp_feed/events/e81f9ff6-101b-4439-95cd-cf880a0aac59.json"
     },
     {
       "uuid": "73c2a54d-718f-466b-b015-56adc8364e17",
@@ -552,6 +616,10 @@
     {
       "uuid": "b9ada7a2-adb2-4192-b399-b8f9287e56ab",
       "url": "https://raw.githubusercontent.com/0xAtef/RSS-to-IOCs-Correlation/main/misp_feed/events/b9ada7a2-adb2-4192-b399-b8f9287e56ab.json"
+    },
+    {
+      "uuid": "d1200826-4f17-408d-827d-b893772e93c1",
+      "url": "https://raw.githubusercontent.com/0xAtef/RSS-to-IOCs-Correlation/main/misp_feed/events/d1200826-4f17-408d-827d-b893772e93c1.json"
     },
     {
       "uuid": "80f56aad-4219-488f-a071-90ce084286c3",
@@ -582,6 +650,10 @@
       "url": "https://raw.githubusercontent.com/0xAtef/RSS-to-IOCs-Correlation/main/misp_feed/events/4d6de434-f05c-4988-b3e7-686ea1ff4bb5.json"
     },
     {
+      "uuid": "c6273ae6-7bc6-4ad5-a144-d418eaa7f528",
+      "url": "https://raw.githubusercontent.com/0xAtef/RSS-to-IOCs-Correlation/main/misp_feed/events/c6273ae6-7bc6-4ad5-a144-d418eaa7f528.json"
+    },
+    {
       "uuid": "5892eaa9-1436-4c33-9269-b1906974d2a1",
       "url": "https://raw.githubusercontent.com/0xAtef/RSS-to-IOCs-Correlation/main/misp_feed/events/5892eaa9-1436-4c33-9269-b1906974d2a1.json"
     },
@@ -602,6 +674,10 @@
       "url": "https://raw.githubusercontent.com/0xAtef/RSS-to-IOCs-Correlation/main/misp_feed/events/52e587e5-bf81-45f0-ac2d-053acdcb6942.json"
     },
     {
+      "uuid": "b43d4801-8dea-4e5c-aac7-88c2d0f2f0d7",
+      "url": "https://raw.githubusercontent.com/0xAtef/RSS-to-IOCs-Correlation/main/misp_feed/events/b43d4801-8dea-4e5c-aac7-88c2d0f2f0d7.json"
+    },
+    {
       "uuid": "ac58b381-72d0-42f7-9ed7-5c528e0349fb",
       "url": "https://raw.githubusercontent.com/0xAtef/RSS-to-IOCs-Correlation/main/misp_feed/events/ac58b381-72d0-42f7-9ed7-5c528e0349fb.json"
     },
@@ -612,6 +688,10 @@
     {
       "uuid": "1bce3f9e-2fdf-44a4-a6f8-1bc179063d26",
       "url": "https://raw.githubusercontent.com/0xAtef/RSS-to-IOCs-Correlation/main/misp_feed/events/1bce3f9e-2fdf-44a4-a6f8-1bc179063d26.json"
+    },
+    {
+      "uuid": "23499937-093f-444e-8ecb-d0b89348e817",
+      "url": "https://raw.githubusercontent.com/0xAtef/RSS-to-IOCs-Correlation/main/misp_feed/events/23499937-093f-444e-8ecb-d0b89348e817.json"
     },
     {
       "uuid": "635925e9-f164-4a34-b698-c48c09fe2527",
@@ -658,6 +738,10 @@
       "url": "https://raw.githubusercontent.com/0xAtef/RSS-to-IOCs-Correlation/main/misp_feed/events/46f7572d-f790-42ed-9ead-0926f458b6a9.json"
     },
     {
+      "uuid": "ac2ffa4e-2d88-4913-a29e-2322d4bce71d",
+      "url": "https://raw.githubusercontent.com/0xAtef/RSS-to-IOCs-Correlation/main/misp_feed/events/ac2ffa4e-2d88-4913-a29e-2322d4bce71d.json"
+    },
+    {
       "uuid": "407c645d-3a02-4546-a454-44dcdae3478e",
       "url": "https://raw.githubusercontent.com/0xAtef/RSS-to-IOCs-Correlation/main/misp_feed/events/407c645d-3a02-4546-a454-44dcdae3478e.json"
     },
@@ -690,6 +774,10 @@
       "url": "https://raw.githubusercontent.com/0xAtef/RSS-to-IOCs-Correlation/main/misp_feed/events/d4c00e75-9f6f-4914-9e65-3ed0c2879073.json"
     },
     {
+      "uuid": "a869e8b2-cace-4cfb-9f3f-85760e457e22",
+      "url": "https://raw.githubusercontent.com/0xAtef/RSS-to-IOCs-Correlation/main/misp_feed/events/a869e8b2-cace-4cfb-9f3f-85760e457e22.json"
+    },
+    {
       "uuid": "e5ab16f1-0166-44d4-9941-743f6099b30e",
       "url": "https://raw.githubusercontent.com/0xAtef/RSS-to-IOCs-Correlation/main/misp_feed/events/e5ab16f1-0166-44d4-9941-743f6099b30e.json"
     },
@@ -712,6 +800,10 @@
     {
       "uuid": "e75ebdf1-e309-4a10-9fc0-ebc039c89384",
       "url": "https://raw.githubusercontent.com/0xAtef/RSS-to-IOCs-Correlation/main/misp_feed/events/e75ebdf1-e309-4a10-9fc0-ebc039c89384.json"
+    },
+    {
+      "uuid": "45beaa3c-8933-41a0-bd3d-e9d8baa83e53",
+      "url": "https://raw.githubusercontent.com/0xAtef/RSS-to-IOCs-Correlation/main/misp_feed/events/45beaa3c-8933-41a0-bd3d-e9d8baa83e53.json"
     },
     {
       "uuid": "7c4475b5-6913-44e3-a9ef-e3acd8f19074",
@@ -854,8 +946,16 @@
       "url": "https://raw.githubusercontent.com/0xAtef/RSS-to-IOCs-Correlation/main/misp_feed/events/eb35fea8-6eba-4451-b892-645723a30ad2.json"
     },
     {
+      "uuid": "5a6984ff-4162-47b0-a489-cd4d34042769",
+      "url": "https://raw.githubusercontent.com/0xAtef/RSS-to-IOCs-Correlation/main/misp_feed/events/5a6984ff-4162-47b0-a489-cd4d34042769.json"
+    },
+    {
       "uuid": "3a83eec9-ef6a-4f33-a67c-617cb30b92e4",
       "url": "https://raw.githubusercontent.com/0xAtef/RSS-to-IOCs-Correlation/main/misp_feed/events/3a83eec9-ef6a-4f33-a67c-617cb30b92e4.json"
+    },
+    {
+      "uuid": "0bec0160-87fa-4b6d-8da5-ce0366bc1755",
+      "url": "https://raw.githubusercontent.com/0xAtef/RSS-to-IOCs-Correlation/main/misp_feed/events/0bec0160-87fa-4b6d-8da5-ce0366bc1755.json"
     },
     {
       "uuid": "b31d8ba8-bac1-4667-99d3-6131a0b47212",
@@ -958,6 +1058,10 @@
       "url": "https://raw.githubusercontent.com/0xAtef/RSS-to-IOCs-Correlation/main/misp_feed/events/7bf02b60-21f4-47f7-a6ae-2a0f40a9e538.json"
     },
     {
+      "uuid": "38f60862-82e7-4bdb-9689-114a4ed0d5d8",
+      "url": "https://raw.githubusercontent.com/0xAtef/RSS-to-IOCs-Correlation/main/misp_feed/events/38f60862-82e7-4bdb-9689-114a4ed0d5d8.json"
+    },
+    {
       "uuid": "586dedda-e4ce-4c03-919f-44d816580b06",
       "url": "https://raw.githubusercontent.com/0xAtef/RSS-to-IOCs-Correlation/main/misp_feed/events/586dedda-e4ce-4c03-919f-44d816580b06.json"
     },
@@ -998,6 +1102,10 @@
       "url": "https://raw.githubusercontent.com/0xAtef/RSS-to-IOCs-Correlation/main/misp_feed/events/68365d89-b8e2-4740-840c-d6ea16de3d43.json"
     },
     {
+      "uuid": "985c47be-326f-492c-a1d9-8228e003d2e3",
+      "url": "https://raw.githubusercontent.com/0xAtef/RSS-to-IOCs-Correlation/main/misp_feed/events/985c47be-326f-492c-a1d9-8228e003d2e3.json"
+    },
+    {
       "uuid": "ef1539c7-aff6-46f4-8562-539f3a251fa9",
       "url": "https://raw.githubusercontent.com/0xAtef/RSS-to-IOCs-Correlation/main/misp_feed/events/ef1539c7-aff6-46f4-8562-539f3a251fa9.json"
     },
@@ -1034,6 +1142,10 @@
       "url": "https://raw.githubusercontent.com/0xAtef/RSS-to-IOCs-Correlation/main/misp_feed/events/2d5722f7-4fc8-437d-bd57-b46ba5ebb3cb.json"
     },
     {
+      "uuid": "1b461cc9-909b-4528-8f41-8512baabf077",
+      "url": "https://raw.githubusercontent.com/0xAtef/RSS-to-IOCs-Correlation/main/misp_feed/events/1b461cc9-909b-4528-8f41-8512baabf077.json"
+    },
+    {
       "uuid": "9f4976b8-04fc-4b73-b84d-2df9250c9b5e",
       "url": "https://raw.githubusercontent.com/0xAtef/RSS-to-IOCs-Correlation/main/misp_feed/events/9f4976b8-04fc-4b73-b84d-2df9250c9b5e.json"
     },
@@ -1062,6 +1174,10 @@
       "url": "https://raw.githubusercontent.com/0xAtef/RSS-to-IOCs-Correlation/main/misp_feed/events/91650278-85a2-467d-8a85-06b32119413d.json"
     },
     {
+      "uuid": "585be853-24fd-4e00-bfb5-76ea3ee17a94",
+      "url": "https://raw.githubusercontent.com/0xAtef/RSS-to-IOCs-Correlation/main/misp_feed/events/585be853-24fd-4e00-bfb5-76ea3ee17a94.json"
+    },
+    {
       "uuid": "93016f96-bef0-49df-ad91-66b2f38c2bc6",
       "url": "https://raw.githubusercontent.com/0xAtef/RSS-to-IOCs-Correlation/main/misp_feed/events/93016f96-bef0-49df-ad91-66b2f38c2bc6.json"
     },
@@ -1080,6 +1196,10 @@
     {
       "uuid": "a6be975a-3bc0-4bea-ac13-be93feb1903f",
       "url": "https://raw.githubusercontent.com/0xAtef/RSS-to-IOCs-Correlation/main/misp_feed/events/a6be975a-3bc0-4bea-ac13-be93feb1903f.json"
+    },
+    {
+      "uuid": "bd1c5532-d4c1-4b34-9a9e-875820953e5b",
+      "url": "https://raw.githubusercontent.com/0xAtef/RSS-to-IOCs-Correlation/main/misp_feed/events/bd1c5532-d4c1-4b34-9a9e-875820953e5b.json"
     },
     {
       "uuid": "3a904141-4d50-4812-be04-e1df0b8ab456",
@@ -1162,6 +1282,10 @@
       "url": "https://raw.githubusercontent.com/0xAtef/RSS-to-IOCs-Correlation/main/misp_feed/events/1d702fac-0193-4eb6-8bb9-a534092d9cbe.json"
     },
     {
+      "uuid": "4479d51a-488f-4a24-a642-1eb8e067a432",
+      "url": "https://raw.githubusercontent.com/0xAtef/RSS-to-IOCs-Correlation/main/misp_feed/events/4479d51a-488f-4a24-a642-1eb8e067a432.json"
+    },
+    {
       "uuid": "ed63f228-19c2-4122-b4f4-6ee21312a7bd",
       "url": "https://raw.githubusercontent.com/0xAtef/RSS-to-IOCs-Correlation/main/misp_feed/events/ed63f228-19c2-4122-b4f4-6ee21312a7bd.json"
     },
@@ -1174,6 +1298,10 @@
       "url": "https://raw.githubusercontent.com/0xAtef/RSS-to-IOCs-Correlation/main/misp_feed/events/5ade51c6-4564-40b9-bfc8-61b90b6ba2e0.json"
     },
     {
+      "uuid": "39be653e-c450-4f90-acaa-4f3c19448ed9",
+      "url": "https://raw.githubusercontent.com/0xAtef/RSS-to-IOCs-Correlation/main/misp_feed/events/39be653e-c450-4f90-acaa-4f3c19448ed9.json"
+    },
+    {
       "uuid": "4aa79bf1-4348-4728-95fc-eb33e9fd8c39",
       "url": "https://raw.githubusercontent.com/0xAtef/RSS-to-IOCs-Correlation/main/misp_feed/events/4aa79bf1-4348-4728-95fc-eb33e9fd8c39.json"
     },
@@ -1184,6 +1312,14 @@
     {
       "uuid": "d26f456b-1090-4fd9-a18f-a77af6716893",
       "url": "https://raw.githubusercontent.com/0xAtef/RSS-to-IOCs-Correlation/main/misp_feed/events/d26f456b-1090-4fd9-a18f-a77af6716893.json"
+    },
+    {
+      "uuid": "1660d433-385f-4f56-a147-086f7e7183a3",
+      "url": "https://raw.githubusercontent.com/0xAtef/RSS-to-IOCs-Correlation/main/misp_feed/events/1660d433-385f-4f56-a147-086f7e7183a3.json"
+    },
+    {
+      "uuid": "83e2c8e5-7a38-4d66-a0b0-cb20371b0bc5",
+      "url": "https://raw.githubusercontent.com/0xAtef/RSS-to-IOCs-Correlation/main/misp_feed/events/83e2c8e5-7a38-4d66-a0b0-cb20371b0bc5.json"
     },
     {
       "uuid": "ee9d155b-265d-4b88-8211-e4a68a779e79",
@@ -1282,6 +1418,14 @@
       "url": "https://raw.githubusercontent.com/0xAtef/RSS-to-IOCs-Correlation/main/misp_feed/events/3c4b3502-92c8-422e-8ba1-dec73ad9d351.json"
     },
     {
+      "uuid": "67f6d55e-c400-4383-abb9-6d92beacd9bd",
+      "url": "https://raw.githubusercontent.com/0xAtef/RSS-to-IOCs-Correlation/main/misp_feed/events/67f6d55e-c400-4383-abb9-6d92beacd9bd.json"
+    },
+    {
+      "uuid": "bda1468d-8d59-4e95-8131-9fda5c78d8de",
+      "url": "https://raw.githubusercontent.com/0xAtef/RSS-to-IOCs-Correlation/main/misp_feed/events/bda1468d-8d59-4e95-8131-9fda5c78d8de.json"
+    },
+    {
       "uuid": "6907faab-6fb4-43b1-bbf5-3ec641aa05b8",
       "url": "https://raw.githubusercontent.com/0xAtef/RSS-to-IOCs-Correlation/main/misp_feed/events/6907faab-6fb4-43b1-bbf5-3ec641aa05b8.json"
     },
@@ -1294,12 +1438,20 @@
       "url": "https://raw.githubusercontent.com/0xAtef/RSS-to-IOCs-Correlation/main/misp_feed/events/cb75e3fd-4817-4af6-9081-24a9ee478f56.json"
     },
     {
+      "uuid": "a11aebad-0451-413d-bc81-0d069f45d64c",
+      "url": "https://raw.githubusercontent.com/0xAtef/RSS-to-IOCs-Correlation/main/misp_feed/events/a11aebad-0451-413d-bc81-0d069f45d64c.json"
+    },
+    {
       "uuid": "d4a19885-0caf-4e4a-9824-dc7e75a0105c",
       "url": "https://raw.githubusercontent.com/0xAtef/RSS-to-IOCs-Correlation/main/misp_feed/events/d4a19885-0caf-4e4a-9824-dc7e75a0105c.json"
     },
     {
       "uuid": "927c8a7c-258e-4e23-b8f1-de0dedcb1792",
       "url": "https://raw.githubusercontent.com/0xAtef/RSS-to-IOCs-Correlation/main/misp_feed/events/927c8a7c-258e-4e23-b8f1-de0dedcb1792.json"
+    },
+    {
+      "uuid": "70b6fa16-2eb0-4fa4-a4c1-f2192864c292",
+      "url": "https://raw.githubusercontent.com/0xAtef/RSS-to-IOCs-Correlation/main/misp_feed/events/70b6fa16-2eb0-4fa4-a4c1-f2192864c292.json"
     },
     {
       "uuid": "00ae706a-29c7-465c-bbd0-dca47a873746",
@@ -1312,6 +1464,10 @@
     {
       "uuid": "ac9a54a7-79b3-475e-9dae-667119a30887",
       "url": "https://raw.githubusercontent.com/0xAtef/RSS-to-IOCs-Correlation/main/misp_feed/events/ac9a54a7-79b3-475e-9dae-667119a30887.json"
+    },
+    {
+      "uuid": "4b7b266d-3990-4b11-ab06-3ec4efbd5131",
+      "url": "https://raw.githubusercontent.com/0xAtef/RSS-to-IOCs-Correlation/main/misp_feed/events/4b7b266d-3990-4b11-ab06-3ec4efbd5131.json"
     },
     {
       "uuid": "e5712f5c-2377-4390-b994-f4e522467ebe",
@@ -1430,6 +1586,10 @@
       "url": "https://raw.githubusercontent.com/0xAtef/RSS-to-IOCs-Correlation/main/misp_feed/events/5c635a85-8f3a-4149-8045-906638400842.json"
     },
     {
+      "uuid": "65a5287e-66ce-4162-818a-72ae917484c8",
+      "url": "https://raw.githubusercontent.com/0xAtef/RSS-to-IOCs-Correlation/main/misp_feed/events/65a5287e-66ce-4162-818a-72ae917484c8.json"
+    },
+    {
       "uuid": "c9804b15-f9f3-45b6-990e-d5e88161a78b",
       "url": "https://raw.githubusercontent.com/0xAtef/RSS-to-IOCs-Correlation/main/misp_feed/events/c9804b15-f9f3-45b6-990e-d5e88161a78b.json"
     },
@@ -1546,6 +1706,10 @@
       "url": "https://raw.githubusercontent.com/0xAtef/RSS-to-IOCs-Correlation/main/misp_feed/events/d05a18c3-9e94-4e45-b375-03297070e32b.json"
     },
     {
+      "uuid": "3b4eecba-2561-41b1-98d5-10c60092ea69",
+      "url": "https://raw.githubusercontent.com/0xAtef/RSS-to-IOCs-Correlation/main/misp_feed/events/3b4eecba-2561-41b1-98d5-10c60092ea69.json"
+    },
+    {
       "uuid": "cc2d39d1-bbf0-4e6e-b641-b661ead3e7e4",
       "url": "https://raw.githubusercontent.com/0xAtef/RSS-to-IOCs-Correlation/main/misp_feed/events/cc2d39d1-bbf0-4e6e-b641-b661ead3e7e4.json"
     },
@@ -1554,8 +1718,16 @@
       "url": "https://raw.githubusercontent.com/0xAtef/RSS-to-IOCs-Correlation/main/misp_feed/events/ed39fd6e-cd57-4b78-acc7-b70f4074eb80.json"
     },
     {
+      "uuid": "ac537a9b-3ae7-442b-ba61-4a10892bbe09",
+      "url": "https://raw.githubusercontent.com/0xAtef/RSS-to-IOCs-Correlation/main/misp_feed/events/ac537a9b-3ae7-442b-ba61-4a10892bbe09.json"
+    },
+    {
       "uuid": "267a3190-5fae-4c9b-be29-09fda889c34c",
       "url": "https://raw.githubusercontent.com/0xAtef/RSS-to-IOCs-Correlation/main/misp_feed/events/267a3190-5fae-4c9b-be29-09fda889c34c.json"
+    },
+    {
+      "uuid": "e5dae74b-bb02-49d4-bb97-d3dd78401f74",
+      "url": "https://raw.githubusercontent.com/0xAtef/RSS-to-IOCs-Correlation/main/misp_feed/events/e5dae74b-bb02-49d4-bb97-d3dd78401f74.json"
     },
     {
       "uuid": "8c854c9c-3708-4ac4-b6d6-5b1484598901",
@@ -1600,6 +1772,10 @@
     {
       "uuid": "40818f7f-3abd-4dca-8f78-4787970a97fa",
       "url": "https://raw.githubusercontent.com/0xAtef/RSS-to-IOCs-Correlation/main/misp_feed/events/40818f7f-3abd-4dca-8f78-4787970a97fa.json"
+    },
+    {
+      "uuid": "f6d1ef24-eae6-4eb1-a716-23ba38f3089c",
+      "url": "https://raw.githubusercontent.com/0xAtef/RSS-to-IOCs-Correlation/main/misp_feed/events/f6d1ef24-eae6-4eb1-a716-23ba38f3089c.json"
     }
   ]
 }
