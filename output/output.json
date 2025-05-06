@@ -1,19 +1,17 @@
 {
   "records": [
     {
-      "id": "a6b13304-26b1-47ff-bea8-9a011fa70902",
-      "title": "Alleged Sale of Unauthorized Admin Access to a WooCommerce-based Online Store in the UK",
-      "source": "https://darkwebinformer.com/alleged-sale-of-unauthorized-admin-access-to-a-woocommerce-based-online-store-in-the-uk/",
-      "published": "2025-05-06T19:03:23",
+      "id": "1921bc0f-ca31-4e54-91a4-40dca9faa84a",
+      "title": "Google Chrome DevTools Flaw (CVE-2025-4052) Enables Critical Access Control Bypass",
+      "source": "https://darkwebinformer.com/google-chrome-devtools-flaw-cve-2025-4052-enables-critical-access-control-bypass/",
+      "published": "2025-05-06T19:55:19",
       "feed": "https://darkwebinformer.com/rss/",
       "iocs": {
         "ips": [],
         "domains": [
-          "forum.exploit.in"
+          "later.Ensure"
         ],
-        "urls": [
-          "https://forum.exploit.in/topic/258474/\ud83d\udd75\ufe0f\u200d\u2642\ufe0f"
-        ],
+        "urls": [],
         "emails": [],
         "sha1": [],
         "sha256": [],
@@ -21,23 +19,28 @@
         "cves": []
       },
       "tags": [
-        "context:malware",
-        "rss_to_ioc_collector",
-        "feed:source:darkwebinformer.com",
-        "context:ddos",
-        "context:exploits",
-        "ioc:type:url",
-        "ioc:type:email",
         "feed:published:2025-05-06",
-        "context:threat_actor",
+        "ioc:type:cve",
+        "ioc:type:domain",
+        "rss_to_ioc_collector",
+        "context:malware",
+        "feed:source:darkwebinformer.com",
+        "ioc:type:email",
+        "ioc:type:ip",
+        "context:cves",
         "context:data_leak",
-        "ioc:type:ip"
+        "context:exploits"
       ],
       "enrichment": {
         "actors": [],
         "malware": [],
         "mitre_techniques": [],
-        "cves": [],
+        "cves": [
+          "CVE-2025-24977",
+          "CVE-2025-31324",
+          "CVE-2025-4052",
+          "CVE-2025-46661"
+        ],
         "tools": [],
         "campaigns": []
       }
