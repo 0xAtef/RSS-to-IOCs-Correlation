@@ -47,10 +47,21 @@ jobs:
         if: failure()
         run: cat ./logs/workflow.log
 
-      - name: Read output directory from config.json
-        id: feed-config
+      - name: Debug file structure
         run: |
-          echo "OUTPUT=$(jq -r .output_base_dir < config/config.json)" >> $GITHUB_ENV
+          echo "Listing all files in the working directory:"
+          ls -R
+          echo "Listing files in the output directory:"
+          ls output
+          echo "Listing files in the misp_feed directory:"
+          ls misp_feed
+
+      - name: Check if feed.csv exists
+        run: |
+          if [ ! -f "misp_feed/feed.csv" ]; then
+            echo "Error: feed.csv not found!"
+            exit 1
+          fi
 
       - name: Commit & push CSV feed
         env:
@@ -64,7 +75,7 @@ jobs:
           git pull --rebase --autostash origin "$(git rev-parse --abbrev-ref HEAD)"
 
           # Stage the CSV feed file
-          git add "${OUTPUT}/feed.csv"
+          git add "misp_feed/feed.csv"
 
           # Commit if there are staged changes
           git diff --staged --quiet || git commit -m "Update IOC feed: New data collected and processed"
