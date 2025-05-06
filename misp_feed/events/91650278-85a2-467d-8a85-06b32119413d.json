@@ -1,0 +1,22 @@
+{
+  "Event": {
+    "uuid": "91650278-85a2-467d-8a85-06b32119413d",
+    "info": "Multiples vuln\u00e9rabilit\u00e9s dans Mattermost Server (30 avril 2025)",
+    "date": "2025-04-30",
+    "analysis": 0,
+    "threat_level_id": 4,
+    "timestamp": 1746501028,
+    "Orgc": {
+      "name": "ADMIN",
+      "uuid": "926e159d-1b41-4069-995e-b8eae5d338f9"
+    },
+    "Tag": [
+      {
+        "name": "RSS to IOC Collector",
+        "colour": "#004646",
+        "local": false,
+        "relationship_type": ""
+      }
+    ]
+  }
+}

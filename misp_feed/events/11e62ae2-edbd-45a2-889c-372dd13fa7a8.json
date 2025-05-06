@@ -1,0 +1,34 @@
+{
+  "Event": {
+    "uuid": "11e62ae2-edbd-45a2-889c-372dd13fa7a8",
+    "info": "Hello 0-Days, My Old Friend: A 2024 Zero-Day Exploitation Analysis",
+    "date": "2025-04-29",
+    "analysis": 0,
+    "threat_level_id": 4,
+    "timestamp": 1746482409,
+    "Orgc": {
+      "name": "ADMIN",
+      "uuid": "926e159d-1b41-4069-995e-b8eae5d338f9"
+    },
+    "Tag": [
+      {
+        "name": "c2",
+        "colour": "#004646",
+        "local": false,
+        "relationship_type": ""
+      },
+      {
+        "name": "malware",
+        "colour": "#004646",
+        "local": false,
+        "relationship_type": ""
+      },
+      {
+        "name": "RSS to IOC Collector",
+        "colour": "#004646",
+        "local": false,
+        "relationship_type": ""
+      }
+    ]
+  }
+}

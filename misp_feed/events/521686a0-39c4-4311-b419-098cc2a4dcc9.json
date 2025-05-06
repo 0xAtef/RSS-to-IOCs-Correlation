@@ -1,0 +1,22 @@
+{
+  "Event": {
+    "uuid": "521686a0-39c4-4311-b419-098cc2a4dcc9",
+    "info": "Multiples vuln\u00e9rabilit\u00e9s dans les produits VMware (29 avril 2025)",
+    "date": "2025-04-29",
+    "analysis": 0,
+    "threat_level_id": 4,
+    "timestamp": 1746505605,
+    "Orgc": {
+      "name": "ADMIN",
+      "uuid": "926e159d-1b41-4069-995e-b8eae5d338f9"
+    },
+    "Tag": [
+      {
+        "name": "RSS to IOC Collector",
+        "colour": "#004646",
+        "local": false,
+        "relationship_type": ""
+      }
+    ]
+  }
+}

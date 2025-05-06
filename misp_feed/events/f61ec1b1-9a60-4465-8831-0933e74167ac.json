@@ -1,0 +1,22 @@
+{
+  "Event": {
+    "uuid": "f61ec1b1-9a60-4465-8831-0933e74167ac",
+    "info": "Multiples vuln\u00e9rabilit\u00e9s dans Google Chrome (30 avril 2025)",
+    "date": "2025-04-30",
+    "analysis": 0,
+    "threat_level_id": 4,
+    "timestamp": 1746483738,
+    "Orgc": {
+      "name": "ADMIN",
+      "uuid": "926e159d-1b41-4069-995e-b8eae5d338f9"
+    },
+    "Tag": [
+      {
+        "name": "RSS to IOC Collector",
+        "colour": "#004646",
+        "local": false,
+        "relationship_type": ""
+      }
+    ]
+  }
+}

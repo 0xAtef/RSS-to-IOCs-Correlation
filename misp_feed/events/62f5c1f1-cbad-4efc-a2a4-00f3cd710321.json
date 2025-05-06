@@ -1,0 +1,28 @@
+{
+  "Event": {
+    "uuid": "62f5c1f1-cbad-4efc-a2a4-00f3cd710321",
+    "info": "Whistleblower: DOGE Siphoned NLRB Case Data",
+    "date": "2025-04-22",
+    "analysis": 0,
+    "threat_level_id": 4,
+    "timestamp": 1746501028,
+    "Orgc": {
+      "name": "ADMIN",
+      "uuid": "926e159d-1b41-4069-995e-b8eae5d338f9"
+    },
+    "Tag": [
+      {
+        "name": "RSS to IOC Collector",
+        "colour": "#004646",
+        "local": false,
+        "relationship_type": ""
+      },
+      {
+        "name": "malware",
+        "colour": "#004646",
+        "local": false,
+        "relationship_type": ""
+      }
+    ]
+  }
+}

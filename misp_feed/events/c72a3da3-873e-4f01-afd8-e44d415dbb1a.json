@@ -1,0 +1,22 @@
+{
+  "Event": {
+    "uuid": "c72a3da3-873e-4f01-afd8-e44d415dbb1a",
+    "info": "Vuln\u00e9rabilit\u00e9 dans les produits Symantec (30 avril 2025)",
+    "date": "2025-04-30",
+    "analysis": 0,
+    "threat_level_id": 4,
+    "timestamp": 1746509030,
+    "Orgc": {
+      "name": "ADMIN",
+      "uuid": "926e159d-1b41-4069-995e-b8eae5d338f9"
+    },
+    "Tag": [
+      {
+        "name": "RSS to IOC Collector",
+        "colour": "#004646",
+        "local": false,
+        "relationship_type": ""
+      }
+    ]
+  }
+}

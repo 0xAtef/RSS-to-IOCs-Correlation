@@ -1,0 +1,22 @@
+{
+  "Event": {
+    "uuid": "29bb543b-96d2-4a88-af49-df56c074ea86",
+    "info": "\"Mirai\" Now Exploits Samsung MagicINFO CMS (CVE-2024-7399), (Mon, May 5th)",
+    "date": "2025-05-06",
+    "analysis": 0,
+    "threat_level_id": 4,
+    "timestamp": 1746501028,
+    "Orgc": {
+      "name": "ADMIN",
+      "uuid": "926e159d-1b41-4069-995e-b8eae5d338f9"
+    },
+    "Tag": [
+      {
+        "name": "RSS to IOC Collector",
+        "colour": "#004646",
+        "local": false,
+        "relationship_type": ""
+      }
+    ]
+  }
+}

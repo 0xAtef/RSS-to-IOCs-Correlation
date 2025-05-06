@@ -1,0 +1,28 @@
+{
+  "Event": {
+    "uuid": "c5ad328d-476b-40e4-af54-cd5edd883da3",
+    "info": "Funding Expires for Key Cyber Vulnerability Database",
+    "date": "2025-04-16",
+    "analysis": 0,
+    "threat_level_id": 4,
+    "timestamp": 1746482409,
+    "Orgc": {
+      "name": "ADMIN",
+      "uuid": "926e159d-1b41-4069-995e-b8eae5d338f9"
+    },
+    "Tag": [
+      {
+        "name": "malware",
+        "colour": "#004646",
+        "local": false,
+        "relationship_type": ""
+      },
+      {
+        "name": "RSS to IOC Collector",
+        "colour": "#004646",
+        "local": false,
+        "relationship_type": ""
+      }
+    ]
+  }
+}

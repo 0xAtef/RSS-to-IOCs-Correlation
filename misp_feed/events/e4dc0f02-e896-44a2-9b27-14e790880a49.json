@@ -1,0 +1,22 @@
+{
+  "Event": {
+    "uuid": "e4dc0f02-e896-44a2-9b27-14e790880a49",
+    "info": "Vuln\u00e9rabilit\u00e9 dans LibreOffice (28 avril 2025)",
+    "date": "2025-04-28",
+    "analysis": 0,
+    "threat_level_id": 4,
+    "timestamp": 1746501028,
+    "Orgc": {
+      "name": "ADMIN",
+      "uuid": "926e159d-1b41-4069-995e-b8eae5d338f9"
+    },
+    "Tag": [
+      {
+        "name": "RSS to IOC Collector",
+        "colour": "#004646",
+        "local": false,
+        "relationship_type": ""
+      }
+    ]
+  }
+}
