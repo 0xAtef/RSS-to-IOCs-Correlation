@@ -51,8 +51,6 @@ jobs:
         run: |
           echo "Listing all files in the working directory:"
           ls -R
-          echo "Listing files in the output directory:"
-          ls output
           echo "Listing files in the misp_feed directory:"
           ls misp_feed
 

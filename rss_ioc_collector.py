@@ -16,17 +16,19 @@ from utils.fetch_parse import process_feed
 CONFIG_DIR = "config"
 LOGS_DIR = "logs"
 OUTPUT_DIR = "output"
+MISP_FEED_DIR = "misp_feed"  # Add MISP feed directory
 
 # Ensure required directories exist
 os.makedirs(CONFIG_DIR, exist_ok=True)
 os.makedirs(LOGS_DIR, exist_ok=True)
 os.makedirs(OUTPUT_DIR, exist_ok=True)
+os.makedirs(MISP_FEED_DIR, exist_ok=True)  # Ensure MISP feed directory exists
 
 # === FILE PATHS ===
 CONFIG_PATH = os.path.join(CONFIG_DIR, "config.json")
 LOG_FILE = os.path.join(LOGS_DIR, "ioc_collector.log")
 SEEN_IOCS_PATH = os.path.join(OUTPUT_DIR, "seen_iocs.json")
-CSV_PATH = os.path.join(OUTPUT_DIR, "feed.csv")
+CSV_PATH = os.path.join(MISP_FEED_DIR, "feed.csv")  # Save feed.csv under misp_feed/
 
 # === LOAD CONFIGURATION FROM FILE ===
 with open(CONFIG_PATH, "r", encoding="utf-8") as f:
