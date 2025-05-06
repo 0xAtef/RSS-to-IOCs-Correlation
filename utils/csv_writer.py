@@ -20,52 +20,40 @@ def write_csv_feed(all_records, csv_path, org_uuid, org_name, cfg):
             w.writeheader()
 
             for rec in all_records:
-                # Translate event info to English if necessary
-                info = translate_to_english(rec["title"])
+                if not rec.get("id") or not rec.get("title"):
+                    logging.warning(f"Skipping record with missing required fields: {rec}")
+                    continue
 
-                evt_uuid = rec["id"]
-                date = rec["published"].split("T")[0]
-                analysis = cfg.get("misp_analysis", 0)
-                tlid = cfg.get("misp_threat_level_id", 4)
-                comment = translate_to_english(f"Extracted from: {rec['source']}")
-
-                tags = rec.get("tags", [])
-                tags_str = ";".join(tags) if tags else ""
-
-                enrichment = rec.get("enrichment", {})
-                actors = ";".join(enrichment.get("actors", []))
-                malware = ";".join(enrichment.get("malware", []))
-                techniques = ";".join(enrichment.get("mitre_techniques", []))
-                cves = ";".join(enrichment.get("cves", []))
-                tools = ";".join(enrichment.get("tools", []))
-                campaigns = ";".join(enrichment.get("campaigns", []))
+                row = {
+                    "uuid": rec.get("id", ""),
+                    "info": translate_to_english(rec.get("title", "No Title")),
+                    "date": rec.get("published", "").split("T")[0] if rec.get("published") else "",
+                    "threat_level_id": cfg.get("misp_threat_level_id", 4),
+                    "analysis": cfg.get("misp_analysis", 0),
+                    "orgc_uuid": org_uuid,
+                    "orgc_name": org_name,
+                    "tag": ";".join(rec.get("tags", [])),
+                    "attribute_category": "External analysis",
+                    "attribute_type": "",  # Ensure this is populated elsewhere
+                    "attribute_value": "",  # Ensure this is populated elsewhere
+                    "to_ids": "True",
+                    "comment": translate_to_english(f"Extracted from: {rec.get('source', 'Unknown Source')}"),
+                    "attribute_timestamp": "",  # Ensure this is populated elsewhere
+                    "actors": ";".join(rec.get("enrichment", {}).get("actors", [])),
+                    "malware": ";".join(rec.get("enrichment", {}).get("malware", [])),
+                    "mitre_techniques": ";".join(rec.get("enrichment", {}).get("mitre_techniques", [])),
+                    "cves": ";".join(rec.get("enrichment", {}).get("cves", [])),
+                    "tools": ";".join(rec.get("enrichment", {}).get("tools", [])),
+                    "campaigns": ";".join(rec.get("enrichment", {}).get("campaigns", []))
+                }
 
                 for typ, vals in rec["iocs"].items():
                     for val in vals:
-                        attribute_timestamp = rec.get("timestamp", "")
+                        row["attribute_type"] = typ.rstrip("s")
+                        row["attribute_value"] = val
+                        row["attribute_timestamp"] = rec.get("timestamp", "")
 
-                        w.writerow({
-                            "uuid": evt_uuid,
-                            "info": info,
-                            "date": date,
-                            "threat_level_id": tlid,
-                            "analysis": analysis,
-                            "orgc_uuid": org_uuid,
-                            "orgc_name": org_name,
-                            "tag": tags_str,
-                            "attribute_category": "External analysis",
-                            "attribute_type": typ.rstrip("s"),
-                            "attribute_value": val,
-                            "to_ids": "True",
-                            "comment": comment,
-                            "attribute_timestamp": attribute_timestamp,
-                            "actors": actors,
-                            "malware": malware,
-                            "mitre_techniques": techniques,
-                            "cves": cves,
-                            "tools": tools,
-                            "campaigns": campaigns
-                        })
+                        w.writerow(row)
 
         logging.info(f"✅ Wrote MISP-compatible CSV feed to {csv_path}")
     except Exception as e:

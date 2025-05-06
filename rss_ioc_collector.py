@@ -163,8 +163,11 @@ def main():
     seen = load_seen()
     try:
         all_recs = process_feeds_concurrently(FEED_URLS, seen)
+        valid_recs = [rec for rec in all_recs if "title" in rec and "source" in rec]
+        if len(valid_recs) < len(all_recs):
+            logging.warning(f"Some entries are missing required fields and will be skipped.")
         save_seen(seen)
-        write_csv_feed(all_recs, CSV_PATH, ORG_UUID, ORG_NAME, cfg)
+        write_csv_feed(valid_recs, CSV_PATH, ORG_UUID, ORG_NAME, cfg)
     finally:
         cleanup()
 

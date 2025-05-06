@@ -100,7 +100,7 @@ def process_feed(feed_url, seen, global_seen, session, cfg, ioc_patterns, whitel
         enrichment = enrich_with_ner(text)
 
         # Translate the title to English if necessary
-        translated_title = translate_to_english(title)
+        translated_title = translate_to_english(title) if title else "No Title"
 
         # Add the processed entry to the output
         out.append({
@@ -111,14 +111,12 @@ def process_feed(feed_url, seen, global_seen, session, cfg, ioc_patterns, whitel
             "feed": feed_url,
             "iocs": filtered,
             "tags": context_tags(text, feed_url, cfg),
-            "enrichment": enrichment  # Add enrichment data
+            "enrichment": enrichment
         })
 
         logging.info(f"Processed entry: {translated_title}")
         logging.info(f"Extracted IOCs: {filtered}")
-        out.append({
-            # Existing logic for appending processed entries...
-        })
+        logging.debug(f"Processed entry: {out}")
 
     logging.info(f"Finished processing feed: {feed_url}. Total entries processed: {len(out)}")
     return out
