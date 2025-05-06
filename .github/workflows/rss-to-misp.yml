@@ -43,6 +43,10 @@ jobs:
           set -e
           python rss_ioc_collector.py > ./logs/workflow.log 2>&1
 
+      - name: Print logs for debugging
+        if: failure()
+        run: cat ./logs/workflow.log
+
       - name: Read output directory from config.json
         id: feed-config
         run: |
