@@ -8,8 +8,7 @@ import spacy
 
 # MITRE CTI JSON URL
 MITRE_URL = (
-    "https://raw.githubusercontent.com/mitre/cti/"  
-    "master/enterprise-attack/enterprise-attack.json"
+    "https://raw.githubusercontent.com/mitre/cti/master/enterprise-attack/enterprise-attack.json"
 )
 
 # Load spaCy model once

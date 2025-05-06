@@ -96,19 +96,38 @@ def context_tags(text, feed_url):
     return list(tags)
 
 # ── FETCH & PARSE ────────────────────────────────────────────────────
+def fetch_feed(feed_url):
+    """Fetch the RSS feed and return the parsed content."""
+    try:
+        logging.info(f"Fetching {feed_url}")
+        response = session.get(feed_url, timeout=cfg.get("request_timeout", 10),
+                               headers={"User-Agent": cfg.get("user_agent")})
+        response.raise_for_status()
+        return feedparser.parse(response.text)
+    except requests.exceptions.RequestException as exc:
+        logging.error(f"Error fetching {feed_url}: {exc}")
+        return None
+
 def process_feed(feed_url, seen):
-    logging.info(f"Fetching {feed_url}")
-    feed = feedparser.parse(feed_url)
+    """Process a single feed URL and extract IOCs."""
+    feed = fetch_feed(feed_url)
+    if not feed or not feed.entries:
+        logging.warning(f"No entries found in {feed_url}")
+        return []
+
     out = []
     for e in feed.entries:
-        if not recent(e): continue
-        link = e.get("link","")
+        if not recent(e):
+            continue
+
+        link = e.get("link", "")
         try:
-            r = session.get(link, timeout=cfg.get("request_timeout",10),
+            r = session.get(link, timeout=cfg.get("request_timeout", 10),
                             headers={"User-Agent": cfg.get("user_agent")})
+            r.raise_for_status()
             text = strip_html(r.text)
-        except Exception as exc:
-            logging.error(f"  error GET {link}: {exc}")
+        except requests.exceptions.RequestException as exc:
+            logging.error(f"Error fetching article {link}: {exc}")
             continue
 
         raw = extract_iocs(text)
@@ -128,15 +147,28 @@ def process_feed(feed_url, seen):
 
         out.append({
             "id":        str(uuid.uuid4()),
-            "title":     e.get("title",""),
+            "title":     e.get("title", ""),
             "source":    link,
             "published": (parse_date(e) or datetime.utcnow()).isoformat(),
             "feed":      feed_url,
             "iocs":      filtered,
             "tags":      context_tags(text, feed_url)
         })
-    logging.info(f"Found {len(out)} new in {feed_url}")
+
+    logging.info(f"Found {len(out)} new entries in {feed_url}")
     return out
+
+def process_feeds_concurrently(feed_urls, seen):
+    """Process multiple feeds concurrently."""
+    all_recs = []
+    with ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
+        futures = {executor.submit(process_feed, url, seen): url for url in feed_urls}
+        for future in as_completed(futures):
+            try:
+                all_recs.extend(future.result())
+            except Exception as exc:
+                logging.error(f"Error processing feed {futures[future]}: {exc}")
+    return all_recs
 
 # ── WRITE CSV ────────────────────────────────────────────────────────
 def write_csv_feed(all_records):
@@ -186,18 +218,10 @@ def write_csv_feed(all_records):
 
     logging.info(f"✅ Wrote MISP-compatible CSV feed to {CSV_PATH}")
 
-
-
-
 # ── MAIN ────────────────────────────────────────────────────────────────
 def main():
     seen = load_seen()
-    all_recs = []
-    with ThreadPoolExecutor(max_workers=MAX_WORKERS) as ex:
-        futures = {ex.submit(process_feed, url, seen): url for url in FEED_URLS}
-        for f in as_completed(futures):
-            all_recs.extend(f.result())
-
+    all_recs = process_feeds_concurrently(FEED_URLS, seen)
     save_seen(seen)
     write_csv_feed(all_recs)
 
