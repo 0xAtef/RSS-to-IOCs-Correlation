@@ -142,8 +142,8 @@ def process_feed(feed_url, seen):
 def write_csv_feed(all_records):
     fieldnames = [
         "uuid", "info", "date", "threat_level_id", "analysis",
-        "orgc_uuid", "orgc_name", "attribute_category", "attribute_type",
-        "attribute_value", "to_ids", "comment"
+        "orgc_uuid", "orgc_name", "tag", "attribute_category", "attribute_type",
+        "attribute_value", "to_ids", "comment", "attribute_timestamp"
     ]
 
     with open(CSV_PATH, "w", newline="", encoding="utf-8") as csvf:
@@ -157,9 +157,16 @@ def write_csv_feed(all_records):
             analysis  = cfg.get("misp_analysis", 0)
             tlid      = cfg.get("misp_threat_level_id", 4)
             comment   = f"Extracted from: {rec['source']}"
+            
+            # Assuming tags can be added (either from data or hardcoded)
+            tags = rec.get("tags", [])
+            tags_str = ";".join(tags) if tags else ""
 
             for typ, vals in rec["iocs"].items():
                 for val in vals:
+                    # Get timestamp for the attribute, if available
+                    attribute_timestamp = rec.get("timestamp", "")
+
                     w.writerow({
                         "uuid":              evt_uuid,
                         "info":              info,
@@ -168,14 +175,17 @@ def write_csv_feed(all_records):
                         "analysis":          analysis,
                         "orgc_uuid":         ORG_UUID,
                         "orgc_name":         ORG_NAME,
+                        "tag":               tags_str,  # Add tags if present
                         "attribute_category":"External analysis",
-                        "attribute_type":    typ.rstrip("s"),  # make sure it's valid!
+                        "attribute_type":    typ.rstrip("s"),  # Ensure it's a valid type
                         "attribute_value":   val,
                         "to_ids":            "True",
-                        "comment":           comment
+                        "comment":           comment,
+                        "attribute_timestamp": attribute_timestamp  # Add timestamp if available
                     })
 
     logging.info(f"✅ Wrote MISP-compatible CSV feed to {CSV_PATH}")
+
 
 
 
