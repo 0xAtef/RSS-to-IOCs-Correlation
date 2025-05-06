@@ -1,3 +1,42 @@
 {
-  "records": []
+  "records": [
+    {
+      "id": "9e732a45-8126-4bb9-97f4-f1b2d8b5c0f6",
+      "title": "Balance Diagnostics falls victim to Everest Ransomware",
+      "source": "https://darkwebinformer.com/balance-diagnostics-falls-victim-to-everest-ransomware/",
+      "published": "2025-05-06T18:26:45",
+      "feed": "https://darkwebinformer.com/rss/",
+      "iocs": {
+        "ips": [],
+        "domains": [
+          "information.Over"
+        ],
+        "urls": [],
+        "emails": [],
+        "sha1": [],
+        "sha256": [],
+        "md5": [],
+        "cves": []
+      },
+      "tags": [
+        "context:ddos",
+        "feed:published:2025-05-06",
+        "context:data_leak",
+        "rss_to_ioc_collector",
+        "ioc:type:url",
+        "ioc:type:ip",
+        "ioc:type:email",
+        "feed:source:darkwebinformer.com",
+        "context:malware"
+      ],
+      "enrichment": {
+        "actors": [],
+        "malware": [],
+        "mitre_techniques": [],
+        "cves": [],
+        "tools": [],
+        "campaigns": []
+      }
+    }
+  ]
 }
