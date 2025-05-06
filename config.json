@@ -1,6 +1,4 @@
 {
-  "github_repo": "0xAtef/RSS-to-IOCs-Correlation",
-  "github_branch": "main",
   "org_name": "ADMIN",
   "org_uuid": "926e159d-1b41-4069-995e-b8eae5d338f9",
 
@@ -20,21 +18,21 @@
   "fixed_tags": ["RSS to IOC Collector"],
 
   "feed_tags_by_feed": {
-    "www.us-cert.gov": ["us-cert"],
-    "www.cert.ssi.gouv.fr": ["ssi-gouv"],
-    "feeds.feedburner.com": ["TheHackersNews"],
-    "krebsonsecurity.com": ["KrebsOnSecurity"],
-    "www.bleepingcomputer.com": ["BleepingComputer"],
-    "www.cisa.gov": ["CISA"],
-    "www.darkreading.com": ["DarkReading"],
-    "isc.sans.edu": ["SANS"],
-    "newsroom.trendmicro.com": ["TrendMicro"],
+    "www.us-cert.gov":               ["us-cert"],
+    "www.cert.ssi.gouv.fr":          ["ssi-gouv"],
+    "feeds.feedburner.com":          ["TheHackersNews"],
+    "krebsonsecurity.com":           ["KrebsOnSecurity"],
+    "www.bleepingcomputer.com":      ["BleepingComputer"],
+    "www.cisa.gov":                  ["CISA"],
+    "www.darkreading.com":           ["DarkReading"],
+    "isc.sans.edu":                  ["SANS"],
+    "newsroom.trendmicro.com":       ["TrendMicro"],
     "feeds.feedburner.com/threatintelligence": ["ThreatIntelligence"],
-    "darkwebinformer.com": ["DarkWebInformer"]
+    "darkwebinformer.com":           ["DarkWebInformer"]
   },
 
   "whitelist_by_feed": {
-    "*": ["x.ai", "x.com"],
+    "*":              ["x.ai", "x.com"],
     "darkwebinformer.com": [
       "portal.darkwebinformer.com",
       "identifiers.the",
@@ -48,32 +46,31 @@
   },
 
   "ioc_context_keywords": {
-    "c2": ["command and control", "c2 server", "beacon", "callback"],
-    "malware": ["malware", "ransomware", "trojan"],
+    "c2":       ["command and control", "c2 server", "beacon", "callback"],
+    "malware":  ["malware", "ransomware", "trojan"],
     "phishing": ["phishing", "spearphishing"]
   },
 
   "ioc_patterns": {
-    "ips": "(?:\\\\d{1,3}\\\\.){3}\\\\d{1,3}",
+    "ips":     "(?:\\\\d{1,3}\\\\.){3}\\\\d{1,3}",
     "domains": "\\\\b(?:[A-Za-z0-9-]+\\\\.)+[A-Za-z]{2,}\\\\b",
-    "urls": "https?://[^\\\\s\\\"'>]+",
-    "emails": "[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\\\.[A-Za-z]{2,}",
-    "sha1": "\\\\b[a-fA-F0-9]{40}\\\\b"
+    "urls":    "https?://[^\\\\s\\\"'>]+",
+    "emails":  "[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\\\.[A-Za-z]{2,}",
+    "sha1":    "\\\\b[a-fA-F0-9]{40}\\\\b"
   },
 
-  "max_days_old": 20,
-  "seen_iocs_path": "seen_iocs.json",
-  "output_base_dir": "misp_feed",
-  "log_file": "ioc_collector.log",
-  "user_agent": "MISP-IOC-Collector/1.0",
-  "request_timeout": 10,
+  "max_days_old":        20,
+  "seen_iocs_path":      "seen_iocs.json",
+  "output_base_dir":     "misp_feed",
+  "log_file":            "ioc_collector.log",
+  "user_agent":          "MISP-IOC-Collector/1.0",
+  "request_timeout":     10,
 
-  "http_retry_total": 3,
-  "http_backoff_factor": 1,
+  "http_retry_total":       3,
+  "http_backoff_factor":    1,
   "http_status_forcelist": [429, 500, 502, 503, 504],
-  "max_workers": 5,
+  "max_workers":            5,
 
-  "misp_analysis": 0,
-  "misp_threat_level_id": 4,
-  "misp_tag_colour": "#004646"
+  "misp_analysis":         0,
+  "misp_threat_level_id":  4
 }

@@ -36,30 +36,30 @@ jobs:
         run: python rss_ioc_collector.py
 
 
-      - name: Read feed paths from config.json
+      - name: Read output directory from config.json
         id: feed-config
         run: |
           echo "OUTPUT=$(jq -r .output_base_dir < config.json)" >> $GITHUB_ENV
-          echo "MANIFEST=$(jq -r .manifest_path < config.json)" >> $GITHUB_ENV
-      
-      - name: Commit & push feed
+
+      - name: Commit & push CSV feed
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_REPOSITORY: ${{ github.repository }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-      
-          # Fetch & rebase (auto-stash any local changes)
+
+          # Pull & rebase, auto-stashing any local changes
           git pull --rebase --autostash origin "$(git rev-parse --abbrev-ref HEAD)"
-      
-          # Stage the per-UUID event files and the manifest
-          git add misp_feed/events misp_feed/manifest.json
-      
+
+          # Stage the CSV feed file
+          git add "${OUTPUT}/feed.csv"
+
           # Commit if there are staged changes
-          git diff --staged --quiet || git commit -m "Rebuild MISP feed"
-      
-          # Push via token
+          git diff --staged --quiet || git commit -m "Rebuild CSV feed"
+
+          # Push via token auth
           git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
           git push origin main
+
       
