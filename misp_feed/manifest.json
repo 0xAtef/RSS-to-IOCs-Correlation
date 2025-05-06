@@ -81,6 +81,37 @@
       }
     ]
   },
+  "ba24ed42-abec-492a-b9a5-7b20d14b381c": {
+    "info": "UK shares security tips after major retail cyberattacks",
+    "Orgc": {
+      "name": "ADMIN",
+      "uuid": "926e159d-1b41-4069-995e-b8eae5d338f9"
+    },
+    "analysis": 0,
+    "date": "2025-05-05",
+    "timestamp": 1746523467,
+    "threat_level_id": 4,
+    "Tag": [
+      {
+        "name": "phishing",
+        "colour": "#004646",
+        "local": false,
+        "relationship_type": ""
+      },
+      {
+        "name": "RSS to IOC Collector",
+        "colour": "#004646",
+        "local": false,
+        "relationship_type": ""
+      },
+      {
+        "name": "malware",
+        "colour": "#004646",
+        "local": false,
+        "relationship_type": ""
+      }
+    ]
+  },
   "60cbe780-a9fb-4303-a6da-bb97cd09ad03": {
     "info": "Multiples vuln\u00e9rabilit\u00e9s dans les produits Mozilla (02 mai 2025)",
     "Orgc": {
@@ -371,6 +402,25 @@
       }
     ]
   },
+  "05b5e85f-e3bc-4047-b9f4-1e3130bbc789": {
+    "info": "Multiples vuln\u00e9rabilit\u00e9s dans Microsoft Edge (02 mai 2025)",
+    "Orgc": {
+      "name": "ADMIN",
+      "uuid": "926e159d-1b41-4069-995e-b8eae5d338f9"
+    },
+    "analysis": 0,
+    "date": "2025-05-02",
+    "timestamp": 1746523467,
+    "threat_level_id": 4,
+    "Tag": [
+      {
+        "name": "RSS to IOC Collector",
+        "colour": "#004646",
+        "local": false,
+        "relationship_type": ""
+      }
+    ]
+  },
   "04c2f6db-efda-4c19-8ae9-8c2ae56b9160": {
     "info": "Multiples vuln\u00e9rabilit\u00e9s dans Grafana (23 avril 2025)",
     "Orgc": {
@@ -491,6 +541,25 @@
       }
     ]
   },
+  "837d37f5-cc55-484c-90f5-1b7ce8344201": {
+    "info": "Multiples vuln\u00e9rabilit\u00e9s dans les produits Mozilla (30 avril 2025)",
+    "Orgc": {
+      "name": "ADMIN",
+      "uuid": "926e159d-1b41-4069-995e-b8eae5d338f9"
+    },
+    "analysis": 0,
+    "date": "2025-04-30",
+    "timestamp": 1746523467,
+    "threat_level_id": 4,
+    "Tag": [
+      {
+        "name": "RSS to IOC Collector",
+        "colour": "#004646",
+        "local": false,
+        "relationship_type": ""
+      }
+    ]
+  },
   "c2b224d8-eaac-483e-82ef-dde0cd86cf70": {
     "info": "Multiples vuln\u00e9rabilit\u00e9s dans Microsoft Edge (02 mai 2025)",
     "Orgc": {
@@ -595,6 +664,25 @@
     "analysis": 0,
     "date": "2025-04-25",
     "timestamp": 1746521185,
+    "threat_level_id": 4,
+    "Tag": [
+      {
+        "name": "RSS to IOC Collector",
+        "colour": "#004646",
+        "local": false,
+        "relationship_type": ""
+      }
+    ]
+  },
+  "994fa803-73e8-4bcd-9321-8eb71fec1f13": {
+    "info": "Multiples vuln\u00e9rabilit\u00e9s dans le noyau Linux de SUSE (02 mai 2025)",
+    "Orgc": {
+      "name": "ADMIN",
+      "uuid": "926e159d-1b41-4069-995e-b8eae5d338f9"
+    },
+    "analysis": 0,
+    "date": "2025-05-02",
+    "timestamp": 1746523467,
     "threat_level_id": 4,
     "Tag": [
       {
@@ -1148,6 +1236,25 @@
       }
     ]
   },
+  "88573528-25a4-47f8-a3d6-65616917ab51": {
+    "info": "Multiples vuln\u00e9rabilit\u00e9s dans Apache Tomcat (29 avril 2025)",
+    "Orgc": {
+      "name": "ADMIN",
+      "uuid": "926e159d-1b41-4069-995e-b8eae5d338f9"
+    },
+    "analysis": 0,
+    "date": "2025-04-29",
+    "timestamp": 1746523467,
+    "threat_level_id": 4,
+    "Tag": [
+      {
+        "name": "RSS to IOC Collector",
+        "colour": "#004646",
+        "local": false,
+        "relationship_type": ""
+      }
+    ]
+  },
   "578671a7-eb93-4053-a4a1-006b3c7ad5f8": {
     "info": "Multiples vuln\u00e9rabilit\u00e9s dans Google Chrome (30 avril 2025)",
     "Orgc": {
@@ -1192,6 +1299,25 @@
       },
       {
         "name": "phishing",
+        "colour": "#004646",
+        "local": false,
+        "relationship_type": ""
+      }
+    ]
+  },
+  "f019a2b6-bcf6-4847-8685-7052e2f96653": {
+    "info": "Multiples vuln\u00e9rabilit\u00e9s dans Google Chrome (30 avril 2025)",
+    "Orgc": {
+      "name": "ADMIN",
+      "uuid": "926e159d-1b41-4069-995e-b8eae5d338f9"
+    },
+    "analysis": 0,
+    "date": "2025-04-30",
+    "timestamp": 1746523467,
+    "threat_level_id": 4,
+    "Tag": [
+      {
+        "name": "RSS to IOC Collector",
         "colour": "#004646",
         "local": false,
         "relationship_type": ""
@@ -1689,6 +1815,25 @@
       }
     ]
   },
+  "71877afe-29c2-4ebf-9ce5-946d6a1ed2cd": {
+    "info": "Multiples vuln\u00e9rabilit\u00e9s dans les produits Tenable (02 mai 2025)",
+    "Orgc": {
+      "name": "ADMIN",
+      "uuid": "926e159d-1b41-4069-995e-b8eae5d338f9"
+    },
+    "analysis": 0,
+    "date": "2025-05-02",
+    "timestamp": 1746523467,
+    "threat_level_id": 4,
+    "Tag": [
+      {
+        "name": "RSS to IOC Collector",
+        "colour": "#004646",
+        "local": false,
+        "relationship_type": ""
+      }
+    ]
+  },
   "2615430a-73eb-453f-98a5-456d6a5ad0f5": {
     "info": "Multiples vuln\u00e9rabilit\u00e9s dans Mattermost Server (30 avril 2025)",
     "Orgc": {
@@ -1976,6 +2121,25 @@
     "analysis": 0,
     "date": "2025-05-05",
     "timestamp": 1746501028,
+    "threat_level_id": 4,
+    "Tag": [
+      {
+        "name": "RSS to IOC Collector",
+        "colour": "#004646",
+        "local": false,
+        "relationship_type": ""
+      }
+    ]
+  },
+  "37c5ca1f-b606-45f3-9e9d-9c8ccb15179d": {
+    "info": "Bulletin d'actualit\u00e9 CERTFR-2025-ACT-019 (05 mai 2025)",
+    "Orgc": {
+      "name": "ADMIN",
+      "uuid": "926e159d-1b41-4069-995e-b8eae5d338f9"
+    },
+    "analysis": 0,
+    "date": "2025-05-05",
+    "timestamp": 1746523467,
     "threat_level_id": 4,
     "Tag": [
       {
@@ -2586,6 +2750,31 @@
       }
     ]
   },
+  "9e5d8ff7-4983-40e6-b9fe-0492de389426": {
+    "info": "DOGE Worker\u2019s Code Supports NLRB Whistleblower",
+    "Orgc": {
+      "name": "ADMIN",
+      "uuid": "926e159d-1b41-4069-995e-b8eae5d338f9"
+    },
+    "analysis": 0,
+    "date": "2025-04-23",
+    "timestamp": 1746523467,
+    "threat_level_id": 4,
+    "Tag": [
+      {
+        "name": "RSS to IOC Collector",
+        "colour": "#004646",
+        "local": false,
+        "relationship_type": ""
+      },
+      {
+        "name": "malware",
+        "colour": "#004646",
+        "local": false,
+        "relationship_type": ""
+      }
+    ]
+  },
   "de0d0d91-b5db-479b-9b00-41668f6dd51f": {
     "info": "Multiples vuln\u00e9rabilit\u00e9s dans les produits Mozilla (30 avril 2025)",
     "Orgc": {
@@ -2902,6 +3091,37 @@
     "Tag": [
       {
         "name": "RSS to IOC Collector",
+        "colour": "#004646",
+        "local": false,
+        "relationship_type": ""
+      }
+    ]
+  },
+  "f2ec661d-bebd-4793-82cf-3f1443506c92": {
+    "info": "Python InfoStealer with Embedded Phishing Webserver, (Tue, May 6th)",
+    "Orgc": {
+      "name": "ADMIN",
+      "uuid": "926e159d-1b41-4069-995e-b8eae5d338f9"
+    },
+    "analysis": 0,
+    "date": "2025-05-06",
+    "timestamp": 1746523467,
+    "threat_level_id": 4,
+    "Tag": [
+      {
+        "name": "phishing",
+        "colour": "#004646",
+        "local": false,
+        "relationship_type": ""
+      },
+      {
+        "name": "RSS to IOC Collector",
+        "colour": "#004646",
+        "local": false,
+        "relationship_type": ""
+      },
+      {
+        "name": "malware",
         "colour": "#004646",
         "local": false,
         "relationship_type": ""
@@ -3227,6 +3447,25 @@
     "analysis": 0,
     "date": "2025-05-02",
     "timestamp": 1746521185,
+    "threat_level_id": 4,
+    "Tag": [
+      {
+        "name": "RSS to IOC Collector",
+        "colour": "#004646",
+        "local": false,
+        "relationship_type": ""
+      }
+    ]
+  },
+  "8f11ed4f-f32d-4640-ae2e-13316d8e10e8": {
+    "info": "Multiples vuln\u00e9rabilit\u00e9s dans les produits VMware (29 avril 2025)",
+    "Orgc": {
+      "name": "ADMIN",
+      "uuid": "926e159d-1b41-4069-995e-b8eae5d338f9"
+    },
+    "analysis": 0,
+    "date": "2025-04-29",
+    "timestamp": 1746523467,
     "threat_level_id": 4,
     "Tag": [
       {
@@ -3925,6 +4164,25 @@
       }
     ]
   },
+  "d27232f1-a66f-48b9-88a2-0030fe0ca76c": {
+    "info": "Multiples vuln\u00e9rabilit\u00e9s dans Splunk User Behavior Analytics (UBA) (30 avril 2025)",
+    "Orgc": {
+      "name": "ADMIN",
+      "uuid": "926e159d-1b41-4069-995e-b8eae5d338f9"
+    },
+    "analysis": 0,
+    "date": "2025-04-30",
+    "timestamp": 1746523467,
+    "threat_level_id": 4,
+    "Tag": [
+      {
+        "name": "RSS to IOC Collector",
+        "colour": "#004646",
+        "local": false,
+        "relationship_type": ""
+      }
+    ]
+  },
   "84576037-3fc5-46a2-9f7b-822adeb9d4ae": {
     "info": "Vuln\u00e9rabilit\u00e9 dans le noyau Linux de Red Hat (02 mai 2025)",
     "Orgc": {
@@ -4020,6 +4278,25 @@
       }
     ]
   },
+  "bb9dbaa7-a958-4c5a-8683-b8316bf4ba66": {
+    "info": "Multiples vuln\u00e9rabilit\u00e9s dans les produits Elastic (02 mai 2025)",
+    "Orgc": {
+      "name": "ADMIN",
+      "uuid": "926e159d-1b41-4069-995e-b8eae5d338f9"
+    },
+    "analysis": 0,
+    "date": "2025-05-02",
+    "timestamp": 1746523467,
+    "threat_level_id": 4,
+    "Tag": [
+      {
+        "name": "RSS to IOC Collector",
+        "colour": "#004646",
+        "local": false,
+        "relationship_type": ""
+      }
+    ]
+  },
   "46f7572d-f790-42ed-9ead-0926f458b6a9": {
     "info": "Multiples vuln\u00e9rabilit\u00e9s dans Google Chrome (30 avril 2025)",
     "Orgc": {
@@ -4077,6 +4354,25 @@
       }
     ]
   },
+  "8a840584-421c-4456-8cb1-df30fae39e4f": {
+    "info": "Multiples vuln\u00e9rabilit\u00e9s dans Grafana (23 avril 2025)",
+    "Orgc": {
+      "name": "ADMIN",
+      "uuid": "926e159d-1b41-4069-995e-b8eae5d338f9"
+    },
+    "analysis": 0,
+    "date": "2025-04-23",
+    "timestamp": 1746523467,
+    "threat_level_id": 4,
+    "Tag": [
+      {
+        "name": "RSS to IOC Collector",
+        "colour": "#004646",
+        "local": false,
+        "relationship_type": ""
+      }
+    ]
+  },
   "9483ccd3-084c-4dd7-b1f8-f86326bf804b": {
     "info": "Vuln\u00e9rabilit\u00e9 dans LibreOffice (28 avril 2025)",
     "Orgc": {
@@ -4086,6 +4382,25 @@
     "analysis": 0,
     "date": "2025-04-28",
     "timestamp": 1746516138,
+    "threat_level_id": 4,
+    "Tag": [
+      {
+        "name": "RSS to IOC Collector",
+        "colour": "#004646",
+        "local": false,
+        "relationship_type": ""
+      }
+    ]
+  },
+  "8272dbcb-c610-4166-82bf-d22ddc101cf6": {
+    "info": "Multiples vuln\u00e9rabilit\u00e9s dans les produits IBM (02 mai 2025)",
+    "Orgc": {
+      "name": "ADMIN",
+      "uuid": "926e159d-1b41-4069-995e-b8eae5d338f9"
+    },
+    "analysis": 0,
+    "date": "2025-05-02",
+    "timestamp": 1746523467,
     "threat_level_id": 4,
     "Tag": [
       {
@@ -4431,6 +4746,25 @@
       }
     ]
   },
+  "1ea60532-2ed5-4e77-be3e-5534afb7986f": {
+    "info": "\"Mirai\" Now Exploits Samsung MagicINFO CMS (CVE-2024-7399), (Mon, May 5th)",
+    "Orgc": {
+      "name": "ADMIN",
+      "uuid": "926e159d-1b41-4069-995e-b8eae5d338f9"
+    },
+    "analysis": 0,
+    "date": "2025-05-06",
+    "timestamp": 1746523467,
+    "threat_level_id": 4,
+    "Tag": [
+      {
+        "name": "RSS to IOC Collector",
+        "colour": "#004646",
+        "local": false,
+        "relationship_type": ""
+      }
+    ]
+  },
   "5369693e-5ca0-48e3-92a8-6d4ec45350a0": {
     "info": "Daily Dose of Dark Web Informer - 2nd of May 2025",
     "Orgc": {
@@ -4450,6 +4784,37 @@
       },
       {
         "name": "RSS to IOC Collector",
+        "colour": "#004646",
+        "local": false,
+        "relationship_type": ""
+      }
+    ]
+  },
+  "dbe653a9-dd7d-4413-af1a-bfe8e5e5478b": {
+    "info": "Hello 0-Days, My Old Friend: A 2024 Zero-Day Exploitation Analysis",
+    "Orgc": {
+      "name": "ADMIN",
+      "uuid": "926e159d-1b41-4069-995e-b8eae5d338f9"
+    },
+    "analysis": 0,
+    "date": "2025-04-29",
+    "timestamp": 1746523467,
+    "threat_level_id": 4,
+    "Tag": [
+      {
+        "name": "RSS to IOC Collector",
+        "colour": "#004646",
+        "local": false,
+        "relationship_type": ""
+      },
+      {
+        "name": "malware",
+        "colour": "#004646",
+        "local": false,
+        "relationship_type": ""
+      },
+      {
+        "name": "c2",
         "colour": "#004646",
         "local": false,
         "relationship_type": ""
@@ -4892,6 +5257,31 @@
       }
     ]
   },
+  "189f09e9-6434-4c22-897a-c4b831763175": {
+    "info": "xAI Dev Leaks API Key for Private SpaceX, Tesla LLMs",
+    "Orgc": {
+      "name": "ADMIN",
+      "uuid": "926e159d-1b41-4069-995e-b8eae5d338f9"
+    },
+    "analysis": 0,
+    "date": "2025-05-02",
+    "timestamp": 1746523467,
+    "threat_level_id": 4,
+    "Tag": [
+      {
+        "name": "RSS to IOC Collector",
+        "colour": "#004646",
+        "local": false,
+        "relationship_type": ""
+      },
+      {
+        "name": "malware",
+        "colour": "#004646",
+        "local": false,
+        "relationship_type": ""
+      }
+    ]
+  },
   "c6fe7016-a49b-4c93-9024-94d70dd959e0": {
     "info": "Web Scanning Sonicwall for CVE-2021-20016, (Tue, Apr 29th)",
     "Orgc": {
@@ -5232,6 +5622,25 @@
       }
     ]
   },
+  "1ab42ada-3cab-4f00-8f8f-ba0ae65c533a": {
+    "info": "Vuln\u00e9rabilit\u00e9 dans Sophos Taegis Endpoint Agent (25 avril 2025)",
+    "Orgc": {
+      "name": "ADMIN",
+      "uuid": "926e159d-1b41-4069-995e-b8eae5d338f9"
+    },
+    "analysis": 0,
+    "date": "2025-04-25",
+    "timestamp": 1746523467,
+    "threat_level_id": 4,
+    "Tag": [
+      {
+        "name": "RSS to IOC Collector",
+        "colour": "#004646",
+        "local": false,
+        "relationship_type": ""
+      }
+    ]
+  },
   "3a83eec9-ef6a-4f33-a67c-617cb30b92e4": {
     "info": "\"Mirai\" Now Exploits Samsung MagicINFO CMS (CVE-2024-7399), (Mon, May 5th)",
     "Orgc": {
@@ -5409,6 +5818,25 @@
       }
     ]
   },
+  "f48e435e-fddb-4562-8dbb-5a0c75a64fd6": {
+    "info": "Fin de support de Windows 10 en octobre 2025 (23 avril 2025)",
+    "Orgc": {
+      "name": "ADMIN",
+      "uuid": "926e159d-1b41-4069-995e-b8eae5d338f9"
+    },
+    "analysis": 0,
+    "date": "2025-04-23",
+    "timestamp": 1746523467,
+    "threat_level_id": 4,
+    "Tag": [
+      {
+        "name": "RSS to IOC Collector",
+        "colour": "#004646",
+        "local": false,
+        "relationship_type": ""
+      }
+    ]
+  },
   "96c9b176-eb83-4b3f-ae01-f403297dc956": {
     "info": "Vuln\u00e9rabilit\u00e9 dans LibreOffice (28 avril 2025)",
     "Orgc": {
@@ -5441,6 +5869,31 @@
     "Tag": [
       {
         "name": "RSS to IOC Collector",
+        "colour": "#004646",
+        "local": false,
+        "relationship_type": ""
+      }
+    ]
+  },
+  "a338009d-a162-4191-b22d-9f08785bd354": {
+    "info": "Whistleblower: DOGE Siphoned NLRB Case Data",
+    "Orgc": {
+      "name": "ADMIN",
+      "uuid": "926e159d-1b41-4069-995e-b8eae5d338f9"
+    },
+    "analysis": 0,
+    "date": "2025-04-22",
+    "timestamp": 1746523467,
+    "threat_level_id": 4,
+    "Tag": [
+      {
+        "name": "RSS to IOC Collector",
+        "colour": "#004646",
+        "local": false,
+        "relationship_type": ""
+      },
+      {
+        "name": "malware",
         "colour": "#004646",
         "local": false,
         "relationship_type": ""
@@ -5504,6 +5957,25 @@
       }
     ]
   },
+  "feb23440-ebd2-4190-bf56-f807273c197f": {
+    "info": "Vuln\u00e9rabilit\u00e9 dans les produits Microsoft (02 mai 2025)",
+    "Orgc": {
+      "name": "ADMIN",
+      "uuid": "926e159d-1b41-4069-995e-b8eae5d338f9"
+    },
+    "analysis": 0,
+    "date": "2025-05-02",
+    "timestamp": 1746523467,
+    "threat_level_id": 4,
+    "Tag": [
+      {
+        "name": "RSS to IOC Collector",
+        "colour": "#004646",
+        "local": false,
+        "relationship_type": ""
+      }
+    ]
+  },
   "fe26acdc-6513-41cb-9b25-b40690de340a": {
     "info": "Multiples vuln\u00e9rabilit\u00e9s dans Traefik (22 avril 2025)",
     "Orgc": {
@@ -5532,6 +6004,25 @@
     "analysis": 0,
     "date": "2025-04-30",
     "timestamp": 1746521185,
+    "threat_level_id": 4,
+    "Tag": [
+      {
+        "name": "RSS to IOC Collector",
+        "colour": "#004646",
+        "local": false,
+        "relationship_type": ""
+      }
+    ]
+  },
+  "66b63bf6-2435-4247-8b54-31a01e5fb17b": {
+    "info": "Vuln\u00e9rabilit\u00e9 dans Spring Security (23 avril 2025)",
+    "Orgc": {
+      "name": "ADMIN",
+      "uuid": "926e159d-1b41-4069-995e-b8eae5d338f9"
+    },
+    "analysis": 0,
+    "date": "2025-04-23",
+    "timestamp": 1746523467,
     "threat_level_id": 4,
     "Tag": [
       {
@@ -5589,6 +6080,25 @@
     "analysis": 0,
     "date": "2025-04-28",
     "timestamp": 1746487257,
+    "threat_level_id": 4,
+    "Tag": [
+      {
+        "name": "RSS to IOC Collector",
+        "colour": "#004646",
+        "local": false,
+        "relationship_type": ""
+      }
+    ]
+  },
+  "18d8793a-df6d-464b-bf49-b13059e2cd5a": {
+    "info": "Multiples vuln\u00e9rabilit\u00e9s dans GitLab (24 avril 2025)",
+    "Orgc": {
+      "name": "ADMIN",
+      "uuid": "926e159d-1b41-4069-995e-b8eae5d338f9"
+    },
+    "analysis": 0,
+    "date": "2025-04-24",
+    "timestamp": 1746523467,
     "threat_level_id": 4,
     "Tag": [
       {
@@ -5819,6 +6329,25 @@
       }
     ]
   },
+  "eb4f7e1d-f3bb-4166-9e5e-7c70402f44fd": {
+    "info": "Vuln\u00e9rabilit\u00e9 dans SAP NetWeaver (28 avril 2025)",
+    "Orgc": {
+      "name": "ADMIN",
+      "uuid": "926e159d-1b41-4069-995e-b8eae5d338f9"
+    },
+    "analysis": 0,
+    "date": "2025-04-28",
+    "timestamp": 1746523467,
+    "threat_level_id": 4,
+    "Tag": [
+      {
+        "name": "RSS to IOC Collector",
+        "colour": "#004646",
+        "local": false,
+        "relationship_type": ""
+      }
+    ]
+  },
   "5aa4e0ba-1274-42c5-9e4c-4e4919e8011c": {
     "info": "DOGE Worker\u2019s Code Supports NLRB Whistleblower",
     "Orgc": {
@@ -5910,6 +6439,25 @@
     "analysis": 0,
     "date": "2025-04-25",
     "timestamp": 1746496124,
+    "threat_level_id": 4,
+    "Tag": [
+      {
+        "name": "RSS to IOC Collector",
+        "colour": "#004646",
+        "local": false,
+        "relationship_type": ""
+      }
+    ]
+  },
+  "d3b5d0c1-6e02-4eb4-83dd-84441889bdec": {
+    "info": "Multiples vuln\u00e9rabilit\u00e9s dans les produits Mozilla (02 mai 2025)",
+    "Orgc": {
+      "name": "ADMIN",
+      "uuid": "926e159d-1b41-4069-995e-b8eae5d338f9"
+    },
+    "analysis": 0,
+    "date": "2025-05-02",
+    "timestamp": 1746523467,
     "threat_level_id": 4,
     "Tag": [
       {
@@ -6023,6 +6571,44 @@
     "analysis": 0,
     "date": "2025-05-02",
     "timestamp": 1746501028,
+    "threat_level_id": 4,
+    "Tag": [
+      {
+        "name": "RSS to IOC Collector",
+        "colour": "#004646",
+        "local": false,
+        "relationship_type": ""
+      }
+    ]
+  },
+  "9fc667a2-9d70-40aa-8989-4f67d0a11fc0": {
+    "info": "Multiples vuln\u00e9rabilit\u00e9s dans Mattermost Server (30 avril 2025)",
+    "Orgc": {
+      "name": "ADMIN",
+      "uuid": "926e159d-1b41-4069-995e-b8eae5d338f9"
+    },
+    "analysis": 0,
+    "date": "2025-04-30",
+    "timestamp": 1746523467,
+    "threat_level_id": 4,
+    "Tag": [
+      {
+        "name": "RSS to IOC Collector",
+        "colour": "#004646",
+        "local": false,
+        "relationship_type": ""
+      }
+    ]
+  },
+  "c16e32a5-1404-4748-bd0a-b50461f85360": {
+    "info": "Multiples vuln\u00e9rabilit\u00e9s dans le noyau Linux d'Ubuntu (25 avril 2025)",
+    "Orgc": {
+      "name": "ADMIN",
+      "uuid": "926e159d-1b41-4069-995e-b8eae5d338f9"
+    },
+    "analysis": 0,
+    "date": "2025-04-25",
+    "timestamp": 1746523467,
     "threat_level_id": 4,
     "Tag": [
       {
@@ -6216,6 +6802,31 @@
     "Tag": [
       {
         "name": "RSS to IOC Collector",
+        "colour": "#004646",
+        "local": false,
+        "relationship_type": ""
+      }
+    ]
+  },
+  "babb8340-12a5-44d0-bf2a-a57f65e28860": {
+    "info": "Alien's Eye: Hunt Down 570 Social Media Accounts Using AI",
+    "Orgc": {
+      "name": "ADMIN",
+      "uuid": "926e159d-1b41-4069-995e-b8eae5d338f9"
+    },
+    "analysis": 0,
+    "date": "2025-05-05",
+    "timestamp": 1746523467,
+    "threat_level_id": 4,
+    "Tag": [
+      {
+        "name": "RSS to IOC Collector",
+        "colour": "#004646",
+        "local": false,
+        "relationship_type": ""
+      },
+      {
+        "name": "malware",
         "colour": "#004646",
         "local": false,
         "relationship_type": ""
@@ -6488,6 +7099,31 @@
       }
     ]
   },
+  "54e6f65d-f1b7-4125-ab3e-02eb9075700d": {
+    "info": "Daily Dose of Dark Web Informer - 2nd of May 2025",
+    "Orgc": {
+      "name": "ADMIN",
+      "uuid": "926e159d-1b41-4069-995e-b8eae5d338f9"
+    },
+    "analysis": 0,
+    "date": "2025-05-02",
+    "timestamp": 1746523467,
+    "threat_level_id": 4,
+    "Tag": [
+      {
+        "name": "RSS to IOC Collector",
+        "colour": "#004646",
+        "local": false,
+        "relationship_type": ""
+      },
+      {
+        "name": "malware",
+        "colour": "#004646",
+        "local": false,
+        "relationship_type": ""
+      }
+    ]
+  },
   "585be853-24fd-4e00-bfb5-76ea3ee17a94": {
     "info": "Alien's Eye: Hunt Down 570 Social Media Accounts Using AI",
     "Orgc": {
@@ -6541,6 +7177,25 @@
     "analysis": 0,
     "date": "2025-05-02",
     "timestamp": 1746487257,
+    "threat_level_id": 4,
+    "Tag": [
+      {
+        "name": "RSS to IOC Collector",
+        "colour": "#004646",
+        "local": false,
+        "relationship_type": ""
+      }
+    ]
+  },
+  "7c3d4cb9-9f42-4855-af41-28876f834000": {
+    "info": "Multiples vuln\u00e9rabilit\u00e9s dans Traefik (22 avril 2025)",
+    "Orgc": {
+      "name": "ADMIN",
+      "uuid": "926e159d-1b41-4069-995e-b8eae5d338f9"
+    },
+    "analysis": 0,
+    "date": "2025-04-22",
+    "timestamp": 1746523467,
     "threat_level_id": 4,
     "Tag": [
       {
@@ -6658,6 +7313,44 @@
       }
     ]
   },
+  "257a2159-885f-4462-9f39-8fe04ff5a7a3": {
+    "info": "Bulletin d'actualit\u00e9 CERTFR-2025-ACT-018 (28 avril 2025)",
+    "Orgc": {
+      "name": "ADMIN",
+      "uuid": "926e159d-1b41-4069-995e-b8eae5d338f9"
+    },
+    "analysis": 0,
+    "date": "2025-04-28",
+    "timestamp": 1746523467,
+    "threat_level_id": 4,
+    "Tag": [
+      {
+        "name": "RSS to IOC Collector",
+        "colour": "#004646",
+        "local": false,
+        "relationship_type": ""
+      }
+    ]
+  },
+  "d4a945ad-f4b0-4eb3-b328-ca3e14ca9a8b": {
+    "info": "Vuln\u00e9rabilit\u00e9 dans Spring Boot (25 avril 2025)",
+    "Orgc": {
+      "name": "ADMIN",
+      "uuid": "926e159d-1b41-4069-995e-b8eae5d338f9"
+    },
+    "analysis": 0,
+    "date": "2025-04-25",
+    "timestamp": 1746523467,
+    "threat_level_id": 4,
+    "Tag": [
+      {
+        "name": "RSS to IOC Collector",
+        "colour": "#004646",
+        "local": false,
+        "relationship_type": ""
+      }
+    ]
+  },
   "f1ff27cc-f5e8-415e-bfa2-dfc5b180db27": {
     "info": "Daily Dose of Dark Web Informer - 2nd of May 2025",
     "Orgc": {
@@ -6677,6 +7370,25 @@
       },
       {
         "name": "malware",
+        "colour": "#004646",
+        "local": false,
+        "relationship_type": ""
+      }
+    ]
+  },
+  "e491de3e-1e22-4406-88ba-5555f77bbed3": {
+    "info": "Multiples vuln\u00e9rabilit\u00e9s dans le noyau Linux de Debian (02 mai 2025)",
+    "Orgc": {
+      "name": "ADMIN",
+      "uuid": "926e159d-1b41-4069-995e-b8eae5d338f9"
+    },
+    "analysis": 0,
+    "date": "2025-05-02",
+    "timestamp": 1746523467,
+    "threat_level_id": 4,
+    "Tag": [
+      {
+        "name": "RSS to IOC Collector",
         "colour": "#004646",
         "local": false,
         "relationship_type": ""
@@ -6809,6 +7521,25 @@
       }
     ]
   },
+  "283a3e23-3800-4b55-b67e-f1e2c8a2831b": {
+    "info": "Vuln\u00e9rabilit\u00e9 dans LibreOffice (28 avril 2025)",
+    "Orgc": {
+      "name": "ADMIN",
+      "uuid": "926e159d-1b41-4069-995e-b8eae5d338f9"
+    },
+    "analysis": 0,
+    "date": "2025-04-28",
+    "timestamp": 1746523467,
+    "threat_level_id": 4,
+    "Tag": [
+      {
+        "name": "RSS to IOC Collector",
+        "colour": "#004646",
+        "local": false,
+        "relationship_type": ""
+      }
+    ]
+  },
   "766fc2d2-02bf-4730-a05b-0d94bfabcefc": {
     "info": "Multiples vuln\u00e9rabilit\u00e9s dans Apache Tomcat (29 avril 2025)",
     "Orgc": {
@@ -6932,6 +7663,25 @@
     "analysis": 0,
     "date": "2025-04-30",
     "timestamp": 1746521185,
+    "threat_level_id": 4,
+    "Tag": [
+      {
+        "name": "RSS to IOC Collector",
+        "colour": "#004646",
+        "local": false,
+        "relationship_type": ""
+      }
+    ]
+  },
+  "bacb6309-ff5f-44d0-bc71-77c8c490717f": {
+    "info": "Web Scanning Sonicwall for CVE-2021-20016, (Tue, Apr 29th)",
+    "Orgc": {
+      "name": "ADMIN",
+      "uuid": "926e159d-1b41-4069-995e-b8eae5d338f9"
+    },
+    "analysis": 0,
+    "date": "2025-04-30",
+    "timestamp": 1746523467,
     "threat_level_id": 4,
     "Tag": [
       {
@@ -7271,6 +8021,44 @@
       }
     ]
   },
+  "9dec33a0-dbaf-4f3f-9355-80d90c3d1bea": {
+    "info": "Multiples vuln\u00e9rabilit\u00e9s dans le noyau Linux d'Ubuntu (02 mai 2025)",
+    "Orgc": {
+      "name": "ADMIN",
+      "uuid": "926e159d-1b41-4069-995e-b8eae5d338f9"
+    },
+    "analysis": 0,
+    "date": "2025-05-02",
+    "timestamp": 1746523467,
+    "threat_level_id": 4,
+    "Tag": [
+      {
+        "name": "RSS to IOC Collector",
+        "colour": "#004646",
+        "local": false,
+        "relationship_type": ""
+      }
+    ]
+  },
+  "01cd9e1c-1bda-4e73-bfe9-1f0f2ee07b64": {
+    "info": "Vuln\u00e9rabilit\u00e9 dans SAP NetWeaver (25 avril 2025)",
+    "Orgc": {
+      "name": "ADMIN",
+      "uuid": "926e159d-1b41-4069-995e-b8eae5d338f9"
+    },
+    "analysis": 0,
+    "date": "2025-04-25",
+    "timestamp": 1746523467,
+    "threat_level_id": 4,
+    "Tag": [
+      {
+        "name": "RSS to IOC Collector",
+        "colour": "#004646",
+        "local": false,
+        "relationship_type": ""
+      }
+    ]
+  },
   "ee9d155b-265d-4b88-8211-e4a68a779e79": {
     "info": "Bulletin d'actualit\u00e9 CERTFR-2025-ACT-019 (05 mai 2025)",
     "Orgc": {
@@ -7315,6 +8103,25 @@
       },
       {
         "name": "c2",
+        "colour": "#004646",
+        "local": false,
+        "relationship_type": ""
+      }
+    ]
+  },
+  "432badc7-c9b1-45f1-af0f-838d3555440c": {
+    "info": "Multiples vuln\u00e9rabilit\u00e9s dans Google Chrome (23 avril 2025)",
+    "Orgc": {
+      "name": "ADMIN",
+      "uuid": "926e159d-1b41-4069-995e-b8eae5d338f9"
+    },
+    "analysis": 0,
+    "date": "2025-04-23",
+    "timestamp": 1746523467,
+    "threat_level_id": 4,
+    "Tag": [
+      {
+        "name": "RSS to IOC Collector",
         "colour": "#004646",
         "local": false,
         "relationship_type": ""
@@ -7711,6 +8518,25 @@
         "local": false,
         "relationship_type": ""
       },
+      {
+        "name": "RSS to IOC Collector",
+        "colour": "#004646",
+        "local": false,
+        "relationship_type": ""
+      }
+    ]
+  },
+  "c8020a9d-9b87-48ba-bc99-8a655ab009b7": {
+    "info": "ISC Stormcast For Tuesday, May 6th, 2025 https://isc.sans.edu/podcastdetail/9438, (Tue, May 6th)",
+    "Orgc": {
+      "name": "ADMIN",
+      "uuid": "926e159d-1b41-4069-995e-b8eae5d338f9"
+    },
+    "analysis": 0,
+    "date": "2025-05-06",
+    "timestamp": 1746523467,
+    "threat_level_id": 4,
+    "Tag": [
       {
         "name": "RSS to IOC Collector",
         "colour": "#004646",
@@ -8714,6 +9540,25 @@
       }
     ]
   },
+  "1209a319-e996-4b76-bd0a-72065ef167dc": {
+    "info": "Vuln\u00e9rabilit\u00e9 dans les produits Symantec (30 avril 2025)",
+    "Orgc": {
+      "name": "ADMIN",
+      "uuid": "926e159d-1b41-4069-995e-b8eae5d338f9"
+    },
+    "analysis": 0,
+    "date": "2025-04-30",
+    "timestamp": 1746523467,
+    "threat_level_id": 4,
+    "Tag": [
+      {
+        "name": "RSS to IOC Collector",
+        "colour": "#004646",
+        "local": false,
+        "relationship_type": ""
+      }
+    ]
+  },
   "5c635a85-8f3a-4149-8045-906638400842": {
     "info": "Multiples vuln\u00e9rabilit\u00e9s dans les produits VMware (29 avril 2025)",
     "Orgc": {
@@ -8866,6 +9711,25 @@
       },
       {
         "name": "malware",
+        "colour": "#004646",
+        "local": false,
+        "relationship_type": ""
+      }
+    ]
+  },
+  "8ce48065-79dc-4a2d-aa1e-c9b1d33eb76c": {
+    "info": "Multiples vuln\u00e9rabilit\u00e9s dans Microsoft Azure (02 mai 2025)",
+    "Orgc": {
+      "name": "ADMIN",
+      "uuid": "926e159d-1b41-4069-995e-b8eae5d338f9"
+    },
+    "analysis": 0,
+    "date": "2025-05-02",
+    "timestamp": 1746523467,
+    "threat_level_id": 4,
+    "Tag": [
+      {
+        "name": "RSS to IOC Collector",
         "colour": "#004646",
         "local": false,
         "relationship_type": ""
@@ -9239,6 +10103,25 @@
       }
     ]
   },
+  "9e393f4a-7e2e-48a6-b894-dea322164827": {
+    "info": "Vuln\u00e9rabilit\u00e9 dans le noyau Linux de Red Hat (02 mai 2025)",
+    "Orgc": {
+      "name": "ADMIN",
+      "uuid": "926e159d-1b41-4069-995e-b8eae5d338f9"
+    },
+    "analysis": 0,
+    "date": "2025-05-02",
+    "timestamp": 1746523467,
+    "threat_level_id": 4,
+    "Tag": [
+      {
+        "name": "RSS to IOC Collector",
+        "colour": "#004646",
+        "local": false,
+        "relationship_type": ""
+      }
+    ]
+  },
   "85fc9d01-0b42-477b-83a2-eaad7d723305": {
     "info": "ISC Stormcast For Monday, May 5th, 2025 https://isc.sans.edu/podcastdetail/9436, (Mon, May 5th)",
     "Orgc": {
@@ -9367,6 +10250,25 @@
     "analysis": 0,
     "date": "2025-05-02",
     "timestamp": 1746509030,
+    "threat_level_id": 4,
+    "Tag": [
+      {
+        "name": "RSS to IOC Collector",
+        "colour": "#004646",
+        "local": false,
+        "relationship_type": ""
+      }
+    ]
+  },
+  "b990ea69-7a0a-455b-8922-3c91f115c554": {
+    "info": "Bulletin d'actualit\u00e9 CERTFR-2025-ACT-016 (22 avril 2025)",
+    "Orgc": {
+      "name": "ADMIN",
+      "uuid": "926e159d-1b41-4069-995e-b8eae5d338f9"
+    },
+    "analysis": 0,
+    "date": "2025-04-22",
+    "timestamp": 1746523467,
     "threat_level_id": 4,
     "Tag": [
       {

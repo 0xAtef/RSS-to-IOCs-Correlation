@@ -1,0 +1,22 @@
+{
+  "Event": {
+    "uuid": "71877afe-29c2-4ebf-9ce5-946d6a1ed2cd",
+    "info": "Multiples vuln\u00e9rabilit\u00e9s dans les produits Tenable (02 mai 2025)",
+    "date": "2025-05-02",
+    "analysis": 0,
+    "threat_level_id": 4,
+    "timestamp": 1746523467,
+    "Orgc": {
+      "name": "ADMIN",
+      "uuid": "926e159d-1b41-4069-995e-b8eae5d338f9"
+    },
+    "Tag": [
+      {
+        "name": "RSS to IOC Collector",
+        "colour": "#004646",
+        "local": false,
+        "relationship_type": ""
+      }
+    ]
+  }
+}

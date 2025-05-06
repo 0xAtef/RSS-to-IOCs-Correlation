@@ -1,0 +1,22 @@
+{
+  "Event": {
+    "uuid": "37c5ca1f-b606-45f3-9e9d-9c8ccb15179d",
+    "info": "Bulletin d'actualit\u00e9 CERTFR-2025-ACT-019 (05 mai 2025)",
+    "date": "2025-05-05",
+    "analysis": 0,
+    "threat_level_id": 4,
+    "timestamp": 1746523467,
+    "Orgc": {
+      "name": "ADMIN",
+      "uuid": "926e159d-1b41-4069-995e-b8eae5d338f9"
+    },
+    "Tag": [
+      {
+        "name": "RSS to IOC Collector",
+        "colour": "#004646",
+        "local": false,
+        "relationship_type": ""
+      }
+    ]
+  }
+}

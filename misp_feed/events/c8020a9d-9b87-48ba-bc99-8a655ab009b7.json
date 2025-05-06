@@ -1,0 +1,22 @@
+{
+  "Event": {
+    "uuid": "c8020a9d-9b87-48ba-bc99-8a655ab009b7",
+    "info": "ISC Stormcast For Tuesday, May 6th, 2025 https://isc.sans.edu/podcastdetail/9438, (Tue, May 6th)",
+    "date": "2025-05-06",
+    "analysis": 0,
+    "threat_level_id": 4,
+    "timestamp": 1746523467,
+    "Orgc": {
+      "name": "ADMIN",
+      "uuid": "926e159d-1b41-4069-995e-b8eae5d338f9"
+    },
+    "Tag": [
+      {
+        "name": "RSS to IOC Collector",
+        "colour": "#004646",
+        "local": false,
+        "relationship_type": ""
+      }
+    ]
+  }
+}
