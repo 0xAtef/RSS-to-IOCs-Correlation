@@ -185,20 +185,14 @@ def write_event(uuid_str, rec):
 
 def rebuild_root_manifest():
     entries = []
-    feed_root = OUTPUT_BASE_DIR.strip("/")
+    base = OUTPUT_BASE_DIR.strip("/")           # e.g. "misp_feed"
     for fn in glob(os.path.join(EVENTS_DIR, "*.json")):
         name = os.path.basename(fn)
         if name == "manifest.json":
             continue
         uid = name.rsplit(".", 1)[0]
-        url = "/".join([
-            "https://raw.githubusercontent.com",
-            GITHUB_REPO,
-            GITHUB_BRANCH,
-            feed_root,
-            "events",
-            name
-        ])
+        # <-- ensure /events/ is in the path:
+        url = f"https://raw.githubusercontent.com/{GITHUB_REPO}/{GITHUB_BRANCH}/{base}/events/{name}"
         entries.append({
             "uuid": uid,
             "url": url
@@ -209,7 +203,7 @@ def rebuild_root_manifest():
         "description": cfg.get("feed_description", "IOC feed generated from RSS sources"),
         "version": 1,
         "publish_timestamp": int(datetime.utcnow().timestamp()),
-        "url": f"https://raw.githubusercontent.com/{GITHUB_REPO}/{GITHUB_BRANCH}/{feed_root}",
+        "url": f"https://raw.githubusercontent.com/{GITHUB_REPO}/{GITHUB_BRANCH}/{base}",
         "events": entries
     }
 
