@@ -1,0 +1,52 @@
+{
+  "Event": {
+    "uuid": "f3bababe-bb26-48f3-bac3-1384e866ec3f",
+    "info": "Hello 0-Days, My Old Friend: A 2024 Zero-Day Exploitation Analysis",
+    "date": "2025-04-29",
+    "analysis": 0,
+    "threat_level_id": 4,
+    "timestamp": 1746524627,
+    "Orgc": {
+      "name": "ADMIN",
+      "uuid": "926e159d-1b41-4069-995e-b8eae5d338f9"
+    },
+    "Tag": [
+      {
+        "name": "malware",
+        "colour": "#004646",
+        "local": false,
+        "relationship_type": ""
+      },
+      {
+        "name": "RSS to IOC Collector",
+        "colour": "#004646",
+        "local": false,
+        "relationship_type": ""
+      },
+      {
+        "name": "c2",
+        "colour": "#004646",
+        "local": false,
+        "relationship_type": ""
+      }
+    ],
+    "Attribute": [
+      {
+        "type": "urls",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://online.da.mfa.gov[.]ua/wp-content/plugin",
+        "comment": "Extracted from: https://cloud.google.com/blog/topics/threat-intelligence/2024-zero-day-trends/",
+        "timestamp": 1746524627
+      },
+      {
+        "type": "urls",
+        "category": "External analysis",
+        "to_ids": true,
+        "value": "https://online.da.mfa.gov.ua/gotcookie?.\nThi",
+        "comment": "Extracted from: https://cloud.google.com/blog/topics/threat-intelligence/2024-zero-day-trends/",
+        "timestamp": 1746524627
+      }
+    ]
+  }
+}
