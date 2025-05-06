@@ -1,3 +1,53 @@
 {
-  "records": []
+  "records": [
+    {
+      "id": "ea192b8b-0359-40ef-a2ff-1a3a27b40821",
+      "title": "Ransomware Attack Update for the 6th of May 2025",
+      "source": "https://darkwebinformer.com/ransomware-attack-update-for-the-6th-of-may-2025/",
+      "published": "2025-05-06T22:30:41",
+      "feed": "https://darkwebinformer.com/rss/",
+      "iocs": {
+        "ips": [],
+        "domains": [
+          "ehlers-inc.com",
+          "eu-rec.de",
+          "dosjm.com",
+          "biglevel.net",
+          "bloomfamilyeyesurgeons.com",
+          "kolpa.com.pe",
+          "dreng.com",
+          "mooregiles.com",
+          "li.com"
+        ],
+        "urls": [],
+        "emails": [],
+        "sha1": [],
+        "sha256": [],
+        "md5": [],
+        "cves": []
+      },
+      "tags": [
+        "context:malware",
+        "ioc:type:email",
+        "ioc:type:cve",
+        "ioc:type:url",
+        "feed:published:2025-05-06",
+        "context:cves",
+        "rss_to_ioc_collector",
+        "context:data_leak",
+        "ioc:type:ip",
+        "feed:source:darkwebinformer.com"
+      ],
+      "enrichment": {
+        "actors": [],
+        "malware": [],
+        "mitre_techniques": [],
+        "cves": [
+          "CVE-2025-4052"
+        ],
+        "tools": [],
+        "campaigns": []
+      }
+    }
+  ]
 }
