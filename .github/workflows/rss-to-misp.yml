@@ -35,6 +35,9 @@ jobs:
       - name: Download spaCy model
         run: python -m spacy download en_core_web_sm
 
+      - name: Ensure logs directory exists
+        run: mkdir -p logs
+
       - name: Run collector & build feed
         run: |
           set -e
