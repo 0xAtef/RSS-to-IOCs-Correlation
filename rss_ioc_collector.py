@@ -23,6 +23,21 @@ os.makedirs(CONFIG_DIR, exist_ok=True)
 os.makedirs(LOGS_DIR, exist_ok=True)
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 os.makedirs(MISP_FEED_DIR, exist_ok=True)  # Ensure MISP feed directory exists
+os.makedirs(LOGS_DIR, exist_ok=True)
+
+# Configure logging
+LOG_FILE = os.path.join(LOGS_DIR, "ioc_collector.log")
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s %(levelname)s %(message)s",
+    handlers=[
+        logging.StreamHandler(sys.stdout),
+        logging.FileHandler(LOG_FILE, mode="a", encoding="utf-8")
+    ]
+)
+
+# Add a test log to confirm logging is initialized
+logging.info("Logging initialized. Starting script...")
 
 # === FILE PATHS ===
 CONFIG_PATH = os.path.join(CONFIG_DIR, "config.json")
@@ -115,10 +130,16 @@ def process_feeds_concurrently(feed_urls, seen):
             for url in feed_urls if monitor_feed_health(url, session)  # Only process healthy feeds
         }
         for future in as_completed(futures):
+            feed_url = futures[future]
             try:
-                all_recs.extend(future.result())
+                result = future.result()
+                if result:
+                    logging.info(f"Processed feed: {feed_url}, Records found: {len(result)}")
+                else:
+                    logging.warning(f"No records found in feed: {feed_url}")
+                all_recs.extend(result)
             except Exception as exc:
-                logging.error(f"Error processing feed {futures[future]}: {exc}")
+                logging.error(f"Error processing feed {feed_url}: {exc}")
     logging.info(f"Finished processing feeds. Total records collected: {len(all_recs)}")
     return all_recs
 

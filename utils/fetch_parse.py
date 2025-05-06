@@ -23,6 +23,9 @@ def fetch_feed(feed_url, session, cfg):
 
 def process_feed(feed_url, seen, global_seen, session, cfg, ioc_patterns, whitelist_by_feed, max_days_old):
     """Process a single feed URL and extract IOCs."""
+    logging.info(f"Starting to process feed: {feed_url}")
+    
+    # Fetch the feed
     feed = fetch_feed(feed_url, session, cfg)
     if not feed or not feed.entries:
         logging.warning(f"No entries found in {feed_url}")
@@ -46,12 +49,17 @@ def process_feed(feed_url, seen, global_seen, session, cfg, ioc_patterns, whitel
 
     out = []
     for e in feed.entries:
+        title = e.get("title", "No Title")
+        link = e.get("link", "")
+        
+        # Skip old entries
         if not recent(e):
-            logging.info(f"Skipping old entry: {e.get('title', 'No Title')}")
+            logging.info(f"Skipping old entry: {title}")
             continue
 
-        link = e.get("link", "")
+        # Fetch the article content
         try:
+            logging.info(f"Fetching article: {link}")
             r = session.get(link, timeout=cfg.get("request_timeout", 10),
                             headers={"User-Agent": cfg.get("user_agent")})
             r.raise_for_status()
@@ -60,6 +68,7 @@ def process_feed(feed_url, seen, global_seen, session, cfg, ioc_patterns, whitel
             logging.error(f"Error fetching article {link}: {exc}")
             continue
 
+        # Extract IOCs
         raw = extract_iocs(text, ioc_patterns)
         filtered = {}
         for typ, vals in raw.items():
@@ -73,19 +82,21 @@ def process_feed(feed_url, seen, global_seen, session, cfg, ioc_patterns, whitel
                 keep.append(v)
             filtered[typ] = keep
 
+        # Skip entries with no IOCs
         if not any(filtered.values()):
-            logging.info(f"No IOCs found in entry: {e.get('title', 'No Title')}")
+            logging.info(f"No IOCs found in entry: {title}")
             continue
 
         # Enrich the text with NER
         enrichment = enrich_with_ner(text)
 
         # Translate the title to English if necessary
-        title = translate_to_english(e.get("title", ""))
+        translated_title = translate_to_english(title)
 
+        # Add the processed entry to the output
         out.append({
             "id": str(uuid.uuid4()),
-            "title": title,
+            "title": translated_title,
             "source": link,
             "published": (parse_date(e) or datetime.utcnow()).isoformat(),
             "feed": feed_url,
@@ -94,7 +105,9 @@ def process_feed(feed_url, seen, global_seen, session, cfg, ioc_patterns, whitel
             "enrichment": enrichment  # Add enrichment data
         })
 
-    logging.info(f"Found {len(out)} new entries in {feed_url}")
+        logging.info(f"Processed entry: {translated_title}")
+
+    logging.info(f"Finished processing feed: {feed_url}. Total entries processed: {len(out)}")
     return out
 
 
