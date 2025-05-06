@@ -1,0 +1,28 @@
+{
+  "Event": {
+    "uuid": "fe0dc338-f32a-4e75-8b68-4baf195fb442",
+    "info": "Daily Dose of Dark Web Informer - 2nd of May 2025",
+    "date": "2025-05-02",
+    "analysis": 0,
+    "threat_level_id": 4,
+    "timestamp": 1746496124,
+    "Orgc": {
+      "name": "ADMIN",
+      "uuid": "926e159d-1b41-4069-995e-b8eae5d338f9"
+    },
+    "Tag": [
+      {
+        "name": "malware",
+        "colour": "#004646",
+        "local": false,
+        "relationship_type": ""
+      },
+      {
+        "name": "RSS to IOC Collector",
+        "colour": "#004646",
+        "local": false,
+        "relationship_type": ""
+      }
+    ]
+  }
+}
