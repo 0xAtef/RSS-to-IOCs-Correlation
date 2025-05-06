@@ -51,7 +51,8 @@ def process_feed(feed_url, seen, global_seen, session, cfg, ioc_patterns, whitel
     for e in feed.entries:
         title = e.get("title", "No Title")
         link = e.get("link", "")
-        
+        logging.info(f"Processing entry: {title}")
+
         # Skip old entries
         if not recent(e):
             logging.info(f"Skipping old entry: {title}")
@@ -106,15 +107,24 @@ def process_feed(feed_url, seen, global_seen, session, cfg, ioc_patterns, whitel
         })
 
         logging.info(f"Processed entry: {translated_title}")
+        logging.info(f"Extracted IOCs: {filtered}")
+        out.append({
+            # Existing logic for appending processed entries...
+        })
 
     logging.info(f"Finished processing feed: {feed_url}. Total entries processed: {len(out)}")
     return out
 
 
 def extract_iocs(text, ioc_patterns):
-    """Extract IOCs from text using regex patterns."""
-    clean = text.replace("\n", " ")
-    return {t: list({m for m in re.findall(pat, clean)}) for t, pat in ioc_patterns.items()}
+    """Extract IOCs from the given text using regex patterns."""
+    extracted = {}
+    for ioc_type, pattern in ioc_patterns.items():
+        matches = re.findall(pattern, text)
+        if matches:
+            logging.info(f"Extracted {len(matches)} {ioc_type}(s): {matches}")
+        extracted[ioc_type] = matches
+    return extracted
 
 
 def context_tags(text, feed_url, cfg):

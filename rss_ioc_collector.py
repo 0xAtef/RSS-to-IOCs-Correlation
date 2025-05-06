@@ -43,8 +43,7 @@ logging.info("Logging initialized. Starting script...")
 CONFIG_PATH = os.path.join("config", "config.json")
 LOG_FILE = os.path.join("logs", "ioc_collector.log")
 SEEN_IOCS_PATH = os.path.join("output", "seen_iocs.json")
-CSV_PATH = os.path.join("output", "feed.csv")
-
+CSV_PATH = os.path.join("misp_feed", "feed.csv")
 # === LOAD CONFIGURATION FROM FILE ===
 with open(CONFIG_PATH, "r", encoding="utf-8") as f:
     cfg = json.load(f)
@@ -147,6 +146,10 @@ def process_feeds_concurrently(feed_urls, seen):
 # ── MAIN ────────────────────────────────────────────────────────────────
 def main():
     validate_config(cfg)
+    logging.info(f"Feed URLs to process: {FEED_URLS}")
+    if not FEED_URLS:
+        logging.error("No feed URLs provided in the configuration.")
+        sys.exit(1)
     seen = load_seen()
     try:
         all_recs = process_feeds_concurrently(FEED_URLS, seen)
