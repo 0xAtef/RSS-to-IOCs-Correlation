@@ -7,7 +7,7 @@ from io import StringIO
 misp = ExpandedPyMISP('https://127.0.0.1', 'VIPPqM2LUwxsNfaLnzz0Ju2S2QCPqHI8BELemWgA', ssl=False)
 
 # URL of the CSV file
-csv_url = 'https://raw.githubusercontent.com/0xAtef/RSS-to-IOCs-Correlation/main/misp_feed/feed.csv'
+csv_url = 'https://raw.githubusercontent.com/0xAtef/RSS-to-IOCs-Correlation/refs/heads/main/misp_feed/feed.csv'
 
 # Fetch the CSV file from the URL
 response = requests.get(csv_url)
