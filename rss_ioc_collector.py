@@ -168,26 +168,29 @@ def write_event(uuid_str, rec):
 
 
 def rebuild_root_manifest():
-    entries = []
+    manifest = {}
     for fn in glob(os.path.join(EVENTS_DIR, "*.json")):
         name = os.path.basename(fn)
         if name.startswith("__") or name == "manifest.json":
             continue
-        uid = name.rsplit('.', 1)[0]
-        url = f"https://raw.githubusercontent.com/{GITHUB_REPO}/{GITHUB_BRANCH}/{OUTPUT_BASE_DIR}/events/{quote_plus(name)}"
-        entries.append({"uuid": uid, "url": url})
-
-    root_manifest = {
-        "name": "RSS to IOC Collector Feed",
-        "description": "Automatically extracted IOCs from RSS sources.",
-        "version": 1,
-        "publish_timestamp": int(datetime.utcnow().timestamp()),
-        "url": f"https://raw.githubusercontent.com/{GITHUB_REPO}/{GITHUB_BRANCH}/{OUTPUT_BASE_DIR}",
-        "events": entries
-    }
-
+        with open(fn, "r", encoding="utf-8") as f:
+            event_data = json.load(f)
+        event = event_data.get("Event", {})
+        uid = event.get("uuid")
+        if not uid:
+            continue
+        manifest[uid] = {
+            "info": event.get("info", ""),
+            "Orgc": event.get("Orgc", {}),
+            "analysis": event.get("analysis", 0),
+            "date": event.get("date", ""),
+            "timestamp": event.get("timestamp", int(datetime.utcnow().timestamp())),
+            "threat_level_id": event.get("threat_level_id", 4),
+            "Tag": event.get("Tag", [])
+        }
     with open(ROOT_MANIFEST, "w", encoding="utf-8") as f:
-        json.dump(root_manifest, f, indent=2)
+        json.dump(manifest, f, indent=2)
+
 
 
 # ── MAIN ──────────────────────────────────────────────────────────────────────
