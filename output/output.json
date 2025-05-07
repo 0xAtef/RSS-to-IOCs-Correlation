@@ -1,3 +1,49 @@
 {
-  "records": []
+  "records": [
+    {
+      "id": "3d1f4ec4-db35-4380-9ebb-7df0ebe7ab2a",
+      "title": "NSO Group Fined $168M for Targeting 1,400 WhatsApp Users With Pegasus Spyware",
+      "source": "https://thehackernews.com/2025/05/nso-group-fined-168m-for-targeting-1400.html",
+      "published": "2025-05-07T06:22:00",
+      "feed": "http://feeds.feedburner.com/TheHackersNews",
+      "iocs": {
+        "ips": [],
+        "domains": [],
+        "urls": [],
+        "emails": [],
+        "sha1": [],
+        "sha256": [],
+        "md5": [],
+        "cves": [
+          "CVE-2019-3568"
+        ]
+      },
+      "tags": [
+        "feed:source:feeds.feedburner.com",
+        "context:ddos",
+        "context:phishing",
+        "rss_to_ioc_collector",
+        "context:supply_chain",
+        "context:iot",
+        "context:cves",
+        "ioc:type:ip",
+        "ioc:type:email",
+        "feed:published:2025-05-07",
+        "context:malware",
+        "context:data_leak",
+        "ioc:type:cve",
+        "context:exploits"
+      ],
+      "enrichment": {
+        "actors": [],
+        "malware": [],
+        "mitre_techniques": [],
+        "cves": [
+          "CVE-2019-3568"
+        ],
+        "tools": [],
+        "campaigns": []
+      }
+    }
+  ]
 }
