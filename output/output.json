@@ -1,45 +1,40 @@
 {
   "records": [
     {
-      "id": "ac628f5c-a457-4bb2-8b57-4f2d6b1acb5c",
-      "title": "Example of \"Modular\" Malware, (Wed, May 7th)",
-      "source": "https://isc.sans.edu/diary/rss/31928",
-      "published": "2025-05-07T05:55:35",
-      "feed": "http://isc.sans.edu/rssfeed.xml",
+      "id": "3b9042f4-39da-4686-a99b-b94ee8f7f43b",
+      "title": "Researchers Uncover Malware in Fake Discord PyPI Package Downloaded 11,500+ Times",
+      "source": "https://thehackernews.com/2025/05/researchers-uncover-malware-in-fake.html",
+      "published": "2025-05-07T07:37:00",
+      "feed": "http://feeds.feedburner.com/TheHackersNews",
       "iocs": {
         "ips": [],
         "domains": [
-          "wininet.dll",
-          "PasswordStealer.dll",
-          "rootkit.dll",
-          "unrootkit.dll",
-          "Webcam.dll",
-          "20grabber.dll",
-          "Activator.CreateInstance",
-          "Webcam.webcam",
-          "obj.GetType",
-          "webcam.jpg",
-          "Assembly.Load"
+          "Discord.py",
+          "backstabprotection.jamesx123.repl"
         ],
-        "urls": [
-          "https://www.virustotal.com/gui/file/9cac561e2da992f974286bdb336985c1ee550abd96df68f7e44ce873ef713f4e/details"
-        ],
+        "urls": [],
         "emails": [],
         "sha1": [],
-        "sha256": [
-          "9cac561e2da992f974286bdb336985c1ee550abd96df68f7e44ce873ef713f4e"
-        ],
+        "sha256": [],
         "md5": [],
         "cves": []
       },
       "tags": [
-        "ioc:type:url",
-        "context:malware",
-        "ioc:type:sha256",
-        "feed:published:2025-05-07",
+        "context:phishing",
+        "ioc:type:ip",
+        "feed:source:feeds.feedburner.com",
+        "ioc:type:cve",
+        "context:ddos",
+        "context:exploits",
+        "context:supply_chain",
+        "context:cves",
+        "ioc:type:email",
+        "context:iot",
         "rss_to_ioc_collector",
-        "context:c2",
-        "feed:source:isc.sans.edu"
+        "context:threat_actor",
+        "context:malware",
+        "feed:published:2025-05-07",
+        "context:data_leak"
       ],
       "enrichment": {
         "actors": [],
