@@ -1,3 +1,45 @@
 {
-  "records": []
+  "records": [
+    {
+      "id": "13d7a917-0338-4c29-8c7b-907cd8795f0f",
+      "title": "Pakistani Firm Shipped Fentanyl Analogs, Scams to US",
+      "source": "https://krebsonsecurity.com/2025/05/pakistani-firm-shipped-fentanyl-analogs-scams-to-us/",
+      "published": "2025-05-07T22:22:48",
+      "feed": "https://krebsonsecurity.com/feed/",
+      "iocs": {
+        "ips": [],
+        "domains": [
+          "spyfu.com",
+          "Searchengineland.com"
+        ],
+        "urls": [],
+        "emails": [],
+        "sha1": [],
+        "sha256": [],
+        "md5": [],
+        "cves": []
+      },
+      "tags": [
+        "context:malware",
+        "context:data_leak",
+        "rss_to_ioc_collector",
+        "ioc:type:domain",
+        "context:phishing",
+        "feed:source:krebsonsecurity.com",
+        "ioc:type:ip",
+        "context:iot",
+        "context:ddos",
+        "ioc:type:email",
+        "feed:published:2025-05-07"
+      ],
+      "enrichment": {
+        "actors": [],
+        "malware": [],
+        "mitre_techniques": [],
+        "cves": [],
+        "tools": [],
+        "campaigns": []
+      }
+    }
+  ]
 }
