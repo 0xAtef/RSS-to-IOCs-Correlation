@@ -1,46 +1,51 @@
 {
   "records": [
     {
-      "id": "3d1f4ec4-db35-4380-9ebb-7df0ebe7ab2a",
-      "title": "NSO Group Fined $168M for Targeting 1,400 WhatsApp Users With Pegasus Spyware",
-      "source": "https://thehackernews.com/2025/05/nso-group-fined-168m-for-targeting-1400.html",
-      "published": "2025-05-07T06:22:00",
-      "feed": "http://feeds.feedburner.com/TheHackersNews",
+      "id": "ac628f5c-a457-4bb2-8b57-4f2d6b1acb5c",
+      "title": "Example of \"Modular\" Malware, (Wed, May 7th)",
+      "source": "https://isc.sans.edu/diary/rss/31928",
+      "published": "2025-05-07T05:55:35",
+      "feed": "http://isc.sans.edu/rssfeed.xml",
       "iocs": {
         "ips": [],
-        "domains": [],
-        "urls": [],
+        "domains": [
+          "wininet.dll",
+          "PasswordStealer.dll",
+          "rootkit.dll",
+          "unrootkit.dll",
+          "Webcam.dll",
+          "20grabber.dll",
+          "Activator.CreateInstance",
+          "Webcam.webcam",
+          "obj.GetType",
+          "webcam.jpg",
+          "Assembly.Load"
+        ],
+        "urls": [
+          "https://www.virustotal.com/gui/file/9cac561e2da992f974286bdb336985c1ee550abd96df68f7e44ce873ef713f4e/details"
+        ],
         "emails": [],
         "sha1": [],
-        "sha256": [],
+        "sha256": [
+          "9cac561e2da992f974286bdb336985c1ee550abd96df68f7e44ce873ef713f4e"
+        ],
         "md5": [],
-        "cves": [
-          "CVE-2019-3568"
-        ]
+        "cves": []
       },
       "tags": [
-        "feed:source:feeds.feedburner.com",
-        "context:ddos",
-        "context:phishing",
-        "rss_to_ioc_collector",
-        "context:supply_chain",
-        "context:iot",
-        "context:cves",
-        "ioc:type:ip",
-        "ioc:type:email",
-        "feed:published:2025-05-07",
+        "ioc:type:url",
         "context:malware",
-        "context:data_leak",
-        "ioc:type:cve",
-        "context:exploits"
+        "ioc:type:sha256",
+        "feed:published:2025-05-07",
+        "rss_to_ioc_collector",
+        "context:c2",
+        "feed:source:isc.sans.edu"
       ],
       "enrichment": {
         "actors": [],
         "malware": [],
         "mitre_techniques": [],
-        "cves": [
-          "CVE-2019-3568"
-        ],
+        "cves": [],
         "tools": [],
         "campaigns": []
       }
