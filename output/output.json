@@ -1,3 +1,90 @@
 {
-  "records": []
+  "records": [
+    {
+      "id": "d5423fed-5a3d-4423-8f9f-bf1bcd7a43aa",
+      "title": "GMA News and Public Affairs Hit by Ransomware Attack",
+      "source": "https://darkwebinformer.com/gma-news-and-public-affairs-hit-by-ransomware-attack/",
+      "published": "2025-05-07T20:03:00",
+      "feed": "https://darkwebinformer.com/rss/",
+      "iocs": {
+        "ips": [],
+        "domains": [
+          "gmanetwork.com"
+        ],
+        "urls": [],
+        "emails": [],
+        "sha1": [],
+        "sha256": [],
+        "md5": [],
+        "cves": []
+      },
+      "tags": [
+        "rss_to_ioc_collector",
+        "context:malware",
+        "feed:published:2025-05-07",
+        "feed:source:darkwebinformer.com",
+        "ioc:type:url",
+        "ioc:type:email",
+        "ioc:type:domain",
+        "context:threat_actor",
+        "ioc:type:ip",
+        "context:ddos",
+        "context:data_leak"
+      ],
+      "enrichment": {
+        "actors": [],
+        "malware": [],
+        "mitre_techniques": [],
+        "cves": [],
+        "tools": [],
+        "campaigns": []
+      }
+    },
+    {
+      "id": "d663b749-2d9e-44d0-af65-c923e11e25c3",
+      "title": "SilverInstaEye: A Comprehensive OSINT Tool for Instagram",
+      "source": "https://darkwebinformer.com/silverinstaeye-a-comprehensive-osint-tool-for-instagram/",
+      "published": "2025-05-07T19:28:33",
+      "feed": "https://darkwebinformer.com/rss/",
+      "iocs": {
+        "ips": [],
+        "domains": [
+          "profile.Installation",
+          "SilverInstaEye.gitcd",
+          "requirements.txtRun",
+          "silverinstaeye.pyYoutube",
+          "session.json",
+          "secure.Modify",
+          "efficiency.DisclaimerThis",
+          "responsibly.AuthorSilverXTelegram"
+        ],
+        "urls": [
+          "https://github.com/silverxpymaster/SilverInstaEyeOverviewSilverInstaEye",
+          "https://github.com/silverxpymaster/SilverInstaEye.gitcd"
+        ],
+        "emails": [],
+        "sha1": [],
+        "sha256": [],
+        "md5": [],
+        "cves": []
+      },
+      "tags": [
+        "rss_to_ioc_collector",
+        "context:malware",
+        "feed:published:2025-05-07",
+        "feed:source:darkwebinformer.com",
+        "ioc:type:email",
+        "ioc:type:ip",
+        "context:data_leak"
+      ],
+      "enrichment": {
+        "actors": [],
+        "malware": [],
+        "mitre_techniques": [],
+        "cves": [],
+        "tools": [],
+        "campaigns": []
+      }
+    }
+  ]
 }
