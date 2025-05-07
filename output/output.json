@@ -1,48 +1,45 @@
 {
   "records": [
     {
-      "id": "ea192b8b-0359-40ef-a2ff-1a3a27b40821",
-      "title": "Ransomware Attack Update for the 6th of May 2025",
-      "source": "https://darkwebinformer.com/ransomware-attack-update-for-the-6th-of-may-2025/",
-      "published": "2025-05-06T22:30:41",
+      "id": "b609991c-91ed-4e71-a568-f1e3a8128c8e",
+      "title": "Daily Dose of Dark Web Informer - 6th of May 2025",
+      "source": "https://darkwebinformer.com/daily-dose-of-dark-web-informer-6th-of-may-2025/",
+      "published": "2025-05-06T23:25:34",
       "feed": "https://darkwebinformer.com/rss/",
       "iocs": {
         "ips": [],
-        "domains": [
-          "ehlers-inc.com",
-          "eu-rec.de",
-          "dosjm.com",
-          "biglevel.net",
-          "bloomfamilyeyesurgeons.com",
-          "kolpa.com.pe",
-          "dreng.com",
-          "mooregiles.com",
-          "li.com"
-        ],
+        "domains": [],
         "urls": [],
         "emails": [],
         "sha1": [],
         "sha256": [],
         "md5": [],
-        "cves": []
+        "cves": [
+          "CVE-2023-20198"
+        ]
       },
       "tags": [
-        "context:malware",
-        "ioc:type:email",
-        "ioc:type:cve",
-        "ioc:type:url",
-        "feed:published:2025-05-06",
-        "context:cves",
-        "rss_to_ioc_collector",
+        "context:ddos",
         "context:data_leak",
+        "feed:published:2025-05-07",
+        "context:phishing",
+        "context:exploits",
+        "context:threat_actor",
+        "ioc:type:url",
+        "ioc:type:cve",
+        "context:malware",
         "ioc:type:ip",
-        "feed:source:darkwebinformer.com"
+        "feed:source:darkwebinformer.com",
+        "context:cves",
+        "ioc:type:email",
+        "rss_to_ioc_collector"
       ],
       "enrichment": {
         "actors": [],
         "malware": [],
         "mitre_techniques": [],
         "cves": [
+          "CVE-2023-20198",
           "CVE-2025-4052"
         ],
         "tools": [],
