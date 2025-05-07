@@ -1,104 +1,61 @@
 {
   "records": [
     {
-      "id": "df9203fc-823d-4cd1-ba6f-7e1edf41c70b",
-      "title": "Europol Shuts Down Six DDoS-for-Hire Services Used in Global Attacks",
-      "source": "https://thehackernews.com/2025/05/europol-shuts-down-six-ddos-for-hire.html",
-      "published": "2025-05-07T13:54:00",
-      "feed": "http://feeds.feedburner.com/TheHackersNews",
+      "id": "4f56549b-cc87-4f3b-bced-fc197820952d",
+      "title": "COLDRIVER Using New Malware To Steal Documents From Western Targets and NGOs",
+      "source": "https://cloud.google.com/blog/topics/threat-intelligence/coldriver-steal-documents-western-targets-ngos/",
+      "published": "2025-05-07T14:00:00",
+      "feed": "https://feeds.feedburner.com/threatintelligence/pvexyqv7v0v",
       "iocs": {
         "ips": [],
         "domains": [
-          "cfxsecurity.cc"
+          "sys.argv",
+          "decode.py",
+          "sys.exit",
+          "f.read",
+          "data.replace",
+          "f.write",
+          "ws.ExpandEnvironmentStrings",
+          "fso.GetDrive"
         ],
         "urls": [],
         "emails": [],
         "sha1": [],
-        "sha256": [],
+        "sha256": [
+          "28a0596b9c62b7b7aca9cac2a07b067109f27d327581a60e8cb4fab92f8f4fa9",
+          "13f7599c94b9d4b028ce02397717a1282a46f07b9d3e2f8f2b3213fa8884b029",
+          "4c7accba35edd646584bb5a40ab78f963de45e5fc816e62022cd7ab1b01dae9c",
+          "6b85d707c23d68f9518e757cc97adb20adc8accb33d0d68faf1d8d56d7840816",
+          "3233668d2e4a80b17e6357177b53539df659e55e06ba49777d0d5171f27565dd",
+          "6bc411d562456079a8f1e38f3473c33ade73b08c7518861699e9863540b64f9a",
+          "b55cdce773bc77ee46b503dbd9430828cc0f518b94289fbfa70b5fbb02ab1847",
+          "02ce477a07681ee1671c7164c9cc847b01c2e1cd50e709f7e861eaab89c69b6f",
+          "8af28bb7e8e2f663d4b797bf3ddbee7f0a33f637a33df9b31fbb4c1ce71b2fee"
+        ],
         "md5": [],
         "cves": []
       },
       "tags": [
-        "feed:published:2025-05-07",
-        "feed:source:feeds.feedburner.com",
-        "ioc:type:ip",
-        "context:c2",
-        "ioc:type:domain",
-        "context:ddos",
-        "context:malware",
-        "context:exploits",
-        "ioc:type:email",
-        "context:cves",
-        "context:iot",
         "context:phishing",
-        "context:data_leak",
-        "context:supply_chain",
+        "context:exploits",
+        "feed:source:feeds.feedburner.com",
+        "feed:published:2025-05-07",
+        "ioc:type:domain",
+        "ioc:type:ip",
         "rss_to_ioc_collector",
-        "ioc:type:cve"
+        "context:threat_actor",
+        "ioc:type:email",
+        "context:malware",
+        "ioc:type:md5"
       ],
       "enrichment": {
-        "actors": [],
+        "actors": [
+          "coldriver",
+          "star blizzard"
+        ],
         "malware": [],
         "mitre_techniques": [],
         "cves": [],
-        "tools": [],
-        "campaigns": []
-      }
-    },
-    {
-      "id": "09f4aca7-aea8-4d35-9b07-23b4acc3cad2",
-      "title": "OttoKit WordPress Plugin with 100K+ Installs Hit by Exploits Targeting Multiple Flaws",
-      "source": "https://thehackernews.com/2025/05/ottokit-wordpress-plugin-with-100k.html",
-      "published": "2025-05-07T13:44:00",
-      "feed": "http://feeds.feedburner.com/TheHackersNews",
-      "iocs": {
-        "ips": [
-          "41.216.188.205",
-          "144.91.119.115",
-          "194.87.29.57",
-          "196.251.69.118",
-          "107.189.29.12",
-          "205.185.123.102",
-          "198.98.51.24",
-          "198.98.52.226",
-          "199.195.248.147"
-        ],
-        "domains": [],
-        "urls": [],
-        "emails": [],
-        "sha1": [],
-        "sha256": [],
-        "md5": [],
-        "cves": [
-          "CVE-2025-27007",
-          "CVE-2025-3102"
-        ]
-      },
-      "tags": [
-        "feed:published:2025-05-07",
-        "ioc:type:ip",
-        "feed:source:feeds.feedburner.com",
-        "context:ddos",
-        "context:malware",
-        "context:exploits",
-        "ioc:type:email",
-        "context:cves",
-        "context:threat_actor",
-        "context:iot",
-        "context:phishing",
-        "context:data_leak",
-        "context:supply_chain",
-        "rss_to_ioc_collector",
-        "ioc:type:cve"
-      ],
-      "enrichment": {
-        "actors": [],
-        "malware": [],
-        "mitre_techniques": [],
-        "cves": [
-          "CVE-2025-27007",
-          "CVE-2025-3102"
-        ],
         "tools": [],
         "campaigns": []
       }
