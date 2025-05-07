@@ -1,3 +1,68 @@
 {
-  "records": []
+  "records": [
+    {
+      "id": "49d19ce4-af53-457a-b2bf-de6ac5411c88",
+      "title": "Play Ransomware Exploited Windows CVE-2025-29824 as Zero-Day to Breach U.S. Organization",
+      "source": "https://thehackernews.com/2025/05/play-ransomware-exploited-windows-cve.html",
+      "published": "2025-05-07T10:44:00",
+      "feed": "http://feeds.feedburner.com/TheHackersNews",
+      "iocs": {
+        "ips": [],
+        "domains": [
+          "paloaltoconfig.exe",
+          "paloaltoconfig.dll",
+          "PDUDrv.blf",
+          "clssrv.inf",
+          "winlogon.exe",
+          "servtask.bat",
+          "cmdpostfix.bat"
+        ],
+        "urls": [],
+        "emails": [],
+        "sha1": [],
+        "sha256": [],
+        "md5": [],
+        "cves": [
+          "CVE-2025-29824",
+          "CVE-2024-26169"
+        ]
+      },
+      "tags": [
+        "context:threat_actor",
+        "context:iot",
+        "context:supply_chain",
+        "context:phishing",
+        "context:malware",
+        "context:cves",
+        "ioc:type:email",
+        "context:ddos",
+        "context:data_leak",
+        "rss_to_ioc_collector",
+        "ioc:type:ip",
+        "feed:source:feeds.feedburner.com",
+        "context:exploits",
+        "ioc:type:domain",
+        "ioc:type:cve",
+        "feed:published:2025-05-07"
+      ],
+      "enrichment": {
+        "actors": [
+          "octo tempest",
+          "scattered spider"
+        ],
+        "malware": [
+          "babuk",
+          "playcrypt",
+          "ransomhub"
+        ],
+        "mitre_techniques": [],
+        "cves": [
+          "CVE-2024-26169",
+          "CVE-2025-29824"
+        ],
+        "tools": [],
+        "campaigns": []
+      }
+    }
+  ]
 }
