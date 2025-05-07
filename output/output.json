@@ -1,21 +1,15 @@
 {
   "records": [
     {
-      "id": "49d19ce4-af53-457a-b2bf-de6ac5411c88",
-      "title": "Play Ransomware Exploited Windows CVE-2025-29824 as Zero-Day to Breach U.S. Organization",
-      "source": "https://thehackernews.com/2025/05/play-ransomware-exploited-windows-cve.html",
-      "published": "2025-05-07T10:44:00",
+      "id": "e7ec95b0-29a1-47ac-aa1e-b81002e5a438",
+      "title": "SysAid Patches 4 Critical Flaws Enabling Pre-Auth RCE in On-Premise Version",
+      "source": "https://thehackernews.com/2025/05/sysaid-patches-4-critical-flaws.html",
+      "published": "2025-05-07T11:31:00",
       "feed": "http://feeds.feedburner.com/TheHackersNews",
       "iocs": {
         "ips": [],
         "domains": [
-          "paloaltoconfig.exe",
-          "paloaltoconfig.dll",
-          "PDUDrv.blf",
-          "clssrv.inf",
-          "winlogon.exe",
-          "servtask.bat",
-          "cmdpostfix.bat"
+          "InitAccount.cmd"
         ],
         "urls": [],
         "emails": [],
@@ -23,42 +17,349 @@
         "sha256": [],
         "md5": [],
         "cves": [
-          "CVE-2025-29824",
-          "CVE-2024-26169"
+          "CVE-2025-2775",
+          "CVE-2025-2776",
+          "CVE-2025-2777",
+          "CVE-2025-2778",
+          "CVE-2023-47246"
         ]
       },
       "tags": [
-        "context:threat_actor",
-        "context:iot",
-        "context:supply_chain",
-        "context:phishing",
-        "context:malware",
-        "context:cves",
-        "ioc:type:email",
         "context:ddos",
-        "context:data_leak",
-        "rss_to_ioc_collector",
-        "ioc:type:ip",
-        "feed:source:feeds.feedburner.com",
         "context:exploits",
-        "ioc:type:domain",
         "ioc:type:cve",
-        "feed:published:2025-05-07"
+        "context:malware",
+        "ioc:type:ip",
+        "context:data_leak",
+        "feed:published:2025-05-07",
+        "rss_to_ioc_collector",
+        "ioc:type:email",
+        "context:phishing",
+        "feed:source:feeds.feedburner.com",
+        "context:iot",
+        "context:cves",
+        "context:supply_chain"
       ],
       "enrichment": {
-        "actors": [
-          "octo tempest",
-          "scattered spider"
-        ],
-        "malware": [
-          "babuk",
-          "playcrypt",
-          "ransomhub"
-        ],
+        "actors": [],
+        "malware": [],
         "mitre_techniques": [],
         "cves": [
-          "CVE-2024-26169",
-          "CVE-2025-29824"
+          "CVE-2023-47246",
+          "CVE-2025-2775",
+          "CVE-2025-2776",
+          "CVE-2025-2777",
+          "CVE-2025-2778"
+        ],
+        "tools": [],
+        "campaigns": []
+      }
+    },
+    {
+      "id": "717e659d-023f-4205-af24-d1893549ccc2",
+      "title": "Reevaluating SSEs: A Technical Gap Analysis of Last-Mile Protection",
+      "source": "https://thehackernews.com/2025/05/reevaluating-sses-technical-gap.html",
+      "published": "2025-05-07T10:56:00",
+      "feed": "http://feeds.feedburner.com/TheHackersNews",
+      "iocs": {
+        "ips": [],
+        "domains": [
+          "chat.openai.com"
+        ],
+        "urls": [],
+        "emails": [],
+        "sha1": [],
+        "sha256": [],
+        "md5": [],
+        "cves": []
+      },
+      "tags": [
+        "context:ddos",
+        "context:exploits",
+        "ioc:type:cve",
+        "context:malware",
+        "ioc:type:domain",
+        "ioc:type:ip",
+        "context:data_leak",
+        "feed:published:2025-05-07",
+        "rss_to_ioc_collector",
+        "ioc:type:email",
+        "context:phishing",
+        "feed:source:feeds.feedburner.com",
+        "context:iot",
+        "context:cves",
+        "context:supply_chain"
+      ],
+      "enrichment": {
+        "actors": [],
+        "malware": [],
+        "mitre_techniques": [],
+        "cves": [],
+        "tools": [],
+        "campaigns": []
+      }
+    },
+    {
+      "id": "b279986a-23b7-4804-93ab-e2914584b12a",
+      "title": "Multiple vulnerabilities in Tenable Security Center (07 May 2025)",
+      "source": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0374/",
+      "published": "2025-05-07T00:00:00",
+      "feed": "https://www.cert.ssi.gouv.fr/feed/",
+      "iocs": {
+        "ips": [],
+        "domains": [],
+        "urls": [
+          "https://www.tenable.com/security/tns-2025-09",
+          "https://www.cve.org/CVERecord?id=CVE-2022-25927",
+          "https://www.cve.org/CVERecord?id=CVE-2025-29087",
+          "https://www.cve.org/CVERecord?id=CVE-2025-3277"
+        ],
+        "emails": [],
+        "sha1": [],
+        "sha256": [],
+        "md5": [],
+        "cves": [
+          "CVE-2022-25927",
+          "CVE-2025-29087",
+          "CVE-2025-3277"
+        ]
+      },
+      "tags": [
+        "ioc:type:cve",
+        "ioc:type:ip",
+        "feed:published:2025-05-07",
+        "rss_to_ioc_collector",
+        "feed:source:www.cert.ssi.gouv.fr",
+        "context:cves"
+      ],
+      "enrichment": {
+        "actors": [],
+        "malware": [],
+        "mitre_techniques": [],
+        "cves": [
+          "CVE-2022-25927",
+          "CVE-2025-29087",
+          "CVE-2025-3277"
+        ],
+        "tools": [],
+        "campaigns": []
+      }
+    },
+    {
+      "id": "bfa38e4b-4200-4419-9e28-0cb831220174",
+      "title": "Vuln\u00e9rabilit\u00e9 dans Liferay Portal et Liferay DXP (07 mai 2025)",
+      "source": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0375/",
+      "published": "2025-05-07T00:00:00",
+      "feed": "https://www.cert.ssi.gouv.fr/feed/",
+      "iocs": {
+        "ips": [
+          "7.4.3.132"
+        ],
+        "domains": [
+          "liferay.dev"
+        ],
+        "urls": [
+          "https://liferay.dev/portal/security/known-vulnerabilities/-/asset_publisher/jekt/content/cve-2025-4388",
+          "https://www.cve.org/CVERecord?id=CVE-2025-4388"
+        ],
+        "emails": [],
+        "sha1": [],
+        "sha256": [],
+        "md5": [],
+        "cves": [
+          "CVE-2025-4388"
+        ]
+      },
+      "tags": [
+        "ioc:type:cve",
+        "feed:published:2025-05-07",
+        "rss_to_ioc_collector",
+        "feed:source:www.cert.ssi.gouv.fr",
+        "context:cves"
+      ],
+      "enrichment": {
+        "actors": [],
+        "malware": [],
+        "mitre_techniques": [],
+        "cves": [
+          "CVE-2025-4388",
+          "cve-2025-4388"
+        ],
+        "tools": [],
+        "campaigns": []
+      }
+    },
+    {
+      "id": "a7dc4545-5754-4dfb-addc-80490211382a",
+      "title": "Multiple vulnerabilities in Mariadb (May 07, 2025)",
+      "source": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0373/",
+      "published": "2025-05-07T00:00:00",
+      "feed": "https://www.cert.ssi.gouv.fr/feed/",
+      "iocs": {
+        "ips": [],
+        "domains": [
+          "mariadb.com"
+        ],
+        "urls": [
+          "https://mariadb.com/kb/en/security/",
+          "https://www.cve.org/CVERecord?id=CVE-2025-30693",
+          "https://www.cve.org/CVERecord?id=CVE-2025-30722"
+        ],
+        "emails": [],
+        "sha1": [],
+        "sha256": [],
+        "md5": [],
+        "cves": [
+          "CVE-2025-30693",
+          "CVE-2025-30722"
+        ]
+      },
+      "tags": [
+        "ioc:type:cve",
+        "ioc:type:ip",
+        "feed:published:2025-05-07",
+        "rss_to_ioc_collector",
+        "feed:source:www.cert.ssi.gouv.fr",
+        "context:cves"
+      ],
+      "enrichment": {
+        "actors": [],
+        "malware": [],
+        "mitre_techniques": [],
+        "cves": [
+          "CVE-2025-30693",
+          "CVE-2025-30722"
+        ],
+        "tools": [],
+        "campaigns": []
+      }
+    },
+    {
+      "id": "9d5eab14-c55d-4ebc-9a53-ededea982c24",
+      "title": "Multiple vulnerabilities in Elastic products (07 May 2025)",
+      "source": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0377/",
+      "published": "2025-05-07T00:00:00",
+      "feed": "https://www.cert.ssi.gouv.fr/feed/",
+      "iocs": {
+        "ips": [],
+        "domains": [],
+        "urls": [
+          "https://discuss.elastic.co/t/kibana-8-17-6-8-18-1-or-9-0-1-security-update-esa-2025-07/377868",
+          "https://discuss.elastic.co/t/logstash-8-17-6-8-18-1-and-9-0-1-security-update-esa-2025-08/377869",
+          "https://www.cve.org/CVERecord?id=CVE-2025-25014",
+          "https://www.cve.org/CVERecord?id=CVE-2025-37730"
+        ],
+        "emails": [],
+        "sha1": [],
+        "sha256": [],
+        "md5": [],
+        "cves": [
+          "CVE-2025-25014",
+          "CVE-2025-37730"
+        ]
+      },
+      "tags": [
+        "ioc:type:cve",
+        "ioc:type:ip",
+        "feed:published:2025-05-07",
+        "rss_to_ioc_collector",
+        "feed:source:www.cert.ssi.gouv.fr",
+        "context:cves"
+      ],
+      "enrichment": {
+        "actors": [],
+        "malware": [],
+        "mitre_techniques": [],
+        "cves": [
+          "CVE-2025-25014",
+          "CVE-2025-37730"
+        ],
+        "tools": [],
+        "campaigns": []
+      }
+    },
+    {
+      "id": "28f8804d-d069-4ea3-b5a3-3b42ac04cb70",
+      "title": "Vulnerability in Google Chrome (May 07, 2025)",
+      "source": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0376/",
+      "published": "2025-05-07T00:00:00",
+      "feed": "https://www.cert.ssi.gouv.fr/feed/",
+      "iocs": {
+        "ips": [],
+        "domains": [
+          "stable-channel-update-for-desktop.html"
+        ],
+        "urls": [
+          "https://chromereleases.googleblog.com/2025/05/stable-channel-update-for-desktop.html",
+          "https://www.cve.org/CVERecord?id=CVE-2025-4372"
+        ],
+        "emails": [],
+        "sha1": [],
+        "sha256": [],
+        "md5": [],
+        "cves": [
+          "CVE-2025-4372"
+        ]
+      },
+      "tags": [
+        "ioc:type:cve",
+        "feed:published:2025-05-07",
+        "rss_to_ioc_collector",
+        "feed:source:www.cert.ssi.gouv.fr",
+        "context:cves"
+      ],
+      "enrichment": {
+        "actors": [],
+        "malware": [],
+        "mitre_techniques": [],
+        "cves": [
+          "CVE-2025-4372"
+        ],
+        "tools": [],
+        "campaigns": []
+      }
+    },
+    {
+      "id": "4dd550f5-70f4-4a15-805a-0cc612f8acfa",
+      "title": "Multiple vulnerabilities in Google Pixel (07 May 2025)",
+      "source": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0372/",
+      "published": "2025-05-07T00:00:00",
+      "feed": "https://www.cert.ssi.gouv.fr/feed/",
+      "iocs": {
+        "ips": [],
+        "domains": [],
+        "urls": [
+          "https://source.android.com/docs/security/bulletin/pixel/2025-05-01?hl=fr",
+          "https://www.cve.org/CVERecord?id=CVE-2024-56193",
+          "https://www.cve.org/CVERecord?id=CVE-2025-27700",
+          "https://www.cve.org/CVERecord?id=CVE-2025-27701"
+        ],
+        "emails": [],
+        "sha1": [],
+        "sha256": [],
+        "md5": [],
+        "cves": [
+          "CVE-2024-56193",
+          "CVE-2025-27700",
+          "CVE-2025-27701"
+        ]
+      },
+      "tags": [
+        "ioc:type:cve",
+        "ioc:type:ip",
+        "feed:published:2025-05-07",
+        "rss_to_ioc_collector",
+        "feed:source:www.cert.ssi.gouv.fr",
+        "context:cves"
+      ],
+      "enrichment": {
+        "actors": [],
+        "malware": [],
+        "mitre_techniques": [],
+        "cves": [
+          "CVE-2024-56193",
+          "CVE-2025-27700",
+          "CVE-2025-27701"
         ],
         "tools": [],
         "campaigns": []
