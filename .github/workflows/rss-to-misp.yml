@@ -48,7 +48,7 @@ jobs:
 
       - name: Print logs for debugging
         if: failure()
-        run: cat ./logs/workflow.log
+        run: cat ./logs/ioc_collector.log
 
       - name: Debug file structure
         run: |
@@ -92,7 +92,13 @@ jobs:
           else
             echo "Warning: seen_iocs.json not found!"
           fi
-
+          
+          # Stage ioc_collector.log if it exists
+          if [ -f "logs/ioc_collector.log" ]; then
+            git add "logs/ioc_collector.log"
+          else
+            echo "Warning: ioc_collector.log not found!"
+          fi
           # Commit if there are staged changes
           git diff --staged --quiet || git commit -m "Update IOC feed and state files: New data collected and processed"
 
