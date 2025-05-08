@@ -1,141 +1,93 @@
-# RSS to IOCs Correlation
+# RSS-to-IOCs Correlation
 
-## Project Description
-
-The **RSS to IOCs Correlation** project is a comprehensive tool designed to automate the collection, processing, and enrichment of Indicators of Compromise (IOCs) from RSS feeds. It is tailored for cybersecurity professionals and organizations that need to monitor threat intelligence feeds and integrate the extracted data into their security workflows, such as MISP (Malware Information Sharing Platform).
-
-This tool processes RSS feeds from various sources, extracts IOCs such as domains, IP addresses, CVEs, and more, and enriches them with contextual information. The enriched data is then saved in multiple formats, including CSV and JSON, for further analysis or integration into threat intelligence platforms like MISP.
-
-Additionally, the project includes a mechanism to create MISP events from the processed IOCs. This process can be automated using a cron job that runs every hour, ensuring that your MISP instance is always up-to-date with the latest threat intelligence.
+RSS-to-IOCs Correlation is a Python-based tool that collects, processes, and correlates Indicators of Compromise (IOCs) from RSS feeds. This project is designed to automate the extraction of threat intelligence data and store it in a format compatible with MISP (Malware Information Sharing Platform).
 
 ---
 
 ## Key Features
-
-- **Automated RSS Feed Parsing**: Collects data from multiple RSS feeds simultaneously.
-- **IOC Extraction**: Identifies IOCs such as domains, IPs, CVEs, and more using customizable regex patterns.
-- **IOC Enrichment**: Adds context to IOCs using Named Entity Recognition (NER) and other enrichment techniques.
-- **Whitelist Support**: Skips processing of whitelisted domains or URLs to reduce noise.
-- **Output Formats**: Generates outputs in CSV and JSON formats for easy integration with other tools.
-- **MISP Integration**: Creates MISP events from the processed IOCs, ready for sharing and analysis.
-- **Concurrency**: Processes multiple feeds concurrently for faster execution.
-- **Error Handling**: Logs errors and skips unhealthy feeds to ensure uninterrupted processing.
-- **Cron Job Support**: Automates the entire process, including MISP event creation, on an hourly schedule.
+- **RSS Feed Monitoring**: Automatically fetches RSS feeds to collect IOCs.
+- **IOC Processing**: Extracts, enriches, and categorizes IOCs from the feeds.
+- **MISP-Compatible Output**: Generates CSV files formatted for MISP ingestion.
+- **Feed Health Monitoring**: Ensures RSS feeds are healthy and accessible.
+- **Customizable Configuration**: Fully configurable via JSON and environment variables.
 
 ---
 
-## Configuration
+## Installation
 
-Create a configuration file `config.json` in the root directory of the project with the following content:
+Follow these steps to set up the project:
 
-```json
-{
-  "org_name": "Your Organization",
-  "org_uuid": "123e4567-e89b-12d3-a456-426614174000",
-  "feed_urls": [
-    "https://www.us-cert.gov/ncas/alerts.xml",
-    "https://www.cert.ssi.gouv.fr/feed/",
-    "http://feeds.feedburner.com/TheHackersNews"
-  ],
-  "ioc_patterns": {
-    "domains": "\\b(?:[a-zA-Z0-9-]+\\.)+[a-zA-Z]{2,}\\b",
-    "ips": "\\b(?:\\d{1,3}\\.){3}\\d{1,3}\\b",
-    "cves": "\\bCVE-\\d{4}-\\d{4,7}\\b"
-  },
-  "whitelist_by_feed": {
-    "*": ["example.com", "github.com", "microsoft.com"]
-  },
-  "output_base_dir": "output",
-  "seen_iocs_path": "output/seen_iocs.json"
-}
-```
+### Prerequisites
+- Python 3.10 or higher
+- pip (Python package manager)
 
-### Configuration Details
+### Steps
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/0xAtef/RSS-to-IOCs-Correlation.git
+   cd RSS-to-IOCs-Correlation
+   ```
 
-- org_name: The name of your organization.
-- org_uuid: A unique identifier for your organization.
-- feed_urls: A list of RSS feed URLs to process.
-- ioc_patterns: Regex patterns for extracting IOCs (domains, IPs, CVEs, etc.).
-- whitelist_by_feed: A dictionary of domains or URLs to skip during processing.
-- output_base_dir: Directory where output files will be saved.
-- seen_iocs_path: Path to the file storing already processed IOCs.
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-## MISP Configuration
+3. Configure environment variables:
+   Create a `.env` file at the root directory and include:
+   ```plaintext
+   MISP_BASE_URL=http://example.com
+   MISP_API_KEY=your_api_key_here
+   MISP_VERIFY_SSL=true
+   ```
 
-To integrate with MISP, initialize the MISP client using the following code in the MISP_Event_Creation_From_RSS_IOC_Collector.py script:
+4. Configure the `config.json` file:
+   ```json
+   {
+     "feed_urls": ["https://example.com/rss-feed"],
+     "max_days_old": 20,
+     "max_workers": 5
+   }
+   ```
 
-```python
-from pymisp import ExpandedPyMISP
-```
+---
 
-### Initialize MISP instance
+## Usage
 
-```python
-misp = ExpandedPyMISP('https://<MISP_URL>', '<API_KEY>', ssl=False)
-```
-
-Running the MISP Event Creation Script
-After processing the RSS feeds, run the following command to create MISP events from the processed IOCs:
-
-```python
-python MISP_Event_Creation_From_RSS_IOC_Collector.py
-```
-
-This script will:
-
-- Parse the feed.csv file generated by the RSS IOC collector.
-- Create MISP events for each unique UUID in the feed.
-- Add attributes (IOCs) to the corresponding events in your MISP instance.
-
-## Automating with a Cron Job
-
-To automate the entire process, including MISP event creation, you can set up a cron job that runs every hour.
-
-### Example Cron Job
-
-1. Open the crontab editor:
-
+### Running the Collector
+To run the RSS-to-IOCs collector:
 ```bash
-crontab -e
+python rss_ioc_collector.py
 ```
 
-2. Add the following entry to run the process every hour:
+### Output
+The script generates:
+- **CSV File**: Located in `misp_feed/feed.csv`.
+- **JSON File**: Located in `output/output.json` containing all collected records.
 
-```bash
-0 * * * * cd /path/to/RSS-to-IOCs-Correlation && python rss_ioc_collector.py && python MISP_Event_Creation_From_RSS_IOC_Collector.py >> logs/cron.log 2>&1
-```
+---
 
-3. Save and exit.
+## Contribution Guidelines
 
-#### Explanation
+We welcome contributions! Please refer to the [contributing guidelines](docs/contributing.md) to get started.
 
-- `0 * * * *`: Runs the job at the start of every hour.
-- `cd /path/to/RSS-to-IOCs-Correlation`: Navigates to the project directory.
-- `python rss_ioc_collector.py`: Runs the IOC collection process.
-- `python MISP_Event_Creation_From_RSS_IOC_Collector.py`: Creates MISP events from the collected IOCs.
-- >> logs/cron.log 2>&1: Logs output and errors to logs/cron.log.
+### To contribute:
+1. Fork this repository.
+2. Create a new branch for your feature or bug fix.
+3. Submit a pull request with a clear description of your changes.
 
-#### Outputs
+---
 
-The following files are generated after processing:
+## License
 
-- CSV Feed: misp_feed/feed.csv (MISP-compatible format).
-- JSON Output: output/output.json (all processed records).
-- Seen IOCs: output/seen_iocs.json (list of already processed IOCs).
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-## Contributing
+---
 
-Contributions are welcome! Please follow these steps:
+## Documentation
 
-- Fork the repository.
-- Create a new branch for your feature or bug fix.
-- Submit a pull request.
-
-### Fixes and Enhancements:
-1. **Improved Formatting**: Fixed indentation and alignment issues.
-2. **Consistent Terminology**: Ensured consistent use of terms like "MISP" and "IOC."
-3. **Cron Job Section**: Clarified and formatted the cron job explanation.
-4. **Outputs Section**: Clearly listed the generated files and their purposes.
-5. **Contributing Section**: Improved readability and structure.
-
-Let me know if you need further adjustments!
+For detailed documentation on setup, usage, and contribution, visit the `docs/` folder:
+- [Setup Instructions](docs/setup.md)
+- [Usage Guide](docs/usage.md)
+- [Contribution Guidelines](docs/contributing.md)
+- [Project Overview](docs/overview.md)
