@@ -1,6 +1,4 @@
 {
-  "org_name": "ADMIN",
-  "org_uuid": "926e159d-1b41-4069-995e-b8eae5d338f9",
   "feed_urls": [
     "https://www.us-cert.gov/ncas/alerts.xml",
     "https://www.cert.ssi.gouv.fr/feed/",

@@ -52,18 +52,11 @@ logging.basicConfig(
 logging.info("Logging initialized. Starting script...")
 
 # === REQUIRED CONFIGURATION ===
-ORG_NAME = cfg.get("org_name")
-ORG_UUID = cfg.get("org_uuid")
 FEED_URLS = cfg.get("feed_urls", [])
 MAX_DAYS_OLD = cfg.get("max_days_old", 20)
 MAX_WORKERS = cfg.get("max_workers", 5)
 IOC_PATTERNS = cfg.get("ioc_patterns", {})
 WHITELIST_BY_FEED = cfg.get("whitelist_by_feed", {})
-
-# Validate configuration
-if not ORG_NAME or not ORG_UUID or not FEED_URLS:
-    logging.critical("Missing required configuration keys (org_name, org_uuid, feed_urls). Exiting.")
-    sys.exit(1)
 
 # === HTTP SESSION WITH RETRIES ===
 def setup_http_session(cfg):
@@ -147,7 +140,7 @@ def process_and_save_feeds(feed_urls, seen):
     all_recs, skipped_feeds = process_feeds_concurrently(feed_urls, seen)
     valid_recs = [rec for rec in all_recs if "title" in rec and "source" in rec]
     save_seen(seen)
-    write_csv_feed(valid_recs, CSV_PATH, ORG_UUID, ORG_NAME, cfg)
+    write_csv_feed(valid_recs, CSV_PATH, cfg)
     save_output_json(valid_recs)
     return valid_recs, skipped_feeds, all_recs
 

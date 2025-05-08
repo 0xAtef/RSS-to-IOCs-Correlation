@@ -2,13 +2,13 @@ import csv
 import logging
 from utils.translator import translate_to_english
 
-def write_csv_feed(all_records, csv_path, org_uuid, org_name, cfg):
+def write_csv_feed(all_records, csv_path, cfg):
     """
     Write the collected IOCs and enrichment data to a CSV file.
     Translate non-English text to English before writing.
     """
     fieldnames = [
-        "uuid", "info", "date", "threat_level_id", "analysis",
+        "info", "date", "threat_level_id", "analysis",
         "orgc_uuid", "orgc_name", "tag", "attribute_category", "attribute_type",
         "attribute_value", "to_ids", "comment", "attribute_timestamp",
         "actors", "malware", "mitre_techniques", "cves", "tools", "campaigns"
@@ -30,8 +30,6 @@ def write_csv_feed(all_records, csv_path, org_uuid, org_name, cfg):
                     "date": rec.get("published", "").split("T")[0] if rec.get("published") else "",
                     "threat_level_id": cfg.get("misp_threat_level_id", 4),
                     "analysis": cfg.get("misp_analysis", 0),
-                    "orgc_uuid": org_uuid,
-                    "orgc_name": org_name,
                     "tag": ";".join(rec.get("tags", [])),
                     "attribute_category": "External analysis",
                     "attribute_type": "",  # Ensure this is populated elsewhere
