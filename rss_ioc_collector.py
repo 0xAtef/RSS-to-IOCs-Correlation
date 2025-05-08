@@ -10,11 +10,15 @@ from requests.adapters import HTTPAdapter
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime
 
+from dotenv import load_dotenv
+
 from utils.csv_writer import write_csv_feed
 from utils.feed_health import monitor_feed_health
 from utils.fetch_parse import process_feed
-from utils.ioc_utils import IOCUtils 
-from utils.config_loader import ConfigLoader
+from utils.ioc_utils import IOCUtils
+
+# === LOAD ENVIRONMENT VARIABLES ===
+load_dotenv()
 
 # === FOLDER STRUCTURE ===
 CONFIG_DIR = "config"
@@ -34,9 +38,10 @@ CSV_PATH = os.path.join(MISP_FEED_DIR, "feed.csv")
 
 # === LOAD CONFIGURATION ===
 try:
-    cfg = ConfigLoader.load_config()
-except Exception as e:
-    logging.critical(f"Failed to load configuration: {e}")
+    with open(CONFIG_PATH, "r", encoding="utf-8") as f:
+        cfg = json.load(f)
+except FileNotFoundError:
+    logging.critical(f"Configuration file not found at {CONFIG_PATH}. Exiting.")
     sys.exit(1)
 
 # === CONFIGURE LOGGING ===
@@ -57,6 +62,11 @@ MAX_DAYS_OLD = cfg.get("max_days_old", 20)
 MAX_WORKERS = cfg.get("max_workers", 5)
 IOC_PATTERNS = cfg.get("ioc_patterns", {})
 WHITELIST_BY_FEED = cfg.get("whitelist_by_feed", {})
+
+# Validate configuration
+if not FEED_URLS:
+    logging.critical("Missing required configuration key (feed_urls). Exiting.")
+    sys.exit(1)
 
 # === HTTP SESSION WITH RETRIES ===
 def setup_http_session(cfg):
@@ -140,7 +150,7 @@ def process_and_save_feeds(feed_urls, seen):
     all_recs, skipped_feeds = process_feeds_concurrently(feed_urls, seen)
     valid_recs = [rec for rec in all_recs if "title" in rec and "source" in rec]
     save_seen(seen)
-    write_csv_feed(valid_recs, CSV_PATH, cfg)
+    write_csv_feed(valid_recs, CSV_PATH, cfg)  # No need for ORG_NAME or ORG_UUID
     save_output_json(valid_recs)
     return valid_recs, skipped_feeds, all_recs
 
