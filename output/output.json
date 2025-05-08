@@ -1,3 +1,131 @@
 {
-  "records": []
+  "records": [
+    {
+      "id": "84c9f524-5e60-4a9f-a17b-e8568165cb65",
+      "title": "Pakistani Firm Shipped Fentanyl Analogs, Scams to US",
+      "source": "https://krebsonsecurity.com/2025/05/pakistani-firm-shipped-fentanyl-analogs-scams-to-us/",
+      "published": "2025-05-07T22:22:48",
+      "feed": "https://krebsonsecurity.com/feed/",
+      "iocs": {
+        "ips": [],
+        "domains": [
+          "imgur.com"
+        ],
+        "urls": [
+          "https://imgur.com/a/elon-musk-apparently-didnt-get-physics-degree-legiti-kRdUDEM"
+        ],
+        "emails": [],
+        "sha1": [],
+        "sha256": [],
+        "md5": [],
+        "cves": []
+      },
+      "tags": [
+        "context:phishing",
+        "rss_to_ioc_collector",
+        "context:ddos",
+        "context:malware",
+        "feed:source:krebsonsecurity.com",
+        "ioc:type:ip",
+        "ioc:type:email",
+        "context:iot",
+        "feed:published:2025-05-08",
+        "context:data_leak",
+        "ioc:type:domain"
+      ],
+      "enrichment": {
+        "actors": [],
+        "malware": [],
+        "mitre_techniques": [],
+        "cves": [],
+        "tools": [],
+        "campaigns": []
+      }
+    },
+    {
+      "id": "dbbe1b2e-c854-4af9-8fbd-02190501c7dd",
+      "title": "Chinese Hacking Competitions Fuel the Country\u2019s Broad Cyber Ambitions",
+      "source": "https://www.bloomberg.com/news/articles/2025-04-30/chinese-hacking-competitions-fuel-the-country-s-broad-cyber-ambitions?embedded-checkout=true",
+      "published": "2025-04-30T04:00:00",
+      "feed": "https://newsroom.trendmicro.com/media-coverage?pagetemplate=rss",
+      "iocs": {
+        "ips": [],
+        "domains": [
+          "Bloomberg.com",
+          "ago.The"
+        ],
+        "urls": [],
+        "emails": [],
+        "sha1": [],
+        "sha256": [],
+        "md5": [],
+        "cves": []
+      },
+      "tags": [
+        "rss_to_ioc_collector",
+        "ioc:type:ip",
+        "ioc:type:email",
+        "feed:source:newsroom.trendmicro.com",
+        "feed:published:2025-05-08"
+      ],
+      "enrichment": {
+        "actors": [],
+        "malware": [],
+        "mitre_techniques": [],
+        "cves": [],
+        "tools": [],
+        "campaigns": []
+      }
+    },
+    {
+      "id": "46fa3189-61bb-47ff-978b-77f24056b194",
+      "title": "SonicWall urges admins to patch VPN flaw exploited in attacks",
+      "source": "https://www.bleepingcomputer.com/news/security/sonicwall-urges-admins-to-patch-vpn-flaw-exploited-in-attacks/",
+      "published": "2025-05-08T11:19:58",
+      "feed": "https://www.bleepingcomputer.com/feed/",
+      "iocs": {
+        "ips": [
+          "10.2.1.15"
+        ],
+        "domains": [],
+        "urls": [],
+        "emails": [],
+        "sha1": [],
+        "sha256": [],
+        "md5": [],
+        "cves": [
+          "CVE-2025-32819",
+          "CVE-2025-32820",
+          "CVE-2025-32821"
+        ]
+      },
+      "tags": [
+        "rss_to_ioc_collector",
+        "ioc:type:ip",
+        "feed:source:www.bleepingcomputer.com",
+        "context:malware",
+        "context:threat_actor",
+        "context:exploits",
+        "ioc:type:email",
+        "ioc:type:cve",
+        "feed:published:2025-05-08",
+        "context:cves"
+      ],
+      "enrichment": {
+        "actors": [],
+        "malware": [],
+        "mitre_techniques": [],
+        "cves": [
+          "CVE-2021-20035",
+          "CVE-2023-44221",
+          "CVE-2024-38475",
+          "CVE-2025-32819",
+          "CVE-2025-32820",
+          "CVE-2025-32821"
+        ],
+        "tools": [],
+        "campaigns": []
+      }
+    }
+  ]
 }
