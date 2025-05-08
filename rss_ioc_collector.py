@@ -127,9 +127,9 @@ def process_feeds_concurrently(feed_urls, seen):
                 cfg,
                 IOC_PATTERNS,
                 WHITELIST_BY_FEED,
-                MAX_DAYS_OLD  # Ensure this matches the definition of process_feed
+                MAX_DAYS_OLD
             ): url
-            for url in feed_urls if monitor_feed_health(url, session)
+            for url in feed_urls if monitor_feed_health(url, session, LOG_FILE)  # Pass LOG_FILE here
         }
         for future in as_completed(futures):
             feed_url = futures[future]

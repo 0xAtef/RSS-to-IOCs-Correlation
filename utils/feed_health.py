@@ -8,7 +8,7 @@ def monitor_feed_health(url, session, log_file, retries=3):
     Args:
         url (str): The RSS feed URL to check.
         session (requests.Session): The HTTP session for making requests.
-        log_file (str): The path to the log file.
+        log_file (str): Path to the log file.
         retries (int): Number of times to retry checking the feed health.
 
     Returns:
