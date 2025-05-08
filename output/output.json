@@ -1,16 +1,18 @@
 {
   "records": [
     {
-      "id": "b059f2b7-5172-46ad-b5e7-45d0f74dcce9",
-      "title": "Chinese Hacking Competitions Fuel the Country\u2019s Broad Cyber Ambitions",
-      "source": "https://www.bloomberg.com/news/articles/2025-04-30/chinese-hacking-competitions-fuel-the-country-s-broad-cyber-ambitions?embedded-checkout=true",
-      "published": "2025-04-30T04:00:00",
-      "feed": "https://newsroom.trendmicro.com/media-coverage?pagetemplate=rss",
+      "id": "1ff9abb7-8353-42ae-b021-af0626bc9aee",
+      "title": "38,000+ FreeDrain Subdomains Found Exploiting SEO to Steal Crypto Wallet Seed Phrases",
+      "source": "https://thehackernews.com/2025/05/38000-freedrain-subdomains-found.html",
+      "published": "2025-05-08T15:23:00",
+      "feed": "http://feeds.feedburner.com/TheHackersNews",
       "iocs": {
         "ips": [],
         "domains": [
-          "Bloomberg.com",
-          "ago.The"
+          "gitbook.io",
+          "webflow.io",
+          "github.io",
+          "Collab.Land"
         ],
         "urls": [],
         "emails": [],
@@ -24,7 +26,9 @@
         "actors": [],
         "malware": [],
         "mitre_techniques": [],
-        "cves": [],
+        "cves": [
+          "CVE-2025-27363"
+        ],
         "tools": [],
         "campaigns": []
       }
