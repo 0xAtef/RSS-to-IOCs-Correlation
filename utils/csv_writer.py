@@ -9,7 +9,7 @@ def write_csv_feed(all_records, csv_path, cfg):
     """
     fieldnames = [
         "info", "date", "threat_level_id", "analysis",
-        "orgc_uuid", "orgc_name", "tag", "attribute_category", "attribute_type",
+        "tag", "attribute_category", "attribute_type",
         "attribute_value", "to_ids", "comment", "attribute_timestamp",
         "actors", "malware", "mitre_techniques", "cves", "tools", "campaigns"
     ]
@@ -25,7 +25,6 @@ def write_csv_feed(all_records, csv_path, cfg):
                     continue
 
                 row = {
-                    "uuid": rec.get("id", ""),
                     "info": translate_to_english(rec.get("title", "No Title")),
                     "date": rec.get("published", "").split("T")[0] if rec.get("published") else "",
                     "threat_level_id": cfg.get("misp_threat_level_id", 4),
