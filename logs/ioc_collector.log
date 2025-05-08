@@ -779,3 +779,234 @@
 2025-05-05 20:26:42,146 INFO -> 0 new records from https://www.cisa.gov/news.xml
 2025-05-05 20:26:42,149 INFO Wrote 2 total records to output.json
 2025-05-05 20:26:42,149 INFO IOC Collector finished.
+2025-05-08 13:33:55,873 INFO Logging initialized. Starting script...
+2025-05-08 13:33:55,873 INFO Starting to process 10 feeds.
+2025-05-08 13:33:56,105 WARNING Feed returned status code 301: https://www.us-cert.gov/ncas/alerts.xml
+2025-05-08 13:33:56,114 WARNING Feed returned status code 301: https://www.us-cert.gov/ncas/alerts.xml
+2025-05-08 13:33:56,132 WARNING Feed returned status code 301: https://www.us-cert.gov/ncas/alerts.xml
+2025-05-08 13:33:56,132 ERROR Feed is unhealthy after 3 retries: https://www.us-cert.gov/ncas/alerts.xml
+2025-05-08 13:33:56,262 INFO Feed is healthy: https://www.cert.ssi.gouv.fr/feed/
+2025-05-08 13:33:56,262 INFO Starting to process feed: https://www.cert.ssi.gouv.fr/feed/
+2025-05-08 13:33:56,263 INFO Fetching https://www.cert.ssi.gouv.fr/feed/
+2025-05-08 13:33:56,446 INFO Feed is healthy: http://feeds.feedburner.com/TheHackersNews
+2025-05-08 13:33:56,446 INFO Starting to process feed: http://feeds.feedburner.com/TheHackersNews
+2025-05-08 13:33:56,446 INFO Fetching http://feeds.feedburner.com/TheHackersNews
+2025-05-08 13:33:56,589 INFO Processing entry: [MàJ] Vulnérabilité dans les produits Ivanti (09 janvier 2025)
+2025-05-08 13:33:56,595 INFO Skipping old entry: [MàJ] Vulnérabilité dans les produits Ivanti (09 janvier 2025)
+2025-05-08 13:33:56,600 INFO Processing entry: [MàJ] Vulnérabilité dans les produits Fortinet (14 janvier 2025)
+2025-05-08 13:33:56,600 INFO Skipping old entry: [MàJ] Vulnérabilité dans les produits Fortinet (14 janvier 2025)
+2025-05-08 13:33:56,605 INFO Processing entry: Vulnérabilité dans Synacor Zimbra Collaboration (28 janvier 2025)
+2025-05-08 13:33:56,609 INFO Processing entry: Security Tools Alone Don't Protect You — Control Effectiveness Does
+2025-05-08 13:33:56,610 INFO Fetching article: https://thehackernews.com/2025/05/security-tools-alone-dont-protect-you.html
+2025-05-08 13:33:56,609 INFO Skipping old entry: Vulnérabilité dans Synacor Zimbra Collaboration (28 janvier 2025)
+2025-05-08 13:33:56,611 INFO Processing entry: Multiples vulnérabilités dans les produits Apple (01 avril 2025)
+2025-05-08 13:33:56,611 INFO Skipping old entry: Multiples vulnérabilités dans les produits Apple (01 avril 2025)
+2025-05-08 13:33:56,611 INFO Processing entry: Multiples vulnérabilités dans les produits SAP (08 avril 2025)
+2025-05-08 13:33:56,611 INFO Skipping old entry: Multiples vulnérabilités dans les produits SAP (08 avril 2025)
+2025-05-08 13:33:56,611 INFO Processing entry: Vulnérabilité dans SAP NetWeaver (25 avril 2025)
+2025-05-08 13:33:56,611 INFO Fetching article: https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0350/
+2025-05-08 13:33:56,971 INFO Feed is healthy: https://krebsonsecurity.com/feed/
+2025-05-08 13:33:56,973 INFO Starting to process feed: https://krebsonsecurity.com/feed/
+2025-05-08 13:33:56,973 INFO Fetching https://krebsonsecurity.com/feed/
+2025-05-08 13:33:57,034 INFO Feed is healthy: https://www.bleepingcomputer.com/feed/
+2025-05-08 13:33:57,035 INFO Starting to process feed: https://www.bleepingcomputer.com/feed/
+2025-05-08 13:33:57,035 INFO Fetching https://www.bleepingcomputer.com/feed/
+2025-05-08 13:33:57,065 INFO Processing entry: SonicWall urges admins to patch VPN flaw exploited in attacks
+2025-05-08 13:33:57,065 INFO Fetching article: https://www.bleepingcomputer.com/news/security/sonicwall-urges-admins-to-patch-vpn-flaw-exploited-in-attacks/
+2025-05-08 13:33:57,450 INFO Feed is healthy: https://www.darkreading.com/rss.xml
+2025-05-08 13:33:57,451 INFO Starting to process feed: https://www.darkreading.com/rss.xml
+2025-05-08 13:33:57,451 INFO Fetching https://www.darkreading.com/rss.xml
+2025-05-08 13:33:57,609 WARNING Feed returned status code 301: http://isc.sans.edu/rssfeed.xml
+2025-05-08 13:33:57,634 WARNING Feed returned status code 301: http://isc.sans.edu/rssfeed.xml
+2025-05-08 13:33:57,715 WARNING Feed returned status code 301: http://isc.sans.edu/rssfeed.xml
+2025-05-08 13:33:57,720 ERROR Feed is unhealthy after 3 retries: http://isc.sans.edu/rssfeed.xml
+2025-05-08 13:33:57,741 INFO Processing entry: Pakistani Firm Shipped Fentanyl Analogs, Scams to US
+2025-05-08 13:33:57,741 INFO Fetching article: https://krebsonsecurity.com/2025/05/pakistani-firm-shipped-fentanyl-analogs-scams-to-us/
+2025-05-08 13:33:57,836 INFO Processing entry: 'Lemon Sandstorm' Underscores Risks to Middle East Infrastructure
+2025-05-08 13:33:57,836 INFO Fetching article: https://www.darkreading.com/cyberattacks-data-breaches/lemon-sandstorm-risks-middle-east-infrastructure
+2025-05-08 13:33:57,845 ERROR Error fetching article https://www.darkreading.com/cyberattacks-data-breaches/lemon-sandstorm-risks-middle-east-infrastructure: 403 Client Error: Forbidden for url: https://www.darkreading.com/cyberattacks-data-breaches/lemon-sandstorm-risks-middle-east-infrastructure
+2025-05-08 13:33:57,845 INFO Processing entry: 'CoGUI' Phishing Kit Helps Chinese Hackers Target Japan
+2025-05-08 13:33:57,846 INFO Fetching article: https://www.darkreading.com/threat-intelligence/cogui-phishing-kit-chinese-hackers-japan
+2025-05-08 13:33:57,856 ERROR Error fetching article https://www.darkreading.com/threat-intelligence/cogui-phishing-kit-chinese-hackers-japan: 403 Client Error: Forbidden for url: https://www.darkreading.com/threat-intelligence/cogui-phishing-kit-chinese-hackers-japan
+2025-05-08 13:33:57,856 INFO Processing entry: AI Agents Fail in Novel Ways, Put Businesses at Risk
+2025-05-08 13:33:57,857 INFO Fetching article: https://www.darkreading.com/vulnerabilities-threats/ai-agents-fail-novel-put-businesses-at-risk
+2025-05-08 13:33:57,869 ERROR Error fetching article https://www.darkreading.com/vulnerabilities-threats/ai-agents-fail-novel-put-businesses-at-risk: 403 Client Error: Forbidden for url: https://www.darkreading.com/vulnerabilities-threats/ai-agents-fail-novel-put-businesses-at-risk
+2025-05-08 13:33:57,869 INFO Processing entry: Countries Begin NATO's Locked Shields Cyber Defense Exercise
+2025-05-08 13:33:57,869 INFO Fetching article: https://www.darkreading.com/cybersecurity-operations/countries-nato-locked-shields-cyber-defense-exercise
+2025-05-08 13:33:57,879 ERROR Error fetching article https://www.darkreading.com/cybersecurity-operations/countries-nato-locked-shields-cyber-defense-exercise: 403 Client Error: Forbidden for url: https://www.darkreading.com/cybersecurity-operations/countries-nato-locked-shields-cyber-defense-exercise
+2025-05-08 13:33:57,879 INFO Processing entry: TikTok Fined €530 Million Over Chinese Access to EU Data
+2025-05-08 13:33:57,879 INFO Fetching article: https://www.darkreading.com/cybersecurity-operations/tiktok-fined-530-million-eu-data-servers-china
+2025-05-08 13:33:57,889 ERROR Error fetching article https://www.darkreading.com/cybersecurity-operations/tiktok-fined-530-million-eu-data-servers-china: 403 Client Error: Forbidden for url: https://www.darkreading.com/cybersecurity-operations/tiktok-fined-530-million-eu-data-servers-china
+2025-05-08 13:33:57,889 INFO Processing entry: Meta Wins Lawsuit Against Spyware Vendor NSO Group
+2025-05-08 13:33:57,889 INFO Fetching article: https://www.darkreading.com/vulnerabilities-threats/meta-wins-lawsuit-spyware-vendor-nso
+2025-05-08 13:33:57,900 ERROR Error fetching article https://www.darkreading.com/vulnerabilities-threats/meta-wins-lawsuit-spyware-vendor-nso: 403 Client Error: Forbidden for url: https://www.darkreading.com/vulnerabilities-threats/meta-wins-lawsuit-spyware-vendor-nso
+2025-05-08 13:33:57,900 INFO Processing entry: Play Ransomware Group Used Windows Zero-Day
+2025-05-08 13:33:57,900 INFO Fetching article: https://www.darkreading.com/cyberattacks-data-breaches/play-ransomware-group-windows-zero-day
+2025-05-08 13:33:57,910 ERROR Error fetching article https://www.darkreading.com/cyberattacks-data-breaches/play-ransomware-group-windows-zero-day: 403 Client Error: Forbidden for url: https://www.darkreading.com/cyberattacks-data-breaches/play-ransomware-group-windows-zero-day
+2025-05-08 13:33:57,910 INFO Processing entry: 'Bring Your Own Installer' Attack Targets SentinelOne EDR
+2025-05-08 13:33:57,910 INFO Fetching article: https://www.darkreading.com/vulnerabilities-threats/bring-your-own-installer-attack-sentinelone-edr
+2025-05-08 13:33:57,918 ERROR Error fetching article https://www.darkreading.com/vulnerabilities-threats/bring-your-own-installer-attack-sentinelone-edr: 403 Client Error: Forbidden for url: https://www.darkreading.com/vulnerabilities-threats/bring-your-own-installer-attack-sentinelone-edr
+2025-05-08 13:33:57,918 INFO Processing entry: Infrastructure as Code: An IaC Guide to Cloud Security
+2025-05-08 13:33:57,918 INFO Fetching article: https://www.darkreading.com/cloud-security/infrastructure-code-iac-guide-cloud-security
+2025-05-08 13:33:57,926 ERROR Error fetching article https://www.darkreading.com/cloud-security/infrastructure-code-iac-guide-cloud-security: 403 Client Error: Forbidden for url: https://www.darkreading.com/cloud-security/infrastructure-code-iac-guide-cloud-security
+2025-05-08 13:33:57,926 INFO Processing entry: Researcher Says Patched Commvault Bug Still Exploitable
+2025-05-08 13:33:57,926 INFO Fetching article: https://www.darkreading.com/cyberattacks-data-breaches/researcher-patched-commvault-bug-exploitable
+2025-05-08 13:33:57,936 ERROR Error fetching article https://www.darkreading.com/cyberattacks-data-breaches/researcher-patched-commvault-bug-exploitable: 403 Client Error: Forbidden for url: https://www.darkreading.com/cyberattacks-data-breaches/researcher-patched-commvault-bug-exploitable
+2025-05-08 13:33:57,936 INFO Processing entry: 'Easily Exploitable' Langflow Vulnerability Requires Immediate Patching
+2025-05-08 13:33:57,936 INFO Fetching article: https://www.darkreading.com/vulnerabilities-threats/easily-exploitable-langflow-vulnerability-patching
+2025-05-08 13:33:57,947 ERROR Error fetching article https://www.darkreading.com/vulnerabilities-threats/easily-exploitable-langflow-vulnerability-patching: 403 Client Error: Forbidden for url: https://www.darkreading.com/vulnerabilities-threats/easily-exploitable-langflow-vulnerability-patching
+2025-05-08 13:33:57,947 INFO Processing entry: CISA Warns 2 SonicWall Vulnerabilities Under Active Exploitation
+2025-05-08 13:33:57,947 INFO Fetching article: https://www.darkreading.com/threat-intelligence/two-sonicwall-vulnerabilities-under-exploitation
+2025-05-08 13:33:57,957 ERROR Error fetching article https://www.darkreading.com/threat-intelligence/two-sonicwall-vulnerabilities-under-exploitation: 403 Client Error: Forbidden for url: https://www.darkreading.com/threat-intelligence/two-sonicwall-vulnerabilities-under-exploitation
+2025-05-08 13:33:57,957 INFO Processing entry: Addressing the Top Cyber-Risks in Higher Education
+2025-05-08 13:33:57,957 INFO Fetching article: https://www.darkreading.com/vulnerabilities-threats/addressing-top-cyber-risks-higher-education
+2025-05-08 13:33:57,966 ERROR Error fetching article https://www.darkreading.com/vulnerabilities-threats/addressing-top-cyber-risks-higher-education: 403 Client Error: Forbidden for url: https://www.darkreading.com/vulnerabilities-threats/addressing-top-cyber-risks-higher-education
+2025-05-08 13:33:57,967 INFO Processing entry: AI Domination: RSAC 2025 Social Media Roundup
+2025-05-08 13:33:57,967 INFO Fetching article: https://www.darkreading.com/cloud-security/ai-rsac-2025-social-media-roundup
+2025-05-08 13:33:57,972 INFO Feed is healthy: https://newsroom.trendmicro.com/media-coverage?pagetemplate=rss
+2025-05-08 13:33:57,973 INFO Starting to process feed: https://newsroom.trendmicro.com/media-coverage?pagetemplate=rss
+2025-05-08 13:33:57,973 INFO Fetching https://newsroom.trendmicro.com/media-coverage?pagetemplate=rss
+2025-05-08 13:33:57,980 ERROR Error fetching article https://www.darkreading.com/cloud-security/ai-rsac-2025-social-media-roundup: 403 Client Error: Forbidden for url: https://www.darkreading.com/cloud-security/ai-rsac-2025-social-media-roundup
+2025-05-08 13:33:57,980 INFO Processing entry: 'Venom Spider' Targets Hiring Managers in Phishing Scheme
+2025-05-08 13:33:57,980 INFO Fetching article: https://www.darkreading.com/cyber-risk/venom-spider-phishing-scheme
+2025-05-08 13:33:57,992 ERROR Error fetching article https://www.darkreading.com/cyber-risk/venom-spider-phishing-scheme: 403 Client Error: Forbidden for url: https://www.darkreading.com/cyber-risk/venom-spider-phishing-scheme
+2025-05-08 13:33:57,993 INFO Processing entry: Ongoing Passkey Usability Challenges Require 'Problem-Solving'
+2025-05-08 13:33:57,993 INFO Fetching article: https://www.darkreading.com/identity-access-management-security/passkey-usability-challenges-require-problem-solving
+2025-05-08 13:33:58,008 INFO Processing entry: Cybersecurity Trends: Impact of Tariffs and Data Sovereignty
+2025-05-08 13:33:58,008 INFO Fetching article: https://www.bankinfosecurity.com/cybersecurity-trends-impact-tariffs-data-sovereignty-a-28244
+2025-05-08 13:33:58,018 ERROR Error fetching article https://www.darkreading.com/identity-access-management-security/passkey-usability-challenges-require-problem-solving: 403 Client Error: Forbidden for url: https://www.darkreading.com/identity-access-management-security/passkey-usability-challenges-require-problem-solving
+2025-05-08 13:33:58,018 INFO Processing entry: The Dark Side of Digital: Breaking the Silence on Youth Mental Health
+2025-05-08 13:33:58,018 INFO Fetching article: https://www.darkreading.com/data-privacy/dark-side-digital-breaking-silence-youth-mental-health
+2025-05-08 13:33:58,028 ERROR Error fetching article https://www.darkreading.com/data-privacy/dark-side-digital-breaking-silence-youth-mental-health: 403 Client Error: Forbidden for url: https://www.darkreading.com/data-privacy/dark-side-digital-breaking-silence-youth-mental-health
+2025-05-08 13:33:58,029 INFO Processing entry: Phony Hacktivist Pleads Guilty to Disney Data Leak
+2025-05-08 13:33:58,029 INFO Fetching article: https://www.darkreading.com/threat-intelligence/phony-hacktivist-pleads-guilty-disney-leak
+2025-05-08 13:33:58,038 ERROR Error fetching article https://www.darkreading.com/threat-intelligence/phony-hacktivist-pleads-guilty-disney-leak: 403 Client Error: Forbidden for url: https://www.darkreading.com/threat-intelligence/phony-hacktivist-pleads-guilty-disney-leak
+2025-05-08 13:33:58,038 INFO Processing entry: How to Prevent AI Agents From Becoming the Bad Guys
+2025-05-08 13:33:58,038 INFO Fetching article: https://www.darkreading.com/vulnerabilities-threats/prevent-ai-agents-becoming-bad-guys
+2025-05-08 13:33:58,046 ERROR Error fetching article https://www.darkreading.com/vulnerabilities-threats/prevent-ai-agents-becoming-bad-guys: 403 Client Error: Forbidden for url: https://www.darkreading.com/vulnerabilities-threats/prevent-ai-agents-becoming-bad-guys
+2025-05-08 13:33:58,046 INFO Processing entry: UK Retailers Reeling From Likely Ransomware Attacks
+2025-05-08 13:33:58,046 INFO Fetching article: https://www.darkreading.com/cyberattacks-data-breaches/uk-retailers-reeling-ransomware-attacks
+2025-05-08 13:33:58,057 ERROR Error fetching article https://www.darkreading.com/cyberattacks-data-breaches/uk-retailers-reeling-ransomware-attacks: 403 Client Error: Forbidden for url: https://www.darkreading.com/cyberattacks-data-breaches/uk-retailers-reeling-ransomware-attacks
+2025-05-08 13:33:58,057 INFO Processing entry: What NY's New Security Rules Mean for Finance Firms
+2025-05-08 13:33:58,057 INFO Fetching article: https://www.darkreading.com/cybersecurity-operations/nydfs-rules-businesses-ny
+2025-05-08 13:33:58,066 ERROR Error fetching article https://www.darkreading.com/cybersecurity-operations/nydfs-rules-businesses-ny: 403 Client Error: Forbidden for url: https://www.darkreading.com/cybersecurity-operations/nydfs-rules-businesses-ny
+2025-05-08 13:33:58,066 INFO Processing entry: Attackers Ramp Up Efforts Targeting Developer Secrets
+2025-05-08 13:33:58,067 INFO Fetching article: https://www.darkreading.com/threat-intelligence/attackers-targeting-developer-secrets
+2025-05-08 13:33:58,076 ERROR Error fetching article https://www.darkreading.com/threat-intelligence/attackers-targeting-developer-secrets: 403 Client Error: Forbidden for url: https://www.darkreading.com/threat-intelligence/attackers-targeting-developer-secrets
+2025-05-08 13:33:58,076 INFO Processing entry: Despite Arrests, Scattered Spider Continues High-Profile Hacking
+2025-05-08 13:33:58,076 INFO Fetching article: https://www.darkreading.com/cyberattacks-data-breaches/despite-arrests-scattered-spider-continues-hacking
+2025-05-08 13:33:58,092 ERROR Error fetching article https://www.darkreading.com/cyberattacks-data-breaches/despite-arrests-scattered-spider-continues-hacking: 403 Client Error: Forbidden for url: https://www.darkreading.com/cyberattacks-data-breaches/despite-arrests-scattered-spider-continues-hacking
+2025-05-08 13:33:58,092 INFO Processing entry: Cut CISA and Everyone Pays for It
+2025-05-08 13:33:58,092 INFO Fetching article: https://www.darkreading.com/vulnerabilities-threats/cut-cisa-everyone-pays
+2025-05-08 13:33:58,108 INFO Feed is healthy: https://feeds.feedburner.com/threatintelligence/pvexyqv7v0v
+2025-05-08 13:33:58,108 INFO Starting to process feed: https://feeds.feedburner.com/threatintelligence/pvexyqv7v0v
+2025-05-08 13:33:58,110 INFO Fetching https://feeds.feedburner.com/threatintelligence/pvexyqv7v0v
+2025-05-08 13:33:58,111 ERROR Error fetching article https://www.darkreading.com/vulnerabilities-threats/cut-cisa-everyone-pays: 403 Client Error: Forbidden for url: https://www.darkreading.com/vulnerabilities-threats/cut-cisa-everyone-pays
+2025-05-08 13:33:58,111 INFO Processing entry: SANS Top 5: Cyber Has Busted Out of the SOC
+2025-05-08 13:33:58,112 INFO Fetching article: https://www.darkreading.com/cloud-security/sans-top5-cyber-broken-out-soc
+2025-05-08 13:33:58,125 ERROR Error fetching article https://www.darkreading.com/cloud-security/sans-top5-cyber-broken-out-soc: 403 Client Error: Forbidden for url: https://www.darkreading.com/cloud-security/sans-top5-cyber-broken-out-soc
+2025-05-08 13:33:58,125 INFO Processing entry: Enterprises Need to Beware of These 5 Threats
+2025-05-08 13:33:58,125 INFO Fetching article: https://www.darkreading.com/cyberattacks-data-breaches/enterprises-need-beware-five-threats
+2025-05-08 13:33:58,154 ERROR Error fetching article https://www.darkreading.com/cyberattacks-data-breaches/enterprises-need-beware-five-threats: 403 Client Error: Forbidden for url: https://www.darkreading.com/cyberattacks-data-breaches/enterprises-need-beware-five-threats
+2025-05-08 13:33:58,155 INFO Processing entry: Experts Debate Real ID Security Ahead of May 7 Deadline
+2025-05-08 13:33:58,155 INFO Fetching article: https://www.darkreading.com/cybersecurity-operations/experts-real-id-security-may-7-deadline
+2025-05-08 13:33:58,166 ERROR Error fetching article https://www.darkreading.com/cybersecurity-operations/experts-real-id-security-may-7-deadline: 403 Client Error: Forbidden for url: https://www.darkreading.com/cybersecurity-operations/experts-real-id-security-may-7-deadline
+2025-05-08 13:33:58,166 INFO Processing entry: Getting Outlook.com Ready for Bulk Email Compliance
+2025-05-08 13:33:58,166 INFO Fetching article: https://www.darkreading.com/cloud-security/getting-outlook-com-ready-bulk-email-compliance
+2025-05-08 13:33:58,173 INFO Feed is healthy: https://darkwebinformer.com/rss/
+2025-05-08 13:33:58,173 INFO Starting to process feed: https://darkwebinformer.com/rss/
+2025-05-08 13:33:58,173 INFO Fetching https://darkwebinformer.com/rss/
+2025-05-08 13:33:58,174 ERROR Error processing feed https://krebsonsecurity.com/feed/: extract_iocs() takes 1 positional argument but 2 were given
+2025-05-08 13:33:58,175 ERROR Error processing feed https://www.bleepingcomputer.com/feed/: extract_iocs() takes 1 positional argument but 2 were given
+2025-05-08 13:33:58,175 ERROR Error processing feed http://feeds.feedburner.com/TheHackersNews: extract_iocs() takes 1 positional argument but 2 were given
+2025-05-08 13:33:58,175 ERROR Error processing feed https://www.cert.ssi.gouv.fr/feed/: extract_iocs() takes 1 positional argument but 2 were given
+2025-05-08 13:33:58,184 ERROR Error fetching article https://www.darkreading.com/cloud-security/getting-outlook-com-ready-bulk-email-compliance: 403 Client Error: Forbidden for url: https://www.darkreading.com/cloud-security/getting-outlook-com-ready-bulk-email-compliance
+2025-05-08 13:33:58,184 INFO Processing entry: A Cybersecurity Paradox: Even Resilient Organizations Are Blind to AI Threats
+2025-05-08 13:33:58,184 INFO Fetching article: https://www.darkreading.com/cyber-risk/even-resilient-organizations-bind-ai-threats
+2025-05-08 13:33:58,221 ERROR Error fetching article https://www.darkreading.com/cyber-risk/even-resilient-organizations-bind-ai-threats: 403 Client Error: Forbidden for url: https://www.darkreading.com/cyber-risk/even-resilient-organizations-bind-ai-threats
+2025-05-08 13:33:58,226 INFO Processing entry: When Threat Actors Behave Like Managed Service Providers
+2025-05-08 13:33:58,227 INFO Fetching article: https://www.darkreading.com/vulnerabilities-threats/threat-actors-behave-managed-service-providers
+2025-05-08 13:33:58,254 INFO Processing entry: Daily Dose of Dark Web Informer - 7th of May 2025
+2025-05-08 13:33:58,254 INFO Fetching article: https://darkwebinformer.com/daily-dose-of-dark-web-informer-7th-of-may-2025/
+2025-05-08 13:33:58,256 ERROR Error fetching article https://www.darkreading.com/vulnerabilities-threats/threat-actors-behave-managed-service-providers: 403 Client Error: Forbidden for url: https://www.darkreading.com/vulnerabilities-threats/threat-actors-behave-managed-service-providers
+2025-05-08 13:33:58,256 INFO Processing entry: Microsoft Readies Administrator Protection Option for Windows 11
+2025-05-08 13:33:58,256 INFO Fetching article: https://www.darkreading.com/endpoint-security/microsoft-readies-administrator-protection-option-windows-11
+2025-05-08 13:33:58,295 ERROR Error processing feed https://darkwebinformer.com/rss/: extract_iocs() takes 1 positional argument but 2 were given
+2025-05-08 13:33:58,295 ERROR Error fetching article https://www.darkreading.com/endpoint-security/microsoft-readies-administrator-protection-option-windows-11: 403 Client Error: Forbidden for url: https://www.darkreading.com/endpoint-security/microsoft-readies-administrator-protection-option-windows-11
+2025-05-08 13:33:58,296 INFO Processing entry: Putin's Cyberattacks on Ukraine Rise 70%, With Little Effect
+2025-05-08 13:33:58,296 INFO Fetching article: https://www.darkreading.com/threat-intelligence/putin-cyberattacks-ukraine-rise-little-effect
+2025-05-08 13:33:58,328 ERROR Error fetching article https://www.darkreading.com/threat-intelligence/putin-cyberattacks-ukraine-rise-little-effect: 403 Client Error: Forbidden for url: https://www.darkreading.com/threat-intelligence/putin-cyberattacks-ukraine-rise-little-effect
+2025-05-08 13:33:58,338 INFO Processing entry: Billbug Expands Cyber-Espionage Campaign in Southeast Asia
+2025-05-08 13:33:58,349 INFO Fetching article: https://www.darkreading.com/threat-intelligence/billbug-cyber-espionage-campaign-southeast-asia
+2025-05-08 13:33:58,387 ERROR Error fetching article https://www.darkreading.com/threat-intelligence/billbug-cyber-espionage-campaign-southeast-asia: 403 Client Error: Forbidden for url: https://www.darkreading.com/threat-intelligence/billbug-cyber-espionage-campaign-southeast-asia
+2025-05-08 13:33:58,398 INFO Processing entry: Cisco Boosts XDR Platform, Splunk With Agentic AI
+2025-05-08 13:33:58,398 INFO Fetching article: https://www.darkreading.com/endpoint-security/cisco-boosts-xdr-platform-splunk-agentic-ai
+2025-05-08 13:33:58,436 ERROR Error fetching article https://www.darkreading.com/endpoint-security/cisco-boosts-xdr-platform-splunk-agentic-ai: 403 Client Error: Forbidden for url: https://www.darkreading.com/endpoint-security/cisco-boosts-xdr-platform-splunk-agentic-ai
+2025-05-08 13:33:58,441 INFO Processing entry: Prolific RansomHub Operation Goes Dark
+2025-05-08 13:33:58,446 INFO Fetching article: https://www.darkreading.com/cyber-risk/prolific-ransomhub-operation-goes-dark
+2025-05-08 13:33:58,480 ERROR Error fetching article https://www.darkreading.com/cyber-risk/prolific-ransomhub-operation-goes-dark: 403 Client Error: Forbidden for url: https://www.darkreading.com/cyber-risk/prolific-ransomhub-operation-goes-dark
+2025-05-08 13:33:58,485 INFO Processing entry: Former CISA Head Slams Trump Admin Over 'Loyalty Mandate'
+2025-05-08 13:33:58,490 INFO Fetching article: https://www.darkreading.com/cybersecurity-operations/former-cisa-head-slams-trump-admin-loyalty-mandate
+2025-05-08 13:33:58,534 ERROR Error fetching article https://www.darkreading.com/cybersecurity-operations/former-cisa-head-slams-trump-admin-loyalty-mandate: 403 Client Error: Forbidden for url: https://www.darkreading.com/cybersecurity-operations/former-cisa-head-slams-trump-admin-loyalty-mandate
+2025-05-08 13:33:58,539 INFO Processing entry: Adversaries Are Toying With US Networks &amp; DC Is Short on Answers
+2025-05-08 13:33:58,544 INFO Fetching article: https://www.darkreading.com/cybersecurity-operations/adversaries-toying-with-us-networks
+2025-05-08 13:33:58,574 ERROR Error fetching article https://www.darkreading.com/cybersecurity-operations/adversaries-toying-with-us-networks: 403 Client Error: Forbidden for url: https://www.darkreading.com/cybersecurity-operations/adversaries-toying-with-us-networks
+2025-05-08 13:33:58,589 INFO Processing entry: TheWizards APT Casts a Spell on Asian Gamblers With Novel Attack
+2025-05-08 13:33:58,597 INFO Fetching article: https://www.darkreading.com/cloud-security/thewizards-apt-asian-gamblers-attack
+2025-05-08 13:33:58,637 ERROR Error fetching article https://www.darkreading.com/cloud-security/thewizards-apt-asian-gamblers-attack: 403 Client Error: Forbidden for url: https://www.darkreading.com/cloud-security/thewizards-apt-asian-gamblers-attack
+2025-05-08 13:33:58,654 INFO Processing entry: Debunking Security 'Myths' to Address Common Gaps
+2025-05-08 13:33:58,665 INFO Fetching article: https://www.darkreading.com/cyber-risk/debunking-security-myths-common-gaps
+2025-05-08 13:33:58,739 ERROR Error fetching article https://www.darkreading.com/cyber-risk/debunking-security-myths-common-gaps: 403 Client Error: Forbidden for url: https://www.darkreading.com/cyber-risk/debunking-security-myths-common-gaps
+2025-05-08 13:33:58,752 INFO Processing entry: Phishers Take Advantage of Iberian Blackout Before It's Even Over
+2025-05-08 13:33:58,762 INFO Fetching article: https://www.darkreading.com/cyberattacks-data-breaches/phishers-take-advantage-iberian-blackout
+2025-05-08 13:33:58,934 ERROR Error fetching article https://www.darkreading.com/cyberattacks-data-breaches/phishers-take-advantage-iberian-blackout: 403 Client Error: Forbidden for url: https://www.darkreading.com/cyberattacks-data-breaches/phishers-take-advantage-iberian-blackout
+2025-05-08 13:33:58,944 INFO Processing entry: DHS Boss Noem Vows to Get CISA Back 'On Mission'
+2025-05-08 13:33:58,944 INFO Fetching article: https://www.darkreading.com/cybersecurity-operations/dhs-secretary-noem-cisa-back-on-mission
+2025-05-08 13:33:59,205 ERROR Error processing feed https://newsroom.trendmicro.com/media-coverage?pagetemplate=rss: extract_iocs() takes 1 positional argument but 2 were given
+2025-05-08 13:33:59,205 ERROR Error fetching article https://www.darkreading.com/cybersecurity-operations/dhs-secretary-noem-cisa-back-on-mission: 403 Client Error: Forbidden for url: https://www.darkreading.com/cybersecurity-operations/dhs-secretary-noem-cisa-back-on-mission
+2025-05-08 13:33:59,216 INFO Processing entry: DARPA Highlights Critical Infrastructure Security Challenges
+2025-05-08 13:33:59,216 INFO Fetching article: https://www.darkreading.com/cyber-risk/darpa-highlights-critical-infrastructure-security-challenges
+2025-05-08 13:33:59,268 INFO Processing entry: COLDRIVER Using New Malware To Steal Documents From Western Targets and NGOs
+2025-05-08 13:33:59,268 ERROR Error fetching article https://www.darkreading.com/cyber-risk/darpa-highlights-critical-infrastructure-security-challenges: 403 Client Error: Forbidden for url: https://www.darkreading.com/cyber-risk/darpa-highlights-critical-infrastructure-security-challenges
+2025-05-08 13:33:59,268 INFO Fetching article: https://cloud.google.com/blog/topics/threat-intelligence/coldriver-steal-documents-western-targets-ngos/
+2025-05-08 13:33:59,268 INFO Processing entry: Many Fuel Tank Monitoring Systems Vulnerable to Disruption
+2025-05-08 13:33:59,271 INFO Fetching article: https://www.darkreading.com/ics-ot-security/fuel-tank-monitoring-systems-vulnerable-disruption
+2025-05-08 13:33:59,283 ERROR Error fetching article https://www.darkreading.com/ics-ot-security/fuel-tank-monitoring-systems-vulnerable-disruption: 403 Client Error: Forbidden for url: https://www.darkreading.com/ics-ot-security/fuel-tank-monitoring-systems-vulnerable-disruption
+2025-05-08 13:33:59,283 INFO Processing entry: From Mission-Centric to People-Centric: Competitive Leadership in Cyber
+2025-05-08 13:33:59,283 INFO Fetching article: https://www.darkreading.com/remote-workforce/mission-people-competitive-leadership-cyber
+2025-05-08 13:33:59,294 ERROR Error fetching article https://www.darkreading.com/remote-workforce/mission-people-competitive-leadership-cyber: 403 Client Error: Forbidden for url: https://www.darkreading.com/remote-workforce/mission-people-competitive-leadership-cyber
+2025-05-08 13:33:59,294 INFO Processing entry: Hacking in Space: Not as Tough as You Might Think
+2025-05-08 13:33:59,294 INFO Fetching article: https://www.darkreading.com/cloud-security/hacking-space-not-tough
+2025-05-08 13:33:59,307 ERROR Error fetching article https://www.darkreading.com/cloud-security/hacking-space-not-tough: 403 Client Error: Forbidden for url: https://www.darkreading.com/cloud-security/hacking-space-not-tough
+2025-05-08 13:33:59,307 INFO Processing entry: US Critical Infrastructure Still Struggles With OT Security
+2025-05-08 13:33:59,308 INFO Fetching article: https://www.darkreading.com/remote-workforce/critical-infrastructure-struggles-ot-security
+2025-05-08 13:33:59,315 ERROR Error fetching article https://www.darkreading.com/remote-workforce/critical-infrastructure-struggles-ot-security: 403 Client Error: Forbidden for url: https://www.darkreading.com/remote-workforce/critical-infrastructure-struggles-ot-security
+2025-05-08 13:33:59,315 INFO Processing entry: Risks of Using AI Models Developed by Competing Nations
+2025-05-08 13:33:59,315 INFO Fetching article: https://www.darkreading.com/vulnerabilities-threats/risks-using-ai-models-developed-competing-nations
+2025-05-08 13:33:59,326 ERROR Error fetching article https://www.darkreading.com/vulnerabilities-threats/risks-using-ai-models-developed-competing-nations: 403 Client Error: Forbidden for url: https://www.darkreading.com/vulnerabilities-threats/risks-using-ai-models-developed-competing-nations
+2025-05-08 13:33:59,326 INFO Processing entry: Windows Backdoor Targets Members of Exiled Uyghur Community
+2025-05-08 13:33:59,326 INFO Fetching article: https://www.darkreading.com/cyberattacks-data-breaches/windows-backdoor-targets-members-exhiled-uyghur-community
+2025-05-08 13:33:59,337 ERROR Error fetching article https://www.darkreading.com/cyberattacks-data-breaches/windows-backdoor-targets-members-exhiled-uyghur-community: 403 Client Error: Forbidden for url: https://www.darkreading.com/cyberattacks-data-breaches/windows-backdoor-targets-members-exhiled-uyghur-community
+2025-05-08 13:33:59,338 INFO Processing entry: NVIDIA's New AI Security Offering Protects Against Software Landmines
+2025-05-08 13:33:59,338 INFO Fetching article: https://www.darkreading.com/cyberattacks-data-breaches/nvidia-ai-security-offering-protects-software-landmines
+2025-05-08 13:33:59,349 ERROR Error fetching article https://www.darkreading.com/cyberattacks-data-breaches/nvidia-ai-security-offering-protects-software-landmines: 403 Client Error: Forbidden for url: https://www.darkreading.com/cyberattacks-data-breaches/nvidia-ai-security-offering-protects-software-landmines
+2025-05-08 13:33:59,350 INFO Processing entry: Vulnerability Exploitation Is Shifting in 2024-25
+2025-05-08 13:33:59,350 INFO Fetching article: https://www.darkreading.com/vulnerabilities-threats/vulnerability-exploitation-shifting-2024-25
+2025-05-08 13:33:59,360 ERROR Error fetching article https://www.darkreading.com/vulnerabilities-threats/vulnerability-exploitation-shifting-2024-25: 403 Client Error: Forbidden for url: https://www.darkreading.com/vulnerabilities-threats/vulnerability-exploitation-shifting-2024-25
+2025-05-08 13:33:59,360 INFO Finished processing feed: https://www.darkreading.com/rss.xml. Total entries processed: 0
+2025-05-08 13:33:59,361 WARNING No records found in feed: https://www.darkreading.com/rss.xml
+2025-05-08 13:33:59,447 ERROR Error processing feed https://feeds.feedburner.com/threatintelligence/pvexyqv7v0v: extract_iocs() takes 1 positional argument but 2 were given
+2025-05-08 13:33:59,447 INFO Finished processing feeds. Total records collected: 0
+2025-05-08 13:33:59,447 INFO Seen IOCs saved to output/seen_iocs.json
+2025-05-08 13:33:59,448 INFO ✅ Successfully wrote 0 records to misp_feed/feed.csv
+✅ Successfully wrote 0 records to misp_feed/feed.csv
+2025-05-08 13:33:59,448 INFO output.json saved successfully.
+2025-05-08 13:33:59,448 INFO === Summary ===
+2025-05-08 13:33:59,448 INFO Total feeds processed: 10
+2025-05-08 13:33:59,448 INFO Total feeds skipped: 7
+2025-05-08 13:33:59,448 INFO Total records collected: 0
+2025-05-08 13:33:59,448 INFO Total valid records saved: 0
+2025-05-08 13:33:59,448 INFO Total seen IOCs saved: 0
+2025-05-08 13:33:59,448 INFO Total runtime: 0:00:03.574849
+2025-05-08 13:33:59,448 INFO Average runtime per feed: 0:00:00.357485
+2025-05-08 13:33:59,449 INFO Cleanup completed.
