@@ -1,3 +1,49 @@
 {
-  "records": []
+  "records": [
+    {
+      "id": "767dbffc-056a-49ca-a297-22f5591d9849",
+      "title": "Cisco Patches CVE-2025-20188 (10.0 CVSS) in IOS XE That Enables Root Exploits via JWT",
+      "source": "https://thehackernews.com/2025/05/cisco-patches-cve-2025-20188-100-cvss.html",
+      "published": "2025-05-08T04:57:00",
+      "feed": "http://feeds.feedburner.com/TheHackersNews",
+      "iocs": {
+        "ips": [],
+        "domains": [],
+        "urls": [],
+        "emails": [],
+        "sha1": [],
+        "sha256": [],
+        "md5": [],
+        "cves": [
+          "CVE-2025-20188"
+        ]
+      },
+      "tags": [
+        "ioc:type:cve",
+        "context:iot",
+        "feed:source:feeds.feedburner.com",
+        "rss_to_ioc_collector",
+        "ioc:type:email",
+        "context:ddos",
+        "context:supply_chain",
+        "context:phishing",
+        "ioc:type:ip",
+        "context:cves",
+        "context:exploits",
+        "context:malware",
+        "context:data_leak",
+        "feed:published:2025-05-08"
+      ],
+      "enrichment": {
+        "actors": [],
+        "malware": [],
+        "mitre_techniques": [],
+        "cves": [
+          "CVE-2025-20188"
+        ],
+        "tools": [],
+        "campaigns": []
+      }
+    }
+  ]
 }
