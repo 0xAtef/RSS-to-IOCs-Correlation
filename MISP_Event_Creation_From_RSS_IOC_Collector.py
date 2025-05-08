@@ -2,9 +2,23 @@ from pymisp import ExpandedPyMISP, MISPEvent, MISPAttribute
 import csv
 import requests
 from io import StringIO
+from dotenv import load_dotenv
+import os
+
+# Load environment variables from .env file
+load_dotenv()
+
+# MISP configurations from .env file
+MISP_BASE_URL = os.getenv("MISP_BASE_URL")
+MISP_API_KEY = os.getenv("MISP_API_KEY")
+MISP_VERIFY_SSL = os.getenv("MISP_VERIFY_SSL", "true").lower() == "true"
+
+# Validate MISP configurations
+if not MISP_BASE_URL or not MISP_API_KEY:
+    raise ValueError("MISP configuration is missing. Please check your .env file.")
 
 # Initialize MISP instance
-misp = ExpandedPyMISP('https://127.0.0.1', 'VIPPqM2LUwxsNfaLnzz0Ju2S2QCPqHI8BELemWgA', ssl=False)
+misp = ExpandedPyMISP(MISP_BASE_URL, MISP_API_KEY, ssl=MISP_VERIFY_SSL)
 
 # URL of the CSV file
 csv_url = 'https://raw.githubusercontent.com/0xAtef/RSS-to-IOCs-Correlation/refs/heads/main/misp_feed/feed.csv'
