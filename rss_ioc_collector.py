@@ -8,6 +8,7 @@ import requests
 from urllib3.util.retry import Retry
 from requests.adapters import HTTPAdapter
 from concurrent.futures import ThreadPoolExecutor, as_completed
+from logging.handlers import RotatingFileHandler
 from datetime import datetime
 
 from dotenv import load_dotenv
@@ -19,6 +20,25 @@ from utils.ioc_utils import IOCUtils
 
 # === LOAD ENVIRONMENT VARIABLES ===
 load_dotenv()
+
+# === CONFIGURE LOGGING ===
+LOG_FILE = "logs/ioc_collector.log"
+
+# Create a rotating file handler
+rotating_handler = RotatingFileHandler(
+    LOG_FILE, maxBytes=5 * 1024 * 1024, backupCount=3, encoding="utf-8"
+)
+
+logging.basicConfig(
+    level=logging.DEBUG,  # Set to DEBUG for detailed logs
+    format="%(asctime)s %(levelname)s %(message)s",
+    handlers=[
+        logging.StreamHandler(),  # Log to console
+        rotating_handler          # Log to file with rotation
+    ]
+)
+
+logging.info("Logging initialized. Starting script...")
 
 # === FOLDER STRUCTURE ===
 CONFIG_DIR = "config"
