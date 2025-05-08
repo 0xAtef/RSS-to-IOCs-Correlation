@@ -56,6 +56,7 @@ def write_csv_feed(all_records, csv_path, cfg, log_file=None):
                 iocs = rec.get("iocs", {})
                 if not iocs:
                     logging.warning(f"No IOCs found for record: {rec.get('title', 'No Title')}")
+                    
                     continue
 
                 for typ, vals in iocs.items():

@@ -148,5 +148,21 @@ def process_feed(feed_url, seen, global_seen, session, cfg, ioc_patterns, whitel
 
 def context_tags(text, feed_url, cfg):
     """Generate context-based tags for the given text."""
-    # Implementation for context tags can remain unchanged
-    pass
+    tags = []
+
+    # Add fixed tags from the configuration
+    tags.extend(cfg.get("fixed_tags", []))
+
+    # Add feed-specific tags
+    for feed, feed_tags in cfg.get("feed_tags_by_feed", {}).items():
+        if feed in feed_url:
+            tags.extend(feed_tags)
+
+    # Add tags based on the content of the text
+    if "cybersecurity" in text.lower():
+        tags.append("Cybersecurity")
+    if "ransomware" in text.lower():
+        tags.append("Ransomware")
+
+    # Remove duplicates and return
+    return list(set(tags))
