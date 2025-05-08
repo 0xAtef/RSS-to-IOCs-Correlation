@@ -13,7 +13,8 @@ from datetime import datetime
 from utils.csv_writer import write_csv_feed
 from utils.feed_health import monitor_feed_health
 from utils.fetch_parse import process_feed
-from utils.ioc_utils import IOCUtils  # Consolidated IOC logic
+from utils.ioc_utils import IOCUtils 
+from utils.config_loader import ConfigLoader
 
 # === FOLDER STRUCTURE ===
 CONFIG_DIR = "config"
@@ -33,10 +34,9 @@ CSV_PATH = os.path.join(MISP_FEED_DIR, "feed.csv")
 
 # === LOAD CONFIGURATION ===
 try:
-    with open(CONFIG_PATH, "r", encoding="utf-8") as f:
-        cfg = json.load(f)
-except FileNotFoundError:
-    logging.critical(f"Configuration file not found at {CONFIG_PATH}. Exiting.")
+    cfg = ConfigLoader.load_config()
+except Exception as e:
+    logging.critical(f"Failed to load configuration: {e}")
     sys.exit(1)
 
 # === CONFIGURE LOGGING ===
