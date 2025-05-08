@@ -11,7 +11,16 @@ from datetime import datetime, timedelta
 from utils.ioc_utils import IOCUtils
 from utils.enrichment import enrich_with_ner
 from utils.translator import translate_to_english
+from utils.regex_patterns import IOC_PATTERNS
 
+def extract_iocs(text):
+    extracted = {}
+    for ioc_type, pattern in IOC_PATTERNS.items():
+        matches = pattern.findall(text)
+        if matches:
+            logging.info(f"Extracted {len(matches)} {ioc_type}(s): {matches}")
+        extracted[ioc_type] = matches
+    return extracted
 
 def fetch_feed(feed_url, session, cfg):
     """Fetch the RSS feed."""
@@ -124,18 +133,6 @@ def process_feed(feed_url, seen, global_seen, session, cfg, ioc_patterns, whitel
 
     logging.info(f"Finished processing feed: {feed_url}. Total entries processed: {len(out)}")
     return out
-
-
-def extract_iocs(text, ioc_patterns):
-    """Extract IOCs from the given text using regex patterns."""
-    extracted = {}
-    for ioc_type, pattern in ioc_patterns.items():
-        matches = re.findall(pattern, text)
-        if matches:
-            logging.info(f"Extracted {len(matches)} {ioc_type}(s): {matches}")
-        extracted[ioc_type] = matches
-    return extracted
-
 
 def context_tags(text, feed_url, cfg):
     """Generate context-based tags for the given text."""

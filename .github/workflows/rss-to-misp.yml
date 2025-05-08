@@ -1,9 +1,12 @@
 name: RSS to MISP Feed
 
 on:
-  schedule:
-    - cron: '0 * * * *'   # hourly
-  workflow_dispatch:
+  push:                # Trigger the workflow on push events
+    branches:
+      - main           # Specify the branch to monitor for push events (e.g., "main")
+  schedule:            # Trigger the workflow on a schedule
+    - cron: '0 * * * *'   # Hourly
+  workflow_dispatch:   # Allow manual triggering of the workflow
 
 jobs:
   build-feed:

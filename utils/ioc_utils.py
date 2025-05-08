@@ -1,8 +1,7 @@
 import re
-import json
-from urllib.parse import urlparse, unquote
 import logging
-
+from urllib.parse import urlparse, unquote
+from datetime import datetime
 
 class IOCUtils:
     """
@@ -56,7 +55,7 @@ class IOCUtils:
                 if whitelist_domain in ioc_domain or ioc_domain.endswith(f".{whitelist_domain}"):
                     return True
         except Exception as e:
-            logging.warning(f"Error parsing domain from IOC '{ioc_value}': {e}")
+            logging.warning(f"Error parsing domain from IOC '{ioc_value}' in feed_domain '{feed_domain}': {e}")
 
         # Substring match
         for whitelist_domain in combined_whitelist:
@@ -73,4 +72,4 @@ class IOCUtils:
         :param is_whitelisted: Whether the IOC is whitelisted or not.
         """
         status = "WHITELISTED" if is_whitelisted else "NOT WHITELISTED"
-        logging.info(f"Processed IOC: {ioc} - Status: {status}")
+        logging.info(f"[{datetime.utcnow().isoformat()}] Processed IOC: {ioc} - Status: {status}")
