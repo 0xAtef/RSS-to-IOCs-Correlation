@@ -103,7 +103,7 @@ def process_feed(feed_url, seen, global_seen, session, cfg, ioc_patterns, whitel
             continue
 
         # Extract IOCs
-        raw = extract_iocs(text, ioc_patterns)
+        raw = extract_iocs(text)
         filtered = {}
         for typ, vals in raw.items():
             keep = []
