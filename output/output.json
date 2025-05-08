@@ -1,7 +1,314 @@
 {
   "records": [
     {
-      "id": "8396ae7b-9832-4a8a-b962-8d91f115d2d5",
+      "id": "34e95af2-5953-4ef3-8355-d61124244b94",
+      "title": "LockBit ransomware gang hacked, victim negotiations exposed",
+      "source": "https://www.bleepingcomputer.com/news/security/lockbit-ransomware-gang-hacked-victim-negotiations-exposed/",
+      "published": "2025-05-08T00:06:32",
+      "feed": "https://www.bleepingcomputer.com/feed/",
+      "iocs": {
+        "ips": [],
+        "domains": [
+          "Theonlinesearch.com",
+          "Smartwebfinder.com",
+          "Toksearches.xyz",
+          "Trojan.vundo"
+        ],
+        "urls": [],
+        "emails": [],
+        "sha1": [],
+        "sha256": [],
+        "md5": [],
+        "cves": [
+          "CVE-2024-4577"
+        ]
+      },
+      "tags": [
+        "ioc:type:cve",
+        "context:cves",
+        "feed:source:www.bleepingcomputer.com",
+        "ioc:type:email",
+        "context:exploits",
+        "context:malware",
+        "rss_to_ioc_collector",
+        "context:threat_actor",
+        "ioc:type:ip",
+        "feed:published:2025-05-08",
+        "context:data_leak",
+        "context:phishing"
+      ],
+      "enrichment": {
+        "actors": [],
+        "malware": [
+          "black basta",
+          "conti"
+        ],
+        "mitre_techniques": [],
+        "cves": [
+          "CVE-2024-4577"
+        ],
+        "tools": [],
+        "campaigns": []
+      }
+    },
+    {
+      "id": "90c0cd8a-ac4e-41f9-a233-5ad937fd190f",
+      "title": "Hackers exploit OttoKit WordPress plugin flaw to add admin accounts",
+      "source": "https://www.bleepingcomputer.com/news/security/hackers-exploit-ottokit-wordpress-plugin-flaw-to-add-admin-accounts/",
+      "published": "2025-05-07T15:37:48",
+      "feed": "https://www.bleepingcomputer.com/feed/",
+      "iocs": {
+        "ips": [],
+        "domains": [],
+        "urls": [],
+        "emails": [],
+        "sha1": [],
+        "sha256": [],
+        "md5": [],
+        "cves": [
+          "CVE-2025-27007",
+          "CVE-2025-3102"
+        ]
+      },
+      "tags": [
+        "ioc:type:cve",
+        "context:cves",
+        "feed:source:www.bleepingcomputer.com",
+        "context:c2",
+        "context:exploits",
+        "context:malware",
+        "rss_to_ioc_collector",
+        "context:threat_actor",
+        "ioc:type:ip",
+        "ioc:type:email",
+        "context:data_leak",
+        "feed:published:2025-05-08",
+        "context:phishing"
+      ],
+      "enrichment": {
+        "actors": [],
+        "malware": [],
+        "mitre_techniques": [],
+        "cves": [
+          "CVE-2025-27007",
+          "CVE-2025-3102"
+        ],
+        "tools": [],
+        "campaigns": []
+      }
+    },
+    {
+      "id": "5a6d8211-dc2a-4d6a-a3ec-438023f327a6",
+      "title": "Play ransomware exploited Windows logging flaw in zero-day attacks",
+      "source": "https://www.bleepingcomputer.com/news/security/play-ransomware-exploited-windows-logging-flaw-in-zero-day-attacks/",
+      "published": "2025-05-07T14:45:19",
+      "feed": "https://www.bleepingcomputer.com/feed/",
+      "iocs": {
+        "ips": [],
+        "domains": [],
+        "urls": [],
+        "emails": [],
+        "sha1": [],
+        "sha256": [],
+        "md5": [],
+        "cves": [
+          "CVE-2025-29824"
+        ]
+      },
+      "tags": [
+        "ioc:type:cve",
+        "context:cves",
+        "feed:source:www.bleepingcomputer.com",
+        "ioc:type:email",
+        "context:exploits",
+        "context:malware",
+        "rss_to_ioc_collector",
+        "feed:published:2025-05-08",
+        "ioc:type:ip",
+        "context:data_leak",
+        "context:phishing"
+      ],
+      "enrichment": {
+        "actors": [],
+        "malware": [],
+        "mitre_techniques": [],
+        "cves": [
+          "CVE-2025-29824"
+        ],
+        "tools": [],
+        "campaigns": []
+      }
+    },
+    {
+      "id": "d0620801-75ed-4f6e-b78e-01c7c913e668",
+      "title": "NSO Group fined $167M for spyware attacks on 1,400 WhatsApp users",
+      "source": "https://www.bleepingcomputer.com/news/legal/nso-group-fined-167m-for-spyware-attacks-on-1-400-whatsapp-users/",
+      "published": "2025-05-07T14:09:33",
+      "feed": "https://www.bleepingcomputer.com/feed/",
+      "iocs": {
+        "ips": [],
+        "domains": [],
+        "urls": [],
+        "emails": [],
+        "sha1": [],
+        "sha256": [],
+        "md5": [],
+        "cves": [
+          "CVE-2019-3568"
+        ]
+      },
+      "tags": [
+        "ioc:type:cve",
+        "context:cves",
+        "feed:source:www.bleepingcomputer.com",
+        "ioc:type:email",
+        "context:exploits",
+        "context:malware",
+        "rss_to_ioc_collector",
+        "feed:published:2025-05-08",
+        "ioc:type:ip",
+        "context:data_leak",
+        "context:phishing"
+      ],
+      "enrichment": {
+        "actors": [],
+        "malware": [],
+        "mitre_techniques": [],
+        "cves": [
+          "CVE-2019-3568"
+        ],
+        "tools": [],
+        "campaigns": []
+      }
+    },
+    {
+      "id": "6a87fbb8-a2ee-479c-a95e-8257281f504f",
+      "title": "Police takes down six DDoS-for-hire services, arrests admins",
+      "source": "https://www.bleepingcomputer.com/news/security/police-takes-down-six-ddos-for-hire-services-arrests-admins/",
+      "published": "2025-05-07T11:23:37",
+      "feed": "https://www.bleepingcomputer.com/feed/",
+      "iocs": {
+        "ips": [],
+        "domains": [
+          "Dstat.cc"
+        ],
+        "urls": [],
+        "emails": [],
+        "sha1": [],
+        "sha256": [],
+        "md5": [],
+        "cves": []
+      },
+      "tags": [
+        "feed:source:www.bleepingcomputer.com",
+        "ioc:type:email",
+        "context:malware",
+        "rss_to_ioc_collector",
+        "feed:published:2025-05-08",
+        "ioc:type:ip",
+        "context:ddos",
+        "context:phishing",
+        "ioc:type:domain"
+      ],
+      "enrichment": {
+        "actors": [],
+        "malware": [],
+        "mitre_techniques": [],
+        "cves": [],
+        "tools": [],
+        "campaigns": []
+      }
+    },
+    {
+      "id": "abac2c17-d2ae-4d12-87a8-b9b855a2e5b6",
+      "title": "Microsoft: April updates cause Windows Server auth issues",
+      "source": "https://www.bleepingcomputer.com/news/microsoft/microsoft-april-updates-cause-windows-server-auth-issues/",
+      "published": "2025-05-07T09:55:25",
+      "feed": "https://www.bleepingcomputer.com/feed/",
+      "iocs": {
+        "ips": [],
+        "domains": [],
+        "urls": [],
+        "emails": [],
+        "sha1": [],
+        "sha256": [],
+        "md5": [],
+        "cves": [
+          "CVE-2025-26647"
+        ]
+      },
+      "tags": [
+        "context:iot",
+        "ioc:type:cve",
+        "context:cves",
+        "feed:source:www.bleepingcomputer.com",
+        "ioc:type:email",
+        "context:exploits",
+        "context:malware",
+        "rss_to_ioc_collector",
+        "feed:published:2025-05-08",
+        "ioc:type:ip",
+        "context:phishing",
+        "ioc:type:domain"
+      ],
+      "enrichment": {
+        "actors": [],
+        "malware": [],
+        "mitre_techniques": [],
+        "cves": [
+          "CVE-2025-26647"
+        ],
+        "tools": [],
+        "campaigns": []
+      }
+    },
+    {
+      "id": "86d70f97-9f76-4dde-ad33-136ce6e8e6ea",
+      "title": "Apache Parquet exploit tool detect servers vulnerable to critical flaw",
+      "source": "https://www.bleepingcomputer.com/news/security/apache-parquet-exploit-tool-detect-servers-vulnerable-to-critical-flaw/",
+      "published": "2025-05-06T18:16:00",
+      "feed": "https://www.bleepingcomputer.com/feed/",
+      "iocs": {
+        "ips": [],
+        "domains": [
+          "javax.swing.JEditorKit",
+          "org.apache.parquet.avro"
+        ],
+        "urls": [],
+        "emails": [],
+        "sha1": [],
+        "sha256": [],
+        "md5": [],
+        "cves": [
+          "CVE-2025-30065"
+        ]
+      },
+      "tags": [
+        "ioc:type:cve",
+        "context:cves",
+        "feed:source:www.bleepingcomputer.com",
+        "ioc:type:email",
+        "context:exploits",
+        "context:malware",
+        "rss_to_ioc_collector",
+        "feed:published:2025-05-08",
+        "ioc:type:ip",
+        "context:data_leak",
+        "context:phishing"
+      ],
+      "enrichment": {
+        "actors": [],
+        "malware": [],
+        "mitre_techniques": [],
+        "cves": [
+          "CVE-2025-30065"
+        ],
+        "tools": [],
+        "campaigns": []
+      }
+    },
+    {
+      "id": "025c895e-73a3-41a6-bb48-86aabf939cff",
       "title": "Pakistani Firm Shipped Fentanyl Analogs, Scams to US",
       "source": "https://krebsonsecurity.com/2025/05/pakistani-firm-shipped-fentanyl-analogs-scams-to-us/",
       "published": "2025-05-07T22:22:48",
@@ -23,15 +330,15 @@
       "tags": [
         "context:iot",
         "feed:source:krebsonsecurity.com",
-        "ioc:type:domain",
-        "context:phishing",
-        "rss_to_ioc_collector",
         "ioc:type:email",
-        "context:data_leak",
-        "context:ddos",
         "context:malware",
+        "rss_to_ioc_collector",
         "feed:published:2025-05-08",
-        "ioc:type:ip"
+        "ioc:type:ip",
+        "context:ddos",
+        "context:data_leak",
+        "context:phishing",
+        "ioc:type:domain"
       ],
       "enrichment": {
         "actors": [],
@@ -43,7 +350,7 @@
       }
     },
     {
-      "id": "015bf345-9edf-41a7-9d5f-6fb95e12486f",
+      "id": "4a9b1eb7-284a-4409-870a-c6b7d1aac707",
       "title": "xAI Dev Leaks API Key for Private SpaceX, Tesla LLMs",
       "source": "https://krebsonsecurity.com/2025/05/xai-dev-leaks-api-key-for-private-spacex-tesla-llms/",
       "published": "2025-05-02T00:52:00",
@@ -63,16 +370,16 @@
       },
       "tags": [
         "context:iot",
-        "context:threat_actor",
         "feed:source:krebsonsecurity.com",
-        "ioc:type:domain",
-        "rss_to_ioc_collector",
         "ioc:type:email",
-        "context:data_leak",
-        "context:ddos",
+        "context:threat_actor",
         "context:malware",
+        "rss_to_ioc_collector",
         "feed:published:2025-05-08",
-        "ioc:type:ip"
+        "ioc:type:ip",
+        "context:ddos",
+        "context:data_leak",
+        "ioc:type:domain"
       ],
       "enrichment": {
         "actors": [],
@@ -84,7 +391,7 @@
       }
     },
     {
-      "id": "b44b1a6c-7254-484f-815b-8a3091dc313d",
+      "id": "8a67bdb3-c6c1-4ea6-8cf1-a05a3a6c6315",
       "title": "DOGE Worker\u2019s Code Supports NLRB Whistleblower",
       "source": "https://krebsonsecurity.com/2025/04/doge-workers-code-supports-nlrb-whistleblower/",
       "published": "2025-04-23T20:45:04",
@@ -102,20 +409,20 @@
         "cves": []
       },
       "tags": [
-        "context:exploits",
         "context:iot",
-        "context:threat_actor",
+        "ioc:type:cve",
         "context:cves",
         "feed:source:krebsonsecurity.com",
         "context:c2",
-        "rss_to_ioc_collector",
-        "ioc:type:email",
-        "context:data_leak",
+        "context:exploits",
         "context:malware",
+        "rss_to_ioc_collector",
+        "context:threat_actor",
+        "ioc:type:ip",
         "context:ddos",
-        "ioc:type:cve",
-        "feed:published:2025-05-08",
-        "ioc:type:ip"
+        "context:data_leak",
+        "ioc:type:email",
+        "feed:published:2025-05-08"
       ],
       "enrichment": {
         "actors": [],
@@ -127,7 +434,7 @@
       }
     },
     {
-      "id": "1741cd06-be97-4fc6-98f3-9addf8f27b48",
+      "id": "9785d559-c240-4bf3-b485-e74df6883b58",
       "title": "Whistleblower: DOGE Siphoned NLRB Case Data",
       "source": "https://krebsonsecurity.com/2025/04/whistleblower-doge-siphoned-nlrb-case-data/",
       "published": "2025-04-22T01:48:27",
@@ -146,18 +453,18 @@
         "cves": []
       },
       "tags": [
-        "context:exploits",
         "context:iot",
-        "context:threat_actor",
         "feed:source:krebsonsecurity.com",
         "context:c2",
-        "rss_to_ioc_collector",
-        "ioc:type:email",
-        "context:data_leak",
+        "context:exploits",
         "context:malware",
+        "rss_to_ioc_collector",
+        "context:threat_actor",
+        "ioc:type:ip",
         "context:ddos",
-        "feed:published:2025-05-08",
-        "ioc:type:ip"
+        "context:data_leak",
+        "ioc:type:email",
+        "feed:published:2025-05-08"
       ],
       "enrichment": {
         "actors": [],
@@ -169,7 +476,7 @@
       }
     },
     {
-      "id": "81616740-19c8-47b4-8489-242d9f1dad51",
+      "id": "9980c6f8-3c16-4934-bcaf-ca07d840f721",
       "title": "Cybersecurity Trends: Impact of Tariffs and Data Sovereignty",
       "source": "https://www.bankinfosecurity.com/cybersecurity-trends-impact-tariffs-data-sovereignty-a-28244",
       "published": "2025-05-03T04:00:00",
@@ -192,17 +499,17 @@
         "cves": []
       },
       "tags": [
-        "context:exploits",
         "context:iot",
-        "context:threat_actor",
         "feed:source:newsroom.trendmicro.com",
-        "context:phishing",
-        "rss_to_ioc_collector",
         "ioc:type:email",
-        "context:ddos",
+        "context:exploits",
         "context:malware",
+        "rss_to_ioc_collector",
+        "context:threat_actor",
+        "ioc:type:ip",
+        "context:ddos",
         "feed:published:2025-05-08",
-        "ioc:type:ip"
+        "context:phishing"
       ],
       "enrichment": {
         "actors": [],
@@ -216,7 +523,7 @@
       }
     },
     {
-      "id": "bab78d6a-e089-427a-888c-04b6c84fbac6",
+      "id": "019879d1-4745-4b10-bf93-3771f0ddf8ad",
       "title": "The Wiretap: The Worrying Rise Of \u2018Violence-As-A-Service\u2019",
       "source": "https://www.forbes.com/sites/thomasbrewster/2025/04/29/the-wiretap-the-worrying-rise-of-violence-as-a-service/",
       "published": "2025-04-29T04:00:00",
@@ -237,14 +544,14 @@
         "cves": []
       },
       "tags": [
-        "context:exploits",
         "context:iot",
-        "ioc:type:domain",
         "feed:source:newsroom.trendmicro.com",
-        "rss_to_ioc_collector",
+        "context:exploits",
         "context:malware",
+        "rss_to_ioc_collector",
         "feed:published:2025-05-08",
-        "ioc:type:ip"
+        "ioc:type:ip",
+        "ioc:type:domain"
       ],
       "enrichment": {
         "actors": [
@@ -258,7 +565,7 @@
       }
     },
     {
-      "id": "5dfa93be-05ab-4db2-a5cf-61878f82f9ed",
+      "id": "e440866c-ad2e-4f68-9056-b59fcd8cb11f",
       "title": "Example of \"Modular\" Malware, (Wed, May 7th)",
       "source": "https://isc.sans.edu/diary/rss/31928",
       "published": "2025-05-07T05:55:35",
@@ -288,13 +595,13 @@
         "cves": []
       },
       "tags": [
-        "ioc:type:sha256",
-        "context:c2",
-        "rss_to_ioc_collector",
-        "ioc:type:url",
-        "context:malware",
         "feed:source:isc.sans.edu",
-        "feed:published:2025-05-08"
+        "context:c2",
+        "context:malware",
+        "rss_to_ioc_collector",
+        "feed:published:2025-05-08",
+        "ioc:type:sha256",
+        "ioc:type:url"
       ],
       "enrichment": {
         "actors": [],
@@ -306,7 +613,7 @@
       }
     },
     {
-      "id": "ef40e24d-6a93-41ef-890e-f04ccac39641",
+      "id": "267d9dde-94a7-4a0b-8073-82ad73ccca2f",
       "title": "Python InfoStealer with Embedded Phishing Webserver, (Tue, May 6th)",
       "source": "https://isc.sans.edu/diary/rss/31924",
       "published": "2025-05-06T06:02:58",
@@ -340,15 +647,15 @@
         "cves": []
       },
       "tags": [
-        "ioc:type:sha256",
-        "context:threat_actor",
-        "context:phishing",
-        "rss_to_ioc_collector",
-        "ioc:type:email",
-        "context:malware",
         "feed:source:isc.sans.edu",
+        "ioc:type:email",
+        "context:threat_actor",
+        "context:malware",
+        "rss_to_ioc_collector",
         "feed:published:2025-05-08",
-        "ioc:type:ip"
+        "ioc:type:ip",
+        "ioc:type:sha256",
+        "context:phishing"
       ],
       "enrichment": {
         "actors": [],
@@ -360,7 +667,7 @@
       }
     },
     {
-      "id": "766a40d0-e2de-496e-855a-53cdcd19c3ef",
+      "id": "430faa6c-c2b8-487e-b7ea-ad3b38e16110",
       "title": "\"Mirai\" Now Exploits Samsung MagicINFO CMS (CVE-2024-7399), (Mon, May 5th)",
       "source": "https://isc.sans.edu/diary/rss/31920",
       "published": "2025-05-06T02:10:41",
@@ -404,17 +711,17 @@
         "cves": []
       },
       "tags": [
-        "context:exploits",
         "context:iot",
-        "context:cves",
-        "context:c2",
-        "rss_to_ioc_collector",
-        "ioc:type:url",
+        "ioc:type:cve",
         "feed:source:isc.sans.edu",
         "ioc:type:filename",
-        "ioc:type:cve",
+        "context:cves",
+        "context:c2",
+        "context:exploits",
         "feed:published:2025-05-08",
-        "ioc:type:ip"
+        "rss_to_ioc_collector",
+        "ioc:type:ip",
+        "ioc:type:url"
       ],
       "enrichment": {
         "actors": [],
@@ -428,7 +735,7 @@
       }
     },
     {
-      "id": "67558450-b689-4d8c-bf95-2e8c833eaadd",
+      "id": "9517de28-7761-4505-9c20-fc5dac9b531f",
       "title": "Steganography Challenge, (Sat, May 3rd)",
       "source": "https://isc.sans.edu/diary/rss/31910",
       "published": "2025-05-03T07:23:30",
@@ -447,9 +754,9 @@
         "cves": []
       },
       "tags": [
-        "rss_to_ioc_collector",
+        "feed:source:isc.sans.edu",
         "feed:published:2025-05-08",
-        "feed:source:isc.sans.edu"
+        "rss_to_ioc_collector"
       ],
       "enrichment": {
         "actors": [],
@@ -461,7 +768,7 @@
       }
     },
     {
-      "id": "899f990f-1e15-4665-9102-e4a24ad3e1bb",
+      "id": "f4857d64-fcd7-4f5a-94b7-676dc1906d06",
       "title": "Steganography Analysis With pngdump.py: Bitstreams, (Thu, May 1st)",
       "source": "https://isc.sans.edu/diary/rss/31904",
       "published": "2025-05-01T07:00:05",
@@ -487,9 +794,9 @@
         "cves": []
       },
       "tags": [
-        "rss_to_ioc_collector",
-        "feed:published:2025-05-08",
         "feed:source:isc.sans.edu",
+        "feed:published:2025-05-08",
+        "rss_to_ioc_collector",
         "ioc:type:ip"
       ],
       "enrichment": {
@@ -502,401 +809,7 @@
       }
     },
     {
-      "id": "2d3a46b7-36cd-4bd7-ae8c-1ca30395ba29",
-      "title": "Daily Dose of Dark Web Informer - 7th of May 2025",
-      "source": "https://darkwebinformer.com/daily-dose-of-dark-web-informer-7th-of-may-2025/",
-      "published": "2025-05-07T23:24:29",
-      "feed": "https://darkwebinformer.com/rss/",
-      "iocs": {
-        "ips": [],
-        "domains": [],
-        "urls": [
-          "http://lockbitapyx2kr5b7ma7qn6ziwqgbrij2czhcbojuxmgnwpkgv2yx2yd[.]onion\ud83d\udea8\ud83d\udea8LockBit"
-        ],
-        "emails": [],
-        "sha1": [],
-        "sha256": [],
-        "md5": [],
-        "cves": []
-      },
-      "tags": [
-        "context:exploits",
-        "context:threat_actor",
-        "ioc:type:domain",
-        "rss_to_ioc_collector",
-        "ioc:type:url",
-        "context:data_leak",
-        "ioc:type:email",
-        "feed:source:darkwebinformer.com",
-        "context:ddos",
-        "context:malware",
-        "feed:published:2025-05-08",
-        "ioc:type:ip"
-      ],
-      "enrichment": {
-        "actors": [],
-        "malware": [],
-        "mitre_techniques": [],
-        "cves": [],
-        "tools": [],
-        "campaigns": []
-      }
-    },
-    {
-      "id": "5381f275-7e06-49d0-b076-5b68ba372283",
-      "title": "Ransomware Attack Update for the 7th of May 2025",
-      "source": "https://darkwebinformer.com/ransomware-attack-update-for-the-7th-of-may-2025/",
-      "published": "2025-05-07T22:39:01",
-      "feed": "https://darkwebinformer.com/rss/",
-      "iocs": {
-        "ips": [],
-        "domains": [
-          "gmanetwork.com"
-        ],
-        "urls": [],
-        "emails": [],
-        "sha1": [],
-        "sha256": [],
-        "md5": [],
-        "cves": []
-      },
-      "tags": [
-        "rss_to_ioc_collector",
-        "feed:source:darkwebinformer.com",
-        "ioc:type:url",
-        "context:data_leak",
-        "ioc:type:email",
-        "context:malware",
-        "feed:published:2025-05-08",
-        "ioc:type:ip"
-      ],
-      "enrichment": {
-        "actors": [],
-        "malware": [],
-        "mitre_techniques": [],
-        "cves": [],
-        "tools": [],
-        "campaigns": []
-      }
-    },
-    {
-      "id": "b9cd71cf-69d2-4f82-b469-651c6eb55f98",
-      "title": "SilverInstaEye: A Comprehensive OSINT Tool for Instagram",
-      "source": "https://darkwebinformer.com/silverinstaeye-a-comprehensive-osint-tool-for-instagram/",
-      "published": "2025-05-07T19:28:33",
-      "feed": "https://darkwebinformer.com/rss/",
-      "iocs": {
-        "ips": [],
-        "domains": [
-          "profile.Installation",
-          "SilverInstaEye.gitcd",
-          "requirements.txtRun",
-          "silverinstaeye.pyYoutube",
-          "session.json",
-          "secure.Modify",
-          "efficiency.DisclaimerThis",
-          "responsibly.AuthorSilverXTelegram"
-        ],
-        "urls": [],
-        "emails": [],
-        "sha1": [],
-        "sha256": [],
-        "md5": [],
-        "cves": []
-      },
-      "tags": [
-        "rss_to_ioc_collector",
-        "feed:source:darkwebinformer.com",
-        "context:data_leak",
-        "ioc:type:email",
-        "context:malware",
-        "feed:published:2025-05-08",
-        "ioc:type:ip"
-      ],
-      "enrichment": {
-        "actors": [],
-        "malware": [],
-        "mitre_techniques": [],
-        "cves": [],
-        "tools": [],
-        "campaigns": []
-      }
-    },
-    {
-      "id": "77c39eb6-5441-4dce-b236-f7548707b369",
-      "title": "Daily Dose of Dark Web Informer - 6th of May 2025",
-      "source": "https://darkwebinformer.com/daily-dose-of-dark-web-informer-6th-of-may-2025/",
-      "published": "2025-05-06T23:25:34",
-      "feed": "https://darkwebinformer.com/rss/",
-      "iocs": {
-        "ips": [],
-        "domains": [],
-        "urls": [],
-        "emails": [],
-        "sha1": [],
-        "sha256": [],
-        "md5": [],
-        "cves": [
-          "CVE-2023-20198"
-        ]
-      },
-      "tags": [
-        "context:exploits",
-        "context:threat_actor",
-        "context:cves",
-        "context:phishing",
-        "rss_to_ioc_collector",
-        "ioc:type:url",
-        "context:data_leak",
-        "ioc:type:email",
-        "feed:source:darkwebinformer.com",
-        "context:malware",
-        "context:ddos",
-        "ioc:type:cve",
-        "feed:published:2025-05-08",
-        "ioc:type:ip"
-      ],
-      "enrichment": {
-        "actors": [],
-        "malware": [],
-        "mitre_techniques": [],
-        "cves": [
-          "CVE-2023-20198",
-          "CVE-2025-4052"
-        ],
-        "tools": [],
-        "campaigns": []
-      }
-    },
-    {
-      "id": "bacf54e9-72a2-4bea-9cc3-3fd9c2b085e2",
-      "title": "COLDRIVER Using New Malware To Steal Documents From Western Targets and NGOs",
-      "source": "https://cloud.google.com/blog/topics/threat-intelligence/coldriver-steal-documents-western-targets-ngos/",
-      "published": "2025-05-07T14:00:00",
-      "feed": "https://feeds.feedburner.com/threatintelligence/pvexyqv7v0v",
-      "iocs": {
-        "ips": [],
-        "domains": [
-          "most.Learn",
-          "sys.argv",
-          "decode.py",
-          "sys.exit",
-          "f.read",
-          "data.replace",
-          "f.write",
-          "ws.ExpandEnvironmentStrings",
-          "fso.GetDrive"
-        ],
-        "urls": [],
-        "emails": [],
-        "sha1": [],
-        "sha256": [
-          "28a0596b9c62b7b7aca9cac2a07b067109f27d327581a60e8cb4fab92f8f4fa9",
-          "13f7599c94b9d4b028ce02397717a1282a46f07b9d3e2f8f2b3213fa8884b029",
-          "4c7accba35edd646584bb5a40ab78f963de45e5fc816e62022cd7ab1b01dae9c",
-          "6b85d707c23d68f9518e757cc97adb20adc8accb33d0d68faf1d8d56d7840816",
-          "3233668d2e4a80b17e6357177b53539df659e55e06ba49777d0d5171f27565dd",
-          "6bc411d562456079a8f1e38f3473c33ade73b08c7518861699e9863540b64f9a",
-          "b55cdce773bc77ee46b503dbd9430828cc0f518b94289fbfa70b5fbb02ab1847",
-          "02ce477a07681ee1671c7164c9cc847b01c2e1cd50e709f7e861eaab89c69b6f",
-          "8af28bb7e8e2f663d4b797bf3ddbee7f0a33f637a33df9b31fbb4c1ce71b2fee"
-        ],
-        "md5": [],
-        "cves": []
-      },
-      "tags": [
-        "context:exploits",
-        "ioc:type:md5",
-        "context:threat_actor",
-        "feed:source:feeds.feedburner.com",
-        "ioc:type:domain",
-        "context:phishing",
-        "rss_to_ioc_collector",
-        "ioc:type:email",
-        "context:malware",
-        "feed:published:2025-05-08",
-        "ioc:type:ip"
-      ],
-      "enrichment": {
-        "actors": [
-          "coldriver",
-          "star blizzard"
-        ],
-        "malware": [],
-        "mitre_techniques": [],
-        "cves": [],
-        "tools": [],
-        "campaigns": []
-      }
-    },
-    {
-      "id": "4e537863-6277-45c4-971e-3eb900cdab3a",
-      "title": "Defending Against UNC3944: Cybercrime Hardening Guidance from the Frontlines",
-      "source": "https://cloud.google.com/blog/topics/threat-intelligence/unc3944-proactive-hardening-recommendations/",
-      "published": "2025-05-06T14:00:00",
-      "feed": "https://feeds.feedburner.com/threatintelligence/pvexyqv7v0v",
-      "iocs": {
-        "ips": [],
-        "domains": [
-          "incidents.Learn",
-          "activity.Identity",
-          "helpdesk.com",
-          "SSO.com",
-          "principal.user.userid",
-          "principal.user",
-          "about.user"
-        ],
-        "urls": [],
-        "emails": [],
-        "sha1": [],
-        "sha256": [],
-        "md5": [],
-        "cves": []
-      },
-      "tags": [
-        "context:exploits",
-        "context:threat_actor",
-        "feed:source:feeds.feedburner.com",
-        "ioc:type:domain",
-        "context:phishing",
-        "rss_to_ioc_collector",
-        "ioc:type:email",
-        "context:data_leak",
-        "context:malware",
-        "feed:published:2025-05-08",
-        "ioc:type:ip"
-      ],
-      "enrichment": {
-        "actors": [
-          "scattered spider"
-        ],
-        "malware": [
-          "ransomhub"
-        ],
-        "mitre_techniques": [],
-        "cves": [],
-        "tools": [],
-        "campaigns": []
-      }
-    },
-    {
-      "id": "f698003a-50a8-4a5b-b90e-d95ac716ac9c",
-      "title": "Hello 0-Days, My Old Friend: A 2024 Zero-Day Exploitation Analysis",
-      "source": "https://cloud.google.com/blog/topics/threat-intelligence/2024-zero-day-trends/",
-      "published": "2025-04-29T05:00:00",
-      "feed": "https://feeds.feedburner.com/threatintelligence/pvexyqv7v0v",
-      "iocs": {
-        "ips": [],
-        "domains": [
-          "exploits.The",
-          "post.Download",
-          "2021.Figure",
-          "2023.Figure",
-          "index.js",
-          "PocLowIL.pdb",
-          "ubpm.dll",
-          "WPTaskScheduler.dll",
-          "SD.Figure",
-          "pursuits.Posted"
-        ],
-        "urls": [],
-        "emails": [],
-        "sha1": [],
-        "sha256": [],
-        "md5": [],
-        "cves": [
-          "CVE-2024-32896",
-          "CVE-2024-29745",
-          "CVE-2024-29748",
-          "CVE-2023-46805",
-          "CVE-2024-21887",
-          "CVE-2024-38178",
-          "CVE-2024-21338",
-          "CVE-2024-55956",
-          "CVE-2024-9680",
-          "CVE-2024-49039",
-          "CVE-2024-44308",
-          "CVE-2024-44309",
-          "CVE-2023-36884"
-        ]
-      },
-      "tags": [
-        "context:exploits",
-        "context:threat_actor",
-        "context:cves",
-        "feed:source:feeds.feedburner.com",
-        "context:c2",
-        "ioc:type:domain",
-        "rss_to_ioc_collector",
-        "context:malware",
-        "ioc:type:cve",
-        "feed:published:2025-05-08",
-        "ioc:type:ip"
-      ],
-      "enrichment": {
-        "actors": [],
-        "malware": [],
-        "mitre_techniques": [],
-        "cves": [
-          "CVE-2023-36884",
-          "CVE-2023-46805",
-          "CVE-2024-21338",
-          "CVE-2024-21887",
-          "CVE-2024-29745",
-          "CVE-2024-29748",
-          "CVE-2024-32896",
-          "CVE-2024-38178",
-          "CVE-2024-44308",
-          "CVE-2024-44309",
-          "CVE-2024-49039",
-          "CVE-2024-53104",
-          "CVE-2024-55956",
-          "CVE-2024-9680"
-        ],
-        "tools": [],
-        "campaigns": []
-      }
-    },
-    {
-      "id": "bc3a9151-cfc0-44c7-9da3-98ac150a2e25",
-      "title": "M-Trends 2025: Data, Insights, and Recommendations From the Frontlines",
-      "source": "https://cloud.google.com/blog/topics/threat-intelligence/m-trends-2025/",
-      "published": "2025-04-23T14:00:00",
-      "feed": "https://feeds.feedburner.com/threatintelligence/pvexyqv7v0v",
-      "iocs": {
-        "ips": [],
-        "domains": [
-          "organizations.Read",
-          "created.Posted"
-        ],
-        "urls": [],
-        "emails": [],
-        "sha1": [],
-        "sha256": [],
-        "md5": [],
-        "cves": []
-      },
-      "tags": [
-        "context:exploits",
-        "context:threat_actor",
-        "feed:source:feeds.feedburner.com",
-        "context:c2",
-        "rss_to_ioc_collector",
-        "context:malware",
-        "feed:published:2025-05-08",
-        "ioc:type:ip"
-      ],
-      "enrichment": {
-        "actors": [],
-        "malware": [],
-        "mitre_techniques": [],
-        "cves": [],
-        "tools": [],
-        "campaigns": []
-      }
-    },
-    {
-      "id": "d28c3a3a-185f-4b5a-8e12-85ed4cfa77a9",
+      "id": "8d00c4bc-5610-4ed3-8a34-4e729a4e5a51",
       "title": "Russian Hackers Using ClickFix Fake CAPTCHA to Deploy New LOSTKEYS Malware",
       "source": "https://thehackernews.com/2025/05/russian-hackers-using-clickfix-fake.html",
       "published": "2025-05-08T06:57:00",
@@ -914,21 +827,21 @@
         ]
       },
       "tags": [
-        "context:exploits",
         "context:iot",
-        "context:threat_actor",
-        "context:cves",
-        "context:supply_chain",
-        "feed:source:feeds.feedburner.com",
-        "context:phishing",
-        "rss_to_ioc_collector",
-        "ioc:type:email",
-        "context:data_leak",
-        "context:malware",
-        "context:ddos",
         "ioc:type:cve",
+        "context:cves",
+        "ioc:type:email",
+        "context:exploits",
+        "context:malware",
+        "rss_to_ioc_collector",
+        "context:threat_actor",
+        "ioc:type:ip",
+        "context:ddos",
+        "context:data_leak",
+        "feed:source:feeds.feedburner.com",
         "feed:published:2025-05-08",
-        "ioc:type:ip"
+        "context:supply_chain",
+        "context:phishing"
       ],
       "enrichment": {
         "actors": [
@@ -945,7 +858,7 @@
       }
     },
     {
-      "id": "50994706-5dae-4cdd-95a5-d89038985517",
+      "id": "4dd29393-c97c-4e27-b1f0-247c520dcc7f",
       "title": "Cisco Patches CVE-2025-20188 (10.0 CVSS) in IOS XE That Enables Root Exploits via JWT",
       "source": "https://thehackernews.com/2025/05/cisco-patches-cve-2025-20188-100-cvss.html",
       "published": "2025-05-08T04:57:00",
@@ -963,20 +876,20 @@
         ]
       },
       "tags": [
-        "context:exploits",
         "context:iot",
-        "context:cves",
-        "context:supply_chain",
-        "feed:source:feeds.feedburner.com",
-        "context:phishing",
-        "rss_to_ioc_collector",
-        "ioc:type:email",
-        "context:data_leak",
-        "context:malware",
-        "context:ddos",
         "ioc:type:cve",
+        "context:cves",
+        "ioc:type:email",
+        "context:exploits",
+        "context:malware",
+        "rss_to_ioc_collector",
+        "feed:source:feeds.feedburner.com",
+        "ioc:type:ip",
+        "context:ddos",
+        "context:data_leak",
         "feed:published:2025-05-08",
-        "ioc:type:ip"
+        "context:supply_chain",
+        "context:phishing"
       ],
       "enrichment": {
         "actors": [],
@@ -991,7 +904,7 @@
       }
     },
     {
-      "id": "02a4bbc9-6fb3-4f09-8440-049e9cbc33fb",
+      "id": "beb30e3f-5ba0-4931-981f-96825c79e408",
       "title": "Europol Shuts Down Six DDoS-for-Hire Services Used in Global Attacks",
       "source": "https://thehackernews.com/2025/05/europol-shuts-down-six-ddos-for-hire.html",
       "published": "2025-05-07T13:54:00",
@@ -1009,22 +922,22 @@
         "cves": []
       },
       "tags": [
-        "context:exploits",
         "context:iot",
+        "ioc:type:cve",
         "context:cves",
-        "context:supply_chain",
-        "feed:source:feeds.feedburner.com",
         "context:c2",
-        "ioc:type:domain",
-        "context:phishing",
+        "context:exploits",
+        "context:malware",
         "rss_to_ioc_collector",
         "ioc:type:email",
-        "context:data_leak",
-        "context:malware",
+        "ioc:type:ip",
         "context:ddos",
-        "ioc:type:cve",
+        "context:data_leak",
+        "feed:source:feeds.feedburner.com",
         "feed:published:2025-05-08",
-        "ioc:type:ip"
+        "context:supply_chain",
+        "context:phishing",
+        "ioc:type:domain"
       ],
       "enrichment": {
         "actors": [],
@@ -1038,7 +951,7 @@
       }
     },
     {
-      "id": "3fbe1273-6195-459c-b342-80f47da6bc81",
+      "id": "14805aa3-1f14-47f6-9147-cbc5329bbe07",
       "title": "OttoKit WordPress Plugin with 100K+ Installs Hit by Exploits Targeting Multiple Flaws",
       "source": "https://thehackernews.com/2025/05/ottokit-wordpress-plugin-with-100k.html",
       "published": "2025-05-07T13:44:00",
@@ -1061,27 +974,24 @@
         "sha1": [],
         "sha256": [],
         "md5": [],
-        "cves": [
-          "CVE-2025-27007",
-          "CVE-2025-3102"
-        ]
+        "cves": []
       },
       "tags": [
-        "context:exploits",
         "context:iot",
-        "context:threat_actor",
-        "context:cves",
-        "context:supply_chain",
-        "feed:source:feeds.feedburner.com",
-        "context:phishing",
-        "rss_to_ioc_collector",
-        "ioc:type:email",
-        "context:data_leak",
-        "context:malware",
-        "context:ddos",
         "ioc:type:cve",
+        "context:cves",
+        "ioc:type:email",
+        "context:exploits",
+        "context:malware",
+        "rss_to_ioc_collector",
+        "context:threat_actor",
+        "ioc:type:ip",
+        "context:ddos",
+        "context:data_leak",
+        "feed:source:feeds.feedburner.com",
         "feed:published:2025-05-08",
-        "ioc:type:ip"
+        "context:supply_chain",
+        "context:phishing"
       ],
       "enrichment": {
         "actors": [],
@@ -1097,7 +1007,7 @@
       }
     },
     {
-      "id": "9a46eec2-f1cc-4ad0-953b-2dc6257f7273",
+      "id": "023cdfb2-834f-41f8-92ab-ec4b4f39ae00",
       "title": "SysAid Patches 4 Critical Flaws Enabling Pre-Auth RCE in On-Premise Version",
       "source": "https://thehackernews.com/2025/05/sysaid-patches-4-critical-flaws.html",
       "published": "2025-05-07T11:31:00",
@@ -1121,20 +1031,20 @@
         ]
       },
       "tags": [
-        "context:exploits",
         "context:iot",
-        "context:cves",
-        "context:supply_chain",
-        "feed:source:feeds.feedburner.com",
-        "context:phishing",
-        "rss_to_ioc_collector",
-        "ioc:type:email",
-        "context:data_leak",
-        "context:malware",
-        "context:ddos",
         "ioc:type:cve",
+        "context:cves",
+        "ioc:type:email",
+        "context:exploits",
+        "context:malware",
+        "rss_to_ioc_collector",
+        "feed:source:feeds.feedburner.com",
+        "ioc:type:ip",
+        "context:ddos",
+        "context:data_leak",
         "feed:published:2025-05-08",
-        "ioc:type:ip"
+        "context:supply_chain",
+        "context:phishing"
       ],
       "enrichment": {
         "actors": [],
@@ -1153,7 +1063,7 @@
       }
     },
     {
-      "id": "32bea989-9fd4-4f99-9981-1f173b81a5ce",
+      "id": "0de12d3a-2d27-42ca-9fea-335e28e660f1",
       "title": "Reevaluating SSEs: A Technical Gap Analysis of Last-Mile Protection",
       "source": "https://thehackernews.com/2025/05/reevaluating-sses-technical-gap.html",
       "published": "2025-05-07T10:56:00",
@@ -1171,21 +1081,21 @@
         "cves": []
       },
       "tags": [
-        "context:exploits",
         "context:iot",
-        "context:cves",
-        "context:supply_chain",
-        "feed:source:feeds.feedburner.com",
-        "ioc:type:domain",
-        "context:phishing",
-        "rss_to_ioc_collector",
-        "ioc:type:email",
-        "context:data_leak",
-        "context:malware",
-        "context:ddos",
         "ioc:type:cve",
+        "context:cves",
+        "ioc:type:email",
+        "context:exploits",
+        "context:malware",
+        "rss_to_ioc_collector",
+        "feed:source:feeds.feedburner.com",
+        "ioc:type:ip",
+        "context:ddos",
+        "context:data_leak",
         "feed:published:2025-05-08",
-        "ioc:type:ip"
+        "context:supply_chain",
+        "context:phishing",
+        "ioc:type:domain"
       ],
       "enrichment": {
         "actors": [],
@@ -1199,7 +1109,7 @@
       }
     },
     {
-      "id": "76554d76-48b5-484b-9bc1-5426799b46ba",
+      "id": "af3b15c6-efb6-4d85-8b75-70da91c45582",
       "title": "Play Ransomware Exploited Windows CVE-2025-29824 as Zero-Day to Breach U.S. Organization",
       "source": "https://thehackernews.com/2025/05/play-ransomware-exploited-windows-cve.html",
       "published": "2025-05-07T10:44:00",
@@ -1221,27 +1131,26 @@
         "sha256": [],
         "md5": [],
         "cves": [
-          "CVE-2025-29824",
           "CVE-2024-26169"
         ]
       },
       "tags": [
-        "context:exploits",
         "context:iot",
-        "context:threat_actor",
-        "context:cves",
-        "context:supply_chain",
-        "feed:source:feeds.feedburner.com",
-        "ioc:type:domain",
-        "context:phishing",
-        "rss_to_ioc_collector",
-        "ioc:type:email",
-        "context:data_leak",
-        "context:malware",
-        "context:ddos",
         "ioc:type:cve",
+        "context:cves",
+        "ioc:type:email",
+        "context:exploits",
+        "context:malware",
+        "rss_to_ioc_collector",
+        "context:threat_actor",
+        "ioc:type:ip",
+        "context:ddos",
+        "context:data_leak",
+        "feed:source:feeds.feedburner.com",
         "feed:published:2025-05-08",
-        "ioc:type:ip"
+        "context:supply_chain",
+        "context:phishing",
+        "ioc:type:domain"
       ],
       "enrichment": {
         "actors": [
@@ -1264,7 +1173,7 @@
       }
     },
     {
-      "id": "742f74ae-fb45-49d2-b65b-a78176816b59",
+      "id": "fb8a68ae-3898-46b7-83ab-291b6dc041f7",
       "title": "Researchers Uncover Malware in Fake Discord PyPI Package Downloaded 11,500+ Times",
       "source": "https://thehackernews.com/2025/05/researchers-uncover-malware-in-fake.html",
       "published": "2025-05-07T07:37:00",
@@ -1283,21 +1192,21 @@
         "cves": []
       },
       "tags": [
-        "context:exploits",
         "context:iot",
+        "ioc:type:cve",
+        "context:cves",
+        "ioc:type:email",
+        "context:exploits",
+        "context:malware",
+        "rss_to_ioc_collector",
         "context:threat_actor",
-        "context:cves",
-        "context:supply_chain",
-        "feed:source:feeds.feedburner.com",
-        "context:phishing",
-        "rss_to_ioc_collector",
-        "ioc:type:email",
-        "context:data_leak",
-        "context:malware",
+        "ioc:type:ip",
         "context:ddos",
-        "ioc:type:cve",
+        "context:data_leak",
+        "feed:source:feeds.feedburner.com",
         "feed:published:2025-05-08",
-        "ioc:type:ip"
+        "context:supply_chain",
+        "context:phishing"
       ],
       "enrichment": {
         "actors": [],
@@ -1311,53 +1220,7 @@
       }
     },
     {
-      "id": "97a78327-9716-471d-aab5-6e074fecf30c",
-      "title": "NSO Group Fined $168M for Targeting 1,400 WhatsApp Users With Pegasus Spyware",
-      "source": "https://thehackernews.com/2025/05/nso-group-fined-168m-for-targeting-1400.html",
-      "published": "2025-05-07T06:22:00",
-      "feed": "http://feeds.feedburner.com/TheHackersNews",
-      "iocs": {
-        "ips": [],
-        "domains": [],
-        "urls": [],
-        "emails": [],
-        "sha1": [],
-        "sha256": [],
-        "md5": [],
-        "cves": [
-          "CVE-2019-3568"
-        ]
-      },
-      "tags": [
-        "context:exploits",
-        "context:iot",
-        "context:cves",
-        "context:supply_chain",
-        "feed:source:feeds.feedburner.com",
-        "context:phishing",
-        "rss_to_ioc_collector",
-        "ioc:type:email",
-        "context:data_leak",
-        "context:malware",
-        "context:ddos",
-        "ioc:type:cve",
-        "feed:published:2025-05-08",
-        "ioc:type:ip"
-      ],
-      "enrichment": {
-        "actors": [],
-        "malware": [],
-        "mitre_techniques": [],
-        "cves": [
-          "CVE-2019-3568",
-          "CVE-2025-27363"
-        ],
-        "tools": [],
-        "campaigns": []
-      }
-    },
-    {
-      "id": "fa256a5d-24cf-4c3c-8457-120d1cb563bc",
+      "id": "dd29ca65-2f7a-4523-bce4-373fa8808d93",
       "title": "Hackers Exploit Samsung MagicINFO, GeoVision IoT Flaws to Deploy Mirai Botnet",
       "source": "https://thehackernews.com/2025/05/hackers-exploit-samsung-magicinfo.html",
       "published": "2025-05-06T15:33:00",
@@ -1380,22 +1243,22 @@
         ]
       },
       "tags": [
-        "context:exploits",
         "context:iot",
-        "context:threat_actor",
-        "context:cves",
-        "context:supply_chain",
-        "context:c2",
-        "feed:source:feeds.feedburner.com",
-        "context:phishing",
-        "rss_to_ioc_collector",
-        "ioc:type:email",
-        "context:data_leak",
-        "context:malware",
-        "context:ddos",
         "ioc:type:cve",
+        "context:cves",
+        "context:c2",
+        "context:exploits",
+        "context:malware",
+        "rss_to_ioc_collector",
+        "context:threat_actor",
+        "ioc:type:ip",
+        "context:ddos",
+        "context:data_leak",
+        "ioc:type:email",
+        "feed:source:feeds.feedburner.com",
+        "context:supply_chain",
         "feed:published:2025-05-08",
-        "ioc:type:ip"
+        "context:phishing"
       ],
       "enrichment": {
         "actors": [],
@@ -1413,7 +1276,7 @@
       }
     },
     {
-      "id": "595c6544-640c-43b2-b9fb-3a016e88065c",
+      "id": "f129c06c-90eb-43d4-9a17-6a87f1577975",
       "title": "Critical Langflow Flaw Added to CISA KEV List Amid Ongoing Exploitation Evidence",
       "source": "https://thehackernews.com/2025/05/critical-langflow-flaw-added-to-cisa.html",
       "published": "2025-05-06T04:24:00",
@@ -1431,20 +1294,20 @@
         ]
       },
       "tags": [
-        "context:exploits",
         "context:iot",
-        "context:cves",
-        "context:supply_chain",
-        "feed:source:feeds.feedburner.com",
-        "context:phishing",
-        "rss_to_ioc_collector",
-        "ioc:type:email",
-        "context:data_leak",
-        "context:malware",
-        "context:ddos",
         "ioc:type:cve",
+        "context:cves",
+        "ioc:type:email",
+        "context:exploits",
+        "context:malware",
+        "rss_to_ioc_collector",
+        "feed:source:feeds.feedburner.com",
+        "ioc:type:ip",
+        "context:ddos",
+        "context:data_leak",
         "feed:published:2025-05-08",
-        "ioc:type:ip"
+        "context:supply_chain",
+        "context:phishing"
       ],
       "enrichment": {
         "actors": [],
@@ -1459,7 +1322,7 @@
       }
     },
     {
-      "id": "bb733690-331d-4fa8-99ec-844a5b509dc3",
+      "id": "afd27a15-cb9b-417a-90ee-7ec3f61b6345",
       "title": "Wormable AirPlay Flaws Enable Zero-Click RCE on Apple Devices via Public Wi-Fi",
       "source": "https://thehackernews.com/2025/05/wormable-airplay-flaws-enable-zero.html",
       "published": "2025-05-05T17:06:00",
@@ -1489,20 +1352,20 @@
         ]
       },
       "tags": [
-        "context:exploits",
         "context:iot",
-        "context:cves",
-        "context:supply_chain",
-        "feed:source:feeds.feedburner.com",
-        "context:phishing",
-        "rss_to_ioc_collector",
-        "ioc:type:email",
-        "context:data_leak",
-        "context:malware",
-        "context:ddos",
         "ioc:type:cve",
+        "context:cves",
+        "ioc:type:email",
+        "context:exploits",
+        "context:malware",
+        "rss_to_ioc_collector",
+        "feed:source:feeds.feedburner.com",
+        "ioc:type:ip",
+        "context:ddos",
+        "context:data_leak",
         "feed:published:2025-05-08",
-        "ioc:type:ip"
+        "context:supply_chain",
+        "context:phishing"
       ],
       "enrichment": {
         "actors": [],
@@ -1527,7 +1390,7 @@
       }
     },
     {
-      "id": "56c53a5c-67b6-4dfa-87d9-cd841d03171d",
+      "id": "71baed7d-4543-4519-a494-3d4235195570",
       "title": "Commvault CVE-2025-34028 Added to CISA KEV After Active Exploitation Confirmed",
       "source": "https://thehackernews.com/2025/05/commvault-cve-2025-34028-added-to-cisa.html",
       "published": "2025-05-05T16:01:00",
@@ -1548,20 +1411,20 @@
         ]
       },
       "tags": [
-        "context:exploits",
         "context:iot",
-        "context:cves",
-        "context:supply_chain",
-        "feed:source:feeds.feedburner.com",
-        "context:phishing",
-        "rss_to_ioc_collector",
-        "ioc:type:email",
-        "context:data_leak",
-        "context:malware",
-        "context:ddos",
         "ioc:type:cve",
+        "context:cves",
+        "ioc:type:email",
+        "context:exploits",
+        "context:malware",
+        "rss_to_ioc_collector",
+        "feed:source:feeds.feedburner.com",
+        "ioc:type:ip",
+        "context:ddos",
+        "context:data_leak",
         "feed:published:2025-05-08",
-        "ioc:type:ip"
+        "context:supply_chain",
+        "context:phishing"
       ],
       "enrichment": {
         "actors": [],
@@ -1577,7 +1440,7 @@
       }
     },
     {
-      "id": "9aa75015-e81a-474b-a72b-43941580d859",
+      "id": "5cfb9894-7ff0-40a9-a505-1605df935d72",
       "title": "\u26a1 Weekly Recap: Nation-State Hacks, Spyware Alerts, Deepfake Malware, Supply Chain Backdoors",
       "source": "https://thehackernews.com/2025/05/weekly-recap-nation-state-hacks-spyware.html",
       "published": "2025-05-05T11:29:00",
@@ -1602,6 +1465,7 @@
           "CVE-2025-46275",
           "CVE-2025-23016",
           "CVE-2025-43864",
+          "CVE-2025-31650",
           "CVE-2025-46762",
           "CVE-2025-2783",
           "CVE-2025-23242",
@@ -1636,23 +1500,23 @@
         ]
       },
       "tags": [
-        "context:exploits",
         "context:iot",
-        "context:threat_actor",
-        "context:cves",
-        "context:supply_chain",
-        "context:c2",
-        "ioc:type:domain",
-        "context:phishing",
-        "rss_to_ioc_collector",
-        "ioc:type:email",
-        "context:data_leak",
-        "feed:source:feeds.feedburner.com",
-        "context:malware",
-        "context:ddos",
         "ioc:type:cve",
+        "context:cves",
+        "context:c2",
+        "context:exploits",
+        "context:malware",
+        "rss_to_ioc_collector",
+        "context:threat_actor",
+        "ioc:type:ip",
+        "context:ddos",
+        "context:data_leak",
+        "ioc:type:email",
+        "feed:source:feeds.feedburner.com",
+        "context:supply_chain",
         "feed:published:2025-05-08",
-        "ioc:type:ip"
+        "context:phishing",
+        "ioc:type:domain"
       ],
       "enrichment": {
         "actors": [
@@ -1717,7 +1581,7 @@
       }
     },
     {
-      "id": "56425026-89e8-4bc0-a631-1108655f4029",
+      "id": "be11068d-32ec-4b0a-905d-555193cf8267",
       "title": "Perfection is a Myth. Leverage Isn't: How Small Teams Can Secure Their Google Workspace",
       "source": "https://thehackernews.com/2025/05/perfection-is-myth-leverage-isnt-how.html",
       "published": "2025-05-05T11:00:00",
@@ -1742,21 +1606,21 @@
         "cves": []
       },
       "tags": [
-        "context:exploits",
         "context:iot",
-        "context:cves",
-        "context:supply_chain",
-        "feed:source:feeds.feedburner.com",
-        "ioc:type:domain",
-        "context:phishing",
-        "rss_to_ioc_collector",
-        "ioc:type:email",
-        "context:data_leak",
-        "context:malware",
-        "context:ddos",
         "ioc:type:cve",
+        "context:cves",
+        "ioc:type:email",
+        "context:exploits",
+        "context:malware",
+        "rss_to_ioc_collector",
+        "feed:source:feeds.feedburner.com",
+        "ioc:type:ip",
+        "context:ddos",
+        "context:data_leak",
         "feed:published:2025-05-08",
-        "ioc:type:ip"
+        "context:supply_chain",
+        "context:phishing",
+        "ioc:type:domain"
       ],
       "enrichment": {
         "actors": [],
@@ -1770,7 +1634,7 @@
       }
     },
     {
-      "id": "5fd02bd0-6826-479b-b942-b57886d80e2b",
+      "id": "2e36951f-fb4e-4821-9740-55f4e3f4edb0",
       "title": "Golden Chickens Deploy TerraStealerV2 to Steal Browser Credentials and Crypto Wallet Data",
       "source": "https://thehackernews.com/2025/05/golden-chickens-deploy-terrastealerv2.html",
       "published": "2025-05-05T05:39:00",
@@ -1789,22 +1653,22 @@
         "cves": []
       },
       "tags": [
-        "context:exploits",
         "context:iot",
-        "context:threat_actor",
-        "context:cves",
-        "context:supply_chain",
-        "feed:source:feeds.feedburner.com",
-        "ioc:type:domain",
-        "context:phishing",
-        "rss_to_ioc_collector",
-        "ioc:type:email",
-        "context:data_leak",
-        "context:malware",
-        "context:ddos",
         "ioc:type:cve",
+        "context:cves",
+        "ioc:type:email",
+        "context:exploits",
+        "context:malware",
+        "rss_to_ioc_collector",
+        "context:threat_actor",
+        "ioc:type:ip",
+        "context:ddos",
+        "context:data_leak",
+        "feed:source:feeds.feedburner.com",
         "feed:published:2025-05-08",
-        "ioc:type:ip"
+        "context:supply_chain",
+        "context:phishing",
+        "ioc:type:domain"
       ],
       "enrichment": {
         "actors": [],
@@ -1821,7 +1685,7 @@
       }
     },
     {
-      "id": "22db962e-31cc-49d5-a26b-28b7c4342f61",
+      "id": "0a1e055e-d161-4888-bd00-4c08b368890b",
       "title": "Malicious Go Modules Deliver Disk-Wiping Linux Malware in Advanced Supply Chain Attack",
       "source": "https://thehackernews.com/2025/05/malicious-go-modules-deliver-disk.html",
       "published": "2025-05-03T14:31:00",
@@ -1839,22 +1703,22 @@
         "cves": []
       },
       "tags": [
-        "context:exploits",
         "context:iot",
-        "context:threat_actor",
-        "context:cves",
-        "context:supply_chain",
-        "feed:source:feeds.feedburner.com",
-        "ioc:type:domain",
-        "context:phishing",
-        "rss_to_ioc_collector",
-        "ioc:type:email",
-        "context:data_leak",
-        "context:malware",
-        "context:ddos",
         "ioc:type:cve",
+        "context:cves",
+        "ioc:type:email",
+        "context:exploits",
+        "context:malware",
+        "rss_to_ioc_collector",
+        "context:threat_actor",
+        "ioc:type:ip",
+        "context:ddos",
+        "context:data_leak",
+        "feed:source:feeds.feedburner.com",
         "feed:published:2025-05-08",
-        "ioc:type:ip"
+        "context:supply_chain",
+        "context:phishing",
+        "ioc:type:domain"
       ],
       "enrichment": {
         "actors": [],
@@ -1868,7 +1732,7 @@
       }
     },
     {
-      "id": "f39d9684-224d-4966-be6d-dcb3157c6bae",
+      "id": "1b78ea4f-b63e-4f5f-a7e2-8a7fd796ded1",
       "title": "Iranian Hackers Maintain 2-Year Access to Middle East CNI via VPN Flaws and Malware",
       "source": "https://thehackernews.com/2025/05/iranian-hackers-maintain-2-year-access.html",
       "published": "2025-05-03T09:33:00",
@@ -1890,22 +1754,22 @@
         ]
       },
       "tags": [
-        "context:exploits",
         "context:iot",
-        "context:threat_actor",
-        "context:cves",
-        "context:supply_chain",
-        "context:c2",
-        "feed:source:feeds.feedburner.com",
-        "context:phishing",
-        "rss_to_ioc_collector",
-        "ioc:type:email",
-        "context:data_leak",
-        "context:malware",
-        "context:ddos",
         "ioc:type:cve",
+        "context:cves",
+        "context:c2",
+        "context:exploits",
+        "context:malware",
+        "rss_to_ioc_collector",
+        "context:threat_actor",
+        "ioc:type:ip",
+        "context:ddos",
+        "context:data_leak",
+        "ioc:type:email",
+        "feed:source:feeds.feedburner.com",
+        "context:supply_chain",
         "feed:published:2025-05-08",
-        "ioc:type:ip"
+        "context:phishing"
       ],
       "enrichment": {
         "actors": [
@@ -1930,7 +1794,7 @@
       }
     },
     {
-      "id": "05fd570a-f581-46ef-97da-a67e10482077",
+      "id": "17b01b49-f7be-46b2-97cd-d174bee66eff",
       "title": "U.S. Charges Yemeni Hacker Behind Black Kingdom Ransomware Targeting 1,500 Systems",
       "source": "https://thehackernews.com/2025/05/us-charges-yemeni-hacker-behind-black.html",
       "published": "2025-05-03T07:06:00",
@@ -1948,21 +1812,21 @@
         ]
       },
       "tags": [
-        "context:exploits",
         "context:iot",
-        "context:threat_actor",
-        "context:cves",
-        "context:supply_chain",
-        "feed:source:feeds.feedburner.com",
-        "context:phishing",
-        "rss_to_ioc_collector",
-        "ioc:type:email",
-        "context:data_leak",
-        "context:malware",
-        "context:ddos",
         "ioc:type:cve",
+        "context:cves",
+        "ioc:type:email",
+        "context:exploits",
+        "context:malware",
+        "rss_to_ioc_collector",
+        "context:threat_actor",
+        "ioc:type:ip",
+        "context:ddos",
+        "context:data_leak",
+        "feed:source:feeds.feedburner.com",
         "feed:published:2025-05-08",
-        "ioc:type:ip"
+        "context:supply_chain",
+        "context:phishing"
       ],
       "enrichment": {
         "actors": [
@@ -1979,7 +1843,7 @@
       }
     },
     {
-      "id": "9f27273b-9db4-42fb-8c9c-ac51f406547f",
+      "id": "0355955e-bee4-4bf4-9474-0f626fc751ae",
       "title": "Fake Security Plugin on WordPress Enables Remote Admin Access for Attackers",
       "source": "https://thehackernews.com/2025/05/fake-security-plugin-on-wordpress.html",
       "published": "2025-05-01T15:47:00",
@@ -2004,22 +1868,22 @@
         "cves": []
       },
       "tags": [
-        "context:exploits",
         "context:iot",
-        "context:threat_actor",
-        "context:cves",
-        "context:supply_chain",
-        "feed:source:feeds.feedburner.com",
-        "ioc:type:domain",
-        "context:phishing",
-        "rss_to_ioc_collector",
-        "ioc:type:email",
-        "context:data_leak",
-        "context:malware",
-        "context:ddos",
         "ioc:type:cve",
+        "context:cves",
+        "ioc:type:email",
+        "context:exploits",
+        "context:malware",
+        "rss_to_ioc_collector",
+        "context:threat_actor",
+        "ioc:type:ip",
+        "context:ddos",
+        "context:data_leak",
+        "feed:source:feeds.feedburner.com",
         "feed:published:2025-05-08",
-        "ioc:type:ip"
+        "context:supply_chain",
+        "context:phishing",
+        "ioc:type:domain"
       ],
       "enrichment": {
         "actors": [],
@@ -2033,7 +1897,7 @@
       }
     },
     {
-      "id": "b51b90f2-14ae-49a5-a143-6a37f6a98b0a",
+      "id": "3efa9bac-c073-469a-9993-4cd8cb4b87a7",
       "title": "DarkWatchman, Sheriff Malware Hit Russia and Ukraine with Stealth and Nation-Grade Tactics",
       "source": "https://thehackernews.com/2025/05/darkwatchman-sheriff-malware-hit-russia.html",
       "published": "2025-05-01T09:27:00",
@@ -2051,23 +1915,23 @@
         "cves": []
       },
       "tags": [
-        "context:exploits",
         "context:iot",
-        "context:threat_actor",
-        "context:cves",
-        "context:supply_chain",
-        "feed:source:feeds.feedburner.com",
-        "ioc:type:domain",
-        "context:phishing",
-        "rss_to_ioc_collector",
-        "ioc:type:url",
-        "context:data_leak",
-        "ioc:type:email",
-        "context:malware",
-        "context:ddos",
         "ioc:type:cve",
+        "context:cves",
+        "ioc:type:email",
+        "context:exploits",
+        "context:malware",
+        "rss_to_ioc_collector",
+        "context:threat_actor",
+        "ioc:type:ip",
+        "context:ddos",
+        "context:data_leak",
+        "feed:source:feeds.feedburner.com",
         "feed:published:2025-05-08",
-        "ioc:type:ip"
+        "context:supply_chain",
+        "ioc:type:url",
+        "context:phishing",
+        "ioc:type:domain"
       ],
       "enrichment": {
         "actors": [
@@ -2088,7 +1952,7 @@
       }
     },
     {
-      "id": "f74a548c-68ac-440c-a9a0-b1313dbea5df",
+      "id": "2f931a5e-d81f-41dd-bd6f-5a0359746011",
       "title": "Commvault Confirms Hackers Exploited CVE-2025-3928 as Zero-Day in Azure Breach",
       "source": "https://thehackernews.com/2025/05/commvault-confirms-hackers-exploited.html",
       "published": "2025-05-01T08:11:00",
@@ -2110,21 +1974,21 @@
         "cves": []
       },
       "tags": [
-        "context:exploits",
         "context:iot",
-        "context:threat_actor",
-        "context:cves",
-        "context:supply_chain",
-        "feed:source:feeds.feedburner.com",
-        "context:phishing",
-        "rss_to_ioc_collector",
-        "ioc:type:email",
-        "context:data_leak",
-        "context:malware",
-        "context:ddos",
         "ioc:type:cve",
+        "context:cves",
+        "ioc:type:email",
+        "context:exploits",
+        "context:malware",
+        "rss_to_ioc_collector",
+        "context:threat_actor",
+        "ioc:type:ip",
+        "context:ddos",
+        "context:data_leak",
+        "feed:source:feeds.feedburner.com",
         "feed:published:2025-05-08",
-        "ioc:type:ip"
+        "context:supply_chain",
+        "context:phishing"
       ],
       "enrichment": {
         "actors": [],
@@ -2139,7 +2003,7 @@
       }
     },
     {
-      "id": "2cb2fb08-0f57-459e-be49-8f9cb1cc2d7a",
+      "id": "d3817bbc-5acc-4b90-a8a4-240b861111a5",
       "title": "SonicWall Confirms Active Exploitation of Flaws Affecting Multiple Appliance Models",
       "source": "https://thehackernews.com/2025/05/sonicwall-confirms-active-exploitation.html",
       "published": "2025-05-01T06:22:00",
@@ -2162,22 +2026,22 @@
         ]
       },
       "tags": [
-        "context:exploits",
         "context:iot",
-        "context:threat_actor",
-        "context:cves",
-        "context:supply_chain",
-        "feed:source:feeds.feedburner.com",
-        "context:phishing",
-        "rss_to_ioc_collector",
-        "ioc:type:url",
-        "context:data_leak",
-        "ioc:type:email",
-        "context:malware",
-        "context:ddos",
         "ioc:type:cve",
+        "context:cves",
+        "ioc:type:email",
+        "context:exploits",
+        "context:malware",
+        "rss_to_ioc_collector",
+        "context:threat_actor",
+        "ioc:type:ip",
+        "context:ddos",
+        "context:data_leak",
+        "feed:source:feeds.feedburner.com",
         "feed:published:2025-05-08",
-        "ioc:type:ip"
+        "context:supply_chain",
+        "ioc:type:url",
+        "context:phishing"
       ],
       "enrichment": {
         "actors": [],
@@ -2194,7 +2058,7 @@
       }
     },
     {
-      "id": "a2d08015-52bd-4660-b7ee-36dc98b7d4e1",
+      "id": "6bbd0ac4-35e4-4717-b26e-3ed06b00e0c6",
       "title": "Chinese Hackers Abuse IPv6 SLAAC for AitM Attacks via Spellbinder Lateral Movement Tool",
       "source": "https://thehackernews.com/2025/04/chinese-hackers-abuse-ipv6-slaac-for.html",
       "published": "2025-04-30T11:05:00",
@@ -2216,22 +2080,22 @@
         "cves": []
       },
       "tags": [
-        "context:exploits",
         "context:iot",
-        "context:threat_actor",
-        "context:cves",
-        "context:supply_chain",
-        "feed:source:feeds.feedburner.com",
-        "ioc:type:domain",
-        "context:phishing",
-        "rss_to_ioc_collector",
-        "ioc:type:email",
-        "context:data_leak",
-        "context:malware",
-        "context:ddos",
         "ioc:type:cve",
+        "context:cves",
+        "ioc:type:email",
+        "context:exploits",
+        "context:malware",
+        "rss_to_ioc_collector",
+        "context:threat_actor",
+        "ioc:type:ip",
+        "context:ddos",
+        "context:data_leak",
+        "feed:source:feeds.feedburner.com",
         "feed:published:2025-05-08",
-        "ioc:type:ip"
+        "context:supply_chain",
+        "context:phishing",
+        "ioc:type:domain"
       ],
       "enrichment": {
         "actors": [],
@@ -2245,7 +2109,7 @@
       }
     },
     {
-      "id": "b5218eb6-920e-4b25-b026-92658f45efb2",
+      "id": "7677dc6d-6076-4b83-a303-d13da9c1eea8",
       "title": "Google Reports 75 Zero-Days Exploited in 2024 \u2014 44% Targeted Enterprise Security Products",
       "source": "https://thehackernews.com/2025/04/google-reports-75-zero-days-exploited.html",
       "published": "2025-04-29T10:11:00",
@@ -2260,25 +2124,38 @@
         "sha1": [],
         "sha256": [],
         "md5": [],
-        "cves": []
+        "cves": [
+          "CVE-2023-46805",
+          "CVE-2024-21887",
+          "CVE-2024-32896",
+          "CVE-2024-29745",
+          "CVE-2024-29748",
+          "CVE-2024-55956",
+          "CVE-2024-21338",
+          "CVE-2024-38178",
+          "CVE-2024-9680",
+          "CVE-2024-49039",
+          "CVE-2024-44308",
+          "CVE-2024-44309"
+        ]
       },
       "tags": [
-        "context:exploits",
         "context:iot",
-        "context:threat_actor",
-        "context:cves",
-        "context:supply_chain",
-        "feed:source:feeds.feedburner.com",
-        "ioc:type:domain",
-        "context:phishing",
-        "rss_to_ioc_collector",
-        "ioc:type:email",
-        "context:data_leak",
-        "context:malware",
-        "context:ddos",
         "ioc:type:cve",
+        "context:cves",
+        "ioc:type:email",
+        "context:exploits",
+        "context:malware",
+        "rss_to_ioc_collector",
+        "context:threat_actor",
+        "ioc:type:ip",
+        "context:ddos",
+        "context:data_leak",
+        "feed:source:feeds.feedburner.com",
         "feed:published:2025-05-08",
-        "ioc:type:ip"
+        "context:supply_chain",
+        "context:phishing",
+        "ioc:type:domain"
       ],
       "enrichment": {
         "actors": [],
@@ -2305,7 +2182,7 @@
       }
     },
     {
-      "id": "3eb52fd6-924c-4f92-a441-4759a4783f08",
+      "id": "ea2338d9-b0fe-4903-8c09-8e67bfe56eb8",
       "title": "Malware Attack Targets World Uyghur Congress Leaders via Trojanized UyghurEdit++ Tool",
       "source": "https://thehackernews.com/2025/04/malware-attack-targets-world-uyghur.html",
       "published": "2025-04-29T05:43:00",
@@ -2323,21 +2200,21 @@
         "cves": []
       },
       "tags": [
-        "context:exploits",
         "context:iot",
-        "context:threat_actor",
-        "context:cves",
-        "context:supply_chain",
-        "feed:source:feeds.feedburner.com",
-        "context:phishing",
-        "rss_to_ioc_collector",
-        "ioc:type:email",
-        "context:data_leak",
-        "context:malware",
-        "context:ddos",
         "ioc:type:cve",
+        "context:cves",
+        "ioc:type:email",
+        "context:exploits",
+        "context:malware",
+        "rss_to_ioc_collector",
+        "context:threat_actor",
+        "ioc:type:ip",
+        "context:ddos",
+        "context:data_leak",
+        "feed:source:feeds.feedburner.com",
         "feed:published:2025-05-08",
-        "ioc:type:ip"
+        "context:supply_chain",
+        "context:phishing"
       ],
       "enrichment": {
         "actors": [],
@@ -2351,7 +2228,389 @@
       }
     },
     {
-      "id": "814a6f0b-9cbb-4fe4-88ba-e39d562acc37",
+      "id": "bf45397d-53bf-4d32-885c-1a01e05196cc",
+      "title": "Daily Dose of Dark Web Informer - 7th of May 2025",
+      "source": "https://darkwebinformer.com/daily-dose-of-dark-web-informer-7th-of-may-2025/",
+      "published": "2025-05-07T23:24:29",
+      "feed": "https://darkwebinformer.com/rss/",
+      "iocs": {
+        "ips": [],
+        "domains": [],
+        "urls": [
+          "http://lockbitapyx2kr5b7ma7qn6ziwqgbrij2czhcbojuxmgnwpkgv2yx2yd[.]onion\ud83d\udea8\ud83d\udea8LockBit"
+        ],
+        "emails": [],
+        "sha1": [],
+        "sha256": [],
+        "md5": [],
+        "cves": []
+      },
+      "tags": [
+        "ioc:type:email",
+        "context:exploits",
+        "context:malware",
+        "rss_to_ioc_collector",
+        "context:threat_actor",
+        "ioc:type:ip",
+        "context:ddos",
+        "context:data_leak",
+        "feed:source:darkwebinformer.com",
+        "feed:published:2025-05-08",
+        "ioc:type:url",
+        "ioc:type:domain"
+      ],
+      "enrichment": {
+        "actors": [],
+        "malware": [],
+        "mitre_techniques": [],
+        "cves": [],
+        "tools": [],
+        "campaigns": []
+      }
+    },
+    {
+      "id": "865c3a96-e34f-4b93-a905-718698927191",
+      "title": "Ransomware Attack Update for the 7th of May 2025",
+      "source": "https://darkwebinformer.com/ransomware-attack-update-for-the-7th-of-may-2025/",
+      "published": "2025-05-07T22:39:01",
+      "feed": "https://darkwebinformer.com/rss/",
+      "iocs": {
+        "ips": [],
+        "domains": [
+          "gmanetwork.com"
+        ],
+        "urls": [],
+        "emails": [],
+        "sha1": [],
+        "sha256": [],
+        "md5": [],
+        "cves": []
+      },
+      "tags": [
+        "ioc:type:email",
+        "context:malware",
+        "rss_to_ioc_collector",
+        "ioc:type:ip",
+        "feed:published:2025-05-08",
+        "feed:source:darkwebinformer.com",
+        "context:data_leak",
+        "ioc:type:url"
+      ],
+      "enrichment": {
+        "actors": [],
+        "malware": [],
+        "mitre_techniques": [],
+        "cves": [],
+        "tools": [],
+        "campaigns": []
+      }
+    },
+    {
+      "id": "4956a013-1678-49d2-9a99-ac865357f933",
+      "title": "SilverInstaEye: A Comprehensive OSINT Tool for Instagram",
+      "source": "https://darkwebinformer.com/silverinstaeye-a-comprehensive-osint-tool-for-instagram/",
+      "published": "2025-05-07T19:28:33",
+      "feed": "https://darkwebinformer.com/rss/",
+      "iocs": {
+        "ips": [],
+        "domains": [
+          "profile.Installation",
+          "SilverInstaEye.gitcd",
+          "requirements.txtRun",
+          "silverinstaeye.pyYoutube",
+          "session.json",
+          "secure.Modify",
+          "efficiency.DisclaimerThis",
+          "responsibly.AuthorSilverXTelegram"
+        ],
+        "urls": [],
+        "emails": [],
+        "sha1": [],
+        "sha256": [],
+        "md5": [],
+        "cves": []
+      },
+      "tags": [
+        "ioc:type:email",
+        "context:malware",
+        "rss_to_ioc_collector",
+        "ioc:type:ip",
+        "feed:published:2025-05-08",
+        "feed:source:darkwebinformer.com",
+        "context:data_leak"
+      ],
+      "enrichment": {
+        "actors": [],
+        "malware": [],
+        "mitre_techniques": [],
+        "cves": [],
+        "tools": [],
+        "campaigns": []
+      }
+    },
+    {
+      "id": "caeb51f6-72f7-42fc-bed4-89fba505938f",
+      "title": "Daily Dose of Dark Web Informer - 6th of May 2025",
+      "source": "https://darkwebinformer.com/daily-dose-of-dark-web-informer-6th-of-may-2025/",
+      "published": "2025-05-06T23:25:34",
+      "feed": "https://darkwebinformer.com/rss/",
+      "iocs": {
+        "ips": [],
+        "domains": [],
+        "urls": [],
+        "emails": [],
+        "sha1": [],
+        "sha256": [],
+        "md5": [],
+        "cves": [
+          "CVE-2023-20198"
+        ]
+      },
+      "tags": [
+        "ioc:type:cve",
+        "context:cves",
+        "ioc:type:email",
+        "context:exploits",
+        "context:malware",
+        "rss_to_ioc_collector",
+        "context:threat_actor",
+        "ioc:type:ip",
+        "context:ddos",
+        "context:data_leak",
+        "feed:source:darkwebinformer.com",
+        "feed:published:2025-05-08",
+        "ioc:type:url",
+        "context:phishing"
+      ],
+      "enrichment": {
+        "actors": [],
+        "malware": [],
+        "mitre_techniques": [],
+        "cves": [
+          "CVE-2023-20198",
+          "CVE-2025-4052"
+        ],
+        "tools": [],
+        "campaigns": []
+      }
+    },
+    {
+      "id": "152e113f-d416-4dcc-a05c-94ce1de0f9fe",
+      "title": "COLDRIVER Using New Malware To Steal Documents From Western Targets and NGOs",
+      "source": "https://cloud.google.com/blog/topics/threat-intelligence/coldriver-steal-documents-western-targets-ngos/",
+      "published": "2025-05-07T14:00:00",
+      "feed": "https://feeds.feedburner.com/threatintelligence/pvexyqv7v0v",
+      "iocs": {
+        "ips": [],
+        "domains": [
+          "most.Learn",
+          "sys.argv",
+          "decode.py",
+          "sys.exit",
+          "f.read",
+          "data.replace",
+          "f.write",
+          "ws.ExpandEnvironmentStrings",
+          "fso.GetDrive"
+        ],
+        "urls": [],
+        "emails": [],
+        "sha1": [],
+        "sha256": [
+          "28a0596b9c62b7b7aca9cac2a07b067109f27d327581a60e8cb4fab92f8f4fa9",
+          "13f7599c94b9d4b028ce02397717a1282a46f07b9d3e2f8f2b3213fa8884b029",
+          "4c7accba35edd646584bb5a40ab78f963de45e5fc816e62022cd7ab1b01dae9c",
+          "6b85d707c23d68f9518e757cc97adb20adc8accb33d0d68faf1d8d56d7840816",
+          "3233668d2e4a80b17e6357177b53539df659e55e06ba49777d0d5171f27565dd",
+          "6bc411d562456079a8f1e38f3473c33ade73b08c7518861699e9863540b64f9a",
+          "b55cdce773bc77ee46b503dbd9430828cc0f518b94289fbfa70b5fbb02ab1847",
+          "02ce477a07681ee1671c7164c9cc847b01c2e1cd50e709f7e861eaab89c69b6f",
+          "8af28bb7e8e2f663d4b797bf3ddbee7f0a33f637a33df9b31fbb4c1ce71b2fee"
+        ],
+        "md5": [],
+        "cves": []
+      },
+      "tags": [
+        "ioc:type:md5",
+        "ioc:type:email",
+        "context:threat_actor",
+        "context:malware",
+        "rss_to_ioc_collector",
+        "context:exploits",
+        "ioc:type:ip",
+        "feed:source:feeds.feedburner.com",
+        "feed:published:2025-05-08",
+        "context:phishing",
+        "ioc:type:domain"
+      ],
+      "enrichment": {
+        "actors": [
+          "coldriver",
+          "star blizzard"
+        ],
+        "malware": [],
+        "mitre_techniques": [],
+        "cves": [],
+        "tools": [],
+        "campaigns": []
+      }
+    },
+    {
+      "id": "a52bcdbf-65c6-41a4-af1d-ddc7f3c71544",
+      "title": "Defending Against UNC3944: Cybercrime Hardening Guidance from the Frontlines",
+      "source": "https://cloud.google.com/blog/topics/threat-intelligence/unc3944-proactive-hardening-recommendations/",
+      "published": "2025-05-06T14:00:00",
+      "feed": "https://feeds.feedburner.com/threatintelligence/pvexyqv7v0v",
+      "iocs": {
+        "ips": [],
+        "domains": [
+          "incidents.Learn",
+          "activity.Identity",
+          "helpdesk.com",
+          "SSO.com",
+          "principal.user.userid",
+          "principal.user",
+          "about.user"
+        ],
+        "urls": [],
+        "emails": [],
+        "sha1": [],
+        "sha256": [],
+        "md5": [],
+        "cves": []
+      },
+      "tags": [
+        "ioc:type:email",
+        "context:exploits",
+        "context:malware",
+        "rss_to_ioc_collector",
+        "context:threat_actor",
+        "ioc:type:ip",
+        "feed:source:feeds.feedburner.com",
+        "context:data_leak",
+        "feed:published:2025-05-08",
+        "context:phishing",
+        "ioc:type:domain"
+      ],
+      "enrichment": {
+        "actors": [
+          "scattered spider"
+        ],
+        "malware": [
+          "ransomhub"
+        ],
+        "mitre_techniques": [],
+        "cves": [],
+        "tools": [],
+        "campaigns": []
+      }
+    },
+    {
+      "id": "4b74774b-0994-4179-bea6-4d1c89c1f521",
+      "title": "Hello 0-Days, My Old Friend: A 2024 Zero-Day Exploitation Analysis",
+      "source": "https://cloud.google.com/blog/topics/threat-intelligence/2024-zero-day-trends/",
+      "published": "2025-04-29T05:00:00",
+      "feed": "https://feeds.feedburner.com/threatintelligence/pvexyqv7v0v",
+      "iocs": {
+        "ips": [],
+        "domains": [
+          "exploits.The",
+          "post.Download",
+          "2021.Figure",
+          "2023.Figure",
+          "index.js",
+          "PocLowIL.pdb",
+          "ubpm.dll",
+          "WPTaskScheduler.dll",
+          "SD.Figure",
+          "pursuits.Posted"
+        ],
+        "urls": [],
+        "emails": [],
+        "sha1": [],
+        "sha256": [],
+        "md5": [],
+        "cves": [
+          "CVE-2023-36884"
+        ]
+      },
+      "tags": [
+        "ioc:type:cve",
+        "context:cves",
+        "context:c2",
+        "context:exploits",
+        "context:malware",
+        "rss_to_ioc_collector",
+        "context:threat_actor",
+        "ioc:type:ip",
+        "feed:source:feeds.feedburner.com",
+        "feed:published:2025-05-08",
+        "ioc:type:domain"
+      ],
+      "enrichment": {
+        "actors": [],
+        "malware": [],
+        "mitre_techniques": [],
+        "cves": [
+          "CVE-2023-36884",
+          "CVE-2023-46805",
+          "CVE-2024-21338",
+          "CVE-2024-21887",
+          "CVE-2024-29745",
+          "CVE-2024-29748",
+          "CVE-2024-32896",
+          "CVE-2024-38178",
+          "CVE-2024-44308",
+          "CVE-2024-44309",
+          "CVE-2024-49039",
+          "CVE-2024-53104",
+          "CVE-2024-55956",
+          "CVE-2024-9680"
+        ],
+        "tools": [],
+        "campaigns": []
+      }
+    },
+    {
+      "id": "f0d4aa2c-8964-4b7e-89ca-77cc5486ea2d",
+      "title": "M-Trends 2025: Data, Insights, and Recommendations From the Frontlines",
+      "source": "https://cloud.google.com/blog/topics/threat-intelligence/m-trends-2025/",
+      "published": "2025-04-23T14:00:00",
+      "feed": "https://feeds.feedburner.com/threatintelligence/pvexyqv7v0v",
+      "iocs": {
+        "ips": [],
+        "domains": [
+          "organizations.Read",
+          "created.Posted"
+        ],
+        "urls": [],
+        "emails": [],
+        "sha1": [],
+        "sha256": [],
+        "md5": [],
+        "cves": []
+      },
+      "tags": [
+        "context:c2",
+        "context:exploits",
+        "context:malware",
+        "rss_to_ioc_collector",
+        "context:threat_actor",
+        "ioc:type:ip",
+        "feed:source:feeds.feedburner.com",
+        "feed:published:2025-05-08"
+      ],
+      "enrichment": {
+        "actors": [],
+        "malware": [],
+        "mitre_techniques": [],
+        "cves": [],
+        "tools": [],
+        "campaigns": []
+      }
+    },
+    {
+      "id": "c3a893a2-1f65-4e2f-a81c-1977d2292cab",
       "title": "Vulnerability in SAP Netweaver (April 25, 2025)",
       "source": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0350/",
       "published": "2025-04-25T00:00:00",
@@ -2371,12 +2630,12 @@
         ]
       },
       "tags": [
-        "context:exploits",
-        "context:cves",
-        "rss_to_ioc_collector",
         "feed:source:www.cert.ssi.gouv.fr",
         "ioc:type:cve",
-        "feed:published:2025-05-08"
+        "context:cves",
+        "context:exploits",
+        "feed:published:2025-05-08",
+        "rss_to_ioc_collector"
       ],
       "enrichment": {
         "actors": [],
@@ -2390,7 +2649,7 @@
       }
     },
     {
-      "id": "a8402362-da47-4054-b794-33e6ea232485",
+      "id": "04c2610d-0408-4455-9b24-c0111093c3b3",
       "title": "Multiple vulnerabilities in the Linux nucleus of Ubuntu (April 25, 2025)",
       "source": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0349/",
       "published": "2025-04-25T00:00:00",
@@ -3130,11 +3389,11 @@
         ]
       },
       "tags": [
-        "context:cves",
-        "rss_to_ioc_collector",
         "feed:source:www.cert.ssi.gouv.fr",
         "ioc:type:cve",
+        "context:cves",
         "feed:published:2025-05-08",
+        "rss_to_ioc_collector",
         "ioc:type:ip"
       ],
       "enrichment": {
@@ -3871,7 +4130,7 @@
       }
     },
     {
-      "id": "81289a10-64f6-4698-84fe-9c8542ef1c6d",
+      "id": "6347931b-c854-4c4c-86a5-d4fef3bd5c49",
       "title": "Vulnerability in Spring Boot (April 25, 2025)",
       "source": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0348/",
       "published": "2025-04-25T00:00:00",
@@ -3889,11 +4148,11 @@
         ]
       },
       "tags": [
-        "context:cves",
-        "rss_to_ioc_collector",
         "feed:source:www.cert.ssi.gouv.fr",
         "ioc:type:cve",
-        "feed:published:2025-05-08"
+        "context:cves",
+        "feed:published:2025-05-08",
+        "rss_to_ioc_collector"
       ],
       "enrichment": {
         "actors": [],
@@ -3908,7 +4167,7 @@
       }
     },
     {
-      "id": "ed4613c5-019f-4078-af31-f88aafe1bc85",
+      "id": "607b1690-2c1c-4e64-999f-edd258e6b03f",
       "title": "CERTFR-2025-ACT-018 Certfr-2025 news bulletin (April 28, 2025)",
       "source": "https://www.cert.ssi.gouv.fr/actualite/CERTFR-2025-ACT-018/",
       "published": "2025-04-28T00:00:00",
@@ -3937,12 +4196,12 @@
         ]
       },
       "tags": [
-        "context:exploits",
-        "context:cves",
-        "rss_to_ioc_collector",
         "feed:source:www.cert.ssi.gouv.fr",
         "ioc:type:cve",
+        "context:cves",
+        "context:exploits",
         "feed:published:2025-05-08",
+        "rss_to_ioc_collector",
         "ioc:type:ip"
       ],
       "enrichment": {
@@ -3964,7 +4223,7 @@
       }
     },
     {
-      "id": "f655550e-a3c7-4bed-a668-05c1cab8e292",
+      "id": "e2bcb097-ac80-449b-b52e-004550693ec9",
       "title": "Vulnerability in LibreOffice (April 28, 2025)",
       "source": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0351/",
       "published": "2025-04-28T00:00:00",
@@ -3982,11 +4241,11 @@
         ]
       },
       "tags": [
-        "context:cves",
-        "rss_to_ioc_collector",
         "feed:source:www.cert.ssi.gouv.fr",
         "ioc:type:cve",
-        "feed:published:2025-05-08"
+        "context:cves",
+        "feed:published:2025-05-08",
+        "rss_to_ioc_collector"
       ],
       "enrichment": {
         "actors": [],
@@ -4001,7 +4260,7 @@
       }
     },
     {
-      "id": "b1ca4da0-36ac-4b80-b09d-001ca44270e7",
+      "id": "e05b35e2-5bb3-4b7e-abc4-60a9ffc07c6d",
       "title": "Vulnerability in SAP Netweaver (April 28, 2025)",
       "source": "https://www.cert.ssi.gouv.fr/alerte/CERTFR-2025-ALE-005/",
       "published": "2025-04-28T00:00:00",
@@ -4025,13 +4284,13 @@
         "cves": []
       },
       "tags": [
-        "context:exploits",
-        "context:cves",
-        "rss_to_ioc_collector",
-        "ioc:type:url",
         "feed:source:www.cert.ssi.gouv.fr",
         "ioc:type:cve",
-        "feed:published:2025-05-08"
+        "context:cves",
+        "context:exploits",
+        "feed:published:2025-05-08",
+        "rss_to_ioc_collector",
+        "ioc:type:url"
       ],
       "enrichment": {
         "actors": [],
@@ -4046,7 +4305,7 @@
       }
     },
     {
-      "id": "9c4d7465-27eb-40ed-8e75-43d2d8ae69bc",
+      "id": "72bcb3fe-8177-4480-a38c-a8b41a249c03",
       "title": "Multiple vulnerabilities in Apache Tomcat (April 29, 2025)",
       "source": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0352/",
       "published": "2025-04-29T00:00:00",
@@ -4064,16 +4323,15 @@
         "sha256": [],
         "md5": [],
         "cves": [
-          "CVE-2025-31650",
           "CVE-2025-31651"
         ]
       },
       "tags": [
-        "context:cves",
-        "rss_to_ioc_collector",
         "feed:source:www.cert.ssi.gouv.fr",
         "ioc:type:cve",
+        "context:cves",
         "feed:published:2025-05-08",
+        "rss_to_ioc_collector",
         "ioc:type:ip"
       ],
       "enrichment": {
@@ -4089,7 +4347,7 @@
       }
     },
     {
-      "id": "0b06e25b-5497-4360-85dd-181fe7650585",
+      "id": "e123617f-4d1b-4b21-b379-821c54079d70",
       "title": "Multiple vulnerabilities in VMware products (April 29, 2025)",
       "source": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0353/",
       "published": "2025-04-29T00:00:00",
@@ -4115,11 +4373,11 @@
         ]
       },
       "tags": [
-        "context:cves",
-        "rss_to_ioc_collector",
         "feed:source:www.cert.ssi.gouv.fr",
         "ioc:type:cve",
+        "context:cves",
         "feed:published:2025-05-08",
+        "rss_to_ioc_collector",
         "ioc:type:ip"
       ],
       "enrichment": {
@@ -4142,7 +4400,7 @@
       }
     },
     {
-      "id": "60ab2798-6ab8-4491-b8fd-48a137fe57a9",
+      "id": "00e0fc7b-8587-430e-8dba-14da6425b042",
       "title": "Multiple vulnerabilities in Mozilla products (April 30, 2025)",
       "source": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0358/",
       "published": "2025-04-30T00:00:00",
@@ -4172,11 +4430,11 @@
         ]
       },
       "tags": [
-        "context:cves",
-        "rss_to_ioc_collector",
         "feed:source:www.cert.ssi.gouv.fr",
         "ioc:type:cve",
+        "context:cves",
         "feed:published:2025-05-08",
+        "rss_to_ioc_collector",
         "ioc:type:ip"
       ],
       "enrichment": {
@@ -4203,7 +4461,7 @@
       }
     },
     {
-      "id": "5db1d501-c5ee-4287-816f-dff651d6144e",
+      "id": "d9ffa12b-edd5-463e-afb6-b623819897b1",
       "title": "Vulnerability in Symantec products (April 30, 2025)",
       "source": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0357/",
       "published": "2025-04-30T00:00:00",
@@ -4223,11 +4481,11 @@
         ]
       },
       "tags": [
-        "context:cves",
-        "rss_to_ioc_collector",
         "feed:source:www.cert.ssi.gouv.fr",
-        "context:malware",
         "ioc:type:cve",
+        "context:cves",
+        "context:malware",
+        "rss_to_ioc_collector",
         "feed:published:2025-05-08"
       ],
       "enrichment": {
@@ -4242,7 +4500,7 @@
       }
     },
     {
-      "id": "0628ffd9-084b-4b40-94c7-f698088ae8d8",
+      "id": "81923d71-5745-46bf-a8ef-8ab0312f325f",
       "title": "Multiple vulnerabilities in Splunk User Behavior Analytics (UBA) (April 30, 2025)",
       "source": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0356/",
       "published": "2025-04-30T00:00:00",
@@ -4272,11 +4530,11 @@
         ]
       },
       "tags": [
-        "context:cves",
-        "rss_to_ioc_collector",
         "feed:source:www.cert.ssi.gouv.fr",
         "ioc:type:cve",
+        "context:cves",
         "feed:published:2025-05-08",
+        "rss_to_ioc_collector",
         "ioc:type:ip"
       ],
       "enrichment": {
@@ -4303,7 +4561,7 @@
       }
     },
     {
-      "id": "35dd2f83-389e-4f89-ac3d-4e8119d9c6b1",
+      "id": "f3d61e57-79f7-41e6-94f3-14b7e9b094e0",
       "title": "Multiple vulnerabilities in Google Chrome (April 30, 2025)",
       "source": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0354/",
       "published": "2025-04-30T00:00:00",
@@ -4324,11 +4582,11 @@
         ]
       },
       "tags": [
-        "context:cves",
-        "rss_to_ioc_collector",
         "feed:source:www.cert.ssi.gouv.fr",
         "ioc:type:cve",
+        "context:cves",
         "feed:published:2025-05-08",
+        "rss_to_ioc_collector",
         "ioc:type:ip"
       ],
       "enrichment": {
@@ -4346,7 +4604,7 @@
       }
     },
     {
-      "id": "3ec8c2f1-a9b1-4e5b-972a-d290c2b96b79",
+      "id": "daa89c3b-4d61-4cf9-a2f5-ed0c9c90c43d",
       "title": "Multiple vulnerabilities in IBM products (May 02, 2025)",
       "source": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0370/",
       "published": "2025-05-02T00:00:00",
@@ -4396,11 +4654,11 @@
         ]
       },
       "tags": [
-        "context:cves",
-        "rss_to_ioc_collector",
         "feed:source:www.cert.ssi.gouv.fr",
         "ioc:type:cve",
+        "context:cves",
         "feed:published:2025-05-08",
+        "rss_to_ioc_collector",
         "ioc:type:ip"
       ],
       "enrichment": {
@@ -4445,7 +4703,7 @@
       }
     },
     {
-      "id": "b0b7d3ca-9672-4410-8d6e-c5b7d98fd4e0",
+      "id": "5871cee6-7f6f-47c5-b462-e5ceda584a63",
       "title": "Multiple vulnerabilities in Microsoft Azure (May 02, 2025)",
       "source": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0364/",
       "published": "2025-05-02T00:00:00",
@@ -4467,12 +4725,12 @@
         ]
       },
       "tags": [
-        "context:exploits",
-        "context:cves",
-        "rss_to_ioc_collector",
         "feed:source:www.cert.ssi.gouv.fr",
         "ioc:type:cve",
+        "context:cves",
+        "context:exploits",
         "feed:published:2025-05-08",
+        "rss_to_ioc_collector",
         "ioc:type:ip"
       ],
       "enrichment": {
@@ -4491,7 +4749,7 @@
       }
     },
     {
-      "id": "8a0075a5-024a-4df8-a888-a3b8c06d2d61",
+      "id": "51238245-912e-4b59-ba20-c0fb33167753",
       "title": "Vulnerability in Microsoft products (May 02, 2025)",
       "source": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0365/",
       "published": "2025-05-02T00:00:00",
@@ -4509,12 +4767,12 @@
         ]
       },
       "tags": [
-        "context:exploits",
-        "context:cves",
-        "rss_to_ioc_collector",
         "feed:source:www.cert.ssi.gouv.fr",
         "ioc:type:cve",
-        "feed:published:2025-05-08"
+        "context:cves",
+        "context:exploits",
+        "feed:published:2025-05-08",
+        "rss_to_ioc_collector"
       ],
       "enrichment": {
         "actors": [],
@@ -4528,7 +4786,7 @@
       }
     },
     {
-      "id": "31c29061-7d5c-4df2-acc8-0ee02026146f",
+      "id": "eb0a720d-54ec-4440-a124-70b313ecf732",
       "title": "Multiple vulnerabilities in the Linux de Debian nucleus (May 02, 2025)",
       "source": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0368/",
       "published": "2025-05-02T00:00:00",
@@ -4597,11 +4855,11 @@
         ]
       },
       "tags": [
-        "context:cves",
-        "rss_to_ioc_collector",
         "feed:source:www.cert.ssi.gouv.fr",
-        "context:malware",
         "ioc:type:cve",
+        "context:cves",
+        "context:malware",
+        "rss_to_ioc_collector",
         "feed:published:2025-05-08",
         "ioc:type:ip"
       ],
@@ -4667,7 +4925,7 @@
       }
     },
     {
-      "id": "feaf6668-f9ff-48ff-9e7b-9254ef4680a2",
+      "id": "51fcf6f0-59a8-47ae-a75d-e337c2ff53a0",
       "title": "Multiple vulnerabilities in Microsoft Edge (May 02, 2025)",
       "source": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0363/",
       "published": "2025-05-02T00:00:00",
@@ -4685,12 +4943,12 @@
         ]
       },
       "tags": [
-        "context:exploits",
-        "context:cves",
-        "rss_to_ioc_collector",
         "feed:source:www.cert.ssi.gouv.fr",
         "ioc:type:cve",
+        "context:cves",
+        "context:exploits",
         "feed:published:2025-05-08",
+        "rss_to_ioc_collector",
         "ioc:type:ip"
       ],
       "enrichment": {
@@ -4709,7 +4967,7 @@
       }
     },
     {
-      "id": "949f5d72-de4c-4d48-b9a0-c449fd7049d6",
+      "id": "e1b38be5-7c35-4b34-96f3-2419fd781128",
       "title": "Multiple vulnerabilities in the Linux nucleus of Ubuntu (02 May 2025)",
       "source": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
       "published": "2025-05-02T00:00:00",
@@ -4883,11 +5141,11 @@
         ]
       },
       "tags": [
-        "context:cves",
-        "rss_to_ioc_collector",
         "feed:source:www.cert.ssi.gouv.fr",
         "ioc:type:cve",
+        "context:cves",
         "feed:published:2025-05-08",
+        "rss_to_ioc_collector",
         "ioc:type:ip"
       ],
       "enrichment": {
@@ -5735,7 +5993,7 @@
       }
     },
     {
-      "id": "063d3b36-d917-4d69-a34a-cd0773d6fa32",
+      "id": "75ad4aae-d7e3-4d2f-95b5-58e783f441d6",
       "title": "Multiple vulnerabilities in Mozilla products (May 02, 2025)",
       "source": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0361/",
       "published": "2025-05-02T00:00:00",
@@ -5753,11 +6011,11 @@
         ]
       },
       "tags": [
-        "context:cves",
-        "rss_to_ioc_collector",
         "feed:source:www.cert.ssi.gouv.fr",
         "ioc:type:cve",
+        "context:cves",
         "feed:published:2025-05-08",
+        "rss_to_ioc_collector",
         "ioc:type:ip"
       ],
       "enrichment": {
@@ -5779,7 +6037,7 @@
       }
     },
     {
-      "id": "e007afcd-5819-4115-8a49-76e302a9ab45",
+      "id": "959dcb51-e9a7-48ef-a9b9-fdff1a1b8133",
       "title": "Multiple vulnerabilities in Elastic products (May 02, 2025)",
       "source": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0359/",
       "published": "2025-05-02T00:00:00",
@@ -5803,11 +6061,11 @@
         ]
       },
       "tags": [
-        "context:cves",
-        "rss_to_ioc_collector",
         "feed:source:www.cert.ssi.gouv.fr",
         "ioc:type:cve",
+        "context:cves",
         "feed:published:2025-05-08",
+        "rss_to_ioc_collector",
         "ioc:type:ip"
       ],
       "enrichment": {
@@ -5828,7 +6086,7 @@
       }
     },
     {
-      "id": "c78e7d9f-1627-4577-9937-00ee6fd6f007",
+      "id": "3bc6a7d9-0963-4446-90fa-5cb3951cf457",
       "title": "Multiple vulnerabilities in tenable products (May 02, 2025)",
       "source": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0360/",
       "published": "2025-05-02T00:00:00",
@@ -5850,11 +6108,11 @@
         ]
       },
       "tags": [
-        "context:cves",
-        "rss_to_ioc_collector",
         "feed:source:www.cert.ssi.gouv.fr",
         "ioc:type:cve",
+        "context:cves",
         "feed:published:2025-05-08",
+        "rss_to_ioc_collector",
         "ioc:type:ip"
       ],
       "enrichment": {
@@ -5873,7 +6131,7 @@
       }
     },
     {
-      "id": "e0149c9d-b87b-4320-afc1-243b0b6ea037",
+      "id": "435b95e9-e2b7-42c4-a1e5-8faf3e71c249",
       "title": "Multiple vulnerabilities in the Linux nucleus of Susa (02 May 2025)",
       "source": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0369/",
       "published": "2025-05-02T00:00:00",
@@ -5891,11 +6149,11 @@
         ]
       },
       "tags": [
-        "context:cves",
-        "rss_to_ioc_collector",
         "feed:source:www.cert.ssi.gouv.fr",
         "ioc:type:cve",
+        "context:cves",
         "feed:published:2025-05-08",
+        "rss_to_ioc_collector",
         "ioc:type:ip"
       ],
       "enrichment": {
@@ -5915,7 +6173,7 @@
       }
     },
     {
-      "id": "0378a1b9-ab64-4285-9427-594219dca32f",
+      "id": "4686639b-8186-4b80-b8e7-b37e0c0356d0",
       "title": "Vulnerability in the Linux nucleus of Red Hat (02 May 2025)",
       "source": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0367/",
       "published": "2025-05-02T00:00:00",
@@ -5933,11 +6191,11 @@
         ]
       },
       "tags": [
-        "context:cves",
-        "rss_to_ioc_collector",
         "feed:source:www.cert.ssi.gouv.fr",
         "ioc:type:cve",
-        "feed:published:2025-05-08"
+        "context:cves",
+        "feed:published:2025-05-08",
+        "rss_to_ioc_collector"
       ],
       "enrichment": {
         "actors": [],
@@ -5951,7 +6209,7 @@
       }
     },
     {
-      "id": "46789931-25ab-4c93-8467-ea918db585cf",
+      "id": "13314d89-3225-4f28-8f93-0c7d69758132",
       "title": "CERTFR-2025-ACT-019 news bulletin (May 05, 2025)",
       "source": "https://www.cert.ssi.gouv.fr/actualite/CERTFR-2025-ACT-019/",
       "published": "2025-05-05T00:00:00",
@@ -5971,12 +6229,12 @@
         "cves": []
       },
       "tags": [
-        "context:exploits",
-        "context:cves",
-        "rss_to_ioc_collector",
         "feed:source:www.cert.ssi.gouv.fr",
         "ioc:type:cve",
+        "context:cves",
+        "context:exploits",
         "feed:published:2025-05-08",
+        "rss_to_ioc_collector",
         "ioc:type:ip"
       ],
       "enrichment": {
@@ -6008,7 +6266,7 @@
       }
     },
     {
-      "id": "96434dae-c332-45b9-ae7f-bd2c78ef0255",
+      "id": "15a05bb6-7d66-4cf9-98bf-5b8bdce67d5a",
       "title": "Multiple vulnerabilities in Google Android (May 06, 2025)",
       "source": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0371/",
       "published": "2025-05-06T00:00:00",
@@ -6070,12 +6328,12 @@
         ]
       },
       "tags": [
-        "context:exploits",
-        "context:cves",
-        "rss_to_ioc_collector",
         "feed:source:www.cert.ssi.gouv.fr",
         "ioc:type:cve",
+        "context:cves",
+        "context:exploits",
         "feed:published:2025-05-08",
+        "rss_to_ioc_collector",
         "ioc:type:ip"
       ],
       "enrichment": {
@@ -6135,7 +6393,7 @@
       }
     },
     {
-      "id": "51c1acf4-bb65-41ae-b2c2-fb3c8ec41b3f",
+      "id": "8ff7dc1b-d8f3-4485-8164-b2035d4cbbdb",
       "title": "Multiple vulnerabilities in Tenable Security Center (07 May 2025)",
       "source": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0374/",
       "published": "2025-05-07T00:00:00",
@@ -6155,11 +6413,11 @@
         ]
       },
       "tags": [
-        "context:cves",
-        "rss_to_ioc_collector",
         "feed:source:www.cert.ssi.gouv.fr",
         "ioc:type:cve",
+        "context:cves",
         "feed:published:2025-05-08",
+        "rss_to_ioc_collector",
         "ioc:type:ip"
       ],
       "enrichment": {
@@ -6176,7 +6434,7 @@
       }
     },
     {
-      "id": "0ff65bf4-b7e3-4fd1-a4e9-bb6761b8b043",
+      "id": "486bdc07-9685-4c3f-be79-f09d1d73ce33",
       "title": "Vuln\u00e9rabilit\u00e9 dans Liferay Portal et Liferay DXP (07 mai 2025)",
       "source": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0375/",
       "published": "2025-05-07T00:00:00",
@@ -6200,11 +6458,11 @@
         ]
       },
       "tags": [
-        "context:cves",
-        "rss_to_ioc_collector",
         "feed:source:www.cert.ssi.gouv.fr",
         "ioc:type:cve",
-        "feed:published:2025-05-08"
+        "context:cves",
+        "feed:published:2025-05-08",
+        "rss_to_ioc_collector"
       ],
       "enrichment": {
         "actors": [],
@@ -6219,7 +6477,7 @@
       }
     },
     {
-      "id": "486e2230-78d8-40c9-8e6e-8dae04a115e7",
+      "id": "439fbd22-d41c-4c26-976c-8c879d70d957",
       "title": "Multiple vulnerabilities in Mariadb (May 07, 2025)",
       "source": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0373/",
       "published": "2025-05-07T00:00:00",
@@ -6238,11 +6496,11 @@
         ]
       },
       "tags": [
-        "context:cves",
-        "rss_to_ioc_collector",
         "feed:source:www.cert.ssi.gouv.fr",
         "ioc:type:cve",
+        "context:cves",
         "feed:published:2025-05-08",
+        "rss_to_ioc_collector",
         "ioc:type:ip"
       ],
       "enrichment": {
@@ -6258,7 +6516,7 @@
       }
     },
     {
-      "id": "8398437c-311d-4d13-a872-0e0f7be21402",
+      "id": "767441c8-e114-4f53-9017-a4af3f0896f7",
       "title": "Multiple vulnerabilities in Elastic products (07 May 2025)",
       "source": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0377/",
       "published": "2025-05-07T00:00:00",
@@ -6277,11 +6535,11 @@
         ]
       },
       "tags": [
-        "context:cves",
-        "rss_to_ioc_collector",
         "feed:source:www.cert.ssi.gouv.fr",
         "ioc:type:cve",
+        "context:cves",
         "feed:published:2025-05-08",
+        "rss_to_ioc_collector",
         "ioc:type:ip"
       ],
       "enrichment": {
@@ -6297,7 +6555,7 @@
       }
     },
     {
-      "id": "e5b3ba2a-1c31-4b58-87fb-84ecad27d41a",
+      "id": "5797141c-b37b-4093-9fbc-c56a64037f63",
       "title": "Vulnerability in Google Chrome (May 07, 2025)",
       "source": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0376/",
       "published": "2025-05-07T00:00:00",
@@ -6317,11 +6575,11 @@
         ]
       },
       "tags": [
-        "context:cves",
-        "rss_to_ioc_collector",
         "feed:source:www.cert.ssi.gouv.fr",
         "ioc:type:cve",
-        "feed:published:2025-05-08"
+        "context:cves",
+        "feed:published:2025-05-08",
+        "rss_to_ioc_collector"
       ],
       "enrichment": {
         "actors": [],
@@ -6335,7 +6593,7 @@
       }
     },
     {
-      "id": "e552f943-f78c-49b4-b7d4-082d1465b793",
+      "id": "505f429b-e579-405d-a6b9-81014f66c9f6",
       "title": "Multiple vulnerabilities in Google Pixel (07 May 2025)",
       "source": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0372/",
       "published": "2025-05-07T00:00:00",
@@ -6355,11 +6613,11 @@
         ]
       },
       "tags": [
-        "context:cves",
-        "rss_to_ioc_collector",
         "feed:source:www.cert.ssi.gouv.fr",
         "ioc:type:cve",
+        "context:cves",
         "feed:published:2025-05-08",
+        "rss_to_ioc_collector",
         "ioc:type:ip"
       ],
       "enrichment": {
