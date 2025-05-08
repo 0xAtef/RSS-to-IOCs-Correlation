@@ -294,7 +294,7 @@
   "output_base_dir": "output",
   "feed_output_dir": "misp_feed",
   "log_file": "logs/ioc_collector.log",
-  "user_agent": "MISP-IOC-Collector/1.0",
+  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:114.0) Gecko/20100101 Firefox/114.0",
   "request_timeout": 10,
   "http_retry_total": 3,
   "http_backoff_factor": 1,

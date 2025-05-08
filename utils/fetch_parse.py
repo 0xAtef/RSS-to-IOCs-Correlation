@@ -25,7 +25,7 @@ def extract_iocs(text):
 def fetch_feed(feed_url, session, cfg):
     """Fetch the RSS feed."""
     try:
-        headers = {"User-Agent": cfg.get("user_agent", "MISP-IOC-Collector/1.0")}
+        headers = {"User-Agent": cfg.get("user_agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:114.0) Gecko/20100101 Firefox/114.0")}
         logging.info(f"Fetching {feed_url}")
         response = session.get(feed_url, headers=headers, timeout=cfg.get("request_timeout", 10))
         response.raise_for_status()
