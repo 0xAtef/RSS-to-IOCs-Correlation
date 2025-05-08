@@ -7,6 +7,7 @@ import requests
 from urllib3.util.retry import Retry
 from requests.adapters import HTTPAdapter
 from concurrent.futures import ThreadPoolExecutor, as_completed
+from datetime import datetime
 
 from utils.csv_writer import write_csv_feed
 from utils.feed_health import monitor_feed_health
@@ -16,49 +17,28 @@ from utils.fetch_parse import process_feed
 CONFIG_DIR = "config"
 LOGS_DIR = "logs"
 OUTPUT_DIR = "output"
-MISP_FEED_DIR = "misp_feed"  # Add MISP feed directory
+MISP_FEED_DIR = "misp_feed"
 
 # Ensure required directories exist
 os.makedirs(CONFIG_DIR, exist_ok=True)
 os.makedirs(LOGS_DIR, exist_ok=True)
 os.makedirs(OUTPUT_DIR, exist_ok=True)
-os.makedirs(MISP_FEED_DIR, exist_ok=True)  # Ensure MISP feed directory exists
-os.makedirs(LOGS_DIR, exist_ok=True)
-
-# Configure logging
-LOG_FILE = os.path.join(LOGS_DIR, "ioc_collector.log")
-logging.basicConfig(
-    level=logging.INFO,
-    format="%(asctime)s %(levelname)s %(message)s",
-    handlers=[
-        logging.StreamHandler(sys.stdout),
-        logging.FileHandler(LOG_FILE, mode="a", encoding="utf-8")
-    ]
-)
-
-# Add a test log to confirm logging is initialized
-logging.info("Logging initialized. Starting script...")
+os.makedirs(MISP_FEED_DIR, exist_ok=True)
 
 # === FILE PATHS ===
-CONFIG_PATH = os.path.join("config", "config.json")
-LOG_FILE = os.path.join("logs", "ioc_collector.log")
-SEEN_IOCS_PATH = os.path.join("output", "seen_iocs.json")
-CSV_PATH = os.path.join("misp_feed", "feed.csv")
+CONFIG_PATH = os.path.join(CONFIG_DIR, "config.json")
+LOG_FILE = os.path.join(LOGS_DIR, "ioc_collector.log")
+SEEN_IOCS_PATH = os.path.join(OUTPUT_DIR, "seen_iocs.json")
+CSV_PATH = os.path.join(MISP_FEED_DIR, "feed.csv")
+
 # === LOAD CONFIGURATION FROM FILE ===
 with open(CONFIG_PATH, "r", encoding="utf-8") as f:
     cfg = json.load(f)
 
-# Required
-ORG_NAME = cfg["org_name"]
-ORG_UUID = cfg["org_uuid"]
-
-FEED_URLS = cfg.get("feed_urls", [])
-MAX_DAYS_OLD = cfg.get("max_days_old", 20)
-MAX_WORKERS = cfg.get("max_workers", 5)
-
-# ── Logging ────────────────────────────────────────────────────────
+# Configure logging
+debug_mode = cfg.get("debug_mode", False)
 logging.basicConfig(
-    level=logging.INFO,
+    level=logging.DEBUG if debug_mode else logging.INFO,
     format="%(asctime)s %(levelname)s %(message)s",
     handlers=[
         logging.StreamHandler(sys.stdout),
@@ -66,15 +46,28 @@ logging.basicConfig(
     ]
 )
 
-# ── HTTP SESSION ─────────────────────────────────────────────────
+logging.info("Logging initialized. Starting script...")
+
+# Required configuration
+ORG_NAME = cfg["org_name"]
+ORG_UUID = cfg["org_uuid"]
+FEED_URLS = cfg.get("feed_urls", [])
+MAX_DAYS_OLD = cfg.get("max_days_old", 20)
+MAX_WORKERS = cfg.get("max_workers", 5)
+
+# HTTP session with retries
 session = requests.Session()
-retry = Retry(total=cfg.get("http_retry_total", 3),
-              backoff_factor=cfg.get("http_backoff_factor", 1),
-              status_forcelist=cfg.get("http_status_forcelist", [429, 500, 502, 503, 504]))
+retry = Retry(
+    total=cfg.get("http_retry_total", 3),
+    backoff_factor=cfg.get("http_backoff_factor", 1),
+    status_forcelist=cfg.get("http_status_forcelist", [429, 500, 502, 503, 504]),
+    raise_on_status=False
+)
 session.mount("https://", HTTPAdapter(max_retries=retry))
 session.mount("http://", HTTPAdapter(max_retries=retry))
+session.headers.update({"User-Agent": cfg.get("user_agent", "RSS-IOC-Collector")})
 
-# ── STATE ─────────────────────────────────────────────────────────
+# Global state
 global_seen = set()
 
 def load_seen():
@@ -87,37 +80,47 @@ def load_seen():
         return set()
     except json.JSONDecodeError as e:
         logging.error(f"Error decoding JSON from {SEEN_IOCS_PATH}: {e}")
-        # Initialize as an empty set
         with open(SEEN_IOCS_PATH, "w") as f:
             json.dump([], f)
         return set()
 
-
 def save_seen(seen):
     """Save the set of seen IOCs to a file."""
     try:
+        backup_path = SEEN_IOCS_PATH + ".bak"
+        if os.path.exists(SEEN_IOCS_PATH):
+            os.rename(SEEN_IOCS_PATH, backup_path)  # Create a backup
         with open(SEEN_IOCS_PATH, "w") as f:
             json.dump(sorted(seen), f, indent=2)
         logging.info(f"Seen IOCs saved to {SEEN_IOCS_PATH}")
     except Exception as e:
         logging.error(f"Failed to save seen IOCs to {SEEN_IOCS_PATH}: {e}")
 
-
 def validate_config(cfg):
-    """Validate the configuration file for required keys."""
+    """Validate the configuration file for required keys and values."""
     required_keys = ["org_name", "org_uuid", "feed_urls", "output_base_dir", "seen_iocs_path"]
     for key in required_keys:
         if key not in cfg:
             logging.error(f"Missing required configuration key: {key}")
             sys.exit(1)
+    if not isinstance(cfg.get("feed_urls", []), list) or not cfg["feed_urls"]:
+        logging.error("The 'feed_urls' key must be a non-empty list.")
+        sys.exit(1)
+    if not isinstance(cfg.get("org_uuid", ""), str) or len(cfg["org_uuid"]) != 36:
+        logging.error("The 'org_uuid' key must be a valid UUID.")
+        sys.exit(1)
 
+    # Set defaults for optional keys
+    cfg.setdefault("max_days_old", 20)
+    cfg.setdefault("max_workers", 5)
+    cfg.setdefault("ioc_patterns", {})
+    cfg.setdefault("whitelist_by_feed", {})
 
 def cleanup():
     """Perform cleanup tasks, such as resetting global variables."""
     global global_seen
     global_seen.clear()
     logging.info("Cleanup completed.")
-
 
 def process_feeds_concurrently(feed_urls, seen):
     """Process multiple feeds concurrently."""
@@ -132,11 +135,11 @@ def process_feeds_concurrently(feed_urls, seen):
                 global_seen,
                 session,
                 cfg,
-                cfg["ioc_patterns"],  # Pass ioc_patterns
-                cfg.get("whitelist_by_feed", {}),  # Pass whitelist_by_feed
-                cfg["max_days_old"]  # Pass max_days_old
+                cfg["ioc_patterns"],
+                cfg.get("whitelist_by_feed", {}),
+                cfg["max_days_old"]
             ): url
-            for url in feed_urls if monitor_feed_health(url, session)  # Only process healthy feeds
+            for url in feed_urls if monitor_feed_health(url, session)
         }
         for future in as_completed(futures):
             feed_url = futures[future]
@@ -152,9 +155,8 @@ def process_feeds_concurrently(feed_urls, seen):
     logging.info(f"Finished processing feeds. Total records collected: {len(all_recs)}")
     return all_recs
 
-
-# ── MAIN ────────────────────────────────────────────────────────────────
 def main():
+    start_time = datetime.utcnow()
     validate_config(cfg)
     logging.info(f"Feed URLs to process: {FEED_URLS}")
     if not FEED_URLS:
@@ -169,11 +171,8 @@ def main():
         save_seen(seen)
         write_csv_feed(valid_recs, CSV_PATH, ORG_UUID, ORG_NAME, cfg)
 
-        # Ensure the output directory exists
-        os.makedirs("output", exist_ok=True)
-
         # Save output.json
-        output_data = {"records": valid_recs}  # Example structure for output_data
+        output_data = {"records": valid_recs}
         try:
             with open("output/output.json", "w") as f:
                 json.dump(output_data, f, indent=2)
@@ -181,24 +180,20 @@ def main():
         except Exception as e:
             logging.error(f"Failed to save output.json: {e}")
 
-        # Save seen_iocs.json
-        seen_iocs = list(seen)  # Convert set to list for JSON serialization
-        try:
-            with open("output/seen_iocs.json", "w") as f:
-                json.dump(seen_iocs, f, indent=2)
-            logging.info("seen_iocs.json saved successfully.")
-        except Exception as e:
-            logging.error(f"Failed to save seen_iocs.json: {e}")
-
         logging.info("=== Summary ===")
         logging.info(f"Total feeds processed: {len(FEED_URLS)}")
         logging.info(f"Total records collected: {len(all_recs)}")
         logging.info(f"Total valid records saved: {len(valid_recs)}")
         logging.info(f"Total seen IOCs saved: {len(seen)}")
+        end_time = datetime.utcnow()
+        logging.info(f"Total runtime: {end_time - start_time}")
 
     finally:
         cleanup()
 
-
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except Exception as e:
+        logging.error(f"Unexpected error: {e}", exc_info=True)
+        sys.exit(1)
