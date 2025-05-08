@@ -1,3 +1,77 @@
 {
-  "records": []
+  "records": [
+    {
+      "id": "33b1717a-d629-4a18-be58-b42e39197e92",
+      "title": "Threat Attack Daily - 8th of May 2025",
+      "source": "https://darkwebinformer.com/threat-attack-daily-8th-of-may-2025/",
+      "published": "2025-05-08T22:48:57",
+      "feed": "https://darkwebinformer.com/rss/",
+      "iocs": {
+        "ips": [],
+        "domains": [
+          "claimsMr.RootVerse"
+        ],
+        "urls": [],
+        "emails": [],
+        "sha1": [],
+        "sha256": [],
+        "md5": [],
+        "cves": []
+      },
+      "tags": [
+        "RSS to IOC Collector",
+        "Ransomware",
+        "DarkWebInformer"
+      ],
+      "enrichment": {
+        "actors": [],
+        "malware": [],
+        "mitre_techniques": [],
+        "cves": [
+          "CVE-2025-20188"
+        ],
+        "tools": [],
+        "campaigns": []
+      }
+    },
+    {
+      "id": "28cfa058-b55a-4416-b79e-efda8da28a1f",
+      "title": "Ransomware Attack Update for the 8th of May 2025",
+      "source": "https://darkwebinformer.com/ransomware-attack-update-for-the-8th-of-may-2025/",
+      "published": "2025-05-08T22:41:20",
+      "feed": "https://darkwebinformer.com/rss/",
+      "iocs": {
+        "ips": [],
+        "domains": [
+          "www.hcsheriff.gov",
+          "T.consulT"
+        ],
+        "urls": [],
+        "emails": [],
+        "sha1": [],
+        "sha256": [],
+        "md5": [],
+        "cves": []
+      },
+      "tags": [
+        "RSS to IOC Collector",
+        "Ransomware",
+        "DarkWebInformer"
+      ],
+      "enrichment": {
+        "actors": [
+          "akira"
+        ],
+        "malware": [
+          "akira"
+        ],
+        "mitre_techniques": [],
+        "cves": [
+          "CVE-2025-20188"
+        ],
+        "tools": [],
+        "campaigns": []
+      }
+    }
+  ]
 }
