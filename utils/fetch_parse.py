@@ -35,8 +35,20 @@ def fetch_feed(feed_url, session, cfg):
         return None
 
 
-def process_feed(feed_url, seen, global_seen, session, cfg, ioc_patterns, whitelist_by_feed, max_days_old):
-    """Process a single feed URL and extract IOCs."""
+def process_feed(url, seen, global_seen, session, cfg, ioc_patterns, whitelist_by_feed, max_days_old):
+    """
+    Process a single feed and extract IOCs.
+
+    Args:
+        url (str): Feed URL.
+        seen (set): Set of seen IOCs.
+        global_seen (set): Global set of IOCs.
+        session (requests.Session): HTTP session.
+        cfg (dict): Configuration dictionary.
+        ioc_patterns (dict): IOC patterns for matching.
+        whitelist_by_feed (dict): Whitelist for specific feeds.
+        max_days_old (int): Maximum age of articles to process.
+    """
     logging.info(f"Starting to process feed: {feed_url}")
     
     # Initialize IOCUtils instance
