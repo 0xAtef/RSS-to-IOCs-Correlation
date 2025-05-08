@@ -2,10 +2,16 @@ import csv
 import logging
 from utils.translator import translate_to_english
 
-def write_csv_feed(all_records, csv_path, cfg):
+def write_csv_feed(all_records, csv_path, cfg, log_file=None):
     """
     Write the collected IOCs and enrichment data to a CSV file.
     Translate non-English text to English before writing.
+
+    Args:
+        all_records (list): List of dictionaries containing IOCs and enrichment data.
+        csv_path (str): Path to the CSV file to write to.
+        cfg (dict): Configuration dictionary with MISP-specific settings.
+        log_file (str, optional): Path to the log file.
     """
     fieldnames = [
         "info", "date", "threat_level_id", "analysis",
@@ -52,6 +58,13 @@ def write_csv_feed(all_records, csv_path, cfg):
 
                         w.writerow(row)
 
-        logging.info(f"✅ Wrote MISP-compatible CSV feed to {csv_path}")
+        logging.info(f"✅ Successfully wrote {len(all_records)} records to {csv_path}")
+        if log_file:
+            with open(log_file, "a", encoding="utf-8") as log:
+                log.write(f"✅ Successfully wrote {len(all_records)} records to {csv_path}\n")
     except Exception as e:
-        logging.error(f"Failed to write CSV feed: {e}")
+        error_message = f"Failed to write CSV feed to {csv_path}: {e}"
+        logging.error(error_message)
+        if log_file:
+            with open(log_file, "a", encoding="utf-8") as log:
+                log.write(error_message + "\n")
