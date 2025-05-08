@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+
 import json
 import os
 import sys
@@ -12,6 +13,7 @@ from datetime import datetime
 from utils.csv_writer import write_csv_feed
 from utils.feed_health import monitor_feed_health
 from utils.fetch_parse import process_feed
+from utils.ioc_utils import IOCUtils  # Consolidated IOC logic
 
 # === FOLDER STRUCTURE ===
 CONFIG_DIR = "config"
@@ -20,10 +22,8 @@ OUTPUT_DIR = "output"
 MISP_FEED_DIR = "misp_feed"
 
 # Ensure required directories exist
-os.makedirs(CONFIG_DIR, exist_ok=True)
-os.makedirs(LOGS_DIR, exist_ok=True)
-os.makedirs(OUTPUT_DIR, exist_ok=True)
-os.makedirs(MISP_FEED_DIR, exist_ok=True)
+for directory in [CONFIG_DIR, LOGS_DIR, OUTPUT_DIR, MISP_FEED_DIR]:
+    os.makedirs(directory, exist_ok=True)
 
 # === FILE PATHS ===
 CONFIG_PATH = os.path.join(CONFIG_DIR, "config.json")
@@ -31,14 +31,17 @@ LOG_FILE = os.path.join(LOGS_DIR, "ioc_collector.log")
 SEEN_IOCS_PATH = os.path.join(OUTPUT_DIR, "seen_iocs.json")
 CSV_PATH = os.path.join(MISP_FEED_DIR, "feed.csv")
 
-# === LOAD CONFIGURATION FROM FILE ===
-with open(CONFIG_PATH, "r", encoding="utf-8") as f:
-    cfg = json.load(f)
+# === LOAD CONFIGURATION ===
+try:
+    with open(CONFIG_PATH, "r", encoding="utf-8") as f:
+        cfg = json.load(f)
+except FileNotFoundError:
+    logging.critical(f"Configuration file not found at {CONFIG_PATH}. Exiting.")
+    sys.exit(1)
 
-# Configure logging
-debug_mode = cfg.get("debug_mode", False)
+# === CONFIGURE LOGGING ===
 logging.basicConfig(
-    level=logging.DEBUG if debug_mode else logging.INFO,
+    level=logging.DEBUG if cfg.get("debug_mode", False) else logging.INFO,
     format="%(asctime)s %(levelname)s %(message)s",
     handlers=[
         logging.StreamHandler(sys.stdout),
@@ -48,40 +51,49 @@ logging.basicConfig(
 
 logging.info("Logging initialized. Starting script...")
 
-# Required configuration
-ORG_NAME = cfg["org_name"]
-ORG_UUID = cfg["org_uuid"]
+# === REQUIRED CONFIGURATION ===
+ORG_NAME = cfg.get("org_name")
+ORG_UUID = cfg.get("org_uuid")
 FEED_URLS = cfg.get("feed_urls", [])
 MAX_DAYS_OLD = cfg.get("max_days_old", 20)
 MAX_WORKERS = cfg.get("max_workers", 5)
+IOC_PATTERNS = cfg.get("ioc_patterns", {})
+WHITELIST_BY_FEED = cfg.get("whitelist_by_feed", {})
 
-# HTTP session with retries
-session = requests.Session()
-retry = Retry(
-    total=cfg.get("http_retry_total", 3),
-    backoff_factor=cfg.get("http_backoff_factor", 1),
-    status_forcelist=cfg.get("http_status_forcelist", [429, 500, 502, 503, 504]),
-    raise_on_status=False
-)
-session.mount("https://", HTTPAdapter(max_retries=retry))
-session.mount("http://", HTTPAdapter(max_retries=retry))
-session.headers.update({"User-Agent": cfg.get("user_agent", "RSS-IOC-Collector")})
+# Validate configuration
+if not ORG_NAME or not ORG_UUID or not FEED_URLS:
+    logging.critical("Missing required configuration keys (org_name, org_uuid, feed_urls). Exiting.")
+    sys.exit(1)
+
+# === HTTP SESSION WITH RETRIES ===
+def setup_http_session(cfg):
+    session = requests.Session()
+    retry = Retry(
+        total=cfg.get("http_retry_total", 3),
+        backoff_factor=cfg.get("http_backoff_factor", 1),
+        status_forcelist=cfg.get("http_status_forcelist", [429, 500, 502, 503, 504]),
+        raise_on_status=False
+    )
+    session.mount("https://", HTTPAdapter(max_retries=retry))
+    session.mount("http://", HTTPAdapter(max_retries=retry))
+    session.headers.update({"User-Agent": cfg.get("user_agent", "RSS-IOC-Collector")})
+    logging.debug("HTTP session configured with retries.")
+    return session
+
+session = setup_http_session(cfg)
 
 # Global state
 global_seen = set()
+ioc_utils = IOCUtils(whitelist_by_feed=WHITELIST_BY_FEED)
 
+# === HELPER FUNCTIONS ===
 def load_seen():
     """Load the set of seen IOCs from a file."""
     try:
         with open(SEEN_IOCS_PATH, "r") as f:
             return set(json.load(f))
-    except FileNotFoundError:
-        logging.warning(f"Seen IOCs file not found: {SEEN_IOCS_PATH}. Starting fresh.")
-        return set()
-    except json.JSONDecodeError as e:
-        logging.error(f"Error decoding JSON from {SEEN_IOCS_PATH}: {e}")
-        with open(SEEN_IOCS_PATH, "w") as f:
-            json.dump([], f)
+    except (FileNotFoundError, json.JSONDecodeError):
+        logging.warning(f"Seen IOCs file not found or corrupted: {SEEN_IOCS_PATH}. Starting fresh.")
         return set()
 
 def save_seen(seen):
@@ -94,38 +106,13 @@ def save_seen(seen):
             json.dump(sorted(seen), f, indent=2)
         logging.info(f"Seen IOCs saved to {SEEN_IOCS_PATH}")
     except Exception as e:
-        logging.error(f"Failed to save seen IOCs to {SEEN_IOCS_PATH}: {e}")
-
-def validate_config(cfg):
-    """Validate the configuration file for required keys and values."""
-    required_keys = ["org_name", "org_uuid", "feed_urls", "output_base_dir", "seen_iocs_path"]
-    for key in required_keys:
-        if key not in cfg:
-            logging.error(f"Missing required configuration key: {key}")
-            sys.exit(1)
-    if not isinstance(cfg.get("feed_urls", []), list) or not cfg["feed_urls"]:
-        logging.error("The 'feed_urls' key must be a non-empty list.")
-        sys.exit(1)
-    if not isinstance(cfg.get("org_uuid", ""), str) or len(cfg["org_uuid"]) != 36:
-        logging.error("The 'org_uuid' key must be a valid UUID.")
-        sys.exit(1)
-
-    # Set defaults for optional keys
-    cfg.setdefault("max_days_old", 20)
-    cfg.setdefault("max_workers", 5)
-    cfg.setdefault("ioc_patterns", {})
-    cfg.setdefault("whitelist_by_feed", {})
-
-def cleanup():
-    """Perform cleanup tasks, such as resetting global variables."""
-    global global_seen
-    global_seen.clear()
-    logging.info("Cleanup completed.")
+        logging.error(f"Failed to save seen IOCs: {e}")
 
 def process_feeds_concurrently(feed_urls, seen):
     """Process multiple feeds concurrently."""
     logging.info(f"Starting to process {len(feed_urls)} feeds.")
     all_recs = []
+    skipped_feeds = []
     with ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
         futures = {
             executor.submit(
@@ -135,9 +122,9 @@ def process_feeds_concurrently(feed_urls, seen):
                 global_seen,
                 session,
                 cfg,
-                cfg["ioc_patterns"],
-                cfg.get("whitelist_by_feed", {}),
-                cfg["max_days_old"]
+                IOC_PATTERNS,
+                WHITELIST_BY_FEED,
+                MAX_DAYS_OLD
             ): url
             for url in feed_urls if monitor_feed_health(url, session)
         }
@@ -152,44 +139,47 @@ def process_feeds_concurrently(feed_urls, seen):
                 all_recs.extend(result)
             except Exception as exc:
                 logging.error(f"Error processing feed {feed_url}: {exc}")
+                skipped_feeds.append(feed_url)
     logging.info(f"Finished processing feeds. Total records collected: {len(all_recs)}")
-    return all_recs
+    return all_recs, skipped_feeds
 
+def process_and_save_feeds(feed_urls, seen):
+    all_recs, skipped_feeds = process_feeds_concurrently(feed_urls, seen)
+    valid_recs = [rec for rec in all_recs if "title" in rec and "source" in rec]
+    save_seen(seen)
+    write_csv_feed(valid_recs, CSV_PATH, ORG_UUID, ORG_NAME, cfg)
+    save_output_json(valid_recs)
+    return valid_recs, skipped_feeds, all_recs
+
+def save_output_json(records):
+    output_data = {"records": records}
+    with open("output/output.json", "w") as f:
+        json.dump(output_data, f, indent=2)
+    logging.info("output.json saved successfully.")
+
+# === MAIN FUNCTION ===
 def main():
     start_time = datetime.utcnow()
-    validate_config(cfg)
-    logging.info(f"Feed URLs to process: {FEED_URLS}")
-    if not FEED_URLS:
-        logging.error("No feed URLs provided in the configuration.")
-        sys.exit(1)
     seen = load_seen()
     try:
-        all_recs = process_feeds_concurrently(FEED_URLS, seen)
-        valid_recs = [rec for rec in all_recs if "title" in rec and "source" in rec]
-        if len(valid_recs) < len(all_recs):
-            logging.warning(f"Some entries are missing required fields and will be skipped.")
-        save_seen(seen)
-        write_csv_feed(valid_recs, CSV_PATH, ORG_UUID, ORG_NAME, cfg)
+        valid_recs, skipped_feeds, all_recs = process_and_save_feeds(FEED_URLS, seen)
 
-        # Save output.json
-        output_data = {"records": valid_recs}
-        try:
-            with open("output/output.json", "w") as f:
-                json.dump(output_data, f, indent=2)
-            logging.info("output.json saved successfully.")
-        except Exception as e:
-            logging.error(f"Failed to save output.json: {e}")
+        # Summary
+        end_time = datetime.utcnow()
+        total_runtime = end_time - start_time
+        avg_runtime_per_feed = total_runtime / len(FEED_URLS) if FEED_URLS else 0
 
         logging.info("=== Summary ===")
         logging.info(f"Total feeds processed: {len(FEED_URLS)}")
+        logging.info(f"Total feeds skipped: {len(skipped_feeds)}")
         logging.info(f"Total records collected: {len(all_recs)}")
         logging.info(f"Total valid records saved: {len(valid_recs)}")
         logging.info(f"Total seen IOCs saved: {len(seen)}")
-        end_time = datetime.utcnow()
-        logging.info(f"Total runtime: {end_time - start_time}")
-
+        logging.info(f"Total runtime: {total_runtime}")
+        logging.info(f"Average runtime per feed: {avg_runtime_per_feed}")
     finally:
-        cleanup()
+        global_seen.clear()
+        logging.info("Cleanup completed.")
 
 if __name__ == "__main__":
     try:
