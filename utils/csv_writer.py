@@ -2,7 +2,7 @@ import csv
 import logging
 from utils.translator import translate_to_english
 
-def write_csv_feed(all_records, csv_path, log_file=None, cfg):
+def write_csv_feed(all_records, csv_path, cfg, log_file):
     """
     Write the collected IOCs and enrichment data to a CSV file.
     Translate non-English text to English before writing.
