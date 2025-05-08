@@ -1,124 +1,174 @@
-import urllib3
-
-urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
-
-from pymisp import PyMISP, MISPEvent
-import csv
+import os
+import re
+import logging
 import requests
 from io import StringIO
 from dotenv import load_dotenv
-import os
-import re
+import csv
 
 # -----------------------------------------------------------------------------
-# 1) Load env, validate, init PyMISP
+# Setup logging
+# -----------------------------------------------------------------------------
+log_level = os.getenv("LOG_LEVEL", "INFO").upper()
+logging.basicConfig(
+    filename="misp_event_creation.log",
+    level=log_level,
+    format="%(asctime)s - %(levelname)s - %(message)s",
+    datefmt="%Y-%m-%d %H:%M:%S",
+)
+console = logging.StreamHandler()
+console.setLevel(logging.getLevelName(log_level))
+console.setFormatter(logging.Formatter("%(asctime)s - %(levelname)s - %(message)s"))
+logging.getLogger().addHandler(console)
+logging.info("Starting MISP Event Creation Script")
+
+# Suppress SSL warnings
+requests.packages.urllib3.disable_warnings()
+
+# -----------------------------------------------------------------------------
+# Load environment variables
 # -----------------------------------------------------------------------------
 load_dotenv()
-
 MISP_BASE_URL = os.getenv("MISP_BASE_URL")
 MISP_API_KEY = os.getenv("MISP_API_KEY")
 MISP_VERIFY_SSL = os.getenv("MISP_VERIFY_SSL", "true").lower() == "true"
-
 if not MISP_BASE_URL or not MISP_API_KEY:
-    raise ValueError("MISP configuration is missing. Check your .env")
-
-misp = PyMISP(MISP_BASE_URL, MISP_API_KEY, ssl=False)  # Disable SSL for local testing
+    logging.critical("MISP_BASE_URL and MISP_API_KEY must be set in .env")
+    raise ValueError("MISP_BASE_URL and MISP_API_KEY must be set in .env")
 
 # -----------------------------------------------------------------------------
-# 2) Fetch CSV, build events
+# CSV source and fetch
 # -----------------------------------------------------------------------------
-csv_url = (
-    "https://raw.githubusercontent.com/"
-    "0xAtef/RSS-to-IOCs-Correlation/refs/heads/"
+CSV_URL = (
+    "https://raw.githubusercontent.com/0xAtef/RSS-to-IOCs-Correlation/"
     "main/misp_feed/feed.csv"
 )
-resp = requests.get(csv_url)
-resp.raise_for_status()
 
-reader = csv.DictReader(StringIO(resp.text))
-events = {}
+def fetch_csv_data(url):
+    try:
+        resp = requests.get(url, verify=False)
+        resp.raise_for_status()
+        logging.info("Fetched CSV data successfully")
+        return resp.text
+    except requests.RequestException as e:
+        logging.critical(f"Failed to fetch CSV data: {e}")
+        raise
 
-for row in reader:
-    # Validate the 'info' field
-    if not row.get('info') or not row['info'].strip():
-        print(f"Skipping row due to missing or empty 'info' field: {row}")
-        continue
+# -----------------------------------------------------------------------------
+# Normalize CSV
+# -----------------------------------------------------------------------------
+def normalize_data(csv_text):
+    reader = csv.DictReader(StringIO(csv_text))
+    events = {}
+    for row in reader:
+        info = row.get('info', '').strip()
+        if not info:
+            logging.warning("Skipping row: Missing 'info' field")
+            continue
+        events.setdefault(info, []).append(row)
+    logging.info(f"Normalized data into {len(events)} events")
+    return events
 
-    # Sanitize and truncate the 'info' field
-    sanitized_info = row['info'].strip().replace("\n", " ").replace("\r", "").replace("\t", "")
-    sanitized_info = re.sub(r'[^\w\s\-.,\'"]', '', sanitized_info)  # Remove special characters
-    sanitized_info = sanitized_info[:250]  # Truncate to 250 characters
-    if not sanitized_info:
-        print(f"Skipping row due to sanitized 'info' field being empty: {row}")
-        continue
+# -----------------------------------------------------------------------------
+# Sanitize and validate the info field
+# -----------------------------------------------------------------------------
+def sanitize_info(info):
+    """Sanitize the 'info' field and ensure UTF-8 encoding."""
+    sanitized_info = info.strip()
+    sanitized_info = re.sub(r'[^\w\s\-.,\'"]', '', sanitized_info)  # Remove invalid characters
+    sanitized_info = sanitized_info[:255]  # Truncate to 255 characters (MISP limit)
+    try:
+        sanitized_info = sanitized_info.encode('utf-8').decode('utf-8')  # Ensure UTF-8 encoding
+    except UnicodeDecodeError:
+        logging.warning(f"Failed to encode info field to UTF-8: {info}")
+        sanitized_info = "Default Info: Event Title Missing"
+    return sanitized_info or "Default Info: Event Title Missing"  # Use fallback if empty
 
-    # Make sure we always set row['info'] into our Event
-    key = f"{sanitized_info}|{row['date']}"
-    if key not in events:
-        e = MISPEvent()
-        e.info = sanitized_info  # Set the sanitized info field
-        e.date = row['date']
-        e.threat_level_id = row['threat_level_id']
-        e.analysis = row['analysis']
-        events[key] = e
+# -----------------------------------------------------------------------------
+# Create events using requests
+# -----------------------------------------------------------------------------
+def create_events(events):
+    headers = {
+        "Authorization": MISP_API_KEY,
+        "Content-Type": "application/json",
+        "Accept": "application/json"
+    }
 
-    e = events[key]
+    for info, rows in events.items():
+        logging.info(f"Processing event with info: '{info}'")
 
-    # Normalize attribute type
-    atype = row['attribute_type']
-    attribute_value = row['attribute_value'].strip()
+        # Sanitize and validate the 'info' field
+        sanitized_info = sanitize_info(info)
 
-    # Validate domain attributes
-    if atype == "domain" and not re.match(r'^[a-zA-Z0-9\-\.]+\.[a-zA-Z]{2,}$', attribute_value):
-        print(f"Skipping invalid domain attribute: {attribute_value}")
-        continue
+        # Build event payload
+        event_payload = {
+            "info": sanitized_info,
+            "date": rows[0].get('date'),
+            "threat_level_id": int(rows[0].get('threat_level_id', 3)),
+            "analysis": int(rows[0].get('analysis', 0)),
+            "distribution": int(rows[0].get('distribution', 0)),
+            "Attribute": [],
+            "tags": []  # Initialize the tags field
+        }
 
-    # Add the main IOC attribute
-    e.add_attribute(
-        type=atype,
-        category=row['attribute_category'],
-        value=attribute_value,
-        to_ids=(row['to_ids'] == 'True'),
-        comment=row.get('comment', ''),
-        timestamp=row.get('attribute_timestamp') or None
-    )
+        # Add attributes
+        for row in rows:
+            at = row.get('attribute_type', '').strip()
+            val = row.get('attribute_value', '').strip()
+            cat = row.get('attribute_category', '').strip()
+            to_ids = row.get('to_ids', '').strip().lower() == 'true'
+            comment = row.get('comment', '').strip() or None
 
-    # Tags
-    for tag in filter(None, (t.strip() for t in row.get('tag', '').split(';'))):
-        e.add_tag(tag)
+            if at and val and cat:
+                attribute = {
+                    "type": at,
+                    "category": cat,
+                    "value": val,
+                    "to_ids": to_ids,
+                    "comment": comment
+                }
+                event_payload["Attribute"].append(attribute)
+            else:
+                logging.warning(f"Skipping invalid attribute: {row}")
 
-    # Contextual text fields
-    for field, cat in [
-        ('actors', 'Attribution'),
-        ('malware', 'Artifacts dropped'),
-        ('mitre_techniques', 'External analysis'),
-        ('cves', 'External analysis'),
-        ('tools', 'External analysis'),
-        ('campaigns', 'Attribution'),
-    ]:
-        for val in filter(None, (i.strip() for i in row.get(field, '').split(';'))):
-            e.add_attribute(
-                type='text',
-                category=cat,
-                value=val,
-                to_ids=False,
-                comment=f"Added from {field}"
+        # Add tags
+        for row in rows:
+            if 'tag' in row and row['tag'].strip():
+                tags = [tag.strip() for tag in row['tag'].split(';') if tag.strip()]
+                event_payload["tags"].extend(tags)
+
+        # Remove duplicate tags
+        event_payload["tags"] = list(set(event_payload["tags"]))
+
+        # Send POST request to create event
+        try:
+            logging.info(f"Creating event: '{sanitized_info}'")
+            response = requests.post(
+                f"{MISP_BASE_URL}/events/add",
+                headers=headers,
+                json=event_payload,
+                verify=MISP_VERIFY_SSL,
+                allow_redirects=False  # Disable automatic redirects
             )
 
-# -----------------------------------------------------------------------------
-# 3) Push to MISP, printing out the JSON to verify "info" is present
-# -----------------------------------------------------------------------------
-for e in events.values():
-    print(f">>> SENDING: Event Info: {e.info[:50]}...")
-    print(f"Full Event Payload: {e.to_json()}")  # Debug: Print full event details
+            if response.status_code == 200:
+                logging.info(f"Event created successfully: '{sanitized_info}'")
+            elif response.status_code in (301, 302):
+                logging.warning(f"Redirect received for event '{sanitized_info}': {response.headers.get('Location')}")
+            else:
+                logging.error(f"Failed to create event '{sanitized_info}': {response.status_code} {response.text}")
 
-    # Ensure the 'info' field is set and valid
-    if not e.info or not e.info.strip():
-        print(f"Error: Event with empty 'info' field detected. Adding fallback value.")
-        e.info = "Default Info: Missing or Undefined"
+        except Exception as e:
+            logging.error(f"Exception occurred while creating event '{sanitized_info}': {e}")
 
+# -----------------------------------------------------------------------------
+# Main
+# -----------------------------------------------------------------------------
+if __name__ == '__main__':
     try:
-        result = misp.add_event(e, pythonify=True)  # Directly pass the MISPEvent object
-        print(f"Pushed event: {e.info} -> id={getattr(result, 'id', result)}")
-    except Exception as ex:
-        print(f"Failed to push event: {e.info}. Error: {ex}")
+        csv_text = fetch_csv_data(CSV_URL)
+        events = normalize_data(csv_text)
+        create_events(events)
+        logging.info("Script finished successfully")
+    except Exception as e:
+        logging.critical(f"Script terminated due to an error: {e}")
