@@ -120,7 +120,7 @@ def process_feeds_concurrently(feed_urls, seen):
         futures = {
             executor.submit(
                 process_feed,
-                url,
+                url,  # Pass feed_url here
                 seen,
                 global_seen,
                 session,
@@ -129,7 +129,7 @@ def process_feeds_concurrently(feed_urls, seen):
                 WHITELIST_BY_FEED,
                 MAX_DAYS_OLD
             ): url
-            for url in feed_urls if monitor_feed_health(url, session, LOG_FILE)  # Pass LOG_FILE here
+            for url in feed_urls if monitor_feed_health(url, session, LOG_FILE)
         }
         for future in as_completed(futures):
             feed_url = futures[future]

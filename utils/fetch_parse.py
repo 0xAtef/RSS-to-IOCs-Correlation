@@ -35,7 +35,7 @@ def fetch_feed(feed_url, session, cfg):
         return None
 
 
-def process_feed(url, seen, global_seen, session, cfg, ioc_patterns, whitelist_by_feed, max_days_old):
+def process_feed(feed_url, seen, global_seen, session, cfg, ioc_patterns, whitelist_by_feed, max_days_old):
     """
     Process a single feed and extract IOCs.
 
