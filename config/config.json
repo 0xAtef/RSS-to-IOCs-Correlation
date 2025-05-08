@@ -1,7 +1,6 @@
 {
   "org_name": "ADMIN",
   "org_uuid": "926e159d-1b41-4069-995e-b8eae5d338f9",
-
   "feed_urls": [
     "https://www.us-cert.gov/ncas/alerts.xml",
     "https://www.cert.ssi.gouv.fr/feed/",
@@ -14,99 +13,284 @@
     "https://feeds.feedburner.com/threatintelligence/pvexyqv7v0v",
     "https://darkwebinformer.com/rss/"
   ],
-
-  "fixed_tags": ["RSS to IOC Collector"],
-
+  "fixed_tags": [
+    "RSS to IOC Collector"
+  ],
   "feed_tags_by_feed": {
-    "www.us-cert.gov": ["us-cert"],
-    "www.cert.ssi.gouv.fr": ["ssi-gouv"],
-    "feeds.feedburner.com": ["TheHackersNews"],
-    "krebsonsecurity.com": ["KrebsOnSecurity"],
-    "www.bleepingcomputer.com": ["BleepingComputer"],
-    "www.cisa.gov": ["CISA"],
-    "www.darkreading.com": ["DarkReading"],
-    "isc.sans.edu": ["SANS"],
-    "newsroom.trendmicro.com": ["TrendMicro"],
-    "feeds.feedburner.com/threatintelligence": ["ThreatIntelligence"],
-    "darkwebinformer.com": ["DarkWebInformer"]
-  },
-
-  "whitelist_by_feed": {
-    "*": [
-        "x.ai", "x.com", "android.com", "cve.org",
-        "www.cve.org", "tenable.com", "ubuntu.com", "access.redhat.com",
-        "msrc.microsoft.com", "about.gitlab.com", "medium.com", "support.citrix.com",
-        "cyber.gouv.fr", "learn.microsoft.com", "github.com", "nvd.nist.gov",
-        "support.apple.com", "sophos.com", "security.netapp.com", "advisory.splunk.com",
-        "tenable.com", "access.redhat.com", "about.gitlab.com", "aka.ms",
-        "libreoffice.org", "support.citrix.com", "accounts.google.com", "techmonitor.ai",
-        "cyber.gouv.fr", "es-la.tenable.com", "medium.com", "online.da.mfa.gov",
-        "web.archive.org", "pastebin.com", "moodle.org", "abdainsurance.co.id",
-        "valedolobo.com", "npr.org", "support.broadcom.com", "github.com",
-        "corelight.com", "pcworld.com", "sophos.com", "t.me",
-        "psirt.global.sonicwall.com", "documentation.commvault.com", "horizon3.ai", "derp.org",
-        "pestbusters.com.sg", "service-public.fr", "msrc.microsoft.com", "nvd.nist.gov",
-        "cve.org", "tvtc.gov.sa", "suse.com", "rapid7.com",
-        "cybersecuritynews.com", "flask.palletsprojects.com", "oracle.com", "soundtransit.org",
-        "nlrb.onmicrosoft.com", "explained.tines.com", "mattermost.com", "virustotal.com",
-        "france.fr", "google.com", "archive.org", "ubuntu.com",
-        "advisory.splunk.com", "legifrance.gouv.fr", "info.gouv.fr", "grafana.com",
-        "synthesia.com", "nbcnews.com", "lists.debian.org", "spring.io",
-        "learn.microsoft.com", "login.microsoftonline.com", "nlrb.microsoft.com", "online.da.mfa.gov.ua",
-        "croatianmint.hr", "edisoft.es", "ruizre.es", "neatem.fr",
-        "support.sap.com", "me.sap.com", "sap.com", "ibm.com",
-        "support.apple.com", "cow-prod-www-v3.azurewebsites.net", "flowgpt.com", "chromereleases.googleblog.com",
-        "discuss.elastic.co", "security.samsungtv.com", "smtp.gmail.com"
-    ],
     "www.us-cert.gov": [
-        "us-cert.cisa.gov", "www.cisa.gov", "alerts.cisa.gov", "www.cert.ssi.gouv.fr"
+      "us-cert"
     ],
     "www.cert.ssi.gouv.fr": [
-        "ssi.gouv.fr", "cert.ssi.gouv.fr", "feeds.feedburner.com", "feedburner.com"
+      "ssi-gouv"
     ],
     "feeds.feedburner.com": [
-        "feedburner.com", "feeds.feedburner.com", "krebsonsecurity.com", "krebsonsecurity.blogspot.com"
+      "TheHackersNews"
     ],
     "krebsonsecurity.com": [
-        "krebsonsecurity.com", "krebsonsecurity.blogspot.com", "bleepingcomputer.com", "forums.bleepingcomputer.com"
+      "KrebsOnSecurity"
     ],
     "www.bleepingcomputer.com": [
-        "bleepingcomputer.com", "forums.bleepingcomputer.com", "cisa.gov", "us-cert.cisa.gov"
+      "BleepingComputer"
     ],
     "www.cisa.gov": [
-        "cisa.gov", "us-cert.cisa.gov", "cyber.dhs.gov", "darkreading.com"
+      "CISA"
     ],
     "www.darkreading.com": [
-        "darkreading.com", "events.darkreading.com", "isc.sans.edu", "urlhistory.html"
+      "DarkReading"
     ],
     "isc.sans.edu": [
-        "isc.sans.edu", "urlhistory.html", "sms-activate.org", "trendmicro.com"
+      "SANS"
     ],
     "newsroom.trendmicro.com": [
-        "trendmicro.com", "newsroom.trendmicro.com", "feedburner.com", "threatintelligence.com"
+      "TrendMicro"
     ],
     "feeds.feedburner.com/threatintelligence": [
-        "feedburner.com", "threatintelligence.com", "darkwebinformer.com", "portal.darkwebinformer.com"
+      "ThreatIntelligence"
     ],
     "darkwebinformer.com": [
-        "darkwebinformer.com", "portal.darkwebinformer.com", "identifiers.the", "agreements.sample"
+      "DarkWebInformer"
     ]
   },
-
-  "ioc_context_keywords": {
-    "c2": ["command and control", "c2 server", "beacon", "callback", "botnet", "control server", "malware traffic"],
-    "malware": ["malware", "ransomware", "trojan", "worm", "spyware", "adware", "keylogger", "rootkit", "backdoor"],
-    "phishing": ["phishing", "spearphishing", "credential harvesting", "fake login", "social engineering", "email scam"],
-    "exploits": ["exploit", "zero-day", "vulnerability", "buffer overflow", "remote code execution", "privilege escalation"],
-    "data_leak": ["data leak", "data breach", "information disclosure", "sensitive data", "exposed database", "leaked credentials"],
-    "ddos": ["ddos", "distributed denial of service", "botnet attack", "traffic flood", "amplification attack"],
-    "threat_actor": ["threat actor", "apt group", "cybercriminal", "hacker group", "nation-state actor", "cyber espionage"],
-    "supply_chain": ["supply chain attack", "third-party compromise", "software supply chain", "dependency attack"],
-    "cryptojacking": ["cryptojacking", "unauthorized mining", "crypto mining malware", "mining pool"],
-    "iot": ["iot", "internet of things", "smart device", "iot botnet", "connected device"],
-    "cves": ["cve", "common vulnerabilities and exposures", "vulnerability id", "security advisory"]
+  "whitelist_by_feed": {
+    "*": [
+      "nlrb.microsoft.com",
+      "valedolobo.com",
+      "support.citrix.com",
+      "accounts.google.com",
+      "sophos.com",
+      "android.com",
+      "online.da.mfa.gov.ua",
+      "sap.com",
+      "horizon3.ai",
+      "explained.tines.com",
+      "nvd.nist.gov",
+      "oracle.com",
+      "x.com",
+      "psirt.global.sonicwall.com",
+      "legifrance.gouv.fr",
+      "es-la.tenable.com",
+      "tomcat.apache.org",
+      "croatianmint.hr",
+      "soundtransit.org",
+      "t.me",
+      "support.broadcom.com",
+      "derp.org",
+      "ruizre.es",
+      "security.samsungtv.com",
+      "archive.org",
+      "security.netapp.com",
+      "google.com",
+      "techmonitor.ai",
+      "medium.com",
+      "pestbusters.com.sg",
+      "spring.io",
+      "pcworld.com",
+      "support.sap.com",
+      "moodle.org",
+      "nbcnews.com",
+      "documentation.commvault.com",
+      "cow-prod-www-v3.azurewebsites.net",
+      "abdainsurance.co.id",
+      "france.fr",
+      "cybersecuritynews.com",
+      "about.gitlab.com",
+      "cve.org",
+      "npr.org",
+      "github.com",
+      "advisory.splunk.com",
+      "rapid7.com",
+      "tenable.com",
+      "mariadb.com",
+      "access.redhat.com",
+      "grafana.com",
+      "neatem.fr",
+      "service-public.fr",
+      "ubuntu.com",
+      "cyber.gouv.fr",
+      "learn.microsoft.com",
+      "x.ai",
+      "chromereleases.googleblog.com",
+      "info.gouv.fr",
+      "mozilla.org",
+      "login.microsoftonline.com",
+      "tvtc.gov.sa",
+      "discuss.elastic.co",
+      "web.archive.org",
+      "lists.debian.org",
+      "libreoffice.org",
+      "smtp.gmail.com",
+      "www.microsoft.com",
+      "synthesia.com",
+      "nlrb.onmicrosoft.com",
+      "flask.palletsprojects.com",
+      "ibm.com",
+      "edisoft.es",
+      "www.cve.org",
+      "mattermost.com",
+      "aka.ms",
+      "msrc.microsoft.com",
+      "flowgpt.com",
+      "pastebin.com",
+      "me.sap.com",
+      "virustotal.com",
+      "online.da.mfa.gov",
+      "suse.com",
+      "corelight.com",
+      "support.apple.com"
+    ],
+    "www.us-cert.gov": [
+      "www.cert.ssi.gouv.fr",
+      "alerts.cisa.gov",
+      "us-cert.cisa.gov",
+      "www.cisa.gov"
+    ],
+    "www.cert.ssi.gouv.fr": [
+      "feedburner.com",
+      "ssi.gouv.fr",
+      "feeds.feedburner.com",
+      "cert.ssi.gouv.fr"
+    ],
+    "feeds.feedburner.com": [
+      "feedburner.com",
+      "feeds.feedburner.com",
+      "krebsonsecurity.blogspot.com",
+      "krebsonsecurity.com"
+    ],
+    "krebsonsecurity.com": [
+      "krebsonsecurity.com",
+      "krebsonsecurity.blogspot.com",
+      "bleepingcomputer.com",
+      "forums.bleepingcomputer.com"
+    ],
+    "www.bleepingcomputer.com": [
+      "cisa.gov",
+      "bleepingcomputer.com",
+      "us-cert.cisa.gov",
+      "forums.bleepingcomputer.com"
+    ],
+    "www.cisa.gov": [
+      "darkreading.com",
+      "cyber.dhs.gov",
+      "us-cert.cisa.gov",
+      "cisa.gov"
+    ],
+    "www.darkreading.com": [
+      "urlhistory.html",
+      "darkreading.com",
+      "events.darkreading.com",
+      "isc.sans.edu"
+    ],
+    "isc.sans.edu": [
+      "trendmicro.com",
+      "sms-activate.org",
+      "urlhistory.html",
+      "isc.sans.edu"
+    ],
+    "newsroom.trendmicro.com": [
+      "trendmicro.com",
+      "feedburner.com",
+      "threatintelligence.com",
+      "newsroom.trendmicro.com"
+    ],
+    "feeds.feedburner.com/threatintelligence": [
+      "threatintelligence.com",
+      "feedburner.com",
+      "portal.darkwebinformer.com",
+      "darkwebinformer.com"
+    ],
+    "darkwebinformer.com": [
+      "identifiers.the",
+      "portal.darkwebinformer.com",
+      "agreements.sample",
+      "darkwebinformer.com"
+    ]
   },
-
+  "ioc_context_keywords": {
+    "c2": [
+      "command and control",
+      "c2 server",
+      "beacon",
+      "callback",
+      "botnet",
+      "control server",
+      "malware traffic"
+    ],
+    "malware": [
+      "malware",
+      "ransomware",
+      "trojan",
+      "worm",
+      "spyware",
+      "adware",
+      "keylogger",
+      "rootkit",
+      "backdoor"
+    ],
+    "phishing": [
+      "phishing",
+      "spearphishing",
+      "credential harvesting",
+      "fake login",
+      "social engineering",
+      "email scam"
+    ],
+    "exploits": [
+      "exploit",
+      "zero-day",
+      "vulnerability",
+      "buffer overflow",
+      "remote code execution",
+      "privilege escalation"
+    ],
+    "data_leak": [
+      "data leak",
+      "data breach",
+      "information disclosure",
+      "sensitive data",
+      "exposed database",
+      "leaked credentials"
+    ],
+    "ddos": [
+      "ddos",
+      "distributed denial of service",
+      "botnet attack",
+      "traffic flood",
+      "amplification attack"
+    ],
+    "threat_actor": [
+      "threat actor",
+      "apt group",
+      "cybercriminal",
+      "hacker group",
+      "nation-state actor",
+      "cyber espionage"
+    ],
+    "supply_chain": [
+      "supply chain attack",
+      "third-party compromise",
+      "software supply chain",
+      "dependency attack"
+    ],
+    "cryptojacking": [
+      "cryptojacking",
+      "unauthorized mining",
+      "crypto mining malware",
+      "mining pool"
+    ],
+    "iot": [
+      "iot",
+      "internet of things",
+      "smart device",
+      "iot botnet",
+      "connected device"
+    ],
+    "cves": [
+      "cve",
+      "common vulnerabilities and exposures",
+      "vulnerability id",
+      "security advisory"
+    ]
+  },
   "ioc_patterns": {
     "ips": "\\b(?:\\d{1,3}\\.){3}\\d{1,3}\\b",
     "domains": "\\b(?:[A-Za-z0-9-]+\\.)+[A-Za-z]{2,}\\b",
@@ -117,7 +301,6 @@
     "md5": "\\b[a-fA-F0-9]{32}\\b",
     "cves": "\\bCVE-\\d{4}-\\d{4,}\\b"
   },
-
   "max_days_old": 20,
   "seen_iocs_path": "output/seen_iocs.json",
   "output_base_dir": "output",
@@ -125,12 +308,16 @@
   "log_file": "logs/ioc_collector.log",
   "user_agent": "MISP-IOC-Collector/1.0",
   "request_timeout": 10,
-
   "http_retry_total": 3,
   "http_backoff_factor": 1,
-  "http_status_forcelist": [429, 500, 502, 503, 504],
+  "http_status_forcelist": [
+    429,
+    500,
+    502,
+    503,
+    504
+  ],
   "max_workers": 5,
-
   "misp_analysis": 0,
   "misp_threat_level_id": 4
 }
