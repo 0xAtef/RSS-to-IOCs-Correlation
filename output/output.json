@@ -1,3 +1,128 @@
 {
-  "records": []
+  "records": [
+    {
+      "id": "cca4d7e7-0eb8-4a79-b35a-12441f2141ec",
+      "title": "Cybersecurity Trends: Impact of Tariffs and Data Sovereignty",
+      "source": "https://www.bankinfosecurity.com/cybersecurity-trends-impact-tariffs-data-sovereignty-a-28244",
+      "published": "2025-05-03T04:00:00",
+      "feed": "https://newsroom.trendmicro.com/media-coverage?pagetemplate=rss",
+      "iocs": {
+        "ips": [],
+        "domains": [
+          "OT.today",
+          "CyberEd.io",
+          "www.bankinfosecurity.com",
+          "Micro.See"
+        ],
+        "urls": [
+          "https://www.bankinfosecurity.com/cybersecurity-trends-impact-tariffs-data-sovereignty-a-28244"
+        ],
+        "emails": [],
+        "sha1": [],
+        "sha256": [],
+        "md5": [],
+        "cves": []
+      },
+      "tags": [
+        "rss_to_ioc_collector",
+        "context:ddos",
+        "context:phishing",
+        "context:threat_actor",
+        "context:malware",
+        "ioc:type:email",
+        "feed:source:newsroom.trendmicro.com",
+        "context:exploits",
+        "feed:published:2025-05-08",
+        "context:iot",
+        "ioc:type:ip"
+      ],
+      "enrichment": {
+        "actors": [],
+        "malware": [
+          "cuba"
+        ],
+        "mitre_techniques": [],
+        "cves": [],
+        "tools": [],
+        "campaigns": []
+      }
+    },
+    {
+      "id": "adf375a1-4810-41b7-99da-0a5e4cbd3860",
+      "title": "Chinese Hacking Competitions Fuel the Country\u2019s Broad Cyber Ambitions",
+      "source": "https://www.bloomberg.com/news/articles/2025-04-30/chinese-hacking-competitions-fuel-the-country-s-broad-cyber-ambitions?embedded-checkout=true",
+      "published": "2025-04-30T04:00:00",
+      "feed": "https://newsroom.trendmicro.com/media-coverage?pagetemplate=rss",
+      "iocs": {
+        "ips": [],
+        "domains": [
+          "Bloomberg.com",
+          "ago.The"
+        ],
+        "urls": [],
+        "emails": [],
+        "sha1": [],
+        "sha256": [],
+        "md5": [],
+        "cves": []
+      },
+      "tags": [
+        "rss_to_ioc_collector",
+        "ioc:type:email",
+        "feed:source:newsroom.trendmicro.com",
+        "feed:published:2025-05-08",
+        "ioc:type:ip"
+      ],
+      "enrichment": {
+        "actors": [],
+        "malware": [],
+        "mitre_techniques": [],
+        "cves": [],
+        "tools": [],
+        "campaigns": []
+      }
+    },
+    {
+      "id": "e782ebfa-e98f-43d5-8381-22aefb4422f8",
+      "title": "The Wiretap: The Worrying Rise Of \u2018Violence-As-A-Service\u2019",
+      "source": "https://www.forbes.com/sites/thomasbrewster/2025/04/29/the-wiretap-the-worrying-rise-of-violence-as-a-service/",
+      "published": "2025-04-29T04:00:00",
+      "feed": "https://newsroom.trendmicro.com/media-coverage?pagetemplate=rss",
+      "iocs": {
+        "ips": [],
+        "domains": [
+          "Reserved.Subscribe",
+          "surveillance.Follow",
+          "tip.Editorial",
+          "Reserved.AdChoicesPrivacy"
+        ],
+        "urls": [],
+        "emails": [],
+        "sha1": [],
+        "sha256": [],
+        "md5": [],
+        "cves": []
+      },
+      "tags": [
+        "rss_to_ioc_collector",
+        "context:malware",
+        "feed:source:newsroom.trendmicro.com",
+        "ioc:type:domain",
+        "context:exploits",
+        "feed:published:2025-05-08",
+        "context:iot",
+        "ioc:type:ip"
+      ],
+      "enrichment": {
+        "actors": [
+          "scattered spider"
+        ],
+        "malware": [],
+        "mitre_techniques": [],
+        "cves": [],
+        "tools": [],
+        "campaigns": []
+      }
+    }
+  ]
 }
