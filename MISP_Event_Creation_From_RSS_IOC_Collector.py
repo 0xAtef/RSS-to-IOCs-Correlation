@@ -1,83 +1,111 @@
-from pymisp import ExpandedPyMISP, MISPEvent, MISPAttribute
+from pymisp import PyMISP, MISPEvent
 import csv
 import requests
 from io import StringIO
 from dotenv import load_dotenv
 import os
 
-# Load environment variables from .env file
+# -----------------------------------------------------------------------------
+# 1) Load env, validate, init PyMISP
+# -----------------------------------------------------------------------------
 load_dotenv()
 
-# MISP configurations from .env file
-MISP_BASE_URL = os.getenv("MISP_BASE_URL")
-MISP_API_KEY = os.getenv("MISP_API_KEY")
+MISP_BASE_URL   = os.getenv("MISP_BASE_URL")
+MISP_API_KEY    = os.getenv("MISP_API_KEY")
 MISP_VERIFY_SSL = os.getenv("MISP_VERIFY_SSL", "true").lower() == "true"
 
-# Validate MISP configurations
 if not MISP_BASE_URL or not MISP_API_KEY:
-    raise ValueError("MISP configuration is missing. Please check your .env file.")
+    raise ValueError("MISP configuration is missing. Check your .env")
 
-# Initialize MISP instance
-misp = ExpandedPyMISP(MISP_BASE_URL, MISP_API_KEY, ssl=MISP_VERIFY_SSL)
+misp = PyMISP(MISP_BASE_URL, MISP_API_KEY, ssl=MISP_VERIFY_SSL)
 
-# URL of the CSV file
-csv_url = 'https://raw.githubusercontent.com/0xAtef/RSS-to-IOCs-Correlation/refs/heads/main/misp_feed/feed.csv'
+# -----------------------------------------------------------------------------
+# 2) Monkey-patch add_event to use JSON bodies
+# -----------------------------------------------------------------------------
+def add_event_json(self, event, pythonify=False, metadata=False):
+    """
+    event must be a dict {'Event': { ... }}
+    This sends it as JSON so MISP sees the 'info' field, etc.
+    """
+    session = requests.Session()  # Manually create a session
+    session.headers.update({'Authorization': self.key, 'Accept': 'application/json'})
+    resp = session.post(self.url, json=event, verify=self.ssl)
+    return self._check_response(resp, pythonify, metadata)
 
-# Fetch the CSV file from the URL
-response = requests.get(csv_url)
-response.raise_for_status()  # Raise an error if the request fails
+# Replace the method on PyMISP
+PyMISP.add_event = add_event_json
 
-# Parse the CSV content
-csv_content = StringIO(response.text)
+# -----------------------------------------------------------------------------
+# 3) Fetch CSV, build events
+# -----------------------------------------------------------------------------
+csv_url = (
+    "https://raw.githubusercontent.com/"
+    "0xAtef/RSS-to-IOCs-Correlation/refs/heads/"
+    "main/misp_feed/feed.csv"
+)
+resp = requests.get(csv_url)
+resp.raise_for_status()
 
-# === INITIALIZE EVENTS DICTIONARY ===
+reader = csv.DictReader(StringIO(resp.text))
 events = {}
 
-# === READ AND PARSE CSV ===
-reader = csv.DictReader(csv_content)
 for row in reader:
-    uuid = row['uuid']
-    if uuid not in events:
-        event = MISPEvent()
-        event.uuid = uuid
-        event.info = row['info']
-        event.date = row['date']
-        event.threat_level_id = row['threat_level_id']
-        event.analysis = row['analysis']
-        event.orgc_uuid = row['orgc_uuid']
-        event.orgc_name = row['orgc_name']
-        events[uuid] = event
+    # Make sure we always set row['info'] into our Event
+    key = f"{row['info']}|{row['date']}"
+    if key not in events:
+        e = MISPEvent()
+        e.info            = row['info']            # <-- required!
+        e.date            = row['date']
+        e.threat_level_id = row['threat_level_id']
+        e.analysis        = row['analysis']
+        events[key] = e
 
-    # === Create Attribute ===
-    attr = MISPAttribute()
-    attr_type = row['attribute_type']
+    e = events[key]
 
-    # Map unsupported types to valid MISP types
-    if attr_type == 'cve':
-        attr_type = 'vulnerability'
-    elif attr_type == 'ip':
-        # Default to 'ip-src' if no context is provided
-        attr_type = 'ip-src'
+    # Normalize attribute type
+    atype = row['attribute_type']
+    if atype == 'cve':
+        atype = 'vulnerability'
+    elif atype == 'ip':
+        atype = 'ip-src'
 
-    attr.type = attr_type
-    attr.category = row['attribute_category']
-    attr.value = row['attribute_value']
-    attr.to_ids = row['to_ids'] == 'True'
-    attr.comment = row['comment']
+    # Add the main IOC attribute
+    e.add_attribute(
+        type=atype,
+        category=row['attribute_category'],
+        value=row['attribute_value'],
+        to_ids=(row['to_ids'] == 'True'),
+        comment=row.get('comment', ''),
+        timestamp=row.get('attribute_timestamp') or None
+    )
 
-    # Optional timestamp
-    if row.get('attribute_timestamp'):
-        attr.timestamp = row['attribute_timestamp']
+    # Tags
+    for tag in filter(None, (t.strip() for t in row.get('tag', '').split(';'))):
+        e.add_tag(tag)
 
-    events[uuid].add_attribute(**attr)
+    # Contextual text fields
+    for field, cat in [
+        ('actors',           'Attribution'),
+        ('malware',          'Artifacts dropped'),
+        ('mitre_techniques', 'External analysis'),
+        ('cves',             'External analysis'),
+        ('tools',            'External analysis'),
+        ('campaigns',        'Attribution'),
+    ]:
+        for val in filter(None, (i.strip() for i in row.get(field, '').split(';'))):
+            e.add_attribute(
+                type='text',
+                category=cat,
+                value=val,
+                to_ids=False,
+                comment=f"Added from {field}"
+            )
 
-    # === Add Tags if Present ===
-    if 'tag' in row and row['tag']:
-        for t in row['tag'].split(';'):
-            if t.strip():
-                events[uuid].add_tag(t.strip())
-
-# === PUSH EVENTS TO MISP ===
-for event in events.values():
-    result = misp.add_event(event)
-    print(f"Pushed event: {event.info} -> {result}")
+# -----------------------------------------------------------------------------
+# 4) Push to MISP, printing out the JSON to verify "info" is present
+# -----------------------------------------------------------------------------
+for e in events.values():
+    json_payload = e.to_json()   # this is already a str: '{"Event": { … }}'
+    print(">>> SENDING:", json_payload[:200], "…")
+    result = misp.add_event(json_payload, pythonify=True)
+    print(f"Pushed event: {e.info} -> id={getattr(result, 'id', result)}")
