@@ -1,37 +1,3 @@
 {
-  "records": [
-    {
-      "id": "1ff9abb7-8353-42ae-b021-af0626bc9aee",
-      "title": "38,000+ FreeDrain Subdomains Found Exploiting SEO to Steal Crypto Wallet Seed Phrases",
-      "source": "https://thehackernews.com/2025/05/38000-freedrain-subdomains-found.html",
-      "published": "2025-05-08T15:23:00",
-      "feed": "http://feeds.feedburner.com/TheHackersNews",
-      "iocs": {
-        "ips": [],
-        "domains": [
-          "gitbook.io",
-          "webflow.io",
-          "github.io",
-          "Collab.Land"
-        ],
-        "urls": [],
-        "emails": [],
-        "sha1": [],
-        "sha256": [],
-        "md5": [],
-        "cves": []
-      },
-      "tags": null,
-      "enrichment": {
-        "actors": [],
-        "malware": [],
-        "mitre_techniques": [],
-        "cves": [
-          "CVE-2025-27363"
-        ],
-        "tools": [],
-        "campaigns": []
-      }
-    }
-  ]
+  "records": []
 }
