@@ -1,7 +1,117 @@
 {
   "records": [
     {
-      "id": "5560b428-ad97-4eb5-8157-05c31b30cebb",
+      "id": "91a02b69-65d5-44c2-9223-463688613071",
+      "title": "Google links new LostKeys data theft malware to Russian cyberspies",
+      "source": "https://www.bleepingcomputer.com/news/security/google-links-new-lostkeys-data-theft-malware-to-russian-cyberspies/",
+      "published": "2025-05-08T13:39:15",
+      "feed": "https://www.bleepingcomputer.com/feed/",
+      "iocs": {
+        "ips": [],
+        "domains": [
+          "Theonlinesearch.com",
+          "Smartwebfinder.com",
+          "Toksearches.xyz",
+          "Trojan.vundo",
+          "Booking.com"
+        ],
+        "urls": [],
+        "emails": [],
+        "sha1": [],
+        "sha256": [],
+        "md5": [],
+        "cves": []
+      },
+      "tags": null,
+      "enrichment": {
+        "actors": [
+          "apt28",
+          "callisto group",
+          "coldriver",
+          "kimsuky",
+          "muddywater",
+          "seaborgium",
+          "star blizzard"
+        ],
+        "malware": [],
+        "mitre_techniques": [],
+        "cves": [],
+        "tools": [],
+        "campaigns": []
+      }
+    },
+    {
+      "id": "ae6f64cb-b823-434b-85db-ef0cf7106c6e",
+      "title": "SonicWall urges admins to patch VPN flaw exploited in attacks",
+      "source": "https://www.bleepingcomputer.com/news/security/sonicwall-urges-admins-to-patch-vpn-flaw-exploited-in-attacks/",
+      "published": "2025-05-08T11:19:58",
+      "feed": "https://www.bleepingcomputer.com/feed/",
+      "iocs": {
+        "ips": [
+          "10.2.1.15"
+        ],
+        "domains": [],
+        "urls": [],
+        "emails": [],
+        "sha1": [],
+        "sha256": [],
+        "md5": [],
+        "cves": [
+          "CVE-2025-32819",
+          "CVE-2025-32820",
+          "CVE-2025-32821",
+          "CVE-2023-44221",
+          "CVE-2024-38475",
+          "CVE-2021-20035"
+        ]
+      },
+      "tags": null,
+      "enrichment": {
+        "actors": [],
+        "malware": [],
+        "mitre_techniques": [],
+        "cves": [
+          "CVE-2021-20035",
+          "CVE-2023-44221",
+          "CVE-2024-38475",
+          "CVE-2025-32819",
+          "CVE-2025-32820",
+          "CVE-2025-32821"
+        ],
+        "tools": [],
+        "campaigns": []
+      }
+    },
+    {
+      "id": "2c8fa775-e19e-4aa5-a615-c30b97a95eba",
+      "title": "Police takes down six DDoS-for-hire services, arrests admins",
+      "source": "https://www.bleepingcomputer.com/news/security/police-takes-down-six-ddos-for-hire-services-arrests-admins/",
+      "published": "2025-05-07T11:23:37",
+      "feed": "https://www.bleepingcomputer.com/feed/",
+      "iocs": {
+        "ips": [],
+        "domains": [
+          "Dstat.cc"
+        ],
+        "urls": [],
+        "emails": [],
+        "sha1": [],
+        "sha256": [],
+        "md5": [],
+        "cves": []
+      },
+      "tags": null,
+      "enrichment": {
+        "actors": [],
+        "malware": [],
+        "mitre_techniques": [],
+        "cves": [],
+        "tools": [],
+        "campaigns": []
+      }
+    },
+    {
+      "id": "ef0d5c71-480b-4b71-8f82-181ff4a281bc",
       "title": "Cybersecurity Trends: Impact of Tariffs and Data Sovereignty",
       "source": "https://www.bankinfosecurity.com/cybersecurity-trends-impact-tariffs-data-sovereignty-a-28244",
       "published": "2025-05-03T04:00:00",
@@ -36,7 +146,7 @@
       }
     },
     {
-      "id": "d7f03645-fda4-4c8d-826f-ab316c532447",
+      "id": "acfc4b43-125a-4b71-a7fd-58fce50efec2",
       "title": "The Wiretap: The Worrying Rise Of \u2018Violence-As-A-Service\u2019",
       "source": "https://www.forbes.com/sites/thomasbrewster/2025/04/29/the-wiretap-the-worrying-rise-of-violence-as-a-service/",
       "published": "2025-04-29T04:00:00",
@@ -69,7 +179,7 @@
       }
     },
     {
-      "id": "948019ea-229b-48ba-9742-c4f4c56cfab2",
+      "id": "fe1021d1-9725-4aa2-ba5b-0226adc13002",
       "title": "Pakistani Firm Shipped Fentanyl Analogs, Scams to US",
       "source": "https://krebsonsecurity.com/2025/05/pakistani-firm-shipped-fentanyl-analogs-scams-to-us/",
       "published": "2025-05-07T22:22:48",
@@ -102,7 +212,7 @@
       }
     },
     {
-      "id": "afd6c000-2e9a-405b-b215-91a2da7aeb43",
+      "id": "f0bf162b-7387-4d85-88ef-68a720ca2fb8",
       "title": "xAI Dev Leaks API Key for Private SpaceX, Tesla LLMs",
       "source": "https://krebsonsecurity.com/2025/05/xai-dev-leaks-api-key-for-private-spacex-tesla-llms/",
       "published": "2025-05-02T00:52:00",
@@ -131,7 +241,7 @@
       }
     },
     {
-      "id": "3abab43d-795f-41ed-99fc-2bc384992610",
+      "id": "028e52ba-c35e-4085-9f23-24f1e1b88324",
       "title": "DOGE Worker\u2019s Code Supports NLRB Whistleblower",
       "source": "https://krebsonsecurity.com/2025/04/doge-workers-code-supports-nlrb-whistleblower/",
       "published": "2025-04-23T20:45:04",
@@ -159,7 +269,7 @@
       }
     },
     {
-      "id": "ae75f56f-7fe0-449a-8fbb-6d702241c0ac",
+      "id": "4a0f72a6-8f2b-4f65-ae33-2af353287256",
       "title": "Whistleblower: DOGE Siphoned NLRB Case Data",
       "source": "https://krebsonsecurity.com/2025/04/whistleblower-doge-siphoned-nlrb-case-data/",
       "published": "2025-04-22T01:48:27",
@@ -188,7 +298,7 @@
       }
     },
     {
-      "id": "da9ec9d8-ce46-4b14-80ae-a634ac683375",
+      "id": "2a4ca3f0-28b0-4224-ae6b-5233ab9cd5d9",
       "title": "Daily Dose of Dark Web Informer - 7th of May 2025",
       "source": "https://darkwebinformer.com/daily-dose-of-dark-web-informer-7th-of-may-2025/",
       "published": "2025-05-07T23:24:29",
@@ -216,7 +326,7 @@
       }
     },
     {
-      "id": "b5172646-da7d-4478-9ea6-d9d10cf0f04e",
+      "id": "24b56b7e-89b1-4a6b-b0d9-7cdb08a5a144",
       "title": "Ransomware Attack Update for the 7th of May 2025",
       "source": "https://darkwebinformer.com/ransomware-attack-update-for-the-7th-of-may-2025/",
       "published": "2025-05-07T22:39:01",
@@ -244,7 +354,7 @@
       }
     },
     {
-      "id": "7287fdc9-ae72-43d7-a04d-6808b3020501",
+      "id": "172246af-714b-4264-8289-fbb25cd39229",
       "title": "SilverInstaEye: A Comprehensive OSINT Tool for Instagram",
       "source": "https://darkwebinformer.com/silverinstaeye-a-comprehensive-osint-tool-for-instagram/",
       "published": "2025-05-07T19:28:33",
@@ -279,7 +389,7 @@
       }
     },
     {
-      "id": "201e58d2-88a7-400e-9334-99f1e1bc2f38",
+      "id": "a3599596-d66c-4e87-b8ea-88e1120ca7c5",
       "title": "Daily Dose of Dark Web Informer - 6th of May 2025",
       "source": "https://darkwebinformer.com/daily-dose-of-dark-web-informer-6th-of-may-2025/",
       "published": "2025-05-06T23:25:34",
@@ -311,7 +421,7 @@
       }
     },
     {
-      "id": "e6bf4744-809f-4d4a-aa87-fdba3ea24882",
+      "id": "f864c585-86b1-4e4c-b1dc-c054129cfef9",
       "title": "COLDRIVER Using New Malware To Steal Documents From Western Targets and NGOs",
       "source": "https://cloud.google.com/blog/topics/threat-intelligence/coldriver-steal-documents-western-targets-ngos/",
       "published": "2025-05-07T14:00:00",
@@ -360,7 +470,7 @@
       }
     },
     {
-      "id": "95b8d939-e31e-4b83-be6b-27dd384370ca",
+      "id": "9d80cabc-6de1-48b7-88d6-b392066905d2",
       "title": "Defending Against UNC3944: Cybercrime Hardening Guidance from the Frontlines",
       "source": "https://cloud.google.com/blog/topics/threat-intelligence/unc3944-proactive-hardening-recommendations/",
       "published": "2025-05-06T14:00:00",
@@ -398,7 +508,7 @@
       }
     },
     {
-      "id": "5673ab4c-9d67-4e90-b993-a353239f2911",
+      "id": "2f21a5c9-988a-45a4-9439-82626b017a27",
       "title": "Hello 0-Days, My Old Friend: A 2024 Zero-Day Exploitation Analysis",
       "source": "https://cloud.google.com/blog/topics/threat-intelligence/2024-zero-day-trends/",
       "published": "2025-04-29T05:00:00",
@@ -464,7 +574,7 @@
       }
     },
     {
-      "id": "48cdf556-a05b-43d4-ad14-8241f8e86713",
+      "id": "0078b1af-839d-4585-8168-53a80ffcf102",
       "title": "M-Trends 2025: Data, Insights, and Recommendations From the Frontlines",
       "source": "https://cloud.google.com/blog/topics/threat-intelligence/m-trends-2025/",
       "published": "2025-04-23T14:00:00",
@@ -493,209 +603,7 @@
       }
     },
     {
-      "id": "29f228c5-2cf0-4ac5-89ae-a59db9ead943",
-      "title": "Google links new LostKeys data theft malware to Russian cyberspies",
-      "source": "https://www.bleepingcomputer.com/news/security/google-links-new-lostkeys-data-theft-malware-to-russian-cyberspies/",
-      "published": "2025-05-08T13:39:15",
-      "feed": "https://www.bleepingcomputer.com/feed/",
-      "iocs": {
-        "ips": [],
-        "domains": [
-          "Theonlinesearch.com",
-          "Smartwebfinder.com",
-          "Toksearches.xyz",
-          "Trojan.vundo",
-          "Booking.com"
-        ],
-        "urls": [],
-        "emails": [],
-        "sha1": [],
-        "sha256": [],
-        "md5": [],
-        "cves": []
-      },
-      "tags": null,
-      "enrichment": {
-        "actors": [
-          "apt28",
-          "callisto group",
-          "coldriver",
-          "kimsuky",
-          "muddywater",
-          "seaborgium",
-          "star blizzard"
-        ],
-        "malware": [],
-        "mitre_techniques": [],
-        "cves": [],
-        "tools": [],
-        "campaigns": []
-      }
-    },
-    {
-      "id": "844e5fb7-cae9-4bcd-917b-7fe1a74a879a",
-      "title": "SonicWall urges admins to patch VPN flaw exploited in attacks",
-      "source": "https://www.bleepingcomputer.com/news/security/sonicwall-urges-admins-to-patch-vpn-flaw-exploited-in-attacks/",
-      "published": "2025-05-08T11:19:58",
-      "feed": "https://www.bleepingcomputer.com/feed/",
-      "iocs": {
-        "ips": [
-          "10.2.1.15"
-        ],
-        "domains": [],
-        "urls": [],
-        "emails": [],
-        "sha1": [],
-        "sha256": [],
-        "md5": [],
-        "cves": [
-          "CVE-2025-32819",
-          "CVE-2025-32820",
-          "CVE-2025-32821",
-          "CVE-2023-44221",
-          "CVE-2024-38475",
-          "CVE-2021-20035"
-        ]
-      },
-      "tags": null,
-      "enrichment": {
-        "actors": [],
-        "malware": [],
-        "mitre_techniques": [],
-        "cves": [
-          "CVE-2021-20035",
-          "CVE-2023-44221",
-          "CVE-2024-38475",
-          "CVE-2025-32819",
-          "CVE-2025-32820",
-          "CVE-2025-32821"
-        ],
-        "tools": [],
-        "campaigns": []
-      }
-    },
-    {
-      "id": "238593ef-5948-4160-8f0e-d2835d6abd78",
-      "title": "Hackers exploit OttoKit WordPress plugin flaw to add admin accounts",
-      "source": "https://www.bleepingcomputer.com/news/security/hackers-exploit-ottokit-wordpress-plugin-flaw-to-add-admin-accounts/",
-      "published": "2025-05-07T15:37:48",
-      "feed": "https://www.bleepingcomputer.com/feed/",
-      "iocs": {
-        "ips": [],
-        "domains": [],
-        "urls": [],
-        "emails": [],
-        "sha1": [],
-        "sha256": [],
-        "md5": [],
-        "cves": [
-          "CVE-2025-27007",
-          "CVE-2025-3102"
-        ]
-      },
-      "tags": null,
-      "enrichment": {
-        "actors": [],
-        "malware": [],
-        "mitre_techniques": [],
-        "cves": [
-          "CVE-2025-27007",
-          "CVE-2025-3102"
-        ],
-        "tools": [],
-        "campaigns": []
-      }
-    },
-    {
-      "id": "02d71cc1-5d81-458d-896a-9439bc907cca",
-      "title": "Play ransomware exploited Windows logging flaw in zero-day attacks",
-      "source": "https://www.bleepingcomputer.com/news/security/play-ransomware-exploited-windows-logging-flaw-in-zero-day-attacks/",
-      "published": "2025-05-07T14:45:19",
-      "feed": "https://www.bleepingcomputer.com/feed/",
-      "iocs": {
-        "ips": [],
-        "domains": [],
-        "urls": [],
-        "emails": [],
-        "sha1": [],
-        "sha256": [],
-        "md5": [],
-        "cves": [
-          "CVE-2025-29824"
-        ]
-      },
-      "tags": null,
-      "enrichment": {
-        "actors": [],
-        "malware": [],
-        "mitre_techniques": [],
-        "cves": [
-          "CVE-2025-29824"
-        ],
-        "tools": [],
-        "campaigns": []
-      }
-    },
-    {
-      "id": "c62f6509-9634-4e14-a6b1-1d62330f3c8d",
-      "title": "NSO Group fined $167M for spyware attacks on 1,400 WhatsApp users",
-      "source": "https://www.bleepingcomputer.com/news/legal/nso-group-fined-167m-for-spyware-attacks-on-1-400-whatsapp-users/",
-      "published": "2025-05-07T14:09:33",
-      "feed": "https://www.bleepingcomputer.com/feed/",
-      "iocs": {
-        "ips": [],
-        "domains": [],
-        "urls": [],
-        "emails": [],
-        "sha1": [],
-        "sha256": [],
-        "md5": [],
-        "cves": [
-          "CVE-2019-3568"
-        ]
-      },
-      "tags": null,
-      "enrichment": {
-        "actors": [],
-        "malware": [],
-        "mitre_techniques": [],
-        "cves": [
-          "CVE-2019-3568"
-        ],
-        "tools": [],
-        "campaigns": []
-      }
-    },
-    {
-      "id": "b084158c-cced-40b4-9e1c-eeee233b130f",
-      "title": "Police takes down six DDoS-for-hire services, arrests admins",
-      "source": "https://www.bleepingcomputer.com/news/security/police-takes-down-six-ddos-for-hire-services-arrests-admins/",
-      "published": "2025-05-07T11:23:37",
-      "feed": "https://www.bleepingcomputer.com/feed/",
-      "iocs": {
-        "ips": [],
-        "domains": [
-          "Dstat.cc"
-        ],
-        "urls": [],
-        "emails": [],
-        "sha1": [],
-        "sha256": [],
-        "md5": [],
-        "cves": []
-      },
-      "tags": null,
-      "enrichment": {
-        "actors": [],
-        "malware": [],
-        "mitre_techniques": [],
-        "cves": [],
-        "tools": [],
-        "campaigns": []
-      }
-    },
-    {
-      "id": "17c9732c-8761-45b6-82da-db79615d84dd",
+      "id": "f0054345-76a7-40be-84b2-d477a0b16b89",
       "title": "Qilin Leads April 2025 Ransomware Spike with 45 Breaches Using NETXLOADER Malware",
       "source": "https://thehackernews.com/2025/05/qilin-leads-april-2025-ransomware-spike.html",
       "published": "2025-05-08T13:47:00",
@@ -730,7 +638,7 @@
       }
     },
     {
-      "id": "0869ab01-2ceb-4311-9773-abe89e0a0622",
+      "id": "badde998-f499-4d65-a51e-fa10702547d2",
       "title": "Security Tools Alone Don't Protect You \u2014 Control Effectiveness Does",
       "source": "https://thehackernews.com/2025/05/security-tools-alone-dont-protect-you.html",
       "published": "2025-05-08T11:00:00",
@@ -760,7 +668,7 @@
       }
     },
     {
-      "id": "e5a0c114-3e55-47e4-b59d-84209fa917ca",
+      "id": "98f78d41-9847-453f-8059-92b8549739a0",
       "title": "MirrorFace Targets Japan and Taiwan with ROAMINGMOUSE and Upgraded ANEL Malware",
       "source": "https://thehackernews.com/2025/05/mirrorface-targets-japan-and-taiwan.html",
       "published": "2025-05-08T10:32:00",
@@ -795,7 +703,7 @@
       }
     },
     {
-      "id": "cb2a1578-e487-432c-a217-35f91111a494",
+      "id": "5255a515-d238-4af4-8f9a-53e39f3cd06d",
       "title": "Cisco Patches CVE-2025-20188 (10.0 CVSS) in IOS XE That Enables Root Exploits via JWT",
       "source": "https://thehackernews.com/2025/05/cisco-patches-cve-2025-20188-100-cvss.html",
       "published": "2025-05-08T04:57:00",
@@ -826,7 +734,7 @@
       }
     },
     {
-      "id": "345ad9b2-1732-4309-9144-70b951e84674",
+      "id": "6d8f5fea-cc61-4074-a9da-6fc58c392a66",
       "title": "Europol Shuts Down Six DDoS-for-Hire Services Used in Global Attacks",
       "source": "https://thehackernews.com/2025/05/europol-shuts-down-six-ddos-for-hire.html",
       "published": "2025-05-07T13:54:00",
@@ -856,7 +764,7 @@
       }
     },
     {
-      "id": "27b93243-57d9-4bc7-8594-63813b8f87e8",
+      "id": "d318e42a-17ea-4968-8555-cc04c3a0cab8",
       "title": "OttoKit WordPress Plugin with 100K+ Installs Hit by Exploits Targeting Multiple Flaws",
       "source": "https://thehackernews.com/2025/05/ottokit-wordpress-plugin-with-100k.html",
       "published": "2025-05-07T13:44:00",
@@ -879,7 +787,10 @@
         "sha1": [],
         "sha256": [],
         "md5": [],
-        "cves": []
+        "cves": [
+          "CVE-2025-27007",
+          "CVE-2025-3102"
+        ]
       },
       "tags": null,
       "enrichment": {
@@ -896,7 +807,7 @@
       }
     },
     {
-      "id": "5fa0ae9d-fbca-45b9-b315-3f1153324b7f",
+      "id": "cbdb36bc-39ca-4fa1-a613-01eafd9dbcb8",
       "title": "SysAid Patches 4 Critical Flaws Enabling Pre-Auth RCE in On-Premise Version",
       "source": "https://thehackernews.com/2025/05/sysaid-patches-4-critical-flaws.html",
       "published": "2025-05-07T11:31:00",
@@ -937,7 +848,7 @@
       }
     },
     {
-      "id": "86858879-2880-4966-b42d-6ce74fc65d22",
+      "id": "32a11394-9358-478c-8f70-b5c1370ad04f",
       "title": "Reevaluating SSEs: A Technical Gap Analysis of Last-Mile Protection",
       "source": "https://thehackernews.com/2025/05/reevaluating-sses-technical-gap.html",
       "published": "2025-05-07T10:56:00",
@@ -967,7 +878,7 @@
       }
     },
     {
-      "id": "d032cbeb-2cea-4120-b01c-fe2cf05241de",
+      "id": "67278427-07e8-42d4-a50a-b0137a46e4a6",
       "title": "Play Ransomware Exploited Windows CVE-2025-29824 as Zero-Day to Breach U.S. Organization",
       "source": "https://thehackernews.com/2025/05/play-ransomware-exploited-windows-cve.html",
       "published": "2025-05-07T10:44:00",
@@ -989,6 +900,7 @@
         "sha256": [],
         "md5": [],
         "cves": [
+          "CVE-2025-29824",
           "CVE-2024-26169"
         ]
       },
@@ -1014,7 +926,7 @@
       }
     },
     {
-      "id": "c737cf27-5e5d-464e-8761-b2860b3a4e3e",
+      "id": "723768af-48e6-4409-8432-0ef02cb9c319",
       "title": "Researchers Uncover Malware in Fake Discord PyPI Package Downloaded 11,500+ Times",
       "source": "https://thehackernews.com/2025/05/researchers-uncover-malware-in-fake.html",
       "published": "2025-05-07T07:37:00",
@@ -1045,7 +957,38 @@
       }
     },
     {
-      "id": "f237ae07-7783-41f8-b62e-e5ca939f6196",
+      "id": "6e1970eb-6561-45ef-af2a-4139608303a0",
+      "title": "NSO Group Fined $168M for Targeting 1,400 WhatsApp Users With Pegasus Spyware",
+      "source": "https://thehackernews.com/2025/05/nso-group-fined-168m-for-targeting-1400.html",
+      "published": "2025-05-07T06:22:00",
+      "feed": "http://feeds.feedburner.com/TheHackersNews",
+      "iocs": {
+        "ips": [],
+        "domains": [],
+        "urls": [],
+        "emails": [],
+        "sha1": [],
+        "sha256": [],
+        "md5": [],
+        "cves": [
+          "CVE-2019-3568"
+        ]
+      },
+      "tags": null,
+      "enrichment": {
+        "actors": [],
+        "malware": [],
+        "mitre_techniques": [],
+        "cves": [
+          "CVE-2019-3568",
+          "CVE-2025-27363"
+        ],
+        "tools": [],
+        "campaigns": []
+      }
+    },
+    {
+      "id": "6d3d6af5-6297-4cb1-98f4-04d7a465ace4",
       "title": "Hackers Exploit Samsung MagicINFO, GeoVision IoT Flaws to Deploy Mirai Botnet",
       "source": "https://thehackernews.com/2025/05/hackers-exploit-samsung-magicinfo.html",
       "published": "2025-05-06T15:33:00",
@@ -1084,7 +1027,7 @@
       }
     },
     {
-      "id": "9716da65-8345-4143-ba09-b9600f224e91",
+      "id": "1f89f462-bde7-4ae8-83f1-f97e4e7e2abb",
       "title": "Critical Langflow Flaw Added to CISA KEV List Amid Ongoing Exploitation Evidence",
       "source": "https://thehackernews.com/2025/05/critical-langflow-flaw-added-to-cisa.html",
       "published": "2025-05-06T04:24:00",
@@ -1115,7 +1058,7 @@
       }
     },
     {
-      "id": "42cccedc-cb55-4e92-9bac-9827e65bf2c6",
+      "id": "0170acf6-afab-43d7-be57-be4da6f5425d",
       "title": "Wormable AirPlay Flaws Enable Zero-Click RCE on Apple Devices via Public Wi-Fi",
       "source": "https://thehackernews.com/2025/05/wormable-airplay-flaws-enable-zero.html",
       "published": "2025-05-05T17:06:00",
@@ -1168,7 +1111,7 @@
       }
     },
     {
-      "id": "e5437122-c317-4026-8dbb-60853152292b",
+      "id": "74167721-5b54-44df-8413-4c09a065cbc4",
       "title": "Commvault CVE-2025-34028 Added to CISA KEV After Active Exploitation Confirmed",
       "source": "https://thehackernews.com/2025/05/commvault-cve-2025-34028-added-to-cisa.html",
       "published": "2025-05-05T16:01:00",
@@ -1203,7 +1146,7 @@
       }
     },
     {
-      "id": "b00248e9-cd54-4f79-86da-6166070207ae",
+      "id": "7b401c00-6ebf-472e-82e2-aa1d5e619aef",
       "title": "\u26a1 Weekly Recap: Nation-State Hacks, Spyware Alerts, Deepfake Malware, Supply Chain Backdoors",
       "source": "https://thehackernews.com/2025/05/weekly-recap-nation-state-hacks-spyware.html",
       "published": "2025-05-05T11:29:00",
@@ -1326,7 +1269,7 @@
       }
     },
     {
-      "id": "59f64965-74df-4156-a480-95c0a238583c",
+      "id": "c5046d59-79ec-4338-861e-98ea761fd4bd",
       "title": "Perfection is a Myth. Leverage Isn't: How Small Teams Can Secure Their Google Workspace",
       "source": "https://thehackernews.com/2025/05/perfection-is-myth-leverage-isnt-how.html",
       "published": "2025-05-05T11:00:00",
@@ -1363,7 +1306,7 @@
       }
     },
     {
-      "id": "481b85ec-0a26-49f8-bef4-28095db1b8f9",
+      "id": "c40eeb40-53ba-4bcc-98d3-7f05a0f1d105",
       "title": "Golden Chickens Deploy TerraStealerV2 to Steal Browser Credentials and Crypto Wallet Data",
       "source": "https://thehackernews.com/2025/05/golden-chickens-deploy-terrastealerv2.html",
       "published": "2025-05-05T05:39:00",
@@ -1397,7 +1340,7 @@
       }
     },
     {
-      "id": "27ba0fc4-6c76-4f95-a02b-1c2fc50b78f7",
+      "id": "07e5b51e-9c8a-417f-bf44-3835818e9e43",
       "title": "Malicious Go Modules Deliver Disk-Wiping Linux Malware in Advanced Supply Chain Attack",
       "source": "https://thehackernews.com/2025/05/malicious-go-modules-deliver-disk.html",
       "published": "2025-05-03T14:31:00",
@@ -1427,7 +1370,7 @@
       }
     },
     {
-      "id": "f25e9908-d54a-4b9c-8af3-c217d041b20a",
+      "id": "85468215-c378-4850-810f-597f44eb5e36",
       "title": "Iranian Hackers Maintain 2-Year Access to Middle East CNI via VPN Flaws and Malware",
       "source": "https://thehackernews.com/2025/05/iranian-hackers-maintain-2-year-access.html",
       "published": "2025-05-03T09:33:00",
@@ -1472,7 +1415,7 @@
       }
     },
     {
-      "id": "92b98aed-a606-4def-a382-cfc87c580610",
+      "id": "d3a2843b-bb2d-4403-bb12-41ef21eafc74",
       "title": "U.S. Charges Yemeni Hacker Behind Black Kingdom Ransomware Targeting 1,500 Systems",
       "source": "https://thehackernews.com/2025/05/us-charges-yemeni-hacker-behind-black.html",
       "published": "2025-05-03T07:06:00",
@@ -1505,7 +1448,7 @@
       }
     },
     {
-      "id": "230819de-1079-4225-ab6b-23f1c6ed2d4d",
+      "id": "1cd851a1-012b-4e5e-8d6f-59b15d8e1e7c",
       "title": "Fake Security Plugin on WordPress Enables Remote Admin Access for Attackers",
       "source": "https://thehackernews.com/2025/05/fake-security-plugin-on-wordpress.html",
       "published": "2025-05-01T15:47:00",
@@ -1542,7 +1485,7 @@
       }
     },
     {
-      "id": "c0d901ec-63fc-47b1-b66b-21fedc0aba46",
+      "id": "da24852c-dbca-479e-b586-d2b5315af5ba",
       "title": "DarkWatchman, Sheriff Malware Hit Russia and Ukraine with Stealth and Nation-Grade Tactics",
       "source": "https://thehackernews.com/2025/05/darkwatchman-sheriff-malware-hit-russia.html",
       "published": "2025-05-01T09:27:00",
@@ -1579,7 +1522,7 @@
       }
     },
     {
-      "id": "da0ae3ae-8ffd-4941-ae0d-00635f86fa60",
+      "id": "4fa0602e-5dc5-4de8-9a56-6f394fc72002",
       "title": "Commvault Confirms Hackers Exploited CVE-2025-3928 as Zero-Day in Azure Breach",
       "source": "https://thehackernews.com/2025/05/commvault-confirms-hackers-exploited.html",
       "published": "2025-05-01T08:11:00",
@@ -1614,7 +1557,7 @@
       }
     },
     {
-      "id": "0a7100ea-181d-4a36-9d28-5bbd70884f32",
+      "id": "5c313d23-88f9-4f46-8c7a-92715f56db7c",
       "title": "SonicWall Confirms Active Exploitation of Flaws Affecting Multiple Appliance Models",
       "source": "https://thehackernews.com/2025/05/sonicwall-confirms-active-exploitation.html",
       "published": "2025-05-01T06:22:00",
@@ -1648,7 +1591,7 @@
       }
     },
     {
-      "id": "40a30e3b-24b7-4e21-a04b-fdec9b04c0fd",
+      "id": "66b6c25e-a419-42fc-9d47-78537021dc1a",
       "title": "Chinese Hackers Abuse IPv6 SLAAC for AitM Attacks via Spellbinder Lateral Movement Tool",
       "source": "https://thehackernews.com/2025/04/chinese-hackers-abuse-ipv6-slaac-for.html",
       "published": "2025-04-30T11:05:00",
@@ -1682,7 +1625,7 @@
       }
     },
     {
-      "id": "dec0a52a-1b5d-4abc-bd4b-3e42cf5775a8",
+      "id": "fd8277d7-2836-4a7c-85b5-9b524758d2e5",
       "title": "Vulnerability in SAP Netweaver (April 25, 2025)",
       "source": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0350/",
       "published": "2025-04-25T00:00:00",
@@ -1714,7 +1657,7 @@
       }
     },
     {
-      "id": "5145bbdd-6da1-48f4-8b81-fb92e65d60dc",
+      "id": "b5186ddd-c9bf-47cb-bc16-4343af556a56",
       "title": "Multiple vulnerabilities in the Linux nucleus of Ubuntu (April 25, 2025)",
       "source": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0349/",
       "published": "2025-04-25T00:00:00",
@@ -3188,7 +3131,7 @@
       }
     },
     {
-      "id": "e76737ce-4f8b-4d6c-840d-9f2bd0529fe3",
+      "id": "be8896dc-3241-42ca-ac7b-16556f15a113",
       "title": "Vulnerability in Spring Boot (April 25, 2025)",
       "source": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0348/",
       "published": "2025-04-25T00:00:00",
@@ -3219,7 +3162,7 @@
       }
     },
     {
-      "id": "29c2f7b1-cc82-4696-80f2-4434ad2267a3",
+      "id": "c16c23ff-7775-4f9b-83dc-41982df82aba",
       "title": "CERTFR-2025-ACT-018 Certfr-2025 news bulletin (April 28, 2025)",
       "source": "https://www.cert.ssi.gouv.fr/actualite/CERTFR-2025-ACT-018/",
       "published": "2025-04-28T00:00:00",
@@ -3267,7 +3210,7 @@
       }
     },
     {
-      "id": "6538784e-f93f-4c9f-af41-461beaa70799",
+      "id": "959eca30-168f-49c7-a909-b55671e6d1dd",
       "title": "Vulnerability in LibreOffice (April 28, 2025)",
       "source": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0351/",
       "published": "2025-04-28T00:00:00",
@@ -3298,7 +3241,7 @@
       }
     },
     {
-      "id": "d74d2dcd-d94d-4262-92bc-eeb4a5e903c6",
+      "id": "43b30a89-e19d-4606-8747-7254f73b57a0",
       "title": "Vulnerability in SAP Netweaver (April 28, 2025)",
       "source": "https://www.cert.ssi.gouv.fr/alerte/CERTFR-2025-ALE-005/",
       "published": "2025-04-28T00:00:00",
@@ -3335,7 +3278,7 @@
       }
     },
     {
-      "id": "68ab3c6f-8802-46a9-9713-9aaed82bf0f4",
+      "id": "4899efea-0763-499f-beb8-c6a269700ff1",
       "title": "Multiple vulnerabilities in Apache Tomcat (April 29, 2025)",
       "source": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0352/",
       "published": "2025-04-29T00:00:00",
@@ -3370,7 +3313,7 @@
       }
     },
     {
-      "id": "739ad083-ac87-407d-a36a-093ec6820178",
+      "id": "1806a4c6-3068-4657-be88-8486f9ab5adc",
       "title": "Multiple vulnerabilities in VMware products (April 29, 2025)",
       "source": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0353/",
       "published": "2025-04-29T00:00:00",
@@ -3416,7 +3359,7 @@
       }
     },
     {
-      "id": "4dff3fac-d73f-4ddb-b542-4289dec47523",
+      "id": "4fb63127-6a92-4e61-bc0c-8024dbdc1a52",
       "title": "Multiple vulnerabilities in Mozilla products (April 30, 2025)",
       "source": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0358/",
       "published": "2025-04-30T00:00:00",
@@ -3470,7 +3413,7 @@
       }
     },
     {
-      "id": "0c10e17d-87af-4ddc-9f3a-7779ee5b39d8",
+      "id": "4f7bf0a6-bd6c-4b85-baac-3353510f7aa7",
       "title": "Vulnerability in Symantec products (April 30, 2025)",
       "source": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0357/",
       "published": "2025-04-30T00:00:00",
@@ -3502,7 +3445,7 @@
       }
     },
     {
-      "id": "e8ad0eb8-1510-4a90-b5ce-87b1cc93bbfd",
+      "id": "fa0e9a8d-c40f-49e7-bca7-c3dafaf05b94",
       "title": "Multiple vulnerabilities in Splunk User Behavior Analytics (UBA) (April 30, 2025)",
       "source": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0356/",
       "published": "2025-04-30T00:00:00",
@@ -3556,7 +3499,7 @@
       }
     },
     {
-      "id": "e259e3ea-c908-441f-bdf3-7a452c7a6dd0",
+      "id": "f3a32346-786d-4e0a-a8bb-6af6703859d6",
       "title": "Multiple vulnerabilities in Google Chrome (April 30, 2025)",
       "source": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0354/",
       "published": "2025-04-30T00:00:00",
@@ -3591,7 +3534,7 @@
       }
     },
     {
-      "id": "0286b231-5003-4ef9-a641-da284ab24e9b",
+      "id": "f7217f2e-f668-4816-9df3-e85a9347b330",
       "title": "Multiple vulnerabilities in IBM products (May 02, 2025)",
       "source": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0370/",
       "published": "2025-05-02T00:00:00",
@@ -3683,7 +3626,7 @@
       }
     },
     {
-      "id": "0b114bd0-970c-465f-9c3a-bf7af0354fac",
+      "id": "b12d7c8a-bb59-4551-bdc6-13377e809f69",
       "title": "Multiple vulnerabilities in Microsoft Azure (May 02, 2025)",
       "source": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0364/",
       "published": "2025-05-02T00:00:00",
@@ -3721,7 +3664,7 @@
       }
     },
     {
-      "id": "7382cc6f-4225-44fe-9bf5-5a0c38d05d4e",
+      "id": "90279071-5a47-43fd-b458-8ab315c8f639",
       "title": "Vulnerability in Microsoft products (May 02, 2025)",
       "source": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0365/",
       "published": "2025-05-02T00:00:00",
@@ -3751,7 +3694,7 @@
       }
     },
     {
-      "id": "20a30258-6a3d-443d-89fe-22c50338175e",
+      "id": "c65fd2d6-a57b-451c-adef-dbabda3d48c8",
       "title": "Multiple vulnerabilities in the Linux de Debian nucleus (May 02, 2025)",
       "source": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0368/",
       "published": "2025-05-02T00:00:00",
@@ -3882,7 +3825,7 @@
       }
     },
     {
-      "id": "486ce424-7079-46c1-920b-05b683fdefce",
+      "id": "2f991cca-93df-401d-affd-150328f07925",
       "title": "Multiple vulnerabilities in Microsoft Edge (May 02, 2025)",
       "source": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0363/",
       "published": "2025-05-02T00:00:00",
@@ -3916,7 +3859,7 @@
       }
     },
     {
-      "id": "e0e13b25-c92c-4e7b-b5f9-12b10a37c4e0",
+      "id": "5b821f79-7339-44bd-88cc-f809096ddbad",
       "title": "Multiple vulnerabilities in the Linux nucleus of Ubuntu (02 May 2025)",
       "source": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
       "published": "2025-05-02T00:00:00",
@@ -4935,7 +4878,7 @@
       }
     },
     {
-      "id": "98e48ca4-b19b-4592-ab05-72212d70d2e3",
+      "id": "a1d8dd66-1e48-4f46-b333-5ce515ee3f9b",
       "title": "Multiple vulnerabilities in Mozilla products (May 02, 2025)",
       "source": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0361/",
       "published": "2025-05-02T00:00:00",
@@ -4972,7 +4915,7 @@
       }
     },
     {
-      "id": "1522c823-2b11-45c7-9b42-ec1972841bd1",
+      "id": "e5768b57-12a9-4eaa-8a41-62758742ad7b",
       "title": "Multiple vulnerabilities in Elastic products (May 02, 2025)",
       "source": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0359/",
       "published": "2025-05-02T00:00:00",
@@ -5014,7 +4957,7 @@
       }
     },
     {
-      "id": "0ad78279-755e-4d90-b087-4b3f533aeea6",
+      "id": "d24ce2cf-a0c6-4c18-8c30-3892f72ee42e",
       "title": "Multiple vulnerabilities in tenable products (May 02, 2025)",
       "source": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0360/",
       "published": "2025-05-02T00:00:00",
@@ -5052,7 +4995,7 @@
       }
     },
     {
-      "id": "85ddef44-8f9c-4111-9521-a9b23fd78107",
+      "id": "edc5dcb5-af1a-4cc0-bbb5-91ea825c4250",
       "title": "Multiple vulnerabilities in the Linux nucleus of Susa (02 May 2025)",
       "source": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0369/",
       "published": "2025-05-02T00:00:00",
@@ -5087,7 +5030,7 @@
       }
     },
     {
-      "id": "03095300-3b85-4276-be38-9c6ec4b61745",
+      "id": "9cbbb0e0-065c-4829-8185-61d438804ac5",
       "title": "Vulnerability in the Linux nucleus of Red Hat (02 May 2025)",
       "source": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0367/",
       "published": "2025-05-02T00:00:00",
@@ -5117,7 +5060,7 @@
       }
     },
     {
-      "id": "db3ae817-815f-4705-b031-04fe628b2bfa",
+      "id": "c8131f56-9b3b-4c7a-a0a9-4e40cc9a0045",
       "title": "CERTFR-2025-ACT-019 news bulletin (May 05, 2025)",
       "source": "https://www.cert.ssi.gouv.fr/actualite/CERTFR-2025-ACT-019/",
       "published": "2025-05-05T00:00:00",
@@ -5166,7 +5109,7 @@
       }
     },
     {
-      "id": "8ac4845b-6bee-4a98-8f6a-d34025b5a9ca",
+      "id": "5cf9fbe3-f1b3-4379-8f63-52f2be2f283f",
       "title": "Multiple vulnerabilities in Google Android (May 06, 2025)",
       "source": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0371/",
       "published": "2025-05-06T00:00:00",
@@ -5285,7 +5228,7 @@
       }
     },
     {
-      "id": "a3b8eda8-1d82-4849-9755-d634bddeea5a",
+      "id": "f10a4fdd-8131-47ad-8c68-840ebee31eee",
       "title": "Multiple vulnerabilities in Tenable Security Center (07 May 2025)",
       "source": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0374/",
       "published": "2025-05-07T00:00:00",
@@ -5319,7 +5262,7 @@
       }
     },
     {
-      "id": "36e4cf84-20ea-4604-99a0-aaefb5ebfd7a",
+      "id": "856101c9-7825-4d4c-baba-3ee7cff1f138",
       "title": "Vuln\u00e9rabilit\u00e9 dans Liferay Portal et Liferay DXP (07 mai 2025)",
       "source": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0375/",
       "published": "2025-05-07T00:00:00",
@@ -5356,7 +5299,7 @@
       }
     },
     {
-      "id": "6c7282fb-7e95-4cff-b1a4-e485093908dc",
+      "id": "e4a837ee-038d-4bc8-b15e-8f85858bb213",
       "title": "Multiple vulnerabilities in Mariadb (May 07, 2025)",
       "source": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0373/",
       "published": "2025-05-07T00:00:00",
@@ -5388,7 +5331,7 @@
       }
     },
     {
-      "id": "6028974b-0faa-47f5-86ea-ac2243eb25f1",
+      "id": "30ceca91-ad43-47f8-85e4-723231b4fe11",
       "title": "Multiple vulnerabilities in Elastic products (07 May 2025)",
       "source": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0377/",
       "published": "2025-05-07T00:00:00",
@@ -5420,7 +5363,7 @@
       }
     },
     {
-      "id": "d9e94fea-7cac-491a-8fd4-fc369d85ca04",
+      "id": "8cc75e93-4122-4101-a6d2-f22b4ea86fde",
       "title": "Vulnerability in Google Chrome (May 07, 2025)",
       "source": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0376/",
       "published": "2025-05-07T00:00:00",
@@ -5452,7 +5395,7 @@
       }
     },
     {
-      "id": "80d9de9a-46af-4084-9983-d2bf5d8ccb0e",
+      "id": "53bd0d0f-583d-4a8b-afee-02e751f5564e",
       "title": "Multiple vulnerabilities in Google Pixel (07 May 2025)",
       "source": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0372/",
       "published": "2025-05-07T00:00:00",
