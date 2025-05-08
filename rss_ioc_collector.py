@@ -8,7 +8,6 @@ import requests
 from urllib3.util.retry import Retry
 from requests.adapters import HTTPAdapter
 from concurrent.futures import ThreadPoolExecutor, as_completed
-from logging.handlers import RotatingFileHandler
 from datetime import datetime
 
 from dotenv import load_dotenv
@@ -20,25 +19,6 @@ from utils.ioc_utils import IOCUtils
 
 # === LOAD ENVIRONMENT VARIABLES ===
 load_dotenv()
-
-# === CONFIGURE LOGGING ===
-LOG_FILE = "logs/ioc_collector.log"
-
-# Create a rotating file handler
-rotating_handler = RotatingFileHandler(
-    LOG_FILE, maxBytes=5 * 1024 * 1024, backupCount=3, encoding="utf-8"
-)
-
-logging.basicConfig(
-    level=logging.DEBUG,  # Set to DEBUG for detailed logs
-    format="%(asctime)s %(levelname)s %(message)s",
-    handlers=[
-        logging.StreamHandler(),  # Log to console
-        rotating_handler          # Log to file with rotation
-    ]
-)
-
-logging.info("Logging initialized. Starting script...")
 
 # === FOLDER STRUCTURE ===
 CONFIG_DIR = "config"
@@ -147,9 +127,10 @@ def process_feeds_concurrently(feed_urls, seen):
                 cfg,
                 IOC_PATTERNS,
                 WHITELIST_BY_FEED,
-                MAX_DAYS_OLD
+                MAX_DAYS_OLD,
+                LOG_FILE
             ): url
-            for url in feed_urls if monitor_feed_health(url, session)
+            for url in feed_urls if monitor_feed_health(url, session, LOG_FILE)
         }
         for future in as_completed(futures):
             feed_url = futures[future]
@@ -170,7 +151,7 @@ def process_and_save_feeds(feed_urls, seen):
     all_recs, skipped_feeds = process_feeds_concurrently(feed_urls, seen)
     valid_recs = [rec for rec in all_recs if "title" in rec and "source" in rec]
     save_seen(seen)
-    write_csv_feed(valid_recs, CSV_PATH, cfg)  # No need for ORG_NAME or ORG_UUID
+    write_csv_feed(valid_recs, CSV_PATH, cfg, LOG_FILE)
     save_output_json(valid_recs)
     return valid_recs, skipped_feeds, all_recs
 
