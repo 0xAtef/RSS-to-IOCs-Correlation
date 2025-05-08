@@ -1,18 +1,17 @@
 {
   "records": [
     {
-      "id": "13d7a917-0338-4c29-8c7b-907cd8795f0f",
-      "title": "Pakistani Firm Shipped Fentanyl Analogs, Scams to US",
-      "source": "https://krebsonsecurity.com/2025/05/pakistani-firm-shipped-fentanyl-analogs-scams-to-us/",
-      "published": "2025-05-07T22:22:48",
-      "feed": "https://krebsonsecurity.com/feed/",
+      "id": "60d62a4c-e4c9-4c4a-bd11-533dcc8146b1",
+      "title": "Daily Dose of Dark Web Informer - 7th of May 2025",
+      "source": "https://darkwebinformer.com/daily-dose-of-dark-web-informer-7th-of-may-2025/",
+      "published": "2025-05-07T23:24:29",
+      "feed": "https://darkwebinformer.com/rss/",
       "iocs": {
         "ips": [],
-        "domains": [
-          "spyfu.com",
-          "Searchengineland.com"
+        "domains": [],
+        "urls": [
+          "http://lockbitapyx2kr5b7ma7qn6ziwqgbrij2czhcbojuxmgnwpkgv2yx2yd[.]onion\ud83d\udea8\ud83d\udea8LockBit"
         ],
-        "urls": [],
         "emails": [],
         "sha1": [],
         "sha256": [],
@@ -20,17 +19,18 @@
         "cves": []
       },
       "tags": [
-        "context:malware",
-        "context:data_leak",
+        "context:exploits",
+        "ioc:type:url",
+        "context:threat_actor",
         "rss_to_ioc_collector",
         "ioc:type:domain",
-        "context:phishing",
-        "feed:source:krebsonsecurity.com",
-        "ioc:type:ip",
-        "context:iot",
         "context:ddos",
+        "context:data_leak",
+        "feed:source:darkwebinformer.com",
+        "ioc:type:ip",
         "ioc:type:email",
-        "feed:published:2025-05-07"
+        "feed:published:2025-05-08",
+        "context:malware"
       ],
       "enrichment": {
         "actors": [],
