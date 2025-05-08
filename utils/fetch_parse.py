@@ -84,6 +84,7 @@ def process_feed(feed_url, seen, global_seen, session, cfg, ioc_patterns, whitel
             keep = []
             for v in vals:
                 n = normalize_ioc(v)
+                # Check if the IOC is whitelisted
                 if n in seen or n in global_seen or is_ioc_whitelisted(v, urlparse(feed_url).netloc, whitelist_by_feed):
                     continue
                 global_seen.add(n)  # Add to global seen set

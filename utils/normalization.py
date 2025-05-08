@@ -43,11 +43,14 @@ def is_ioc_whitelisted(ioc_value: str, feed_domain: str, whitelist_by_feed: dict
     """
     Check if an IOC is whitelisted based on global and feed-specific whitelists.
     """
+    # Normalize the IOC value
     low = normalize_ioc(ioc_value)
     logging.debug(f"Normalized IOC: {low}")
+
+    # Get the global and feed-specific whitelists
     global_wl = {normalize_ioc(x) for x in whitelist_by_feed.get("*", [])}
     feed_wl = {normalize_ioc(x) for x in whitelist_by_feed.get(feed_domain, [])}
-    combined = global_wl | feed_wl
+    combined = global_wl | feed_wl  # Combine global and feed-specific whitelists
 
     # Exact match
     if low in combined:
@@ -56,17 +59,20 @@ def is_ioc_whitelisted(ioc_value: str, feed_domain: str, whitelist_by_feed: dict
 
     # Domain match (including subdomains)
     try:
-        domain = urlparse(low).netloc.lower()
-        if domain == feed_domain or domain.endswith(f".{feed_domain}"):
-            logging.debug(f"IOC '{ioc_value}' is whitelisted (domain match).")
-            return True
+        parsed_ioc = urlparse(low)
+        ioc_domain = parsed_ioc.netloc.lower() if parsed_ioc.netloc else low
+        for whitelist_domain in combined:
+            if whitelist_domain in ioc_domain or ioc_domain.endswith(f".{whitelist_domain}"):
+                logging.debug(f"IOC '{ioc_value}' is whitelisted (domain match).")
+                return True
     except Exception as e:
         logging.warning(f"Error parsing domain from IOC '{ioc_value}': {e}")
 
     # Substring match
-    if feed_domain in low:
-        logging.debug(f"IOC '{ioc_value}' is whitelisted (substring match).")
-        return True
+    for whitelist_domain in combined:
+        if whitelist_domain in low:
+            logging.debug(f"IOC '{ioc_value}' is whitelisted (substring match).")
+            return True
 
     logging.debug(f"IOC '{ioc_value}' is NOT whitelisted.")
     return False
