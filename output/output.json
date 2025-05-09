@@ -1,3 +1,46 @@
 {
-  "records": []
+  "records": [
+    {
+      "id": "e8ef4117-5bdf-40a4-b703-53157cb8eda8",
+      "title": "Beyond Vulnerability Management \u2013 Can You CVE What I CVE?",
+      "source": "https://thehackernews.com/2025/05/beyond-vulnerability-management-cves.html",
+      "published": "2025-05-09T10:00:00",
+      "feed": "http://feeds.feedburner.com/TheHackersNews",
+      "iocs": {
+        "ips": [],
+        "domains": [
+          "weaknesses.Gain",
+          "executives.Be",
+          "exploited.Use",
+          "paths.Conduct",
+          "systems.Reduce",
+          "systematically.Strengthen",
+          "systems.Treat",
+          "culture.Ensure"
+        ],
+        "urls": [],
+        "emails": [],
+        "sha1": [],
+        "sha256": [],
+        "md5": [],
+        "cves": []
+      },
+      "tags": [
+        "TheHackersNews",
+        "Cybersecurity",
+        "Ransomware",
+        "RSS to IOC Collector"
+      ],
+      "enrichment": {
+        "actors": [],
+        "malware": [],
+        "mitre_techniques": [],
+        "cves": [
+          "CVE-2025-27363"
+        ],
+        "tools": [],
+        "campaigns": []
+      }
+    }
+  ]
 }
