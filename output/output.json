@@ -1,3 +1,43 @@
 {
-  "records": []
+  "records": [
+    {
+      "id": "efa210f4-503d-49a5-a2dc-423b14682140",
+      "title": "Pakistani Firm Shipped Fentanyl Analogs, Scams to US",
+      "source": "https://krebsonsecurity.com/2025/05/pakistani-firm-shipped-fentanyl-analogs-scams-to-us/",
+      "published": "2025-05-07T22:22:48",
+      "feed": "https://krebsonsecurity.com/feed/",
+      "iocs": {
+        "ips": [],
+        "domains": [
+          "www.c-span.org",
+          "Clearbit.com",
+          "Hubspot.com",
+          "SEMrush.com",
+          "Apollo.io",
+          "Linkedin.com"
+        ],
+        "urls": [
+          "https://www.c-span.org/program/washington-journal/counterfeit-college-degrees/129653"
+        ],
+        "emails": [],
+        "sha1": [],
+        "sha256": [],
+        "md5": [],
+        "cves": []
+      },
+      "tags": [
+        "Ransomware",
+        "KrebsOnSecurity",
+        "RSS to IOC Collector"
+      ],
+      "enrichment": {
+        "actors": [],
+        "malware": [],
+        "mitre_techniques": [],
+        "cves": [],
+        "tools": [],
+        "campaigns": []
+      }
+    }
+  ]
 }
