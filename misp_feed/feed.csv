@@ -1,2 +1,1 @@
 info,date,threat_level_id,analysis,tag,attribute_category,attribute_type,attribute_value,to_ids,comment,attribute_timestamp,actors,malware,mitre_techniques,cves,tools,campaigns
-Daily Dose of Dark Web Informer - 8th of May 2025,2025-05-08,4,0,Cybersecurity;RSS to IOC Collector;DarkWebInformer;Ransomware,External analysis,cve,CVE-2025-26666,True,Extracted from: https://darkwebinformer.com/daily-dose-of-dark-web-informer-8th-of-may-2025/,,,,,CVE-2025-20188;CVE-2025-26666,,
