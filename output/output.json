@@ -1,35 +1,38 @@
 {
   "records": [
     {
-      "id": "d4b19210-f4a8-48e4-a564-fc222feb4bf7",
-      "title": "Ransomware Attack Update for the 9th of May 2025",
-      "source": "https://darkwebinformer.com/ransomware-attack-update-for-the-9th-of-may-2025/",
-      "published": "2025-05-09T22:16:06",
+      "id": "982513ef-8080-4718-93e7-e85d5736d507",
+      "title": "Daily Dose of Dark Web Informer - 9th of May 2025",
+      "source": "https://darkwebinformer.com/daily-dose-of-dark-web-informer-9th-of-may-2025/",
+      "published": "2025-05-09T23:03:10",
       "feed": "https://darkwebinformer.com/rss/",
       "iocs": {
         "ips": [],
-        "domains": [
-          "CHECKCITY.COM",
-          "hennessyfunds.com",
-          "dailynews.co.th"
-        ],
+        "domains": [],
         "urls": [],
         "emails": [],
         "sha1": [],
         "sha256": [],
         "md5": [],
-        "cves": []
+        "cves": [
+          "CVE-2022-40684",
+          "CVE-2024-1071"
+        ]
       },
       "tags": [
-        "DarkWebInformer",
         "Ransomware",
-        "RSS to IOC Collector"
+        "RSS to IOC Collector",
+        "DarkWebInformer",
+        "Cybersecurity"
       ],
       "enrichment": {
         "actors": [],
         "malware": [],
         "mitre_techniques": [],
-        "cves": [],
+        "cves": [
+          "CVE-2022-40684",
+          "CVE-2024-1071"
+        ],
         "tools": [],
         "campaigns": []
       }
