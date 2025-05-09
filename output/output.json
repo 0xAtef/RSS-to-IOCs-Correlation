@@ -1,3 +1,39 @@
 {
-  "records": []
+  "records": [
+    {
+      "id": "ed1de0ad-9453-4316-9fa6-b758fcc2a3c4",
+      "title": "The Wiretap: The Worrying Rise Of \u2018Violence-As-A-Service\u2019",
+      "source": "https://www.forbes.com/sites/thomasbrewster/2025/04/29/the-wiretap-the-worrying-rise-of-violence-as-a-service/",
+      "published": "2025-04-29T04:00:00",
+      "feed": "https://newsroom.trendmicro.com/media-coverage?pagetemplate=rss",
+      "iocs": {
+        "ips": [],
+        "domains": [
+          "NileBooking.comUlta"
+        ],
+        "urls": [],
+        "emails": [],
+        "sha1": [],
+        "sha256": [],
+        "md5": [],
+        "cves": []
+      },
+      "tags": [
+        "RSS to IOC Collector",
+        "Ransomware",
+        "Cybersecurity",
+        "TrendMicro"
+      ],
+      "enrichment": {
+        "actors": [
+          "scattered spider"
+        ],
+        "malware": [],
+        "mitre_techniques": [],
+        "cves": [],
+        "tools": [],
+        "campaigns": []
+      }
+    }
+  ]
 }

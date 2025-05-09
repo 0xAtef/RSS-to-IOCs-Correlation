@@ -1,1 +1,2 @@
 info,date,threat_level_id,analysis,tag,attribute_category,attribute_type,attribute_value,to_ids,comment,attribute_timestamp,actors,malware,mitre_techniques,cves,tools,campaigns
+The Wiretap: The Worrying Rise Of ‘Violence-As-A-Service’,2025-04-29,4,0,RSS to IOC Collector;Ransomware;Cybersecurity;TrendMicro,External analysis,domain,NileBooking.comUlta,True,Extracted from: https://www.forbes.com/sites/thomasbrewster/2025/04/29/the-wiretap-the-worrying-rise-of-violence-as-a-service/,,scattered spider,,,,,
