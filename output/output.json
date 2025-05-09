@@ -1,24 +1,19 @@
 {
   "records": [
     {
-      "id": "efa210f4-503d-49a5-a2dc-423b14682140",
-      "title": "Pakistani Firm Shipped Fentanyl Analogs, Scams to US",
-      "source": "https://krebsonsecurity.com/2025/05/pakistani-firm-shipped-fentanyl-analogs-scams-to-us/",
-      "published": "2025-05-07T22:22:48",
-      "feed": "https://krebsonsecurity.com/feed/",
+      "id": "d4b19210-f4a8-48e4-a564-fc222feb4bf7",
+      "title": "Ransomware Attack Update for the 9th of May 2025",
+      "source": "https://darkwebinformer.com/ransomware-attack-update-for-the-9th-of-may-2025/",
+      "published": "2025-05-09T22:16:06",
+      "feed": "https://darkwebinformer.com/rss/",
       "iocs": {
         "ips": [],
         "domains": [
-          "www.c-span.org",
-          "Clearbit.com",
-          "Hubspot.com",
-          "SEMrush.com",
-          "Apollo.io",
-          "Linkedin.com"
+          "CHECKCITY.COM",
+          "hennessyfunds.com",
+          "dailynews.co.th"
         ],
-        "urls": [
-          "https://www.c-span.org/program/washington-journal/counterfeit-college-degrees/129653"
-        ],
+        "urls": [],
         "emails": [],
         "sha1": [],
         "sha256": [],
@@ -26,8 +21,8 @@
         "cves": []
       },
       "tags": [
+        "DarkWebInformer",
         "Ransomware",
-        "KrebsOnSecurity",
         "RSS to IOC Collector"
       ],
       "enrichment": {
