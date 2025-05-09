@@ -1,3 +1,71 @@
 {
-  "records": []
+  "records": [
+    {
+      "id": "0ec978e5-3f47-4af5-8193-d11a8806ba9b",
+      "title": "Alleged Leak Exposes 5.59M Paraguay Citizen Records",
+      "source": "https://darkwebinformer.com/alleged-leak-exposes-5-59m-paraguay-citizen-records/",
+      "published": "2025-05-09T15:00:07",
+      "feed": "https://darkwebinformer.com/rss/",
+      "iocs": {
+        "ips": [],
+        "domains": [
+          "information.Sample"
+        ],
+        "urls": [],
+        "emails": [],
+        "sha1": [],
+        "sha256": [],
+        "md5": [],
+        "cves": []
+      },
+      "tags": [
+        "Ransomware",
+        "RSS to IOC Collector",
+        "DarkWebInformer",
+        "Cybersecurity"
+      ],
+      "enrichment": {
+        "actors": [],
+        "malware": [],
+        "mitre_techniques": [],
+        "cves": [],
+        "tools": [],
+        "campaigns": []
+      }
+    },
+    {
+      "id": "afd4f749-5a4c-4103-b3fc-bfc8b14bfc53",
+      "title": "Germany takes down eXch cryptocurrency exchange, seizes servers",
+      "source": "https://www.bleepingcomputer.com/news/security/germany-takes-down-exch-cryptocurrency-exchange-seizes-servers/",
+      "published": "2025-05-09T15:07:24",
+      "feed": "https://www.bleepingcomputer.com/feed/",
+      "iocs": {
+        "ips": [],
+        "domains": [
+          "Dstat.cc"
+        ],
+        "urls": [],
+        "emails": [],
+        "sha1": [],
+        "sha256": [],
+        "md5": [],
+        "cves": []
+      },
+      "tags": [
+        "BleepingComputer",
+        "RSS to IOC Collector",
+        "Ransomware"
+      ],
+      "enrichment": {
+        "actors": [
+          "lazarus group"
+        ],
+        "malware": [],
+        "mitre_techniques": [],
+        "cves": [],
+        "tools": [],
+        "campaigns": []
+      }
+    }
+  ]
 }

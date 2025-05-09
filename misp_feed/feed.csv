@@ -1,1 +1,3 @@
 info,date,threat_level_id,analysis,tag,attribute_category,attribute_type,attribute_value,to_ids,comment,attribute_timestamp,actors,malware,mitre_techniques,cves,tools,campaigns
+Alleged Leak Exposes 5.59M Paraguay Citizen Records,2025-05-09,4,0,Ransomware;RSS to IOC Collector;DarkWebInformer;Cybersecurity,External analysis,domain,information.Sample,True,Extracted from: https://darkwebinformer.com/alleged-leak-exposes-5-59m-paraguay-citizen-records/,,,,,,,
+"Germany takes down eXch cryptocurrency exchange, seizes servers",2025-05-09,4,0,BleepingComputer;RSS to IOC Collector;Ransomware,External analysis,domain,Dstat.cc,True,Extracted from: https://www.bleepingcomputer.com/news/security/germany-takes-down-exch-cryptocurrency-exchange-seizes-servers/,,lazarus group,,,,,
