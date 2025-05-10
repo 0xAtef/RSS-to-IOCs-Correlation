@@ -1,1 +1,3 @@
 info,date,threat_level_id,analysis,tag,attribute_category,attribute_type,attribute_value,to_ids,comment,attribute_timestamp,actors,malware,mitre_techniques,cves,tools,campaigns
+"Pakistani Firm Shipped Fentanyl Analogs, Scams to US",2025-05-07,4,0,KrebsOnSecurity;Ransomware;RSS to IOC Collector,External analysis,domain,www.dawn.com,True,Extracted from: https://krebsonsecurity.com/2025/05/pakistani-firm-shipped-fentanyl-analogs-scams-to-us/,,,,,,,
+"Pakistani Firm Shipped Fentanyl Analogs, Scams to US",2025-05-07,4,0,KrebsOnSecurity;Ransomware;RSS to IOC Collector,External analysis,url,https://www.dawn.com/news/1418156,True,Extracted from: https://krebsonsecurity.com/2025/05/pakistani-firm-shipped-fentanyl-analogs-scams-to-us/,,,,,,,
