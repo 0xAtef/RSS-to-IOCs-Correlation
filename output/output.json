@@ -1,7 +1,11 @@
 {
   "records": [
     {
+<<<<<<< Updated upstream
       "id": "6ae10005-a78b-4a84-b2c4-d0ad2ed7bcf2",
+=======
+      "id": "d59da515-7f1a-43e1-aa75-a0bc47f87f5f",
+>>>>>>> Stashed changes
       "title": "Pakistani Firm Shipped Fentanyl Analogs, Scams to US",
       "source": "https://krebsonsecurity.com/2025/05/pakistani-firm-shipped-fentanyl-analogs-scams-to-us/",
       "published": "2025-05-07T22:22:48",
@@ -36,7 +40,10 @@
         "ports": [
           "19",
           "2017",
+<<<<<<< Updated upstream
           "25",
+=======
+>>>>>>> Stashed changes
           "24",
           "2015",
           "215",
@@ -61,6 +68,7 @@
           "64",
           "3",
           "280",
+<<<<<<< Updated upstream
           "30",
           "350",
           "06",
@@ -71,6 +79,13 @@
           "4500",
           "2018",
           "17",
+=======
+          "350",
+          "06",
+          "2500",
+          "4500",
+          "2018",
+>>>>>>> Stashed changes
           "800",
           "12"
         ],
@@ -96,6 +111,7 @@
         "scheduled_tasks": []
       },
       "tags": [
+<<<<<<< Updated upstream
         "RSS to IOC Collector",
         "KrebsOnSecurity",
         "Ransomware",
@@ -105,6 +121,17 @@
         "DDoS",
         "Remote Code Execution",
         "DoS"
+=======
+        "DoS",
+        "IoT",
+        "RSS to IOC Collector",
+        "DDoS",
+        "Remote Code Execution",
+        "Data Breach",
+        "IOC",
+        "KrebsOnSecurity",
+        "Ransomware"
+>>>>>>> Stashed changes
       ],
       "enrichment": {
         "entities": {
@@ -402,17 +429,29 @@
           {
             "ioc": "ghostwritingsquad.com",
             "type": "domains",
+<<<<<<< Updated upstream
             "risk_score": 30
+=======
+            "risk_score": 0
+>>>>>>> Stashed changes
           },
           {
             "ioc": "talentedghostwriter.com",
             "type": "domains",
+<<<<<<< Updated upstream
             "risk_score": 0
+=======
+            "risk_score": 30
+>>>>>>> Stashed changes
           },
           {
             "ioc": "spyfu.com",
             "type": "domains",
+<<<<<<< Updated upstream
             "risk_score": 0
+=======
+            "risk_score": 30
+>>>>>>> Stashed changes
           },
           {
             "ioc": "Searchengineland.com",
@@ -422,7 +461,11 @@
           {
             "ioc": "yourdictionary.com",
             "type": "domains",
+<<<<<<< Updated upstream
             "risk_score": 30
+=======
+            "risk_score": 0
+>>>>>>> Stashed changes
           },
           {
             "ioc": "imgur.com",
@@ -437,7 +480,11 @@
           {
             "ioc": "X.com",
             "type": "domains",
+<<<<<<< Updated upstream
             "risk_score": 0
+=======
+            "risk_score": 30
+>>>>>>> Stashed changes
           },
           {
             "ioc": "www.c-span.org",
@@ -447,7 +494,11 @@
           {
             "ioc": "Clearbit.com",
             "type": "domains",
+<<<<<<< Updated upstream
             "risk_score": 0
+=======
+            "risk_score": 30
+>>>>>>> Stashed changes
           },
           {
             "ioc": "Hubspot.com",
@@ -457,7 +508,11 @@
           {
             "ioc": "SEMrush.com",
             "type": "domains",
+<<<<<<< Updated upstream
             "risk_score": 30
+=======
+            "risk_score": 0
+>>>>>>> Stashed changes
           },
           {
             "ioc": "Apollo.io",
@@ -493,7 +548,11 @@
       }
     },
     {
+<<<<<<< Updated upstream
       "id": "50c249be-aae7-4f74-84e7-e6f797b18ac0",
+=======
+      "id": "4e361d8c-f5c6-4ccc-8cbc-29e905fc4a96",
+>>>>>>> Stashed changes
       "title": "xAI Dev Leaks API Key for Private SpaceX, Tesla LLMs",
       "source": "https://krebsonsecurity.com/2025/05/xai-dev-leaks-api-key-for-private-spacex-tesla-llms/",
       "published": "2025-05-02T00:52:00",
@@ -535,6 +594,7 @@
         "scheduled_tasks": []
       },
       "tags": [
+<<<<<<< Updated upstream
         "Cybersecurity",
         "RSS to IOC Collector",
         "Remote Code Execution",
@@ -546,6 +606,19 @@
         "DDoS",
         "Malware",
         "DoS"
+=======
+        "DoS",
+        "Cybersecurity",
+        "IoT",
+        "RSS to IOC Collector",
+        "DDoS",
+        "Malware",
+        "Remote Code Execution",
+        "Data Breach",
+        "IOC",
+        "KrebsOnSecurity",
+        "Ransomware"
+>>>>>>> Stashed changes
       ],
       "enrichment": {
         "entities": {
@@ -701,7 +774,11 @@
           {
             "ioc": "x.ai",
             "type": "domains",
+<<<<<<< Updated upstream
             "risk_score": 25
+=======
+            "risk_score": 0
+>>>>>>> Stashed changes
           },
           {
             "ioc": "www.techmonitor.ai",
@@ -711,27 +788,47 @@
           {
             "ioc": "medium.com",
             "type": "domains",
+<<<<<<< Updated upstream
             "risk_score": 0
+=======
+            "risk_score": 25
+>>>>>>> Stashed changes
           },
           {
             "ioc": "marc.bolle",
             "type": "domains",
+<<<<<<< Updated upstream
             "risk_score": 25
+=======
+            "risk_score": 0
+>>>>>>> Stashed changes
           },
           {
             "ioc": "flowgpt.com",
             "type": "domains",
+<<<<<<< Updated upstream
             "risk_score": 0
+=======
+            "risk_score": 25
+>>>>>>> Stashed changes
           },
           {
             "ioc": "www.pcworld.com",
             "type": "domains",
+<<<<<<< Updated upstream
             "risk_score": 0
+=======
+            "risk_score": 30
+>>>>>>> Stashed changes
           },
           {
             "ioc": "i-saw-how-an-evil-ai-finds-vulnerabilities-its-as-scary-as-you-think.html",
             "type": "domains",
+<<<<<<< Updated upstream
             "risk_score": 30
+=======
+            "risk_score": 0
+>>>>>>> Stashed changes
           },
           {
             "ioc": "https://www.techmonitor.ai/technology/cybersecurity/10-million-exposed-credentials-open-source-code-repositories?cf-view",
@@ -757,7 +854,11 @@
       }
     },
     {
+<<<<<<< Updated upstream
       "id": "0ccc9502-61f9-445b-916b-9e6c8d4a0bf4",
+=======
+      "id": "e0083fc2-42cd-4700-81fa-19ba0be81d3a",
+>>>>>>> Stashed changes
       "title": "Alleged \u2018Scattered Spider\u2019 Member Extradited to U.S.",
       "source": "https://krebsonsecurity.com/2025/04/alleged-scattered-spider-member-extradited-to-u-s/",
       "published": "2025-04-30T21:54:59",
@@ -794,6 +895,7 @@
         "scheduled_tasks": []
       },
       "tags": [
+<<<<<<< Updated upstream
         "RSS to IOC Collector",
         "KrebsOnSecurity",
         "Ransomware",
@@ -803,6 +905,17 @@
         "DDoS",
         "Remote Code Execution",
         "DoS"
+=======
+        "DoS",
+        "IoT",
+        "RSS to IOC Collector",
+        "DDoS",
+        "Remote Code Execution",
+        "Data Breach",
+        "IOC",
+        "KrebsOnSecurity",
+        "Ransomware"
+>>>>>>> Stashed changes
       ],
       "enrichment": {
         "entities": {
@@ -925,7 +1038,11 @@
       }
     },
     {
+<<<<<<< Updated upstream
       "id": "62187490-bba3-47d8-9c81-831c0b7037a9",
+=======
+      "id": "19fbaf3c-d544-426d-9617-8cd7777bb35e",
+>>>>>>> Stashed changes
       "title": "DOGE Worker\u2019s Code Supports NLRB Whistleblower",
       "source": "https://krebsonsecurity.com/2025/04/doge-workers-code-supports-nlrb-whistleblower/",
       "published": "2025-04-23T20:45:04",
@@ -971,6 +1088,7 @@
         "scheduled_tasks": []
       },
       "tags": [
+<<<<<<< Updated upstream
         "Cybersecurity",
         "RSS to IOC Collector",
         "KrebsOnSecurity",
@@ -984,6 +1102,21 @@
         "Remote Code Execution",
         "Threat Actor",
         "DoS"
+=======
+        "DoS",
+        "Cybersecurity",
+        "Exploitation",
+        "RSS to IOC Collector",
+        "IoT",
+        "DDoS",
+        "Remote Code Execution",
+        "Data Breach",
+        "Botnet",
+        "Threat Actor",
+        "IOC",
+        "KrebsOnSecurity",
+        "Ransomware"
+>>>>>>> Stashed changes
       ],
       "enrichment": {
         "entities": {
@@ -1244,7 +1377,11 @@
       }
     },
     {
+<<<<<<< Updated upstream
       "id": "2d1d3e27-83f7-469d-896a-9cad3e496932",
+=======
+      "id": "47f4aca5-81f4-463d-86ea-6d3bb194f29d",
+>>>>>>> Stashed changes
       "title": "Whistleblower: DOGE Siphoned NLRB Case Data",
       "source": "https://krebsonsecurity.com/2025/04/whistleblower-doge-siphoned-nlrb-case-data/",
       "published": "2025-04-22T01:48:27",
@@ -1287,6 +1424,7 @@
         "scheduled_tasks": []
       },
       "tags": [
+<<<<<<< Updated upstream
         "Cybersecurity",
         "RSS to IOC Collector",
         "Remote Code Execution",
@@ -1303,6 +1441,24 @@
         "Malware",
         "Threat Actor",
         "DoS"
+=======
+        "DoS",
+        "Cybersecurity",
+        "Exploitation",
+        "RSS to IOC Collector",
+        "IoT",
+        "DDoS",
+        "Malware",
+        "Nation-State Actor",
+        "Remote Code Execution",
+        "Data Breach",
+        "Botnet",
+        "Threat Actor",
+        "Detection Rule",
+        "IOC",
+        "KrebsOnSecurity",
+        "Ransomware"
+>>>>>>> Stashed changes
       ],
       "enrichment": {
         "entities": {
@@ -1620,7 +1776,11 @@
           {
             "ioc": "nbcnews.com",
             "type": "domains",
+<<<<<<< Updated upstream
             "risk_score": 0
+=======
+            "risk_score": 30
+>>>>>>> Stashed changes
           },
           {
             "ioc": "j.murray",
@@ -1645,7 +1805,11 @@
           {
             "ioc": "npr.org",
             "type": "domains",
+<<<<<<< Updated upstream
             "risk_score": 30
+=======
+            "risk_score": 0
+>>>>>>> Stashed changes
           },
           {
             "ioc": "https://x.com/amuse/status/1913665346281656394",
@@ -1656,7 +1820,11 @@
       }
     },
     {
+<<<<<<< Updated upstream
       "id": "11a8f8d6-745a-46b6-a69f-f13e96ccbf4b",
+=======
+      "id": "ba6f005f-5e1a-4fb9-89c1-0d3e4d354cfa",
+>>>>>>> Stashed changes
       "title": "Microsoft Teams will soon block screen capture during meetings",
       "source": "https://www.bleepingcomputer.com/news/microsoft/microsoft-teams-will-soon-block-screen-capture-during-meetings/",
       "published": "2025-05-10T15:22:44",
@@ -1703,6 +1871,7 @@
         "scheduled_tasks": []
       },
       "tags": [
+<<<<<<< Updated upstream
         "Cybersecurity",
         "RSS to IOC Collector",
         "Remote Code Execution",
@@ -1714,6 +1883,19 @@
         "Exploitation",
         "Data Collection",
         "Malware"
+=======
+        "Persistence",
+        "Cybersecurity",
+        "Exploitation",
+        "RSS to IOC Collector",
+        "BleepingComputer",
+        "Malware",
+        "Adware",
+        "Remote Code Execution",
+        "Data Breach",
+        "Data Collection",
+        "Ransomware"
+>>>>>>> Stashed changes
       ],
       "enrichment": {
         "entities": {
@@ -1783,7 +1965,11 @@
           {
             "ioc": "Theonlinesearch.com",
             "type": "domains",
+<<<<<<< Updated upstream
             "risk_score": 30
+=======
+            "risk_score": 0
+>>>>>>> Stashed changes
           },
           {
             "ioc": "Smartwebfinder.com",
@@ -1793,7 +1979,11 @@
           {
             "ioc": "Toksearches.xyz",
             "type": "domains",
+<<<<<<< Updated upstream
             "risk_score": 0
+=======
+            "risk_score": 30
+>>>>>>> Stashed changes
           },
           {
             "ioc": "Trojan.vundo",
@@ -1804,7 +1994,11 @@
       }
     },
     {
+<<<<<<< Updated upstream
       "id": "413fa70b-3e92-4a7f-980a-1f7aa6a7f2a0",
+=======
+      "id": "1e0ab99d-a9c7-49a9-8346-4782df374376",
+>>>>>>> Stashed changes
       "title": "Fake AI video generators drop new Noodlophile infostealer malware",
       "source": "https://www.bleepingcomputer.com/news/security/fake-ai-video-generators-drop-new-noodlophile-infostealer-malware/",
       "published": "2025-05-10T14:17:27",
@@ -1847,6 +2041,7 @@
         "scheduled_tasks": []
       },
       "tags": [
+<<<<<<< Updated upstream
         "RSS to IOC Collector",
         "Remote Code Execution",
         "Ransomware",
@@ -1857,6 +2052,18 @@
         "C2",
         "Data Collection",
         "Malware"
+=======
+        "Exploitation",
+        "RSS to IOC Collector",
+        "BleepingComputer",
+        "Malware",
+        "Adware",
+        "C2",
+        "Remote Code Execution",
+        "Data Breach",
+        "Data Collection",
+        "Ransomware"
+>>>>>>> Stashed changes
       ],
       "enrichment": {
         "entities": {
@@ -1938,16 +2145,25 @@
           {
             "ioc": "Smartwebfinder.com",
             "type": "domains",
+<<<<<<< Updated upstream
             "risk_score": 30
+=======
+            "risk_score": 0
+>>>>>>> Stashed changes
           },
           {
             "ioc": "Toksearches.xyz",
             "type": "domains",
+<<<<<<< Updated upstream
             "risk_score": 0
+=======
+            "risk_score": 5
+>>>>>>> Stashed changes
           },
           {
             "ioc": "Trojan.vundo",
             "type": "domains",
+<<<<<<< Updated upstream
             "risk_score": 0
           },
           {
@@ -1961,6 +2177,21 @@
             "risk_score": 5
           },
           {
+=======
+            "risk_score": 5
+          },
+          {
+            "ioc": "MachineAI.mp4.exe",
+            "type": "domains",
+            "risk_score": 0
+          },
+          {
+            "ioc": "MachineAI.mp4.exe",
+            "type": "domains",
+            "risk_score": 0
+          },
+          {
+>>>>>>> Stashed changes
             "ioc": "Document.docx",
             "type": "domains",
             "risk_score": 0
@@ -1968,7 +2199,11 @@
           {
             "ioc": "install.bat",
             "type": "domains",
+<<<<<<< Updated upstream
             "risk_score": 0
+=======
+            "risk_score": 30
+>>>>>>> Stashed changes
           },
           {
             "ioc": "certutil.exe",
@@ -1994,7 +2229,11 @@
       }
     },
     {
+<<<<<<< Updated upstream
       "id": "3e56733d-e8af-4169-9727-c6b907cf183f",
+=======
+      "id": "f56c350d-83b8-48f1-9fd2-8c6cc3f6931e",
+>>>>>>> Stashed changes
       "title": "Ascension says recent data breach affects over 430,000 patients",
       "source": "https://www.bleepingcomputer.com/news/security/ascension-says-recent-data-breach-affects-over-430-000-patients/",
       "published": "2025-05-09T18:48:15",
@@ -2033,6 +2272,7 @@
         "scheduled_tasks": []
       },
       "tags": [
+<<<<<<< Updated upstream
         "Cybersecurity",
         "RSS to IOC Collector",
         "Remote Code Execution",
@@ -2045,6 +2285,20 @@
         "IOC",
         "Data Collection",
         "Malware"
+=======
+        "IOC",
+        "Cybersecurity",
+        "Exploitation",
+        "RSS to IOC Collector",
+        "Zero-Day Exploit",
+        "BleepingComputer",
+        "Malware",
+        "Adware",
+        "Remote Code Execution",
+        "Data Breach",
+        "Data Collection",
+        "Ransomware"
+>>>>>>> Stashed changes
       ],
       "enrichment": {
         "entities": {
@@ -2141,23 +2395,39 @@
           {
             "ioc": "Smartwebfinder.com",
             "type": "domains",
+<<<<<<< Updated upstream
             "risk_score": 30
+=======
+            "risk_score": 0
+>>>>>>> Stashed changes
           },
           {
             "ioc": "Toksearches.xyz",
             "type": "domains",
+<<<<<<< Updated upstream
             "risk_score": 0
+=======
+            "risk_score": 30
+>>>>>>> Stashed changes
           },
           {
             "ioc": "Trojan.vundo",
             "type": "domains",
+<<<<<<< Updated upstream
             "risk_score": 0
+=======
+            "risk_score": 5
+>>>>>>> Stashed changes
           }
         ]
       }
     },
     {
+<<<<<<< Updated upstream
       "id": "cc76bbed-ebd0-4cc9-9d6e-b1796962eaae",
+=======
+      "id": "b368f327-d75b-4bd8-9263-e4445a05eedf",
+>>>>>>> Stashed changes
       "title": "Google Chrome to use on-device AI to detect tech support scams",
       "source": "https://www.bleepingcomputer.com/news/security/google-chrome-to-use-on-device-ai-to-detect-tech-support-scams/",
       "published": "2025-05-09T17:49:59",
@@ -2190,6 +2460,7 @@
         "scheduled_tasks": []
       },
       "tags": [
+<<<<<<< Updated upstream
         "RSS to IOC Collector",
         "Remote Code Execution",
         "Ransomware",
@@ -2199,6 +2470,17 @@
         "Exploitation",
         "Data Collection",
         "Malware"
+=======
+        "Exploitation",
+        "RSS to IOC Collector",
+        "BleepingComputer",
+        "Malware",
+        "Adware",
+        "Remote Code Execution",
+        "Data Breach",
+        "Data Collection",
+        "Ransomware"
+>>>>>>> Stashed changes
       ],
       "enrichment": {
         "entities": {
@@ -2260,7 +2542,11 @@
           {
             "ioc": "Theonlinesearch.com",
             "type": "domains",
+<<<<<<< Updated upstream
             "risk_score": 0
+=======
+            "risk_score": 5
+>>>>>>> Stashed changes
           },
           {
             "ioc": "Smartwebfinder.com",
@@ -2281,6 +2567,7 @@
       }
     },
     {
+<<<<<<< Updated upstream
       "id": "5c9e7496-984d-46bb-8945-ea06835444f3",
       "title": "Police dismantles botnet selling hacked routers as residential proxies",
       "source": "https://www.bleepingcomputer.com/news/security/police-dismantles-botnet-selling-hacked-routers-as-residential-proxies/",
@@ -2445,6 +2732,9 @@
     },
     {
       "id": "a26c6094-b66b-420f-95dd-0776aea9ddfb",
+=======
+      "id": "13454481-9208-49a9-bee4-9f2bde1b5f88",
+>>>>>>> Stashed changes
       "title": "Chinese hackers behind attacks targeting SAP NetWeaver servers",
       "source": "https://www.bleepingcomputer.com/news/security/chinese-hackers-behind-attacks-targeting-sap-netweaver-servers/",
       "published": "2025-05-09T16:23:08",
@@ -2458,12 +2748,18 @@
         "sha1": [],
         "sha256": [],
         "md5": [],
+<<<<<<< Updated upstream
         "cves": [
           "CVE-2025-31324"
         ],
         "mac_addresses": [],
         "ports": [
           "31324",
+=======
+        "cves": [],
+        "mac_addresses": [],
+        "ports": [
+>>>>>>> Stashed changes
           "204",
           "284",
           "474"
@@ -2482,6 +2778,7 @@
       },
       "tags": [
         "Cybersecurity",
+<<<<<<< Updated upstream
         "RSS to IOC Collector",
         "Remote Code Execution",
         "Ransomware",
@@ -2495,6 +2792,21 @@
         "Malware",
         "Threat Actor",
         "CVE"
+=======
+        "Exploitation",
+        "RSS to IOC Collector",
+        "Zero-Day Exploit",
+        "Web/Application",
+        "BleepingComputer",
+        "Malware",
+        "Adware",
+        "Remote Code Execution",
+        "Data Breach",
+        "CVE",
+        "Threat Actor",
+        "Data Collection",
+        "Ransomware"
+>>>>>>> Stashed changes
       ],
       "enrichment": {
         "entities": {
@@ -2582,12 +2894,20 @@
           {
             "ioc": "Theonlinesearch.com",
             "type": "domains",
+<<<<<<< Updated upstream
             "risk_score": 0
+=======
+            "risk_score": 30
+>>>>>>> Stashed changes
           },
           {
             "ioc": "Smartwebfinder.com",
             "type": "domains",
+<<<<<<< Updated upstream
             "risk_score": 5
+=======
+            "risk_score": 0
+>>>>>>> Stashed changes
           },
           {
             "ioc": "Toksearches.xyz",
@@ -2597,13 +2917,21 @@
           {
             "ioc": "Trojan.vundo",
             "type": "domains",
+<<<<<<< Updated upstream
             "risk_score": 30
+=======
+            "risk_score": 0
+>>>>>>> Stashed changes
           }
         ]
       }
     },
     {
+<<<<<<< Updated upstream
       "id": "b834efff-35c5-418b-90d7-ad856f6a32ab",
+=======
+      "id": "d960d84f-788b-4572-99cc-dba27edc15fc",
+>>>>>>> Stashed changes
       "title": "Germany takes down eXch cryptocurrency exchange, seizes servers",
       "source": "https://www.bleepingcomputer.com/news/security/germany-takes-down-exch-cryptocurrency-exchange-seizes-servers/",
       "published": "2025-05-09T15:07:24",
@@ -2621,9 +2949,13 @@
         "md5": [],
         "cves": [],
         "mac_addresses": [],
+<<<<<<< Updated upstream
         "ports": [
           "07"
         ],
+=======
+        "ports": [],
+>>>>>>> Stashed changes
         "asn": [],
         "cidr": [],
         "file_paths": [],
@@ -2635,6 +2967,7 @@
         "scheduled_tasks": []
       },
       "tags": [
+<<<<<<< Updated upstream
         "RSS to IOC Collector",
         "Remote Code Execution",
         "Ransomware",
@@ -2648,6 +2981,21 @@
         "Data Collection",
         "Malware",
         "DoS"
+=======
+        "DoS",
+        "IOC",
+        "Exploitation",
+        "RSS to IOC Collector",
+        "DDoS",
+        "BleepingComputer",
+        "Malware",
+        "Adware",
+        "Remote Code Execution",
+        "Data Breach",
+        "Detection Rule",
+        "Data Collection",
+        "Ransomware"
+>>>>>>> Stashed changes
       ],
       "enrichment": {
         "entities": {
@@ -2719,7 +3067,11 @@
           {
             "ioc": "Smartwebfinder.com",
             "type": "domains",
+<<<<<<< Updated upstream
             "risk_score": 5
+=======
+            "risk_score": 10
+>>>>>>> Stashed changes
           },
           {
             "ioc": "Toksearches.xyz",
@@ -2729,18 +3081,30 @@
           {
             "ioc": "Trojan.vundo",
             "type": "domains",
+<<<<<<< Updated upstream
             "risk_score": 30
+=======
+            "risk_score": 5
+>>>>>>> Stashed changes
           },
           {
             "ioc": "Dstat.cc",
             "type": "domains",
+<<<<<<< Updated upstream
             "risk_score": 10
+=======
+            "risk_score": 0
+>>>>>>> Stashed changes
           }
         ]
       }
     },
     {
+<<<<<<< Updated upstream
       "id": "32ee11b3-368f-48fe-b562-c1d0fc90c929",
+=======
+      "id": "914972cd-d2e2-413d-a341-7599443a0038",
+>>>>>>> Stashed changes
       "title": "Cisco fixes max severity IOS XE flaw letting attackers hijack devices",
       "source": "https://www.bleepingcomputer.com/news/security/cisco-fixes-max-severity-ios-xe-flaw-letting-attackers-hijack-devices/",
       "published": "2025-05-08T20:53:18",
@@ -2777,6 +3141,7 @@
         "scheduled_tasks": []
       },
       "tags": [
+<<<<<<< Updated upstream
         "RSS to IOC Collector",
         "Remote Code Execution",
         "Ransomware",
@@ -2789,6 +3154,20 @@
         "Malware",
         "Threat Actor",
         "CVE"
+=======
+        "Exploitation",
+        "RSS to IOC Collector",
+        "Zero-Day Exploit",
+        "BleepingComputer",
+        "Malware",
+        "Adware",
+        "Remote Code Execution",
+        "Data Breach",
+        "CVE",
+        "Threat Actor",
+        "Data Collection",
+        "Ransomware"
+>>>>>>> Stashed changes
       ],
       "enrichment": {
         "entities": {
@@ -2864,28 +3243,48 @@
           {
             "ioc": "Theonlinesearch.com",
             "type": "domains",
+<<<<<<< Updated upstream
             "risk_score": 30
+=======
+            "risk_score": 0
+>>>>>>> Stashed changes
           },
           {
             "ioc": "Smartwebfinder.com",
             "type": "domains",
+<<<<<<< Updated upstream
             "risk_score": 0
+=======
+            "risk_score": 30
+>>>>>>> Stashed changes
           },
           {
             "ioc": "Toksearches.xyz",
             "type": "domains",
+<<<<<<< Updated upstream
             "risk_score": 0
+=======
+            "risk_score": 5
+>>>>>>> Stashed changes
           },
           {
             "ioc": "Trojan.vundo",
             "type": "domains",
+<<<<<<< Updated upstream
             "risk_score": 0
+=======
+            "risk_score": 5
+>>>>>>> Stashed changes
           }
         ]
       }
     },
     {
+<<<<<<< Updated upstream
       "id": "07d12e79-2217-4a58-9d13-f646711ccde7",
+=======
+      "id": "f5d32b8d-e620-40df-ab17-ae54531bf242",
+>>>>>>> Stashed changes
       "title": "Education giant Pearson hit by cyberattack exposing customer data",
       "source": "https://www.bleepingcomputer.com/news/security/education-giant-pearson-hit-by-cyberattack-exposing-customer-data/",
       "published": "2025-05-08T20:14:09",
@@ -2917,6 +3316,7 @@
         "scheduled_tasks": []
       },
       "tags": [
+<<<<<<< Updated upstream
         "Cybersecurity",
         "RSS to IOC Collector",
         "Remote Code Execution",
@@ -2929,6 +3329,20 @@
         "Data Collection",
         "Malware",
         "Threat Actor"
+=======
+        "IOC",
+        "Cybersecurity",
+        "Exploitation",
+        "RSS to IOC Collector",
+        "BleepingComputer",
+        "Malware",
+        "Adware",
+        "Remote Code Execution",
+        "Data Breach",
+        "Threat Actor",
+        "Data Collection",
+        "Ransomware"
+>>>>>>> Stashed changes
       ],
       "enrichment": {
         "entities": {
@@ -2973,7 +3387,11 @@
             "93",
             "2025",
             "22",
+<<<<<<< Updated upstream
             "15",
+=======
+            "16",
+>>>>>>> Stashed changes
             "45",
             "000",
             "1",
@@ -2999,32 +3417,56 @@
           {
             "ioc": "Theonlinesearch.com",
             "type": "domains",
+<<<<<<< Updated upstream
             "risk_score": 0
+=======
+            "risk_score": 5
+>>>>>>> Stashed changes
           },
           {
             "ioc": "Smartwebfinder.com",
             "type": "domains",
+<<<<<<< Updated upstream
             "risk_score": 5
+=======
+            "risk_score": 25
+>>>>>>> Stashed changes
           },
           {
             "ioc": "Toksearches.xyz",
             "type": "domains",
+<<<<<<< Updated upstream
             "risk_score": 25
+=======
+            "risk_score": 30
+>>>>>>> Stashed changes
           },
           {
             "ioc": "Trojan.vundo",
             "type": "domains",
+<<<<<<< Updated upstream
             "risk_score": 5
+=======
+            "risk_score": 25
+>>>>>>> Stashed changes
           },
           {
             "ioc": "lawrence.abrams",
             "type": "domains",
+<<<<<<< Updated upstream
             "risk_score": 25
+=======
+            "risk_score": 0
+>>>>>>> Stashed changes
           },
           {
             "ioc": "bleepingcomputer.com",
             "type": "domains",
+<<<<<<< Updated upstream
             "risk_score": 0
+=======
+            "risk_score": 5
+>>>>>>> Stashed changes
           },
           {
             "ioc": "BleepingComputer.com",
@@ -3035,7 +3477,11 @@
       }
     },
     {
+<<<<<<< Updated upstream
       "id": "69fdd153-5a7b-4081-8a76-8b355c5258e4",
+=======
+      "id": "a9019f59-02ac-4cae-9306-9be9669be64c",
+>>>>>>> Stashed changes
       "title": "Supply chain attack hits npm package with 45,000 weekly downloads",
       "source": "https://www.bleepingcomputer.com/news/security/supply-chain-attack-hits-npm-package-with-45-000-weekly-downloads/",
       "published": "2025-05-08T19:03:24",
@@ -3081,6 +3527,7 @@
         "scheduled_tasks": []
       },
       "tags": [
+<<<<<<< Updated upstream
         "Defense Evasion",
         "RSS to IOC Collector",
         "Remote Code Execution",
@@ -3093,6 +3540,20 @@
         "Data Collection",
         "Malware",
         "Threat Actor"
+=======
+        "Exploitation",
+        "RSS to IOC Collector",
+        "BleepingComputer",
+        "Malware",
+        "Adware",
+        "C2",
+        "Remote Code Execution",
+        "Data Breach",
+        "Threat Actor",
+        "Data Collection",
+        "Defense Evasion",
+        "Ransomware"
+>>>>>>> Stashed changes
       ],
       "enrichment": {
         "entities": {
@@ -3216,32 +3677,56 @@
           {
             "ioc": "Theonlinesearch.com",
             "type": "domains",
+<<<<<<< Updated upstream
             "risk_score": 5
+=======
+            "risk_score": 0
+>>>>>>> Stashed changes
           },
           {
             "ioc": "Smartwebfinder.com",
             "type": "domains",
+<<<<<<< Updated upstream
             "risk_score": 0
+=======
+            "risk_score": 5
+>>>>>>> Stashed changes
           },
           {
             "ioc": "Toksearches.xyz",
             "type": "domains",
+<<<<<<< Updated upstream
             "risk_score": 20
+=======
+            "risk_score": 0
+>>>>>>> Stashed changes
           },
           {
             "ioc": "Trojan.vundo",
             "type": "domains",
+<<<<<<< Updated upstream
             "risk_score": 0
+=======
+            "risk_score": 20
+>>>>>>> Stashed changes
           },
           {
             "ioc": "index.js",
             "type": "domains",
+<<<<<<< Updated upstream
             "risk_score": 30
+=======
+            "risk_score": 0
+>>>>>>> Stashed changes
           },
           {
             "ioc": "module.paths",
             "type": "domains",
+<<<<<<< Updated upstream
             "risk_score": 5
+=======
+            "risk_score": 30
+>>>>>>> Stashed changes
           },
           {
             "ioc": "socket.io",
@@ -3257,7 +3742,11 @@
       }
     },
     {
+<<<<<<< Updated upstream
       "id": "396eb795-e329-4aaf-8cc5-c4f750a91239",
+=======
+      "id": "469fe979-59b0-4257-86af-9c7d7855d58a",
+>>>>>>> Stashed changes
       "title": "Malicious PyPi package hides RAT malware, targets Discord devs since 2022",
       "source": "https://www.bleepingcomputer.com/news/security/malicious-pypi-package-hides-rat-malware-targets-discord-devs-since-2022/",
       "published": "2025-05-08T18:51:14",
@@ -3275,9 +3764,13 @@
         "md5": [],
         "cves": [],
         "mac_addresses": [],
+<<<<<<< Updated upstream
         "ports": [
           "51"
         ],
+=======
+        "ports": [],
+>>>>>>> Stashed changes
         "asn": [],
         "cidr": [],
         "file_paths": [],
@@ -3290,6 +3783,7 @@
       },
       "tags": [
         "Cybersecurity",
+<<<<<<< Updated upstream
         "RSS to IOC Collector",
         "Remote Code Execution",
         "Typosquatting",
@@ -3303,6 +3797,21 @@
         "Data Collection",
         "Malware",
         "Threat Actor"
+=======
+        "Exploitation",
+        "RSS to IOC Collector",
+        "BleepingComputer",
+        "Typosquatting",
+        "Malware",
+        "Privilege Escalation",
+        "Adware",
+        "C2",
+        "Remote Code Execution",
+        "Data Breach",
+        "Threat Actor",
+        "Data Collection",
+        "Ransomware"
+>>>>>>> Stashed changes
       ],
       "enrichment": {
         "entities": {
@@ -3379,7 +3888,11 @@
           {
             "ioc": "Toksearches.xyz",
             "type": "domains",
+<<<<<<< Updated upstream
             "risk_score": 0
+=======
+            "risk_score": 30
+>>>>>>> Stashed changes
           },
           {
             "ioc": "Trojan.vundo",
@@ -3395,7 +3908,11 @@
       }
     },
     {
+<<<<<<< Updated upstream
       "id": "11b5161e-24b5-4561-9514-7b5b54d82017",
+=======
+      "id": "cc8d1f18-537d-40d1-ad6b-5cb0a85df153",
+>>>>>>> Stashed changes
       "title": "Cybersecurity Trends: Impact of Tariffs and Data Sovereignty",
       "source": "https://www.bankinfosecurity.com/cybersecurity-trends-impact-tariffs-data-sovereignty-a-28244",
       "published": "2025-05-03T04:00:00",
@@ -3445,6 +3962,7 @@
         "scheduled_tasks": []
       },
       "tags": [
+<<<<<<< Updated upstream
         "Cybersecurity",
         "Defense Evasion",
         "RSS to IOC Collector",
@@ -3457,6 +3975,20 @@
         "DDoS",
         "Remote Code Execution",
         "DoS"
+=======
+        "DoS",
+        "Cybersecurity",
+        "Exploitation",
+        "RSS to IOC Collector",
+        "DDoS",
+        "Insider Threat",
+        "Remote Code Execution",
+        "Data Breach",
+        "TrendMicro",
+        "IOC",
+        "Defense Evasion",
+        "Ransomware"
+>>>>>>> Stashed changes
       ],
       "enrichment": {
         "entities": {
@@ -3711,7 +4243,122 @@
       }
     },
     {
+<<<<<<< Updated upstream
       "id": "14db2bf3-466d-4c94-bcca-ff3f52d1de64",
+=======
+      "id": "0e837c02-83ca-4b84-a4d2-60ecc4a0cd88",
+      "title": "Chinese Hacking Competitions Fuel the Country\u2019s Broad Cyber Ambitions",
+      "source": "https://www.bloomberg.com/news/articles/2025-04-30/chinese-hacking-competitions-fuel-the-country-s-broad-cyber-ambitions?embedded-checkout=true",
+      "published": "2025-04-30T04:00:00",
+      "feed": "https://newsroom.trendmicro.com/media-coverage?pagetemplate=rss",
+      "iocs": {
+        "ipv4": [],
+        "ipv6": [],
+        "domains": [
+          "Bloomberg.com",
+          "ago.The"
+        ],
+        "urls": [],
+        "emails": [],
+        "sha1": [],
+        "sha256": [],
+        "md5": [],
+        "cves": [],
+        "mac_addresses": [],
+        "ports": [
+          "212",
+          "318",
+          "7330",
+          "65",
+          "6212",
+          "1000"
+        ],
+        "asn": [],
+        "cidr": [],
+        "file_paths": [],
+        "btc_wallets": [],
+        "eth_wallets": [],
+        "registry_keys": [],
+        "process_names": [],
+        "mutexes": [],
+        "scheduled_tasks": []
+      },
+      "tags": [
+        "RSS to IOC Collector",
+        "Cybersecurity",
+        "TrendMicro"
+      ],
+      "enrichment": {
+        "entities": {
+          "ipv4": [],
+          "ipv6": [],
+          "domains": [
+            "Bloomberg.com",
+            "ago.The"
+          ],
+          "urls": [],
+          "emails": [],
+          "sha1": [],
+          "sha256": [],
+          "md5": [],
+          "cves": [],
+          "mac_addresses": [],
+          "ports": [
+            "1",
+            "212",
+            "318",
+            "44",
+            "20",
+            "7330",
+            "65",
+            "6212",
+            "1000",
+            "1",
+            "212",
+            "318",
+            "44",
+            "20",
+            "7330",
+            "65",
+            "6212",
+            "1000",
+            "30",
+            "2025",
+            "5",
+            "00",
+            "30",
+            "2025",
+            "5",
+            "07",
+            "2025"
+          ],
+          "asn": [],
+          "cidr": [],
+          "file_paths": [],
+          "btc_wallets": [],
+          "eth_wallets": [],
+          "registry_keys": [],
+          "process_names": [],
+          "mutexes": [],
+          "scheduled_tasks": []
+        },
+        "enriched_iocs": [
+          {
+            "ioc": "Bloomberg.com",
+            "type": "domains",
+            "risk_score": 0
+          },
+          {
+            "ioc": "ago.The",
+            "type": "domains",
+            "risk_score": 30
+          }
+        ]
+      }
+    },
+    {
+      "id": "8e1ae3c4-f933-489c-9dee-b0515abd36ef",
+>>>>>>> Stashed changes
       "title": "The Wiretap: The Worrying Rise Of \u2018Violence-As-A-Service\u2019",
       "source": "https://www.forbes.com/sites/thomasbrewster/2025/04/29/the-wiretap-the-worrying-rise-of-violence-as-a-service/",
       "published": "2025-04-29T04:00:00",
@@ -3751,6 +4398,7 @@
         "scheduled_tasks": []
       },
       "tags": [
+<<<<<<< Updated upstream
         "Cybersecurity",
         "RSS to IOC Collector",
         "Remote Code Execution",
@@ -3761,6 +4409,18 @@
         "Exploitation",
         "IOC",
         "Malware"
+=======
+        "Connected Device",
+        "Cybersecurity",
+        "Exploitation",
+        "RSS to IOC Collector",
+        "Zero-Day Exploit",
+        "Malware",
+        "Remote Code Execution",
+        "TrendMicro",
+        "IOC",
+        "Ransomware"
+>>>>>>> Stashed changes
       ],
       "enrichment": {
         "entities": {
@@ -3855,7 +4515,11 @@
       }
     },
     {
+<<<<<<< Updated upstream
       "id": "9e85e5bd-f757-4601-a13a-e7b8b9bacd23",
+=======
+      "id": "927a0f3d-880a-4793-8e77-418b60e87b04",
+>>>>>>> Stashed changes
       "title": "COLDRIVER Using New Malware To Steal Documents From Western Targets and NGOs",
       "source": "https://cloud.google.com/blog/topics/threat-intelligence/coldriver-steal-documents-western-targets-ngos/",
       "published": "2025-05-07T14:00:00",
@@ -3908,6 +4572,7 @@
         "scheduled_tasks": []
       },
       "tags": [
+<<<<<<< Updated upstream
         "RSS to IOC Collector",
         "TheHackersNews",
         "Zero-Day Exploit",
@@ -3918,6 +4583,18 @@
         "Malware",
         "Threat Actor",
         "ThreatIntelligence"
+=======
+        "Exploitation",
+        "RSS to IOC Collector",
+        "Zero-Day Exploit",
+        "Malware",
+        "C2",
+        "Detection Rule",
+        "Threat Actor",
+        "ThreatIntelligence",
+        "IOC",
+        "TheHackersNews"
+>>>>>>> Stashed changes
       ],
       "enrichment": {
         "entities": {
@@ -4077,7 +4754,11 @@
           {
             "ioc": "sys.argv",
             "type": "domains",
+<<<<<<< Updated upstream
             "risk_score": 15
+=======
+            "risk_score": 0
+>>>>>>> Stashed changes
           },
           {
             "ioc": "f.read",
@@ -4102,7 +4783,11 @@
           {
             "ioc": "sys.argv",
             "type": "domains",
+<<<<<<< Updated upstream
             "risk_score": 0
+=======
+            "risk_score": 5
+>>>>>>> Stashed changes
           },
           {
             "ioc": "f.write",
@@ -4112,7 +4797,11 @@
           {
             "ioc": "ws.ExpandEnvironmentStrings",
             "type": "domains",
+<<<<<<< Updated upstream
             "risk_score": 15
+=======
+            "risk_score": 0
+>>>>>>> Stashed changes
           },
           {
             "ioc": "ws.ExpandEnvironmentStrings",
@@ -4132,13 +4821,21 @@
           {
             "ioc": "njala.dev",
             "type": "domains",
+<<<<<<< Updated upstream
             "risk_score": 0
+=======
+            "risk_score": 15
+>>>>>>> Stashed changes
           }
         ]
       }
     },
     {
+<<<<<<< Updated upstream
       "id": "d65cdc67-1885-4b1f-8629-2789a72b62ec",
+=======
+      "id": "9b430a97-e908-4f03-840b-eb6be62788ce",
+>>>>>>> Stashed changes
       "title": "Defending Against UNC3944: Cybercrime Hardening Guidance from the Frontlines",
       "source": "https://cloud.google.com/blog/topics/threat-intelligence/unc3944-proactive-hardening-recommendations/",
       "published": "2025-05-06T14:00:00",
@@ -4177,6 +4874,7 @@
         "scheduled_tasks": []
       },
       "tags": [
+<<<<<<< Updated upstream
         "RSS to IOC Collector",
         "Remote Code Execution",
         "Ransomware",
@@ -4189,6 +4887,20 @@
         "Malware",
         "Threat Actor",
         "ThreatIntelligence"
+=======
+        "Exploitation",
+        "RSS to IOC Collector",
+        "Zero-Day Exploit",
+        "Malware",
+        "Privilege Escalation",
+        "Remote Code Execution",
+        "Data Breach",
+        "Threat Actor",
+        "ThreatIntelligence",
+        "IOC",
+        "TheHackersNews",
+        "Ransomware"
+>>>>>>> Stashed changes
       ],
       "enrichment": {
         "entities": {
@@ -4278,12 +4990,20 @@
           {
             "ioc": "helpdesk.com",
             "type": "domains",
+<<<<<<< Updated upstream
             "risk_score": 0
+=======
+            "risk_score": 30
+>>>>>>> Stashed changes
           },
           {
             "ioc": "SSO.com",
             "type": "domains",
+<<<<<<< Updated upstream
             "risk_score": 30
+=======
+            "risk_score": 0
+>>>>>>> Stashed changes
           },
           {
             "ioc": "principal.user.userid",
@@ -4304,7 +5024,11 @@
       }
     },
     {
+<<<<<<< Updated upstream
       "id": "5edb434d-8ead-4d7b-a2c3-0ae016c0e633",
+=======
+      "id": "46860ecf-87f7-497e-bad8-76f9166e1ee1",
+>>>>>>> Stashed changes
       "title": "Hello 0-Days, My Old Friend: A 2024 Zero-Day Exploitation Analysis",
       "source": "https://cloud.google.com/blog/topics/threat-intelligence/2024-zero-day-trends/",
       "published": "2025-04-29T05:00:00",
@@ -4415,6 +5139,7 @@
         "scheduled_tasks": []
       },
       "tags": [
+<<<<<<< Updated upstream
         "RSS to IOC Collector",
         "Remote Code Execution",
         "Cyber Espionage",
@@ -4429,6 +5154,22 @@
         "Threat Actor",
         "CVE",
         "ThreatIntelligence"
+=======
+        "Persistence",
+        "Exploitation",
+        "RSS to IOC Collector",
+        "Zero-Day Exploit",
+        "Web/Application",
+        "Cyber Espionage",
+        "Malware",
+        "Privilege Escalation",
+        "Remote Code Execution",
+        "CVE",
+        "Threat Actor",
+        "ThreatIntelligence",
+        "IOC",
+        "TheHackersNews"
+>>>>>>> Stashed changes
       ],
       "enrichment": {
         "entities": {
@@ -5008,7 +5749,11 @@
       }
     },
     {
+<<<<<<< Updated upstream
       "id": "138964f2-d45f-4b81-86e6-f8fa9a627d51",
+=======
+      "id": "9ad4a970-f216-4d5c-8e56-19194e608b21",
+>>>>>>> Stashed changes
       "title": "M-Trends 2025: Data, Insights, and Recommendations From the Frontlines",
       "source": "https://cloud.google.com/blog/topics/threat-intelligence/m-trends-2025/",
       "published": "2025-04-23T14:00:00",
@@ -5042,6 +5787,7 @@
       },
       "tags": [
         "Cybersecurity",
+<<<<<<< Updated upstream
         "RSS to IOC Collector",
         "Remote Code Execution",
         "Cyber Espionage",
@@ -5053,6 +5799,19 @@
         "Malware",
         "Threat Actor",
         "ThreatIntelligence"
+=======
+        "Exploitation",
+        "RSS to IOC Collector",
+        "Zero-Day Exploit",
+        "Cyber Espionage",
+        "Malware",
+        "Remote Code Execution",
+        "Botnet",
+        "Threat Actor",
+        "ThreatIntelligence",
+        "TheHackersNews",
+        "Ransomware"
+>>>>>>> Stashed changes
       ],
       "enrichment": {
         "entities": {
@@ -5151,7 +5910,1820 @@
       }
     },
     {
+<<<<<<< Updated upstream
       "id": "90929c8b-523c-4549-8488-503dae86eb19",
+=======
+      "id": "2e8bd012-f007-4da0-b78e-63ec5c634859",
+      "title": "Daily Dose of Dark Web Informer - 9th of May 2025",
+      "source": "https://darkwebinformer.com/daily-dose-of-dark-web-informer-9th-of-may-2025/",
+      "published": "2025-05-09T23:03:10",
+      "feed": "https://darkwebinformer.com/rss/",
+      "iocs": {
+        "ipv4": [],
+        "ipv6": [],
+        "domains": [],
+        "urls": [],
+        "emails": [],
+        "sha1": [],
+        "sha256": [],
+        "md5": [],
+        "cves": [
+          "CVE-2022-40684",
+          "CVE-2024-1071"
+        ],
+        "mac_addresses": [],
+        "ports": [
+          "40684",
+          "1071"
+        ],
+        "asn": [],
+        "cidr": [],
+        "file_paths": [],
+        "btc_wallets": [],
+        "eth_wallets": [
+          "0x828B98817aBF157A269D6a1eF204F539A28f1752"
+        ],
+        "registry_keys": [],
+        "process_names": [],
+        "mutexes": [],
+        "scheduled_tasks": []
+      },
+      "tags": [
+        "DoS",
+        "IOC",
+        "Cybersecurity",
+        "Exploitation",
+        "RSS to IOC Collector",
+        "DDoS",
+        "C2",
+        "Remote Code Execution",
+        "CVE",
+        "DarkWebInformer",
+        "Ransomware"
+      ],
+      "enrichment": {
+        "entities": {
+          "ipv4": [],
+          "ipv6": [],
+          "domains": [
+            "DarkWebInformer.com",
+            "5socks.net",
+            "anyproxy.net"
+          ],
+          "urls": [],
+          "emails": [],
+          "sha1": [],
+          "sha256": [],
+          "md5": [],
+          "cves": [
+            "CVE-2022-40684",
+            "CVE-2024-1071"
+          ],
+          "mac_addresses": [],
+          "ports": [
+            "2025",
+            "2025",
+            "9",
+            "2025",
+            "11",
+            "03",
+            "2",
+            "28",
+            "2025",
+            "100",
+            "200",
+            "14",
+            "000",
+            "300",
+            "5",
+            "1",
+            "1",
+            "2025",
+            "2022",
+            "40684",
+            "2024",
+            "1071",
+            "5",
+            "8",
+            "2025",
+            "9",
+            "2025",
+            "2025",
+            "9",
+            "2025",
+            "2025",
+            "8",
+            "2025",
+            "2025",
+            "8",
+            "2025",
+            "2025",
+            "9",
+            "2025",
+            "2025",
+            "9",
+            "2025",
+            "9",
+            "2025",
+            "1",
+            "1",
+            "9",
+            "2025",
+            "2025"
+          ],
+          "asn": [],
+          "cidr": [],
+          "file_paths": [
+            "/X"
+          ],
+          "btc_wallets": [],
+          "eth_wallets": [
+            "0x828B98817aBF157A269D6a1eF204F539A28f1752"
+          ],
+          "registry_keys": [],
+          "process_names": [],
+          "mutexes": [],
+          "scheduled_tasks": []
+        },
+        "enriched_iocs": [
+          {
+            "ioc": "DarkWebInformer.com",
+            "type": "domains",
+            "risk_score": 0
+          },
+          {
+            "ioc": "5socks.net",
+            "type": "domains",
+            "risk_score": 0
+          },
+          {
+            "ioc": "anyproxy.net",
+            "type": "domains",
+            "risk_score": 5
+          }
+        ]
+      }
+    },
+    {
+      "id": "6c9c42e3-3002-467b-83d1-05b46a7839ee",
+      "title": "Threat Attack Daily - 9th of May 2025",
+      "source": "https://darkwebinformer.com/threat-attack-daily-9th-of-may-2025/",
+      "published": "2025-05-09T22:34:57",
+      "feed": "https://darkwebinformer.com/rss/",
+      "iocs": {
+        "ipv4": [],
+        "ipv6": [],
+        "domains": [],
+        "urls": [],
+        "emails": [],
+        "sha1": [],
+        "sha256": [],
+        "md5": [],
+        "cves": [],
+        "mac_addresses": [],
+        "ports": [
+          "319",
+          "1722",
+          "71"
+        ],
+        "asn": [],
+        "cidr": [],
+        "file_paths": [
+          "/Acadamia",
+          "/Recruiting"
+        ],
+        "btc_wallets": [],
+        "eth_wallets": [],
+        "registry_keys": [],
+        "process_names": [],
+        "mutexes": [],
+        "scheduled_tasks": []
+      },
+      "tags": [
+        "DoS",
+        "IOC",
+        "RSS to IOC Collector",
+        "DDoS",
+        "Malware",
+        "Remote Code Execution",
+        "Data Breach",
+        "Threat Actor",
+        "DarkWebInformer",
+        "Ransomware"
+      ],
+      "enrichment": {
+        "entities": {
+          "ipv4": [],
+          "ipv6": [],
+          "domains": [
+            "darkwebinformer.com"
+          ],
+          "urls": [
+            "https://darkwebinformer.com/tag/subscribers/\ud83d\udccc"
+          ],
+          "emails": [],
+          "sha1": [],
+          "sha256": [],
+          "md5": [],
+          "cves": [],
+          "mac_addresses": [],
+          "ports": [
+            "2025",
+            "2025",
+            "9",
+            "2025",
+            "10",
+            "34",
+            "3",
+            "11",
+            "44",
+            "0",
+            "29",
+            "0",
+            "13",
+            "319",
+            "13",
+            "16",
+            "11",
+            "9",
+            "7",
+            "6",
+            "6",
+            "5",
+            "5",
+            "4",
+            "4",
+            "4",
+            "1722",
+            "3",
+            "3",
+            "3",
+            "3",
+            "3",
+            "71",
+            "2",
+            "2",
+            "2",
+            "2",
+            "2",
+            "2",
+            "2",
+            "2",
+            "3",
+            "0",
+            "2",
+            "2",
+            "2",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "54",
+            "51",
+            "18",
+            "13",
+            "9",
+            "6",
+            "5",
+            "1",
+            "70",
+            "14",
+            "12",
+            "7",
+            "7",
+            "7",
+            "6",
+            "4",
+            "4",
+            "3",
+            "2",
+            "2",
+            "2",
+            "2",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "22",
+            "18",
+            "14",
+            "10",
+            "7",
+            "5",
+            "4",
+            "4",
+            "4",
+            "3",
+            "3",
+            "3",
+            "3",
+            "3",
+            "2",
+            "2",
+            "2",
+            "2",
+            "2",
+            "2",
+            "2",
+            "2",
+            "2",
+            "2",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "2025",
+            "9",
+            "2025",
+            "2025",
+            "9",
+            "2025",
+            "2025",
+            "8",
+            "2025",
+            "2025",
+            "8",
+            "2025",
+            "2025",
+            "9",
+            "2025",
+            "2025",
+            "9",
+            "2025",
+            "9",
+            "2025",
+            "1",
+            "1",
+            "9",
+            "2025",
+            "2025"
+          ],
+          "asn": [],
+          "cidr": [],
+          "file_paths": [
+            "//darkwebinformer.com/tag/subscribers",
+            "/Acadamia",
+            "/Recruiting"
+          ],
+          "btc_wallets": [],
+          "eth_wallets": [],
+          "registry_keys": [],
+          "process_names": [],
+          "mutexes": [],
+          "scheduled_tasks": []
+        },
+        "enriched_iocs": [
+          {
+            "ioc": "darkwebinformer.com",
+            "type": "domains",
+            "risk_score": 0
+          },
+          {
+            "ioc": "https://darkwebinformer.com/tag/subscribers/\ud83d\udccc",
+            "type": "urls",
+            "risk_score": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "21d81a6c-6662-4f89-a082-9ba02b473ba3",
+      "title": "Ransomware Attack Update for the 9th of May 2025",
+      "source": "https://darkwebinformer.com/ransomware-attack-update-for-the-9th-of-may-2025/",
+      "published": "2025-05-09T22:16:06",
+      "feed": "https://darkwebinformer.com/rss/",
+      "iocs": {
+        "ipv4": [],
+        "ipv6": [],
+        "domains": [
+          "CHECKCITY.COM",
+          "hennessyfunds.com",
+          "dailynews.co.th"
+        ],
+        "urls": [],
+        "emails": [],
+        "sha1": [],
+        "sha256": [],
+        "md5": [],
+        "cves": [],
+        "mac_addresses": [],
+        "ports": [],
+        "asn": [],
+        "cidr": [],
+        "file_paths": [],
+        "btc_wallets": [],
+        "eth_wallets": [],
+        "registry_keys": [],
+        "process_names": [],
+        "mutexes": [],
+        "scheduled_tasks": []
+      },
+      "tags": [
+        "DoS",
+        "IOC",
+        "RSS to IOC Collector",
+        "Remote Code Execution",
+        "DarkWebInformer",
+        "Ransomware"
+      ],
+      "enrichment": {
+        "entities": {
+          "ipv4": [],
+          "ipv6": [],
+          "domains": [
+            "darkwebinformer.com",
+            "CHECKCITY.COM",
+            "hennessyfunds.com",
+            "dailynews.co.th"
+          ],
+          "urls": [
+            "https://darkwebinformer.com/tag/subscribers/\ud83d\udea8Total"
+          ],
+          "emails": [],
+          "sha1": [],
+          "sha256": [],
+          "md5": [],
+          "cves": [],
+          "mac_addresses": [],
+          "ports": [
+            "2025",
+            "2025",
+            "9",
+            "2025",
+            "10",
+            "16",
+            "1",
+            "11",
+            "38",
+            "0",
+            "14",
+            "0",
+            "14",
+            "2025",
+            "05",
+            "06",
+            "2025",
+            "05",
+            "08",
+            "2025",
+            "05",
+            "06",
+            "2025",
+            "05",
+            "06",
+            "2025",
+            "9",
+            "2025",
+            "2025",
+            "9",
+            "2025",
+            "2025",
+            "8",
+            "2025",
+            "2025",
+            "8",
+            "2025",
+            "2025",
+            "9",
+            "2025",
+            "2025",
+            "9",
+            "2025",
+            "9",
+            "2025",
+            "1",
+            "1",
+            "9",
+            "2025",
+            "2025"
+          ],
+          "asn": [],
+          "cidr": [],
+          "file_paths": [
+            "//darkwebinformer.com/tag/subscribers"
+          ],
+          "btc_wallets": [],
+          "eth_wallets": [],
+          "registry_keys": [],
+          "process_names": [],
+          "mutexes": [],
+          "scheduled_tasks": []
+        },
+        "enriched_iocs": [
+          {
+            "ioc": "darkwebinformer.com",
+            "type": "domains",
+            "risk_score": 0
+          },
+          {
+            "ioc": "CHECKCITY.COM",
+            "type": "domains",
+            "risk_score": 0
+          },
+          {
+            "ioc": "hennessyfunds.com",
+            "type": "domains",
+            "risk_score": 0
+          },
+          {
+            "ioc": "dailynews.co.th",
+            "type": "domains",
+            "risk_score": 0
+          },
+          {
+            "ioc": "https://darkwebinformer.com/tag/subscribers/\ud83d\udea8Total",
+            "type": "urls",
+            "risk_score": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "773075ad-1ee4-41f0-ab21-b333054ad9be",
+      "title": "Alleged Sale of Webmail Access to an Unidentified UK ISP",
+      "source": "https://darkwebinformer.com/alleged-sale-of-webmail-access-to-an-unidentified-uk-isp/",
+      "published": "2025-05-09T17:08:36",
+      "feed": "https://darkwebinformer.com/rss/",
+      "iocs": {
+        "ipv4": [],
+        "ipv6": [],
+        "domains": [],
+        "urls": [],
+        "emails": [],
+        "sha1": [],
+        "sha256": [],
+        "md5": [],
+        "cves": [],
+        "mac_addresses": [],
+        "ports": [],
+        "asn": [],
+        "cidr": [],
+        "file_paths": [
+          "/09/2025"
+        ],
+        "btc_wallets": [],
+        "eth_wallets": [],
+        "registry_keys": [],
+        "process_names": [],
+        "mutexes": [],
+        "scheduled_tasks": []
+      },
+      "tags": [
+        "DoS",
+        "IOC",
+        "Cybersecurity",
+        "RSS to IOC Collector",
+        "DDoS",
+        "Remote Code Execution",
+        "DarkWebInformer",
+        "Ransomware"
+      ],
+      "enrichment": {
+        "entities": {
+          "ipv4": [],
+          "ipv6": [],
+          "domains": [
+            "DarkWebInformer.com"
+          ],
+          "urls": [],
+          "emails": [],
+          "sha1": [],
+          "sha256": [],
+          "md5": [],
+          "cves": [],
+          "mac_addresses": [],
+          "ports": [
+            "9",
+            "2025",
+            "5",
+            "08",
+            "1",
+            "100",
+            "200",
+            "14",
+            "000",
+            "05",
+            "09",
+            "2025",
+            "08",
+            "06",
+            "15",
+            "300",
+            "9",
+            "2025",
+            "7",
+            "8",
+            "2025",
+            "6",
+            "2025",
+            "5",
+            "2025",
+            "2025",
+            "9",
+            "2025",
+            "2025",
+            "9",
+            "2025",
+            "2025",
+            "9",
+            "2025",
+            "1",
+            "1",
+            "9",
+            "2025",
+            "2025"
+          ],
+          "asn": [],
+          "cidr": [],
+          "file_paths": [
+            "/09/2025"
+          ],
+          "btc_wallets": [],
+          "eth_wallets": [],
+          "registry_keys": [],
+          "process_names": [],
+          "mutexes": [],
+          "scheduled_tasks": []
+        },
+        "enriched_iocs": [
+          {
+            "ioc": "DarkWebInformer.com",
+            "type": "domains",
+            "risk_score": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "a5b807b9-76cf-4057-9d5c-2630efbfc2ff",
+      "title": "Alleged Leak Exposes 5.59M Paraguay Citizen Records",
+      "source": "https://darkwebinformer.com/alleged-leak-exposes-5-59m-paraguay-citizen-records/",
+      "published": "2025-05-09T15:00:07",
+      "feed": "https://darkwebinformer.com/rss/",
+      "iocs": {
+        "ipv4": [],
+        "ipv6": [],
+        "domains": [
+          "information.Sample"
+        ],
+        "urls": [],
+        "emails": [],
+        "sha1": [],
+        "sha256": [],
+        "md5": [],
+        "cves": [],
+        "mac_addresses": [],
+        "ports": [],
+        "asn": [],
+        "cidr": [],
+        "file_paths": [],
+        "btc_wallets": [],
+        "eth_wallets": [],
+        "registry_keys": [],
+        "process_names": [],
+        "mutexes": [],
+        "scheduled_tasks": []
+      },
+      "tags": [
+        "DoS",
+        "IOC",
+        "Cybersecurity",
+        "RSS to IOC Collector",
+        "DDoS",
+        "Remote Code Execution",
+        "Data Breach",
+        "Threat Actor",
+        "DarkWebInformer",
+        "Ransomware"
+      ],
+      "enrichment": {
+        "entities": {
+          "ipv4": [],
+          "ipv6": [],
+          "domains": [
+            "DarkWebInformer.com",
+            "information.Sample"
+          ],
+          "urls": [],
+          "emails": [],
+          "sha1": [],
+          "sha256": [],
+          "md5": [],
+          "cves": [],
+          "mac_addresses": [],
+          "ports": [
+            "5",
+            "5",
+            "9",
+            "2025",
+            "3",
+            "00",
+            "4",
+            "100",
+            "200",
+            "14",
+            "000",
+            "5",
+            "59",
+            "400",
+            "05",
+            "09",
+            "01",
+            "59",
+            "46",
+            "9",
+            "2025",
+            "2",
+            "3",
+            "8",
+            "2025",
+            "8",
+            "2025",
+            "7",
+            "2025",
+            "2025",
+            "9",
+            "2025",
+            "2025",
+            "9",
+            "2025",
+            "2025",
+            "9",
+            "2025",
+            "9",
+            "2025",
+            "2025"
+          ],
+          "asn": [],
+          "cidr": [],
+          "file_paths": [
+            "/or"
+          ],
+          "btc_wallets": [],
+          "eth_wallets": [],
+          "registry_keys": [],
+          "process_names": [],
+          "mutexes": [],
+          "scheduled_tasks": []
+        },
+        "enriched_iocs": [
+          {
+            "ioc": "DarkWebInformer.com",
+            "type": "domains",
+            "risk_score": 0
+          },
+          {
+            "ioc": "information.Sample",
+            "type": "domains",
+            "risk_score": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "86c113f1-f117-4cb0-918a-c39c8f4fced5",
+      "title": "Alleged Sale of 300 Validated SSH Credentials with Root Access",
+      "source": "https://darkwebinformer.com/alleged-sale-of-300-validated-ssh-credentials-with-root-access/",
+      "published": "2025-05-09T14:35:58",
+      "feed": "https://darkwebinformer.com/rss/",
+      "iocs": {
+        "ipv4": [],
+        "ipv6": [],
+        "domains": [],
+        "urls": [],
+        "emails": [],
+        "sha1": [],
+        "sha256": [],
+        "md5": [],
+        "cves": [],
+        "mac_addresses": [],
+        "ports": [],
+        "asn": [],
+        "cidr": [],
+        "file_paths": [
+          "/VPS"
+        ],
+        "btc_wallets": [],
+        "eth_wallets": [],
+        "registry_keys": [],
+        "process_names": [],
+        "mutexes": [],
+        "scheduled_tasks": []
+      },
+      "tags": [
+        "DoS",
+        "IOC",
+        "Cybersecurity",
+        "RSS to IOC Collector",
+        "DDoS",
+        "Remote Code Execution",
+        "DarkWebInformer",
+        "Ransomware"
+      ],
+      "enrichment": {
+        "entities": {
+          "ipv4": [],
+          "ipv6": [],
+          "domains": [
+            "DarkWebInformer.com"
+          ],
+          "urls": [],
+          "emails": [],
+          "sha1": [],
+          "sha256": [],
+          "md5": [],
+          "cves": [],
+          "mac_addresses": [],
+          "ports": [
+            "300",
+            "300",
+            "9",
+            "2025",
+            "2",
+            "35",
+            "1",
+            "100",
+            "200",
+            "14",
+            "000",
+            "05",
+            "09",
+            "2025",
+            "12",
+            "48",
+            "48",
+            "300",
+            "9",
+            "2025",
+            "7",
+            "8",
+            "2025",
+            "6",
+            "2025",
+            "5",
+            "2025",
+            "2025",
+            "9",
+            "2025",
+            "2025",
+            "9",
+            "2025",
+            "2025",
+            "9",
+            "2025",
+            "9",
+            "2025",
+            "2025"
+          ],
+          "asn": [],
+          "cidr": [],
+          "file_paths": [
+            "/09/2025",
+            "/VPS"
+          ],
+          "btc_wallets": [],
+          "eth_wallets": [],
+          "registry_keys": [],
+          "process_names": [],
+          "mutexes": [],
+          "scheduled_tasks": []
+        },
+        "enriched_iocs": [
+          {
+            "ioc": "DarkWebInformer.com",
+            "type": "domains",
+            "risk_score": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "c18b0c92-6815-4037-86b5-5049b772dfd1",
+      "title": "Daily Dose of Dark Web Informer - 8th of May 2025",
+      "source": "https://darkwebinformer.com/daily-dose-of-dark-web-informer-8th-of-may-2025/",
+      "published": "2025-05-08T23:25:36",
+      "feed": "https://darkwebinformer.com/rss/",
+      "iocs": {
+        "ipv4": [],
+        "ipv6": [],
+        "domains": [],
+        "urls": [],
+        "emails": [],
+        "sha1": [],
+        "sha256": [],
+        "md5": [],
+        "cves": [
+          "CVE-2025-26666"
+        ],
+        "mac_addresses": [],
+        "ports": [
+          "26666"
+        ],
+        "asn": [],
+        "cidr": [],
+        "file_paths": [],
+        "btc_wallets": [],
+        "eth_wallets": [],
+        "registry_keys": [],
+        "process_names": [],
+        "mutexes": [],
+        "scheduled_tasks": []
+      },
+      "tags": [
+        "DoS",
+        "IOC",
+        "Cybersecurity",
+        "Exploitation",
+        "RSS to IOC Collector",
+        "DDoS",
+        "C2",
+        "Remote Code Execution",
+        "CVE",
+        "Threat Actor",
+        "DarkWebInformer",
+        "Ransomware"
+      ],
+      "enrichment": {
+        "entities": {
+          "ipv4": [],
+          "ipv6": [],
+          "domains": [
+            "DarkWebInformer.com"
+          ],
+          "urls": [],
+          "emails": [],
+          "sha1": [],
+          "sha256": [],
+          "md5": [],
+          "cves": [
+            "CVE-2025-20188",
+            "CVE-2025-26666"
+          ],
+          "mac_addresses": [],
+          "ports": [
+            "2025",
+            "2025",
+            "8",
+            "2025",
+            "11",
+            "25",
+            "2",
+            "28",
+            "2025",
+            "100",
+            "200",
+            "14",
+            "000",
+            "10",
+            "000",
+            "2025",
+            "20188",
+            "7",
+            "2",
+            "3",
+            "2025",
+            "100",
+            "000",
+            "2025",
+            "26666",
+            "3",
+            "000",
+            "000",
+            "000",
+            "2025",
+            "9",
+            "2025",
+            "2025",
+            "9",
+            "2025",
+            "2025",
+            "9",
+            "2025",
+            "2025",
+            "8",
+            "2025",
+            "2025",
+            "9",
+            "2025",
+            "2025",
+            "9",
+            "2025",
+            "2025",
+            "9",
+            "2025",
+            "9",
+            "2025",
+            "2025"
+          ],
+          "asn": [],
+          "cidr": [],
+          "file_paths": [
+            "/X"
+          ],
+          "btc_wallets": [],
+          "eth_wallets": [
+            "0x828B98817aBF157A269D6a1eF204F539A28f1752"
+          ],
+          "registry_keys": [],
+          "process_names": [],
+          "mutexes": [],
+          "scheduled_tasks": []
+        },
+        "enriched_iocs": [
+          {
+            "ioc": "DarkWebInformer.com",
+            "type": "domains",
+            "risk_score": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "8e695995-43ff-4c39-801a-b5a6fdadfb52",
+      "title": "Threat Attack Daily - 8th of May 2025",
+      "source": "https://darkwebinformer.com/threat-attack-daily-8th-of-may-2025/",
+      "published": "2025-05-08T22:48:57",
+      "feed": "https://darkwebinformer.com/rss/",
+      "iocs": {
+        "ipv4": [],
+        "ipv6": [],
+        "domains": [
+          "claimsMr.RootVerse"
+        ],
+        "urls": [],
+        "emails": [],
+        "sha1": [],
+        "sha256": [],
+        "md5": [],
+        "cves": [],
+        "mac_addresses": [],
+        "ports": [
+          "39"
+        ],
+        "asn": [],
+        "cidr": [],
+        "file_paths": [
+          "/Metals"
+        ],
+        "btc_wallets": [],
+        "eth_wallets": [],
+        "registry_keys": [],
+        "process_names": [],
+        "mutexes": [],
+        "scheduled_tasks": []
+      },
+      "tags": [
+        "DoS",
+        "IOC",
+        "RSS to IOC Collector",
+        "DDoS",
+        "Malware",
+        "Remote Code Execution",
+        "Data Breach",
+        "Threat Actor",
+        "DarkWebInformer",
+        "Ransomware"
+      ],
+      "enrichment": {
+        "entities": {
+          "ipv4": [],
+          "ipv6": [],
+          "domains": [
+            "darkwebinformer.com",
+            "claimsMr.RootVerse"
+          ],
+          "urls": [
+            "https://darkwebinformer.com/tag/subscribers/\ud83d\udccc"
+          ],
+          "emails": [],
+          "sha1": [],
+          "sha256": [],
+          "md5": [],
+          "cves": [],
+          "mac_addresses": [],
+          "ports": [
+            "2025",
+            "2025",
+            "8",
+            "2025",
+            "10",
+            "48",
+            "3",
+            "11",
+            "47",
+            "0",
+            "44",
+            "0",
+            "319",
+            "18",
+            "18",
+            "16",
+            "14",
+            "12",
+            "11",
+            "11",
+            "10",
+            "8",
+            "6",
+            "5",
+            "4",
+            "4",
+            "4",
+            "3",
+            "3",
+            "3",
+            "3",
+            "3",
+            "3",
+            "3",
+            "2",
+            "2",
+            "2",
+            "2",
+            "2",
+            "2",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "90",
+            "39",
+            "22",
+            "15",
+            "11",
+            "10",
+            "5",
+            "2",
+            "87",
+            "14",
+            "13",
+            "9",
+            "9",
+            "7",
+            "7",
+            "6",
+            "5",
+            "4",
+            "3",
+            "2",
+            "2",
+            "2",
+            "2",
+            "2",
+            "2",
+            "2",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "42",
+            "26",
+            "10",
+            "6",
+            "6",
+            "5",
+            "5",
+            "5",
+            "5",
+            "4",
+            "3",
+            "3",
+            "2",
+            "2",
+            "2",
+            "2",
+            "2",
+            "2",
+            "2",
+            "2",
+            "2",
+            "2",
+            "2",
+            "2",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "2025",
+            "9",
+            "2025",
+            "2025",
+            "9",
+            "2025",
+            "2025",
+            "9",
+            "2025",
+            "2025",
+            "8",
+            "2025",
+            "2025",
+            "9",
+            "2025",
+            "2025",
+            "9",
+            "2025",
+            "2025",
+            "9",
+            "2025",
+            "9",
+            "2025",
+            "2025"
+          ],
+          "asn": [],
+          "cidr": [],
+          "file_paths": [
+            "//darkwebinformer.com/tag/subscribers",
+            "/Acadamia",
+            "/Metals"
+          ],
+          "btc_wallets": [],
+          "eth_wallets": [],
+          "registry_keys": [],
+          "process_names": [],
+          "mutexes": [],
+          "scheduled_tasks": []
+        },
+        "enriched_iocs": [
+          {
+            "ioc": "darkwebinformer.com",
+            "type": "domains",
+            "risk_score": 0
+          },
+          {
+            "ioc": "claimsMr.RootVerse",
+            "type": "domains",
+            "risk_score": 0
+          },
+          {
+            "ioc": "https://darkwebinformer.com/tag/subscribers/\ud83d\udccc",
+            "type": "urls",
+            "risk_score": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "9479abb2-33ca-42b9-ad0f-842634899b37",
+      "title": "Ransomware Attack Update for the 8th of May 2025",
+      "source": "https://darkwebinformer.com/ransomware-attack-update-for-the-8th-of-may-2025/",
+      "published": "2025-05-08T22:41:20",
+      "feed": "https://darkwebinformer.com/rss/",
+      "iocs": {
+        "ipv4": [],
+        "ipv6": [],
+        "domains": [
+          "www.hcsheriff.gov",
+          "T.consulT"
+        ],
+        "urls": [],
+        "emails": [],
+        "sha1": [],
+        "sha256": [],
+        "md5": [],
+        "cves": [],
+        "mac_addresses": [],
+        "ports": [],
+        "asn": [],
+        "cidr": [],
+        "file_paths": [],
+        "btc_wallets": [],
+        "eth_wallets": [],
+        "registry_keys": [],
+        "process_names": [],
+        "mutexes": [],
+        "scheduled_tasks": []
+      },
+      "tags": [
+        "DoS",
+        "IOC",
+        "RSS to IOC Collector",
+        "Remote Code Execution",
+        "DarkWebInformer",
+        "Ransomware"
+      ],
+      "enrichment": {
+        "entities": {
+          "ipv4": [],
+          "ipv6": [],
+          "domains": [
+            "darkwebinformer.com",
+            "www.hcsheriff.gov",
+            "T.consulT"
+          ],
+          "urls": [
+            "https://darkwebinformer.com/tag/subscribers/\ud83d\udea8Total"
+          ],
+          "emails": [],
+          "sha1": [],
+          "sha256": [],
+          "md5": [],
+          "cves": [],
+          "mac_addresses": [],
+          "ports": [
+            "2025",
+            "2025",
+            "8",
+            "2025",
+            "10",
+            "41",
+            "1",
+            "11",
+            "36",
+            "0",
+            "38",
+            "0",
+            "10",
+            "101",
+            "2025",
+            "05",
+            "04",
+            "2025",
+            "05",
+            "04",
+            "2025",
+            "05",
+            "07",
+            "2025",
+            "9",
+            "2025",
+            "2025",
+            "9",
+            "2025",
+            "2025",
+            "9",
+            "2025",
+            "2025",
+            "8",
+            "2025",
+            "2025",
+            "9",
+            "2025",
+            "2025",
+            "9",
+            "2025",
+            "2025",
+            "9",
+            "2025",
+            "9",
+            "2025",
+            "2025"
+          ],
+          "asn": [],
+          "cidr": [],
+          "file_paths": [
+            "//darkwebinformer.com/tag/subscribers"
+          ],
+          "btc_wallets": [],
+          "eth_wallets": [],
+          "registry_keys": [],
+          "process_names": [],
+          "mutexes": [],
+          "scheduled_tasks": []
+        },
+        "enriched_iocs": [
+          {
+            "ioc": "darkwebinformer.com",
+            "type": "domains",
+            "risk_score": 0
+          },
+          {
+            "ioc": "www.hcsheriff.gov",
+            "type": "domains",
+            "risk_score": 0
+          },
+          {
+            "ioc": "T.consulT",
+            "type": "domains",
+            "risk_score": 0
+          },
+          {
+            "ioc": "https://darkwebinformer.com/tag/subscribers/\ud83d\udea8Total",
+            "type": "urls",
+            "risk_score": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "a301b4df-51aa-4687-b466-8165b142cee5",
+      "title": "Alleged Sale of 2.3 Million California, USA Medical Records",
+      "source": "https://darkwebinformer.com/alleged-sale-of-2-3-million-california-usa-medical-records/",
+      "published": "2025-05-08T22:21:37",
+      "feed": "https://darkwebinformer.com/rss/",
+      "iocs": {
+        "ipv4": [],
+        "ipv6": [],
+        "domains": [],
+        "urls": [],
+        "emails": [],
+        "sha1": [],
+        "sha256": [],
+        "md5": [],
+        "cves": [],
+        "mac_addresses": [],
+        "ports": [],
+        "asn": [],
+        "cidr": [],
+        "file_paths": [
+          "/08/2025"
+        ],
+        "btc_wallets": [],
+        "eth_wallets": [],
+        "registry_keys": [],
+        "process_names": [],
+        "mutexes": [],
+        "scheduled_tasks": []
+      },
+      "tags": [
+        "DoS",
+        "IOC",
+        "Cybersecurity",
+        "RSS to IOC Collector",
+        "DDoS",
+        "Remote Code Execution",
+        "Data Breach",
+        "Threat Actor",
+        "DarkWebInformer",
+        "Ransomware"
+      ],
+      "enrichment": {
+        "entities": {
+          "ipv4": [],
+          "ipv6": [],
+          "domains": [
+            "DarkWebInformer.com"
+          ],
+          "urls": [],
+          "emails": [],
+          "sha1": [],
+          "sha256": [],
+          "md5": [],
+          "cves": [],
+          "mac_addresses": [],
+          "ports": [
+            "2",
+            "3",
+            "2",
+            "3",
+            "8",
+            "2025",
+            "10",
+            "21",
+            "2",
+            "100",
+            "200",
+            "26",
+            "14",
+            "000",
+            "05",
+            "08",
+            "2025",
+            "06",
+            "03",
+            "55",
+            "2",
+            "5",
+            "9",
+            "2025",
+            "9",
+            "2025",
+            "8",
+            "2025",
+            "7",
+            "2025",
+            "2025",
+            "9",
+            "2025",
+            "2025",
+            "9",
+            "2025",
+            "2025",
+            "9",
+            "2025",
+            "9",
+            "2025",
+            "2025"
+          ],
+          "asn": [],
+          "cidr": [],
+          "file_paths": [
+            "/08/2025"
+          ],
+          "btc_wallets": [],
+          "eth_wallets": [],
+          "registry_keys": [],
+          "process_names": [],
+          "mutexes": [],
+          "scheduled_tasks": []
+        },
+        "enriched_iocs": [
+          {
+            "ioc": "DarkWebInformer.com",
+            "type": "domains",
+            "risk_score": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "1be87017-2e79-40b2-95b9-7e84ef7ed947",
+      "title": "Cisco IOS XE Wireless Controllers Vulnerable to Unauthenticated Root Exploits via JWT (CVE-2025-20188)",
+      "source": "https://darkwebinformer.com/cisco-ios-xe-wireless-controllers-vulnerable-to-unauthenticated-root-exploits-via-jwt-cve-2025-20188/",
+      "published": "2025-05-08T19:50:53",
+      "feed": "https://darkwebinformer.com/rss/",
+      "iocs": {
+        "ipv4": [],
+        "ipv6": [],
+        "domains": [
+          "privileges.Exploitation",
+          "Cisco.Disable",
+          "vulnerable.Change",
+          "risk.Note",
+          "enabled.Environments"
+        ],
+        "urls": [],
+        "emails": [],
+        "sha1": [],
+        "sha256": [],
+        "md5": [],
+        "cves": [
+          "CVE-2025-24977",
+          "CVE-2025-46661"
+        ],
+        "mac_addresses": [],
+        "ports": [
+          "798",
+          "24977",
+          "46661"
+        ],
+        "asn": [],
+        "cidr": [],
+        "file_paths": [],
+        "btc_wallets": [],
+        "eth_wallets": [],
+        "registry_keys": [],
+        "process_names": [],
+        "mutexes": [],
+        "scheduled_tasks": []
+      },
+      "tags": [
+        "DoS",
+        "Exploitation",
+        "RSS to IOC Collector",
+        "Remote Code Execution",
+        "CVE",
+        "Security Advisory",
+        "DarkWebInformer",
+        "Ransomware"
+      ],
+      "enrichment": {
+        "entities": {
+          "ipv4": [],
+          "ipv6": [],
+          "domains": [
+            "privileges.Exploitation",
+            "Cisco.Disable",
+            "vulnerable.Change",
+            "risk.Note",
+            "enabled.Environments"
+          ],
+          "urls": [],
+          "emails": [],
+          "sha1": [],
+          "sha256": [],
+          "md5": [],
+          "cves": [
+            "CVE-2025-20188",
+            "CVE-2025-20188",
+            "CVE-2025-20188",
+            "CVE-2025-4052",
+            "CVE-2025-24977",
+            "CVE-2025-46661",
+            "CVE-2025-31324"
+          ],
+          "mac_addresses": [],
+          "ports": [
+            "2025",
+            "20188",
+            "2025",
+            "20188",
+            "8",
+            "2025",
+            "7",
+            "50",
+            "1",
+            "2025",
+            "20188",
+            "10",
+            "0",
+            "2025",
+            "05",
+            "07",
+            "9800",
+            "9800",
+            "9300",
+            "9400",
+            "9500",
+            "9800",
+            "798",
+            "137",
+            "2025",
+            "4052",
+            "6",
+            "2025",
+            "2025",
+            "24977",
+            "5",
+            "2025",
+            "2025",
+            "46661",
+            "28",
+            "2025",
+            "2025",
+            "31324",
+            "24",
+            "2025",
+            "2025",
+            "9",
+            "2025",
+            "2025",
+            "9",
+            "2025",
+            "2025",
+            "9",
+            "2025",
+            "9",
+            "2025",
+            "2025"
+          ],
+          "asn": [],
+          "cidr": [],
+          "file_paths": [],
+          "btc_wallets": [],
+          "eth_wallets": [],
+          "registry_keys": [],
+          "process_names": [],
+          "mutexes": [],
+          "scheduled_tasks": []
+        },
+        "enriched_iocs": [
+          {
+            "ioc": "privileges.Exploitation",
+            "type": "domains",
+            "risk_score": 0
+          },
+          {
+            "ioc": "Cisco.Disable",
+            "type": "domains",
+            "risk_score": 0
+          },
+          {
+            "ioc": "vulnerable.Change",
+            "type": "domains",
+            "risk_score": 0
+          },
+          {
+            "ioc": "risk.Note",
+            "type": "domains",
+            "risk_score": 0
+          },
+          {
+            "ioc": "enabled.Environments",
+            "type": "domains",
+            "risk_score": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "72a78079-b20d-426b-af57-cbf7181e4a37",
+>>>>>>> Stashed changes
       "title": "Google Pays $1.375 Billion to Texas Over Unauthorized Tracking and Biometric Data Collection",
       "source": "https://thehackernews.com/2025/05/google-pays-1375-billion-to-texas-over.html",
       "published": "2025-05-10T06:54:00",
@@ -5212,6 +7784,7 @@
         "scheduled_tasks": []
       },
       "tags": [
+<<<<<<< Updated upstream
         "Cybersecurity",
         "RSS to IOC Collector",
         "Remote Code Execution",
@@ -5224,6 +7797,20 @@
         "Malware",
         "Spyware",
         "CVE"
+=======
+        "DoS",
+        "Cybersecurity",
+        "Exploitation",
+        "RSS to IOC Collector",
+        "IoT",
+        "DDoS",
+        "Spyware",
+        "Malware",
+        "Remote Code Execution",
+        "Data Breach",
+        "CVE",
+        "TheHackersNews"
+>>>>>>> Stashed changes
       ],
       "enrichment": {
         "entities": {
@@ -5312,7 +7899,11 @@
       }
     },
     {
+<<<<<<< Updated upstream
       "id": "8fa6d3cf-6ea6-43cb-859d-7e5709df3c63",
+=======
+      "id": "25f7fa04-c4ed-43fd-8e69-d2c27abfdff4",
+>>>>>>> Stashed changes
       "title": "Germany Shuts Down eXch Over $1.9B Laundering, Seizes \u20ac34M in Crypto and 8TB of Data",
       "source": "https://thehackernews.com/2025/05/germany-shuts-down-exch-over-19b.html",
       "published": "2025-05-10T06:47:00",
@@ -5329,9 +7920,20 @@
         "cves": [],
         "mac_addresses": [],
         "ports": [
+<<<<<<< Updated upstream
           "34",
           "38",
           "2014"
+=======
+          "30",
+          "8",
+          "34",
+          "38",
+          "25",
+          "2014",
+          "9",
+          "17"
+>>>>>>> Stashed changes
         ],
         "asn": [],
         "cidr": [],
@@ -5344,6 +7946,7 @@
         "scheduled_tasks": []
       },
       "tags": [
+<<<<<<< Updated upstream
         "Cybersecurity",
         "RSS to IOC Collector",
         "Remote Code Execution",
@@ -5357,6 +7960,21 @@
         "Spyware",
         "Threat Actor",
         "CVE"
+=======
+        "DoS",
+        "Cybersecurity",
+        "Exploitation",
+        "RSS to IOC Collector",
+        "IoT",
+        "DDoS",
+        "Spyware",
+        "Malware",
+        "Remote Code Execution",
+        "Data Breach",
+        "CVE",
+        "Threat Actor",
+        "TheHackersNews"
+>>>>>>> Stashed changes
       ],
       "enrichment": {
         "entities": {
@@ -5445,7 +8063,11 @@
       }
     },
     {
+<<<<<<< Updated upstream
       "id": "0d726e26-cf01-471f-bd79-6b74de099151",
+=======
+      "id": "439103c0-308a-494b-9edd-4d80d0e782ac",
+>>>>>>> Stashed changes
       "title": "BREAKING: 7,000-Device Proxy Botnet Using IoT, EoL Systems Dismantled in U.S. - Dutch Operation",
       "source": "https://thehackernews.com/2025/05/breaking-7000-device-proxy-botnet-using.html",
       "published": "2025-05-09T16:28:00",
@@ -5469,6 +8091,10 @@
           "37",
           "41",
           "36",
+<<<<<<< Updated upstream
+=======
+          "95",
+>>>>>>> Stashed changes
           "110",
           "46",
           "2004",
@@ -5486,6 +8112,7 @@
         "scheduled_tasks": []
       },
       "tags": [
+<<<<<<< Updated upstream
         "Cybersecurity",
         "RSS to IOC Collector",
         "Remote Code Execution",
@@ -5502,6 +8129,24 @@
         "Spyware",
         "Threat Actor",
         "CVE"
+=======
+        "DoS",
+        "Threat Actor",
+        "Cybersecurity",
+        "Exploitation",
+        "RSS to IOC Collector",
+        "IoT",
+        "DDoS",
+        "Spyware",
+        "Malware",
+        "C2",
+        "Remote Code Execution",
+        "Data Breach",
+        "Botnet",
+        "CVE",
+        "IOC",
+        "TheHackersNews"
+>>>>>>> Stashed changes
       ],
       "enrichment": {
         "entities": {
@@ -5611,13 +8256,21 @@
           {
             "ioc": "5socks.net",
             "type": "domains",
+<<<<<<< Updated upstream
             "risk_score": 0
+=======
+            "risk_score": 5
+>>>>>>> Stashed changes
           }
         ]
       }
     },
     {
+<<<<<<< Updated upstream
       "id": "71e44be1-8314-451e-8300-b8da1c5418b8",
+=======
+      "id": "2902b97a-269e-429c-a529-c0144902ee90",
+>>>>>>> Stashed changes
       "title": "OtterCookie v4 Adds VM Detection and Chrome, MetaMask Credential Theft Capabilities",
       "source": "https://thehackernews.com/2025/05/ottercookie-v4-adds-vm-detection-and.html",
       "published": "2025-05-09T16:25:00",
@@ -5650,6 +8303,7 @@
         "scheduled_tasks": []
       },
       "tags": [
+<<<<<<< Updated upstream
         "Cybersecurity",
         "Insider Threat",
         "RSS to IOC Collector",
@@ -5668,6 +8322,26 @@
         "Spyware",
         "Threat Actor",
         "CVE"
+=======
+        "DoS",
+        "Threat Actor",
+        "Cybersecurity",
+        "Exploitation",
+        "RSS to IOC Collector",
+        "IoT",
+        "DDoS",
+        "Insider Threat",
+        "Spyware",
+        "Malware",
+        "Cyber Espionage",
+        "C2",
+        "Remote Code Execution",
+        "Data Breach",
+        "Botnet",
+        "CVE",
+        "IOC",
+        "TheHackersNews"
+>>>>>>> Stashed changes
       ],
       "enrichment": {
         "entities": {
@@ -5755,7 +8429,11 @@
       }
     },
     {
+<<<<<<< Updated upstream
       "id": "a124fe8d-1b62-4c02-b765-65dba1e4d2f2",
+=======
+      "id": "2a4bbce0-0f1e-4719-8b97-f666942dbca0",
+>>>>>>> Stashed changes
       "title": "Initial Access Brokers Target Brazil Execs via NF-e Spam and Legit RMM Trials",
       "source": "https://thehackernews.com/2025/05/initial-access-brokers-target-brazil.html",
       "published": "2025-05-09T11:40:00",
@@ -5787,6 +8465,7 @@
         "scheduled_tasks": []
       },
       "tags": [
+<<<<<<< Updated upstream
         "Cybersecurity",
         "RSS to IOC Collector",
         "Remote Code Execution",
@@ -5801,6 +8480,22 @@
         "Spyware",
         "Threat Actor",
         "CVE"
+=======
+        "DoS",
+        "Cybersecurity",
+        "Exploitation",
+        "RSS to IOC Collector",
+        "IoT",
+        "DDoS",
+        "Spyware",
+        "Malware",
+        "Remote Code Execution",
+        "Data Breach",
+        "CVE",
+        "Threat Actor",
+        "IOC",
+        "TheHackersNews"
+>>>>>>> Stashed changes
       ],
       "enrichment": {
         "entities": {
@@ -5873,7 +8568,11 @@
       }
     },
     {
+<<<<<<< Updated upstream
       "id": "6a10b7e7-37de-48ed-bba0-513153cfe50c",
+=======
+      "id": "3263f34f-ac4b-4642-9604-c61a4c73bcab",
+>>>>>>> Stashed changes
       "title": "Deploying AI Agents? Learn to Secure Them Before Hackers Strike Your Business",
       "source": "https://thehackernews.com/2025/05/deploying-ai-agents-learn-to-secure.html",
       "published": "2025-05-09T11:11:00",
@@ -5904,6 +8603,7 @@
         "scheduled_tasks": []
       },
       "tags": [
+<<<<<<< Updated upstream
         "Cybersecurity",
         "RSS to IOC Collector",
         "Remote Code Execution",
@@ -5916,6 +8616,20 @@
         "Malware",
         "Spyware",
         "CVE"
+=======
+        "DoS",
+        "Cybersecurity",
+        "Exploitation",
+        "RSS to IOC Collector",
+        "IoT",
+        "DDoS",
+        "Spyware",
+        "Malware",
+        "Remote Code Execution",
+        "Data Breach",
+        "CVE",
+        "TheHackersNews"
+>>>>>>> Stashed changes
       ],
       "enrichment": {
         "entities": {
@@ -5998,7 +8712,11 @@
       }
     },
     {
+<<<<<<< Updated upstream
       "id": "a8d25793-b5a3-4f5a-a913-0bb2391d2208",
+=======
+      "id": "f7eac267-3d1b-4752-a6bf-e12572eabc72",
+>>>>>>> Stashed changes
       "title": "Malicious npm Packages Infect 3,200+ Cursor Users With Backdoor, Steal Credentials",
       "source": "https://thehackernews.com/2025/05/malicious-npm-packages-infect-3200.html",
       "published": "2025-05-09T10:57:00",
@@ -6039,6 +8757,7 @@
         "scheduled_tasks": []
       },
       "tags": [
+<<<<<<< Updated upstream
         "Cybersecurity",
         "RSS to IOC Collector",
         "Remote Code Execution",
@@ -6052,6 +8771,21 @@
         "Spyware",
         "Threat Actor",
         "CVE"
+=======
+        "DoS",
+        "Cybersecurity",
+        "Exploitation",
+        "RSS to IOC Collector",
+        "IoT",
+        "DDoS",
+        "Spyware",
+        "Malware",
+        "Remote Code Execution",
+        "Data Breach",
+        "CVE",
+        "Threat Actor",
+        "TheHackersNews"
+>>>>>>> Stashed changes
       ],
       "enrichment": {
         "entities": {
@@ -6179,7 +8913,11 @@
       }
     },
     {
+<<<<<<< Updated upstream
       "id": "bd71e0a8-8c66-4df6-a3f5-9c888649bcbe",
+=======
+      "id": "ea4435a4-1fa6-47f2-833d-eb3530767b49",
+>>>>>>> Stashed changes
       "title": "Beyond Vulnerability Management \u2013 Can You CVE What I CVE?",
       "source": "https://thehackernews.com/2025/05/beyond-vulnerability-management-cves.html",
       "published": "2025-05-09T10:57:00",
@@ -6242,6 +8980,7 @@
         "scheduled_tasks": []
       },
       "tags": [
+<<<<<<< Updated upstream
         "Cybersecurity",
         "RSS to IOC Collector",
         "Remote Code Execution",
@@ -6257,6 +8996,23 @@
         "Spyware",
         "Threat Actor",
         "CVE"
+=======
+        "DoS",
+        "Cybersecurity",
+        "Exploitation",
+        "RSS to IOC Collector",
+        "Zero-Day Exploit",
+        "IoT",
+        "DDoS",
+        "Spyware",
+        "Malware",
+        "Remote Code Execution",
+        "Data Breach",
+        "CVE",
+        "Threat Actor",
+        "TheHackersNews",
+        "Ransomware"
+>>>>>>> Stashed changes
       ],
       "enrichment": {
         "entities": {
@@ -6493,7 +9249,11 @@
       }
     },
     {
+<<<<<<< Updated upstream
       "id": "70775223-fec7-42c8-a8ca-5d021b1e1c6b",
+=======
+      "id": "e74f3fb7-299e-43e9-a763-9ba6ce224b60",
+>>>>>>> Stashed changes
       "title": "Google Rolls Out On-Device AI Protections to Detect Scams in Chrome and Android",
       "source": "https://thehackernews.com/2025/05/google-rolls-out-on-device-ai.html",
       "published": "2025-05-09T07:13:00",
@@ -6523,6 +9283,7 @@
         "scheduled_tasks": []
       },
       "tags": [
+<<<<<<< Updated upstream
         "Cybersecurity",
         "RSS to IOC Collector",
         "Remote Code Execution",
@@ -6535,6 +9296,20 @@
         "Malware",
         "Spyware",
         "CVE"
+=======
+        "DoS",
+        "Cybersecurity",
+        "Exploitation",
+        "RSS to IOC Collector",
+        "IoT",
+        "DDoS",
+        "Spyware",
+        "Malware",
+        "Remote Code Execution",
+        "Data Breach",
+        "CVE",
+        "TheHackersNews"
+>>>>>>> Stashed changes
       ],
       "enrichment": {
         "entities": {
@@ -6609,7 +9384,11 @@
       }
     },
     {
+<<<<<<< Updated upstream
       "id": "bbf086c0-2efc-4f07-933e-f6d57c8d65c1",
+=======
+      "id": "cd7e8fa9-fdd0-4054-abb1-698a8d215fda",
+>>>>>>> Stashed changes
       "title": "Chinese Hackers Exploit SAP RCE Flaw CVE-2025-31324, Deploy Golang-Based SuperShell",
       "source": "https://thehackernews.com/2025/05/chinese-hackers-exploit-sap-rce-flaw.html",
       "published": "2025-05-09T04:29:00",
@@ -6623,9 +9402,19 @@
         "sha1": [],
         "sha256": [],
         "md5": [],
+<<<<<<< Updated upstream
         "cves": [],
         "mac_addresses": [],
         "ports": [
+=======
+        "cves": [
+          "CVE-2025-31324"
+        ],
+        "mac_addresses": [],
+        "ports": [
+          "31324",
+          "47",
+>>>>>>> Stashed changes
           "177",
           "3232"
         ],
@@ -6643,6 +9432,7 @@
         "scheduled_tasks": []
       },
       "tags": [
+<<<<<<< Updated upstream
         "Cybersecurity",
         "RSS to IOC Collector",
         "Remote Code Execution",
@@ -6658,6 +9448,23 @@
         "Spyware",
         "Threat Actor",
         "Cryptojacking"
+=======
+        "DoS",
+        "Cybersecurity",
+        "Exploitation",
+        "RSS to IOC Collector",
+        "IoT",
+        "Cryptojacking",
+        "DDoS",
+        "Web/Application",
+        "Spyware",
+        "Malware",
+        "Remote Code Execution",
+        "Data Breach",
+        "CVE",
+        "Threat Actor",
+        "TheHackersNews"
+>>>>>>> Stashed changes
       ],
       "enrichment": {
         "entities": {
@@ -6763,7 +9570,11 @@
       }
     },
     {
+<<<<<<< Updated upstream
       "id": "afa3542e-18aa-47d6-a6fe-e9590ddee497",
+=======
+      "id": "38a2f9ee-0eec-4b0b-92dd-e82c4a769196",
+>>>>>>> Stashed changes
       "title": "38,000+ FreeDrain Subdomains Found Exploiting SEO to Steal Crypto Wallet Seed Phrases",
       "source": "https://thehackernews.com/2025/05/38000-freedrain-subdomains-found.html",
       "published": "2025-05-08T15:23:00",
@@ -6800,6 +9611,7 @@
         "scheduled_tasks": []
       },
       "tags": [
+<<<<<<< Updated upstream
         "Cybersecurity",
         "Malvertising",
         "RSS to IOC Collector",
@@ -6815,6 +9627,23 @@
         "Spyware",
         "Threat Actor",
         "CVE"
+=======
+        "DoS",
+        "Cybersecurity",
+        "Exploitation",
+        "RSS to IOC Collector",
+        "IoT",
+        "DDoS",
+        "Malvertising",
+        "Spyware",
+        "Malware",
+        "Remote Code Execution",
+        "Data Breach",
+        "CVE",
+        "Threat Actor",
+        "IOC",
+        "TheHackersNews"
+>>>>>>> Stashed changes
       ],
       "enrichment": {
         "entities": {
@@ -6918,7 +9747,11 @@
           {
             "ioc": "github.io",
             "type": "domains",
+<<<<<<< Updated upstream
             "risk_score": 30
+=======
+            "risk_score": 0
+>>>>>>> Stashed changes
           },
           {
             "ioc": "gitbook.io",
@@ -6933,7 +9766,11 @@
           {
             "ioc": "github.io",
             "type": "domains",
+<<<<<<< Updated upstream
             "risk_score": 0
+=======
+            "risk_score": 30
+>>>>>>> Stashed changes
           },
           {
             "ioc": "Collab.Land",
@@ -6944,7 +9781,11 @@
       }
     },
     {
+<<<<<<< Updated upstream
       "id": "ac51ac25-aee1-42eb-8653-241e1f8fccc6",
+=======
+      "id": "da57e65e-702a-4ba6-9240-d66079a4c272",
+>>>>>>> Stashed changes
       "title": "Security Tools Alone Don't Protect You \u2014 Control Effectiveness Does",
       "source": "https://thehackernews.com/2025/05/security-tools-alone-dont-protect-you.html",
       "published": "2025-05-08T14:00:00",
@@ -6977,6 +9818,7 @@
         "scheduled_tasks": []
       },
       "tags": [
+<<<<<<< Updated upstream
         "Cybersecurity",
         "RSS to IOC Collector",
         "Remote Code Execution",
@@ -6989,6 +9831,20 @@
         "Malware",
         "Spyware",
         "CVE"
+=======
+        "DoS",
+        "Cybersecurity",
+        "Exploitation",
+        "RSS to IOC Collector",
+        "IoT",
+        "DDoS",
+        "Spyware",
+        "Malware",
+        "Remote Code Execution",
+        "Data Breach",
+        "CVE",
+        "TheHackersNews"
+>>>>>>> Stashed changes
       ],
       "enrichment": {
         "entities": {
@@ -7071,7 +9927,11 @@
       }
     },
     {
+<<<<<<< Updated upstream
       "id": "24b27201-df65-4ab0-a53c-017b9acce78c",
+=======
+      "id": "c8c1679f-d76a-4cbd-b643-7f2455518a16",
+>>>>>>> Stashed changes
       "title": "SonicWall Patches 3 Flaws in SMA 100 Devices Allowing Attackers to Run Code as Root",
       "source": "https://thehackernews.com/2025/05/sonicwall-patches-3-flaws-in-sma-100.html",
       "published": "2025-05-08T13:56:00",
@@ -7118,6 +9978,7 @@
         "scheduled_tasks": []
       },
       "tags": [
+<<<<<<< Updated upstream
         "Cybersecurity",
         "RSS to IOC Collector",
         "Remote Code Execution",
@@ -7131,6 +9992,21 @@
         "Malware",
         "Spyware",
         "CVE"
+=======
+        "DoS",
+        "Cybersecurity",
+        "Exploitation",
+        "RSS to IOC Collector",
+        "Zero-Day Exploit",
+        "IoT",
+        "DDoS",
+        "Spyware",
+        "Malware",
+        "Remote Code Execution",
+        "Data Breach",
+        "CVE",
+        "TheHackersNews"
+>>>>>>> Stashed changes
       ],
       "enrichment": {
         "entities": {
@@ -7247,7 +10123,11 @@
       }
     },
     {
+<<<<<<< Updated upstream
       "id": "c082e904-4c02-4b6e-9841-724fa47fdf09",
+=======
+      "id": "7b0a59e3-c6e8-4803-89a1-25efce8d3384",
+>>>>>>> Stashed changes
       "title": "Qilin Ransomware Ranked Highest in April 2025 with 72 Data Leak Disclosures",
       "source": "https://thehackernews.com/2025/05/qilin-leads-april-2025-ransomware-spike.html",
       "published": "2025-05-08T13:47:00",
@@ -7277,6 +10157,7 @@
         "scheduled_tasks": []
       },
       "tags": [
+<<<<<<< Updated upstream
         "Cybersecurity",
         "Defense Evasion",
         "RSS to IOC Collector",
@@ -7294,6 +10175,25 @@
         "Spyware",
         "Threat Actor",
         "CVE"
+=======
+        "DoS",
+        "Cybersecurity",
+        "Exploitation",
+        "RSS to IOC Collector",
+        "IoT",
+        "DDoS",
+        "Spyware",
+        "Malware",
+        "C2",
+        "Remote Code Execution",
+        "Data Breach",
+        "CVE",
+        "Threat Actor",
+        "IOC",
+        "TheHackersNews",
+        "Defense Evasion",
+        "Ransomware"
+>>>>>>> Stashed changes
       ],
       "enrichment": {
         "entities": {
@@ -7392,7 +10292,11 @@
       }
     },
     {
+<<<<<<< Updated upstream
       "id": "35376aec-2df6-4e59-a2a5-60c1867e300d",
+=======
+      "id": "884b141d-9307-4efe-8457-29a84a132302",
+>>>>>>> Stashed changes
       "title": "MirrorFace Targets Japan and Taiwan with ROAMINGMOUSE and Upgraded ANEL Malware",
       "source": "https://thehackernews.com/2025/05/mirrorface-targets-japan-and-taiwan.html",
       "published": "2025-05-08T10:32:00",
@@ -7427,6 +10331,7 @@
         "scheduled_tasks": []
       },
       "tags": [
+<<<<<<< Updated upstream
         "Cybersecurity",
         "RSS to IOC Collector",
         "Remote Code Execution",
@@ -7444,6 +10349,25 @@
         "Spyware",
         "Threat Actor",
         "CVE"
+=======
+        "DoS",
+        "Cybersecurity",
+        "Exploitation",
+        "RSS to IOC Collector",
+        "IoT",
+        "DDoS",
+        "APT Group",
+        "Spyware",
+        "Malware",
+        "Cyber Espionage",
+        "C2",
+        "Remote Code Execution",
+        "Data Breach",
+        "CVE",
+        "Threat Actor",
+        "IOC",
+        "TheHackersNews"
+>>>>>>> Stashed changes
       ],
       "enrichment": {
         "entities": {
@@ -7563,7 +10487,11 @@
       }
     },
     {
+<<<<<<< Updated upstream
       "id": "55251f3b-5e66-4593-b478-fb9f143dc155",
+=======
+      "id": "30f57f00-c0c3-4d55-a823-4b62c1eb49ee",
+>>>>>>> Stashed changes
       "title": "Russian Hackers Using ClickFix Fake CAPTCHA to Deploy New LOSTKEYS Malware",
       "source": "https://thehackernews.com/2025/05/russian-hackers-using-clickfix-fake.html",
       "published": "2025-05-08T06:57:00",
@@ -7595,6 +10523,7 @@
         "scheduled_tasks": []
       },
       "tags": [
+<<<<<<< Updated upstream
         "Cybersecurity",
         "Defense Evasion",
         "RSS to IOC Collector",
@@ -7611,6 +10540,24 @@
         "Spyware",
         "Threat Actor",
         "CVE"
+=======
+        "DoS",
+        "Cybersecurity",
+        "Exploitation",
+        "RSS to IOC Collector",
+        "IoT",
+        "DDoS",
+        "Spyware",
+        "Malware",
+        "Cyber Espionage",
+        "Remote Code Execution",
+        "Data Breach",
+        "CVE",
+        "Threat Actor",
+        "TheHackersNews",
+        "Defense Evasion",
+        "Ransomware"
+>>>>>>> Stashed changes
       ],
       "enrichment": {
         "entities": {
@@ -7692,7 +10639,11 @@
       }
     },
     {
+<<<<<<< Updated upstream
       "id": "77768419-cc63-471e-bdb7-e5d52c684f11",
+=======
+      "id": "2b7a98ad-d7b5-4d08-b48c-0dbff36c3b2d",
+>>>>>>> Stashed changes
       "title": "Europol Shuts Down Six DDoS-for-Hire Services Used in Global Attacks",
       "source": "https://thehackernews.com/2025/05/europol-shuts-down-six-ddos-for-hire.html",
       "published": "2025-05-07T13:54:00",
@@ -7729,6 +10680,7 @@
         "scheduled_tasks": []
       },
       "tags": [
+<<<<<<< Updated upstream
         "Cybersecurity",
         "RSS to IOC Collector",
         "Remote Code Execution",
@@ -7744,6 +10696,23 @@
         "Malware",
         "Spyware",
         "CVE"
+=======
+        "DoS",
+        "Cybersecurity",
+        "Exploitation",
+        "RSS to IOC Collector",
+        "IoT",
+        "DDoS",
+        "Spyware",
+        "Malware",
+        "Adware",
+        "Remote Code Execution",
+        "Data Breach",
+        "Botnet",
+        "CVE",
+        "IOC",
+        "TheHackersNews"
+>>>>>>> Stashed changes
       ],
       "enrichment": {
         "entities": {
@@ -7845,18 +10814,30 @@
           {
             "ioc": "cfxsecurity.cc",
             "type": "domains",
+<<<<<<< Updated upstream
             "risk_score": 0
+=======
+            "risk_score": 5
+>>>>>>> Stashed changes
           },
           {
             "ioc": "quickdown.pro",
             "type": "domains",
+<<<<<<< Updated upstream
             "risk_score": 0
+=======
+            "risk_score": 5
+>>>>>>> Stashed changes
           }
         ]
       }
     },
     {
+<<<<<<< Updated upstream
       "id": "b58c1bfe-cf4e-415b-9918-f7de61ebe34a",
+=======
+      "id": "2f60a1c8-0394-4b12-8ca2-a2e1b9c700d1",
+>>>>>>> Stashed changes
       "title": "OttoKit WordPress Plugin with 100K+ Installs Hit by Exploits Targeting Multiple Flaws",
       "source": "https://thehackernews.com/2025/05/ottokit-wordpress-plugin-with-100k.html",
       "published": "2025-05-07T13:44:00",
@@ -7941,6 +10922,10 @@
           "102",
           "198",
           "98",
+<<<<<<< Updated upstream
+=======
+          "51",
+>>>>>>> Stashed changes
           "226",
           "199",
           "195",
@@ -7959,6 +10944,7 @@
         "scheduled_tasks": []
       },
       "tags": [
+<<<<<<< Updated upstream
         "Cybersecurity",
         "RSS to IOC Collector",
         "Remote Code Execution",
@@ -7973,6 +10959,22 @@
         "Spyware",
         "Threat Actor",
         "CVE"
+=======
+        "DoS",
+        "Cybersecurity",
+        "Exploitation",
+        "RSS to IOC Collector",
+        "IoT",
+        "DDoS",
+        "Spyware",
+        "Malware",
+        "Privilege Escalation",
+        "Remote Code Execution",
+        "Data Breach",
+        "CVE",
+        "Threat Actor",
+        "TheHackersNews"
+>>>>>>> Stashed changes
       ],
       "enrichment": {
         "entities": {
@@ -8147,7 +11149,11 @@
       }
     },
     {
+<<<<<<< Updated upstream
       "id": "2815fb7a-6006-47f4-b1f2-3745de363800",
+=======
+      "id": "2f0a9579-9005-4b13-b442-69b9f6ef6ddb",
+>>>>>>> Stashed changes
       "title": "SysAid Patches 4 Critical Flaws Enabling Pre-Auth RCE in On-Premise Version",
       "source": "https://thehackernews.com/2025/05/sysaid-patches-4-critical-flaws.html",
       "published": "2025-05-07T11:31:00",
@@ -8192,6 +11198,7 @@
         "scheduled_tasks": []
       },
       "tags": [
+<<<<<<< Updated upstream
         "Cybersecurity",
         "RSS to IOC Collector",
         "Remote Code Execution",
@@ -8207,6 +11214,23 @@
         "Malware",
         "Spyware",
         "CVE"
+=======
+        "DoS",
+        "Cybersecurity",
+        "Exploitation",
+        "RSS to IOC Collector",
+        "Zero-Day Exploit",
+        "IoT",
+        "DDoS",
+        "Web/Application",
+        "Spyware",
+        "Malware",
+        "Remote Code Execution",
+        "Data Breach",
+        "CVE",
+        "TheHackersNews",
+        "Ransomware"
+>>>>>>> Stashed changes
       ],
       "enrichment": {
         "entities": {
@@ -8315,7 +11339,11 @@
       }
     },
     {
+<<<<<<< Updated upstream
       "id": "ccd0b69a-02c5-4fbf-bb35-a6e1072fb041",
+=======
+      "id": "dec811e0-f1ba-48d9-9f52-381c59c99736",
+>>>>>>> Stashed changes
       "title": "Reevaluating SSEs: A Technical Gap Analysis of Last-Mile Protection",
       "source": "https://thehackernews.com/2025/05/reevaluating-sses-technical-gap.html",
       "published": "2025-05-07T10:56:00",
@@ -8347,6 +11375,7 @@
         "scheduled_tasks": []
       },
       "tags": [
+<<<<<<< Updated upstream
         "Cybersecurity",
         "Insider Threat",
         "RSS to IOC Collector",
@@ -8361,6 +11390,22 @@
         "Malware",
         "Spyware",
         "CVE"
+=======
+        "DoS",
+        "Cybersecurity",
+        "Exploitation",
+        "RSS to IOC Collector",
+        "IoT",
+        "DDoS",
+        "Insider Threat",
+        "Spyware",
+        "Malware",
+        "Remote Code Execution",
+        "Data Breach",
+        "CVE",
+        "IOC",
+        "TheHackersNews"
+>>>>>>> Stashed changes
       ],
       "enrichment": {
         "entities": {
@@ -8438,7 +11483,11 @@
       }
     },
     {
+<<<<<<< Updated upstream
       "id": "3fa93d89-bd03-4da0-9837-e5925a87e777",
+=======
+      "id": "ab3fa361-39c4-4ded-839a-3fcfe0ace875",
+>>>>>>> Stashed changes
       "title": "Play Ransomware Exploited Windows CVE-2025-29824 as Zero-Day to Breach U.S. Organization",
       "source": "https://thehackernews.com/2025/05/play-ransomware-exploited-windows-cve.html",
       "published": "2025-05-07T10:44:00",
@@ -8485,6 +11534,7 @@
         "scheduled_tasks": []
       },
       "tags": [
+<<<<<<< Updated upstream
         "Cybersecurity",
         "Defense Evasion",
         "RSS to IOC Collector",
@@ -8503,6 +11553,26 @@
         "Spyware",
         "Threat Actor",
         "CVE"
+=======
+        "DoS",
+        "Cybersecurity",
+        "Exploitation",
+        "RSS to IOC Collector",
+        "Zero-Day Exploit",
+        "IoT",
+        "DDoS",
+        "Spyware",
+        "Malware",
+        "Privilege Escalation",
+        "Remote Code Execution",
+        "Data Breach",
+        "CVE",
+        "Threat Actor",
+        "IOC",
+        "TheHackersNews",
+        "Defense Evasion",
+        "Ransomware"
+>>>>>>> Stashed changes
       ],
       "enrichment": {
         "entities": {
@@ -8655,7 +11725,11 @@
       }
     },
     {
+<<<<<<< Updated upstream
       "id": "e1ded81b-639a-44ff-af92-076b7b08690b",
+=======
+      "id": "8d201867-3f0a-452f-80b0-b2fcefcc85fa",
+>>>>>>> Stashed changes
       "title": "Researchers Uncover Malware in Fake Discord PyPI Package Downloaded 11,500+ Times",
       "source": "https://thehackernews.com/2025/05/researchers-uncover-malware-in-fake.html",
       "published": "2025-05-07T07:37:00",
@@ -8687,6 +11761,7 @@
         "scheduled_tasks": []
       },
       "tags": [
+<<<<<<< Updated upstream
         "Cybersecurity",
         "RSS to IOC Collector",
         "Remote Code Execution",
@@ -8702,6 +11777,23 @@
         "Spyware",
         "Threat Actor",
         "CVE"
+=======
+        "DoS",
+        "Cybersecurity",
+        "Exploitation",
+        "RSS to IOC Collector",
+        "IoT",
+        "DDoS",
+        "Spyware",
+        "Malware",
+        "Privilege Escalation",
+        "Typosquatting",
+        "Remote Code Execution",
+        "Data Breach",
+        "CVE",
+        "Threat Actor",
+        "TheHackersNews"
+>>>>>>> Stashed changes
       ],
       "enrichment": {
         "entities": {
@@ -8795,7 +11887,11 @@
       }
     },
     {
+<<<<<<< Updated upstream
       "id": "dd79fd2a-e35c-45ee-a21f-548877114870",
+=======
+      "id": "3323a948-03a1-4428-adb6-13dc886a0514",
+>>>>>>> Stashed changes
       "title": "NSO Group Fined $168M for Targeting 1,400 WhatsApp Users With Pegasus Spyware",
       "source": "https://thehackernews.com/2025/05/nso-group-fined-168m-for-targeting-1400.html",
       "published": "2025-05-07T06:22:00",
@@ -8833,6 +11929,7 @@
         "scheduled_tasks": []
       },
       "tags": [
+<<<<<<< Updated upstream
         "Cybersecurity",
         "RSS to IOC Collector",
         "Remote Code Execution",
@@ -8846,6 +11943,21 @@
         "Malware",
         "Spyware",
         "CVE"
+=======
+        "DoS",
+        "Cybersecurity",
+        "Exploitation",
+        "RSS to IOC Collector",
+        "Zero-Day Exploit",
+        "IoT",
+        "DDoS",
+        "Spyware",
+        "Malware",
+        "Remote Code Execution",
+        "Data Breach",
+        "CVE",
+        "TheHackersNews"
+>>>>>>> Stashed changes
       ],
       "enrichment": {
         "entities": {
@@ -8943,7 +12055,11 @@
       }
     },
     {
+<<<<<<< Updated upstream
       "id": "1fcc6290-d50f-4270-a616-dd59177981c6",
+=======
+      "id": "2d520e35-267e-43d2-968c-58e4f7be9981",
+>>>>>>> Stashed changes
       "title": "Hackers Exploit Samsung MagicINFO, GeoVision IoT Flaws to Deploy Mirai Botnet",
       "source": "https://thehackernews.com/2025/05/hackers-exploit-samsung-magicinfo.html",
       "published": "2025-05-06T15:33:00",
@@ -8986,6 +12102,7 @@
         "scheduled_tasks": []
       },
       "tags": [
+<<<<<<< Updated upstream
         "Cybersecurity",
         "RSS to IOC Collector",
         "Remote Code Execution",
@@ -9000,6 +12117,22 @@
         "Spyware",
         "Threat Actor",
         "CVE"
+=======
+        "DoS",
+        "Threat Actor",
+        "Cybersecurity",
+        "Exploitation",
+        "RSS to IOC Collector",
+        "IoT",
+        "DDoS",
+        "Spyware",
+        "Malware",
+        "Remote Code Execution",
+        "Data Breach",
+        "Botnet",
+        "CVE",
+        "TheHackersNews"
+>>>>>>> Stashed changes
       ],
       "enrichment": {
         "entities": {
@@ -9110,7 +12243,11 @@
       }
     },
     {
+<<<<<<< Updated upstream
       "id": "c971eb16-90c7-4f2a-a6b8-24d45be44806",
+=======
+      "id": "69b28744-02a7-431d-9c83-1451f0d2caeb",
+>>>>>>> Stashed changes
       "title": "Entra ID Data Protection: Essential or Overkill?",
       "source": "https://thehackernews.com/2025/05/entra-id-data-protectionessential-or.html",
       "published": "2025-05-06T10:00:00",
@@ -9140,6 +12277,7 @@
         "scheduled_tasks": []
       },
       "tags": [
+<<<<<<< Updated upstream
         "Cybersecurity",
         "RSS to IOC Collector",
         "Remote Code Execution",
@@ -9156,6 +12294,24 @@
         "Spyware",
         "Threat Actor",
         "CVE"
+=======
+        "DoS",
+        "Cybersecurity",
+        "Exploitation",
+        "RSS to IOC Collector",
+        "Zero-Day Exploit",
+        "IoT",
+        "DDoS",
+        "Spyware",
+        "Malware",
+        "Privilege Escalation",
+        "Remote Code Execution",
+        "Data Breach",
+        "CVE",
+        "Threat Actor",
+        "TheHackersNews",
+        "Ransomware"
+>>>>>>> Stashed changes
       ],
       "enrichment": {
         "entities": {
@@ -9228,7 +12384,11 @@
       }
     },
     {
+<<<<<<< Updated upstream
       "id": "e0226a1a-a71f-4154-8f32-4759642cf5c7",
+=======
+      "id": "0b47c2d2-a4d0-4e18-bf0b-fc1500007a7d",
+>>>>>>> Stashed changes
       "title": "Critical Langflow Flaw Added to CISA KEV List Amid Ongoing Exploitation Evidence",
       "source": "https://thehackernews.com/2025/05/critical-langflow-flaw-added-to-cisa.html",
       "published": "2025-05-06T04:24:00",
@@ -9265,6 +12425,7 @@
         "scheduled_tasks": []
       },
       "tags": [
+<<<<<<< Updated upstream
         "Cybersecurity",
         "RSS to IOC Collector",
         "Remote Code Execution",
@@ -9277,6 +12438,20 @@
         "Malware",
         "Spyware",
         "CVE"
+=======
+        "DoS",
+        "Cybersecurity",
+        "Exploitation",
+        "RSS to IOC Collector",
+        "IoT",
+        "DDoS",
+        "Spyware",
+        "Malware",
+        "Remote Code Execution",
+        "Data Breach",
+        "CVE",
+        "TheHackersNews"
+>>>>>>> Stashed changes
       ],
       "enrichment": {
         "entities": {
@@ -9378,7 +12553,11 @@
       }
     },
     {
+<<<<<<< Updated upstream
       "id": "c69fe046-da21-40b5-ad06-d7dee2a49d22",
+=======
+      "id": "a607cdff-b95c-4e69-af6a-0245898edc99",
+>>>>>>> Stashed changes
       "title": "Wormable AirPlay Flaws Enable Zero-Click RCE on Apple Devices via Public Wi-Fi",
       "source": "https://thehackernews.com/2025/05/wormable-airplay-flaws-enable-zero.html",
       "published": "2025-05-05T17:06:00",
@@ -9432,6 +12611,7 @@
         "scheduled_tasks": []
       },
       "tags": [
+<<<<<<< Updated upstream
         "Cybersecurity",
         "RSS to IOC Collector",
         "Remote Code Execution",
@@ -9447,6 +12627,23 @@
         "Spyware",
         "Buffer Overflow",
         "CVE"
+=======
+        "DoS",
+        "Cybersecurity",
+        "Exploitation",
+        "RSS to IOC Collector",
+        "IoT",
+        "DDoS",
+        "Spyware",
+        "Malware",
+        "Buffer Overflow",
+        "Remote Code Execution",
+        "Data Breach",
+        "CVE",
+        "Information Disclosure",
+        "TheHackersNews",
+        "Ransomware"
+>>>>>>> Stashed changes
       ],
       "enrichment": {
         "entities": {
@@ -9589,7 +12786,11 @@
       }
     },
     {
+<<<<<<< Updated upstream
       "id": "ff596fec-0103-4fa8-804e-a56196c37c2c",
+=======
+      "id": "1b9a52da-e3c9-4788-abaf-2d4c578a17f8",
+>>>>>>> Stashed changes
       "title": "Commvault CVE-2025-34028 Added to CISA KEV After Active Exploitation Confirmed",
       "source": "https://thehackernews.com/2025/05/commvault-cve-2025-34028-added-to-cisa.html",
       "published": "2025-05-05T16:01:00",
@@ -9629,6 +12830,7 @@
         "scheduled_tasks": []
       },
       "tags": [
+<<<<<<< Updated upstream
         "Cybersecurity",
         "RSS to IOC Collector",
         "Remote Code Execution",
@@ -9643,6 +12845,22 @@
         "Malware",
         "Spyware",
         "CVE"
+=======
+        "DoS",
+        "Cybersecurity",
+        "Exploitation",
+        "RSS to IOC Collector",
+        "Zero-Day Exploit",
+        "IoT",
+        "DDoS",
+        "Web/Application",
+        "Spyware",
+        "Malware",
+        "Remote Code Execution",
+        "Data Breach",
+        "CVE",
+        "TheHackersNews"
+>>>>>>> Stashed changes
       ],
       "enrichment": {
         "entities": {
@@ -9786,7 +13004,11 @@
       }
     },
     {
+<<<<<<< Updated upstream
       "id": "c7b86af6-fc21-4f04-924b-f8bbdd5a3bcc",
+=======
+      "id": "904f49d7-1e62-4d95-88b5-27bd848c6a7e",
+>>>>>>> Stashed changes
       "title": "\u26a1 Weekly Recap: Nation-State Hacks, Spyware Alerts, Deepfake Malware, Supply Chain Backdoors",
       "source": "https://thehackernews.com/2025/05/weekly-recap-nation-state-hacks-spyware.html",
       "published": "2025-05-05T11:29:00",
@@ -9914,6 +13136,7 @@
       },
       "tags": [
         "Cybersecurity",
+<<<<<<< Updated upstream
         "IoT",
         "Zero-Day Exploit",
         "Exploitation",
@@ -9935,6 +13158,29 @@
         "APT Group",
         "IOC",
         "Spyware"
+=======
+        "Exploitation",
+        "DDoS",
+        "Cyber Espionage",
+        "Data Breach",
+        "CVE",
+        "APT Group",
+        "IOC",
+        "Web/Application",
+        "Adware",
+        "Remote Code Execution",
+        "Threat Actor",
+        "Ransomware",
+        "Zero-Day Exploit",
+        "Defense Evasion",
+        "DoS",
+        "IoT",
+        "RSS to IOC Collector",
+        "Spyware",
+        "Malware",
+        "Botnet",
+        "TheHackersNews"
+>>>>>>> Stashed changes
       ],
       "enrichment": {
         "entities": {
@@ -10278,13 +13524,21 @@
           {
             "ioc": "LicenseApi.php",
             "type": "domains",
+<<<<<<< Updated upstream
             "risk_score": 0
+=======
+            "risk_score": 15
+>>>>>>> Stashed changes
           }
         ]
       }
     },
     {
+<<<<<<< Updated upstream
       "id": "f3fee6fe-7c4b-49ca-a5b3-223012a19554",
+=======
+      "id": "33dedc2a-dfe1-4cfa-b140-5fcd2522cf82",
+>>>>>>> Stashed changes
       "title": "Perfection is a Myth. Leverage Isn't: How Small Teams Can Secure Their Google Workspace",
       "source": "https://thehackernews.com/2025/05/perfection-is-myth-leverage-isnt-how.html",
       "published": "2025-05-05T11:00:00",
@@ -10323,6 +13577,7 @@
         "scheduled_tasks": []
       },
       "tags": [
+<<<<<<< Updated upstream
         "Cybersecurity",
         "Defense Evasion",
         "RSS to IOC Collector",
@@ -10337,6 +13592,22 @@
         "Malware",
         "Spyware",
         "CVE"
+=======
+        "DoS",
+        "Cybersecurity",
+        "Exploitation",
+        "RSS to IOC Collector",
+        "IoT",
+        "DDoS",
+        "Spyware",
+        "Malware",
+        "Remote Code Execution",
+        "Data Breach",
+        "CVE",
+        "IOC",
+        "TheHackersNews",
+        "Defense Evasion"
+>>>>>>> Stashed changes
       ],
       "enrichment": {
         "entities": {
@@ -10456,7 +13727,11 @@
       }
     },
     {
+<<<<<<< Updated upstream
       "id": "d2ea3ee8-ae58-4ea9-bc3b-de5d0fb486f0",
+=======
+      "id": "9bd9d277-039b-4aef-b1df-931b7535fb8f",
+>>>>>>> Stashed changes
       "title": "Golden Chickens Deploy TerraStealerV2 to Steal Browser Credentials and Crypto Wallet Data",
       "source": "https://thehackernews.com/2025/05/golden-chickens-deploy-terrastealerv2.html",
       "published": "2025-05-05T05:39:00",
@@ -10487,6 +13762,7 @@
         "scheduled_tasks": []
       },
       "tags": [
+<<<<<<< Updated upstream
         "Cybersecurity",
         "Defense Evasion",
         "RSS to IOC Collector",
@@ -10503,6 +13779,24 @@
         "Spyware",
         "Threat Actor",
         "CVE"
+=======
+        "DoS",
+        "Cybersecurity",
+        "Exploitation",
+        "RSS to IOC Collector",
+        "IoT",
+        "DDoS",
+        "Spyware",
+        "Malware",
+        "C2",
+        "Remote Code Execution",
+        "Data Breach",
+        "CVE",
+        "Threat Actor",
+        "IOC",
+        "TheHackersNews",
+        "Defense Evasion"
+>>>>>>> Stashed changes
       ],
       "enrichment": {
         "entities": {
@@ -10586,7 +13880,11 @@
           {
             "ioc": "wetransfers.io",
             "type": "domains",
+<<<<<<< Updated upstream
             "risk_score": 0
+=======
+            "risk_score": 20
+>>>>>>> Stashed changes
           },
           {
             "ioc": "wetransfers.io",
@@ -10596,7 +13894,11 @@
           {
             "ioc": "regsvr32.exe",
             "type": "domains",
+<<<<<<< Updated upstream
             "risk_score": 20
+=======
+            "risk_score": 0
+>>>>>>> Stashed changes
           },
           {
             "ioc": "mshta.exe",
@@ -10607,7 +13909,11 @@
       }
     },
     {
+<<<<<<< Updated upstream
       "id": "bc35259a-dc85-4a5a-a647-ef7f834bea30",
+=======
+      "id": "b3410bfa-d2a2-45fd-894b-7dd72c793435",
+>>>>>>> Stashed changes
       "title": "Malicious Go Modules Deliver Disk-Wiping Linux Malware in Advanced Supply Chain Attack",
       "source": "https://thehackernews.com/2025/05/malicious-go-modules-deliver-disk.html",
       "published": "2025-05-03T14:31:00",
@@ -10648,6 +13954,7 @@
         "scheduled_tasks": []
       },
       "tags": [
+<<<<<<< Updated upstream
         "Cybersecurity",
         "RSS to IOC Collector",
         "Remote Code Execution",
@@ -10662,6 +13969,22 @@
         "Spyware",
         "Threat Actor",
         "CVE"
+=======
+        "DoS",
+        "Cybersecurity",
+        "Exploitation",
+        "RSS to IOC Collector",
+        "IoT",
+        "DDoS",
+        "Spyware",
+        "Malware",
+        "Remote Code Execution",
+        "Data Breach",
+        "CVE",
+        "Threat Actor",
+        "IOC",
+        "TheHackersNews"
+>>>>>>> Stashed changes
       ],
       "enrichment": {
         "entities": {
@@ -10778,7 +14101,11 @@
       }
     },
     {
+<<<<<<< Updated upstream
       "id": "f2ae90a5-fd82-4408-8f9c-ed1259d1bd9b",
+=======
+      "id": "838b9cf4-7e52-494e-abc1-431af8b71a47",
+>>>>>>> Stashed changes
       "title": "Iranian Hackers Maintain 2-Year Access to Middle East CNI via VPN Flaws and Malware",
       "source": "https://thehackernews.com/2025/05/iranian-hackers-maintain-2-year-access.html",
       "published": "2025-05-03T09:33:00",
@@ -10816,6 +14143,7 @@
         "scheduled_tasks": []
       },
       "tags": [
+<<<<<<< Updated upstream
         "Cybersecurity",
         "RSS to IOC Collector",
         "Remote Code Execution",
@@ -10833,6 +14161,25 @@
         "Spyware",
         "Threat Actor",
         "CVE"
+=======
+        "DoS",
+        "Cybersecurity",
+        "Exploitation",
+        "RSS to IOC Collector",
+        "IoT",
+        "DDoS",
+        "Web/Application",
+        "Spyware",
+        "Malware",
+        "Cyber Espionage",
+        "C2",
+        "Remote Code Execution",
+        "Data Breach",
+        "CVE",
+        "Threat Actor",
+        "TheHackersNews",
+        "Ransomware"
+>>>>>>> Stashed changes
       ],
       "enrichment": {
         "entities": {
@@ -10956,7 +14303,11 @@
       }
     },
     {
+<<<<<<< Updated upstream
       "id": "2f999180-c516-4220-9410-5dd7b20b5315",
+=======
+      "id": "d470caff-0ffb-43e6-bd05-ff2049b58d32",
+>>>>>>> Stashed changes
       "title": "U.S. Charges Yemeni Hacker Behind Black Kingdom Ransomware Targeting 1,500 Systems",
       "source": "https://thehackernews.com/2025/05/us-charges-yemeni-hacker-behind-black.html",
       "published": "2025-05-03T07:06:00",
@@ -10993,6 +14344,7 @@
         "scheduled_tasks": []
       },
       "tags": [
+<<<<<<< Updated upstream
         "Cybersecurity",
         "Defense Evasion",
         "RSS to IOC Collector",
@@ -11011,6 +14363,26 @@
         "Spyware",
         "Threat Actor",
         "CVE"
+=======
+        "DoS",
+        "Cybersecurity",
+        "Exploitation",
+        "RSS to IOC Collector",
+        "IoT",
+        "DDoS",
+        "Web/Application",
+        "Insider Threat",
+        "Spyware",
+        "Malware",
+        "Remote Code Execution",
+        "Data Breach",
+        "CVE",
+        "Threat Actor",
+        "IOC",
+        "TheHackersNews",
+        "Defense Evasion",
+        "Ransomware"
+>>>>>>> Stashed changes
       ],
       "enrichment": {
         "entities": {
@@ -11158,7 +14530,11 @@
       }
     },
     {
+<<<<<<< Updated upstream
       "id": "e503cf1b-fcc4-4589-abb1-af2e3984d95e",
+=======
+      "id": "26d82c1d-3c90-49b2-8a06-1ae32b1b83b9",
+>>>>>>> Stashed changes
       "title": "TikTok Slammed With \u20ac530 Million GDPR Fine for Sending E.U. Data to China",
       "source": "https://thehackernews.com/2025/05/tiktok-slammed-with-530-million-gdpr.html",
       "published": "2025-05-02T12:25:00",
@@ -11188,6 +14564,7 @@
         "scheduled_tasks": []
       },
       "tags": [
+<<<<<<< Updated upstream
         "Cybersecurity",
         "RSS to IOC Collector",
         "Remote Code Execution",
@@ -11201,6 +14578,21 @@
         "Malware",
         "Spyware",
         "CVE"
+=======
+        "DoS",
+        "Cybersecurity",
+        "Exploitation",
+        "RSS to IOC Collector",
+        "IoT",
+        "DDoS",
+        "Spyware",
+        "Malware",
+        "Cyber Espionage",
+        "Remote Code Execution",
+        "Data Breach",
+        "CVE",
+        "TheHackersNews"
+>>>>>>> Stashed changes
       ],
       "enrichment": {
         "entities": {
@@ -11282,7 +14674,11 @@
       }
     },
     {
+<<<<<<< Updated upstream
       "id": "5de77831-267a-4f31-8068-3bfba6e80926",
+=======
+      "id": "7a55125d-0bc0-4c7b-8b91-07793ed4d468",
+>>>>>>> Stashed changes
       "title": "MintsLoader Drops GhostWeaver via Phishing, ClickFix \u2014 Uses DGA, TLS for Stealth Attacks",
       "source": "https://thehackernews.com/2025/05/mintsloader-drops-ghostweaver-via.html",
       "published": "2025-05-02T08:57:00",
@@ -11312,6 +14708,7 @@
         "scheduled_tasks": []
       },
       "tags": [
+<<<<<<< Updated upstream
         "Cybersecurity",
         "Defense Evasion",
         "RSS to IOC Collector",
@@ -11328,6 +14725,24 @@
         "Spyware",
         "Threat Actor",
         "CVE"
+=======
+        "DoS",
+        "Cybersecurity",
+        "Exploitation",
+        "RSS to IOC Collector",
+        "IoT",
+        "DDoS",
+        "Spyware",
+        "Malware",
+        "C2",
+        "Remote Code Execution",
+        "Data Breach",
+        "CVE",
+        "Threat Actor",
+        "IOC",
+        "TheHackersNews",
+        "Defense Evasion"
+>>>>>>> Stashed changes
       ],
       "enrichment": {
         "entities": {
@@ -11399,7 +14814,11 @@
       }
     },
     {
+<<<<<<< Updated upstream
       "id": "2635428f-4c28-45ec-94b2-749b4b09a8df",
+=======
+      "id": "0b32f9c7-cd16-4611-bdc1-9daba8c49575",
+>>>>>>> Stashed changes
       "title": "Microsoft Sets Passkeys Default for New Accounts; 15 Billion Users Gain Passwordless Support",
       "source": "https://thehackernews.com/2025/05/microsoft-sets-passkeys-default-for-new.html",
       "published": "2025-05-02T06:40:00",
@@ -11429,6 +14848,7 @@
         "scheduled_tasks": []
       },
       "tags": [
+<<<<<<< Updated upstream
         "Cybersecurity",
         "RSS to IOC Collector",
         "Remote Code Execution",
@@ -11441,6 +14861,20 @@
         "Malware",
         "Spyware",
         "CVE"
+=======
+        "DoS",
+        "Cybersecurity",
+        "Exploitation",
+        "RSS to IOC Collector",
+        "IoT",
+        "DDoS",
+        "Spyware",
+        "Malware",
+        "Remote Code Execution",
+        "Data Breach",
+        "CVE",
+        "TheHackersNews"
+>>>>>>> Stashed changes
       ],
       "enrichment": {
         "entities": {
@@ -11518,7 +14952,11 @@
       }
     },
     {
+<<<<<<< Updated upstream
       "id": "aa98b6e3-3c91-4bbb-b870-1b8b22b3d260",
+=======
+      "id": "04bdedf2-b18f-464a-b587-aabc5c611375",
+>>>>>>> Stashed changes
       "title": "Fake Security Plugin on WordPress Enables Remote Admin Access for Attackers",
       "source": "https://thehackernews.com/2025/05/fake-security-plugin-on-wordpress.html",
       "published": "2025-05-01T15:47:00",
@@ -11555,6 +14993,7 @@
         "scheduled_tasks": []
       },
       "tags": [
+<<<<<<< Updated upstream
         "Cybersecurity",
         "RSS to IOC Collector",
         "Remote Code Execution",
@@ -11570,6 +15009,23 @@
         "Spyware",
         "Threat Actor",
         "CVE"
+=======
+        "DoS",
+        "Cybersecurity",
+        "Exploitation",
+        "RSS to IOC Collector",
+        "IoT",
+        "DDoS",
+        "Spyware",
+        "Malware",
+        "Adware",
+        "Remote Code Execution",
+        "Data Breach",
+        "CVE",
+        "Threat Actor",
+        "IOC",
+        "TheHackersNews"
+>>>>>>> Stashed changes
       ],
       "enrichment": {
         "entities": {
@@ -11683,7 +15139,11 @@
           {
             "ioc": "italicfonts.org",
             "type": "domains",
+<<<<<<< Updated upstream
             "risk_score": 10
+=======
+            "risk_score": 0
+>>>>>>> Stashed changes
           },
           {
             "ioc": "Node.js",
@@ -11704,7 +15164,11 @@
       }
     },
     {
+<<<<<<< Updated upstream
       "id": "84484d72-454f-4eab-96b1-37207588625a",
+=======
+      "id": "ac1e1bd5-d165-4560-9fa6-6b8e91c46eeb",
+>>>>>>> Stashed changes
       "title": "Why top SOC teams are shifting to Network Detection and Response",
       "source": "https://thehackernews.com/2025/05/why-top-soc-teams-are-shifting-to.html",
       "published": "2025-05-01T11:25:00",
@@ -11735,6 +15199,7 @@
         "scheduled_tasks": []
       },
       "tags": [
+<<<<<<< Updated upstream
         "Cybersecurity",
         "Defense Evasion",
         "RSS to IOC Collector",
@@ -11750,6 +15215,23 @@
         "Spyware",
         "Threat Actor",
         "CVE"
+=======
+        "DoS",
+        "Connected Device",
+        "Cybersecurity",
+        "Exploitation",
+        "RSS to IOC Collector",
+        "IoT",
+        "DDoS",
+        "Spyware",
+        "Malware",
+        "Remote Code Execution",
+        "Data Breach",
+        "CVE",
+        "Threat Actor",
+        "TheHackersNews",
+        "Defense Evasion"
+>>>>>>> Stashed changes
       ],
       "enrichment": {
         "entities": {
@@ -11841,7 +15323,11 @@
       }
     },
     {
+<<<<<<< Updated upstream
       "id": "82ff5c47-8a1f-47a3-91c4-7318217c57aa",
+=======
+      "id": "9fe58c15-cb2f-4fac-9c8f-bf569035c2d4",
+>>>>>>> Stashed changes
       "title": "New Research Reveals: 95% of AppSec Fixes Don\u2019t Reduce Risk",
       "source": "https://thehackernews.com/2025/05/new-research-reveals-95-of-appsec-fixes.html",
       "published": "2025-05-01T09:44:00",
@@ -11877,6 +15363,7 @@
         "scheduled_tasks": []
       },
       "tags": [
+<<<<<<< Updated upstream
         "Cybersecurity",
         "RSS to IOC Collector",
         "Remote Code Execution",
@@ -11890,6 +15377,21 @@
         "Malware",
         "Spyware",
         "CVE"
+=======
+        "DoS",
+        "Cybersecurity",
+        "Exploitation",
+        "RSS to IOC Collector",
+        "IoT",
+        "DDoS",
+        "Spyware",
+        "Malware",
+        "Cyber Espionage",
+        "Remote Code Execution",
+        "Data Breach",
+        "CVE",
+        "TheHackersNews"
+>>>>>>> Stashed changes
       ],
       "enrichment": {
         "entities": {
@@ -11991,7 +15493,11 @@
       }
     },
     {
+<<<<<<< Updated upstream
       "id": "9e6a7890-f1e4-4d41-9cd1-e3e9c618e81c",
+=======
+      "id": "b88e15fd-fcb3-4584-a594-5f2af280f5a3",
+>>>>>>> Stashed changes
       "title": "DarkWatchman, Sheriff Malware Hit Russia and Ukraine with Stealth and Nation-Grade Tactics",
       "source": "https://thehackernews.com/2025/05/darkwatchman-sheriff-malware-hit-russia.html",
       "published": "2025-05-01T09:27:00",
@@ -12029,6 +15535,7 @@
       },
       "tags": [
         "Cybersecurity",
+<<<<<<< Updated upstream
         "IoT",
         "Exploitation",
         "C2",
@@ -12047,6 +15554,26 @@
         "DoS",
         "IOC",
         "Spyware"
+=======
+        "Exploitation",
+        "DDoS",
+        "Cyber Espionage",
+        "Data Breach",
+        "CVE",
+        "IOC",
+        "Remote Code Execution",
+        "Threat Actor",
+        "Data Collection",
+        "Defense Evasion",
+        "DoS",
+        "IoT",
+        "RSS to IOC Collector",
+        "Insider Threat",
+        "Spyware",
+        "Malware",
+        "C2",
+        "TheHackersNews"
+>>>>>>> Stashed changes
       ],
       "enrichment": {
         "entities": {
@@ -12155,7 +15682,11 @@
       }
     },
     {
+<<<<<<< Updated upstream
       "id": "2b0fcff9-e7f7-430a-a4ae-6bac657f82f8",
+=======
+      "id": "e7314c71-493b-476a-aaa3-3fea30c4db9f",
+>>>>>>> Stashed changes
       "title": "Commvault Confirms Hackers Exploited CVE-2025-3928 as Zero-Day in Azure Breach",
       "source": "https://thehackernews.com/2025/05/commvault-confirms-hackers-exploited.html",
       "published": "2025-05-01T08:11:00",
@@ -12197,6 +15728,7 @@
         "scheduled_tasks": []
       },
       "tags": [
+<<<<<<< Updated upstream
         "Cybersecurity",
         "RSS to IOC Collector",
         "Remote Code Execution",
@@ -12211,6 +15743,22 @@
         "Spyware",
         "Threat Actor",
         "CVE"
+=======
+        "DoS",
+        "Cybersecurity",
+        "Exploitation",
+        "RSS to IOC Collector",
+        "Zero-Day Exploit",
+        "IoT",
+        "DDoS",
+        "Spyware",
+        "Malware",
+        "Remote Code Execution",
+        "Data Breach",
+        "CVE",
+        "Threat Actor",
+        "TheHackersNews"
+>>>>>>> Stashed changes
       ],
       "enrichment": {
         "entities": {
@@ -12328,7 +15876,11 @@
       }
     },
     {
+<<<<<<< Updated upstream
       "id": "e955fa51-85ba-43d3-a629-c4a91fbacf33",
+=======
+      "id": "446d227f-baef-4614-a127-921928be940b",
+>>>>>>> Stashed changes
       "title": "SonicWall Confirms Active Exploitation of Flaws Affecting Multiple Appliance Models",
       "source": "https://thehackernews.com/2025/05/sonicwall-confirms-active-exploitation.html",
       "published": "2025-05-01T06:22:00",
@@ -12359,6 +15911,7 @@
         "scheduled_tasks": []
       },
       "tags": [
+<<<<<<< Updated upstream
         "Cybersecurity",
         "RSS to IOC Collector",
         "Remote Code Execution",
@@ -12373,6 +15926,22 @@
         "Spyware",
         "Threat Actor",
         "CVE"
+=======
+        "DoS",
+        "Cybersecurity",
+        "Exploitation",
+        "RSS to IOC Collector",
+        "IoT",
+        "DDoS",
+        "Spyware",
+        "Malware",
+        "Remote Code Execution",
+        "Data Breach",
+        "CVE",
+        "Threat Actor",
+        "IOC",
+        "TheHackersNews"
+>>>>>>> Stashed changes
       ],
       "enrichment": {
         "entities": {
@@ -12507,7 +16076,11 @@
       }
     },
     {
+<<<<<<< Updated upstream
       "id": "142d1e5a-95b4-4b21-9403-1b246822c989",
+=======
+      "id": "17e17189-a989-456c-82da-02c06c30e46e",
+>>>>>>> Stashed changes
       "title": "Steganography Challenge: My Solution, (Sat, May 10th)",
       "source": "https://isc.sans.edu/diary/rss/31912",
       "published": "2025-05-10T10:33:58",
@@ -12558,9 +16131,15 @@
         "scheduled_tasks": []
       },
       "tags": [
+<<<<<<< Updated upstream
         "Remote Code Execution",
         "RSS to IOC Collector",
         "SANS"
+=======
+        "RSS to IOC Collector",
+        "SANS",
+        "Remote Code Execution"
+>>>>>>> Stashed changes
       ],
       "enrichment": {
         "entities": {
@@ -12801,7 +16380,11 @@
       }
     },
     {
+<<<<<<< Updated upstream
       "id": "0091a02a-9b03-4171-a6b9-b92da01c8311",
+=======
+      "id": "b6724f80-04b9-4574-bfff-e1fa06cbcf92",
+>>>>>>> Stashed changes
       "title": "ISC Stormcast For Friday, May 9th, 2025 https://isc.sans.edu/podcastdetail/9444, (Fri, May 9th)",
       "source": "https://isc.sans.edu/diary/rss/31934",
       "published": "2025-05-09T03:35:13",
@@ -12901,7 +16484,11 @@
       }
     },
     {
+<<<<<<< Updated upstream
       "id": "8e42bd56-a9bc-4139-a01e-77098cff07c4",
+=======
+      "id": "16e0e3ad-e29c-4d31-a6de-af56cf5f412c",
+>>>>>>> Stashed changes
       "title": "No Internet Access&#x3f; SSH to the Rescue&#x21;, (Thu, May 8th)",
       "source": "https://isc.sans.edu/diary/rss/31932",
       "published": "2025-05-08T13:08:13",
@@ -12948,10 +16535,17 @@
         "scheduled_tasks": []
       },
       "tags": [
+<<<<<<< Updated upstream
         "Malware",
         "RSS to IOC Collector",
         "IOC",
         "SANS"
+=======
+        "RSS to IOC Collector",
+        "SANS",
+        "IOC",
+        "Malware"
+>>>>>>> Stashed changes
       ],
       "enrichment": {
         "entities": {
@@ -13047,7 +16641,11 @@
           {
             "ioc": "client.sans.edu",
             "type": "domains",
+<<<<<<< Updated upstream
             "risk_score": 30
+=======
+            "risk_score": 0
+>>>>>>> Stashed changes
           },
           {
             "ioc": "client.sans.edu",
@@ -13067,7 +16665,11 @@
           {
             "ioc": "ipinfo.io",
             "type": "domains",
+<<<<<<< Updated upstream
             "risk_score": 0
+=======
+            "risk_score": 30
+>>>>>>> Stashed changes
           },
           {
             "ioc": "client.sans.edu",
@@ -13083,7 +16685,11 @@
       }
     },
     {
+<<<<<<< Updated upstream
       "id": "176d5aa1-b57b-40c1-9e21-f3ff6bcb13f9",
+=======
+      "id": "72d0aacf-2d3f-4625-9905-0cde87331ce8",
+>>>>>>> Stashed changes
       "title": "ISC Stormcast For Thursday, May 8th, 2025 https://isc.sans.edu/podcastdetail/9442, (Thu, May 8th)",
       "source": "https://isc.sans.edu/diary/rss/31930",
       "published": "2025-05-08T03:25:14",
@@ -13183,7 +16789,11 @@
       }
     },
     {
+<<<<<<< Updated upstream
       "id": "c8a6f3df-caa5-454e-835f-5845e02dca89",
+=======
+      "id": "22bbb0fc-9484-435e-863e-3574b9e940f4",
+>>>>>>> Stashed changes
       "title": "Example of \"Modular\" Malware, (Wed, May 7th)",
       "source": "https://isc.sans.edu/diary/rss/31928",
       "published": "2025-05-07T05:55:35",
@@ -13213,7 +16823,13 @@
         "md5": [],
         "cves": [],
         "mac_addresses": [],
+<<<<<<< Updated upstream
         "ports": [],
+=======
+        "ports": [
+          "07"
+        ],
+>>>>>>> Stashed changes
         "asn": [],
         "cidr": [],
         "file_paths": [
@@ -13237,6 +16853,7 @@
         "scheduled_tasks": []
       },
       "tags": [
+<<<<<<< Updated upstream
         "Defense Evasion",
         "RSS to IOC Collector",
         "Remote Code Execution",
@@ -13244,6 +16861,15 @@
         "C2",
         "Malware",
         "SANS"
+=======
+        "SANS",
+        "RSS to IOC Collector",
+        "Malware",
+        "C2",
+        "Remote Code Execution",
+        "IOC",
+        "Defense Evasion"
+>>>>>>> Stashed changes
       ],
       "enrichment": {
         "entities": {
@@ -13514,7 +17140,11 @@
       }
     },
     {
+<<<<<<< Updated upstream
       "id": "60d3060a-13d7-422e-821e-9d08b605174d",
+=======
+      "id": "d2f8353d-9266-41ce-9912-6aedae52c52a",
+>>>>>>> Stashed changes
       "title": "ISC Stormcast For Wednesday, May 7th, 2025 https://isc.sans.edu/podcastdetail/9440, (Wed, May 7th)",
       "source": "https://isc.sans.edu/diary/rss/31926",
       "published": "2025-05-07T03:35:15",
@@ -13614,7 +17244,11 @@
       }
     },
     {
+<<<<<<< Updated upstream
       "id": "a5ee69a5-5824-45cb-b7e7-289025c76b02",
+=======
+      "id": "99e6c1d4-6fde-4ff8-adbb-98148c422e03",
+>>>>>>> Stashed changes
       "title": "Python InfoStealer with Embedded Phishing Webserver, (Tue, May 6th)",
       "source": "https://isc.sans.edu/diary/rss/31924",
       "published": "2025-05-06T06:02:58",
@@ -13671,6 +17305,7 @@
         "scheduled_tasks": []
       },
       "tags": [
+<<<<<<< Updated upstream
         "RSS to IOC Collector",
         "Persistence",
         "Data Breach",
@@ -13678,6 +17313,15 @@
         "Spyware",
         "Threat Actor",
         "SANS"
+=======
+        "SANS",
+        "Persistence",
+        "RSS to IOC Collector",
+        "Spyware",
+        "Malware",
+        "Data Breach",
+        "Threat Actor"
+>>>>>>> Stashed changes
       ],
       "enrichment": {
         "entities": {
@@ -13795,7 +17439,11 @@
           {
             "ioc": "bsSlwZVy.encrypt",
             "type": "domains",
+<<<<<<< Updated upstream
             "risk_score": 30
+=======
+            "risk_score": 0
+>>>>>>> Stashed changes
           },
           {
             "ioc": "text.encode",
@@ -13835,7 +17483,11 @@
           {
             "ioc": "accounts.google.com",
             "type": "domains",
+<<<<<<< Updated upstream
             "risk_score": 0
+=======
+            "risk_score": 30
+>>>>>>> Stashed changes
           },
           {
             "ioc": "login.microsoftonline.com",
@@ -13890,12 +17542,20 @@
           {
             "ioc": "threading.Thread",
             "type": "domains",
+<<<<<<< Updated upstream
             "risk_score": 0
+=======
+            "risk_score": 10
+>>>>>>> Stashed changes
           },
           {
             "ioc": "app.run",
             "type": "domains",
+<<<<<<< Updated upstream
             "risk_score": 10
+=======
+            "risk_score": 0
+>>>>>>> Stashed changes
           },
           {
             "ioc": "cert.pem",
@@ -13956,7 +17616,11 @@
       }
     },
     {
+<<<<<<< Updated upstream
       "id": "e928b912-3620-4b86-b492-7f25a217334b",
+=======
+      "id": "95c2a3ac-32db-456e-aad8-861ac40346b0",
+>>>>>>> Stashed changes
       "title": "ISC Stormcast For Tuesday, May 6th, 2025 https://isc.sans.edu/podcastdetail/9438, (Tue, May 6th)",
       "source": "https://isc.sans.edu/diary/rss/31922",
       "published": "2025-05-06T03:20:14",
@@ -14056,7 +17720,11 @@
       }
     },
     {
+<<<<<<< Updated upstream
       "id": "fdbeb4bc-5c1d-4ccf-a030-5957594a1fbd",
+=======
+      "id": "87bcf4cb-4f63-4bd4-9e83-4b28901b659d",
+>>>>>>> Stashed changes
       "title": "\"Mirai\" Now Exploits Samsung MagicINFO CMS (CVE-2024-7399), (Mon, May 5th)",
       "source": "https://isc.sans.edu/diary/rss/31920",
       "published": "2025-05-06T02:10:41",
@@ -14104,7 +17772,10 @@
           "50018",
           "1151",
           "176",
+<<<<<<< Updated upstream
           "65",
+=======
+>>>>>>> Stashed changes
           "122",
           "777"
         ],
@@ -14138,6 +17809,7 @@
         "scheduled_tasks": []
       },
       "tags": [
+<<<<<<< Updated upstream
         "Cybersecurity",
         "IoT Botnet",
         "RSS to IOC Collector",
@@ -14149,6 +17821,19 @@
         "Malware",
         "CVE",
         "SANS"
+=======
+        "SANS",
+        "Cybersecurity",
+        "Exploitation",
+        "RSS to IOC Collector",
+        "IoT",
+        "IoT Botnet",
+        "Malware",
+        "Remote Code Execution",
+        "CVE",
+        "Botnet",
+        "IOC"
+>>>>>>> Stashed changes
       ],
       "enrichment": {
         "entities": {
@@ -14411,12 +18096,20 @@
           {
             "ioc": "java.io",
             "type": "domains",
+<<<<<<< Updated upstream
             "risk_score": 0
+=======
+            "risk_score": 30
+>>>>>>> Stashed changes
           },
           {
             "ioc": "ohshit.sh",
             "type": "domains",
+<<<<<<< Updated upstream
             "risk_score": 30
+=======
+            "risk_score": 0
+>>>>>>> Stashed changes
           },
           {
             "ioc": "ohshit.sh",
@@ -14551,12 +18244,20 @@
           {
             "ioc": "boatnet.arc",
             "type": "domains",
+<<<<<<< Updated upstream
             "risk_score": 30
+=======
+            "risk_score": 0
+>>>>>>> Stashed changes
           },
           {
             "ioc": "security.samsungtv.com",
             "type": "domains",
+<<<<<<< Updated upstream
             "risk_score": 0
+=======
+            "risk_score": 5
+>>>>>>> Stashed changes
           },
           {
             "ioc": "nvd.nist.gov",
@@ -14571,12 +18272,20 @@
           {
             "ioc": "www.virustotal.com",
             "type": "domains",
+<<<<<<< Updated upstream
             "risk_score": 5
+=======
+            "risk_score": 0
+>>>>>>> Stashed changes
           },
           {
             "ioc": "SANS.edu",
             "type": "domains",
+<<<<<<< Updated upstream
             "risk_score": 0
+=======
+            "risk_score": 30
+>>>>>>> Stashed changes
           },
           {
             "ioc": "http://176.65.142.122/ohshit.sh;",
@@ -14642,7 +18351,11 @@
       }
     },
     {
+<<<<<<< Updated upstream
       "id": "104cb0df-9697-4dbd-9de5-f2211668b3c3",
+=======
+      "id": "25cbec5f-538d-46ba-83d8-629a1baa944c",
+>>>>>>> Stashed changes
       "title": "ISC Stormcast For Monday, May 5th, 2025 https://isc.sans.edu/podcastdetail/9436, (Mon, May 5th)",
       "source": "https://isc.sans.edu/diary/rss/31918",
       "published": "2025-05-05T03:50:16",
@@ -14742,6 +18455,7 @@
       }
     },
     {
+<<<<<<< Updated upstream
       "id": "e8800438-99ef-4097-9125-be74e7d0dee5",
       "title": "Daily Dose of Dark Web Informer - 9th of May 2025",
       "source": "https://darkwebinformer.com/daily-dose-of-dark-web-informer-9th-of-may-2025/",
@@ -16552,6 +20266,9 @@
     },
     {
       "id": "92524938-5582-4497-a5c3-d524a2652dae",
+=======
+      "id": "69f0b420-4a1f-46d8-8f85-2c4384e6705f",
+>>>>>>> Stashed changes
       "title": "\u011f\u0178\u2021\u00ac\u011f\u0178\u2021\u00a7 Targeting and compromise of french entities using the APT28 intrusion set (29 avril 2025)",
       "source": "https://www.cert.ssi.gouv.fr/cti/CERTFR-2025-CTI-007/",
       "published": "2025-04-29T00:00:00",
@@ -16585,9 +20302,15 @@
         "scheduled_tasks": []
       },
       "tags": [
+<<<<<<< Updated upstream
         "Remote Code Execution",
         "RSS to IOC Collector",
         "APT Group",
+=======
+        "RSS to IOC Collector",
+        "APT Group",
+        "Remote Code Execution",
+>>>>>>> Stashed changes
         "ssi-gouv"
       ],
       "enrichment": {
@@ -16651,12 +20374,20 @@
           {
             "ioc": "legifrance.gouv.fr",
             "type": "domains",
+<<<<<<< Updated upstream
             "risk_score": 10
+=======
+            "risk_score": 0
+>>>>>>> Stashed changes
           },
           {
             "ioc": "info.gouv.fr",
             "type": "domains",
+<<<<<<< Updated upstream
             "risk_score": 0
+=======
+            "risk_score": 10
+>>>>>>> Stashed changes
           },
           {
             "ioc": "france.fr",
@@ -16672,7 +20403,11 @@
       }
     },
     {
+<<<<<<< Updated upstream
       "id": "60a55bfe-9040-4309-9335-c85646958a81",
+=======
+      "id": "c461377e-4dca-4845-9a68-b5e456bf432c",
+>>>>>>> Stashed changes
       "title": "Targeting and compromise of French entities using the APT28 attack operating mode (April 29, 2025)",
       "source": "https://www.cert.ssi.gouv.fr/cti/CERTFR-2025-CTI-006/",
       "published": "2025-04-29T00:00:00",
@@ -16702,9 +20437,15 @@
         "scheduled_tasks": []
       },
       "tags": [
+<<<<<<< Updated upstream
         "Remote Code Execution",
         "RSS to IOC Collector",
         "APT Group",
+=======
+        "RSS to IOC Collector",
+        "APT Group",
+        "Remote Code Execution",
+>>>>>>> Stashed changes
         "ssi-gouv"
       ],
       "enrichment": {
@@ -16790,7 +20531,11 @@
       }
     },
     {
+<<<<<<< Updated upstream
       "id": "6ef7fc0d-0361-4192-91cf-0c7476b928a5",
+=======
+      "id": "fc8e998f-3316-4b6d-aaa5-917c2197c02f",
+>>>>>>> Stashed changes
       "title": "Multiple vulnerabilities in Mozilla products (April 30, 2025)",
       "source": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0358/",
       "published": "2025-04-30T00:00:00",
@@ -16850,9 +20595,15 @@
         "scheduled_tasks": []
       },
       "tags": [
+<<<<<<< Updated upstream
         "Remote Code Execution",
         "RSS to IOC Collector",
         "CVE",
+=======
+        "RSS to IOC Collector",
+        "CVE",
+        "Remote Code Execution",
+>>>>>>> Stashed changes
         "ssi-gouv"
       ],
       "enrichment": {
@@ -17286,7 +21037,11 @@
       }
     },
     {
+<<<<<<< Updated upstream
       "id": "8dc54ad8-8ffa-4496-bf4e-8a65afec467b",
+=======
+      "id": "871d4552-dd04-45d7-a2aa-813b422bbbc6",
+>>>>>>> Stashed changes
       "title": "Vulnerability in Symantec products (April 30, 2025)",
       "source": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0357/",
       "published": "2025-04-30T00:00:00",
@@ -17322,11 +21077,19 @@
         "scheduled_tasks": []
       },
       "tags": [
+<<<<<<< Updated upstream
         "RSS to IOC Collector",
         "Remote Code Execution",
         "ssi-gouv",
         "Malware",
         "Spyware",
+=======
+        "ssi-gouv",
+        "RSS to IOC Collector",
+        "Spyware",
+        "Malware",
+        "Remote Code Execution",
+>>>>>>> Stashed changes
         "CVE"
       ],
       "enrichment": {
@@ -17416,7 +21179,11 @@
           {
             "ioc": "cyber.gouv.fr",
             "type": "domains",
+<<<<<<< Updated upstream
             "risk_score": 0
+=======
+            "risk_score": 10
+>>>>>>> Stashed changes
           },
           {
             "ioc": "service-public.fr",
@@ -17457,7 +21224,11 @@
       }
     },
     {
+<<<<<<< Updated upstream
       "id": "5bf66302-f750-4ec7-9a62-3f9e9ce37383",
+=======
+      "id": "e4d95620-3374-4f53-ac0a-49fdf6baeedd",
+>>>>>>> Stashed changes
       "title": "Multiple vulnerabilities in Splunk User Behavior Analytics (UBA) (April 30, 2025)",
       "source": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0356/",
       "published": "2025-04-30T00:00:00",
@@ -17515,9 +21286,15 @@
         "scheduled_tasks": []
       },
       "tags": [
+<<<<<<< Updated upstream
         "Remote Code Execution",
         "RSS to IOC Collector",
         "CVE",
+=======
+        "RSS to IOC Collector",
+        "CVE",
+        "Remote Code Execution",
+>>>>>>> Stashed changes
         "ssi-gouv"
       ],
       "enrichment": {
@@ -17754,7 +21531,11 @@
           {
             "ioc": "www.cve.org",
             "type": "domains",
+<<<<<<< Updated upstream
             "risk_score": 0
+=======
+            "risk_score": 10
+>>>>>>> Stashed changes
           },
           {
             "ioc": "www.cve.org",
@@ -17875,7 +21656,11 @@
       }
     },
     {
+<<<<<<< Updated upstream
       "id": "5214cc40-000f-4074-a25e-9d9682c26ee5",
+=======
+      "id": "369ac38b-4f82-4154-8396-c795d92e9b28",
+>>>>>>> Stashed changes
       "title": "Multiple vulnerabilities in Google Chrome (April 30, 2025)",
       "source": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0354/",
       "published": "2025-04-30T00:00:00",
@@ -17918,9 +21703,15 @@
         "scheduled_tasks": []
       },
       "tags": [
+<<<<<<< Updated upstream
         "Remote Code Execution",
         "RSS to IOC Collector",
         "CVE",
+=======
+        "RSS to IOC Collector",
+        "CVE",
+        "Remote Code Execution",
+>>>>>>> Stashed changes
         "ssi-gouv"
       ],
       "enrichment": {
@@ -18042,12 +21833,20 @@
           {
             "ioc": "www.cve.org",
             "type": "domains",
+<<<<<<< Updated upstream
             "risk_score": 0
+=======
+            "risk_score": 10
+>>>>>>> Stashed changes
           },
           {
             "ioc": "www.cve.org",
             "type": "domains",
+<<<<<<< Updated upstream
             "risk_score": 10
+=======
+            "risk_score": 0
+>>>>>>> Stashed changes
           },
           {
             "ioc": "cyber.gouv.fr",
@@ -18108,7 +21907,11 @@
       }
     },
     {
+<<<<<<< Updated upstream
       "id": "307ae78d-8952-409a-a89b-d8c22a04420e",
+=======
+      "id": "e10a6d94-d75b-481c-9d52-bd2b6e90868d",
+>>>>>>> Stashed changes
       "title": "Multiple vulnerabilities in Mattermost Server (April 30, 2025)",
       "source": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0355/",
       "published": "2025-04-30T00:00:00",
@@ -18138,8 +21941,13 @@
         "scheduled_tasks": []
       },
       "tags": [
+<<<<<<< Updated upstream
         "Remote Code Execution",
         "RSS to IOC Collector",
+=======
+        "RSS to IOC Collector",
+        "Remote Code Execution",
+>>>>>>> Stashed changes
         "ssi-gouv"
       ],
       "enrichment": {
@@ -18261,7 +22069,11 @@
           {
             "ioc": "mattermost.com",
             "type": "domains",
+<<<<<<< Updated upstream
             "risk_score": 0
+=======
+            "risk_score": 5
+>>>>>>> Stashed changes
           },
           {
             "ioc": "mattermost.com",
@@ -18271,7 +22083,11 @@
           {
             "ioc": "mattermost.com",
             "type": "domains",
+<<<<<<< Updated upstream
             "risk_score": 0
+=======
+            "risk_score": 10
+>>>>>>> Stashed changes
           },
           {
             "ioc": "cyber.gouv.fr",
@@ -18286,12 +22102,20 @@
           {
             "ioc": "legifrance.gouv.fr",
             "type": "domains",
+<<<<<<< Updated upstream
             "risk_score": 5
+=======
+            "risk_score": 0
+>>>>>>> Stashed changes
           },
           {
             "ioc": "info.gouv.fr",
             "type": "domains",
+<<<<<<< Updated upstream
             "risk_score": 0
+=======
+            "risk_score": 5
+>>>>>>> Stashed changes
           },
           {
             "ioc": "france.fr",
@@ -18332,7 +22156,11 @@
       }
     },
     {
+<<<<<<< Updated upstream
       "id": "58fa5725-4ad5-4ca1-893b-bab03db02037",
+=======
+      "id": "780ecf41-2c24-4caa-986d-e38506a6a43c",
+>>>>>>> Stashed changes
       "title": "Multiple vulnerabilities in IBM products (May 02, 2025)",
       "source": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0370/",
       "published": "2025-05-02T00:00:00",
@@ -18432,8 +22260,13 @@
         "scheduled_tasks": []
       },
       "tags": [
+<<<<<<< Updated upstream
         "RSS to IOC Collector",
         "ssi-gouv",
+=======
+        "ssi-gouv",
+        "RSS to IOC Collector",
+>>>>>>> Stashed changes
         "Web/Application",
         "Remote Code Execution",
         "CVE"
@@ -19064,12 +22897,20 @@
           {
             "ioc": "www.cve.org",
             "type": "domains",
+<<<<<<< Updated upstream
             "risk_score": 0
+=======
+            "risk_score": 10
+>>>>>>> Stashed changes
           },
           {
             "ioc": "www.cve.org",
             "type": "domains",
+<<<<<<< Updated upstream
             "risk_score": 10
+=======
+            "risk_score": 0
+>>>>>>> Stashed changes
           },
           {
             "ioc": "www.cve.org",
@@ -19310,7 +23151,11 @@
       }
     },
     {
+<<<<<<< Updated upstream
       "id": "2a2d542a-13b1-418e-b654-c22ac0dacb41",
+=======
+      "id": "dbe6ebd2-cc08-4176-a463-53f5ec98c2c5",
+>>>>>>> Stashed changes
       "title": "Multiple vulnerabilities in Microsoft Azure (May 02, 2025)",
       "source": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0364/",
       "published": "2025-05-02T00:00:00",
@@ -19351,9 +23196,15 @@
         "scheduled_tasks": []
       },
       "tags": [
+<<<<<<< Updated upstream
         "Remote Code Execution",
         "RSS to IOC Collector",
         "CVE",
+=======
+        "RSS to IOC Collector",
+        "CVE",
+        "Remote Code Execution",
+>>>>>>> Stashed changes
         "ssi-gouv"
       ],
       "enrichment": {
@@ -19556,7 +23407,11 @@
           {
             "ioc": "www.cve.org",
             "type": "domains",
+<<<<<<< Updated upstream
             "risk_score": 10
+=======
+            "risk_score": 0
+>>>>>>> Stashed changes
           },
           {
             "ioc": "www.cve.org",
@@ -19586,7 +23441,11 @@
           {
             "ioc": "legifrance.gouv.fr",
             "type": "domains",
+<<<<<<< Updated upstream
             "risk_score": 0
+=======
+            "risk_score": 10
+>>>>>>> Stashed changes
           },
           {
             "ioc": "info.gouv.fr",
@@ -19657,7 +23516,11 @@
       }
     },
     {
+<<<<<<< Updated upstream
       "id": "a3c10d91-ea55-4271-b8eb-a995c31a21be",
+=======
+      "id": "25c7dd80-c76f-4e2f-95dd-af7abfeacab0",
+>>>>>>> Stashed changes
       "title": "Vulnerability in Microsoft products (May 02, 2025)",
       "source": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0365/",
       "published": "2025-05-02T00:00:00",
@@ -19690,9 +23553,15 @@
         "scheduled_tasks": []
       },
       "tags": [
+<<<<<<< Updated upstream
         "Remote Code Execution",
         "RSS to IOC Collector",
         "CVE",
+=======
+        "RSS to IOC Collector",
+        "CVE",
+        "Remote Code Execution",
+>>>>>>> Stashed changes
         "ssi-gouv"
       ],
       "enrichment": {
@@ -19785,7 +23654,11 @@
           {
             "ioc": "service-public.fr",
             "type": "domains",
+<<<<<<< Updated upstream
             "risk_score": 10
+=======
+            "risk_score": 0
+>>>>>>> Stashed changes
           },
           {
             "ioc": "legifrance.gouv.fr",
@@ -19821,7 +23694,11 @@
       }
     },
     {
+<<<<<<< Updated upstream
       "id": "664b9ea6-2591-46a8-8d12-7daffb6cbf9d",
+=======
+      "id": "f62c61dc-5851-4604-aa8c-42dc1b6017e5",
+>>>>>>> Stashed changes
       "title": "Multiple vulnerabilities in the Linux de Debian nucleus (May 02, 2025)",
       "source": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0368/",
       "published": "2025-05-02T00:00:00",
@@ -19957,10 +23834,17 @@
         "scheduled_tasks": []
       },
       "tags": [
+<<<<<<< Updated upstream
         "RSS to IOC Collector",
         "Remote Code Execution",
         "ssi-gouv",
         "Malware",
+=======
+        "ssi-gouv",
+        "RSS to IOC Collector",
+        "Malware",
+        "Remote Code Execution",
+>>>>>>> Stashed changes
         "CVE"
       ],
       "enrichment": {
@@ -21044,7 +24928,11 @@
       }
     },
     {
+<<<<<<< Updated upstream
       "id": "9a0fef87-de2a-44cd-b646-213b25673535",
+=======
+      "id": "a9468c65-e906-44b4-bb9f-740a61827a90",
+>>>>>>> Stashed changes
       "title": "Multiple vulnerabilities in Microsoft Edge (May 02, 2025)",
       "source": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0363/",
       "published": "2025-05-02T00:00:00",
@@ -21078,9 +24966,15 @@
         "scheduled_tasks": []
       },
       "tags": [
+<<<<<<< Updated upstream
         "Remote Code Execution",
         "RSS to IOC Collector",
         "CVE",
+=======
+        "RSS to IOC Collector",
+        "CVE",
+        "Remote Code Execution",
+>>>>>>> Stashed changes
         "ssi-gouv"
       ],
       "enrichment": {
@@ -21317,12 +25211,20 @@
           {
             "ioc": "legifrance.gouv.fr",
             "type": "domains",
+<<<<<<< Updated upstream
             "risk_score": 0
+=======
+            "risk_score": 10
+>>>>>>> Stashed changes
           },
           {
             "ioc": "info.gouv.fr",
             "type": "domains",
+<<<<<<< Updated upstream
             "risk_score": 10
+=======
+            "risk_score": 0
+>>>>>>> Stashed changes
           },
           {
             "ioc": "france.fr",
@@ -21388,7 +25290,11 @@
       }
     },
     {
+<<<<<<< Updated upstream
       "id": "03b95f5a-c3e1-4ec0-ba90-0263bfe8da9a",
+=======
+      "id": "26e016c3-32ef-4c56-b133-7eb17f752f09",
+>>>>>>> Stashed changes
       "title": "Multiple vulnerabilities in the Linux nucleus of Ubuntu (02 May 2025)",
       "source": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0366/",
       "published": "2025-05-02T00:00:00",
@@ -23078,9 +26984,15 @@
         "scheduled_tasks": []
       },
       "tags": [
+<<<<<<< Updated upstream
         "Remote Code Execution",
         "RSS to IOC Collector",
         "CVE",
+=======
+        "RSS to IOC Collector",
+        "CVE",
+        "Remote Code Execution",
+>>>>>>> Stashed changes
         "ssi-gouv"
       ],
       "enrichment": {
@@ -30696,16 +34608,61 @@
           {
             "ioc": "ubuntu.com",
             "type": "domains",
-            "risk_score": 0
-          },
-          {
-            "ioc": "ubuntu.com",
-            "type": "domains",
+<<<<<<< Updated upstream
+=======
             "risk_score": 30
           },
           {
             "ioc": "ubuntu.com",
             "type": "domains",
+>>>>>>> Stashed changes
+            "risk_score": 0
+          },
+          {
+            "ioc": "ubuntu.com",
+            "type": "domains",
+<<<<<<< Updated upstream
+            "risk_score": 30
+          },
+          {
+            "ioc": "ubuntu.com",
+=======
+            "risk_score": 0
+          },
+          {
+            "ioc": "www.cve.org",
+            "type": "domains",
+            "risk_score": 30
+          },
+          {
+            "ioc": "www.cve.org",
+            "type": "domains",
+            "risk_score": 0
+          },
+          {
+            "ioc": "www.cve.org",
+            "type": "domains",
+            "risk_score": 0
+          },
+          {
+            "ioc": "www.cve.org",
+            "type": "domains",
+            "risk_score": 0
+          },
+          {
+            "ioc": "www.cve.org",
+            "type": "domains",
+            "risk_score": 0
+          },
+          {
+            "ioc": "www.cve.org",
+            "type": "domains",
+            "risk_score": 0
+          },
+          {
+            "ioc": "www.cve.org",
+>>>>>>> Stashed changes
+            "type": "domains",
             "risk_score": 30
           },
           {
@@ -34844,6 +38801,7 @@
             "risk_score": 0
           },
           {
+<<<<<<< Updated upstream
             "ioc": "www.cve.org",
             "type": "domains",
             "risk_score": 0
@@ -34879,6 +38837,8 @@
             "risk_score": 0
           },
           {
+=======
+>>>>>>> Stashed changes
             "ioc": "cyber.gouv.fr",
             "type": "domains",
             "risk_score": 0
@@ -39102,7 +43062,11 @@
       }
     },
     {
+<<<<<<< Updated upstream
       "id": "8f8c9dae-a4fc-4ce8-bb68-89bb8338d57e",
+=======
+      "id": "322b78dc-c157-4601-a0ba-62b16a2ca125",
+>>>>>>> Stashed changes
       "title": "Multiple vulnerabilities in Mozilla products (May 02, 2025)",
       "source": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0361/",
       "published": "2025-05-02T00:00:00",
@@ -39135,9 +43099,15 @@
         "scheduled_tasks": []
       },
       "tags": [
+<<<<<<< Updated upstream
         "Remote Code Execution",
         "RSS to IOC Collector",
         "CVE",
+=======
+        "RSS to IOC Collector",
+        "CVE",
+        "Remote Code Execution",
+>>>>>>> Stashed changes
         "ssi-gouv"
       ],
       "enrichment": {
@@ -39343,7 +43313,11 @@
           {
             "ioc": "legifrance.gouv.fr",
             "type": "domains",
+<<<<<<< Updated upstream
             "risk_score": 0
+=======
+            "risk_score": 10
+>>>>>>> Stashed changes
           },
           {
             "ioc": "info.gouv.fr",
@@ -39414,7 +43388,11 @@
       }
     },
     {
+<<<<<<< Updated upstream
       "id": "c22b8563-dc6b-495b-9ba4-25af276cdc43",
+=======
+      "id": "8937a5f7-921f-4c46-a198-d8b6cc7c1990",
+>>>>>>> Stashed changes
       "title": "Multiple vulnerabilities in Elastic products (May 02, 2025)",
       "source": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0359/",
       "published": "2025-05-02T00:00:00",
@@ -39459,8 +43437,13 @@
         "scheduled_tasks": []
       },
       "tags": [
+<<<<<<< Updated upstream
         "RSS to IOC Collector",
         "ssi-gouv",
+=======
+        "ssi-gouv",
+        "RSS to IOC Collector",
+>>>>>>> Stashed changes
         "Web/Application",
         "Remote Code Execution",
         "CVE"
@@ -39775,7 +43758,11 @@
           {
             "ioc": "www.cve.org",
             "type": "domains",
+<<<<<<< Updated upstream
             "risk_score": 10
+=======
+            "risk_score": 0
+>>>>>>> Stashed changes
           },
           {
             "ioc": "www.cve.org",
@@ -39800,7 +43787,11 @@
           {
             "ioc": "service-public.fr",
             "type": "domains",
+<<<<<<< Updated upstream
             "risk_score": 0
+=======
+            "risk_score": 10
+>>>>>>> Stashed changes
           },
           {
             "ioc": "legifrance.gouv.fr",
@@ -39896,7 +43887,11 @@
       }
     },
     {
+<<<<<<< Updated upstream
       "id": "06e8fef7-76e9-4964-9f24-8d7a277722dd",
+=======
+      "id": "23e6bc51-92d0-4d4d-b62a-9c35fca2800a",
+>>>>>>> Stashed changes
       "title": "Multiple vulnerabilities in tenable products (May 02, 2025)",
       "source": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0360/",
       "published": "2025-05-02T00:00:00",
@@ -39938,9 +43933,15 @@
         "scheduled_tasks": []
       },
       "tags": [
+<<<<<<< Updated upstream
         "Remote Code Execution",
         "RSS to IOC Collector",
         "CVE",
+=======
+        "RSS to IOC Collector",
+        "CVE",
+        "Remote Code Execution",
+>>>>>>> Stashed changes
         "ssi-gouv"
       ],
       "enrichment": {
@@ -40098,7 +44099,11 @@
           {
             "ioc": "www.cve.org",
             "type": "domains",
+<<<<<<< Updated upstream
             "risk_score": 0
+=======
+            "risk_score": 10
+>>>>>>> Stashed changes
           },
           {
             "ioc": "cyber.gouv.fr",
@@ -40118,7 +44123,11 @@
           {
             "ioc": "info.gouv.fr",
             "type": "domains",
+<<<<<<< Updated upstream
             "risk_score": 10
+=======
+            "risk_score": 0
+>>>>>>> Stashed changes
           },
           {
             "ioc": "france.fr",
@@ -40169,7 +44178,11 @@
       }
     },
     {
+<<<<<<< Updated upstream
       "id": "e6f70b79-0f87-4f74-ae09-ce5c34388fdc",
+=======
+      "id": "817135e5-aa04-486c-8eb2-419076aa2d42",
+>>>>>>> Stashed changes
       "title": "Multiple vulnerabilities in the Linux nucleus of Susa (02 May 2025)",
       "source": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0369/",
       "published": "2025-05-02T00:00:00",
@@ -40213,9 +44226,15 @@
         "scheduled_tasks": []
       },
       "tags": [
+<<<<<<< Updated upstream
         "Remote Code Execution",
         "RSS to IOC Collector",
         "CVE",
+=======
+        "RSS to IOC Collector",
+        "CVE",
+        "Remote Code Execution",
+>>>>>>> Stashed changes
         "ssi-gouv"
       ],
       "enrichment": {
@@ -40706,7 +44725,11 @@
       }
     },
     {
+<<<<<<< Updated upstream
       "id": "78c6fee7-9778-4ca0-bb79-216deb44ad48",
+=======
+      "id": "806face8-a39e-418c-a52e-29b7558b9c3d",
+>>>>>>> Stashed changes
       "title": "Vulnerability in the Linux nucleus of Red Hat (02 May 2025)",
       "source": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0367/",
       "published": "2025-05-02T00:00:00",
@@ -40740,9 +44763,15 @@
         "scheduled_tasks": []
       },
       "tags": [
+<<<<<<< Updated upstream
         "Remote Code Execution",
         "RSS to IOC Collector",
         "CVE",
+=======
+        "RSS to IOC Collector",
+        "CVE",
+        "Remote Code Execution",
+>>>>>>> Stashed changes
         "ssi-gouv"
       ],
       "enrichment": {
@@ -40823,7 +44852,11 @@
           {
             "ioc": "www.cve.org",
             "type": "domains",
+<<<<<<< Updated upstream
             "risk_score": 10
+=======
+            "risk_score": 0
+>>>>>>> Stashed changes
           },
           {
             "ioc": "cyber.gouv.fr",
@@ -40869,7 +44902,11 @@
       }
     },
     {
+<<<<<<< Updated upstream
       "id": "c84d6c5d-1bfe-438f-9955-0aa4d5f47e49",
+=======
+      "id": "fa0900e0-4cf9-4f3b-b944-c11c1f7e0d68",
+>>>>>>> Stashed changes
       "title": "Vulnerability in Sonicwall Secure Mobile Access (May 02, 2025)",
       "source": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0362/",
       "published": "2025-05-02T00:00:00",
@@ -40887,8 +44924,12 @@
         "mac_addresses": [],
         "ports": [
           "0362",
+<<<<<<< Updated upstream
           "0008",
           "1000"
+=======
+          "0008"
+>>>>>>> Stashed changes
         ],
         "asn": [],
         "cidr": [],
@@ -40901,9 +44942,15 @@
         "scheduled_tasks": []
       },
       "tags": [
+<<<<<<< Updated upstream
         "Remote Code Execution",
         "RSS to IOC Collector",
         "Web/Application",
+=======
+        "RSS to IOC Collector",
+        "Web/Application",
+        "Remote Code Execution",
+>>>>>>> Stashed changes
         "ssi-gouv"
       ],
       "enrichment": {
@@ -40991,7 +45038,11 @@
           {
             "ioc": "info.gouv.fr",
             "type": "domains",
+<<<<<<< Updated upstream
             "risk_score": 10
+=======
+            "risk_score": 0
+>>>>>>> Stashed changes
           },
           {
             "ioc": "france.fr",
@@ -41001,7 +45052,11 @@
           {
             "ioc": "info.gouv.fr",
             "type": "domains",
+<<<<<<< Updated upstream
             "risk_score": 0
+=======
+            "risk_score": 10
+>>>>>>> Stashed changes
           },
           {
             "ioc": "https://psirt.global.sonicwall.com/vuln-detail/SNWLID-2025-0008",
@@ -41012,7 +45067,11 @@
       }
     },
     {
+<<<<<<< Updated upstream
       "id": "0a75ff23-b89c-4e37-97ac-913faf52925d",
+=======
+      "id": "25e13ba0-2a74-497e-88fb-962432315fec",
+>>>>>>> Stashed changes
       "title": "CERTFR-2025-ACT-019 news bulletin (May 05, 2025)",
       "source": "https://www.cert.ssi.gouv.fr/actualite/CERTFR-2025-ACT-019/",
       "published": "2025-05-05T00:00:00",
@@ -41069,9 +45128,15 @@
         "scheduled_tasks": []
       },
       "tags": [
+<<<<<<< Updated upstream
         "RSS to IOC Collector",
         "ssi-gouv",
         "Exploitation",
+=======
+        "ssi-gouv",
+        "Exploitation",
+        "RSS to IOC Collector",
+>>>>>>> Stashed changes
         "Remote Code Execution",
         "CVE"
       ],
@@ -41555,7 +45620,11 @@
           {
             "ioc": "www.ibm.com",
             "type": "domains",
+<<<<<<< Updated upstream
             "risk_score": 30
+=======
+            "risk_score": 0
+>>>>>>> Stashed changes
           },
           {
             "ioc": "ubuntu.com",
@@ -41615,7 +45684,11 @@
           {
             "ioc": "psirt.global.sonicwall.com",
             "type": "domains",
+<<<<<<< Updated upstream
             "risk_score": 0
+=======
+            "risk_score": 10
+>>>>>>> Stashed changes
           },
           {
             "ioc": "psirt.global.sonicwall.com",
@@ -41781,7 +45854,11 @@
       }
     },
     {
+<<<<<<< Updated upstream
       "id": "0c374b77-38c2-4985-8c44-e7df03b23d32",
+=======
+      "id": "bb9e40b8-5575-4e53-9e4f-2a6d1020e1d0",
+>>>>>>> Stashed changes
       "title": "Multiple vulnerabilities in Google Android (May 06, 2025)",
       "source": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0371/",
       "published": "2025-05-06T00:00:00",
@@ -41902,9 +45979,15 @@
         "scheduled_tasks": []
       },
       "tags": [
+<<<<<<< Updated upstream
         "RSS to IOC Collector",
         "ssi-gouv",
         "Exploitation",
+=======
+        "ssi-gouv",
+        "Exploitation",
+        "RSS to IOC Collector",
+>>>>>>> Stashed changes
         "Remote Code Execution",
         "CVE"
       ],
@@ -42624,7 +46707,11 @@
           {
             "ioc": "cyber.gouv.fr",
             "type": "domains",
+<<<<<<< Updated upstream
             "risk_score": 10
+=======
+            "risk_score": 0
+>>>>>>> Stashed changes
           },
           {
             "ioc": "service-public.fr",
@@ -42890,7 +46977,11 @@
       }
     },
     {
+<<<<<<< Updated upstream
       "id": "ffdff9b1-f159-4dc6-8335-0b32dc1bc643",
+=======
+      "id": "d9a06a81-1ef0-4720-9a42-7c4de662f2f2",
+>>>>>>> Stashed changes
       "title": "Multiple vulnerabilities in Tenable Security Center (07 May 2025)",
       "source": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0374/",
       "published": "2025-05-07T00:00:00",
@@ -42927,9 +47018,15 @@
         "scheduled_tasks": []
       },
       "tags": [
+<<<<<<< Updated upstream
         "Remote Code Execution",
         "RSS to IOC Collector",
         "CVE",
+=======
+        "RSS to IOC Collector",
+        "CVE",
+        "Remote Code Execution",
+>>>>>>> Stashed changes
         "ssi-gouv"
       ],
       "enrichment": {
@@ -43095,7 +47192,11 @@
       }
     },
     {
+<<<<<<< Updated upstream
       "id": "89e07ab0-07f1-4336-a5a6-574b5a3e10cf",
+=======
+      "id": "37e7a821-66bb-44f3-bd4e-cda378481e73",
+>>>>>>> Stashed changes
       "title": "Vulnerability in",
       "source": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0375/",
       "published": "2025-05-07T00:00:00",
@@ -43137,8 +47238,13 @@
         "scheduled_tasks": []
       },
       "tags": [
+<<<<<<< Updated upstream
         "RSS to IOC Collector",
         "ssi-gouv",
+=======
+        "ssi-gouv",
+        "RSS to IOC Collector",
+>>>>>>> Stashed changes
         "Web/Application",
         "Remote Code Execution",
         "CVE"
@@ -43250,7 +47356,11 @@
           {
             "ioc": "legifrance.gouv.fr",
             "type": "domains",
+<<<<<<< Updated upstream
             "risk_score": 0
+=======
+            "risk_score": 10
+>>>>>>> Stashed changes
           },
           {
             "ioc": "info.gouv.fr",
@@ -43281,7 +47391,11 @@
       }
     },
     {
+<<<<<<< Updated upstream
       "id": "a611c71c-0017-4b47-ad3e-34de76956241",
+=======
+      "id": "18a6a5e6-0741-43b5-a8e8-2a6bd7c2a178",
+>>>>>>> Stashed changes
       "title": "Multiple vulnerabilities in Mariadb (May 07, 2025)",
       "source": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0373/",
       "published": "2025-05-07T00:00:00",
@@ -43316,9 +47430,15 @@
         "scheduled_tasks": []
       },
       "tags": [
+<<<<<<< Updated upstream
         "Remote Code Execution",
         "RSS to IOC Collector",
         "CVE",
+=======
+        "RSS to IOC Collector",
+        "CVE",
+        "Remote Code Execution",
+>>>>>>> Stashed changes
         "ssi-gouv"
       ],
       "enrichment": {
@@ -43413,7 +47533,11 @@
           {
             "ioc": "mariadb.com",
             "type": "domains",
+<<<<<<< Updated upstream
             "risk_score": 0
+=======
+            "risk_score": 10
+>>>>>>> Stashed changes
           },
           {
             "ioc": "www.cve.org",
@@ -43433,17 +47557,29 @@
           {
             "ioc": "service-public.fr",
             "type": "domains",
+<<<<<<< Updated upstream
             "risk_score": 0
+=======
+            "risk_score": 30
+>>>>>>> Stashed changes
           },
           {
             "ioc": "legifrance.gouv.fr",
             "type": "domains",
+<<<<<<< Updated upstream
             "risk_score": 10
+=======
+            "risk_score": 0
+>>>>>>> Stashed changes
           },
           {
             "ioc": "info.gouv.fr",
             "type": "domains",
+<<<<<<< Updated upstream
             "risk_score": 30
+=======
+            "risk_score": 0
+>>>>>>> Stashed changes
           },
           {
             "ioc": "france.fr",
@@ -43474,7 +47610,11 @@
       }
     },
     {
+<<<<<<< Updated upstream
       "id": "b81085d9-bafc-46ec-9a5d-60a901c35652",
+=======
+      "id": "b9386957-fceb-40dd-9612-3aca81d99bb3",
+>>>>>>> Stashed changes
       "title": "Multiple vulnerabilities in Elastic products (07 May 2025)",
       "source": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0377/",
       "published": "2025-05-07T00:00:00",
@@ -43509,9 +47649,15 @@
         "scheduled_tasks": []
       },
       "tags": [
+<<<<<<< Updated upstream
         "Remote Code Execution",
         "RSS to IOC Collector",
         "CVE",
+=======
+        "RSS to IOC Collector",
+        "CVE",
+        "Remote Code Execution",
+>>>>>>> Stashed changes
         "ssi-gouv"
       ],
       "enrichment": {
@@ -43655,6 +47801,7 @@
           {
             "ioc": "discuss.elastic.co",
             "type": "domains",
+<<<<<<< Updated upstream
             "risk_score": 0
           },
           {
@@ -43668,6 +47815,21 @@
             "risk_score": 10
           },
           {
+=======
+            "risk_score": 10
+          },
+          {
+            "ioc": "www.cve.org",
+            "type": "domains",
+            "risk_score": 0
+          },
+          {
+            "ioc": "www.cve.org",
+            "type": "domains",
+            "risk_score": 0
+          },
+          {
+>>>>>>> Stashed changes
             "ioc": "cyber.gouv.fr",
             "type": "domains",
             "risk_score": 0
@@ -43721,7 +47883,11 @@
       }
     },
     {
+<<<<<<< Updated upstream
       "id": "10be1a0c-aeb6-4529-aee0-c50bef369aaa",
+=======
+      "id": "10fce702-224e-45c5-b9ef-598e10cdf157",
+>>>>>>> Stashed changes
       "title": "Vulnerability in Google Chrome (May 07, 2025)",
       "source": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0376/",
       "published": "2025-05-07T00:00:00",
@@ -43758,9 +47924,15 @@
         "scheduled_tasks": []
       },
       "tags": [
+<<<<<<< Updated upstream
         "Remote Code Execution",
         "RSS to IOC Collector",
         "CVE",
+=======
+        "RSS to IOC Collector",
+        "CVE",
+        "Remote Code Execution",
+>>>>>>> Stashed changes
         "ssi-gouv"
       ],
       "enrichment": {
@@ -43841,7 +48013,11 @@
           {
             "ioc": "chromereleases.googleblog.com",
             "type": "domains",
+<<<<<<< Updated upstream
             "risk_score": 10
+=======
+            "risk_score": 0
+>>>>>>> Stashed changes
           },
           {
             "ioc": "stable-channel-update-for-desktop.html",
@@ -43856,7 +48032,11 @@
           {
             "ioc": "cyber.gouv.fr",
             "type": "domains",
+<<<<<<< Updated upstream
             "risk_score": 0
+=======
+            "risk_score": 10
+>>>>>>> Stashed changes
           },
           {
             "ioc": "service-public.fr",
@@ -43897,7 +48077,11 @@
       }
     },
     {
+<<<<<<< Updated upstream
       "id": "7c1f6cae-ad4e-4633-988d-82acf1401a19",
+=======
+      "id": "4434f500-5cb4-4bb1-a596-d843e47e1bf1",
+>>>>>>> Stashed changes
       "title": "Multiple vulnerabilities in Google Pixel (07 May 2025)",
       "source": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0372/",
       "published": "2025-05-07T00:00:00",
@@ -43934,9 +48118,15 @@
         "scheduled_tasks": []
       },
       "tags": [
+<<<<<<< Updated upstream
         "Remote Code Execution",
         "RSS to IOC Collector",
         "CVE",
+=======
+        "RSS to IOC Collector",
+        "CVE",
+        "Remote Code Execution",
+>>>>>>> Stashed changes
         "ssi-gouv"
       ],
       "enrichment": {
@@ -44032,7 +48222,11 @@
           {
             "ioc": "www.cve.org",
             "type": "domains",
+<<<<<<< Updated upstream
             "risk_score": 10
+=======
+            "risk_score": 0
+>>>>>>> Stashed changes
           },
           {
             "ioc": "www.cve.org",
@@ -44067,7 +48261,11 @@
           {
             "ioc": "france.fr",
             "type": "domains",
+<<<<<<< Updated upstream
             "risk_score": 0
+=======
+            "risk_score": 10
+>>>>>>> Stashed changes
           },
           {
             "ioc": "info.gouv.fr",
@@ -44098,7 +48296,11 @@
       }
     },
     {
+<<<<<<< Updated upstream
       "id": "df94a9c1-27f7-45ca-b11c-0018124c8b63",
+=======
+      "id": "9602bd25-2da0-4bc2-869e-0ee0aa907294",
+>>>>>>> Stashed changes
       "title": "Multiple vulnerabilities in the Linux nucleus of Ubuntu (May 09, 2025)",
       "source": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0387/",
       "published": "2025-05-09T00:00:00",
@@ -44189,9 +48391,15 @@
         "scheduled_tasks": []
       },
       "tags": [
+<<<<<<< Updated upstream
         "Remote Code Execution",
         "RSS to IOC Collector",
         "CVE",
+=======
+        "RSS to IOC Collector",
+        "CVE",
+        "Remote Code Execution",
+>>>>>>> Stashed changes
         "ssi-gouv"
       ],
       "enrichment": {
@@ -45054,6 +49262,44 @@
           {
             "ioc": "ubuntu.com",
             "type": "domains",
+<<<<<<< Updated upstream
+            "risk_score": 30
+=======
+            "risk_score": 0
+>>>>>>> Stashed changes
+          },
+          {
+            "ioc": "ubuntu.com",
+            "type": "domains",
+<<<<<<< Updated upstream
+            "risk_score": 30
+          },
+          {
+            "ioc": "ubuntu.com",
+            "type": "domains",
+            "risk_score": 30
+          },
+          {
+            "ioc": "ubuntu.com",
+            "type": "domains",
+            "risk_score": 30
+=======
+            "risk_score": 0
+>>>>>>> Stashed changes
+          },
+          {
+            "ioc": "ubuntu.com",
+            "type": "domains",
+            "risk_score": 0
+          },
+          {
+            "ioc": "ubuntu.com",
+            "type": "domains",
+            "risk_score": 0
+          },
+          {
+            "ioc": "ubuntu.com",
+            "type": "domains",
             "risk_score": 30
           },
           {
@@ -45074,16 +49320,6 @@
           {
             "ioc": "ubuntu.com",
             "type": "domains",
-            "risk_score": 0
-          },
-          {
-            "ioc": "ubuntu.com",
-            "type": "domains",
-            "risk_score": 0
-          },
-          {
-            "ioc": "ubuntu.com",
-            "type": "domains",
             "risk_score": 30
           },
           {
@@ -45099,7 +49335,16 @@
           {
             "ioc": "ubuntu.com",
             "type": "domains",
+<<<<<<< Updated upstream
+            "risk_score": 0
+          },
+          {
+            "ioc": "ubuntu.com",
+            "type": "domains",
+            "risk_score": 0
+=======
             "risk_score": 30
+>>>>>>> Stashed changes
           },
           {
             "ioc": "ubuntu.com",
@@ -45109,11 +49354,8 @@
           {
             "ioc": "ubuntu.com",
             "type": "domains",
-            "risk_score": 30
-          },
-          {
-            "ioc": "ubuntu.com",
-            "type": "domains",
+<<<<<<< Updated upstream
+=======
             "risk_score": 30
           },
           {
@@ -45129,25 +49371,11 @@
           {
             "ioc": "ubuntu.com",
             "type": "domains",
-            "risk_score": 30
-          },
-          {
-            "ioc": "ubuntu.com",
-            "type": "domains",
+>>>>>>> Stashed changes
             "risk_score": 0
           },
           {
             "ioc": "ubuntu.com",
-            "type": "domains",
-            "risk_score": 30
-          },
-          {
-            "ioc": "www.cve.org",
-            "type": "domains",
-            "risk_score": 0
-          },
-          {
-            "ioc": "www.cve.org",
             "type": "domains",
             "risk_score": 30
           },
@@ -45159,7 +49387,15 @@
           {
             "ioc": "www.cve.org",
             "type": "domains",
+<<<<<<< Updated upstream
+=======
             "risk_score": 0
+          },
+          {
+            "ioc": "www.cve.org",
+            "type": "domains",
+>>>>>>> Stashed changes
+            "risk_score": 30
           },
           {
             "ioc": "www.cve.org",
@@ -45399,6 +49635,24 @@
           {
             "ioc": "www.cve.org",
             "type": "domains",
+            "risk_score": 0
+          },
+          {
+            "ioc": "www.cve.org",
+            "type": "domains",
+            "risk_score": 0
+          },
+          {
+            "ioc": "www.cve.org",
+            "type": "domains",
+<<<<<<< Updated upstream
+=======
+            "risk_score": 0
+          },
+          {
+            "ioc": "www.cve.org",
+            "type": "domains",
+>>>>>>> Stashed changes
             "risk_score": 10
           },
           {
@@ -45407,6 +49661,7 @@
             "risk_score": 0
           },
           {
+<<<<<<< Updated upstream
             "ioc": "www.cve.org",
             "type": "domains",
             "risk_score": 0
@@ -45417,6 +49672,8 @@
             "risk_score": 0
           },
           {
+=======
+>>>>>>> Stashed changes
             "ioc": "cyber.gouv.fr",
             "type": "domains",
             "risk_score": 0
@@ -45840,7 +50097,11 @@
       }
     },
     {
+<<<<<<< Updated upstream
       "id": "5562cd81-39e7-4207-8c11-2cf43873a903",
+=======
+      "id": "c1ebf1bc-e410-48d1-8bd8-398aade45ded",
+>>>>>>> Stashed changes
       "title": "Multiple vulnerabilities in Cisco products (May 09, 2025)",
       "source": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0378/",
       "published": "2025-05-09T00:00:00",
@@ -45945,9 +50206,15 @@
         "scheduled_tasks": []
       },
       "tags": [
+<<<<<<< Updated upstream
         "RSS to IOC Collector",
         "DoS",
         "ssi-gouv",
+=======
+        "DoS",
+        "ssi-gouv",
+        "RSS to IOC Collector",
+>>>>>>> Stashed changes
         "C2",
         "Remote Code Execution",
         "CVE"
@@ -46486,7 +50753,11 @@
           {
             "ioc": "legifrance.gouv.fr",
             "type": "domains",
+<<<<<<< Updated upstream
             "risk_score": 0
+=======
+            "risk_score": 10
+>>>>>>> Stashed changes
           },
           {
             "ioc": "info.gouv.fr",
@@ -46496,7 +50767,11 @@
           {
             "ioc": "france.fr",
             "type": "domains",
+<<<<<<< Updated upstream
             "risk_score": 10
+=======
+            "risk_score": 0
+>>>>>>> Stashed changes
           },
           {
             "ioc": "info.gouv.fr",
@@ -46677,7 +50952,11 @@
       }
     },
     {
+<<<<<<< Updated upstream
       "id": "ca3ea576-fc79-4e7d-837f-8b47122f5426",
+=======
+      "id": "9baa230a-4fa8-4a03-bf79-1f0a9a8fbe58",
+>>>>>>> Stashed changes
       "title": "Multiple vulnerabilities in Gitlab (May 09, 2025)",
       "source": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0381/",
       "published": "2025-05-09T00:00:00",
@@ -46714,9 +50993,15 @@
         "scheduled_tasks": []
       },
       "tags": [
+<<<<<<< Updated upstream
         "Remote Code Execution",
         "RSS to IOC Collector",
         "CVE",
+=======
+        "RSS to IOC Collector",
+        "CVE",
+        "Remote Code Execution",
+>>>>>>> Stashed changes
         "ssi-gouv"
       ],
       "enrichment": {
@@ -46833,12 +51118,20 @@
           {
             "ioc": "www.cve.org",
             "type": "domains",
+<<<<<<< Updated upstream
             "risk_score": 10
+=======
+            "risk_score": 0
+>>>>>>> Stashed changes
           },
           {
             "ioc": "www.cve.org",
             "type": "domains",
+<<<<<<< Updated upstream
             "risk_score": 0
+=======
+            "risk_score": 10
+>>>>>>> Stashed changes
           },
           {
             "ioc": "cyber.gouv.fr",
@@ -46894,7 +51187,11 @@
       }
     },
     {
+<<<<<<< Updated upstream
       "id": "a800dd15-99e0-4ddf-83c8-bc92396d1620",
+=======
+      "id": "6b5aba6d-c028-4575-a0b5-8e3be1e2d2ad",
+>>>>>>> Stashed changes
       "title": "Vulnerability in Microsoft Edge (May 09, 2025)",
       "source": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0383/",
       "published": "2025-05-09T00:00:00",
@@ -46924,9 +51221,15 @@
         "scheduled_tasks": []
       },
       "tags": [
+<<<<<<< Updated upstream
         "Remote Code Execution",
         "RSS to IOC Collector",
         "CVE",
+=======
+        "RSS to IOC Collector",
+        "CVE",
+        "Remote Code Execution",
+>>>>>>> Stashed changes
         "ssi-gouv"
       ],
       "enrichment": {
@@ -47058,7 +51361,11 @@
       }
     },
     {
+<<<<<<< Updated upstream
       "id": "ca5ad409-d295-4ecc-b216-e9f1c10276c6",
+=======
+      "id": "0e35d1db-debe-4de9-a2df-8f0ce29b88dc",
+>>>>>>> Stashed changes
       "title": "Multiple vulnerabilities in IBM products (May 09, 2025)",
       "source": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0384/",
       "published": "2025-05-09T00:00:00",
@@ -47105,8 +51412,13 @@
         "scheduled_tasks": []
       },
       "tags": [
+<<<<<<< Updated upstream
         "RSS to IOC Collector",
         "ssi-gouv",
+=======
+        "ssi-gouv",
+        "RSS to IOC Collector",
+>>>>>>> Stashed changes
         "Web/Application",
         "Remote Code Execution",
         "CVE"
@@ -47335,7 +51647,11 @@
           {
             "ioc": "www.cve.org",
             "type": "domains",
+<<<<<<< Updated upstream
             "risk_score": 0
+=======
+            "risk_score": 10
+>>>>>>> Stashed changes
           },
           {
             "ioc": "www.cve.org",
@@ -47370,7 +51686,11 @@
           {
             "ioc": "info.gouv.fr",
             "type": "domains",
+<<<<<<< Updated upstream
             "risk_score": 10
+=======
+            "risk_score": 0
+>>>>>>> Stashed changes
           },
           {
             "ioc": "france.fr",
@@ -47451,7 +51771,11 @@
       }
     },
     {
+<<<<<<< Updated upstream
       "id": "abfcb8e4-ce11-4106-93f1-d5396e020e7e",
+=======
+      "id": "3c13d6c0-a8ef-49a2-bca6-0d1e6b974931",
+>>>>>>> Stashed changes
       "title": "Multiple vulnerabilities in the Linux nucleus of Red Hat (09 May 2025)",
       "source": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0385/",
       "published": "2025-05-09T00:00:00",
@@ -47499,9 +51823,15 @@
         "scheduled_tasks": []
       },
       "tags": [
+<<<<<<< Updated upstream
         "Remote Code Execution",
         "RSS to IOC Collector",
         "CVE",
+=======
+        "RSS to IOC Collector",
+        "CVE",
+        "Remote Code Execution",
+>>>>>>> Stashed changes
         "ssi-gouv"
       ],
       "enrichment": {
@@ -47864,7 +52194,11 @@
       }
     },
     {
+<<<<<<< Updated upstream
       "id": "16f1cdf8-0d11-4eaa-a798-a63e4e0a6063",
+=======
+      "id": "be292fe0-a8de-46dc-b28f-a261c0bdef90",
+>>>>>>> Stashed changes
       "title": "Multiple vulnerabilities in Sonicwall products (May 09, 2025)",
       "source": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0379/",
       "published": "2025-05-09T00:00:00",
@@ -47895,9 +52229,15 @@
         "scheduled_tasks": []
       },
       "tags": [
+<<<<<<< Updated upstream
         "Remote Code Execution",
         "RSS to IOC Collector",
         "CVE",
+=======
+        "RSS to IOC Collector",
+        "CVE",
+        "Remote Code Execution",
+>>>>>>> Stashed changes
         "ssi-gouv"
       ],
       "enrichment": {
@@ -48015,7 +52355,11 @@
           {
             "ioc": "www.cve.org",
             "type": "domains",
+<<<<<<< Updated upstream
             "risk_score": 0
+=======
+            "risk_score": 10
+>>>>>>> Stashed changes
           },
           {
             "ioc": "cyber.gouv.fr",
@@ -48040,7 +52384,11 @@
           {
             "ioc": "france.fr",
             "type": "domains",
+<<<<<<< Updated upstream
             "risk_score": 10
+=======
+            "risk_score": 0
+>>>>>>> Stashed changes
           },
           {
             "ioc": "info.gouv.fr",
@@ -48071,7 +52419,11 @@
       }
     },
     {
+<<<<<<< Updated upstream
       "id": "af41828e-757a-4752-87b2-1bffb6673fd5",
+=======
+      "id": "ebf78179-bb50-4aa4-b89b-4efbef1f194b",
+>>>>>>> Stashed changes
       "title": "Vulnerability in PostgreSql (09 May 2025)",
       "source": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0380/",
       "published": "2025-05-09T00:00:00",
@@ -48114,9 +52466,15 @@
         "scheduled_tasks": []
       },
       "tags": [
+<<<<<<< Updated upstream
         "Remote Code Execution",
         "RSS to IOC Collector",
         "CVE",
+=======
+        "RSS to IOC Collector",
+        "CVE",
+        "Remote Code Execution",
+>>>>>>> Stashed changes
         "ssi-gouv"
       ],
       "enrichment": {
@@ -48222,7 +52580,11 @@
           {
             "ioc": "www.cve.org",
             "type": "domains",
+<<<<<<< Updated upstream
             "risk_score": 10
+=======
+            "risk_score": 0
+>>>>>>> Stashed changes
           },
           {
             "ioc": "cyber.gouv.fr",
@@ -48268,7 +52630,11 @@
       }
     },
     {
+<<<<<<< Updated upstream
       "id": "ca1ed013-5681-4e16-8f64-8cc44a6c0173",
+=======
+      "id": "9e72d8c5-f877-4688-b698-f61fa5317cae",
+>>>>>>> Stashed changes
       "title": "Multiple vulnerabilities in F5 products (May 09, 2025)",
       "source": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0382/",
       "published": "2025-05-09T00:00:00",
@@ -48343,9 +52709,15 @@
         "scheduled_tasks": []
       },
       "tags": [
+<<<<<<< Updated upstream
         "Remote Code Execution",
         "RSS to IOC Collector",
         "CVE",
+=======
+        "RSS to IOC Collector",
+        "CVE",
+        "Remote Code Execution",
+>>>>>>> Stashed changes
         "ssi-gouv"
       ],
       "enrichment": {
@@ -48643,7 +53015,11 @@
           {
             "ioc": "www.cve.org",
             "type": "domains",
+<<<<<<< Updated upstream
             "risk_score": 0
+=======
+            "risk_score": 10
+>>>>>>> Stashed changes
           },
           {
             "ioc": "www.cve.org",
@@ -48789,7 +53165,11 @@
       }
     },
     {
+<<<<<<< Updated upstream
       "id": "0b353789-6190-4f4c-b17b-d25256baffbe",
+=======
+      "id": "ecc222cf-f9c9-4f81-aa43-f9791ec7a3ba",
+>>>>>>> Stashed changes
       "title": "Multiple vulnerabilities in the Linux nucleus of Susa (09 May 2025)",
       "source": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0386/",
       "published": "2025-05-09T00:00:00",
@@ -48827,9 +53207,15 @@
         "scheduled_tasks": []
       },
       "tags": [
+<<<<<<< Updated upstream
         "Remote Code Execution",
         "RSS to IOC Collector",
         "CVE",
+=======
+        "RSS to IOC Collector",
+        "CVE",
+        "Remote Code Execution",
+>>>>>>> Stashed changes
         "ssi-gouv"
       ],
       "enrichment": {
@@ -49164,7 +53550,11 @@
           {
             "ioc": "legifrance.gouv.fr",
             "type": "domains",
+<<<<<<< Updated upstream
             "risk_score": 10
+=======
+            "risk_score": 0
+>>>>>>> Stashed changes
           },
           {
             "ioc": "info.gouv.fr",
