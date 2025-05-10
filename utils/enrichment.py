@@ -171,20 +171,53 @@ def enrich_with_ner_and_scoring(text: str) -> dict:
     return {"entities": iocs, "enriched_iocs": enriched_iocs}
 
 def extract_ner(text: str) -> dict:
-    if nlp is None:
-        return {"actors": [], "malware": [], "mitre_techniques": [], "cves": [], "tools": [], "campaigns": []}
+    """
+    Extract Named Entities and other IOCs from the given text.
 
+    Args:
+        text (str): Input text containing potential IOCs.
+
+    Returns:
+        dict: Dictionary containing extracted IOCs categorized by type.
+    """
+    if nlp is None:
+        logging.warning("SpaCy NLP model is not loaded. Returning empty IOC result.")
+        return {
+            "actors": [],
+            "malware": [],
+            "mitre_techniques": [],
+            "cves": [],
+            "tools": [],
+            "campaigns": [],
+            "ipv4s": [],
+            "ipv6s": [],
+            "domains": [],
+            "urls": []
+        }
+
+    # Normalize text to handle defanged IOCs
+    def normalize_text(input_text):
+        return input_text.replace("[.]", ".").replace("(.)", ".").replace("hxxp", "http")
+
+    text = normalize_text(text)
+
+    # Ensure MITRE cache is loaded
     if not MITRE_CACHE["techniques"]:
+        logging.info("MITRE cache is empty. Fetching MITRE data.")
         fetch_mitre_data()
 
+    # Process text with SpaCy NLP
     doc = nlp(text)
     actors = set()
     malwares = set()
     techniques = set()
     tools = set()
     campaigns = set()
+
+    # Extract CVEs using regex
     cves = set(re.findall(r"\bCVE-\d{4}-\d{4,7}\b", text, flags=re.IGNORECASE))
 
+    # Extract other entities using SpaCy and MITRE cache
     for ent in doc.ents:
         ent_text = ent.text.strip().lower()
         if ent_text in {actor.lower() for actor in MITRE_CACHE["actors"]}:
@@ -198,6 +231,21 @@ def extract_ner(text: str) -> dict:
         if ent_text in {campaign.lower() for campaign in MITRE_CACHE["campaigns"]}:
             campaigns.add(ent_text)
 
+    # Extract IPv4 and IPv6 addresses
+    ipv4s = set(re.findall(r"\b(?:\d{1,3}\.){3}\d{1,3}\b", text))
+    ipv6s = set(re.findall(r"\b([a-fA-F0-9:]+:+)+[a-fA-F0-9]+\b", text))
+
+    # Extract domains and URLs
+    domains = set(re.findall(r"\b(?:[A-Za-z0-9-]+\.)+[A-Za-z]{2,}\b", text))
+    urls = set(re.findall(r"https?://[^\s\"'>]+", text))
+
+    # Log extracted entities
+
+    logging.info(f"Extracted IPv4s: {sorted(ipv4s)}")
+    logging.info(f"Extracted IPv6s: {sorted(ipv6s)}")
+    logging.info(f"Extracted Domains: {sorted(domains)}")
+    logging.info(f"Extracted URLs: {sorted(urls)}")
+
     return {
         "actors": sorted(actors),
         "malware": sorted(malwares),
@@ -205,4 +253,8 @@ def extract_ner(text: str) -> dict:
         "cves": sorted(cves),
         "tools": sorted(tools),
         "campaigns": sorted(campaigns),
+        "ipv4s": sorted(ipv4s),
+        "ipv6s": sorted(ipv6s),
+        "domains": sorted(domains),
+        "urls": sorted(urls),
     }
