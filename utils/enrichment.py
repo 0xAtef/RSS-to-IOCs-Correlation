@@ -159,6 +159,7 @@ def enrich_with_ner_and_scoring(text: str) -> dict:
         "urls": "url",
     }
 
+    # Only enrich the types defined in ioc_types_mapping
     for ioc_type, otx_type in ioc_types_mapping.items():
         ioc_list = iocs.get(ioc_type, [])
         if not ioc_list:

@@ -14,6 +14,7 @@ from utils.regex_patterns import IOC_PATTERNS
 from utils.enrichment import enrich_with_ner_and_scoring as enrich_with_ner
 
 def extract_iocs(text):
+    """Extract IOCs from the given text using regex patterns."""
     extracted = {}
     for ioc_type, pattern in IOC_PATTERNS.items():
         matches = pattern.findall(text)
@@ -34,13 +35,12 @@ def fetch_feed(feed_url, session, cfg):
         logging.error(f"Error fetching {feed_url}: {exc}")
         return None
 
-
 def process_feed(feed_url, seen, global_seen, session, cfg, ioc_patterns, whitelist_by_feed, max_days_old):
     """
     Process a single feed and extract IOCs.
 
     Args:
-        url (str): Feed URL.
+        feed_url (str): Feed URL.
         seen (set): Set of seen IOCs.
         global_seen (set): Global set of IOCs.
         session (requests.Session): HTTP session.
@@ -293,7 +293,6 @@ def context_tags(text, feed_url, cfg):
         "sigma": "Detection Rule",
         "yara": "Detection Rule",
 }
-
 
     # Add tags based on the content of the text
     for keyword, tag in keyword_to_tag_mapping.items():

@@ -13,12 +13,18 @@ def write_csv_feed(all_records, csv_path, cfg, log_file=None):
         cfg (dict): Configuration dictionary with MISP-specific settings.
         log_file (str, optional): Path to the log file.
     """
-    fieldnames = [
+    # Validate schema of all_records
+    for record in all_records:
+        if not isinstance(record, dict):
+            raise ValueError(f"Invalid record format: {record}")
+
+    # Externalize field names to a configuration file
+    fieldnames = cfg.get("csv_fieldnames", [
         "info", "date", "threat_level_id", "analysis",
         "tag", "attribute_category", "attribute_type",
         "attribute_value", "to_ids", "comment", "attribute_timestamp",
         "actors", "malware", "mitre_techniques", "cves", "tools", "campaigns"
-    ]
+    ])
 
     try:
         with open(csv_path, "w", newline="", encoding="utf-8") as csvf:

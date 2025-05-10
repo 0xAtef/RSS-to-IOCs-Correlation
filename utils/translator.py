@@ -1,28 +1,33 @@
-from googletrans import Translator
+from googletrans import Translator, LANGUAGES
 import logging
+import time
 
-def translate_to_english(text):
+translator = Translator()
+
+def translate_to_english(text, retries=3, delay=2):
     """
-    Translate the given text to English if it is not already in English.
-    
+    Translate the given text to English using Google Translate.
+
     Args:
         text (str): The text to translate.
-    
+        retries (int): Number of retry attempts for translation failures.
+        delay (int): Delay in seconds between retries.
+
     Returns:
-        str: Translated text in English.
+        str: Translated text in English, or the original text if translation fails.
     """
-    translator = Translator()
-    try:
-        # Detect the language of the text
-        detected_lang = translator.detect(text).lang
-        if detected_lang != 'en':
-            # Translate to English
-            translated = translator.translate(text, src=detected_lang, dest='en')
-            logging.info(f"Translated from {detected_lang} to English: {translated.text}")
-            return translated.text
-        else:
-            # Return the original text if it's already in English
-            return text
-    except Exception as e:
-        logging.error(f"Translation failed: {e}")
+    if not text:
         return text
+
+    for attempt in range(1, retries + 1):
+        try:
+            logging.info(f"Translating text (attempt {attempt}/{retries}): {text}")
+            translated = translator.translate(text, dest="en")
+            return translated.text
+        except Exception as e:
+            logging.error(f"Translation failed (attempt {attempt}/{retries}): {e}")
+            if attempt < retries:
+                time.sleep(delay)
+
+    logging.warning(f"Returning original text after failed translation attempts: {text}")
+    return text
