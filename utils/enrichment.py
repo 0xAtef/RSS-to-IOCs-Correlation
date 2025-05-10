@@ -1,4 +1,3 @@
-# File: utils/enrichment.py
 import requests
 import re
 import logging
@@ -6,11 +5,16 @@ from pathlib import Path
 import hashlib
 import json
 import spacy
+import os
 
 # MITRE CTI JSON URL
 MITRE_URL = (
     "https://raw.githubusercontent.com/mitre/cti/master/enterprise-attack/enterprise-attack.json"
 )
+
+# AlienVault OTX API URL
+OTX_API_URL = "https://otx.alienvault.com/api/v1/indicators"
+OTX_API_KEY = os.getenv("OTX_API_KEY")
 
 # Load spaCy model once
 try:
@@ -102,6 +106,57 @@ def fetch_mitre_data():
         logging.error(f"[!] Failed to fetch MITRE data: {e}")
 
 
+def fetch_otx_data(ioc: str) -> dict:
+    """
+    Fetch enrichment data for an IOC using AlienVault OTX API.
+    :param ioc: The Indicator of Compromise (IOC).
+    :return: Dictionary containing enrichment details.
+    """
+    try:
+        response = requests.get(f"{OTX_API_URL}/{ioc}", timeout=15)
+        response.raise_for_status()
+        data = response.json()
+        # Extract useful information (e.g., pulse count)
+        return {
+            "ioc": ioc,
+            "pulse_count": data.get("pulse_info", {}).get("count", 0),
+        }
+    except Exception as e:
+        logging.error(f"Failed to fetch OTX data for {ioc}: {e}")
+        return {"ioc": ioc, "pulse_count": 0}
+
+
+def calculate_risk_score(enrichment_data: dict) -> int:
+    """
+    Calculate the risk score for an IOC based on enrichment data.
+    :param enrichment_data: Dictionary containing IOC enrichment details.
+    :return: Risk score (0-100).
+    """
+    pulse_count = enrichment_data.get("pulse_count", 0)
+    # Scale pulse count to a risk score (e.g., 0-100)
+    risk_score = min(100, pulse_count * 2)  # Example scaling logic
+    return risk_score
+
+
+def enrich_with_ner_and_scoring(text: str) -> dict:
+    """
+    Enrich text using Named Entity Recognition and AlienVault OTX.
+    Returns a dict with keys: actors, malware, mitre_techniques, cves, tools, campaigns, and risk_scores.
+    """
+    iocs = extract_ner(text)
+    enriched_iocs = []
+
+    for ioc in iocs["cves"] + iocs["malware"]:
+        otx_data = fetch_otx_data(ioc)
+        risk_score = calculate_risk_score(otx_data)
+        enriched_iocs.append({"ioc": ioc, "risk_score": risk_score})
+
+    return {
+        "entities": iocs,
+        "enriched_iocs": enriched_iocs,
+    }
+
+
 def extract_ner(text: str) -> dict:
     if nlp is None:
         return {"actors": [], "malware": [], "mitre_techniques": [], "cves": [], "tools": [], "campaigns": []}
@@ -138,12 +193,3 @@ def extract_ner(text: str) -> dict:
         "tools": sorted(tools),
         "campaigns": sorted(campaigns),
     }
-
-
-def enrich_with_ner(text: str) -> dict:
-    """
-    Enrich text using Named Entity Recognition against MITRE data.
-
-    Returns a dict with keys: actors, malware, mitre_techniques, cves, tools, campaigns.
-    """
-    return extract_ner(text)

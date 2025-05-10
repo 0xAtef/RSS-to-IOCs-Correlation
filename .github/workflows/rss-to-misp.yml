@@ -42,6 +42,8 @@ jobs:
         run: mkdir -p logs
 
       - name: Run collector & build feed
+        env:
+          OTX_API_KEY: ${{ secrets.OTX_API_KEY }}
         run: |
           set -e
           python rss_ioc_collector.py
