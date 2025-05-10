@@ -1,7 +1,7 @@
 import requests
 import logging
 
-def check_feed_health(feed_url, timeout=10):
+def check_feed_health(feed_url, timeout=10,log_file=None):
     """
     Check the health of an RSS feed URL.
 

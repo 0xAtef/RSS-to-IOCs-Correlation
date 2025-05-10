@@ -23,13 +23,13 @@ OTX_API_KEY = os.getenv("OTX_API_KEY")
 
 # Load spaCy model once
 try:
-    nlp = spacy.load("en_core_web_sm")
+    nlp = spacy.load("en_core_web_lg")
 except OSError:
-    logging.warning("spaCy model 'en_core_web_sm' not found. Attempting to download...")
+    logging.warning("spaCy model 'en_core_web_lg' not found. Attempting to download...")
     try:
         import subprocess
-        subprocess.run(["python", "-m", "spacy", "download", "en_core_web_sm"], check=True)
-        nlp = spacy.load("en_core_web_sm")
+        subprocess.run(["python", "-m", "spacy", "download", "en_core_web_lg"], check=True)
+        nlp = spacy.load("en_core_web_lg")
     except Exception as e:
         logging.error(f"Failed to download SpaCy model: {e}")
         nlp = None
