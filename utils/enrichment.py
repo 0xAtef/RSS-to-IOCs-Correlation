@@ -211,7 +211,7 @@ def enrich_with_ner_and_scoring(text: str) -> dict:
 
 def extract_ner(text: str) -> dict:
     if nlp is None:
-        return {"actors": [], "malware": [], "mitre_techniques": [], "cves": [], "tools", "campaigns": []}
+        return {"actors": [], "malware": [], "mitre_techniques": [], "cves": [], "tools": [], "campaigns": []}
 
     if not MITRE_CACHE["techniques"]:
         fetch_mitre_data()
