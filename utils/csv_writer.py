@@ -31,11 +31,23 @@ def write_csv_feed(all_records, csv_path, cfg, log_file=None):
                     logging.warning(f"Skipping record with missing required fields: {rec}")
                     continue
 
+                # Determine the threat level dynamically using risk score
+                enrichment_data = rec.get("enrichment", {})
+                risk_score = enrichment_data.get("risk_score", 0)  # Default to 0 if no risk score is available
+                if risk_score >= 80:
+                    threat_level_id = 1  # High
+                elif 50 <= risk_score < 80:
+                    threat_level_id = 2  # Medium
+                elif 20 <= risk_score < 50:
+                    threat_level_id = 3  # Low
+                else:
+                    threat_level_id = 4  # Informational
+
                 # Prepare the base row
                 row = {
                     "info": translate_to_english(rec.get("title", "No Title")),
                     "date": rec.get("published", "").split("T")[0] if rec.get("published") else "",
-                    "threat_level_id": cfg.get("misp_threat_level_id", 4),
+                    "threat_level_id": threat_level_id,
                     "analysis": cfg.get("misp_analysis", 0),
                     "tag": ";".join(rec.get("tags", []) or []),
                     "attribute_category": "External analysis",
@@ -44,19 +56,18 @@ def write_csv_feed(all_records, csv_path, cfg, log_file=None):
                     "to_ids": "True",
                     "comment": translate_to_english(f"Extracted from: {rec.get('source', 'Unknown Source')}"),
                     "attribute_timestamp": "",  # Ensure this is populated elsewhere
-                    "actors": ";".join(rec.get("enrichment", {}).get("actors", []) or []),
-                    "malware": ";".join(rec.get("enrichment", {}).get("malware", []) or []),
-                    "mitre_techniques": ";".join(rec.get("enrichment", {}).get("mitre_techniques", []) or []),
-                    "cves": ";".join(rec.get("enrichment", {}).get("cves", []) or []),
-                    "tools": ";".join(rec.get("enrichment", {}).get("tools", []) or []),
-                    "campaigns": ";".join(rec.get("enrichment", {}).get("campaigns", []) or [])
+                    "actors": ";".join(enrichment_data.get("actors", []) or []),
+                    "malware": ";".join(enrichment_data.get("malware", []) or []),
+                    "mitre_techniques": ";".join(enrichment_data.get("mitre_techniques", []) or []),
+                    "cves": ";".join(enrichment_data.get("cves", []) or []),
+                    "tools": ";".join(enrichment_data.get("tools", []) or []),
+                    "campaigns": ";".join(enrichment_data.get("campaigns", []) or [])
                 }
 
                 # Process IOCs and write rows to the CSV
                 iocs = rec.get("iocs", {})
                 if not iocs:
                     logging.warning(f"No IOCs found for record: {rec.get('title', 'No Title')}")
-                    
                     continue
 
                 for typ, vals in iocs.items():
