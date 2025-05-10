@@ -6,6 +6,7 @@ import hashlib
 import json
 import spacy
 import os
+from concurrent.futures import ThreadPoolExecutor, as_completed
 
 # MITRE CTI JSON URL
 MITRE_URL = (
@@ -119,12 +120,38 @@ def fetch_otx_data(ioc: str, ioc_type: str, section: str = '') -> dict:
         if section:
             endpoint += f"/{section}"
 
-        response = requests.get(endpoint, timeout=15)
+        headers = {"X-OTX-API-KEY": OTX_API_KEY}
+        response = requests.get(endpoint, headers=headers, timeout=15)
         response.raise_for_status()
         return response.json()
     except Exception as e:
         logging.error(f"Failed to fetch OTX data for {ioc} ({ioc_type}): {e}")
         return {}
+
+
+def fetch_otx_data_threaded(iocs: list, ioc_type: str, section: str = '') -> list:
+    """
+    Fetch enrichment data for multiple IOCs using threading.
+    :param iocs: List of IOCs.
+    :param ioc_type: The type of the IOC (e.g., IPv4, domain, hostname, file, URL, CVE).
+    :param section: Optional section of the OTX API (e.g., general, reputation).
+    :return: List of dictionaries containing enrichment details.
+    """
+    results = []
+
+    def fetch_single(ioc):
+        return fetch_otx_data(ioc, ioc_type, section)
+
+    with ThreadPoolExecutor(max_workers=5) as executor:  # Adjust max_workers based on API rate limits
+        futures = {executor.submit(fetch_single, ioc): ioc for ioc in iocs}
+
+        for future in as_completed(futures):
+            try:
+                results.append(future.result())
+            except Exception as e:
+                logging.error(f"Error in threaded fetching: {e}")
+
+    return results
 
 
 def calculate_risk_score(enrichment_data: dict) -> int:
@@ -141,26 +168,50 @@ def calculate_risk_score(enrichment_data: dict) -> int:
 
 def enrich_with_ner_and_scoring(text: str) -> dict:
     """
-    Enrich text using Named Entity Recognition and AlienVault OTX.
-    Returns a dict with keys: actors, malware, mitre_techniques, cves, tools, campaigns, and risk_scores.
+    Enrich text using Named Entity Recognition and AlienVault OTX with threading.
+    Returns a dict with keys: actors, malware, mitre_techniques, tools, campaigns, and risk_scores.
+    Excludes CVEs from processing.
     """
     iocs = extract_ner(text)
     enriched_iocs = []
 
-    for ioc in iocs["cves"] + iocs["malware"]:
-        otx_data = fetch_otx_data(ioc, "cve")
-        risk_score = calculate_risk_score(otx_data)
-        enriched_iocs.append({"ioc": ioc, "risk_score": risk_score})
+    # Define a mapping of IOC types to their corresponding OTX API types
+    ioc_types_mapping = {
+        "actors": "actor",
+        "malware": "malware",
+        "mitre_techniques": "technique",
+        "tools": "tool",
+        "campaigns": "campaign",
+        "ipv4s": "IPv4",
+        "ipv6s": "IPv6",
+        "hashes": "file",
+        "domains": "domain",
+        "hostnames": "hostname",
+        "urls": "url"
+    }
+
+    # Process all IOC types except CVEs
+    for ioc_type, otx_type in ioc_types_mapping.items():
+        ioc_list = iocs.get(ioc_type, [])
+        if not ioc_list:
+            continue  # Skip if no IOCs of this type
+
+        # Fetch OTX data for the current IOC type using threading
+        otx_data_list = fetch_otx_data_threaded(ioc_list, otx_type)
+
+        # Enrich each IOC with its risk score and other details
+        for ioc, otx_data in zip(ioc_list, otx_data_list):
+            risk_score = calculate_risk_score(otx_data)
+            enriched_iocs.append({"ioc": ioc, "type": ioc_type, "risk_score": risk_score})
 
     return {
         "entities": iocs,
         "enriched_iocs": enriched_iocs,
     }
 
-
 def extract_ner(text: str) -> dict:
     if nlp is None:
-        return {"actors": [], "malware": [], "mitre_techniques": [], "cves": [], "tools": [], "campaigns": []}
+        return {"actors": [], "malware": [], "mitre_techniques": [], "cves": [], "tools", "campaigns": []}
 
     if not MITRE_CACHE["techniques"]:
         fetch_mitre_data()
