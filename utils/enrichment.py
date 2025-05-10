@@ -10,7 +10,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 
 # Import IOC_PATTERNS from regex_patterns
 from utils.regex_patterns import IOC_PATTERNS
-from utils.risk_scoring import calculate_risk_score
+from utils.calculate_risk_score import calculate_risk_score
 
 # MITRE CTI JSON URL
 MITRE_URL = (
