@@ -143,6 +143,7 @@ def fetch_otx_data_threaded(iocs: list, ioc_type: str, section: str = '') -> lis
 
     return results
 
+# Function responsible for enrichment
 def enrich_with_ner_and_scoring(text: str) -> dict:
     logging.info("Starting IOC extraction and enrichment process.")
     iocs = extract_ner(text)

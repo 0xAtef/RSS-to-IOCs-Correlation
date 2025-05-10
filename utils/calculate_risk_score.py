@@ -14,11 +14,11 @@ def calculate_risk_score(otx_data: dict) -> int:
     # 1. Check if pulse info exists
     pulse_info = otx_data.get("pulse_info", {})
     if pulse_info:
-        # a) Add points based on the number of pulses
+        # a- Add points based on the number of pulses
         pulse_count = pulse_info.get("count", 0)
         risk_score += min(pulse_count * 5, 30)  # Cap at 30 points
 
-        # b) Add points for specific tags (e.g., malicious activity)
+        # b- Add points for specific tags (e.g., malicious activity)
         tags = pulse_info.get("tags", [])
         if "malicious" in tags:
             risk_score += 20
