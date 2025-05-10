@@ -9,9 +9,9 @@ from urllib.parse import urlparse
 from datetime import datetime, timedelta
 
 from utils.ioc_utils import IOCUtils
-from utils.enrichment import enrich_with_ner
 from utils.translator import translate_to_english
 from utils.regex_patterns import IOC_PATTERNS
+from utils.enrichment import enrich_with_ner_and_scoring as enrich_with_ner
 
 def extract_iocs(text):
     extracted = {}
