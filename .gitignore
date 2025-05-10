@@ -1,8 +1,27 @@
+# Python bytecode and cache
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
+
+# Temporary files
 *.tmp
+
+# Environment variables
 .env
+
+# Logs
 misp_event_creation.log
-misp_event_creation.log
+
+# Common Python-related directories
+*.egg-info/
+build/
+dist/
+
+# IDE-specific directories
+.vscode/
+.idea/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
