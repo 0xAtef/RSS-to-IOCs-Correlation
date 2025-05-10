@@ -240,7 +240,12 @@ def extract_ner(text: str) -> dict:
     urls = set(re.findall(r"https?://[^\s\"'>]+", text))
 
     # Log extracted entities
-
+    logging.info(f"Extracted Actors: {sorted(actors)}")
+    logging.info(f"Extracted Malware: {sorted(malwares)}")
+    logging.info(f"Extracted Techniques: {sorted(techniques)}")
+    logging.info(f"Extracted Tools: {sorted(tools)}")
+    logging.info(f"Extracted Campaigns: {sorted(campaigns)}")
+    logging.info(f"Extracted CVEs: {sorted(cves)}")
     logging.info(f"Extracted IPv4s: {sorted(ipv4s)}")
     logging.info(f"Extracted IPv6s: {sorted(ipv6s)}")
     logging.info(f"Extracted Domains: {sorted(domains)}")
