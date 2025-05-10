@@ -158,11 +158,147 @@ def context_tags(text, feed_url, cfg):
         if feed in feed_url:
             tags.extend(feed_tags)
 
+    # Expanded mapping of keywords to tags
+    keyword_to_tag_mapping = {
+        # General
+        "cybersecurity": "Cybersecurity",
+
+        # Threat Types
+        "ransom": "Ransomware",
+        "ransomware": "Ransomware",
+        ".locked": "Ransomware",
+        "malware": "Malware",
+        "trojan": "Malware",
+        "virus": "Malware",
+        "worm": "Malware",
+        "mining malware": "Malware",
+        "spyware": "Spyware",
+        "keylogger": "Spyware",
+        "credential harvesting": "Spyware",
+        "adware": "Adware",
+        "unwanted ads": "Adware",
+        "pop-up malware": "Adware",
+        "botnet": "Botnet",
+        "c&c botnet": "Botnet",
+        "ddos botnet": "Botnet",
+        "cryptojacking": "Cryptojacking",
+        "unauthorized mining": "Cryptojacking",
+        "coinminer": "Cryptojacking",
+        "data breach": "Data Breach",
+        "info leak": "Data Breach",
+        "exfiltration": "Data Breach",
+        "leaked credentials": "Data Breach",
+        "exposed database": "Data Breach",
+        "supply chain compromise": "Supply Chain Attack",
+        "third-party breach": "Supply Chain Attack",
+        "software dependency attack": "Supply Chain Attack",
+        "lolbin": "Living Off The Land",
+        "living-off-the-land binaries": "Living Off The Land",
+        "fileless attack": "Living Off The Land",
+
+        # TTPs (Tactics, Techniques & Procedures)
+        "exploit": "Exploitation",
+        "exploitation": "Exploitation",
+        "zero-day": "Zero-Day Exploit",
+        "buffer overflow": "Buffer Overflow",
+        "cve-": "Vulnerability",
+        "privilege escalation": "Privilege Escalation",
+        "uac bypass": "Privilege Escalation",
+        "token impersonation": "Privilege Escalation",
+        "rce": "Remote Code Execution",
+        "remote code execution": "Remote Code Execution",
+        "command injection": "Remote Code Execution",
+        "command and control": "C2",
+        "c2": "C2",
+        "c2 server": "C2",
+        "beaconing": "C2",
+        "heartbeat": "C2",
+        "psexec": "Lateral Movement",
+        "wmi lateral": "Lateral Movement",
+        "smb pivot": "Lateral Movement",
+        "pass-the-hash": "Lateral Movement",
+        "registry autorun": "Persistence",
+        "scheduled task": "Persistence",
+        "startup folder": "Persistence",
+        "obfuscation": "Defense Evasion",
+        "encryption": "Defense Evasion",
+        "anti-debug": "Defense Evasion",
+        "code signing abuse": "Defense Evasion",
+        "credential dumping": "Credential Access",
+        "mimikatz": "Credential Access",
+        "hash dump": "Credential Access",
+        "port scan": "Network Reconnaissance",
+        "network discovery": "Network Reconnaissance",
+        "arp spoofing": "Network Reconnaissance",
+        "keylogging": "Data Collection",
+        "screen capture": "Data Collection",
+        "audio capture": "Data Collection",
+
+        # Actors & Campaigns
+        "threat actor": "Threat Actor",
+        "apt group": "APT Group",
+        "apt1": "APT Group",
+        "apt28": "APT Group",
+        "fancy bear": "APT Group",
+        "nation-state actor": "Nation-State Actor",
+        "insider threat": "Insider Threat",
+        "malicious insider": "Insider Threat",
+        "rogue employee": "Insider Threat",
+        "data saboteur": "Insider Threat",
+        "espionage": "Cyber Espionage",
+        "intel gathering": "Cyber Espionage",
+        "info ops": "Cyber Espionage",
+
+        # Infrastructure & Assets
+        "iot": "IoT",
+        "iot botnet": "IoT Botnet",
+        "connected device": "Connected Device",
+        "smart camera": "IoT",
+        "dvr botnet": "IoT Botnet",
+        "cloud misconfiguration": "Cloud",
+        "container escape": "Container",
+        "aws s3 public": "Cloud",
+        "azure blob leak": "Cloud",
+        "sqli": "Web/Application",
+        "xss": "Web/Application",
+        "ssrf": "Web/Application",
+        "api abuse": "Web/Application",
+        "web shell": "Web/Application",
+        "mobile malware": "Mobile",
+        "android rat": "Mobile",
+        "ios jailbreak exploit": "Mobile",
+
+        # Impact & Indicators
+        "dos": "DoS",
+        "ddos": "DDoS",
+        "denial-of-service": "DoS",
+        "syn flood": "DDoS",
+        "information disclosure": "Information Disclosure",
+        "malvertising": "Malvertising",
+        "fake domain": "Malvertising",
+        "typosquatting": "Typosquatting",
+
+        # Defensive & Reference
+        "security advisory": "Security Advisory",
+        "vendor bulletin": "Security Advisory",
+        "patch notice": "Security Advisory",
+        "cve-": "CVE",
+        "hash": "IOC",
+        "ip indicator": "IOC",
+        "domain": "IOC",
+        "url": "IOC",
+        "email address": "IOC",
+        "snort": "Detection Rule",
+        "suricata": "Detection Rule",
+        "sigma": "Detection Rule",
+        "yara": "Detection Rule",
+}
+
+
     # Add tags based on the content of the text
-    if "cybersecurity" in text.lower():
-        tags.append("Cybersecurity")
-    if "ransomware" in text.lower():
-        tags.append("Ransomware")
+    for keyword, tag in keyword_to_tag_mapping.items():
+        if keyword in text.lower():
+            tags.append(tag)
 
     # Remove duplicates and return
     return list(set(tags))
