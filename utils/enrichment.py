@@ -177,11 +177,6 @@ def enrich_with_ner_and_scoring(text: str) -> dict:
 
     # Define a mapping of IOC types to their corresponding OTX API types
     ioc_types_mapping = {
-        "actors": "actor",
-        "malware": "malware",
-        "mitre_techniques": "technique",
-        "tools": "tool",
-        "campaigns": "campaign",
         "ipv4s": "IPv4",
         "ipv6s": "IPv6",
         "hashes": "file",
