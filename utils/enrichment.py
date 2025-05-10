@@ -12,8 +12,8 @@ MITRE_URL = (
     "https://raw.githubusercontent.com/mitre/cti/master/enterprise-attack/enterprise-attack.json"
 )
 
-# AlienVault OTX API URL
-OTX_API_URL = "https://otx.alienvault.com/api/v1/indicators"
+# AlienVault OTX API Base URL
+OTX_API_BASE_URL = "https://otx.alienvault.com/api/v1/indicators"
 OTX_API_KEY = os.getenv("OTX_API_KEY")
 
 # Load spaCy model once
@@ -106,24 +106,25 @@ def fetch_mitre_data():
         logging.error(f"[!] Failed to fetch MITRE data: {e}")
 
 
-def fetch_otx_data(ioc: str) -> dict:
+def fetch_otx_data(ioc: str, ioc_type: str, section: str = '') -> dict:
     """
     Fetch enrichment data for an IOC using AlienVault OTX API.
     :param ioc: The Indicator of Compromise (IOC).
+    :param ioc_type: The type of the IOC (e.g., IPv4, domain, hostname, file, URL, CVE).
+    :param section: Optional section of the OTX API (e.g., general, reputation).
     :return: Dictionary containing enrichment details.
     """
     try:
-        response = requests.get(f"{OTX_API_URL}/{ioc}", timeout=15)
+        endpoint = f"{OTX_API_BASE_URL}/{ioc_type}/{ioc}"
+        if section:
+            endpoint += f"/{section}"
+
+        response = requests.get(endpoint, timeout=15)
         response.raise_for_status()
-        data = response.json()
-        # Extract useful information (e.g., pulse count)
-        return {
-            "ioc": ioc,
-            "pulse_count": data.get("pulse_info", {}).get("count", 0),
-        }
+        return response.json()
     except Exception as e:
-        logging.error(f"Failed to fetch OTX data for {ioc}: {e}")
-        return {"ioc": ioc, "pulse_count": 0}
+        logging.error(f"Failed to fetch OTX data for {ioc} ({ioc_type}): {e}")
+        return {}
 
 
 def calculate_risk_score(enrichment_data: dict) -> int:
@@ -132,9 +133,9 @@ def calculate_risk_score(enrichment_data: dict) -> int:
     :param enrichment_data: Dictionary containing IOC enrichment details.
     :return: Risk score (0-100).
     """
-    pulse_count = enrichment_data.get("pulse_count", 0)
-    # Scale pulse count to a risk score (e.g., 0-100)
-    risk_score = min(100, pulse_count * 2)  # Example scaling logic
+    # Example logic: Use pulse count or a similar metric to calculate score
+    pulse_count = enrichment_data.get("pulse_info", {}).get("count", 0)
+    risk_score = min(100, pulse_count * 5)  # Scale pulse count to 0-100
     return risk_score
 
 
@@ -147,7 +148,7 @@ def enrich_with_ner_and_scoring(text: str) -> dict:
     enriched_iocs = []
 
     for ioc in iocs["cves"] + iocs["malware"]:
-        otx_data = fetch_otx_data(ioc)
+        otx_data = fetch_otx_data(ioc, "cve")
         risk_score = calculate_risk_score(otx_data)
         enriched_iocs.append({"ioc": ioc, "risk_score": risk_score})
 
