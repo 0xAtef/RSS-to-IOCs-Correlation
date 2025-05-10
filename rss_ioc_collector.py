@@ -13,7 +13,7 @@ from datetime import datetime
 from dotenv import load_dotenv
 
 from utils.csv_writer import write_csv_feed
-from utils.feed_health import monitor_feed_health
+from utils.feed_health import check_feed_health
 from utils.fetch_parse import process_feed
 from utils.ioc_utils import IOCUtils
 
