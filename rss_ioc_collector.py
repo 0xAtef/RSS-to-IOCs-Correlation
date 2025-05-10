@@ -129,7 +129,7 @@ def process_feeds_concurrently(feed_urls, seen):
                 WHITELIST_BY_FEED,
                 MAX_DAYS_OLD
             ): url
-            for url in feed_urls if check_feed_health(url, session, LOG_FILE)
+            for url in feed_urls if check_feed_health(url, session,10 ,LOG_FILE)
         }
         for future in as_completed(futures):
             feed_url = futures[future]
