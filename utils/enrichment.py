@@ -1,5 +1,5 @@
-import requests
 import re
+import requests
 import logging
 from pathlib import Path
 import hashlib
@@ -7,6 +7,10 @@ import json
 import spacy
 import os
 from concurrent.futures import ThreadPoolExecutor, as_completed
+
+# Import IOC_PATTERNS from regex_patterns
+from utils.regex_patterns import IOC_PATTERNS
+from utils.risk_scoring import calculate_risk_score
 
 # MITRE CTI JSON URL
 MITRE_URL = (
@@ -208,58 +212,14 @@ def extract_ner(text: str) -> dict:
 
     # Process text with SpaCy NLP
     doc = nlp(text)
-    actors = set()
-    malwares = set()
-    techniques = set()
-    tools = set()
-    campaigns = set()
 
-    # Extract CVEs using regex
-    cves = set(re.findall(r"\bCVE-\d{4}-\d{4,7}\b", text, flags=re.IGNORECASE))
-
-    # Extract other entities using SpaCy and MITRE cache
-    for ent in doc.ents:
-        ent_text = ent.text.strip().lower()
-        if ent_text in {actor.lower() for actor in MITRE_CACHE["actors"]}:
-            actors.add(ent_text)
-        if ent_text in {malware.lower() for malware in MITRE_CACHE["malwares"]}:
-            malwares.add(ent_text)
-        if ent_text.upper() in MITRE_CACHE["techniques"]:
-            techniques.add(ent_text.upper())
-        if ent_text in {tool.lower() for tool in MITRE_CACHE["tools"]}:
-            tools.add(ent_text)
-        if ent_text in {campaign.lower() for campaign in MITRE_CACHE["campaigns"]}:
-            campaigns.add(ent_text)
-
-    # Extract IPv4 and IPv6 addresses
-    ipv4s = set(re.findall(r"\b(?:\d{1,3}\.){3}\d{1,3}\b", text))
-    ipv6s = set(re.findall(r"\b([a-fA-F0-9:]+:+)+[a-fA-F0-9]+\b", text))
-
-    # Extract domains and URLs
-    domains = set(re.findall(r"\b(?:[A-Za-z0-9-]+\.)+[A-Za-z]{2,}\b", text))
-    urls = set(re.findall(r"https?://[^\s\"'>]+", text))
+    # Extract various IOC patterns using IOC_PATTERNS
+    extracted_iocs = {
+        key: pattern.findall(text) for key, pattern in IOC_PATTERNS.items()
+    }
 
     # Log extracted entities
-    logging.info(f"Extracted Actors: {sorted(actors)}")
-    logging.info(f"Extracted Malware: {sorted(malwares)}")
-    logging.info(f"Extracted Techniques: {sorted(techniques)}")
-    logging.info(f"Extracted Tools: {sorted(tools)}")
-    logging.info(f"Extracted Campaigns: {sorted(campaigns)}")
-    logging.info(f"Extracted CVEs: {sorted(cves)}")
-    logging.info(f"Extracted IPv4s: {sorted(ipv4s)}")
-    logging.info(f"Extracted IPv6s: {sorted(ipv6s)}")
-    logging.info(f"Extracted Domains: {sorted(domains)}")
-    logging.info(f"Extracted URLs: {sorted(urls)}")
+    for key, values in extracted_iocs.items():
+        logging.info(f"Extracted {key.capitalize()}: {sorted(set(values))}")
 
-    return {
-        "actors": sorted(actors),
-        "malware": sorted(malwares),
-        "mitre_techniques": sorted(techniques),
-        "cves": sorted(cves),
-        "tools": sorted(tools),
-        "campaigns": sorted(campaigns),
-        "ipv4s": sorted(ipv4s),
-        "ipv6s": sorted(ipv6s),
-        "domains": sorted(domains),
-        "urls": sorted(urls),
-    }
+    return extracted_iocs
