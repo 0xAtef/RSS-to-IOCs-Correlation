@@ -27,7 +27,7 @@ except OSError:
         subprocess.run(["python", "-m", "spacy", "download", "en_core_web_sm"], check=True)
         nlp = spacy.load("en_core_web_sm")
     except Exception as e:
-        logging.error(f"Failed to download spaCy model: {e}")
+        logging.error(f"Failed to download SpaCy model: {e}")
         nlp = None
 
 # Cache on-disk to avoid repeated downloads between runs
@@ -39,7 +39,6 @@ MITRE_CACHE = {
     "tools": set(),
     "campaigns": set(),
 }
-
 
 def fetch_mitre_data():
     # Try loading from disk
@@ -53,7 +52,7 @@ def fetch_mitre_data():
         except Exception as e:
             logging.warning(f"Failed to load MITRE cache: {e}")
 
-    # Otherwise fetch from network
+    # Otherwise fetch from the network
     try:
         for attempt in range(3):  # Retry logic
             try:
@@ -106,21 +105,14 @@ def fetch_mitre_data():
     except Exception as e:
         logging.error(f"[!] Failed to fetch MITRE data: {e}")
 
-
 def fetch_otx_data(ioc: str, ioc_type: str, section: str = '') -> dict:
-    """
-    Fetch enrichment data for an IOC using AlienVault OTX API.
-    :param ioc: The Indicator of Compromise (IOC).
-    :param ioc_type: The type of the IOC (e.g., IPv4, domain, hostname, file, URL, CVE).
-    :param section: Optional section of the OTX API (e.g., general, reputation).
-    :return: Dictionary containing enrichment details.
-    """
     try:
         endpoint = f"{OTX_API_BASE_URL}/{ioc_type}/{ioc}"
         if section:
             endpoint += f"/{section}"
 
         headers = {"X-OTX-API-KEY": OTX_API_KEY}
+        logging.info(f"Fetching OTX data for IOC: {ioc}, Type: {ioc_type}")
         response = requests.get(endpoint, headers=headers, timeout=15)
         response.raise_for_status()
         return response.json()
@@ -128,15 +120,7 @@ def fetch_otx_data(ioc: str, ioc_type: str, section: str = '') -> dict:
         logging.error(f"Failed to fetch OTX data for {ioc} ({ioc_type}): {e}")
         return {}
 
-
 def fetch_otx_data_threaded(iocs: list, ioc_type: str, section: str = '') -> list:
-    """
-    Fetch enrichment data for multiple IOCs using threading.
-    :param iocs: List of IOCs.
-    :param ioc_type: The type of the IOC (e.g., IPv4, domain, hostname, file, URL, CVE).
-    :param section: Optional section of the OTX API (e.g., general, reputation).
-    :return: List of dictionaries containing enrichment details.
-    """
     results = []
 
     def fetch_single(ioc):
@@ -147,62 +131,44 @@ def fetch_otx_data_threaded(iocs: list, ioc_type: str, section: str = '') -> lis
 
         for future in as_completed(futures):
             try:
-                results.append(future.result())
+                result = future.result()
+                logging.info(f"Enriched data fetched for IOC: {futures[future]}")
+                results.append(result)
             except Exception as e:
                 logging.error(f"Error in threaded fetching: {e}")
 
     return results
 
-
-def calculate_risk_score(enrichment_data: dict) -> int:
-    """
-    Calculate the risk score for an IOC based on enrichment data.
-    :param enrichment_data: Dictionary containing IOC enrichment details.
-    :return: Risk score (0-100).
-    """
-    # Example logic: Use pulse count or a similar metric to calculate score
-    pulse_count = enrichment_data.get("pulse_info", {}).get("count", 0)
-    risk_score = min(100, pulse_count * 5)  # Scale pulse count to 0-100
-    return risk_score
-
-
 def enrich_with_ner_and_scoring(text: str) -> dict:
-    """
-    Enrich text using Named Entity Recognition and AlienVault OTX with threading.
-    Returns a dict with keys: actors, malware, mitre_techniques, tools, campaigns, and risk_scores.
-    Excludes CVEs from processing.
-    """
+    logging.info("Starting IOC extraction and enrichment process.")
     iocs = extract_ner(text)
+    logging.info(f"Extracted IOCs: {iocs}")
     enriched_iocs = []
 
-    # Define a mapping of IOC types to their corresponding OTX API types
     ioc_types_mapping = {
         "ipv4s": "IPv4",
         "ipv6s": "IPv6",
         "hashes": "file",
         "domains": "domain",
         "hostnames": "hostname",
-        "urls": "url"
+        "urls": "url",
     }
 
-    # Process all IOC types except CVEs
     for ioc_type, otx_type in ioc_types_mapping.items():
         ioc_list = iocs.get(ioc_type, [])
         if not ioc_list:
-            continue  # Skip if no IOCs of this type
+            logging.info(f"No IOCs of type {ioc_type} to process.")
+            continue
 
-        # Fetch OTX data for the current IOC type using threading
+        logging.info(f"Processing {len(ioc_list)} IOCs of type {ioc_type}.")
         otx_data_list = fetch_otx_data_threaded(ioc_list, otx_type)
 
-        # Enrich each IOC with its risk score and other details
         for ioc, otx_data in zip(ioc_list, otx_data_list):
             risk_score = calculate_risk_score(otx_data)
             enriched_iocs.append({"ioc": ioc, "type": ioc_type, "risk_score": risk_score})
+            logging.info(f"Enriched IOC: {ioc}, Type: {ioc_type}, Risk Score: {risk_score}")
 
-    return {
-        "entities": iocs,
-        "enriched_iocs": enriched_iocs,
-    }
+    return {"entities": iocs, "enriched_iocs": enriched_iocs}
 
 def extract_ner(text: str) -> dict:
     if nlp is None:
