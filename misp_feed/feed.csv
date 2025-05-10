@@ -1,3 +1,1 @@
 info,date,threat_level_id,analysis,tag,attribute_category,attribute_type,attribute_value,to_ids,comment,attribute_timestamp,actors,malware,mitre_techniques,cves,tools,campaigns
-Daily Dose of Dark Web Informer - 9th of May 2025,2025-05-09,4,0,Ransomware;RSS to IOC Collector;DarkWebInformer;Cybersecurity,External analysis,cve,CVE-2022-40684,True,Extracted from: https://darkwebinformer.com/daily-dose-of-dark-web-informer-9th-of-may-2025/,,,,,CVE-2022-40684;CVE-2024-1071,,
-Daily Dose of Dark Web Informer - 9th of May 2025,2025-05-09,4,0,Ransomware;RSS to IOC Collector;DarkWebInformer;Cybersecurity,External analysis,cve,CVE-2024-1071,True,Extracted from: https://darkwebinformer.com/daily-dose-of-dark-web-informer-9th-of-may-2025/,,,,,CVE-2022-40684;CVE-2024-1071,,
